@@ -1,0 +1,146 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+const categories = [
+  { id: 'all', label: 'Tümü' },
+  { id: 'tabela', label: 'Tabela' },
+  { id: 'uv-baski', label: 'UV Baskı' },
+  { id: 'dijital-baski', label: 'Dijital Baskı' },
+  { id: 'folyo', label: 'Folyo & Giydirme' },
+  { id: 'bez-baski', label: 'Bez Baskı' },
+  { id: 'display', label: 'Sunum & Stand' },
+  { id: 'magaza', label: 'Mağaza Reklam' },
+];
+
+const products = [
+  { title: 'Kutu Harf Tabela', category: 'tabela', image: '/images/kutu-harf.jpg' },
+  { title: 'Totem Tabela', category: 'tabela', image: '/images/tabela-imalat.jpg' },
+  { title: 'Çatı Tabelası', category: 'tabela', image: '/images/tabela-imalat.jpg' },
+  { title: 'Neon-Led Tabela', category: 'tabela', image: '/images/kutu-harf.jpg' },
+  { title: 'Ofis Tabelası', category: 'tabela', image: '/images/kutu-harf.jpg' },
+  { title: 'İnşaat Tabelası', category: 'tabela', image: '/images/tabela-imalat.jpg' },
+  { title: 'UV Baskı Uygulamaları', category: 'uv-baski', image: '/images/uv-baski.jpg' },
+  { title: 'Komple Araç Kaplama', category: 'folyo', image: '/images/arac-giydirme.jpg' },
+  { title: 'Kısmi Araç Kaplama', category: 'folyo', image: '/images/arac-giydirme.jpg' },
+  { title: 'Cephe Folyo Giydirme', category: 'folyo', image: '/images/cephe-giydirme.jpg' },
+  { title: 'Cam Folyo Giydirme', category: 'folyo', image: '/images/cephe-giydirme.jpg' },
+  { title: 'Pankart Branda Baskı', category: 'bez-baski', image: '/images/dijital-baski.jpg' },
+  { title: 'Dijital Baskı', category: 'dijital-baski', image: '/images/dijital-baski.jpg' },
+  { title: 'Lightbox Pano', category: 'display', image: '/images/dijital-baski.jpg' },
+  { title: 'Mağaza Konsept Tasarım', category: 'magaza', image: '/images/cephe-giydirme.jpg' },
+];
+---
+
+<BaseLayout title="Ürünlerimiz" description="Eymen Reklam ürün ve proje galerisi — Tabela, UV baskı, araç giydirme, dijital baskı örneklerimizi inceleyin.">
+
+  <!-- Hero -->
+  <section class="bg-koyu-900 py-16 md:py-24">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <p class="text-eymen-400 text-sm font-semibold uppercase tracking-wider mb-3">Proje Galerisi</p>
+      <h1 class="text-4xl md:text-5xl font-extrabold text-white mb-4">Ürünlerimiz</h1>
+      <p class="text-koyu-400 text-lg max-w-2xl mx-auto">
+        25 yılda tamamladığımız projelerden örnekler. Kategori seçerek filtreleyebilirsiniz.
+      </p>
+    </div>
+  </section>
+
+  <!-- Filtre + Grid -->
+  <section class="py-16 md:py-24">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <!-- Filtre Butonları -->
+      <div class="flex flex-wrap gap-2 mb-10 justify-center" id="filter-buttons">
+        {categories.map(cat => (
+          <button
+            data-filter={cat.id}
+            class:list={[
+              'filter-btn px-4 py-2 rounded-full text-sm font-medium transition-all border',
+              cat.id === 'all'
+                ? 'bg-eymen-500 text-white border-eymen-500'
+                : 'bg-white text-koyu-600 border-koyu-200 hover:border-eymen-300 hover:text-eymen-600'
+            ]}
+          >
+            {cat.label}
+          </button>
+        ))}
+      </div>
+
+      <!-- Ürün Grid -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6" id="product-grid">
+        {products.map(product => (
+          <div class="product-card group" data-category={product.category}>
+            <div class="bg-white rounded-2xl border border-koyu-100 overflow-hidden hover:shadow-lg hover:border-eymen-200 transition-all duration-300 hover:-translate-y-1">
+              <!-- Görsel -->
+              <div class="aspect-square overflow-hidden">
+                <img
+                  src={product.image}
+                  alt={product.title}
+                  class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                  loading="lazy"
+                />
+              </div>
+              <!-- Bilgi -->
+              <div class="p-5">
+                <h3 class="font-bold text-koyu-900 mb-3 group-hover:text-eymen-600 transition-colors">{product.title}</h3>
+                <a
+                  href={`https://wa.me/905356647752?text=Merhaba%2C%20${encodeURIComponent(product.title)}%20hakkında%20bilgi%20almak%20istiyorum.`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="inline-flex items-center gap-2 text-sm text-eymen-600 font-semibold hover:text-eymen-700 transition-colors"
+                >
+                  Teklif Al
+                  <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="bg-eymen-500 py-16">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <h2 class="text-3xl font-extrabold text-white mb-4">Projeniz İçin Teklif Alın</h2>
+      <p class="text-eymen-100 mb-8">Listemizde olmayan özel projeler için de çözüm üretiyoruz.</p>
+      <a
+        href="https://wa.me/905356647752?text=Merhaba%2C%20özel%20proje%20teklifi%20almak%20istiyorum."
+        target="_blank"
+        rel="noopener noreferrer"
+        class="inline-flex items-center gap-2 bg-white text-eymen-600 hover:bg-koyu-50 px-8 py-4 rounded-xl text-base font-bold transition-all"
+      >
+        WhatsApp ile Teklif Alın
+      </a>
+    </div>
+  </section>
+
+</BaseLayout>
+
+<script>
+  const buttons = document.querySelectorAll('.filter-btn');
+  const cards = document.querySelectorAll('.product-card');
+
+  buttons.forEach(btn => {
+    btn.addEventListener('click', () => {
+      const filter = btn.getAttribute('data-filter');
+
+      // Buton stilini güncelle
+      buttons.forEach(b => {
+        b.classList.remove('bg-eymen-500', 'text-white', 'border-eymen-500');
+        b.classList.add('bg-white', 'text-koyu-600', 'border-koyu-200');
+      });
+      btn.classList.remove('bg-white', 'text-koyu-600', 'border-koyu-200');
+      btn.classList.add('bg-eymen-500', 'text-white', 'border-eymen-500');
+
+      // Kartları filtrele
+      cards.forEach(card => {
+        const category = card.getAttribute('data-category');
+        if (filter === 'all' || category === filter) {
+          card.style.display = '';
+        } else {
+          card.style.display = 'none';
+        }
+      });
+    });
+  });
+</script>

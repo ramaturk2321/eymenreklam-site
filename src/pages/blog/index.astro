@@ -1,0 +1,87 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+
+const posts = [
+  {
+    title: 'Tabela Yaptırmak İstiyorum: Malzemeden Montaja Tam Teknik Rehber (2026)',
+    excerpt: 'Tabela yaptırmadan önce bilmeniz gereken 4 kritik soru: malzeme seçimi, maliyet hesabı, belediye ruhsatı ve doğru firma seçimi. 25 yıllık üretim deneyimimizle yanıtlıyoruz.',
+    date: '9 Mart 2026',
+    category: 'Tabela',
+    image: '/images/blog-tabela.jpg',
+    slug: '/blog/tabela-yaptirmak-istiyorum',
+  },
+  {
+    title: 'Totem Tabela: Markanızın Sokaktaki En Güçlü Elçisinin 7 Sırrı',
+    excerpt: 'Totem tabela hakkında bilmeniz gereken her şey: türleri, malzeme seçimi, rüzgâr dayanımı hesaplamaları, belediye izinleri ve etkili tasarım ilkeleri.',
+    date: '18 Şubat 2026',
+    category: 'Tabela',
+    image: '/images/blog-totem.jpg',
+    slug: '/blog/totem-tabela',
+  },
+  {
+    title: 'UV Baskı Teknolojisi: Yüzeylere Hayat Veren Sessiz Devrimin 7 Sırrı',
+    excerpt: 'UV baskı teknolojisinin tüm sırları: çalışma prensibi, uygulama alanları, teknik detaylar ve doğru partner seçimi.',
+    date: '18 Şubat 2026',
+    category: 'UV Baskı',
+    image: '/images/blog-uv.jpg',
+    slug: '/blog/uv-baski-teknolojisi',
+  },
+  {
+    title: 'Billboard Reklamları: Markanızı Gökyüzüne Taşımanın 7 Sırrı',
+    excerpt: 'Şehirlerin siluetini şekillendiren billboard reklamları hakkında bilmeniz gereken her şey: boyutlar, maliyetler ve tasarım ilkeleri.',
+    date: '18 Şubat 2026',
+    category: 'Tabela',
+    image: '/images/blog-billboard.jpg',
+    slug: '/blog/billboard-reklamlari',
+  },
+];
+---
+
+<BaseLayout title="Blog" description="Eymen Reklam blog — Tabela, UV baskı, dijital baskı ve reklam sektörü hakkında teknik rehberler ve güncel bilgiler.">
+
+  <!-- Hero -->
+  <section class="bg-koyu-900 py-16 md:py-24">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <p class="text-eymen-400 text-sm font-semibold uppercase tracking-wider mb-3">Bilgi Bankası</p>
+      <h1 class="text-4xl md:text-5xl font-extrabold text-white mb-4">Blog</h1>
+      <p class="text-koyu-400 text-lg max-w-2xl mx-auto">
+        Tabela, UV baskı ve reklam sektörü hakkında teknik rehberler ve profesyonel içerikler.
+      </p>
+    </div>
+  </section>
+
+  <!-- Blog Listesi -->
+  <section class="py-16 md:py-24">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        {posts.map(post => (
+          <article class="group bg-white rounded-2xl border border-koyu-100 overflow-hidden hover:shadow-lg hover:border-eymen-200 transition-all duration-300">
+            <!-- Görsel -->
+            <div class="aspect-[16/9] overflow-hidden">
+              <img src={post.image} alt={post.title} class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" />
+            </div>
+
+            <!-- İçerik -->
+            <div class="p-6">
+              <div class="flex items-center gap-3 mb-3">
+                <span class="px-2.5 py-0.5 bg-eymen-50 text-eymen-700 text-xs font-semibold rounded-full">{post.category}</span>
+                <span class="text-xs text-koyu-400">{post.date}</span>
+              </div>
+              <h2 class="text-lg font-bold text-koyu-900 mb-2 group-hover:text-eymen-600 transition-colors leading-snug">
+                {post.title}
+              </h2>
+              <p class="text-sm text-koyu-500 leading-relaxed line-clamp-3">{post.excerpt}</p>
+              <div class="mt-4">
+                <span class="text-sm text-eymen-600 font-semibold group-hover:text-eymen-700 transition-colors inline-flex items-center gap-1">
+                  Devamını Oku
+                  <svg class="w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+                </span>
+              </div>
+            </div>
+          </article>
+        ))}
+      </div>
+    </div>
+  </section>
+
+</BaseLayout>

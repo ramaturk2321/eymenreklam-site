@@ -1,0 +1,80 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+const projects = [
+  { title: 'SOM Kutu Harf Tabela', category: 'Kutu Harf', image: '/images/kutu-harf.jpg', desc: 'Kurumsal bina cephesine LED aydınlatmalı kutu harf tabela uygulaması.' },
+  { title: 'Nature Totem Tabela', category: 'Totem', image: '/images/tabela-imalat.jpg', desc: 'Dış mekan totem tabela tasarımı ve üretimi.' },
+  { title: '3D Totem Tasarım', category: 'Totem', image: '/images/proje-totem.jpg', desc: '3D modelleme ile totem tabela projesi.' },
+  { title: 'Ferah Komple Araç Kaplama', category: 'Araç Giydirme', image: '/images/arac-giydirme.jpg', desc: 'Ferah markası için komple ticari araç kaplama.' },
+  { title: 'Kutu Harf Üretim', category: 'Kutu Harf', image: '/images/proje-harf.jpg', desc: 'CNC kesim ve LED montajlı kutu harf üretim süreci.' },
+  { title: 'Cephe Folyo Giydirme', category: 'Cephe', image: '/images/cephe-giydirme.jpg', desc: 'Bina cephesi folyo kaplama ve yenileme projesi.' },
+  { title: 'UV Baskı Uygulaması', category: 'UV Baskı', image: '/images/uv-baski.jpg', desc: 'SwissQprint UV baskı makinesi ile yüksek hacimli üretim.' },
+  { title: 'Afiş Baskı', category: 'Dijital Baskı', image: '/images/proje-afis.jpg', desc: 'Büyük format dijital afiş baskı uygulaması.' },
+  { title: 'Fuar Stand Üretim', category: 'Display', image: '/images/proje-stand.jpg', desc: 'Fuar ve etkinlik stand tasarımı ve üretimi.' },
+  { title: 'Bez Baskı Atölye', category: 'Bez Baskı', image: '/images/proje-bez.jpg', desc: 'Branda ve bez baskı üretim atölyesi.' },
+  { title: '3D Totem Modelleme', category: 'Totem', image: '/images/proje-totem2.jpg', desc: '3D render ile totem tabela ön izleme.' },
+  { title: 'Pankart Branda Baskı', category: 'Dijital Baskı', image: '/images/dijital-baski.jpg', desc: 'Dış mekan branda ve pankart baskı uygulamaları.' },
+];
+---
+
+<BaseLayout title="Projelerimiz" description="Eymen Reklam proje galerisi — 25 yılda tamamlanan tabela, UV baskı, araç giydirme ve dijital baskı projelerimiz.">
+
+  <!-- Hero -->
+  <section class="bg-koyu-900 py-16 md:py-24">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <p class="text-eymen-400 text-sm font-semibold uppercase tracking-wider mb-3">25 Yıllık Portföy</p>
+      <h1 class="text-4xl md:text-5xl font-extrabold text-white mb-4">Projelerimiz</h1>
+      <p class="text-koyu-400 text-lg max-w-2xl mx-auto">
+        Kurumsal müşterilerimiz için tamamladığımız projelerden örnekler.
+      </p>
+    </div>
+  </section>
+
+  <!-- Proje Grid -->
+  <section class="py-16 md:py-24">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        {projects.map(project => (
+          <div class="group bg-white rounded-2xl border border-koyu-100 overflow-hidden hover:shadow-xl hover:border-eymen-200 transition-all duration-300 hover:-translate-y-1">
+            <!-- Görsel -->
+            <div class="aspect-square overflow-hidden relative">
+              <img
+                src={project.image}
+                alt={project.title}
+                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                loading="lazy"
+              />
+              <!-- Kategori Badge -->
+              <span class="absolute top-3 left-3 px-3 py-1 bg-eymen-500 text-white text-xs font-semibold rounded-full">
+                {project.category}
+              </span>
+            </div>
+            <!-- Bilgi -->
+            <div class="p-5">
+              <h3 class="font-bold text-koyu-900 mb-2 group-hover:text-eymen-600 transition-colors">{project.title}</h3>
+              <p class="text-sm text-koyu-500 leading-relaxed">{project.desc}</p>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="bg-koyu-900 py-16">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <h2 class="text-3xl font-extrabold text-white mb-4">Sizin Projeniz de Burada Olsun</h2>
+      <p class="text-koyu-400 mb-8">Markanız için özel çözümler üretiyoruz. Ücretsiz keşif ve teklif alın.</p>
+      <a
+        href="https://wa.me/905356647752?text=Merhaba%2C%20proje%20teklifi%20almak%20istiyorum."
+        target="_blank"
+        rel="noopener noreferrer"
+        class="inline-flex items-center gap-2 bg-eymen-500 hover:bg-eymen-600 text-white px-8 py-4 rounded-xl text-base font-bold transition-all hover:shadow-lg hover:shadow-eymen-500/25"
+      >
+        Ücretsiz Teklif Alın
+        <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+      </a>
+    </div>
+  </section>
+
+</BaseLayout>

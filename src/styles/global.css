@@ -1,0 +1,65 @@
+@import "tailwindcss";
+
+@theme {
+  /* Eymen Reklam — Turuncu + Gri Kurumsal Palet */
+  --color-eymen-50: #fff7ed;
+  --color-eymen-100: #ffedd5;
+  --color-eymen-200: #fed7aa;
+  --color-eymen-300: #fdba74;
+  --color-eymen-400: #fb923c;
+  --color-eymen-500: #f97316;
+  --color-eymen-600: #ea580c;
+  --color-eymen-700: #c2410c;
+  --color-eymen-800: #9a3412;
+  --color-eymen-900: #7c2d12;
+
+  --color-koyu-50: #f8fafc;
+  --color-koyu-100: #f1f5f9;
+  --color-koyu-200: #e2e8f0;
+  --color-koyu-300: #cbd5e1;
+  --color-koyu-400: #94a3b8;
+  --color-koyu-500: #64748b;
+  --color-koyu-600: #475569;
+  --color-koyu-700: #334155;
+  --color-koyu-800: #1e293b;
+  --color-koyu-900: #0f172a;
+  --color-koyu-950: #020617;
+
+  /* Font */
+  --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
+}
+
+/* Smooth scroll */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-sans);
+  color: var(--color-koyu-800);
+  background-color: white;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Scroll-triggered fade-in animation */
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-up {
+  opacity: 0;
+  animation: fadeUp 0.6s ease-out forwards;
+}
+
+.fade-up-delay-1 { animation-delay: 0.1s; }
+.fade-up-delay-2 { animation-delay: 0.2s; }
+.fade-up-delay-3 { animation-delay: 0.3s; }
+.fade-up-delay-4 { animation-delay: 0.4s; }
