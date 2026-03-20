@@ -1,0 +1,41 @@
+---
+import HizmetDetay from '../../components/HizmetDetay.astro';
+
+const data = {
+  title: 'Tabela İmalatı',
+  description: 'Kutu harf, totem, çatı, cephe ve yönlendirme tabelaları. CNC kesim ve LED aydınlatma ile anahtar teslim üretim ve montaj. Pendik İstanbul.',
+  heroDesc: 'Kutu harf tabeladan totem tabelaya, çatı tabelasından neon LED\'e kadar tüm tabela türlerinde anahtar teslim imalat ve montaj. 25 yıllık üretim deneyimi, 2.500m² tesiste CNC kesim ve LED aydınlatma sistemleriyle kurumsal standartlarda tabela üretiyoruz.',
+  features: [
+    { icon: '🔤', title: '3D Kutu Harf Üretimi', desc: 'Paslanmaz çelik, galvaniz ve alüminyum malzemelerle CNC kesim kutu harf. LED modül aydınlatma ile gece-gündüz marka görünürlüğü.' },
+    { icon: '📐', title: 'CNC Hassas Kesim', desc: 'Bilgisayar kontrollü CNC tezgahlarımızla milimetrik hassasiyette harf ve şekil kesimi. Karmaşık logolar bile kusursuz.' },
+    { icon: '💡', title: 'LED Aydınlatma Sistemleri', desc: 'Enerji tasarruflu LED modüller, adaptörler ve güç kaynakları dahil komple aydınlatma çözümleri. 50.000+ saat ömür.' },
+    { icon: '🏗️', title: 'Profesyonel Montaj', desc: 'Deneyimli montaj ekibimiz her yükseklikte güvenli ve hızlı montaj. Vinç ve platform araçlarıyla çalışıyoruz.' },
+    { icon: '📋', title: 'Ruhsat & Mevzuat Desteği', desc: 'Belediye tabela yönetmeliklerine uygun üretim. Ruhsat başvuru süreçlerinde destek ve danışmanlık.' },
+    { icon: '🎨', title: '3D Tasarım & Ön İzleme', desc: 'Üretim öncesi binanıza özel 3D modelleme ve render. Tabelanızın cephedeki görünümünü önceden görün.' },
+  ],
+  products: [
+    { title: 'Kutu Harf Tabela', desc: 'LED aydınlatmalı 3D kutu harf. Paslanmaz, galvaniz veya alüminyum gövde seçenekleri.', image: '/images/kutu-harf.jpg', href: '/urunlerimiz/kutu-harf-tabela' },
+    { title: 'Totem Tabela', desc: 'Bağımsız ayaklı totem tabela. AVM, fabrika girişi ve yol kenarı uygulamaları için ideal.', image: '/images/tabela-imalat.jpg', href: '/urunlerimiz/totem-tabela' },
+    { title: 'Çatı Tabelası', desc: 'Bina çatısına montajlı büyük ölçekli tabela. Uzak mesafeden marka görünürlüğü.', image: '/images/tabela-imalat.jpg', href: '/urunlerimiz/cati-tabelasi' },
+    { title: 'Neon-Led Tabela', desc: 'Neon görünümlü LED tabela. Düşük enerji tüketimi ile retro estetik.', image: '/images/kutu-harf.jpg', href: '/urunlerimiz/neon-led-tabela' },
+    { title: 'Işıklı Blok Tabela', desc: 'İçten aydınlatmalı kutu tabela. Vinileks veya pleksiglas yüzey seçenekleri.', image: '/images/tabela-imalat.jpg', href: '/urunlerimiz/isikli-blok-tabela' },
+    { title: 'Ofis Tabelası', desc: 'İç mekan kapı ve resepsiyon tabelaları. Şık ve kurumsal görünüm.', image: '/images/kutu-harf.jpg', href: '/urunlerimiz/ofis-tabelasi' },
+  ],
+  process: [
+    { step: '01', title: 'Ücretsiz Keşif', desc: 'Uzman ekibimiz projenizi yerinde inceler, ölçüm ve fotoğraflama yapar.' },
+    { step: '02', title: '3D Tasarım', desc: 'Binanıza özel 3D modelleme hazırlanır. Renk, boyut ve malzeme seçimi yapılır.' },
+    { step: '03', title: 'CNC Üretim', desc: 'Onaylanan tasarım CNC tezgahlarda üretilir. LED montaj ve boyama yapılır.' },
+    { step: '04', title: 'Montaj & Teslim', desc: 'Profesyonel montaj ekibi yerinde kurulum yapar. Garanti belgesi teslim edilir.' },
+  ],
+  sectors: ['Perakende & AVM', 'Sanayi & Fabrika', 'Sağlık & Hastane', 'Eğitim & Kamu', 'Otel & Restaurant', 'Banka & Finans', 'Otomotiv', 'İnşaat & Gayrimenkul', 'Hukuk Büroları', 'Eczane & Klinik'],
+  faq: [
+    { q: 'Kutu harf tabela fiyatları neye göre belirlenir?', a: 'Fiyat; harf boyutu, malzeme türü (paslanmaz, galvaniz, alüminyum), aydınlatma sistemi (LED rengi, yoğunluğu) ve montaj koşullarına göre değişir. Ücretsiz keşif sonrası net fiyat teklifi sunuyoruz.' },
+    { q: 'Tabela üretim süresi ne kadar?', a: 'Standart bir kutu harf tabela projesi keşiften montaja kadar ortalama 7-10 iş günü sürer. Acil projeler için hızlandırılmış üretim seçeneğimiz mevcuttur.' },
+    { q: 'Belediye ruhsatı konusunda yardımcı oluyor musunuz?', a: 'Evet. Tabela yönetmeliğine uygun tasarım yapıyor ve ruhsat başvuru süreçlerinde müşterilerimize destek sağlıyoruz.' },
+    { q: 'LED aydınlatma garanti süresi ne kadar?', a: 'LED modüllerimizde 2 yıl garanti sunuyoruz. LED ömrü ortalama 50.000 saattir, bu da yaklaşık 5-6 yıl kesintisiz kullanım anlamına gelir.' },
+    { q: 'İstanbul dışına tabela montajı yapıyor musunuz?', a: 'Evet. Türkiye genelinde kurumsal müşterilerimize montaj hizmeti veriyoruz. Zincir mağaza ve filo projelerde tüm şehirlerde hizmet sunuyoruz.' },
+  ],
+};
+---
+
+<HizmetDetay {...data} />

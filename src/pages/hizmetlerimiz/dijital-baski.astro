@@ -1,0 +1,41 @@
+---
+import HizmetDetay from '../../components/HizmetDetay.astro';
+
+const data = {
+  title: 'Dijital Baskı',
+  description: 'Fotoblok, kartvizit, katalog, afiş ve poster dijital baskı. Hızlı üretim, makine üzerinde renk ayarlaması, küçük partilerde ekonomik çözüm. İstanbul Pendik.',
+  heroDesc: 'Yüksek hızlı dijital baskı makinelerimizle fotoblok, kartvizit, katalog, afiş, poster ve broşür hızlı ve ekonomik olarak üretiyoruz. Küçük partilerde kurşun baskıya göre çok daha uygun, makine üzerinde renk ayarı sayesinde renk tamlığı sağlanır. Aynı gün teslim seçeneğimiz var.',
+  features: [
+    { icon: '📸', title: 'Yüksek Çözünürlüklü Fotoblok', desc: 'Fotoğraf kalitesi dijital baskı. 300 DPI ye kadar çözünürlük. Mat veya parlak yüzey seçeneği.' },
+    { icon: '🎴', title: 'Kurumsal Basılı Malzeme', desc: 'Kartvizit, kağıt, zarf, fatura formu, beyanname vs. kurumsal materyallerin çalışmaya hazır baskısı.' },
+    { icon: '📑', title: 'Katalog & Broşür', desc: 'Sağlı sollu ya da dolu yapraklı kataloglar, ciltli broşürler. Renkli ve profesyonel görünüm.' },
+    { icon: '📋', title: 'Afiş & Poster', desc: 'A4\'den A1 boyutlarına kadar renkli afiş ve posterler. Etkinlik, promosyon, metin afişleri.' },
+    { icon: '⚡', title: 'Hızlı Üretim', desc: 'Aynı gün teslim seçeneği vardır. Acil projeler için 4-6 saatte baskı yapabiliyoruz.' },
+    { icon: '💰', title: 'Küçük Partiye Uygun Fiyatlar', desc: 'Kurşun baskıdan farklı olarak kalıp hazırlık maliyeti yoktur. Tek parçadan bin parçaya kadar ekonomik.' },
+  ],
+  products: [
+    { title: 'Dijital Fotoblok', desc: 'Fotoğraf kalitesi baskılar. Mat, parlak veya premium kağıt seçenekleri. Duvar asılı ve masa üstü çerçeveli opsiyonlar.', image: '/images/dijital-baski.jpg', href: '/urunlerimiz/fotoblok' },
+    { title: 'Kartvizit', desc: 'Parlak, mat veya hatched kağıtlarda baskı. Standard 350 gr kağıt, goldfoil, vernik vb. özel seçenekler.', image: '/images/dijital-baski.jpg', href: '/urunlerimiz/kartvizit' },
+    { title: 'Katalog & Broşür', desc: 'Renkli katalog ve folyo kapaklı broşürler. A4, A3 açık gibi çeşitli boyutlarda. Cilt ve dikiş seçeneği.', image: '/images/dijital-baski.jpg', href: '/urunlerimiz/katalog' },
+    { title: 'Afiş & Poster', desc: 'A4, A3, A2, A1 boyutlarında renkli afiş. Etkinlik, işletme açılış, promosyon afişleri.', image: '/images/dijital-baski.jpg', href: '/urunlerimiz/afis' },
+    { title: 'Dosya & Mapa', desc: 'Kurumsal dosyalar, klasörler, mapalar. Ön kapak renkli, arka kapak gri kağıt seçeneği.', image: '/images/dijital-baski.jpg', href: '/urunlerimiz/dosya' },
+    { title: 'Etiket & Çıkartma', desc: 'Kısa adet etiket ve çıkartma baskıları. Kesim ve matris ebatları özel tasarımlar.', image: '/images/dijital-baski.jpg', href: '/urunlerimiz/etiket' },
+  ],
+  process: [
+    { step: '01', title: 'Dosya Hazırlığı', desc: 'PDF formatında tasarım dosyası gönderirsiniz. Renk ayarı CMYK olmalı, yüksek çözünürlük (300 DPI) gerekmektedir.' },
+    { step: '02', title: 'Baskı Öncesi Kontrol', desc: 'Dosya kontrol edilerek renk ve boyut doğruluğu sağlanır. Düzeltme gerekirse bildiririz.' },
+    { step: '03', title: 'Dijital Baskı', desc: 'Malzemeniz dijital baskı makinesine yüklenir. Makine üzerinde renk ayarı yapılarak yüksek kalitede baskı sağlanır.' },
+    { step: '04', title: 'Sonlandırma & Teslim', desc: 'Kesim, katlanma, cilt vb. işlemler yapılır. Kontrol ve paketleme sonrası teslim edilir.' },
+  ],
+  sectors: ['Perakende & AVM', 'Sağlık & Hastane', 'Eğitim & Kamu', 'Sanayi & Fabrika', 'Banka & Finans', 'Hukuk Büroları', 'Turizm & Otelcilik', 'Pazarlama & Reklam', 'Medya & Yayın', 'Organizasyon & Etkinlik'],
+  faq: [
+    { q: 'Dijital baskı ve kurşun baskı farkı nedir?', a: 'Dijital baskıda kalıp hazırlık maliyeti yoktur, küçük partilerde ekonomiktir ve hızlıdır. Kurşun baskı yüksek baskı sayılarında (5000+) daha uygun hale gelir ve farklı kağıt türlerine baskı yapabilir.' },
+    { q: 'Renk doğruluğu ne kadar garantili?', a: 'Pantone renk eşleştirmesi yapıyor, CMYK renk profili ayarlaması sağlıyoruz. Test baskı önerilir ve ek ücretle yapılabilir.' },
+    { q: 'Hangi kağıt türleri kullanılıyor?', a: 'Renkli kağıt (90-350 gr), mat kağıt, parlak kağıt, kraft kağıt, eko kağıt gibi çeşitli seçenekler sunuyoruz. Özel kağıt istiyorsanız getirtebiliriz.' },
+    { q: 'Tasarım hizmetiniz var mı?', a: 'Evet. Grafik tasarımcı ekibimiz tasarım konusunda danışmanlık veya tasarım hizmetleri sunabilir. Ücret tasarım karmaşıklığına göre değişir.' },
+    { q: 'Aynı gün teslim gerçek mi?', a: 'Sabah erken saatlerde gelen ve acil işlemlenen siparişler aynı gün teslim edilebilir. Saat 11\'den önce onaylanmış basit siparişler için mümkündür.' },
+  ],
+};
+---
+
+<HizmetDetay {...data} />

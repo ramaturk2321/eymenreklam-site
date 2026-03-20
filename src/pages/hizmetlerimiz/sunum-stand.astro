@@ -1,0 +1,41 @@
+---
+import HizmetDetay from '../../components/HizmetDetay.astro';
+
+const data = {
+  title: 'Sunum & Stand',
+  description: 'Lightbox, roll-up, x-banner ve etkinlik standları. Taşınabilir ve dayanıklı sunum sistemleri. İstanbul Pendik.',
+  heroDesc: 'Etkinlik, ticari fuarlar ve mağaza tasarımlarında kullanılan ışıklı tabelalar, roll-up bannerlar, x-bannerlar ve özel stand sistemleri tasarlayıp üretiyoruz. Alüminyum iskelet, LED aydınlatma ve yüksek kaliteli baskılı panellerle profesyonel sunum çözümleri sağlıyoruz.',
+  features: [
+    { icon: '💡', title: 'LED Lightbox', desc: 'İç mekan mağaza ve resepsiyon lightbox. Enerji tasarruflu LED aydınlatma, çıkartılabilir panel.' },
+    { icon: '📍', title: 'Roll-Up Banner', desc: 'Taşınabilir roll-up sistem. Pratik kurulum ve katlama. Dayanıklı alüminyum iskelet.' },
+    { icon: '✕', title: 'X-Banner & L-Banner', desc: 'Kolay kurulum bannerleri. Ticari fuarlar, etkinlik ve mağaza standlarında kullanılır.' },
+    { icon: '🎪', title: 'Etkinlik Stand Sistemi', desc: 'Modüler stand sistemleri. Ticari fuarlar, konferans ve sergiler için özel tasarımlar.' },
+    { icon: '🖼️', title: 'Baskılı Panel Tasarımı', desc: 'Yüksek kaliteli panel baskıları. Kişiselleştirilmiş tasarım ve kurumsal id uygulaması.' },
+    { icon: '⚙️', title: 'Teknik Destek & Kurulum', desc: 'Proje öncesinde danışmanlık, kurulum rehberi ve teknik destek sunuyoruz.' },
+  ],
+  products: [
+    { title: 'LED Lightbox', desc: 'İç mekan ışıklı tabelalar. Mağaza, resepsiyon ve otel giris aydınlatması. Enerji tasarruflu LED.', image: '/images/tabela-imalat.jpg', href: '/urunlerimiz/lightbox' },
+    { title: 'Roll-Up Banner', desc: 'Taşınabilir roll-up sistem. Pratik kurulum, alüminyum iskelet. Ofis, stand ve etkinlik için.', image: '/images/tabela-imalat.jpg', href: '/urunlerimiz/roll-up' },
+    { title: 'X-Banner & L-Banner', desc: 'Ucuz ve pratik stand bannerleri. Ticari fuar ve etkinlik standlarında kullanılan sistem.', image: '/images/tabela-imalat.jpg', href: '/urunlerimiz/x-banner' },
+    { title: 'Pop-Up Stand', desc: 'Katlanabilir pop-up stand sistemi. Taşınabilir ve kurulumu 5 dakika alır.', image: '/images/tabela-imalat.jpg', href: '/urunlerimiz/pop-up-stand' },
+    { title: 'Ticari Fuar Standı', desc: 'Özel tasarım modüler stand sistemi. İlaç, teknoloji ve sanayi fuarları için.', image: '/images/tabela-imalat.jpg', href: '/urunlerimiz/fuar-standi' },
+    { title: 'Baskılı Panel Sistemi', desc: 'Çeşitli boyutlarda baskılı panellar. Stand sistemine kaplama, duvar dekorasyonu.', image: '/images/tabela-imalat.jpg', href: '/urunlerimiz/baski-panel' },
+  ],
+  process: [
+    { step: '01', title: 'Konsept & Tasarım', desc: 'Bütçe ve ihtiyaçlara göre sunum sistemi konsepti belirlenir. 3D tasarım hazırlanır.' },
+    { step: '02', title: 'Malzeme & İmalat', desc: 'Alüminyum iskelet, akrilik panel vb. bileşenler hazırlanır. Baskı işlemleri yapılır.' },
+    { step: '03', title: 'Montaj & Test', desc: 'Sistem üretime kurulup test edilir. Kalite kontrol yapılır, kurulum rehberi hazırlanır.' },
+    { step: '04', title: 'Teslim & Kurulum Desteği', desc: 'Ambalajlanarak teslim edilir. Etkinlik alanında kurulum desteği ve teknik rehberlik sağlanır.' },
+  ],
+  sectors: ['Pazarlama & Reklam', 'Organizasyon & Etkinlik', 'Perakende & AVM', 'Sanayi & Fabrika', 'Teknoloji & Yazılım', 'Sağlık & Hastane', 'Turizm & Otelcilik', 'Eğitim & Kamu', 'Finans & Sigortacılık', 'İnşaat & Gayrimenkul'],
+  faq: [
+    { q: 'Roll-up banner kurulumu ne kadar hızlı?', a: 'Roll-up banner sistem 1-2 dakika içinde kuruluyor. Sadece ayaklı alüminyum iskeletin üzerine panel çekilir. Taşınması da çok pratiktir.' },
+    { q: 'Lightbox LED ömrü ne kadar?', a: 'LED modüllerimiz 50.000 saat ömürlüdür. Bu da 5-6 yıl kesintisiz kullanımı demektir. 2 yıl garantili sunuyoruz.' },
+    { q: 'X-Banner ve roll-up arasındaki fark nedir?', a: 'X-banner daha ucuz ve basittir. Roll-up daha profesyonel görünüyor, dayanıklı malzeme kullanır ve daha uzun ömürlüdür.' },
+    { q: 'Stand paneli tahrip olursa değiştirebilir miyim?', a: 'Evet. Paneller değiştirilir. Eskisini gönderirseniz aynı boyutda yeni panel üretip göndeririz (ücretli).' },
+    { q: 'Stand sistemi kaç defa kullanılabilir?', a: 'Alüminyum iskelet sınırsız kullanılabilir. Panel 50-100 kullanım sonrası aşınmaya başlayabilir, bu da 2-3 yıldır.' },
+  ],
+};
+---
+
+<HizmetDetay {...data} />

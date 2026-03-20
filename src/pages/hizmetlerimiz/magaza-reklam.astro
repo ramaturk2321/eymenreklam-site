@@ -1,0 +1,41 @@
+---
+import HizmetDetay from '../../components/HizmetDetay.astro';
+
+const data = {
+  title: 'Mağaza Reklam Uygulamaları',
+  description: 'Perakende store branding, konsept tasarım, vitrini tasarımı, iç mekan dekorasyonu. Anahtar teslim mağaza reklam çözümleri. İstanbul Pendik.',
+  heroDesc: 'Perakende mağazalar için anahtar teslim reklam ve branding çözümleri sunuyoruz. Giriş dekorasyon, vitrin tasarımı, iç mekan grafikleri, raf etiketleri ve promosyon afişlerinden oluşan komple çözümler sağlıyoruz. Kurumsal kimliğinizi mağazada yaşatan, satış artışını hedefleyen tasarım ve uygulama hizmetleri.',
+  features: [
+    { icon: '🎨', title: 'Konsept & Stil Tasarımı', desc: 'Mağazanızın kimliğine uygun konsept tasarımı. Renk, tipografi ve visual hierarchi uygunluğu sağlanır.' },
+    { icon: '🪟', title: 'Vitrini Tasarımı', desc: 'Dikkat çekici ve satış odaklı vitrin düzenlemesi. Sezonsal değişim ve promosyon tasarımı.' },
+    { icon: '📍', title: 'İç Mekan Dekorasyonu', desc: 'Duvar grafikleri, raf dekorasyonu, tavan tasarımı. Alışveriş deneyimini artırıcı ortam yaratma.' },
+    { icon: '💰', title: 'POS & Etiket Tasarımı', desc: 'Ürün etiketleri, fiyat etiketleri, promosyon afişleri. Satış noktası grafikleri.' },
+    { icon: '🚪', title: 'Giriş & Entrance Tasarımı', desc: 'Mağaza girişi dekorasyon. Kapı, kemerleri, giriş hol tasarımı.' },
+    { icon: '✨', title: 'Mevsimsel & Tema Dekor', desc: 'Yılbaşı, oruç bayramı, sezon dekorasyonları. Tema bazlı iç mekan değişimleri.' },
+  ],
+  products: [
+    { title: 'Mağaza Giriş Dekorasyon', desc: 'Kapı, kemerler ve giriş hol tasarımı. Mağazaya giren müşteriye ilk izlenim oluşturma.', image: '/images/cephe-giydirme.jpg', href: '/urunlerimiz/magaza-girisi' },
+    { title: 'Vitrin Tasarımı & Uygulaması', desc: 'Teşhir vitrinlerinin tasarımı ve montajı. Sezonsal ve tematik vitrin değişimleri.', image: '/images/cephe-giydirme.jpg', href: '/urunlerimiz/vitrin-tasarimi' },
+    { title: 'Duvar Grafikleri & Mural', desc: 'İç mekan duvar grafikleri, ürün tanıtım muralları, marka slogan uygulamaları.', image: '/images/cephe-giydirme.jpg', href: '/urunlerimiz/duvar-grafigi' },
+    { title: 'Raf & Reyon Tasarımı', desc: 'Ürün raf tasarımı, raf etiketleri, promosyon görselleri. Satış noktası düzenlemesi.', image: '/images/cephe-giydirme.jpg', href: '/urunlerimiz/raf-tasarimi' },
+    { title: 'Promosyon & Etkinlik Dekor', desc: 'Mevsimsel promosyon dekorasyonu, fırsat ve kampanya afişleri, tema dekor uygulamaları.', image: '/images/cephe-giydirme.jpg', href: '/urunlerimiz/promosyon-dekor' },
+    { title: 'Kurumsal ID Uygulaması', desc: 'Mağaza içinde tutarlı kurumsal kimlik uygulaması. Logo, renk, tipografi standartlaştırması.', image: '/images/cephe-giydirme.jpg', href: '/urunlerimiz/kurumsal-id' },
+  ],
+  process: [
+    { step: '01', title: 'Konsept & Analiz', desc: 'Mağazanın cinsiyeti, hedef müşterisi, ürün çeşidi analiz edilir. Brand kimliği ve pazar durumu incelenir.' },
+    { step: '02', title: 'Tasarım & Öncü İzleme', desc: '3D görseller ve mockup ile tasarım sunulur. Müşteri onayından sonra final tasarım hazırlanır.' },
+    { step: '03', title: 'İmalat & Hazırlık', desc: 'Grafikler, etiketler, dekoratif elemanlar üretilir. Malzeme ve aksesuarlar hazırlanır.' },
+    { step: '04', title: 'Montaj & Kurulum', desc: 'Profesyonel ekip tarafından yerinde montaj yapılır. Açılış hazırlığı ve ince ayar tamamlanır.' },
+  ],
+  sectors: ['Perakende & AVM', 'Tekstil & Moda', 'Elektronik & Teknoloji', 'Gıda & Kahvehane', 'Spor & Rekreasyon', 'Kozmetik & Güzellik', 'Ayakkabı & Çanta', 'Mobilya & Ev', 'Turizm & Otelcilik', 'Sağlık & Eczane'],
+  faq: [
+    { q: 'Mağaza branding projesinin süresi ne kadar?', a: 'Konsept tasarımdan sonra 3-4 hafta sürer. Tasarım onayından üretim ve montaja kadar ortalama 10 iş gününü alır.' },
+    { q: 'Küçük mağazalar için de hizmet veriliyor mu?', a: 'Evet. Bütçenize göre küçük çaplı dekorasyon ve vitrin tasarımından anahtar teslim çözümlere kadar farklı paketler sunuyoruz.' },
+    { q: 'Zincir mağaza konsepti uyguluyorsunuz?', a: 'Evet. Birden fazla mağazanız varsa tutarlı kimlik sağlamak adına denetim listeleri ve uygulama rehberleri hazırlarız.' },
+    { q: 'Mevsimsel dekorasyon değişimi ne kadar sık yapılmalı?', a: 'Perakende sektörüne göre değişir. Fashion her 2 haftada, gıda/genel ticari mağazalar ayda bir, elektronik 3 ayda bir değiştirilebilir.' },
+    { q: 'Mağazanız tasarlamadığım alet eser, yardımcı olabilir misiniz?', a: 'Evet. Tam iş güvenliği ve tasarım konsultasyonuyla mevcut mağazanızı yeniden tasarımlayabiliriz. Rehab projeleri için bütçe planlaması yapabiliriz.' },
+  ],
+};
+---
+
+<HizmetDetay {...data} />

@@ -3,52 +3,76 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 
 const services = [
   {
-    title: 'Kutu Harf Tabela',
-    desc: 'LED aydınlatmalı 3D kutu harf üretimi. Paslanmaz çelik, galvaniz, alüminyum ve pleksiglas malzemelerle üretim. Gündüz ve gece etkili marka görünürlüğü sağlar.',
-    features: ['LED Aydınlatma', 'Paslanmaz Çelik', 'Pleksiglas', 'CNC Kesim'],
+    title: 'Tabela İmalatı',
+    desc: 'Kutu harf, totem, çatı, cephe ve yönlendirme tabelaları. CNC kesim ve LED aydınlatma ile anahtar teslim üretim ve montaj.',
+    features: ['Kutu Harf', 'Totem', 'Çatı Tabelası', 'Neon-Led', 'Işıklı Blok', 'Ofis Tabelası'],
     image: '/images/kutu-harf.jpg',
+    href: '/hizmetlerimiz/tabela',
+    icon: '🔤',
   },
   {
     title: 'UV Baskı',
-    desc: 'SwissQprint UV baskı makinemiz ile ahşap, cam, metal, plastik ve deri yüzeylere doğrudan yüksek çözünürlüklü baskı. Dayanıklı ve solmaya karşı dirençli.',
-    features: ['Doğrudan Baskı', 'Yüksek Çözünürlük', 'Çok Yüzey', 'UV Dayanım'],
+    desc: 'SwissQprint UV baskı makinemiz ile cam, metal, ahşap, plastik ve deri yüzeylere doğrudan yüksek çözünürlüklü baskı.',
+    features: ['Cam Baskı', 'Metal Baskı', 'Ahşap Baskı', 'Pleksi Baskı'],
     image: '/images/uv-baski.jpg',
-  },
-  {
-    title: 'Araç Giydirme',
-    desc: 'Komple ve kısmi araç kaplama hizmeti. Yüksek kaliteli cast folyo ile filo branding, ticari araç giydirme ve özel tasarım uygulamaları.',
-    features: ['Cast Folyo', 'Filo Branding', 'Kısmi Kaplama', 'Tasarım Desteği'],
-    image: '/images/arac-giydirme.jpg',
-  },
-  {
-    title: 'Tabela İmalatı',
-    desc: 'Totem tabela, çatı tabelası, cephe tabelası, yönlendirme tabelası ve ofis tabelası. Keşiften montaja anahtar teslim üretim.',
-    features: ['Totem', 'Çatı Tabelası', 'Cephe', 'Yönlendirme'],
-    image: '/images/tabela-imalat.jpg',
-  },
-  {
-    title: 'Cephe Giydirme',
-    desc: 'Folyo, kompozit panel ve dijital baskı ile bina cephesi kaplama. Mağaza, plaza ve sanayi tesisi cephe yenileme projeleri.',
-    features: ['Folyo Kaplama', 'Kompozit Panel', 'Dijital Baskı', 'Montaj'],
-    image: '/images/cephe-giydirme.jpg',
+    href: '/hizmetlerimiz/uv-baski',
+    icon: '🖨️',
   },
   {
     title: 'Dijital Baskı',
-    desc: 'Branda, vinil, mesh, kumaş ve kağıt baskı. İç ve dış mekan reklam çözümleri. Yüksek m² üretim kapasitesi.',
-    features: ['Branda', 'Vinil', 'Mesh Baskı', 'Kumaş Baskı'],
+    desc: 'Fotoblok, kartvizit, katalog, afiş ve poster baskı. Yüksek çözünürlük ve hızlı üretim kapasitesi.',
+    features: ['Fotoblok', 'Kartvizit', 'Katalog', 'Mat Kağıt Afiş'],
     image: '/images/dijital-baski.jpg',
+    href: '/hizmetlerimiz/dijital-baski',
+    icon: '📄',
   },
   {
     title: 'Folyo & Giydirme',
-    desc: 'Cam folyo, kumlama folyo, one way vision, cephe folyo ve folyo harf kesim uygulamaları. İç ve dış mekan çözümleri.',
-    features: ['Cam Folyo', 'Kumlama', 'One Way Vision', 'Harf Kesim'],
-    image: '/images/cephe-giydirme.jpg',
+    desc: 'Araç giydirme, cephe folyo, cam folyo, one way vision ve folyo harf kesim. Komple ve kısmi kaplama çözümleri.',
+    features: ['Araç Kaplama', 'Cephe Folyo', 'Cam Folyo', 'One Way Vision', 'Kamyon/Tır'],
+    image: '/images/arac-giydirme.jpg',
+    href: '/hizmetlerimiz/folyo-giydirme',
+    icon: '🚗',
   },
   {
-    title: 'Display & Stand',
-    desc: 'Lightbox pano, roll-up banner, X banner, fuar standı ve sunum ekipmanları. Taşınabilir ve kalıcı sergileme çözümleri.',
-    features: ['Lightbox', 'Roll-Up', 'Fuar Standı', 'X Banner'],
+    title: 'Bez Baskı',
+    desc: 'Branda, mesh, pankart ve kampanya afişi baskı. İç ve dış mekan bez baskı çözümleri.',
+    features: ['Branda', 'Mesh Branda', 'Pankart', 'Kampanya Afişi'],
     image: '/images/dijital-baski.jpg',
+    href: '/hizmetlerimiz/bez-baski',
+    icon: '🏗️',
+  },
+  {
+    title: 'Afiş Baskı',
+    desc: 'Vinil afiş, branda afiş, bez pankart ve poster baskı. Her boyutta iç ve dış mekan çözümleri.',
+    features: ['Vinil Afiş', 'Branda Afiş', 'Bez Pankart', 'Poster'],
+    image: '/images/dijital-baski.jpg',
+    href: '/hizmetlerimiz/afis-baski',
+    icon: '🖼️',
+  },
+  {
+    title: 'Sunum & Stand',
+    desc: 'Lightbox pano, roll-up banner, X banner ve fuar standı. Taşınabilir ve kalıcı sergileme çözümleri.',
+    features: ['Lightbox', 'Roll-Up', 'X Banner', 'Fuar Standı'],
+    image: '/images/dijital-baski.jpg',
+    href: '/hizmetlerimiz/sunum-stand',
+    icon: '📐',
+  },
+  {
+    title: 'İş Güvenliği Levhaları',
+    desc: 'İSG mevzuatına uygun uyarı, yasak, bilgi ve yangın güvenliği levhaları. Fotolüminesans ve standart seçenekler.',
+    features: ['Uyarı Levhası', 'Yangın', 'Yasak', 'Bilgi Levhası'],
+    image: '/images/tabela-imalat.jpg',
+    href: '/hizmetlerimiz/is-guvenligi',
+    icon: '⚠️',
+  },
+  {
+    title: 'Mağaza Reklam Uygulamaları',
+    desc: 'Mağaza konsept tasarımı, vitrin düzenlemesi, raf etiketleme ve iç mekan branding. Anahtar teslim mağaza çözümleri.',
+    features: ['Konsept Tasarım', 'Vitrin', 'Raf Etiket', 'İç Mekan'],
+    image: '/images/cephe-giydirme.jpg',
+    href: '/hizmetlerimiz/magaza-reklam',
+    icon: '🏢',
   },
 ];
 ---
@@ -56,71 +80,57 @@ const services = [
 <BaseLayout title="Hizmetlerimiz" description="Eymen Reklam hizmetleri: Tabela imalatı, UV baskı, araç giydirme, dijital baskı, cephe giydirme ve daha fazlası. 25 yıllık tecrübe ile Pendik İstanbul.">
 
   <!-- Hero -->
-  <section class="bg-koyu-900 py-16 md:py-24">
+  <section class="bg-koyu-900 pt-32 pb-16 md:pt-40 md:pb-24">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
       <p class="text-eymen-400 text-sm font-semibold uppercase tracking-wider mb-3">25 Yıllık Uzmanlık</p>
       <h1 class="text-4xl md:text-5xl font-extrabold text-white mb-4">Hizmetlerimiz</h1>
       <p class="text-koyu-400 text-lg max-w-2xl mx-auto">
         Tabela imalatından UV baskıya, araç giydirmeden dijital baskıya kadar
-        tüm reklam ihtiyaçlarınız için profesyonel çözümler.
+        tüm kurumsal reklam ihtiyaçlarınız için profesyonel çözümler.
       </p>
     </div>
   </section>
 
-  <!-- Hizmet Listesi -->
+  <!-- Hizmet Grid -->
   <section class="py-16 md:py-24">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="space-y-20">
-        {services.map((service, i) => (
-          <div class:list={['grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center', i % 2 === 1 && 'lg:direction-rtl']}>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        {services.map(service => (
+          <a href={service.href} class="group bg-white rounded-2xl border border-koyu-100 overflow-hidden hover:shadow-xl hover:border-eymen-200 transition-all duration-300 hover:-translate-y-1">
             <!-- Görsel -->
-            <div class:list={[i % 2 === 1 && 'lg:order-2']}>
-              <div class="bg-koyu-100 rounded-2xl aspect-[4/3] overflow-hidden">
-                <img src={service.image} alt={service.title} class="w-full h-full object-cover" loading="lazy" />
-              </div>
+            <div class="aspect-[16/10] overflow-hidden relative bg-koyu-200">
+              <img src={service.image} alt={service.title} class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" />
+              <span class="absolute top-3 left-3 text-2xl bg-white/90 w-10 h-10 rounded-xl flex items-center justify-center">{service.icon}</span>
             </div>
-
             <!-- İçerik -->
-            <div class:list={[i % 2 === 1 && 'lg:order-1']}>
-              <h2 class="text-2xl md:text-3xl font-extrabold text-koyu-900 mb-4">{service.title}</h2>
-              <p class="text-koyu-600 leading-relaxed mb-6">{service.desc}</p>
-
-              <!-- Özellikler -->
-              <div class="flex flex-wrap gap-2 mb-6">
+            <div class="p-6">
+              <h2 class="text-xl font-bold text-koyu-900 mb-2 group-hover:text-eymen-600 transition-colors">{service.title}</h2>
+              <p class="text-sm text-koyu-500 leading-relaxed mb-4">{service.desc}</p>
+              <div class="flex flex-wrap gap-1.5">
                 {service.features.map(f => (
-                  <span class="px-3 py-1 bg-eymen-50 text-eymen-700 text-xs font-semibold rounded-full">{f}</span>
+                  <span class="px-2.5 py-1 bg-koyu-50 text-koyu-600 text-xs font-medium rounded-full">{f}</span>
                 ))}
               </div>
-
-              <a
-                href="https://wa.me/905356647752?text=Merhaba%2C%20{encodeURIComponent(service.title)}%20hakkında%20bilgi%20almak%20istiyorum."
-                target="_blank"
-                rel="noopener noreferrer"
-                class="inline-flex items-center gap-2 bg-eymen-500 hover:bg-eymen-600 text-white px-6 py-3 rounded-xl text-sm font-semibold transition-colors"
-              >
-                Teklif Al
-                <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
-              </a>
             </div>
-          </div>
+          </a>
         ))}
       </div>
     </div>
   </section>
 
   <!-- CTA -->
-  <section class="bg-eymen-500 py-16">
+  <section class="bg-gradient-to-br from-eymen-500 to-eymen-700 py-16">
     <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-      <h2 class="text-3xl font-extrabold text-white mb-4">Projeniz İçin Ücretsiz Keşif</h2>
-      <p class="text-eymen-100 mb-8">Uzman ekibimiz projenizi yerinde inceler, en uygun çözümü ve fiyatı sunar.</p>
-      <a
-        href="https://wa.me/905356647752?text=Merhaba%2C%20ücretsiz%20keşif%20talep%20ediyorum."
-        target="_blank"
-        rel="noopener noreferrer"
-        class="inline-flex items-center gap-2 bg-white text-eymen-600 hover:bg-koyu-50 px-8 py-4 rounded-xl text-base font-bold transition-all"
-      >
-        Ücretsiz Keşif ve Teklif Alın
-      </a>
+      <h2 class="text-3xl font-extrabold text-white mb-4">Projeniz İçin Kurumsal Teklif Alın</h2>
+      <p class="text-eymen-100 mb-8">Uzman ekibimiz projenizi inceler, 3D ön izleme hazırlar ve detaylı fiyat teklifi sunar.</p>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <a href="/teklif-al" class="inline-flex items-center justify-center gap-2 bg-white text-eymen-600 hover:bg-koyu-50 px-8 py-4 rounded-xl text-base font-bold transition-all">
+          Kurumsal Teklif Formu
+        </a>
+        <a href="tel:+902163790708" class="inline-flex items-center justify-center gap-2 border-2 border-white/30 hover:border-white/60 text-white px-8 py-4 rounded-xl text-base font-semibold transition-all">
+          (0216) 379 07 08
+        </a>
+      </div>
     </div>
   </section>
 

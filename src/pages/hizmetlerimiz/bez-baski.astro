@@ -1,0 +1,41 @@
+---
+import HizmetDetay from '../../components/HizmetDetay.astro';
+
+const data = {
+  title: 'Bez Baskı',
+  description: 'Branda, mesh, pankart ve banner baskı. Dirençli bez malzeme, geniş format baskı, açık hava dayanıklılığı. İstanbul Pendik.',
+  heroDesc: 'Dirençli bez malzemelere geniş format baskı yapıyoruz. Branda, mesh (harita), kampanya pankartları, depo ve inşaat alanı örtüleri, açık hava bannerları ve festival dekorasyonu gibi uygulamalar yapıyoruz. UV ve yağmurun altında dayanıklı, renkli baskılar 3-5 yıl direnç gösterir.',
+  features: [
+    { icon: '🏗️', title: 'Branda & Örtü', desc: 'Depo, inşaat, şantiye örtüleri. Açık hava koşullarında 3+ yıl dayanıklı bezler.' },
+    { icon: '🗺️', title: 'Mesh Folyo Baskı', desc: 'Ince dokulu bez, yüksek çözünürlükte baskı. Bina cephesi örtüsü, vinç örtüsü olarak kullanılır.' },
+    { icon: '📢', title: 'Kampanya Bannerları', desc: 'Etkinlik, festival, açı kapanış kampanya bannerları. Güçlü renk ve yüksek görünürlük.' },
+    { icon: '🎪', title: 'Event Dekorasyonu', desc: 'Çadır arkası, sahne arka plankton, tnt örtü baskıları. Etkinlik ve organizasyonlar için.' },
+    { icon: '⚡', title: 'Yüksek Hız Baskı', desc: 'Geniş format baskı makineleriyle metre başına baskı. Hızlı üretim, hızlı kesim ve dikiş.' },
+    { icon: '🔗', title: 'Dış Mekan Dayanıklılığı', desc: 'UV ve yağmur dirençli mürekkepler. Güneş ve kış koşullarında 3-5 yıl dayanır.' },
+  ],
+  products: [
+    { title: 'Branda & Şantiye Örtüsü', desc: 'Depo, inşaat ve şantiye alanlarını örten branda. Kargo yazılı veya kurumsal branda seçenekleri.', image: '/images/tabela-imalat.jpg', href: '/urunlerimiz/branda' },
+    { title: 'Mesh (Harita) Baskı', desc: 'İnce gözenekli bez folyo. Yüksek çözünürlükte imajlar, bina cephesine montaj için ideal.', image: '/images/tabela-imalat.jpg', href: '/urunlerimiz/mesh-baski' },
+    { title: 'Kampanya Pankartı', desc: 'Açılış, kapanış, indirim, etkinlik kampanya pankartları. Renkli ve dikkat çekici tasarımlar.', image: '/images/tabela-imalat.jpg', href: '/urunlerimiz/kampanya-pankart' },
+    { title: 'Banner & Sling', desc: 'Yol kenarı, sokak bannerları ve sling bayraklar. Döner montaj sistemleriyle hızlı kurulum.', image: '/images/tabela-imalat.jpg', href: '/urunlerimiz/banner' },
+    { title: 'Festival & Event Dekor', desc: 'Etkinlik ve festival arka planları. Çadır arkası, sahne dekorasyonu, hobi alanları.', image: '/images/tabela-imalat.jpg', href: '/urunlerimiz/event-dekor' },
+    { title: 'TNT & Parti Dekoru', desc: 'Parti, düğün, davet alanı dekorasyon bezleri. Kişiselleştirilmiş tasarım ve logo uygulaması.', image: '/images/tabela-imalat.jpg', href: '/urunlerimiz/tnt-dekor' },
+  ],
+  process: [
+    { step: '01', title: 'Tasarım Onayı', desc: 'Tasarım dosyası hazırlanır. Boyut, renk ve bez malzeme seçimi yapılır.' },
+    { step: '02', title: 'Bez Seçimi & Hazırlık', desc: 'Uygulamaya göre branda, mesh veya TNT bez seçilir. Baskı makinesine yüklenir.' },
+    { step: '03', title: 'Geniş Format Baskı', desc: 'Geniş format baskı makinesiyle bez üzerine tasarım basmılır. Renk tamlığı ve kalitesi kontrol edilir.' },
+    { step: '04', title: 'Kesim, Dikiş & Delik', desc: 'Tasarıma göre kesim yapılır, kenarlar dikiş ile sıvandırılır. İhtiyaç halinde delik açılır.' },
+  ],
+  sectors: ['İnşaat & Gayrimenkul', 'Pazarlama & Reklam', 'Organizasyon & Etkinlik', 'Otomotiv & Lojistik', 'Perakende & AVM', 'Sanayi & Fabrika', 'Turizm & Otelcilik', 'Spor & Rekreasyon', 'Sağlık & Hastane', 'Kamu & Belediye'],
+  faq: [
+    { q: 'Branda baskı dayanıklılığı ne kadar?', a: 'Yüksek kaliteli mesh ve branda bezler 3-5 yıl güneş altında dayanır. Bakım (temizlik) ve havalandırma işlemleriyle daha uzun ömür sağlanabilir.' },
+    { q: 'Branda dikişi güçlü mü?', a: 'Evet. Industrial dikiş makineleriyle dikişler yapılır. Kenarlar çift dikişle sıvandırılarak maksimum dayanıklılık sağlanır.' },
+    { q: 'Mesh ve branda arasındaki fark nedir?', a: 'Branda yoğun bez, tam kapasite. Mesh ince gözenekli bez, hafif ve yüksek çözünürlüklü imajlar için uygun. Mesh cam arkasında kullanılırsa rüzgardan daha az etkilenir.' },
+    { q: 'En büyük baskı boyutu ne kadar?', a: 'Geniş format baskı makinemiz 3,5 m eninde baskı yapabiliyor. Uzunluk sınırı yoktur, metre başına hesaplanır.' },
+    { q: 'Özel renk istiyorsam?', a: 'CMYK renkle çalışıyoruz. Pantone renk eşleştirmesi yapabiliriz ama görünüm farklı olabilir (bez yapısından kaynaklanır). Parlak yüzeyden daha az sıcak olmaz.' },
+  ],
+};
+---
+
+<HizmetDetay {...data} />
