@@ -1,0 +1,40 @@
+{
+  "title": "Afiş Baskı",
+  "description": "Vinil afiş, branda afiş ve bez pankart baskı. Geniş format, dış mekan dayanıklı, A0'a kadar boyutlar. İstanbul Pendik.",
+  "heroDesc": "Vinil folyo, branda ve bez malzemelere afiş baskı yapıyoruz. A4'den A0 ve daha büyük boyutlara kadar profesyonel afiş üretiyoruz. Etkinlik, ticari kampanya, sosyal haber, bulvar afişleri ve reklam ilanları için hızlı, yüksek kaliteli çözümler sunuyoruz.",
+  "order": 6,
+  "listIcon": "🖼️",
+  "listDesc": "Vinil afiş, branda afiş, bez pankart ve poster baskı. Her boyutta iç ve dış mekan çözümleri.",
+  "listFeatures": ["Vinil Afiş", "Branda Afiş", "Bez Pankart", "Poster"],
+  "listImage": "/images/dijital-baski.jpg",
+  "features": [
+    { "icon": "📋", "title": "Vinil Afiş Baskı", "desc": "Mat, parlak ve özel vinil malzemelere baskı. Kurumsal afişler ve reklam ilanları için ideal." },
+    { "icon": "🎨", "title": "Branda Afiş", "desc": "Dayanıklı branda malzemeye renkli baskı. Dış mekan uygulamaları, 3+ yıl direktif." },
+    { "icon": "📢", "title": "Bez Pankart", "desc": "TNT ve mesh bezlere baskı. Etkinlik, festival, kampanya pankartları." },
+    { "icon": "📐", "title": "Geniş Format Baskı", "desc": "A0 (84×118 cm) ve üzeri boyutlar. Meter başına hızlı üretim kapasitesi." },
+    { "icon": "✨", "title": "Yüksek Kalite Renk", "desc": "CMYK profesyonel renk ayarı. Pantone eşleştirmesi ve renk doğruluğu garantisi." },
+    { "icon": "⚡", "title": "Hızlı Üretim", "desc": "Tasarım onayından 24-48 saatte teslim. Acil projeler için ekspres seçeneği." }
+  ],
+  "products": [
+    { "title": "Afiş Baskı", "desc": "A4'den A0 boyutlarına kadar vinil ve kağıt afiş. Kurumsal, reklam, etkinlik afişleri.", "image": "/images/urunler/afis-baski-1.jpg", "href": "/urunlerimiz/afis-baski" },
+    { "title": "Afiş Branda", "desc": "Açık hava afişleri. Sokak, bulvar ve bina cephe montajı için dayanıklı branda baskı.", "image": "/images/urunler/afis-branda-1.jpg", "href": "/urunlerimiz/afis-branda" },
+    { "title": "Parlak Kağıt Afiş", "desc": "Parlak kuşe kağıda yüksek çözünürlüklü afiş baskı. Canlı renkler ve net detaylar.", "image": "/images/urunler/parlak-afis-1.jpg", "href": "/urunlerimiz/parlak-kagit-afis" },
+    { "title": "Mat Kağıt Afiş", "desc": "Mat kuşe kağıda afiş baskı. Yansımasız, profesyonel görünüm.", "image": "/images/urunler/mat-kagit-1.jpg", "href": "/urunlerimiz/mat-kagit-afis" },
+    { "title": "Bez Pankart", "desc": "TNT ve mesh bez pankartlar. Renkli kampanya ve etkinlik afişleri.", "image": "/images/urunler/bez-pankart-1.webp", "href": "/urunlerimiz/bez-pankart" },
+    { "title": "Emlak İlan Branda", "desc": "Emlak ofisleri ve inşaat projeleri için ilan brandaları.", "image": "/images/urunler/emlak-branda-1.jpg", "href": "/urunlerimiz/emlak-ilan-branda" }
+  ],
+  "process": [
+    { "step": "01", "title": "Tasarım & Format", "desc": "Tasarım dosyası hazırlanır. Baskı boyutu, malzeme ve renk profili belirlenir." },
+    { "step": "02", "title": "Dosya Kontrol", "desc": "Tasarım kontrol edilerek boyut, çözünürlük ve renk uyumu sağlanır." },
+    { "step": "03", "title": "Geniş Format Baskı", "desc": "Seçilen malzeme baskı makinesine yüklenir. Tasarım yüksek kalitede basmılır." },
+    { "step": "04", "title": "Kesim & Paketleme", "desc": "Kesilir, kenarlar işlenir. Montaj noktaları işaretlenir. Paketlenerek teslim edilir." }
+  ],
+  "sectors": ["Pazarlama & Reklam", "Organizasyon & Etkinlik", "Perakende & AVM", "Sağlık & Hastane", "Eğitim & Kamu", "Turizm & Otelcilik", "Kültür & Sanat", "Spor & Rekreasyon", "İnşaat & Gayrimenkul", "Gıda & Restoran"],
+  "faq": [
+    { "q": "En büyük afiş boyutu ne kadar?", "a": "Geniş format baskı makinemiz 3.5m eninde baskı yapabiliyor. Uzunluk teorik olarak sınırsız, meter başına hesaplanır. A0 (84×118 cm) ve daha büyük boyutlara rahatlıkla çıkabiliyoruz." },
+    { "q": "Vinil ve branda afiş arasında fark nedir?", "a": "Vinil afiş iç mekan ve kısa süreli dış mekan (2-3 ay) için uygundur. Branda afiş açık hava koşullarına dayanıklı ve 3+ yıl kalır." },
+    { "q": "Afiş montajı sağlıyor musunuz?", "a": "Montaj hizmeti sundukça bölgelerde yapıyoruz, genellikle müşteri tarafından yapılır. İstanbul bölgesinde montaj hizmeti verilebilir (ek ücret)." },
+    { "q": "Renk doğruluğu konusunda endişeli isem?", "a": "Test baskı yapabiliriz (ücretli). Pantone renk kodunuz varsa hassas eşleştirme yaparız. Baskı öncesi onay için örnek sunabiliriz." },
+    { "q": "Acil projeler için ne kadar hızlı gidebiliyor?", "a": "Tasarım onaydan sonra 24 saatte baskı ve teslim yapabiliriz. Çok acil projeler için saat 15:00 öncesi onay alınırsa aynı gün teslim mümkündür." }
+  ]
+}

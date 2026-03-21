@@ -1,0 +1,65 @@
+{
+  "title": "A4 Alüminyum Çerçeve",
+  "description": "A4 boyut alüminyum çerçeve. Sertifika, menü ve bilgilendirme panosu. Eymen Reklam — 25 yıllık tecrübe, 2 yıl garanti.",
+  "category": "Display & Stand",
+  "categoryHref": "/hizmetlerimiz/sunum-stand",
+  "shortDesc": "A4 boyut alüminyum çerçeve. Sertifika, menü, bilgilendirme ve yönlendirme panosu için yaylı mekanizmalı profesyonel çerçeve sistemi.",
+  "mainImg": "/images/urunler/a4-cerceve-1.jpg",
+  "gallery": [
+    "/images/urunler/a4-cerceve-1.jpg",
+    "/images/urunler/a4-cerceve-2.jpg",
+    "/images/urunler/a4-cerceve-3.jpg",
+    "/images/urunler/a4-cerceve-4.jpg"
+  ],
+  "specs": [
+    { "icon": "M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4", "label": "Malzeme", "value": "Alüminyum Profil" },
+    { "icon": "M13 10V3L4 14h7v7l9-11h-7z", "label": "Boyut", "value": "A4 (21 x 29,7 cm)" },
+    { "icon": "M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z", "label": "Üretim Süresi", "value": "1-2 İş Günü" },
+    { "icon": "M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z", "label": "Garanti", "value": "2 Yıl" }
+  ],
+  "descriptionSections": [
+    {
+      "icon": "M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z",
+      "title": "A4 Alüminyum Çerçeve Nedir?",
+      "content": "A4 alüminyum çerçeve, 21x29,7 cm boyutunda poster, sertifika ve bilgilendirme materyallerinin sunumu için tasarlanmış kompakt çerçeve sistemidir. Yaylı mekanizma ile hızlı içerik değişimi sağlar. Ofis, mağaza ve kurumlarda yaygın kullanılır."
+    },
+    {
+      "icon": "M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10",
+      "title": "Kullanım Alanları",
+      "content": "",
+      "list": [
+        { "bold": "Sertifika ve Belge", "text": "ISO, TSE ve kurumsal sertifikaların profesyonel sunumu." },
+        { "bold": "Menü Panosu", "text": "Restoran ve kafe menülerinin şık ve pratik sergilenmesi." },
+        { "bold": "Yönlendirme", "text": "Hastane, okul ve kamu kurumlarında oda numarası ve yönlendirme tabelası." },
+        { "bold": "Bilgilendirme", "text": "Asansör içi, lobi ve bekleme alanlarında duyuru ve bilgilendirme panosu." }
+      ]
+    },
+    {
+      "icon": "M13 10V3L4 14h7v7l9-11h-7z",
+      "title": "Kompakt ve Şık Tasarım",
+      "content": "Dar alanlara uygun kompakt boyutuyla her yere monte edilebilir. Alüminyum profil hafif ve dayanıklı yapı sunar. Anti-glare PVC ön kapak ile yansımasız net görünüm sağlar. Gümüş ve siyah renk seçenekleri mevcuttur."
+    }
+  ],
+  "technicalSpecs": [
+    { "label": "Malzeme", "value": "Alüminyum Profil" },
+    { "label": "Boyut", "value": "A4 (21 x 29,7 cm)" },
+    { "label": "Profil Genişliği", "value": "25 mm" },
+    { "label": "Köşe Tipi", "value": "Gönye / Rondo" },
+    { "label": "Ön Kapak", "value": "Anti-Glare PVC" },
+    { "label": "Renk", "value": "Gümüş / Siyah" },
+    { "label": "Montaj", "value": "Duvara Vidalama" },
+    { "label": "Garanti", "value": "2 Yıl" }
+  ],
+  "faq": [
+    { "q": "A4 çerçeve fiyatı ne kadar?", "a": "Fiyat; profil tipi, renk ve adet miktarına göre değişir. Toplu siparişlerde indirim uygulanır." },
+    { "q": "İçerik baskısı dahil mi?", "a": "Çerçeve ve baskı ayrı veya set halinde sipariş edilebilir." },
+    { "q": "Yatay ve dikey kullanılabilir mi?", "a": "Evet, hem yatay hem dikey konumda monte edilebilir." },
+    { "q": "Toplu sipariş indirimi var mı?", "a": "Evet, 10 adet ve üzeri siparişlerde özel fiyat avantajı sunuyoruz." }
+  ],
+  "relatedProducts": [
+    { "img": "/images/urunler/50x70-cerceve-1.jpg", "title": "50x70 Alüminyum Çerçeve", "href": "/urunlerimiz/50x70-cerceve", "category": "Display & Stand" },
+    { "img": "/images/urunler/alu-cerceve-1.jpg", "title": "Alüminyum Çerçeve", "href": "/urunlerimiz/aluminyum-cerceve", "category": "Display & Stand" },
+    { "img": "/images/urunler/lightbox-1.jpg", "title": "Lightbox Pano", "href": "/urunlerimiz/lightbox-pano", "category": "Display & Stand" },
+    { "img": "/images/urunler/donkart-1.jpg", "title": "Dönkart Afiş", "href": "/urunlerimiz/donkart", "category": "Display & Stand" }
+  ]
+}

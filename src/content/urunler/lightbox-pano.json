@@ -1,0 +1,71 @@
+{
+  "title": "Lightbox Pano",
+  "description": "Lightbox pano ve ışıklı reklam panosu. LED aydınlatmalı, enerji tasarruflu. Eymen Reklam — 25 yıllık tecrübe, 2 yıl garanti.",
+  "category": "Display & Stand",
+  "categoryHref": "/hizmetlerimiz/sunum-stand",
+  "shortDesc": "Lightbox pano ve ışıklı reklam panosu. LED aydınlatmalı, enerji tasarruflu, eşit ışık dağılımlı profesyonel tanıtım çözümü.",
+  "mainImg": "/images/urunler/lightbox-1.jpg",
+  "gallery": [
+    "/images/urunler/lightbox-1.jpg",
+    "/images/urunler/lightbox-2.jpg",
+    "/images/urunler/lightbox-3.jpg",
+    "/images/urunler/lightbox-4.jpg",
+    "/images/urunler/lightbox-prj-1.jpg"
+  ],
+  "specs": [
+    { "icon": "M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4", "label": "Malzeme", "value": "Alüminyum Kasa + LED" },
+    { "icon": "M13 10V3L4 14h7v7l9-11h-7z", "label": "Aydınlatma", "value": "LED Panel" },
+    { "icon": "M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z", "label": "Üretim Süresi", "value": "3-5 İş Günü" },
+    { "icon": "M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z", "label": "Garanti", "value": "2 Yıl" }
+  ],
+  "descriptionSections": [
+    {
+      "icon": "M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z",
+      "title": "Lightbox Pano Nedir?",
+      "content": "Lightbox pano, arkadan LED aydınlatmalı ışıklı reklam panosudur. Yarı saydam baskı materyali ile görseller eşit ve homojen ışık dağılımıyla sergilenir. Gündüz ve gece yüksek görünürlük sağlar. AVM, mağaza, otel, hastane ve kurumsal alanlarda yaygın kullanılır."
+    },
+    {
+      "icon": "M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10",
+      "title": "Kullanım Alanları",
+      "content": "",
+      "list": [
+        { "bold": "AVM ve Mağaza", "text": "Vitrin ve mağaza içi kampanya sunumları için ışıklı reklam panoları." },
+        { "bold": "Otel ve Restoran", "text": "Lobi, karşılama alanı ve menü sunumu için şık lightbox çözümleri." },
+        { "bold": "Hastane ve Klinik", "text": "Bekleme alanı ve yönlendirme panolarında profesyonel sunum." },
+        { "bold": "Fuar ve Sergi", "text": "Fuar standı ve sergi alanlarında dikkat çekici ışıklı panolar." }
+      ]
+    },
+    {
+      "icon": "M13 10V3L4 14h7v7l9-11h-7z",
+      "title": "LED Aydınlatma ve Enerji Tasarrufu",
+      "content": "LED panel aydınlatma sistemi eşit ışık dağılımı sağlar ve görselleri canlı, net biçimde sergiler. Düşük enerji tüketimiyle hem ekonomik hem çevreci bir çözümdür. Uzun ömürlü LED modüller bakım gerektirmeden yıllarca çalışır."
+    },
+    {
+      "icon": "M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.066 2.573c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.573 1.066c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.066-2.573c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z M15 12a3 3 0 11-6 0 3 3 0 016 0z",
+      "title": "Kolay Görsel Değişimi",
+      "content": "Yaylı alüminyum kasa yapısı sayesinde görsel değişimi birkaç dakikada tamamlanır. Projeye özel ölçülerde üretim yapıyoruz. Duvara monte veya ayaklı stand modelleri mevcuttur. UV ve ısıya dayanıklı malzeme yapısıyla uzun süreli kullanım sunar."
+    }
+  ],
+  "technicalSpecs": [
+    { "label": "Kasa", "value": "Alüminyum Profil" },
+    { "label": "Aydınlatma", "value": "LED Panel / LED Şerit" },
+    { "label": "Baskı Materyali", "value": "Backlight Film / Duratrans" },
+    { "label": "Boyut", "value": "Özel Üretim (İsteğe Bağlı)" },
+    { "label": "Enerji Tüketimi", "value": "Düşük (LED)" },
+    { "label": "Montaj", "value": "Duvara Monte / Ayaklı Stand" },
+    { "label": "Profil Tipi", "value": "Yaylı Açma-Kapama" },
+    { "label": "Garanti", "value": "2 Yıl (Kasa + LED)" }
+  ],
+  "faq": [
+    { "q": "Lightbox pano fiyatı ne kadar?", "a": "Fiyat; boyut, LED tipi ve kasa modeline göre değişir. Proje bazında fiyatlandırma yapıyoruz." },
+    { "q": "Görsel değişimi kolay mı?", "a": "Evet, yaylı kasa sistemi sayesinde görsel değişimi birkaç dakikada tamamlanır." },
+    { "q": "Dış mekânda kullanılabilir mi?", "a": "Evet, IP65 korumalı dış mekân modelleri mevcuttur." },
+    { "q": "LED ömrü ne kadar?", "a": "LED modüller ortalama 50.000 saat ömre sahiptir." }
+  ],
+  "relatedProducts": [
+    { "img": "/images/urunler/alu-cerceve-1.jpg", "title": "Alüminyum Çerçeve", "href": "/urunlerimiz/aluminyum-cerceve", "category": "Display & Stand" },
+    { "img": "/images/urunler/rollup-1.jpg", "title": "Roll-Up Banner", "href": "/urunlerimiz/rollup-banner", "category": "Display & Stand" },
+    { "img": "/images/urunler/donkart-1.jpg", "title": "Dönkart Afiş", "href": "/urunlerimiz/donkart", "category": "Display & Stand" },
+    { "img": "/images/urunler/isikli-blok-1.jpg", "title": "Işıklı Blok Tabela", "href": "/urunlerimiz/isikli-blok-tabela", "category": "Tabela" }
+  ]
+}

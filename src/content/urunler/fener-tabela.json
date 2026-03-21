@@ -1,0 +1,72 @@
+{
+  "title": "Fener Tabela",
+  "description": "Duvara montajlı çift taraflı fener tabela. LED veya neon aydınlatmalı. Eymen Reklam — 25 yıllık tecrübe, 2 yıl garanti.",
+  "category": "Tabela",
+  "categoryHref": "/hizmetlerimiz/tabela",
+  "shortDesc": "Duvara montajlı çift taraflı fener tabela imalatı. LED veya neon aydınlatmalı, alüminyum veya galvaniz kasadan üretilen, yaya trafiğinin yoğun olduğu caddelerde ideal görünürlük sağlayan tabela çözümü.",
+  "mainImg": "/images/urunler/fener-tabela-1.jpg",
+  "gallery": [
+    "/images/urunler/fener-tabela-1.jpg",
+    "/images/urunler/fener-tabela-2.jpg",
+    "/images/urunler/fener-tabela-3.jpg",
+    "/images/urunler/fener-tabela-4.jpg"
+  ],
+  "specs": [
+    { "icon": "M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4", "label": "Malzeme", "value": "Alüminyum / Galvaniz" },
+    { "icon": "M13 10V3L4 14h7v7l9-11h-7z", "label": "Aydınlatma", "value": "LED / Neon" },
+    { "icon": "M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z", "label": "Üretim Süresi", "value": "3-7 İş Günü" },
+    { "icon": "M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z", "label": "Garanti", "value": "2 Yıl" }
+  ],
+  "descriptionSections": [
+    {
+      "icon": "M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z",
+      "title": "Fener Tabela Nedir?",
+      "content": "Fener tabela, binanın cephesine dik açıyla monte edilen çift taraflı tabela türüdür. Yaya ve araç trafiğinin her iki yönünden de görülebilmesi en büyük avantajıdır. Özellikle cadde üzeri mağazalar, eczaneler, kafeler ve ofisler için tercih edilir. Gece saatlerinde LED veya neon aydınlatma ile dikkat çekici görünüm sağlar."
+    },
+    {
+      "icon": "M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10",
+      "title": "Fener Tabela Çeşitleri",
+      "content": "",
+      "list": [
+        { "bold": "Işıklı Fener Tabela", "text": "İçten LED aydınlatmalı, pleksiglas yüzeyli. Gece görünürlüğü yüksek, en çok tercih edilen model." },
+        { "bold": "Neon Fener Tabela", "text": "Neon tüp veya neon flex ile retro ve modern tasarımlar. Kafe, bar ve butik mağazalarda popüler." },
+        { "bold": "Işıksız Fener Tabela", "text": "Folyo veya boya ile markalanan ekonomik model. Bütçe dostu işletmeler için uygun." },
+        { "bold": "Özel Şekilli Fener", "text": "Daire, altıgen veya marka logosuna özel kesim şekiller. Farklılaşmak isteyen markalar için." }
+      ]
+    },
+    {
+      "icon": "M13 10V3L4 14h7v7l9-11h-7z",
+      "title": "Montaj ve Dayanıklılık",
+      "content": "Fener tabelalar özel duvar braketi ile binaya sağlam şekilde monte edilir. Rüzgar yüküne dayanıklı tasarımı sayesinde dış mekan koşullarında güvenle kullanılır. Elektrik bağlantısı gizli kablo kanallarıyla yapılır. Elektrostatik toz boya ile kaplanan kasa, korozyona ve UV ışınlarına karşı uzun ömürlüdür."
+    },
+    {
+      "icon": "M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.066 2.573c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.573 1.066c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.066-2.573c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z M15 12a3 3 0 11-6 0 3 3 0 016 0z",
+      "title": "Tasarım ve Kişiselleştirme",
+      "content": "Fener tabelanızı markanıza özel tasarlıyoruz. Logo, renk ve tipografi tercihlerinize uygun üretim yapıyoruz. Yuvarlak, kare, dikdörtgen veya tamamen özel şekillerde üretim mümkündür. Grafik tasarım desteğimizle en etkili fener tabela çözümünü birlikte oluşturuyoruz."
+    }
+  ],
+  "technicalSpecs": [
+    { "label": "Kasa Malzemesi", "value": "Alüminyum / Galvaniz Sac" },
+    { "label": "Yüz Malzemesi", "value": "Pleksiglas / Polikarbon" },
+    { "label": "Aydınlatma", "value": "LED Modül / Neon Flex" },
+    { "label": "Standart Boyutlar", "value": "40x40, 50x50, 60x60, 60x80 cm" },
+    { "label": "Kasa Derinliği", "value": "10 cm — 15 cm" },
+    { "label": "Montaj", "value": "Duvar Braketi (Çelik / Demir)" },
+    { "label": "Boya", "value": "Elektrostatik Toz Boya" },
+    { "label": "Koruma Sınıfı", "value": "IP65 (Dış Mekan)" },
+    { "label": "LED Ömrü", "value": "50.000+ saat" },
+    { "label": "Garanti", "value": "2 Yıl (LED + Kasa + İşçilik)" }
+  ],
+  "faq": [
+    { "q": "Fener tabela fiyatı ne kadar?", "a": "Fiyat; boyut, malzeme, aydınlatma tipi (LED/neon/ışıksız) ve şekle göre değişir. Standart 50x50 cm LED fener tabela için uygun fiyatlar sunuyoruz. Detaylı teklif için bizimle iletişime geçin." },
+    { "q": "Fener tabela hangi yüksekliğe monte edilir?", "a": "Genellikle yerden 2.5-4 metre yüksekliğe monte edilir. Belediye yönetmeliklerine ve bina yapısına göre ideal yükseklik belirlenir." },
+    { "q": "Çift taraflı mı üretiliyor?", "a": "Evet, fener tabelalar standart olarak çift taraflı üretilir. Her iki yüzde de aynı veya farklı tasarım uygulanabilir." },
+    { "q": "Belediye izni gerekiyor mu?", "a": "Çoğu belediye fener tabela için ilan-reklam vergisi ve ruhsat istemektedir. İzin sürecinizde size yardımcı oluyoruz." }
+  ],
+  "relatedProducts": [
+    { "img": "/images/urunler/kutu-harf-1.jpg", "title": "Kutu Harf Tabela", "href": "/urunlerimiz/kutu-harf-tabela", "category": "Tabela" },
+    { "img": "/images/urunler/isikli-blok-1.jpg", "title": "Işıklı Blok Tabela", "href": "/urunlerimiz/isikli-blok-tabela", "category": "Tabela" },
+    { "img": "/images/urunler/totem-1.jpg", "title": "Totem Tabela", "href": "/urunlerimiz/totem-tabela", "category": "Tabela" },
+    { "img": "/images/urunler/vinil-tabela-1.jpg", "title": "Vinil Tabela", "href": "/urunlerimiz/vinil-tabela", "category": "Tabela" }
+  ]
+}

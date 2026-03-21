@@ -1,0 +1,72 @@
+{
+  "title": "Neon LED Tabela",
+  "description": "Neon LED ışıklı tabela imalatı. Enerji verimli, dikkat çekici, iç ve dış mekân. Eymen Reklam — 25 yıllık tecrübe, 2 yıl garanti.",
+  "category": "Tabela",
+  "categoryHref": "/hizmetlerimiz/tabela",
+  "shortDesc": "Neon LED ışıklı tabela imalatı. Alüminyum kasa, pleksi yüzey ve enerji verimli LED sistemlerle gündüz ve gece dikkat çekici, modern ve şık tabela çözümü.",
+  "mainImg": "/images/urunler/neon-led-1.jpg",
+  "gallery": [
+    "/images/urunler/neon-led-1.jpg",
+    "/images/urunler/neon-led-2.jpg",
+    "/images/urunler/neon-led-3.jpg",
+    "/images/urunler/neon-led-4.jpg"
+  ],
+  "specs": [
+    { "icon": "M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4", "label": "Malzeme", "value": "Alüminyum / Pleksi" },
+    { "icon": "M13 10V3L4 14h7v7l9-11h-7z", "label": "Aydınlatma", "value": "Neon LED" },
+    { "icon": "M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z", "label": "Üretim Süresi", "value": "3-7 İş Günü" },
+    { "icon": "M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z", "label": "Garanti", "value": "2 Yıl" }
+  ],
+  "descriptionSections": [
+    {
+      "icon": "M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z",
+      "title": "Neon LED Tabela Nedir?",
+      "content": "Neon LED tabela, renkli ışık efektleri ve modern tasarımıyla dikkat çeken tabela türüdür. Mağaza, ofis ve kafe gibi alanlarda marka görünürlüğünü artırır. Gündüz şık ve estetik bir görünüm sunarken gece güçlü ışık etkisiyle hedef kitlenize ulaşır."
+    },
+    {
+      "icon": "M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10",
+      "title": "Neon LED Tabela Çeşitleri",
+      "content": "",
+      "list": [
+        { "bold": "Neon Flex Yazı Tabela", "text": "Esnek neon LED şeritlerle yazı ve logo oluşturulan, özel tasarım model. Kafe ve restoranlar için popüler." },
+        { "bold": "Neon LED Kutu Harf", "text": "Bireysel kutu harflerin neon LED ile aydınlatıldığı premium çözüm. Kurumsal görünüm." },
+        { "bold": "Neon LED Lightbox", "text": "İçten neon LED aydınlatmalı kutu tabela. Homojen ışık dağılımıyla geniş yüzeylerde etkili." },
+        { "bold": "Dekoratif Neon Tabela", "text": "İç mekân dekorasyon amaçlı neon LED tabela. Mağaza vitrinleri ve duvar uygulamaları için ideal." }
+      ]
+    },
+    {
+      "icon": "M13 10V3L4 14h7v7l9-11h-7z",
+      "title": "Malzeme Kalitesi ve Enerji Verimliliği",
+      "content": "Alüminyum kasalar, pleksi yüzeyler ve düşük enerji tüketen LED sistemlerle çalışıyoruz. Dış etkenlere karşı uzun ömürlü sonuçlar elde ediyoruz. Enerji tasarruflu tabela sistemleriyle bakım gereksinimini en aza indiriyoruz. CE belgeli malzemelerle güvenli montaj yapıyoruz."
+    },
+    {
+      "icon": "M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.066 2.573c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.573 1.066c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.066-2.573c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z M15 12a3 3 0 11-6 0 3 3 0 016 0z",
+      "title": "Size Özel Tasarım ve Güvenli Montaj",
+      "content": "Tasarım aşamasında yazı tipi, ışık rengi ve boyut gibi detayları sizinle birlikte belirliyoruz. Her tabela ile işletmenize özel bir kimlik kazandırıyoruz. Tüm montaj işlemlerinde CE belgeli ürünler ve yanmaz elektrik kabloları kullanıyoruz. Uzman ekibimizle kurulum öncesinde teknik kontrolleri eksiksiz yapıyoruz."
+    }
+  ],
+  "technicalSpecs": [
+    { "label": "Kasa Malzemesi", "value": "Alüminyum Profil" },
+    { "label": "Yüz Malzemesi", "value": "Pleksiglas / Akrilik" },
+    { "label": "Aydınlatma", "value": "Neon Flex LED / LED Modül" },
+    { "label": "Standart Boyutlar", "value": "Projeye Özel (50 cm — 300 cm)" },
+    { "label": "Enerji Tüketimi", "value": "Düşük (12V / 24V DC)" },
+    { "label": "Montaj", "value": "Duvar Montajı / Askı Sistemi" },
+    { "label": "Koruma Sınıfı", "value": "IP44 — IP65 (Modele göre)" },
+    { "label": "LED Ömrü", "value": "50.000+ saat" },
+    { "label": "Sertifika", "value": "CE Belgeli" },
+    { "label": "Garanti", "value": "2 Yıl (LED + Kasa + İşçilik)" }
+  ],
+  "faq": [
+    { "q": "Neon LED tabela fiyatı ne kadar?", "a": "Fiyat; boyut, tasarım karmaşıklığı, ışık rengi ve malzeme seçimine göre değişir. Detaylı teklif için bizimle iletişime geçin." },
+    { "q": "İç mekânda da kullanılabilir mi?", "a": "Evet, neon LED tabelalar hem iç hem dış mekânda kullanılabilir. İç mekân modelleri dekoratif amaçlı da tercih edilmektedir." },
+    { "q": "Neon LED tabela enerji tüketimi yüksek mi?", "a": "Hayır, LED teknolojisi sayesinde enerji tüketimi oldukça düşüktür. Geleneksel neon tabelalardan çok daha verimlidir." },
+    { "q": "Tasarım desteği var mı?", "a": "Evet, ücretsiz grafik tasarım desteği sunuyoruz. Yazı tipi, renk ve boyut tercihlerinize göre özel tasarım hazırlıyoruz." }
+  ],
+  "relatedProducts": [
+    { "img": "/images/urunler/kutu-harf-1.jpg", "title": "Kutu Harf Tabela", "href": "/urunlerimiz/kutu-harf-tabela", "category": "Tabela" },
+    { "img": "/images/urunler/isikli-blok-1.jpg", "title": "Işıklı Blok Tabela", "href": "/urunlerimiz/isikli-blok-tabela", "category": "Tabela" },
+    { "img": "/images/urunler/fener-tabela-1.jpg", "title": "Fener Tabela", "href": "/urunlerimiz/fener-tabela", "category": "Tabela" },
+    { "img": "/images/urunler/cati-tabela-1.jpg", "title": "Çatı Tabelası", "href": "/urunlerimiz/cati-tabelasi", "category": "Tabela" }
+  ]
+}

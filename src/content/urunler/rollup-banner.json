@@ -1,0 +1,65 @@
+{
+  "title": "Roll-Up Banner",
+  "description": "Taşınabilir roll-up banner sistemleri. Alüminyum mekanizma, dijital baskı. Eymen Reklam — 25 yıllık tecrübe.",
+  "category": "Display & Stand",
+  "categoryHref": "/hizmetlerimiz/sunum-stand",
+  "shortDesc": "Taşınabilir roll-up banner sistemleri. Alüminyum mekanizma, dijital baskılı yüzey ile fuar, toplantı, mağaza ve etkinliklerde profesyonel sunum aracınız. Kutu içinde kolay taşıma.",
+  "mainImg": "/images/urunler/rollup-1.jpg",
+  "gallery": [
+    "/images/urunler/rollup-1.jpg",
+    "/images/urunler/rollup-2.jpg",
+    "/images/urunler/rollup-3.jpg",
+    "/images/urunler/rollup-4.jpg"
+  ],
+  "specs": [
+    { "icon": "M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4", "label": "Malzeme", "value": "Alüminyum Mekanizma" },
+    { "icon": "M13 10V3L4 14h7v7l9-11h-7z", "label": "Baskı", "value": "Dijital Baskı" },
+    { "icon": "M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z", "label": "Boyut", "value": "80x200 / 100x200 cm" },
+    { "icon": "M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z", "label": "Özellik", "value": "Taşınabilir" }
+  ],
+  "descriptionSections": [
+    {
+      "icon": "M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z",
+      "title": "Roll-Up Banner Nedir?",
+      "content": "Roll-up banner, taşıma kutusundan çekilerek açılan ve destek ayağı ile dik duran taşınabilir sunum sistemidir. Fuarlar, konferanslar, mağaza içi tanıtımlar, otel lobileri ve toplantı salonlarında markanızı profesyonel şekilde sergilemenizi sağlar. Hafif alüminyum mekanizması sayesinde tek kişi ile kolayca kurulur ve taşınır."
+    },
+    {
+      "icon": "M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10",
+      "title": "Roll-Up Banner Çeşitleri",
+      "content": "",
+      "list": [
+        { "bold": "Ekonomik Roll-Up", "text": "Tek kullanımlık etkinlikler ve kısa süreli tanıtımlar için uygun fiyatlı model." },
+        { "bold": "Premium Roll-Up", "text": "Dayanıklı alüminyum mekanizma, geniş taban ve yüksek baskı kalitesi. Uzun süreli kullanım için." },
+        { "bold": "Çift Taraflı Roll-Up", "text": "Her iki yüzde farklı grafik. Açık alanda veya geçiş noktalarında çift yönlü görünürlük." },
+        { "bold": "Geniş Roll-Up (120-150 cm)", "text": "Standart boyuttan daha geniş. Büyük etkinlik ve fuar standlarında tercih edilir." }
+      ]
+    },
+    {
+      "icon": "M13 10V3L4 14h7v7l9-11h-7z",
+      "title": "Baskı Kalitesi ve Değişim",
+      "content": "Roll-up bannerlarımızda yüksek çözünürlüklü (1440 dpi) dijital baskı teknolojisi kullanıyoruz. Baskılı yüzey değiştirilebilir olduğundan aynı mekanizma ile farklı etkinliklerde farklı görseller kullanabilirsiniz. Baskı çıktısı UV dayanımlı mürekkep ile yapılır ve 2-3 yıl iç mekan kullanımında solmaz."
+    }
+  ],
+  "technicalSpecs": [
+    { "label": "Mekanizma", "value": "Alüminyum Roll-Up Kaseti" },
+    { "label": "Baskı Malzemesi", "value": "PP Sentetik / Vinil" },
+    { "label": "Baskı Çözünürlüğü", "value": "1440 dpi" },
+    { "label": "Standart Boyutlar", "value": "80x200 / 85x200 / 100x200 cm" },
+    { "label": "Ağırlık", "value": "3-4 kg (taşıma çantası dahil)" },
+    { "label": "Kurulum Süresi", "value": "30 saniye" },
+    { "label": "Baskı Değişimi", "value": "Mümkün (yedek baskı takılabilir)" },
+    { "label": "Garanti", "value": "1 Yıl (Mekanizma)" }
+  ],
+  "faq": [
+    { "q": "Roll-up banner fiyatı nedir?", "a": "Fiyat; boyut, mekanizma kalitesi ve baskı detayına göre değişir. Ekonomik modeller uygun fiyatlı, premium modeller daha dayanıklıdır. Toplu siparişlerde indirim uygulanır." },
+    { "q": "Baskı yüzeyini değiştirebilir miyim?", "a": "Evet, mekanizma sabit kalarak baskılı yüzey değiştirilebilir. Her etkinlik için farklı grafik kullanabilirsiniz." },
+    { "q": "Roll-up banner kaç kez kullanılabilir?", "a": "Premium mekanizmalar yüzlerce kez açılıp kapanabilir. Ekonomik modeller 10-20 kullanım için uygundur." },
+    { "q": "Dış mekanda kullanılabilir mi?", "a": "Roll-up bannerlar iç mekan kullanımı için tasarlanmıştır. Dış mekanda rüzgara karşı dayanıksızdır. Dış mekan için yelken bayrak öneriyoruz." }
+  ],
+  "relatedProducts": [
+    { "img": "/images/urunler/yelken-bayrak-1.jpg", "title": "Yelken Bayrak", "href": "/urunlerimiz/yelken-bayrak", "category": "Display & Stand" },
+    { "img": "/images/urunler/orumcek-stand-1.jpg", "title": "Örümcek Stand", "href": "/urunlerimiz/orumcek-stand", "category": "Display & Stand" },
+    { "img": "/images/urunler/branda-1.jpg", "title": "Bez & Branda Baskı", "href": "/urunlerimiz/bez-branda-baski", "category": "Bez & Afiş Baskı" },
+    { "img": "/images/urunler/uv-baski-1.jpg", "title": "UV Baskı", "href": "/urunlerimiz/uv-baski", "category": "UV Baskı" }
+  ]
+}

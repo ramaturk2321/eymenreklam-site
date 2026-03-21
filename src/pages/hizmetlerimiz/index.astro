@@ -1,91 +1,29 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
+import { getCollection } from 'astro:content';
+import { contact } from '../../lib/site-data';
 
-const services = [
-  {
-    title: 'Tabela İmalatı',
-    desc: 'Kutu harf, totem, çatı, cephe ve yönlendirme tabelaları. CNC kesim ve LED aydınlatma ile anahtar teslim üretim ve montaj.',
-    features: ['Kutu Harf', 'Totem', 'Çatı Tabelası', 'Neon-Led', 'Işıklı Blok', 'Ofis Tabelası'],
-    image: '/images/kutu-harf.jpg',
-    href: '/hizmetlerimiz/tabela',
-    icon: '🔤',
-  },
-  {
-    title: 'UV Baskı',
-    desc: 'SwissQprint UV baskı makinemiz ile cam, metal, ahşap, plastik ve deri yüzeylere doğrudan yüksek çözünürlüklü baskı.',
-    features: ['Cam Baskı', 'Metal Baskı', 'Ahşap Baskı', 'Pleksi Baskı'],
-    image: '/images/uv-baski.jpg',
-    href: '/hizmetlerimiz/uv-baski',
-    icon: '🖨️',
-  },
-  {
-    title: 'Dijital Baskı',
-    desc: 'Fotoblok, kartvizit, katalog, afiş ve poster baskı. Yüksek çözünürlük ve hızlı üretim kapasitesi.',
-    features: ['Fotoblok', 'Kartvizit', 'Katalog', 'Mat Kağıt Afiş'],
-    image: '/images/dijital-baski.jpg',
-    href: '/hizmetlerimiz/dijital-baski',
-    icon: '📄',
-  },
-  {
-    title: 'Folyo & Giydirme',
-    desc: 'Araç giydirme, cephe folyo, cam folyo, one way vision ve folyo harf kesim. Komple ve kısmi kaplama çözümleri.',
-    features: ['Araç Kaplama', 'Cephe Folyo', 'Cam Folyo', 'One Way Vision', 'Kamyon/Tır'],
-    image: '/images/arac-giydirme.jpg',
-    href: '/hizmetlerimiz/folyo-giydirme',
-    icon: '🚗',
-  },
-  {
-    title: 'Bez Baskı',
-    desc: 'Branda, mesh, pankart ve kampanya afişi baskı. İç ve dış mekan bez baskı çözümleri.',
-    features: ['Branda', 'Mesh Branda', 'Pankart', 'Kampanya Afişi'],
-    image: '/images/dijital-baski.jpg',
-    href: '/hizmetlerimiz/bez-baski',
-    icon: '🏗️',
-  },
-  {
-    title: 'Afiş Baskı',
-    desc: 'Vinil afiş, branda afiş, bez pankart ve poster baskı. Her boyutta iç ve dış mekan çözümleri.',
-    features: ['Vinil Afiş', 'Branda Afiş', 'Bez Pankart', 'Poster'],
-    image: '/images/dijital-baski.jpg',
-    href: '/hizmetlerimiz/afis-baski',
-    icon: '🖼️',
-  },
-  {
-    title: 'Sunum & Stand',
-    desc: 'Lightbox pano, roll-up banner, X banner ve fuar standı. Taşınabilir ve kalıcı sergileme çözümleri.',
-    features: ['Lightbox', 'Roll-Up', 'X Banner', 'Fuar Standı'],
-    image: '/images/dijital-baski.jpg',
-    href: '/hizmetlerimiz/sunum-stand',
-    icon: '📐',
-  },
-  {
-    title: 'İş Güvenliği Levhaları',
-    desc: 'İSG mevzuatına uygun uyarı, yasak, bilgi ve yangın güvenliği levhaları. Fotolüminesans ve standart seçenekler.',
-    features: ['Uyarı Levhası', 'Yangın', 'Yasak', 'Bilgi Levhası'],
-    image: '/images/tabela-imalat.jpg',
-    href: '/hizmetlerimiz/is-guvenligi',
-    icon: '⚠️',
-  },
-  {
-    title: 'Mağaza Reklam Uygulamaları',
-    desc: 'Mağaza konsept tasarımı, vitrin düzenlemesi, raf etiketleme ve iç mekan branding. Anahtar teslim mağaza çözümleri.',
-    features: ['Konsept Tasarım', 'Vitrin', 'Raf Etiket', 'İç Mekan'],
-    image: '/images/cephe-giydirme.jpg',
-    href: '/hizmetlerimiz/magaza-reklam',
-    icon: '🏢',
-  },
-];
+const services = (await getCollection('hizmetler'))
+  .sort((a, b) => a.data.order - b.data.order)
+  .map(h => ({
+    title: h.data.title,
+    desc: h.data.listDesc,
+    features: h.data.listFeatures,
+    image: h.data.listImage,
+    href: `/hizmetlerimiz/${h.id}`,
+    icon: h.data.listIcon,
+  }));
 ---
 
-<BaseLayout title="Hizmetlerimiz" description="Eymen Reklam hizmetleri: Tabela imalatı, UV baskı, araç giydirme, dijital baskı, cephe giydirme ve daha fazlası. 25 yıllık tecrübe ile Pendik İstanbul.">
+<BaseLayout title="Tabela İmalatı ve Reklam Hizmetleri Pendik İstanbul" description="Pendik İstanbul'da tabela imalatı, UV baskı, araç giydirme, dijital baskı, cephe giydirme ve kurumsal reklam hizmetleri. 25 yıllık üretim tecrübesi ile Eymen Reklam.">
 
   <!-- Hero -->
   <section class="bg-koyu-900 pt-32 pb-16 md:pt-40 md:pb-24">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
       <p class="text-eymen-400 text-sm font-semibold uppercase tracking-wider mb-3">25 Yıllık Uzmanlık</p>
-      <h1 class="text-4xl md:text-5xl font-extrabold text-white mb-4">Hizmetlerimiz</h1>
+      <h1 class="text-4xl md:text-5xl font-extrabold text-white mb-4">Tabela İmalatı ve Reklam Hizmetleri</h1>
       <p class="text-koyu-400 text-lg max-w-2xl mx-auto">
-        Tabela imalatından UV baskıya, araç giydirmeden dijital baskıya kadar
+        Pendik İstanbul'da tabela imalatından UV baskıya, araç giydirmeden dijital baskıya kadar
         tüm kurumsal reklam ihtiyaçlarınız için profesyonel çözümler.
       </p>
     </div>
@@ -127,8 +65,8 @@ const services = [
         <a href="/teklif-al" class="inline-flex items-center justify-center gap-2 bg-white text-eymen-600 hover:bg-koyu-50 px-8 py-4 rounded-xl text-base font-bold transition-all">
           Kurumsal Teklif Formu
         </a>
-        <a href="tel:+902163790708" class="inline-flex items-center justify-center gap-2 border-2 border-white/30 hover:border-white/60 text-white px-8 py-4 rounded-xl text-base font-semibold transition-all">
-          (0216) 379 07 08
+        <a href={contact.phoneHref} class="inline-flex items-center justify-center gap-2 border-2 border-white/30 hover:border-white/60 text-white px-8 py-4 rounded-xl text-base font-semibold transition-all">
+          {contact.phone}
         </a>
       </div>
     </div>

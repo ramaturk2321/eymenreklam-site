@@ -1,5 +1,7 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+import { contact } from '../lib/site-data';
+import { getCollection } from 'astro:content';
 
 // Kategori sekmeleri ve ürünleri
 const categories = [
@@ -7,94 +9,99 @@ const categories = [
     id: 'tabela',
     label: 'Tabela',
     products: [
-      { img: '/images/kutu-harf.jpg', title: 'Kutu Harf Tabela', href: '/urunlerimiz/kutu-harf-tabela' },
-      { img: '/images/proje-totem.jpg', title: 'Totem Tabela', href: '/urunlerimiz/totem-tabela' },
-      { img: '/images/proje-harf.jpg', title: 'Işıklı Tabela', href: '/urunlerimiz/isikli-blok-tabela' },
-      { img: '/images/proje-totem2.jpg', title: 'Çatı Tabelası', href: '/urunlerimiz/cati-tabelasi' },
-      { img: '/images/proje-magaza.png', title: 'Cephe Tabelası', href: '/urunlerimiz/kutu-harf-tabela' },
-      { img: '/images/tabela-imalat.jpg', title: 'Neon-Led Tabela', href: '/urunlerimiz/neon-led-tabela' },
-      { img: '/images/proje-stand.jpg', title: 'Ofis Tabelası', href: '/urunlerimiz/ofis-tabelasi' },
-      { img: '/images/proje-afis.jpg', title: 'Yönlendirme Tabelası', href: '/urunlerimiz/kutu-harf-tabela' },
+      { img: '/images/urunler/kutu-harf-1.jpg', title: 'Kutu Harf Tabela', href: '/urunlerimiz/kutu-harf-tabela' },
+      { img: '/images/urunler/totem-1.jpg', title: 'Totem Tabela', href: '/urunlerimiz/totem-tabela' },
+      { img: '/images/urunler/isikli-blok-1.jpg', title: 'Işıklı Tabela', href: '/urunlerimiz/isikli-blok-tabela' },
+      { img: '/images/urunler/cati-tabela-1.jpg', title: 'Çatı Tabelası', href: '/urunlerimiz/cati-tabelasi' },
+      { img: '/images/urunler/neon-led-1.jpg', title: 'Neon-Led Tabela', href: '/urunlerimiz/neon-led-tabela' },
+      { img: '/images/urunler/ofis-tabela-1.jpg', title: 'Ofis Tabelası', href: '/urunlerimiz/ofis-tabelasi' },
+      { img: '/images/urunler/fener-tabela-1.jpg', title: 'Fener Tabela', href: '/urunlerimiz/fener-tabela' },
+      { img: '/images/urunler/vinil-tabela-1.jpg', title: 'Vinil Tabela', href: '/urunlerimiz/vinil-tabela' },
     ]
   },
   {
     id: 'dijital-baski',
     label: 'Dijital Baskı',
     products: [
-      { img: '/images/proje-magaza.png', title: 'Cam Giydirme', href: '/urunlerimiz/cam-folyo-giydirme' },
-      { img: '/images/proje-afis.jpg', title: 'One Way Vision', href: '/urunlerimiz/cam-folyo-giydirme' },
-      { img: '/images/dijital-baski.jpg', title: 'Branda Baskı', href: '/urunlerimiz/branda-baski' },
-      { img: '/images/proje-bez.jpg', title: 'Mesh Baskı', href: '/urunlerimiz/mesh-branda' },
-      { img: '/images/proje-afis.jpg', title: 'Billboard Baskıları', href: '/urunlerimiz/branda-baski' },
-      { img: '/images/cephe-giydirme.jpg', title: 'Folyo Kesim', href: '/urunlerimiz/folyo-harf-kesim' },
-      { img: '/images/proje-harf.jpg', title: 'Cephe Giydirme', href: '/urunlerimiz/cephe-folyo-giydirme' },
-      { img: '/images/proje-matbaa.jpg', title: 'Kumlu Folyo', href: '/urunlerimiz/cam-folyo-giydirme' },
+      { img: '/images/urunler/fotoblok-1.jpg', title: 'Fotoblok Baskı', href: '/urunlerimiz/fotoblok' },
+      { img: '/images/urunler/kartvizit-1.jpg', title: 'Kartvizit', href: '/urunlerimiz/kartvizit' },
+      { img: '/images/urunler/katalog-1.jpg', title: 'Katalog & Broşür', href: '/urunlerimiz/katalog' },
+      { img: '/images/urunler/mat-kagit-1.jpg', title: 'Mat Kağıt Afiş', href: '/urunlerimiz/mat-kagit-afis' },
+      { img: '/images/urunler/parlak-afis-1.jpg', title: 'Parlak Kağıt Afiş', href: '/urunlerimiz/parlak-kagit-afis' },
+      { img: '/images/urunler/insert-1.jpg', title: 'Insert Tasarım', href: '/urunlerimiz/insert-tasarim' },
     ]
   },
   {
     id: 'uv-baski',
     label: 'UV Baskı',
     products: [
-      { img: '/images/uv-baski.jpg', title: 'Ahşap UV Baskı', href: '/hizmetlerimiz/uv-baski' },
-      { img: '/images/uv-baski.jpg', title: 'Metal UV Baskı', href: '/hizmetlerimiz/uv-baski' },
-      { img: '/images/uv-baski.jpg', title: 'Cam UV Baskı', href: '/hizmetlerimiz/uv-baski' },
-      { img: '/images/uv-baski.jpg', title: 'Plastik UV Baskı', href: '/hizmetlerimiz/uv-baski' },
+      { img: '/images/urunler/uv-baski-1.jpg', title: 'UV Baskı', href: '/urunlerimiz/uv-baski' },
     ]
   },
   {
     id: 'folyo-giydirme',
     label: 'Folyo & Giydirme',
     products: [
-      { img: '/images/arac-giydirme.jpg', title: 'Komple Araç Kaplama', href: '/urunlerimiz/komple-arac-kaplama' },
-      { img: '/images/arac-giydirme.jpg', title: 'Kısmi Araç Kaplama', href: '/urunlerimiz/kismi-arac-kaplama' },
-      { img: '/images/cephe-giydirme.jpg', title: 'Cephe Folyo Giydirme', href: '/urunlerimiz/cephe-folyo-giydirme' },
-      { img: '/images/proje-magaza.png', title: 'Cam Folyo Giydirme', href: '/urunlerimiz/cam-folyo-giydirme' },
-      { img: '/images/cephe-giydirme.jpg', title: 'Kamyon/Tır Giydirme', href: '/urunlerimiz/kamyon-tir-giydirme' },
-      { img: '/images/proje-harf.jpg', title: 'Folyo Harf Kesim', href: '/urunlerimiz/folyo-harf-kesim' },
+      { img: '/images/urunler/komple-arac-1.jpg', title: 'Komple Araç Kaplama', href: '/urunlerimiz/komple-arac-kaplama' },
+      { img: '/images/urunler/kismi-arac-1.jpg', title: 'Kısmi Araç Kaplama', href: '/urunlerimiz/kismi-arac-kaplama' },
+      { img: '/images/urunler/cephe-giydirme-1.jpg', title: 'Cephe Folyo Giydirme', href: '/urunlerimiz/cephe-giydirme' },
+      { img: '/images/urunler/cam-folyo-1.jpg', title: 'Cam Folyo Giydirme', href: '/urunlerimiz/cam-folyo-giydirme' },
+      { img: '/images/urunler/cam-kumlama-1.jpg', title: 'Cam Kumlama Folyo', href: '/urunlerimiz/cam-kumlama-folyo' },
+      { img: '/images/urunler/one-way-1.jpg', title: 'Cam One Way Vision', href: '/urunlerimiz/cam-one-way-vision' },
+      { img: '/images/urunler/kamyon-tir-1.jpg', title: 'Kamyon/Tır Folyo', href: '/urunlerimiz/kamyon-tir-folyo' },
+      { img: '/images/urunler/folyo-harf-1.jpg', title: 'Folyo Harf Kesim', href: '/urunlerimiz/folyo-harf-kesim' },
     ]
   },
   {
     id: 'display',
     label: 'Display & Stand',
     products: [
-      { img: '/images/proje-stand.jpg', title: 'Roll-Up Banner', href: '/urunlerimiz/roll-up-banner' },
-      { img: '/images/proje-stand.jpg', title: 'Lightbox Pano', href: '/urunlerimiz/lightbox-pano' },
-      { img: '/images/proje-afis.jpg', title: 'Pankart Branda', href: '/urunlerimiz/pankart-branda' },
-      { img: '/images/proje-stand.jpg', title: 'Fuar Standı', href: '/hizmetlerimiz/sunum-stand' },
+      { img: '/images/urunler/rollup-1.jpg', title: 'Roll-Up Banner', href: '/urunlerimiz/rollup-banner' },
+      { img: '/images/urunler/lightbox-1.jpg', title: 'Lightbox Pano', href: '/urunlerimiz/lightbox-pano' },
+      { img: '/images/urunler/orumcek-stand-1.jpg', title: 'Örümcek Stand', href: '/urunlerimiz/orumcek-stand' },
+      { img: '/images/urunler/yelken-bayrak-1.jpg', title: 'Yelken Bayrak', href: '/urunlerimiz/yelken-bayrak' },
+      { img: '/images/urunler/alu-cerceve-1.jpg', title: 'Alüminyum Çerçeve', href: '/urunlerimiz/aluminyum-cerceve' },
+      { img: '/images/urunler/donkart-1.jpg', title: 'Dönkart Afiş', href: '/urunlerimiz/donkart' },
+      { img: '/images/urunler/a4-cerceve-1.jpg', title: 'A4 Çerçeve', href: '/urunlerimiz/a4-cerceve' },
+      { img: '/images/urunler/50x70-cerceve-1.jpg', title: '50x70 Çerçeve', href: '/urunlerimiz/50x70-cerceve' },
     ]
   },
   {
     id: 'bez-baski',
     label: 'Bez & Afiş Baskı',
     products: [
-      { img: '/images/proje-bez.jpg', title: 'Bez Afiş Baskı', href: '/hizmetlerimiz/bez-baski' },
-      { img: '/images/proje-afis.jpg', title: 'Vinil Afiş', href: '/hizmetlerimiz/afis-baski' },
-      { img: '/images/dijital-baski.jpg', title: 'Kumaş Baskı', href: '/hizmetlerimiz/bez-baski' },
-      { img: '/images/proje-afis.jpg', title: 'Poster Baskı', href: '/hizmetlerimiz/afis-baski' },
+      { img: '/images/urunler/branda-1.jpg', title: 'Bez & Branda Baskı', href: '/urunlerimiz/bez-branda-baski' },
+      { img: '/images/urunler/bez-pankart-1.webp', title: 'Bez Pankart', href: '/urunlerimiz/bez-pankart' },
+      { img: '/images/urunler/afis-baski-1.jpg', title: 'Afiş Baskı', href: '/urunlerimiz/afis-baski' },
+      { img: '/images/urunler/mesh-1.jpg', title: 'Mesh Baskı', href: '/urunlerimiz/mesh-baski' },
+      { img: '/images/urunler/bez-kampanya-1.jpg', title: 'Bez Kampanya Afişi', href: '/urunlerimiz/bez-kampanya-afisi' },
+      { img: '/images/urunler/pankart-branda-1.jpg', title: 'Pankart Branda', href: '/urunlerimiz/pankart-branda' },
+      { img: '/images/urunler/market-branda-1.jpg', title: 'Market Branda', href: '/urunlerimiz/market-branda' },
+      { img: '/images/urunler/emlak-branda-1.jpg', title: 'Emlak İlan Branda', href: '/urunlerimiz/emlak-ilan-branda' },
     ]
   },
   {
     id: 'grafik-tasarim',
     label: 'Grafik Tasarım',
     products: [
-      { img: '/images/proje-afis.jpg', title: 'Logo Tasarım', href: '/hizmetlerimiz/grafik-tasarim' },
-      { img: '/images/proje-matbaa.jpg', title: 'Kartvizit Tasarım', href: '/hizmetlerimiz/grafik-tasarim' },
-      { img: '/images/dijital-baski.jpg', title: 'Katalog Tasarım', href: '/hizmetlerimiz/grafik-tasarim' },
-      { img: '/images/proje-stand.jpg', title: 'Fuar Görseli', href: '/hizmetlerimiz/grafik-tasarim' },
-      { img: '/images/proje-magaza.png', title: 'Mağaza Konsepti', href: '/hizmetlerimiz/grafik-tasarim' },
-      { img: '/images/proje-harf.jpg', title: 'Tabela Tasarım', href: '/hizmetlerimiz/grafik-tasarim' },
+      { img: '/images/urunler/insert-1.jpg', title: 'Logo Tasarım', href: '/urunlerimiz/insert-tasarim' },
+      { img: '/images/urunler/kartvizit-1.jpg', title: 'Kartvizit Tasarım', href: '/urunlerimiz/kartvizit' },
+      { img: '/images/urunler/katalog-1.jpg', title: 'Katalog Tasarım', href: '/urunlerimiz/katalog' },
+      { img: '/images/urunler/afis-baski-1.jpg', title: 'Afiş & Poster', href: '/urunlerimiz/afis-baski' },
+      { img: '/images/urunler/bizim-toptan-1.jpg', title: 'Mağaza Konsepti', href: '/urunlerimiz/bizim-toptan-magazasi' },
+      { img: '/images/urunler/kutu-harf-1.jpg', title: 'Tabela Tasarım', href: '/urunlerimiz/kutu-harf-tabela' },
     ]
   },
   {
     id: 'kurumsal',
     label: 'Kurumsal Hizmetler',
     products: [
-      { img: '/images/proje-magaza.png', title: 'Mağaza Reklam', href: '/hizmetlerimiz/magaza-reklam' },
-      { img: '/images/proje-harf.jpg', title: 'Kurumsal Kimlik', href: '/hizmetlerimiz/magaza-reklam' },
-      { img: '/images/cephe-giydirme.jpg', title: 'Cephe Giydirme', href: '/urunlerimiz/cephe-folyo-giydirme' },
-      { img: '/images/proje-totem.jpg', title: 'Totem & Yönlendirme', href: '/urunlerimiz/totem-tabela' },
-      { img: '/images/tabela-imalat.jpg', title: 'İş Güvenliği Levhaları', href: '/hizmetlerimiz/is-guvenligi' },
-      { img: '/images/proje-stand.jpg', title: 'Fuar & Etkinlik', href: '/hizmetlerimiz/sunum-stand' },
+      { img: '/images/urunler/hakmar-avm-1.jpg', title: 'Hakmar AVM', href: '/urunlerimiz/hakmar-avm' },
+      { img: '/images/urunler/eve-magazasi-1.jpg', title: 'Eve Mağazası', href: '/urunlerimiz/eve-magazasi' },
+      { img: '/images/urunler/bizim-toptan-1.jpg', title: 'Bizim Toptan', href: '/urunlerimiz/bizim-toptan-magazasi' },
+      { img: '/images/urunler/cut-out-maket-1.jpg', title: 'Cut-Out Maket', href: '/urunlerimiz/cut-out-maket' },
+      { img: '/images/urunler/palet-etegi-1.jpg', title: 'Palet Eteği', href: '/urunlerimiz/palet-etegi' },
+      { img: '/images/urunler/is-guvenligi-1.jpg', title: 'İş Güvenliği Levhaları', href: '/urunlerimiz/is-guvenligi-levhalari' },
     ]
   },
 ];
@@ -106,14 +113,9 @@ const stats = [
   { number: '500+', label: 'Kurumsal Müşteri', icon: 'M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0z' },
 ];
 
-const projects = [
-  { img: '/images/proje-harf.jpg', title: 'Kutu Harf Uygulama', category: 'Tabela' },
-  { img: '/images/proje-totem.jpg', title: 'Totem Tabela', category: 'Tabela' },
-  { img: '/images/proje-magaza.png', title: 'Mağaza Cephe Giydirme', category: 'Cephe' },
-  { img: '/images/proje-stand.jpg', title: 'Fuar Stand', category: 'Display' },
-  { img: '/images/proje-afis.jpg', title: 'Afiş & Branda', category: 'Baskı' },
-  { img: '/images/proje-totem2.jpg', title: 'Totem Tabela Montaj', category: 'Tabela' },
-];
+const projeler = (await getCollection('projeler'))
+  .sort((a, b) => (a.data.order ?? 99) - (b.data.order ?? 99))
+  .slice(0, 6);
 
 const testimonials = [
   { text: 'Mağazamızın tüm tabela ve cephe giydirme işlerini Eymen Reklam ile yaptırdık. Kaliteli malzeme ve profesyonel montaj.', author: 'Mehmet K.', role: 'Mağaza Sahibi' },
@@ -121,7 +123,14 @@ const testimonials = [
   { text: 'UV baskı kalitesi gerçekten üst seviye. Showroom tasarımımız için mükemmel sonuçlar aldık.', author: 'Ali R.', role: 'İç Mimar' },
 ];
 
-const partners = ['Hakmar', 'Remax', 'Migros', 'BİM', 'Vodafone', 'Turkcell'];
+const partners = [
+  { name: 'Hakmar Express', logo: '/images/markalar/hakmar-express.png' },
+  { name: 'Hakmar Şirketler Grubu', logo: '/images/markalar/hakmar.png' },
+  { name: 'Lina', logo: '/images/markalar/lina.png' },
+  { name: 'g2m', logo: '/images/markalar/g2m.png' },
+  { name: '2Plan', logo: '/images/markalar/2plan.png' },
+  { name: 'Bizim Toptan Market', logo: '/images/markalar/bizim.png' },
+];
 ---
 
 <BaseLayout title="Ana Sayfa" description="Eymen Reklam — 25 yıldır Pendik İstanbul'da tabela imalatı, UV baskı, araç giydirme ve dijital baskı hizmetleri. Ücretsiz keşif ve teklif alın.">
@@ -131,7 +140,7 @@ const partners = ['Hakmar', 'Remax', 'Migros', 'BİM', 'Vodafone', 'Turkcell'];
     <div class="hero-slider relative h-[500px] md:h-[600px] lg:h-[700px]">
       <!-- Slide 1 -->
       <div class="hero-slide absolute inset-0 opacity-100 transition-opacity duration-1000">
-        <img src="/images/yenifabrika.png" alt="Eymen Reklam Üretim Tesisi" class="w-full h-full object-cover" />
+        <img src="/images/yenifabrika-opt.jpg" alt="Eymen Reklam Üretim Tesisi" class="w-full h-full object-cover" />
         <div class="absolute inset-0 bg-gradient-to-r from-koyu-900/90 via-koyu-900/60 to-koyu-900/30"></div>
         <div class="absolute inset-0 flex items-center">
           <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
@@ -201,9 +210,9 @@ const partners = ['Hakmar', 'Remax', 'Migros', 'BİM', 'Vodafone', 'Turkcell'];
                 Komple ve kısmi araç kaplama ile markanızı sokaklara taşıyın. 7/24 hareketli reklam.
               </p>
               <div class="flex flex-col sm:flex-row gap-4">
-                <a href="tel:+902163790708" class="inline-flex items-center justify-center gap-2 bg-eymen-500 hover:bg-eymen-600 text-white px-8 py-4 rounded-lg text-base font-bold transition-all">
+                <a href={contact.phoneHref} class="inline-flex items-center justify-center gap-2 bg-eymen-500 hover:bg-eymen-600 text-white px-8 py-4 rounded-lg text-base font-bold transition-all">
                   <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
-                  (0216) 379 07 08
+                  {contact.phone}
                 </a>
               </div>
             </div>
@@ -231,7 +240,7 @@ const partners = ['Hakmar', 'Remax', 'Migros', 'BİM', 'Vodafone', 'Turkcell'];
   <!-- ========== KATEGORİ SEKMELİ ÜRÜN GALERİSİ ========== -->
   <section class="bg-white" id="urunler">
     <!-- Dark Tab Bar -->
-    <div class="sticky top-20 lg:top-[136px] z-30 bg-koyu-900 shadow-lg">
+    <div class="sticky top-20 lg:top-[136px] z-30 bg-koyu-600 shadow-lg">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="flex overflow-x-auto scrollbar-hide" id="category-tabs">
           {categories.map((cat, i) => (
@@ -240,7 +249,7 @@ const partners = ['Hakmar', 'Remax', 'Migros', 'BİM', 'Vodafone', 'Turkcell'];
                 'category-tab whitespace-nowrap px-5 lg:px-6 py-4 text-sm font-semibold transition-all flex-shrink-0 relative',
                 i === 0
                   ? 'bg-eymen-500 text-white font-extrabold'
-                  : 'text-koyu-300 hover:text-white hover:bg-koyu-800'
+                  : 'text-koyu-300 hover:text-white hover:bg-koyu-500'
               ]}
               data-category={cat.id}
             >
@@ -323,13 +332,13 @@ const partners = ['Hakmar', 'Remax', 'Migros', 'BİM', 'Vodafone', 'Turkcell'];
       </div>
 
       <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-        {projects.map(project => (
-          <a href="/projelerimiz" class="group relative rounded-2xl overflow-hidden h-72 block">
-            <img src={project.img} alt={project.title} class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" />
+        {projeler.map(project => (
+          <a href={`/projelerimiz/${project.id}/`} class="group relative rounded-2xl overflow-hidden h-72 block">
+            <img src={project.data.image} alt={project.data.title} class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" />
             <div class="absolute inset-0 bg-gradient-to-t from-koyu-900/90 via-koyu-900/20 to-transparent opacity-60 group-hover:opacity-100 transition-opacity duration-300"></div>
             <div class="absolute bottom-0 left-0 right-0 p-6 translate-y-2 group-hover:translate-y-0 transition-transform duration-300">
-              <span class="text-eymen-400 text-xs font-bold uppercase tracking-wider">{project.category}</span>
-              <h3 class="text-white text-lg font-bold mt-1">{project.title}</h3>
+              <span class="text-eymen-400 text-xs font-bold uppercase tracking-wider">{project.data.categories[0]}</span>
+              <h3 class="text-white text-lg font-bold mt-1">{project.data.title}</h3>
             </div>
             <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100 transition-all duration-300 scale-50 group-hover:scale-100">
               <div class="w-14 h-14 bg-eymen-500 rounded-full flex items-center justify-center">
@@ -389,9 +398,11 @@ const partners = ['Hakmar', 'Remax', 'Migros', 'BİM', 'Vodafone', 'Turkcell'];
   <section class="py-14 bg-white border-y border-koyu-100">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <p class="text-center text-sm text-koyu-400 font-medium uppercase tracking-wider mb-8">Güvenle Çalıştığımız Markalar</p>
-      <div class="flex flex-wrap items-center justify-center gap-8 md:gap-16">
+      <div class="flex flex-wrap items-center justify-center gap-10 md:gap-16">
         {partners.map(p => (
-          <div class="text-2xl md:text-3xl font-extrabold text-koyu-200 hover:text-koyu-400 transition-colors cursor-default select-none">{p}</div>
+          <div class="grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all duration-300">
+            <img src={p.logo} alt={`${p.name} logo`} class="h-10 md:h-12 w-auto object-contain" loading="lazy" />
+          </div>
         ))}
       </div>
     </div>
@@ -414,9 +425,9 @@ const partners = ['Hakmar', 'Remax', 'Migros', 'BİM', 'Vodafone', 'Turkcell'];
           <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.625.846 5.059 2.284 7.034L.789 23.492a.75.75 0 00.913.913l4.458-1.495A11.952 11.952 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0z"/></svg>
           Ücretsiz Keşif ve Teklif Alın
         </a>
-        <a href="tel:+902163790708" class="inline-flex items-center justify-center gap-2 border-2 border-white/40 hover:border-white text-white px-8 py-4 rounded-lg text-base font-semibold transition-all hover:bg-white/10">
+        <a href={contact.phoneHref} class="inline-flex items-center justify-center gap-2 border-2 border-white/40 hover:border-white text-white px-8 py-4 rounded-lg text-base font-semibold transition-all hover:bg-white/10">
           <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
-          (0216) 379 07 08
+          {contact.phone}
         </a>
       </div>
     </div>
@@ -493,7 +504,7 @@ const partners = ['Hakmar', 'Remax', 'Migros', 'BİM', 'Vodafone', 'Turkcell'];
 
       // Tüm sekmeleri pasif yap
       tabs.forEach(t => {
-        t.className = 'category-tab whitespace-nowrap px-5 lg:px-6 py-4 text-sm font-semibold transition-all flex-shrink-0 relative text-koyu-300 hover:text-white hover:bg-koyu-800';
+        t.className = 'category-tab whitespace-nowrap px-5 lg:px-6 py-4 text-sm font-semibold transition-all flex-shrink-0 relative text-koyu-300 hover:text-white hover:bg-koyu-500';
       });
       // Aktif sekme — bold + turuncu arka plan
       tab.className = 'category-tab whitespace-nowrap px-5 lg:px-6 py-4 text-sm font-extrabold transition-all flex-shrink-0 relative bg-eymen-500 text-white';

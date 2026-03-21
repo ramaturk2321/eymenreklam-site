@@ -1,0 +1,65 @@
+{
+  "title": "Yelken Bayrak",
+  "description": "Dış mekan yelken bayrak üretimi. Polyester kumaş, dijital süblimasyon baskı. Eymen Reklam — 25 yıllık tecrübe.",
+  "category": "Display & Stand",
+  "categoryHref": "/hizmetlerimiz/sunum-stand",
+  "shortDesc": "Dış mekan yelken bayrak (plaj bayrağı) üretimi. Polyester kumaş üzerine dijital baskı, fiberglas veya alüminyum direk ile rüzgarda dalgalanan dikkat çekici tanıtım aracı.",
+  "mainImg": "/images/urunler/yelken-bayrak-1.jpg",
+  "gallery": [
+    "/images/urunler/yelken-bayrak-1.jpg",
+    "/images/urunler/yelken-bayrak-2.jpg",
+    "/images/urunler/yelken-bayrak-3.jpg",
+    "/images/urunler/yelken-bayrak-4.jpg"
+  ],
+  "specs": [
+    { "icon": "M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4", "label": "Malzeme", "value": "Polyester Kumaş + Fiberglas" },
+    { "icon": "M13 10V3L4 14h7v7l9-11h-7z", "label": "Baskı", "value": "Dijital Süblimasyon" },
+    { "icon": "M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z", "label": "Boyut", "value": "2m / 3m / 4m / 5m" },
+    { "icon": "M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z", "label": "Kullanım", "value": "İç / Dış Mekan" }
+  ],
+  "descriptionSections": [
+    {
+      "icon": "M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z",
+      "title": "Yelken Bayrak Nedir?",
+      "content": "Yelken bayrak (teardrop / feather flag), esnek fiberglas direk üzerine geçirilen polyester kumaştan oluşan, rüzgarda dalgalanarak dikkat çeken taşınabilir reklam aracıdır. Mağaza önleri, fuar alanları, spor etkinlikleri, plajlar ve açık hava organizasyonlarında yoğun olarak kullanılır. 360° dönen taban sistemi sayesinde rüzgar yönüne otomatik adapte olur."
+    },
+    {
+      "icon": "M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10",
+      "title": "Yelken Bayrak Şekilleri",
+      "content": "",
+      "list": [
+        { "bold": "Damla (Teardrop)", "text": "Üst kısmı yuvarlak, alt kısmı sivri. Rüzgarda stabil durur, logo ve metin okunaklı kalır." },
+        { "bold": "Tüy (Feather)", "text": "Uzun ve ince form. Daha fazla hareket ile dikkat çeker. Yüksek görünürlük alanları için ideal." },
+        { "bold": "Dikdörtgen (Rectangle)", "text": "Klasik bayrak formu. Geniş baskı alanı ile detaylı görseller için uygun." },
+        { "bold": "Üçgen (Pennant)", "text": "Kompakt ve sportif görünüm. Spor etkinlikleri ve açılışlar için tercih edilir." }
+      ]
+    },
+    {
+      "icon": "M13 10V3L4 14h7v7l9-11h-7z",
+      "title": "Taban ve Montaj Seçenekleri",
+      "content": "Çim çivisi (toprak/çim zemin), haç taban (sert zemin), su deposu taban (ağırlıklı sabit taban), duvar braketi ve araç camı vantuzu gibi farklı taban seçenekleriyle her ortama uygun montaj yapılır. Taban ve direk sistemi yeniden kullanılabilir olduğundan sadece kumaş değiştirilerek farklı etkinliklerde kullanılabilir."
+    }
+  ],
+  "technicalSpecs": [
+    { "label": "Kumaş", "value": "Polyester 115g/m² (Süblimasyon Baskı)" },
+    { "label": "Direk", "value": "Fiberglas / Alüminyum Hibrit" },
+    { "label": "Boyutlar", "value": "2m / 3m / 4m / 5m (toplam yükseklik)" },
+    { "label": "Baskı", "value": "Tek / Çift Taraflı Süblimasyon" },
+    { "label": "Taban Seçenekleri", "value": "Çim Çivisi / Haç Taban / Su Deposu" },
+    { "label": "Rüzgar Dayanımı", "value": "50-60 km/s (fiberglas esner)" },
+    { "label": "Ağırlık", "value": "2-3 kg (kumaş + direk)" },
+    { "label": "Garanti", "value": "1 Yıl (Direk + Taban)" }
+  ],
+  "faq": [
+    { "q": "Yelken bayrak rüzgarda yırtılır mı?", "a": "Polyester kumaş ve esnek fiberglas direk rüzgara karşı dayanıklıdır. Aşırı fırtına koşullarında (60+ km/s) toplanması önerilir." },
+    { "q": "Çift taraflı baskı yapılabiliyor mu?", "a": "Evet, çift taraflı yelken bayrak üretimi yapıyoruz. İki ayrı kumaş arasına opak astar konularak her iki yüzde aynı veya farklı tasarım uygulanır." },
+    { "q": "Kumaş yıkanabilir mi?", "a": "Evet, polyester kumaş 30°C düşük devirde makine yıkamaya uygundur. Baskı süblimasyon olduğu için yıkamada solmaz." },
+    { "q": "Sadece kumaş sipariş edebilir miyim?", "a": "Evet, mevcut direk sisteminize uygun yedek kumaş üretimi yapıyoruz. Farklı etkinlikler için farklı kumaşlar sipariş edebilirsiniz." }
+  ],
+  "relatedProducts": [
+    { "img": "/images/urunler/rollup-1.jpg", "title": "Roll-Up Banner", "href": "/urunlerimiz/rollup-banner", "category": "Display & Stand" },
+    { "img": "/images/urunler/branda-1.jpg", "title": "Bez & Branda Baskı", "href": "/urunlerimiz/bez-branda-baski", "category": "Bez & Afiş Baskı" },
+    { "img": "/images/urunler/orumcek-stand-1.jpg", "title": "Örümcek Stand", "href": "/urunlerimiz/orumcek-stand", "category": "Display & Stand" },
+    { "img": "/images/urunler/mesh-1.jpg", "title": "Mesh Baskı", "href": "/urunlerimiz/mesh-baski", "category": "Bez & Afiş Baskı" }
+  ]
+}

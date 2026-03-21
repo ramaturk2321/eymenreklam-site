@@ -1,0 +1,40 @@
+{
+  "title": "Grafik Tasarım",
+  "description": "Logo, kurumsal kimlik, katalog, broşür, afiş ve ambalaj tasarımı. Profesyonel grafik tasarım hizmetleri. İstanbul Pendik.",
+  "heroDesc": "Logo, kurumsal kimlik, katalog, broşür, afiş, ambalaj ve dijital medya tasarımlarını profesyonel grafik tasarım ekibimizle hazırlıyoruz. 25 yıllık sektör deneyimimizle markanızı görsel olarak en etkili şekilde ifade ediyoruz.",
+  "order": 10,
+  "listIcon": "🎨",
+  "listDesc": "Logo, kurumsal kimlik, katalog, broşür ve afiş tasarımı. Markanızı görsel olarak en etkili şekilde ifade ediyoruz.",
+  "listFeatures": ["Logo Tasarım", "Kurumsal Kimlik", "Katalog & Broşür", "Afiş & Poster"],
+  "listImage": "/images/proje-afis.jpg",
+  "features": [
+    { "icon": "🎯", "title": "Logo & Marka Kimliği", "desc": "Özgün logo tasarımı, renk paleti, tipografi ve marka kılavuzu hazırlama. Markanızın DNA'sını oluşturuyoruz." },
+    { "icon": "📇", "title": "Kartvizit & Kurumsal Baskı", "desc": "Kartvizit, antetli kağıt, zarf, fatura formu ve kurumsal kırtasiye tasarımları." },
+    { "icon": "📑", "title": "Katalog & Broşür Tasarımı", "desc": "Ürün kataloğu, kurumsal broşür ve tanıtım materyali tasarımları. Baskıya hazır dosya teslimi." },
+    { "icon": "📋", "title": "Afiş & Poster Tasarımı", "desc": "Etkinlik, kampanya ve tanıtım afişleri. Dijital ve baskı formatlarında tasarım." },
+    { "icon": "🏪", "title": "Mağaza & Fuar Görselleri", "desc": "Mağaza konsepti, fuar standı görselleri, vitrin tasarımı ve mekan grafikleri." },
+    { "icon": "📱", "title": "Dijital Medya Tasarımı", "desc": "Sosyal medya görselleri, web banner, e-posta şablonu ve dijital reklam tasarımları." }
+  ],
+  "products": [
+    { "title": "Logo Tasarım", "desc": "Özgün ve akılda kalıcı logo tasarımı. Vektörel dosya, renk kodları ve kullanım kılavuzu dahil.", "image": "/images/urunler/insert-1.jpg", "href": "/urunlerimiz/insert-tasarim" },
+    { "title": "Kartvizit Tasarım & Baskı", "desc": "Kurumsal kimliğinize uygun kartvizit tasarımı ve baskısı. Mat, parlak ve özel kağıt seçenekleri.", "image": "/images/urunler/kartvizit-1.jpg", "href": "/urunlerimiz/kartvizit" },
+    { "title": "Katalog & Broşür", "desc": "Ürün kataloğu ve tanıtım broşürü tasarım ve baskısı. Profesyonel düzen ve tipografi.", "image": "/images/urunler/katalog-1.jpg", "href": "/urunlerimiz/katalog" },
+    { "title": "Afiş & Poster", "desc": "Kampanya, etkinlik ve tanıtım afişleri. A4'den A0'a kadar tüm boyutlarda tasarım ve baskı.", "image": "/images/urunler/afis-baski-1.jpg", "href": "/urunlerimiz/afis-baski" },
+    { "title": "Tabela Tasarım", "desc": "Tabela, kutu harf ve cephe tasarımları. 3D görselleştirme ile montaj öncesi önizleme.", "image": "/images/urunler/kutu-harf-1.jpg", "href": "/urunlerimiz/kutu-harf-tabela" },
+    { "title": "Mağaza Konsept Tasarımı", "desc": "Mağaza iç ve dış cephe tasarımı. Tabeladan vitrine, yönlendirmeden dekorasyona bütüncül çözüm.", "image": "/images/urunler/bizim-toptan-1.jpg", "href": "/urunlerimiz/bizim-toptan-magazasi" }
+  ],
+  "process": [
+    { "step": "01", "title": "Brifing & Analiz", "desc": "Markanızı, hedef kitlenizi ve beklentilerinizi anlıyoruz. Sektör ve rakip analizi yapıyoruz." },
+    { "step": "02", "title": "Konsept Geliştirme", "desc": "Farklı konsept alternatifleri hazırlıyoruz. Renk, tipografi ve kompozisyon seçenekleri sunuyoruz." },
+    { "step": "03", "title": "Tasarım & Revizyon", "desc": "Seçilen konsept üzerinde detaylı tasarım çalışması yapıyoruz. 2 tur revizyon hakkı dahildir." },
+    { "step": "04", "title": "Dosya Teslimi", "desc": "Baskıya ve dijital kullanıma hazır formatlarda (AI, PDF, PNG, JPG) dosyalarınızı teslim ediyoruz." }
+  ],
+  "sectors": ["Perakende & AVM", "Sağlık & Hastane", "Eğitim & Kamu", "Sanayi & Fabrika", "Turizm & Otelcilik", "Pazarlama & Reklam", "Hukuk Büroları", "İnşaat & Gayrimenkul", "Finans & Sigortacılık", "Organizasyon & Etkinlik"],
+  "faq": [
+    { "q": "Logo tasarım süreci ne kadar sürer?", "a": "Brifing sonrası 3-5 iş günü içinde ilk konseptler sunulur. Revizyon süreciyle birlikte toplam 7-10 iş günü içinde tamamlanır." },
+    { "q": "Tasarım dosyaları hangi formatlarda teslim edilir?", "a": "AI (vektörel), PDF, PNG ve JPG formatlarında teslim ediyoruz. İstek üzerine EPS ve SVG formatları da sağlanabilir." },
+    { "q": "Kaç revizyon hakkım var?", "a": "Standart paketlerde 2 tur revizyon dahildir. Ek revizyonlar için ayrıca ücretlendirme yapılır." },
+    { "q": "Sadece tasarım mı yapıyorsunuz, baskı da dahil mi?", "a": "Her ikisi de mümkün. Sadece tasarım dosyası teslimi veya tasarım + baskı paketi olarak sipariş verebilirsiniz." },
+    { "q": "Mevcut logomun güncellenmesini istiyorum, yapılır mı?", "a": "Evet, logo yenileme (rebranding) hizmeti sunuyoruz. Mevcut logonuzu modernize ederek güncelleyebiliriz." }
+  ]
+}

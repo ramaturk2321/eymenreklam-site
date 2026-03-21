@@ -1,0 +1,40 @@
+{
+  "title": "UV Baskı",
+  "description": "Cam, metal, ahşap, plastik ve döner yüzeylere UV baskı. SwissQprint teknolojisi ile kurumsal ve endüstriyel uygulamalar. İstanbul Pendik.",
+  "heroDesc": "UV baskı teknolojisiyle cam, metal, ahşap, plastik ve PVC gibi farklı yüzeyler üzerine doğrudan baskı yapıyoruz. SwissQprint UV presleriyle yüksek çözünürlükte, renkli ve dayanıklı baskılar elde ediyoruz. Kurumsal hediye ürünlerinden endüstriyel panel baskılarına kadar geniş uygulama yelpazesine sahip teknolojimiz.",
+  "order": 2,
+  "listIcon": "🖨️",
+  "listDesc": "SwissQprint UV baskı makinemiz ile cam, metal, ahşap, plastik ve deri yüzeylere doğrudan yüksek çözünürlüklü baskı.",
+  "listFeatures": ["Cam Baskı", "Metal Baskı", "Ahşap Baskı", "Pleksi Baskı"],
+  "listImage": "/images/uv-baski.jpg",
+  "features": [
+    { "icon": "🎨", "title": "SwissQprint UV Teknolojisi", "desc": "İsviçre malı yüksek hassasiyetli UV baskı makineleri. 1440 dpi çözünürlükte fotoğraf kalitesi baskılar." },
+    { "icon": "🪟", "title": "Çok Yüzeylu Baskı", "desc": "Cam, metal, alüminyum, ahşap, plastik, PVC, laminat ve PU üzerine doğrudan baskı yapabiliyoruz." },
+    { "icon": "✨", "title": "Solmayan & Dayanıklı Renkler", "desc": "UV ışını altında sertleşen özel mürekkepler. 5+ yıl dış mekan direnci, kimyasal dayanıklılık." },
+    { "icon": "⚡", "title": "Ani Kurutma", "desc": "UV ışın sayesinde baskı anında kuruyor. Üretim hızı artar, malzeme harabiyeti azalır." },
+    { "icon": "🎯", "title": "Kişiselleştirme & Sayısallaştırma", "desc": "Seri üretimde her ürüne farklı tasarım veya yazı çıktısı yapabiliyoruz. Kurumsal hediye setleri için ideal." },
+    { "icon": "📐", "title": "Kalıp & Kesim Hizmeti", "desc": "Baskıdan sonra kalıp kesim, delik açma, köşe yuvarlaklaştırma işlemleri yapıyoruz." }
+  ],
+  "products": [
+    { "title": "UV Baskı", "desc": "Ahşap, metal, cam, plastik ve deri gibi her türlü yüzeye doğrudan UV baskı.", "image": "/images/urunler/uv-baski-1.jpg", "href": "/urunlerimiz/uv-baski" },
+    { "title": "Fotoblok Baskı", "desc": "Fotoğraf kalitesi dijital baskı. Mat veya parlak yüzey seçenekleri.", "image": "/images/urunler/fotoblok-1.jpg", "href": "/urunlerimiz/fotoblok" },
+    { "title": "İş Güvenliği Levhaları", "desc": "UV dayanıklı iş güvenliği uyarı ve tehlike levhaları.", "image": "/images/urunler/is-guvenligi-1.jpg", "href": "/urunlerimiz/is-guvenligi-levhalari" },
+    { "title": "Ofis Tabelası", "desc": "Kapı ve resepsiyon tabelaları. Pleksiglas, alüminyum ve ahşap seçenekler.", "image": "/images/urunler/ofis-tabela-1.jpg", "href": "/urunlerimiz/ofis-tabelasi" },
+    { "title": "Standart Kesim Folyo Etiket", "desc": "Standart şekillerde kesim folyo etiket baskı.", "image": "/images/urunler/standart-etiket-1.jpg", "href": "/urunlerimiz/standart-kesim-folyo-etiket" },
+    { "title": "Özel Kesim Folyo Etiket", "desc": "CNC ve plotter ile istenilen şekilde özel kesim folyo etiket.", "image": "/images/urunler/ozel-etiket-1.jpg", "href": "/urunlerimiz/ozel-kesim-folyo-etiket" }
+  ],
+  "process": [
+    { "step": "01", "title": "Tasarım & Hazırlık", "desc": "Özel formatda dosya hazırlanır. Malzeme ve boyut ölçümleri belirlenir." },
+    { "step": "02", "title": "Makine Ayarlaması", "desc": "Malzeme türüne göre UV makinesi ayarlanır. Test baskı yapılarak renk tamlığı kontrol edilir." },
+    { "step": "03", "title": "UV Baskı", "desc": "SwissQprint presleriyle ürüne UV baskı yapılır. Anında kurutma ile sonraki işleme geçilir." },
+    { "step": "04", "title": "Sonlandırma & Kontrol", "desc": "Kalıp kesim, köşe yuvarlaklaştırma vs. işlemler yapılır. Kalite kontrolü sonrası ambalajlama ve teslim." }
+  ],
+  "sectors": ["Perakende & AVM", "Sağlık & Hastane", "Otomotiv", "İnşaat & Gayrimenkul", "Turizm & Otelcilik", "Tekstil & Moda", "Elektronik & Teknoloji", "Spor & Rekreasyon", "Yayın & Medya", "Kamu & Belediye"],
+  "faq": [
+    { "q": "UV baskı dayanıklılığı ne kadar sürer?", "a": "UV ışınlarıyla sertleşen mürekkepler, dış mekan koşullarında 5+ yıl dirençlidir. İç mekan kullanımında bu süre 10+ yıla çıkar. Darbe ve kırılmaya karşı malzemenin dayanıklılığına bağlıdır." },
+    { "q": "Hangi malzemelere baskı yapabilirsiniz?", "a": "Cam, ayna, metal (alüminyum, çelik), ahşap (MDF, masif), plastik (PVC, akrilik), polikarbonat, laminat, leatherette ve PU malzemelere baskı yapabiliyoruz. Pürüzlü yüzeyler için yapıştırıcı kullanılır." },
+    { "q": "Küçük partide üretim yapıyor musunuz?", "a": "Evet. Tek parçadan başlayarak her ölçüdeki siparişi kabul ediyoruz. Kurumsal hediye üretiminde 10-1000 parça arası siparişler uygunudur." },
+    { "q": "Renk uyumu veya özel renk istiyorsam?", "a": "Renk eşleştirmesi için örnek sunabilirsiniz. Pantone kodunuzla hassas renk ayarı yaparız. Baskı öncesi test baskı önerilir." },
+    { "q": "Üretim süresi ne kadar?", "a": "Tasarım onayından sonra 3-5 iş günü standarttır. Acil üretimde 24-48 saatte teslim edebiliriz." }
+  ]
+}

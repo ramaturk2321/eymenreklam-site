@@ -1,0 +1,69 @@
+{
+  "title": "Katalog Tasarım ve Baskı",
+  "description": "Katalog tasarım ve baskı hizmeti. Kurumsal, ürün ve hizmet katalogları. Eymen Reklam — 25 yıllık tecrübe, 2 yıl garanti.",
+  "category": "Dijital Baskı",
+  "categoryHref": "/hizmetlerimiz/dijital-baski",
+  "shortDesc": "Katalog tasarım ve baskı hizmeti. Kurumsal, ürün ve hizmet katalogları için profesyonel tasarım ve yüksek kaliteli baskı çözümü.",
+  "mainImg": "/images/urunler/katalog-1.jpg",
+  "gallery": [
+    "/images/urunler/katalog-1.jpg",
+    "/images/urunler/katalog-2.jpg",
+    "/images/urunler/katalog-3.jpg",
+    "/images/urunler/katalog-4.jpg"
+  ],
+  "specs": [
+    { "icon": "M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4", "label": "Malzeme", "value": "Kuşe / Mat Kağıt" },
+    { "icon": "M13 10V3L4 14h7v7l9-11h-7z", "label": "Baskı", "value": "Dijital / Ofset" },
+    { "icon": "M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z", "label": "Üretim Süresi", "value": "5-10 İş Günü" },
+    { "icon": "M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z", "label": "Garanti", "value": "2 Yıl" }
+  ],
+  "descriptionSections": [
+    {
+      "icon": "M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z",
+      "title": "Katalog Tasarım ve Baskı Nedir?",
+      "content": "Katalog, firmanızın ürün ve hizmetlerini detaylı şekilde tanıtan profesyonel bir basılı materyeldir. Kurumsal imajınızı güçlendirir, müşterilerinize kapsamlı bilgi sunar. Tasarımdan baskıya kadar tüm süreci tek elden yönetiyoruz."
+    },
+    {
+      "icon": "M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10",
+      "title": "Katalog Çeşitleri",
+      "content": "",
+      "list": [
+        { "bold": "Ürün Katalogu", "text": "Ürün fotoğrafları, teknik detaylar ve fiyat bilgilerini içeren kapsamlı katalog." },
+        { "bold": "Kurumsal Katalog", "text": "Firma tanıtımı, hizmetler ve referansları içeren kurumsal tanıtım katalogu." },
+        { "bold": "Fuar Katalogu", "text": "Fuar ve etkinlikler için hazırlanan özel tanıtım katalogu." },
+        { "bold": "Dijital Katalog", "text": "Basılı katalogun dijital ortama uyarlanmış versiyonu. Online paylaşım için." }
+      ]
+    },
+    {
+      "icon": "M13 10V3L4 14h7v7l9-11h-7z",
+      "title": "Profesyonel Tasarım Süreci",
+      "content": "İçerik planlamasından sayfa düzenine, fotoğraf çekiminden renk yönetimine kadar tüm tasarım sürecini profesyonel ekibimizle yürütüyoruz. Kurumsal kimliğinize uygun, okunabilir ve etkileyici kataloglar hazırlıyoruz."
+    },
+    {
+      "icon": "M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.066 2.573c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.573 1.066c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.066-2.573c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z M15 12a3 3 0 11-6 0 3 3 0 016 0z",
+      "title": "Kaliteli Baskı ve Ciltleme",
+      "content": "Kuşe ve mat kağıt seçenekleriyle yüksek kaliteli baskı sunuyoruz. Tel dikiş, amerikan cilt ve spiralli ciltleme seçenekleri mevcuttur. Kapak için kalın karton ve laminasyon ile dayanıklı bir son ürün elde ediyoruz."
+    }
+  ],
+  "technicalSpecs": [
+    { "label": "İç Sayfa Kağıdı", "value": "135-170 gr Kuşe / Mat" },
+    { "label": "Kapak Kağıdı", "value": "300-350 gr Kuşe + Laminasyon" },
+    { "label": "Baskı Tekniği", "value": "Dijital / Ofset Baskı" },
+    { "label": "Standart Boyutlar", "value": "A4, A5, 21x21 cm" },
+    { "label": "Ciltleme", "value": "Tel Dikiş / Amerikan Cilt / Spiral" },
+    { "label": "Sayfa Sayısı", "value": "8 — 100+ Sayfa" },
+    { "label": "Garanti", "value": "2 Yıl (Baskı Kalitesi)" }
+  ],
+  "faq": [
+    { "q": "Katalog baskı fiyatı ne kadar?", "a": "Fiyat; sayfa sayısı, kağıt türü, boyut, ciltleme ve adet sayısına göre değişir. Detaylı teklif için bizimle iletişime geçin." },
+    { "q": "Tasarım desteği var mı?", "a": "Evet, içerik planlamasından sayfa tasarımına kadar ücretsiz grafik tasarım desteği sunuyoruz." },
+    { "q": "Minimum sipariş adedi var mı?", "a": "Dijital baskı ile 1 adetten başlayan üretim yapabiliyoruz. Ofset baskı için minimum 250 adet öneriyoruz." },
+    { "q": "Dijital katalog da hazırlanır mı?", "a": "Evet, basılı katalogun dijital versiyonunu da hazırlayabiliyoruz." }
+  ],
+  "relatedProducts": [
+    { "img": "/images/urunler/kartvizit-1.jpg", "title": "Kartvizit Tasarım ve Baskı", "href": "/urunlerimiz/kartvizit", "category": "Dijital Baskı" },
+    { "img": "/images/urunler/insert-1.jpg", "title": "Insert Tasarım Baskı", "href": "/urunlerimiz/insert-tasarim", "category": "Dijital Baskı" },
+    { "img": "/images/urunler/fotoblok-1.jpg", "title": "Fotoblok Baskı", "href": "/urunlerimiz/fotoblok", "category": "Dijital Baskı" },
+    { "img": "/images/urunler/mat-kagit-1.jpg", "title": "Mat Kağıt Afiş Baskı", "href": "/urunlerimiz/mat-kagit-afis", "category": "Dijital Baskı" }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "title": "İş Güvenliği Levhaları",
+  "description": "Uyarı levhaları, talimat panoları, tehlike işaretleri. ISO standartlarında sertifikalı levha üretimi. İstanbul Pendik.",
+  "heroDesc": "İşyeri güvenliği kurallarına uygun uyarı levhaları, talimat panoları ve tehlike işaretleri üretiyoruz. ISO 3864, TSE ve OSHA standartlarında tasarlanan levhalar. PVC, plastik, metal ve alüminyum malzemelerde, UV dayanıklı baskı ile 5+ yıl dirençli çözümler sunuyoruz.",
+  "order": 8,
+  "listIcon": "⚠️",
+  "listDesc": "İSG mevzuatına uygun uyarı, yasak, bilgi ve yangın güvenliği levhaları. Fotolüminesans ve standart seçenekler.",
+  "listFeatures": ["Uyarı Levhası", "Yangın", "Yasak", "Bilgi Levhası"],
+  "listImage": "/images/tabela-imalat.jpg",
+  "features": [
+    { "icon": "⚠️", "title": "ISO 3864 Standartları", "desc": "Uluslararası güvenlik işaretleri standardına uygun levha tasarımı ve üretimi." },
+    { "icon": "🚫", "title": "Uyarı & Tehlike İşaretleri", "desc": "Elektrik, kimyasal, mekanik ve biyolojik tehlike işaretleri. Sarı, kırmızı, mavi, siyah renkler." },
+    { "icon": "📋", "title": "Talimat & Yönlendirme Panoları", "desc": "İş talimatı levhaları, acil çıkış yönlendirmesi, yangın söndürücü konumları." },
+    { "icon": "🏭", "title": "Endüstriyel Malzeme", "desc": "PVC, plastik, alüminyum, galvaniz çelik. Dış mekan ve ağır koşullara dayanıklı." },
+    { "icon": "✨", "title": "UV Dayanıklı Baskı", "desc": "UV ışınına dayanıklı mürekkepler. 5+ yıl dış mekan uygulamalarında renk tamlığı." },
+    { "icon": "🔧", "title": "Özel Tasarım & Boyutlar", "desc": "Kurumsal renklere göre özel levha tasarımı. Standart ve özel boyutlar." }
+  ],
+  "products": [
+    { "title": "İş Güvenliği Levhaları", "desc": "İş yeri uyarı, tehlike, yasak ve zorunluluk işaretleri. ISO ve TSE standartlarında.", "image": "/images/urunler/is-guvenligi-1.jpg", "href": "/urunlerimiz/is-guvenligi-levhalari" },
+    { "title": "Uyarı Levhaları", "desc": "Elektrik, yükseklik, kaygan zemin, basınçlı sistem uyarı levhaları.", "image": "/images/urunler/is-guvenligi-2.jpg", "href": "/urunlerimiz/is-guvenligi-levhalari" },
+    { "title": "Tehlike İşaretleri", "desc": "Kimyasal, mekanik, ateş, zehir ve biyolojik tehlike işaretleri.", "image": "/images/urunler/is-guvenligi-3.jpg", "href": "/urunlerimiz/is-guvenligi-levhalari" },
+    { "title": "Acil Çıkış Levhaları", "desc": "Acil çıkış yönlendirmesi, yangın söndürücü konumu, ilk yardım levhaları.", "image": "/images/urunler/is-guvenligi-4.jpg", "href": "/urunlerimiz/is-guvenligi-levhalari" },
+    { "title": "Ofis Tabelası", "desc": "Kapı ve resepsiyon tabelaları. Kurumsal bilgilendirme ve yönlendirme.", "image": "/images/urunler/ofis-tabela-1.jpg", "href": "/urunlerimiz/ofis-tabelasi" },
+    { "title": "Fener Tabela", "desc": "Duvara dik montajlı çift taraflı yönlendirme tabelası.", "image": "/images/urunler/fener-tabela-1.jpg", "href": "/urunlerimiz/fener-tabela" }
+  ],
+  "process": [
+    { "step": "01", "title": "Standart & Gereksinim", "desc": "İşyeri türü ve güvenlik gereksinimlerine göre levha türleri belirlenir." },
+    { "step": "02", "title": "Tasarım & Uygunluk", "desc": "ISO 3864 ve TSE standartlarına uygun tasarım hazırlanır. Müşteri onayı alınır." },
+    { "step": "03", "title": "Üretim & Baskı", "desc": "Seçilen malzemeye UV dayanıklı baskı yapılır. Standart ve özel boyutlar imâl edilir." },
+    { "step": "04", "title": "Montaj Desteği & Teslim", "desc": "Levhalar teslim edilir. İhtiyaç halinde montaj konumlandırması konusunda danışmanlık sunulur." }
+  ],
+  "sectors": ["Sanayi & Fabrika", "İnşaat & Gayrimenkul", "Otomotiv & Lojistik", "Sağlık & Hastane", "Kimya & Petrokimya", "Elektrik & Enerji", "Madencilik & Çıkartma", "Gıda & İçecek", "Tekstil & Oto", "Perakende & Depo"],
+  "faq": [
+    { "q": "Levha standartları nelerdir?", "a": "ISO 3864, TSE ve OSHA uluslararası standartlarına uygun levhalar tasarlanır. Türkiye'de İSG yönetmeliğine uygun olması zorunludur." },
+    { "q": "Hangi malzeme dış mekan için uygun?", "a": "Alüminyum, galvaniz çelik ve özel PVC malzemeler dış mekan uygulamalarında 5+ yıl dayanır. Basit PVC kısa süreli kullanım için uygundur." },
+    { "q": "Özel renk ve logo istemek mümkün mü?", "a": "Evet. Standart ISO renklerinden farklı olarak kurumsal renklerde ve logoyla özel levha tasarımı yapabiliriz." },
+    { "q": "Levha boyutlandırması nasıl yapılır?", "a": "ISO standardında minimum boyutlar ve görüş mesafesine göre hesaplama vardır. Örnek: 5m mesafeden görülmesi gereken levha 50×50 cm olmalı." },
+    { "q": "Montaj konusunda tavsiye verir misiniz?", "a": "Evet. İşyerinin yerleşimine göre levha konumlandırması konusunda danışmanlık sunuyoruz. OSHA ve TSE yönetmeliğine göre doğru yerleşim önerilir." }
+  ]
+}

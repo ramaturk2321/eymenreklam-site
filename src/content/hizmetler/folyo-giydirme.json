@@ -1,0 +1,40 @@
+{
+  "title": "Folyo & Giydirme",
+  "description": "Araç kaportası, bina cephesi, cam uygulamaları ve one-way-vision folyo. Avery Dennison kaliteli folyo, profesyonel kurulum. İstanbul Pendik.",
+  "heroDesc": "Yüksek kaliteli Avery Dennison ve 3M markalı folyo ile araç, bina cephesi, cam ve iç mekan uygulamaları yapıyoruz. Araç giydirmesi ve tamamen cephe kaplaması gibi büyük ölçekli projelerde deneyimli ekibimiz vardır. One-way-vision, dekoratif ve fonksiyonel folyo seçenekleriyle profesyonel çözümler sunuyoruz.",
+  "order": 4,
+  "listIcon": "🚗",
+  "listDesc": "Araç giydirme, cephe folyo, cam folyo, one way vision ve folyo harf kesim. Komple ve kısmi kaplama çözümleri.",
+  "listFeatures": ["Araç Kaplama", "Cephe Folyo", "Cam Folyo", "One Way Vision", "Kamyon/Tır"],
+  "listImage": "/images/arac-giydirme.jpg",
+  "features": [
+    { "icon": "🚗", "title": "Araç Giydirmesi (Full Wrap)", "desc": "Araç tuğlasının tamamına folyo kaplanması. Markalaştırma, reklam, koruma amaçlı çalışmalar." },
+    { "icon": "🏢", "title": "Bina Cephesi & Dekor", "desc": "Geniş cephe kaplama, pencere dekorasyonu, iç mekan duvar folyo uygulamaları." },
+    { "icon": "🪟", "title": "Cam Folyo Uygulamaları", "desc": "One-way-vision, dekoratif desenleme, mat cam, ısı kontrol filmaları." },
+    { "icon": "✨", "title": "Premium Folyo Malzemeleri", "desc": "Avery Dennison ve 3M kalitesi folyo. 5-7 yıl dış mekan garantili, UV dirençli, dayanıklı." },
+    { "icon": "👨‍🔧", "title": "Profesyonel Kurulum", "desc": "Eğitimli ve deneyimli montaj ekibi. Hava kabarcığı ve buruşuk olmayan tam uyum sağlanır." },
+    { "icon": "🔧", "title": "Onarım & Bakım", "desc": "Hasar gören folyo kısmi değişim ve bakım hizmetleri sunuyoruz." }
+  ],
+  "products": [
+    { "title": "Komple Araç Kaplama", "desc": "Araç dış cephesinin tamamına kurumsal markalama veya reklam folyo uygulaması.", "image": "/images/urunler/komple-arac-1.jpg", "href": "/urunlerimiz/komple-arac-kaplama" },
+    { "title": "Kısmi Araç Kaplama", "desc": "Araçın yan kapı, çatı, ön arka bölümlerine seçmeli folyo uygulaması.", "image": "/images/urunler/kismi-arac-1.jpg", "href": "/urunlerimiz/kismi-arac-kaplama" },
+    { "title": "Cephe Folyo Giydirme", "desc": "Büyük ölçekli bina cephesi giydirmesi. Depo, şantiye, fabrika cepheleri.", "image": "/images/urunler/cephe-giydirme-1.jpg", "href": "/urunlerimiz/cephe-giydirme" },
+    { "title": "Cam One Way Vision", "desc": "Camdan dışarı bakılabiliyor, dışarıdan içeri görülmüyor. Gizlilik ve markalama için ideal.", "image": "/images/urunler/one-way-1.jpg", "href": "/urunlerimiz/cam-one-way-vision" },
+    { "title": "Cam Kumlama Folyo", "desc": "Pencere, kapı ve ofis bölmelerine kumlama folyo ile mahremiyet ve estetik.", "image": "/images/urunler/cam-kumlama-1.jpg", "href": "/urunlerimiz/cam-kumlama-folyo" },
+    { "title": "Kamyon/Tır Folyo", "desc": "Kamyon ve tır kasalarına kurumsal folyo giydirme uygulaması.", "image": "/images/urunler/kamyon-tir-1.jpg", "href": "/urunlerimiz/kamyon-tir-folyo" }
+  ],
+  "process": [
+    { "step": "01", "title": "Ölçüm & Tasarım", "desc": "Harita, fotoğraf ve ölçüm alınarak tasarım hazırlanır. Kurumsal id, logo, renkler belirlenir." },
+    { "step": "02", "title": "Folyo Tasarımı & Kesim", "desc": "Tasarım dosyası onaylanır. Folyo baskı makinesiyle tasarım yazdırılır, hassas kesim yapılır." },
+    { "step": "03", "title": "Yüzey Hazırlığı & Montaj", "desc": "Uygulama yüzeyi temizlenir, yağ ve kirden arındırılır. Folyo yapıştırıcı tarafından yavaşça uygulanır." },
+    { "step": "04", "title": "Bitiriş & Kontrol", "desc": "Kenarlar sıkıştırılır, hava kabarcıkları giderilir. Son kontrol yapılır, temizlik ve teslim." }
+  ],
+  "sectors": ["Perakende & AVM", "Sanayi & Fabrika", "Otomotiv & Lojistik", "İnşaat & Gayrimenkul", "Turizm & Otelcilik", "Sağlık & Hastane", "Pazarlama & Reklam", "Lojistik & Depo", "Spor & Rekreasyon", "Gıda & Restoran"],
+  "faq": [
+    { "q": "Araç giydirmesi kurulumu ne kadar sürer?", "a": "Araç boyutuna göre 2-5 gün sürer. Tasarım onayından sonra folyo üretimi 2-3 gün, montaj 2-3 gün alır." },
+    { "q": "Araç giydirmesi maliyeti nedir?", "a": "Araç modeli, tasarım karmaşıklığı ve folyo kalitesine göre değişir. Ufak araçlar 15.000-25.000 TL, büyük araçlar 25.000-40.000 TL arasında. Ücretsiz teklif sunuyoruz." },
+    { "q": "Folyo ne kadar dayanır?", "a": "Premium Avery Dennison ve 3M folyo 5-7 yıl dış mekan garantilidir. Bakım ve temizliğe dikkat edilirse daha uzun ömür sağlar." },
+    { "q": "Folyo çıkartırken araç hasar görür mü?", "a": "Profesyonel çıkarma işleminde hasar olmaz. Ancak eski folyo çok uzun süredir kullanılıyorsa boya altı hasar olabilir." },
+    { "q": "Cam folyo ısı kontrolü sağlar mı?", "a": "Evet. Bazı folyo türleri UV ışınını % 99 kadar tutar ve ısı kontrolü sağlar. Yaz aylarında araç içi ısısını 3-5 derece düşürebilir." }
+  ]
+}

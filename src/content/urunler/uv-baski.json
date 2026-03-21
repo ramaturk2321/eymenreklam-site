@@ -1,0 +1,74 @@
+{
+  "title": "UV Baskı",
+  "description": "Ahşap, metal, cam, akrilik ve onlarca farklı yüzeye UV baskı hizmeti. Solmayan, çizilmeye dayanıklı, canlı renkler. Eymen Reklam — 25 yıllık tecrübe, 2 yıl garanti.",
+  "category": "UV Baskı",
+  "categoryHref": "/hizmetlerimiz/uv-baski",
+  "shortDesc": "Ahşap, metal, cam, akrilik, deri ve onlarca farklı yüzeye doğrudan baskı imkanı sunan UV baskı teknolojisi. Solmayan, çizilmeye dayanıklı, canlı renklerle markanıza özel üretim.",
+  "mainImg": "/images/urunler/uv-baski-1.jpg",
+  "gallery": [
+    "/images/urunler/uv-baski-1.jpg",
+    "/images/urunler/uv-baski-2.jpg",
+    "/images/urunler/uv-baski-3.jpg",
+    "/images/urunler/uv-baski-4.jpg"
+  ],
+  "specs": [
+    { "icon": "M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4", "label": "Malzeme", "value": "Ahşap / Metal / Cam / Akrilik" },
+    { "icon": "M13 10V3L4 14h7v7l9-11h-7z", "label": "Baskı Teknolojisi", "value": "UV LED Flatbed" },
+    { "icon": "M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z", "label": "Üretim Süresi", "value": "1-3 İş Günü" },
+    { "icon": "M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z", "label": "Garanti", "value": "2 Yıl" }
+  ],
+  "descriptionSections": [
+    {
+      "icon": "M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z",
+      "title": "UV Baskı Nedir?",
+      "content": "UV baskı, ultraviyole ışınlarla anında kuruyan özel mürekkepler kullanılarak hemen hemen her yüzeye doğrudan baskı yapılmasını sağlayan ileri teknoloji bir baskı yöntemidir. Geleneksel baskı yöntemlerinin aksine, ara yüzey hazırlığına gerek kalmadan ahşap, metal, cam, plastik, deri ve daha birçok malzemeye direkt olarak baskı yapılabilir. Ultraviyole ışık mürekkebi anında kürleyerek (sertleştirerek) yüksek çözünürlüklü, solmaya ve çizilmeye dayanıklı baskılar elde edilmesini sağlar."
+    },
+    {
+      "icon": "M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10",
+      "title": "Hangi Malzemelere Baskı Yapılabilir?",
+      "content": "",
+      "list": [
+        { "bold": "Ahşap & MDF", "text": "Doğal ahşap, MDF, sunta ve laminat yüzeylere fotoğraf kalitesinde baskı. Dekoratif paneller ve tabelalar için idealdir." },
+        { "bold": "Metal & Alüminyum", "text": "Çelik, alüminyum kompozit panel (ACP), galvaniz sac ve paslanmaz çelik yüzeylere endüstriyel dayanıklılıkta baskı." },
+        { "bold": "Cam & Akrilik", "text": "Düz cam, temperli cam ve pleksiglas (akrilik) yüzeylere şeffaf veya opak baskı. Mağaza vitrinleri ve dekoratif panellerde kullanılır." },
+        { "bold": "Deri & Kumaş", "text": "Suni deri, doğal deri ve bazı kumaş türlerine promosyon veya dekoratif baskı. Kişiselleştirilmiş ürünler için tercih edilir." },
+        { "bold": "PVC & Plastik", "text": "Forex, dekota, polikarbon ve diğer plastik yüzeylere yüksek çözünürlüklü reklam baskısı." },
+        { "bold": "Seramik & Fayans", "text": "Seramik, porselen ve fayans yüzeylere özel tasarım baskı. İç mekan dekorasyonu ve hediyelik eşyalar için kullanılır." }
+      ]
+    },
+    {
+      "icon": "M13 10V3L4 14h7v7l9-11h-7z",
+      "title": "UV Baskının Avantajları",
+      "content": "UV baskı teknolojisi, klasik baskı yöntemlerine kıyasla birçok üstünlük sunar. Mürekkep anında kürlenerek kurur; bu sayede baskı sonrası bekleme süresi sıfıra iner. Solvent içermediği için çevre dostudur ve iç mekanlarda güvenle kullanılabilir. 1440 DPI'a kadar çözünürlük desteğiyle fotoğraf kalitesinde baskılar elde edilir. Beyaz mürekkep seçeneği sayesinde koyu ve şeffaf yüzeylere de canlı renklerle baskı yapılabilir. Kabartma (vernik) efekti ile üç boyutlu dokunsal baskılar üretilebilir."
+    },
+    {
+      "icon": "M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.066 2.573c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.573 1.066c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.066-2.573c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z M15 12a3 3 0 11-6 0 3 3 0 016 0z",
+      "title": "Kullanım Alanları",
+      "content": "UV baskı, reklam sektöründen iç mimarlığa, promosyon ürünlerinden endüstriyel etiketlemeye kadar geniş bir yelpazede kullanılır. Tabela ve yönlendirme levhaları, mağaza içi görseller, fuar standı panelleri, mimari dekoratif paneller, kapı ve duvar kaplamaları, hediye ve promosyon ürünleri, makine etiketleri ve seri numaraları başlıca uygulama alanlarıdır. Eymen Reklam olarak 25 yıllık tecrübemizle her projeye özel UV baskı çözümleri sunuyoruz."
+    }
+  ],
+  "technicalSpecs": [
+    { "label": "Baskı Teknolojisi", "value": "UV LED Flatbed (Düz Yatak)" },
+    { "label": "Maksimum Baskı Alanı", "value": "250 x 130 cm" },
+    { "label": "Çözünürlük", "value": "720 — 1440 DPI" },
+    { "label": "Mürekkep Türü", "value": "UV Kürleme Mürekkebi (CMYK + Beyaz)" },
+    { "label": "Baskı Kalınlığı", "value": "0 — 10 cm malzeme kalınlığı" },
+    { "label": "Uyumlu Yüzeyler", "value": "Ahşap, Metal, Cam, Akrilik, PVC, Deri, Seramik" },
+    { "label": "Özel Efektler", "value": "Kabartma (Vernik), Beyaz Altbaskı, Spot Lak" },
+    { "label": "Dayanıklılık", "value": "UV & Suya Dayanıklı, Çizilmeye Dirençli" },
+    { "label": "Minimum Sipariş", "value": "1 Adet (Prototip dahil)" },
+    { "label": "Garanti", "value": "2 Yıl (Dış mekan 1 Yıl)" }
+  ],
+  "faq": [
+    { "q": "UV baskı fiyatı neye göre değişir?", "a": "Fiyat; malzeme türü, baskı alanı (m² cinsinden), baskı çözünürlüğü, beyaz mürekkep kullanımı ve kabartma efekti gibi faktörlere göre belirlenir. Ücretsiz keşif ve numune baskı sonrası net fiyat teklifi sunuyoruz." },
+    { "q": "UV baskı dış mekanda dayanıklı mıdır?", "a": "Evet, UV mürekkepler doğası gereği UV ışınlarına ve suya dayanıklıdır. Dış mekan uygulamalarında 2-5 yıl arası dayanıklılık sağlar. Ek UV koruyucu lak ile bu süre uzatılabilir." },
+    { "q": "Minimum sipariş adedi var mı?", "a": "Hayır, UV baskının en büyük avantajlarından biri 1 adetten bile üretim yapılabilmesidir. Prototip, numune veya kişiselleştirilmiş tek parça siparişler kabul ediyoruz." },
+    { "q": "Beyaz mürekkep nedir, ne işe yarar?", "a": "Beyaz mürekkep, koyu renkli veya şeffaf yüzeylere baskıda alt katman olarak kullanılır. Bu sayede renkler canlılığını korur. Ayrıca şeffaf cam veya akrilik üzerine opak beyaz baskı yapmak için de kullanılır." }
+  ],
+  "relatedProducts": [
+    { "img": "/images/urunler/kutu-harf-1.jpg", "title": "Kutu Harf Tabela", "href": "/urunlerimiz/kutu-harf-tabela", "category": "Tabela" },
+    { "img": "/images/urunler/cephe-giydirme-1.jpg", "title": "Cephe Giydirme", "href": "/urunlerimiz/cephe-giydirme", "category": "Folyo & Giydirme" },
+    { "img": "/images/urunler/branda-1.jpg", "title": "Bez & Branda Baskı", "href": "/urunlerimiz/bez-branda-baski", "category": "Bez & Afiş Baskı" },
+    { "img": "/images/urunler/rollup-1.jpg", "title": "Roll Up Banner", "href": "/urunlerimiz/rollup-banner", "category": "Display & Stand" }
+  ]
+}

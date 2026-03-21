@@ -1,0 +1,40 @@
+{
+  "title": "Sunum & Stand",
+  "description": "Lightbox, roll-up, x-banner ve etkinlik standları. Taşınabilir ve dayanıklı sunum sistemleri. İstanbul Pendik.",
+  "heroDesc": "Etkinlik, ticari fuarlar ve mağaza tasarımlarında kullanılan ışıklı tabelalar, roll-up bannerlar, x-bannerlar ve özel stand sistemleri tasarlayıp üretiyoruz. Alüminyum iskelet, LED aydınlatma ve yüksek kaliteli baskılı panellerle profesyonel sunum çözümleri sağlıyoruz.",
+  "order": 7,
+  "listIcon": "📐",
+  "listDesc": "Lightbox pano, roll-up banner, X banner ve fuar standı. Taşınabilir ve kalıcı sergileme çözümleri.",
+  "listFeatures": ["Lightbox", "Roll-Up", "X Banner", "Fuar Standı"],
+  "listImage": "/images/dijital-baski.jpg",
+  "features": [
+    { "icon": "💡", "title": "LED Lightbox", "desc": "İç mekan mağaza ve resepsiyon lightbox. Enerji tasarruflu LED aydınlatma, çıkartılabilir panel." },
+    { "icon": "📍", "title": "Roll-Up Banner", "desc": "Taşınabilir roll-up sistem. Pratik kurulum ve katlama. Dayanıklı alüminyum iskelet." },
+    { "icon": "✕", "title": "X-Banner & L-Banner", "desc": "Kolay kurulum bannerleri. Ticari fuarlar, etkinlik ve mağaza standlarında kullanılır." },
+    { "icon": "🎪", "title": "Etkinlik Stand Sistemi", "desc": "Modüler stand sistemleri. Ticari fuarlar, konferans ve sergiler için özel tasarımlar." },
+    { "icon": "🖼️", "title": "Baskılı Panel Tasarımı", "desc": "Yüksek kaliteli panel baskıları. Kişiselleştirilmiş tasarım ve kurumsal id uygulaması." },
+    { "icon": "⚙️", "title": "Teknik Destek & Kurulum", "desc": "Proje öncesinde danışmanlık, kurulum rehberi ve teknik destek sunuyoruz." }
+  ],
+  "products": [
+    { "title": "LED Lightbox", "desc": "İç mekan ışıklı tabelalar. Mağaza, resepsiyon ve otel giriş aydınlatması. Enerji tasarruflu LED.", "image": "/images/urunler/lightbox-1.jpg", "href": "/urunlerimiz/lightbox-pano" },
+    { "title": "Roll-Up Banner", "desc": "Taşınabilir roll-up sistem. Pratik kurulum, alüminyum iskelet. Ofis, stand ve etkinlik için.", "image": "/images/urunler/rollup-1.jpg", "href": "/urunlerimiz/rollup-banner" },
+    { "title": "Örümcek Stand", "desc": "Alüminyum iskelet üzerine bez baskılı taşınabilir stand. Fuar ve etkinliklerde hızlı kurulum.", "image": "/images/urunler/orumcek-stand-1.jpg", "href": "/urunlerimiz/orumcek-stand" },
+    { "title": "Yelken Bayrak", "desc": "Rüzgârda dalgalanan dikkat çekici bayrak sistemi. Mağaza önü ve etkinlik alanları için.", "image": "/images/urunler/yelken-bayrak-1.jpg", "href": "/urunlerimiz/yelken-bayrak" },
+    { "title": "Alüminyum Çerçeve", "desc": "Yaylı mekanizmalı alüminyum çerçeve. Poster, afiş ve bilgilendirme panosu için.", "image": "/images/urunler/alu-cerceve-1.jpg", "href": "/urunlerimiz/aluminyum-cerceve" },
+    { "title": "Dönkart Afiş", "desc": "Çift taraflı mağaza içi tanıtım aracı. Tavan sarkıtma ve raf üstü kullanım.", "image": "/images/urunler/donkart-1.jpg", "href": "/urunlerimiz/donkart" }
+  ],
+  "process": [
+    { "step": "01", "title": "Konsept & Tasarım", "desc": "Bütçe ve ihtiyaçlara göre sunum sistemi konsepti belirlenir. 3D tasarım hazırlanır." },
+    { "step": "02", "title": "Malzeme & İmalat", "desc": "Alüminyum iskelet, akrilik panel vb. bileşenler hazırlanır. Baskı işlemleri yapılır." },
+    { "step": "03", "title": "Montaj & Test", "desc": "Sistem üretime kurulup test edilir. Kalite kontrol yapılır, kurulum rehberi hazırlanır." },
+    { "step": "04", "title": "Teslim & Kurulum Desteği", "desc": "Ambalajlanarak teslim edilir. Etkinlik alanında kurulum desteği ve teknik rehberlik sağlanır." }
+  ],
+  "sectors": ["Pazarlama & Reklam", "Organizasyon & Etkinlik", "Perakende & AVM", "Sanayi & Fabrika", "Teknoloji & Yazılım", "Sağlık & Hastane", "Turizm & Otelcilik", "Eğitim & Kamu", "Finans & Sigortacılık", "İnşaat & Gayrimenkul"],
+  "faq": [
+    { "q": "Roll-up banner kurulumu ne kadar hızlı?", "a": "Roll-up banner sistem 1-2 dakika içinde kuruluyor. Sadece ayaklı alüminyum iskeletin üzerine panel çekilir. Taşınması da çok pratiktir." },
+    { "q": "Lightbox LED ömrü ne kadar?", "a": "LED modüllerimiz 50.000 saat ömürlüdür. Bu da 5-6 yıl kesintisiz kullanımı demektir. 2 yıl garantili sunuyoruz." },
+    { "q": "X-Banner ve roll-up arasındaki fark nedir?", "a": "X-banner daha ucuz ve basittir. Roll-up daha profesyonel görünüyor, dayanıklı malzeme kullanır ve daha uzun ömürlüdür." },
+    { "q": "Stand paneli tahrip olursa değiştirebilir miyim?", "a": "Evet. Paneller değiştirilir. Eskisini gönderirseniz aynı boyutda yeni panel üretip göndeririz (ücretli)." },
+    { "q": "Stand sistemi kaç defa kullanılabilir?", "a": "Alüminyum iskelet sınırsız kullanılabilir. Panel 50-100 kullanım sonrası aşınmaya başlayabilir, bu da 2-3 yıldır." }
+  ]
+}

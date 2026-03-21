@@ -1,0 +1,65 @@
+{
+  "title": "Bez & Branda Baskı",
+  "description": "Yüksek çözünürlüklü bez ve branda baskı. Dış mekan reklamları, pankart, cephe kapatma. Eymen Reklam — 25 yıllık tecrübe.",
+  "category": "Bez & Afiş Baskı",
+  "categoryHref": "/hizmetlerimiz/bez-baski",
+  "shortDesc": "Yüksek çözünürlüklü bez ve branda baskı hizmeti. Açık hava reklamları, etkinlik pankartları, inşaat görselleri ve cephe kapatma için dayanıklı branda baskı çözümleri.",
+  "mainImg": "/images/urunler/branda-1.jpg",
+  "gallery": [
+    "/images/urunler/branda-1.jpg",
+    "/images/urunler/branda-2.jpg",
+    "/images/urunler/branda-3.jpg",
+    "/images/bos_gorsel1.jpg"
+  ],
+  "specs": [
+    { "icon": "M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4", "label": "Malzeme", "value": "PVC Branda / Bez" },
+    { "icon": "M13 10V3L4 14h7v7l9-11h-7z", "label": "Baskı", "value": "Dijital Solvent / UV" },
+    { "icon": "M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z", "label": "Üretim", "value": "1-3 İş Günü" },
+    { "icon": "M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z", "label": "Dayanıklılık", "value": "2-3 Yıl Dış Mekan" }
+  ],
+  "descriptionSections": [
+    {
+      "icon": "M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z",
+      "title": "Bez & Branda Baskı Nedir?",
+      "content": "Branda baskı, PVC kaplı polyester kumaş üzerine yüksek çözünürlüklü dijital baskı işlemidir. Dış mekan reklamları, inşaat cephe kapatma, etkinlik pankartları, açılış bandı ve cadde afişleri için yaygın olarak kullanılır. Rüzgara, yağmura ve güneşe dayanıklı yapısıyla uzun süreli dış mekan kullanımına uygundur."
+    },
+    {
+      "icon": "M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10",
+      "title": "Branda Çeşitleri",
+      "content": "",
+      "list": [
+        { "bold": "Standart Branda (440g)", "text": "En yaygın kullanılan branda türü. Afiş, pankart ve genel reklam uygulamaları için ideal." },
+        { "bold": "Ağır Branda (510g)", "text": "Daha kalın ve dayanıklı. Uzun süreli dış mekan kullanımı ve büyük boyutlu uygulamalar için." },
+        { "bold": "Backlight Branda", "text": "Işık geçiren branda. Arka aydınlatmalı reklam panoları ve lightbox uygulamaları için." },
+        { "bold": "Örgülü Bez (Mesh)", "text": "Rüzgar geçiren delikli yapı. Yüksek binalarda ve rüzgarlı alanlarda güvenli kullanım." }
+      ]
+    },
+    {
+      "icon": "M13 10V3L4 14h7v7l9-11h-7z",
+      "title": "Baskı ve Finishing",
+      "content": "Solvent ve eko-solvent baskı makinelerimiz ile 720-1440 dpi çözünürlükte baskı yapıyoruz. Branda kenarlarına ısı kaynağı ile kuşgözü (ilmek) takılır. Cep, tur, halat kanal gibi finishing seçenekleri mevcuttur. Büyük boyutlu baskılarda ekleme kaynağı yapılarak sınırsız boyutta branda üretimi mümkündür."
+    }
+  ],
+  "technicalSpecs": [
+    { "label": "Malzeme", "value": "PVC Branda (440g / 510g)" },
+    { "label": "Baskı Teknolojisi", "value": "Solvent / Eko-Solvent" },
+    { "label": "Baskı Çözünürlüğü", "value": "720 — 1440 dpi" },
+    { "label": "Boyut", "value": "Sınırsız (ekleme ile)" },
+    { "label": "Finishing", "value": "Kuşgözü / Cep / Tur / Halat Kanal" },
+    { "label": "Dış Mekan Dayanıklılığı", "value": "2-3 Yıl" },
+    { "label": "Üretim Süresi", "value": "1-3 İş Günü" },
+    { "label": "Yanma Sınıfı", "value": "B1 (isteğe bağlı yangın sertifikalı)" }
+  ],
+  "faq": [
+    { "q": "Branda baskı fiyatı nasıl hesaplanır?", "a": "Fiyat m² bazında hesaplanır. Branda kalitesi (440g/510g), baskı çözünürlüğü, finishing (kuşgözü sayısı) ve adet etkili faktörlerdir." },
+    { "q": "En büyük branda boyutu ne kadar?", "a": "Tek parça genişliğimiz 320 cm'dir. Daha geniş boyutlar için ısı kaynağı ile ekleme yapılır. Uzunluk sınırı yoktur." },
+    { "q": "Branda ne kadar sürede hazır olur?", "a": "Standart siparişler 1-3 iş günü içinde hazırlanır. Acil siparişlerde aynı gün teslimat mümkündür." },
+    { "q": "Branda dış mekanda ne kadar dayanır?", "a": "Standart branda dış mekanda 2-3 yıl dayanır. Doğrudan güneş alan yerlerde renk solması süre ile görülebilir." }
+  ],
+  "relatedProducts": [
+    { "img": "/images/urunler/mesh-1.jpg", "title": "Mesh Baskı", "href": "/urunlerimiz/mesh-baski", "category": "Bez & Afiş Baskı" },
+    { "img": "/images/urunler/rollup-1.jpg", "title": "Roll-Up Banner", "href": "/urunlerimiz/rollup-banner", "category": "Display & Stand" },
+    { "img": "/images/urunler/yelken-bayrak-1.jpg", "title": "Yelken Bayrak", "href": "/urunlerimiz/yelken-bayrak", "category": "Display & Stand" },
+    { "img": "/images/urunler/uv-baski-1.jpg", "title": "UV Baskı", "href": "/urunlerimiz/uv-baski", "category": "UV Baskı" }
+  ]
+}

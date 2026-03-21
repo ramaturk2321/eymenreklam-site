@@ -1,0 +1,40 @@
+{
+  "title": "Mağaza Reklam Uygulamaları",
+  "description": "Perakende store branding, konsept tasarım, vitrini tasarımı, iç mekan dekorasyonu. Anahtar teslim mağaza reklam çözümleri. İstanbul Pendik.",
+  "heroDesc": "Perakende mağazalar için anahtar teslim reklam ve branding çözümleri sunuyoruz. Giriş dekorasyon, vitrin tasarımı, iç mekan grafikleri, raf etiketleri ve promosyon afişlerinden oluşan komple çözümler sağlıyoruz. Kurumsal kimliğinizi mağazada yaşatan, satış artışını hedefleyen tasarım ve uygulama hizmetleri.",
+  "order": 9,
+  "listIcon": "🏢",
+  "listDesc": "Mağaza konsept tasarımı, vitrin düzenlemesi, raf etiketleme ve iç mekan branding. Anahtar teslim mağaza çözümleri.",
+  "listFeatures": ["Konsept Tasarım", "Vitrin", "Raf Etiket", "İç Mekan"],
+  "listImage": "/images/cephe-giydirme.jpg",
+  "features": [
+    { "icon": "🎨", "title": "Konsept & Stil Tasarımı", "desc": "Mağazanızın kimliğine uygun konsept tasarımı. Renk, tipografi ve visual hierarchi uygunluğu sağlanır." },
+    { "icon": "🪟", "title": "Vitrini Tasarımı", "desc": "Dikkat çekici ve satış odaklı vitrin düzenlemesi. Sezonsal değişim ve promosyon tasarımı." },
+    { "icon": "📍", "title": "İç Mekan Dekorasyonu", "desc": "Duvar grafikleri, raf dekorasyonu, tavan tasarımı. Alışveriş deneyimini artırıcı ortam yaratma." },
+    { "icon": "💰", "title": "POS & Etiket Tasarımı", "desc": "Ürün etiketleri, fiyat etiketleri, promosyon afişleri. Satış noktası grafikleri." },
+    { "icon": "🚪", "title": "Giriş & Entrance Tasarımı", "desc": "Mağaza girişi dekorasyon. Kapı, kemerleri, giriş hol tasarımı." },
+    { "icon": "✨", "title": "Mevsimsel & Tema Dekor", "desc": "Yılbaşı, oruç bayramı, sezon dekorasyonları. Tema bazlı iç mekan değişimleri." }
+  ],
+  "products": [
+    { "title": "Hakmar AVM", "desc": "Hakmar AVM mağazaları için komple tabela, branda, folyo ve iç mekân reklam uygulamaları.", "image": "/images/urunler/hakmar-avm-1.jpg", "href": "/urunlerimiz/hakmar-avm" },
+    { "title": "Eve Mağazası", "desc": "Eve mağazaları için tabela, branda, folyo giydirme ve iç mekân reklam uygulamaları.", "image": "/images/urunler/eve-magazasi-1.jpg", "href": "/urunlerimiz/eve-magazasi" },
+    { "title": "Bizim Toptan", "desc": "Bizim Toptan mağazaları için komple mağaza reklam çözümleri.", "image": "/images/urunler/bizim-toptan-1.jpg", "href": "/urunlerimiz/bizim-toptan-magazasi" },
+    { "title": "Cut-Out Maket", "desc": "Mağaza içi tanıtım için insan boyutunda veya özel kesim karton maketler.", "image": "/images/urunler/cut-out-maket-1.jpg", "href": "/urunlerimiz/cut-out-maket" },
+    { "title": "Palet Eteği", "desc": "Market ve mağaza raflarında ürün tanıtımı için palet eteği baskı uygulaması.", "image": "/images/urunler/palet-etegi-1.jpg", "href": "/urunlerimiz/palet-etegi" },
+    { "title": "Dönkart Afiş", "desc": "Mağaza içi kampanya ve ürün tanıtımı için çift taraflı dönkart afişler.", "image": "/images/urunler/donkart-1.jpg", "href": "/urunlerimiz/donkart" }
+  ],
+  "process": [
+    { "step": "01", "title": "Konsept & Analiz", "desc": "Mağazanın cinsiyeti, hedef müşterisi, ürün çeşidi analiz edilir. Brand kimliği ve pazar durumu incelenir." },
+    { "step": "02", "title": "Tasarım & Öncü İzleme", "desc": "3D görseller ve mockup ile tasarım sunulur. Müşteri onayından sonra final tasarım hazırlanır." },
+    { "step": "03", "title": "İmalat & Hazırlık", "desc": "Grafikler, etiketler, dekoratif elemanlar üretilir. Malzeme ve aksesuarlar hazırlanır." },
+    { "step": "04", "title": "Montaj & Kurulum", "desc": "Profesyonel ekip tarafından yerinde montaj yapılır. Açılış hazırlığı ve ince ayar tamamlanır." }
+  ],
+  "sectors": ["Perakende & AVM", "Tekstil & Moda", "Elektronik & Teknoloji", "Gıda & Kahvehane", "Spor & Rekreasyon", "Kozmetik & Güzellik", "Ayakkabı & Çanta", "Mobilya & Ev", "Turizm & Otelcilik", "Sağlık & Eczane"],
+  "faq": [
+    { "q": "Mağaza branding projesinin süresi ne kadar?", "a": "Konsept tasarımdan sonra 3-4 hafta sürer. Tasarım onayından üretim ve montaja kadar ortalama 10 iş gününü alır." },
+    { "q": "Küçük mağazalar için de hizmet veriliyor mu?", "a": "Evet. Bütçenize göre küçük çaplı dekorasyon ve vitrin tasarımından anahtar teslim çözümlere kadar farklı paketler sunuyoruz." },
+    { "q": "Zincir mağaza konsepti uyguluyorsunuz?", "a": "Evet. Birden fazla mağazanız varsa tutarlı kimlik sağlamak adına denetim listeleri ve uygulama rehberleri hazırlarız." },
+    { "q": "Mevsimsel dekorasyon değişimi ne kadar sık yapılmalı?", "a": "Perakende sektörüne göre değişir. Fashion her 2 haftada, gıda/genel ticari mağazalar ayda bir, elektronik 3 ayda bir değiştirilebilir." },
+    { "q": "Mağazanız tasarlamadığım alet eser, yardımcı olabilir misiniz?", "a": "Evet. Tam iş güvenliği ve tasarım konsultasyonuyla mevcut mağazanızı yeniden tasarımlayabiliriz. Rehab projeleri için bütçe planlaması yapabiliriz." }
+  ]
+}

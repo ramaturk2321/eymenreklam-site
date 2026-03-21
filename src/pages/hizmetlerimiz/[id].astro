@@ -1,0 +1,26 @@
+---
+import HizmetDetay from '../../components/HizmetDetay.astro';
+import { getCollection } from 'astro:content';
+
+export async function getStaticPaths() {
+  const hizmetler = await getCollection('hizmetler');
+  return hizmetler.map(hizmet => ({
+    params: { id: hizmet.id },
+    props: { hizmet },
+  }));
+}
+
+const { hizmet } = Astro.props;
+const d = hizmet.data;
+---
+
+<HizmetDetay
+  title={d.title}
+  description={d.description}
+  heroDesc={d.heroDesc}
+  features={d.features}
+  products={d.products}
+  process={d.process}
+  sectors={d.sectors}
+  faq={d.faq}
+/>

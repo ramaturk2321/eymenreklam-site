@@ -1,0 +1,71 @@
+{
+  "title": "İnşaat Tabelası",
+  "description": "Satılık daire, proje tanıtım ve inşaat alanı tabelası imalatı. Vinil branda, alüminyum ve dekota malzeme. Eymen Reklam — 25 yıllık tecrübe, 2 yıl garanti.",
+  "category": "Tabela",
+  "categoryHref": "/hizmetlerimiz/tabela",
+  "shortDesc": "İnşaat alanı, satılık daire ve proje tanıtım tabelası imalatı. Vinil branda, alüminyum ve dekota malzeme seçenekleriyle 3194 İmar Kanunu'na uygun, dayanıklı ve dikkat çekici tabela çözümü.",
+  "mainImg": "/images/urunler/insaat-tabela-1.jpg",
+  "gallery": [
+    "/images/urunler/insaat-tabela-1.jpg",
+    "/images/urunler/insaat-tabela-2.jpg",
+    "/images/urunler/insaat-tabela-3.jpg",
+    "/images/urunler/insaat-tabela-4.jpg"
+  ],
+  "specs": [
+    { "icon": "M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4", "label": "Malzeme", "value": "Vinil Branda / Alüminyum / Dekota" },
+    { "icon": "M13 10V3L4 14h7v7l9-11h-7z", "label": "Baskı", "value": "Dijital / UV Baskı" },
+    { "icon": "M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z", "label": "Üretim Süresi", "value": "3-7 İş Günü" },
+    { "icon": "M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z", "label": "Garanti", "value": "2 Yıl" }
+  ],
+  "descriptionSections": [
+    {
+      "icon": "M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z",
+      "title": "İnşaat Tabelası Nedir?",
+      "content": "İnşaat tabelası, yapı alanlarında proje tanıtımı, satılık daire ilanı ve müteahhit bilgilerini gösteren tabela türüdür. Hem reklam hem de yasal zorunluluk olarak kullanılır. İnşaat alanının çevresinden geçen potansiyel alıcılara ve yatırımcılara projenizi tanıtmanın en etkili yoludur."
+    },
+    {
+      "icon": "M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10",
+      "title": "İnşaat Tabelası Çeşitleri",
+      "content": "",
+      "list": [
+        { "bold": "Vinil Branda İnşaat Tabelası", "text": "Galvaniz çerçeve üzerine vinil branda gerilerek oluşturulan en yaygın model. Büyük boyutlarda ekonomik çözüm." },
+        { "bold": "Dekota İnşaat Tabelası", "text": "PVC köpük levha üzerine dijital baskı. Hafif ve kolay monte edilebilen dayanıklı model." },
+        { "bold": "Alüminyum Kompozit İnşaat Tabelası", "text": "Kompozit panel üzerine UV baskı veya folyo. Premium görünüm isteyen projeler için ideal." },
+        { "bold": "Satılık Daire Tabelası", "text": "Bina cephesine asılan, daire planı ve iletişim bilgilerini gösteren proje tanıtım tabelası." }
+      ]
+    },
+    {
+      "icon": "M13 10V3L4 14h7v7l9-11h-7z",
+      "title": "Dayanıklı Malzeme ve Kaliteli Baskı",
+      "content": "İnşaat tabelalarında vinil branda, dekota ve alüminyum kompozit gibi dış mekâna dayanıklı malzemeler kullanıyoruz. Dijital baskı ve UV baskı teknolojileriyle canlı renkler ve yüksek çözünürlük sunuyoruz. Tabelalarınız güneş, yağmur ve rüzgâra karşı uzun süre dayanıklılığını koruyor."
+    },
+    {
+      "icon": "M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.066 2.573c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.573 1.066c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.066-2.573c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z M15 12a3 3 0 11-6 0 3 3 0 016 0z",
+      "title": "3194 İmar Kanunu'na Uygun Tasarım",
+      "content": "Tüm inşaat tabelalarını 3194 sayılı İmar Kanunu ve ilgili belediye yönetmeliklerine uygun şekilde üretiyoruz. Müteahhit bilgileri, yapı ruhsat numarası, proje adı ve iletişim detaylarını içeren yasal gereklilikleri eksiksiz karşılıyoruz. Keşif, tasarım ve montaj sürecinin tamamında profesyonel destek sağlıyoruz."
+    }
+  ],
+  "technicalSpecs": [
+    { "label": "Kasa Malzemesi", "value": "Galvaniz Çelik / Alüminyum Profil" },
+    { "label": "Yüz Malzemesi", "value": "Vinil Branda / Dekota / Kompozit Panel" },
+    { "label": "Baskı Tekniği", "value": "Dijital Baskı / UV Baskı" },
+    { "label": "Standart Boyutlar", "value": "200x100, 300x150, 400x200 cm" },
+    { "label": "Montaj", "value": "Çelik Konstrüksiyon / Duvar Montajı" },
+    { "label": "Boya", "value": "Elektrostatik Toz Boya" },
+    { "label": "Koruma", "value": "UV ve Hava Koşullarına Dayanıklı" },
+    { "label": "Uyumluluk", "value": "3194 İmar Kanunu'na Uygun" },
+    { "label": "Garanti", "value": "2 Yıl (Kasa + İşçilik)" }
+  ],
+  "faq": [
+    { "q": "İnşaat tabelası fiyatı ne kadar?", "a": "Fiyat; boyut, malzeme (branda, dekota, kompozit), baskı tekniği ve montaj şekline göre değişir. Detaylı teklif için bizimle iletişime geçin." },
+    { "q": "İnşaat tabelasında hangi bilgiler bulunmalı?", "a": "Yasal olarak müteahhit adı, yapı ruhsat numarası, proje adı ve iletişim bilgileri bulunmalıdır. Satılık daire ilanları için kat planı ve fiyat bilgisi de eklenebilir." },
+    { "q": "Belediye izni gerekiyor mu?", "a": "Evet, inşaat tabelaları belediye ilan-reklam ruhsatına tabidir. 3194 İmar Kanunu'na uygun tasarım yapıyoruz ve ruhsat sürecinde destek sağlıyoruz." },
+    { "q": "Tasarım desteği var mı?", "a": "Evet, ücretsiz grafik tasarım desteği sunuyoruz. Proje görselleri, kat planları ve kurumsal kimliğinize uygun tabela tasarımı hazırlıyoruz." }
+  ],
+  "relatedProducts": [
+    { "img": "/images/urunler/cati-tabela-1.jpg", "title": "Çatı Tabelası", "href": "/urunlerimiz/cati-tabelasi", "category": "Tabela" },
+    { "img": "/images/urunler/vinil-tabela-1.jpg", "title": "Vinil Tabela", "href": "/urunlerimiz/vinil-tabela", "category": "Tabela" },
+    { "img": "/images/urunler/totem-1.jpg", "title": "Totem Tabela", "href": "/urunlerimiz/totem-tabela", "category": "Tabela" },
+    { "img": "/images/urunler/isikli-blok-1.jpg", "title": "Işıklı Blok Tabela", "href": "/urunlerimiz/isikli-blok-tabela", "category": "Tabela" }
+  ]
+}

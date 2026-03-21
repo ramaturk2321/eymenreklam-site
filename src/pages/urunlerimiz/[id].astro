@@ -1,0 +1,35 @@
+---
+import UrunDetay from '../../components/UrunDetay.astro';
+import { getCollection } from 'astro:content';
+
+export async function getStaticPaths() {
+  const urunler = await getCollection('urunler');
+  return urunler.map(urun => ({
+    params: { id: urun.id },
+    props: { urun },
+  }));
+}
+
+const { urun } = Astro.props;
+const d = urun.data;
+
+const product = {
+  title: d.title,
+  category: d.category,
+  categoryHref: d.categoryHref,
+  shortDesc: d.shortDesc,
+  mainImg: d.mainImg,
+  gallery: d.gallery,
+  specs: d.specs,
+};
+---
+
+<UrunDetay
+  title={d.title}
+  description={d.description}
+  product={product}
+  descriptionSections={d.descriptionSections}
+  technicalSpecs={d.technicalSpecs}
+  faq={d.faq}
+  relatedProducts={d.relatedProducts}
+/>

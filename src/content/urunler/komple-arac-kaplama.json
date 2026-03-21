@@ -1,0 +1,72 @@
+{
+  "title": "Komple Araç Kaplama",
+  "description": "Araç filonuzu gezici reklam aracına dönüştürün. Cast folyo ile tam araç kaplama. Eymen Reklam — 25 yıllık tecrübe, 3 yıl garanti.",
+  "category": "Folyo & Giydirme",
+  "categoryHref": "/hizmetlerimiz/folyo-giydirme",
+  "shortDesc": "Araç filonuzu gezici reklam aracına dönüştürün. 3M ve Oracal cast folyo ile tam araç kaplama hizmeti. 5-7 yıl dayanıklılık, profesyonel uygulama ve 3 yıl garanti.",
+  "mainImg": "/images/urunler/komple-arac-1.jpg",
+  "gallery": [
+    "/images/urunler/komple-arac-1.jpg",
+    "/images/urunler/komple-arac-2.jpg",
+    "/images/urunler/komple-arac-3.jpg",
+    "/images/urunler/komple-arac-4.jpg"
+  ],
+  "specs": [
+    { "icon": "M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4", "label": "Malzeme", "value": "Cast Folyo (3M/Oracal)" },
+    { "icon": "M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z", "label": "Dayanıklılık", "value": "5-7 Yıl" },
+    { "icon": "M13 10V3L4 14h7v7l9-11h-7z", "label": "Uygulama", "value": "2-3 İş Günü" },
+    { "icon": "M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z", "label": "Garanti", "value": "3 Yıl" }
+  ],
+  "descriptionSections": [
+    {
+      "icon": "M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z",
+      "title": "Komple Araç Kaplama Nedir?",
+      "content": "Komple araç kaplama, aracın tüm dış yüzeyinin özel cast folyo ile kaplanması işlemidir. Markanızın kurumsal kimliğini, logo ve mesajlarınızı aracınız üzerinde 7/24 taşıyarak şehir içi ve şehirlerarası yollarda binlerce kişiye ulaşmanızı sağlar. Araç boyasına zarar vermeden uygulanan folyo, istendiğinde sökülebilir."
+    },
+    {
+      "icon": "M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10",
+      "title": "Folyo Türleri ve Kalitesi",
+      "content": "",
+      "list": [
+        { "bold": "3M IJ180C / 1080", "text": "Premium cast folyo. 7 yıl dış mekan dayanıklılığı, hava kanallı yapışkan teknolojisi ile kabarcıksız uygulama." },
+        { "bold": "Oracal 970RA", "text": "Profesyonel araç kaplama folyosu. Renk değişimi ve reklam uygulamaları için ideal. 5 yıl garanti." },
+        { "bold": "Avery Dennison", "text": "Yüksek performanslı cast folyo. Geniş renk ve doku seçeneği (mat, parlak, saten, metalik)." },
+        { "bold": "Laminasyon", "text": "Tüm baskılı folyolara UV koruyucu laminasyon uygulanır. Çizilme ve solmaya karşı ekstra koruma." }
+      ]
+    },
+    {
+      "icon": "M13 10V3L4 14h7v7l9-11h-7z",
+      "title": "Uygulama Süreci",
+      "content": "Araç önce detaylı temizlik ve yağ alma işleminden geçirilir. Tasarım onayı sonrası folyo dijital baskı ile hazırlanır. Kapalı ve toz geçirmez uygulama alanımızda ısı tabancası ile profesyonel kaplama yapılır. Tüm kenarlar ve girinti çıkıntılar özenle kapatılır. Uygulama sonrası kalite kontrol ve teslimat gerçekleştirilir."
+    },
+    {
+      "icon": "M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.066 2.573c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.573 1.066c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.066-2.573c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z M15 12a3 3 0 11-6 0 3 3 0 016 0z",
+      "title": "Filo Kaplama Hizmeti",
+      "content": "Birden fazla araç için toplu filo kaplama hizmeti sunuyoruz. Kurumsal kimlik kılavuzunuza uygun tasarım, tutarlı renk ve kalite standardı ile tüm filonuzu tek seferde giydiriyoruz. Filo projelerinde özel fiyatlandırma ve öncelikli üretim avantajı sağlıyoruz."
+    }
+  ],
+  "technicalSpecs": [
+    { "label": "Folyo Türü", "value": "Cast Folyo (3M / Oracal / Avery)" },
+    { "label": "Folyo Kalınlığı", "value": "50-60 mikron" },
+    { "label": "Yapışkan", "value": "Hava Kanallı Akrilik Yapışkan" },
+    { "label": "Baskı Teknolojisi", "value": "Solvent / Eko-Solvent / Lateks" },
+    { "label": "Laminasyon", "value": "UV Koruyucu Cast Laminasyon" },
+    { "label": "Dış Mekan Dayanıklılığı", "value": "5-7 Yıl" },
+    { "label": "Uygulama Sıcaklığı", "value": "+15°C — +25°C (ideal)" },
+    { "label": "Sökülebilirlik", "value": "Isı ile hasarsız sökme" },
+    { "label": "Uygulama Süresi", "value": "Binek: 2 gün / Ticari: 2-3 gün" },
+    { "label": "Garanti", "value": "3 Yıl (Folyo + Uygulama)" }
+  ],
+  "faq": [
+    { "q": "Komple araç kaplama araç boyasına zarar verir mi?", "a": "Hayır, cast folyo araç boyasına zarar vermez. Profesyonel sökme işlemi ile folyo altındaki orijinal boya korunmuş olarak kalır. Hatta folyo aracın boyasını taş ve çizik gibi dış etkenlere karşı korur." },
+    { "q": "Komple araç kaplama fiyatı ne kadar?", "a": "Fiyat; araç tipi (binek, ticari, minibüs, otobüs), folyo kalitesi ve tasarım karmaşıklığına göre değişir. Ücretsiz keşif ve ölçüm sonrası detaylı teklif sunuyoruz." },
+    { "q": "Kaplama ne kadar sürede yapılır?", "a": "Binek araçlarda ortalama 2 iş günü, ticari araçlarda 2-3 iş günü sürmektedir. Araç kapalı uygulama alanımızda kalır." },
+    { "q": "Folyo sökmek istediğimde ne yapmalıyım?", "a": "Folyo ısı tabancası ile profesyonel şekilde sökülür ve araç orijinal haline döner. Sökme işlemi için bize ulaşmanız yeterlidir." }
+  ],
+  "relatedProducts": [
+    { "img": "/images/urunler/kismi-arac-1.jpg", "title": "Kısmi Araç Kaplama", "href": "/urunlerimiz/kismi-arac-kaplama", "category": "Folyo & Giydirme" },
+    { "img": "/images/urunler/doblo-1.jpg", "title": "Doblo Kaplama", "href": "/urunlerimiz/doblo-folyo-giydirme", "category": "Folyo & Giydirme" },
+    { "img": "/images/urunler/kamyon-1.jpg", "title": "Kamyon Kaplama", "href": "/urunlerimiz/kamyon-tir-folyo", "category": "Folyo & Giydirme" },
+    { "img": "/images/urunler/cephe-giydirme-1.jpg", "title": "Cephe Giydirme", "href": "/urunlerimiz/cephe-giydirme", "category": "Folyo & Giydirme" }
+  ]
+}

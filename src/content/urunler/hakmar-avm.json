@@ -1,0 +1,62 @@
+{
+  "title": "Hakmar AVM",
+  "description": "Hakmar AVM mağaza reklam uygulamaları. Tabela, branda, folyo ve iç mekân reklam. Eymen Reklam — 25 yıllık tecrübe.",
+  "category": "Projelerimiz",
+  "categoryHref": "/hizmetlerimiz/magaza-reklam",
+  "shortDesc": "Hakmar AVM mağazaları için tabela, kutu harf, branda, folyo giydirme ve iç mekân reklam uygulamaları. Komple mağaza reklam çözümleri.",
+  "mainImg": "/images/urunler/hakmar-avm-1.jpg",
+  "gallery": [
+    "/images/urunler/hakmar-avm-1.jpg",
+    "/images/urunler/hakmar-avm-2.jpg",
+    "/images/urunler/hakmar-avm-3.jpg",
+    "/images/urunler/hakmar-avm-4.jpg"
+  ],
+  "specs": [
+    { "icon": "M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4", "label": "Kapsam", "value": "Komple Mağaza Reklam" },
+    { "icon": "M13 10V3L4 14h7v7l9-11h-7z", "label": "Uygulamalar", "value": "Tabela, Kutu Harf, Branda" },
+    { "icon": "M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z", "label": "Proje Süresi", "value": "Projeye Göre" },
+    { "icon": "M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z", "label": "Garanti", "value": "2 Yıl" }
+  ],
+  "descriptionSections": [
+    {
+      "icon": "M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z",
+      "title": "Hakmar AVM Reklam Uygulamaları",
+      "content": "Hakmar AVM mağazaları için cephe tabelası, kutu harf, lightbox, branda ve folyo giydirme gibi komple mağaza reklam çözümleri sunuyoruz. Kurumsal kimliğe uygun tasarım ve üretim ile profesyonel mağaza görünümü sağlıyoruz."
+    },
+    {
+      "icon": "M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10",
+      "title": "Uygulama Kapsamı",
+      "content": "",
+      "list": [
+        { "bold": "Cephe Tabelası", "text": "Mağaza dış cephe ışıklı kutu harf ve lightbox tabela uygulamaları." },
+        { "bold": "İç Mekân Yönlendirme", "text": "Reyon tabelaları, asma yönlendirme ve piyon standlar." },
+        { "bold": "Branda ve Kepenk", "text": "Cephe branda kapatma ve kepenk giydirme uygulamaları." },
+        { "bold": "Kampanya Materyali", "text": "Sezonluk kampanya brandaları, afişler ve dijital baskı materyalleri." }
+      ]
+    },
+    {
+      "icon": "M13 10V3L4 14h7v7l9-11h-7z",
+      "title": "Anahtar Teslim Proje",
+      "content": "Keşiften montaja kadar tüm süreçleri profesyonel ekibimiz ile yönetiyoruz. Hakmar'ın kurumsal kimlik standartlarına tam uyumlu üretim yapıyoruz. Yeni mağaza açılışlarında anahtar teslim reklam çözümü sunuyoruz."
+    }
+  ],
+  "technicalSpecs": [
+    { "label": "Proje Tipi", "value": "Komple Mağaza Reklam" },
+    { "label": "Uygulamalar", "value": "Kutu Harf, Lightbox, Branda, Folyo, Dijital Baskı" },
+    { "label": "Malzemeler", "value": "Alüminyum, Akrilik, Branda, Folyo, LED" },
+    { "label": "Montaj", "value": "Profesyonel Ekip ile Yerinde Montaj" },
+    { "label": "Garanti", "value": "2 Yıl" }
+  ],
+  "faq": [
+    { "q": "Komple mağaza reklam fiyatı ne kadar?", "a": "Fiyat proje kapsamına göre değişir. Yerinde keşif ve ölçüm sonrası detaylı teklif sunuyoruz." },
+    { "q": "Yeni mağaza açılışı için hizmet var mı?", "a": "Evet, sıfırdan mağaza reklam projesi planlama ve uygulama hizmeti sunuyoruz." },
+    { "q": "Montaj dahil mi?", "a": "Evet, profesyonel montaj ekibimiz ile yerinde kurulum yapıyoruz." },
+    { "q": "Tüm Türkiye'ye hizmet var mı?", "a": "Evet, İstanbul merkez olmak üzere tüm Türkiye genelinde proje gerçekleştiriyoruz." }
+  ],
+  "relatedProducts": [
+    { "img": "/images/urunler/bizim-toptan-1.jpg", "title": "Bizim Toptan Mağazası", "href": "/urunlerimiz/bizim-toptan-magazasi", "category": "Projelerimiz" },
+    { "img": "/images/urunler/eve-magazasi-1.jpg", "title": "Eve Mağazası", "href": "/urunlerimiz/eve-magazasi", "category": "Projelerimiz" },
+    { "img": "/images/urunler/kutu-harf-1.jpg", "title": "Kutu Harf Tabela", "href": "/urunlerimiz/kutu-harf-tabela", "category": "Tabela" },
+    { "img": "/images/urunler/lightbox-1.jpg", "title": "Lightbox Pano", "href": "/urunlerimiz/lightbox-pano", "category": "Display & Stand" }
+  ]
+}

@@ -1,0 +1,211 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { getCollection, render } from 'astro:content';
+import { getWhatsAppUrl, whatsappMessages, whatsappIcon, socialLinks } from '../../lib/site-data';
+
+export async function getStaticPaths() {
+  const projeler = await getCollection('projeler');
+  return projeler.map(proje => ({
+    params: { id: proje.id },
+    props: { proje },
+  }));
+}
+
+const { proje } = Astro.props;
+const { Content } = await render(proje);
+
+const images = proje.data.images?.length ? proje.data.images : [proje.data.image];
+const hasGallery = images.length > 1;
+
+const allProjeler = (await getCollection('projeler'))
+  .filter(p => p.id !== proje.id)
+  .sort((a, b) => (a.data.order ?? 99) - (b.data.order ?? 99))
+  .slice(0, 3);
+---
+
+<BaseLayout title={proje.data.title} description={proje.data.description}>
+
+  <!-- Breadcrumb -->
+  <nav class="bg-koyu-50 border-b border-koyu-100 py-3">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <ol class="flex items-center gap-2 text-sm text-koyu-500">
+        <li><a href="/" class="hover:text-eymen-600 transition-colors">Ana Sayfa</a></li>
+        <li class="text-koyu-300">/</li>
+        <li><a href="/projelerimiz/" class="hover:text-eymen-600 transition-colors">Projelerimiz</a></li>
+        <li class="text-koyu-300">/</li>
+        <li class="text-koyu-800 font-medium truncate">{proje.data.title}</li>
+      </ol>
+    </div>
+  </nav>
+
+  <!-- Proje Üst: Galeri + Detaylar -->
+  <section class="py-8 md:py-12 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-14">
+
+        <!-- Sol: Görsel Galeri -->
+        <div class="flex gap-3">
+          {hasGallery && (
+            <div class="hidden md:flex flex-col gap-2 shrink-0 max-h-[500px] overflow-y-auto" id="thumb-strip">
+              {images.map((img, i) => (
+                <button
+                  class:list={[
+                    'gallery-thumb w-16 h-16 lg:w-20 lg:h-20 rounded-lg overflow-hidden border-2 transition-all shrink-0',
+                    i === 0 ? 'border-eymen-500 ring-1 ring-eymen-300' : 'border-koyu-200 hover:border-eymen-400'
+                  ]}
+                  data-index={i}
+                >
+                  <img src={img} alt={`${proje.data.title} ${i+1}`} class="w-full h-full object-cover" loading="lazy" />
+                </button>
+              ))}
+            </div>
+          )}
+          <div class="relative flex-1 rounded-2xl overflow-hidden bg-koyu-100 group h-[350px] md:h-[450px] lg:h-[500px]" id="gallery">
+            <img id="main-image" src={images[0]} alt={proje.data.title} class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+            {hasGallery && (
+              <>
+                <button id="prev-btn" class="absolute left-3 top-1/2 -translate-y-1/2 w-10 h-10 bg-white/80 hover:bg-white rounded-full flex items-center justify-center shadow-lg transition-all" aria-label="Önceki">
+                  <svg class="w-5 h-5 text-koyu-700" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7"/></svg>
+                </button>
+                <button id="next-btn" class="absolute right-3 top-1/2 -translate-y-1/2 w-10 h-10 bg-white/80 hover:bg-white rounded-full flex items-center justify-center shadow-lg transition-all" aria-label="Sonraki">
+                  <svg class="w-5 h-5 text-koyu-700" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg>
+                </button>
+                <div class="absolute bottom-3 left-1/2 -translate-x-1/2 bg-black/50 text-white text-xs font-semibold px-3 py-1 rounded-full">
+                  <span id="counter">1</span> / {images.length}
+                </div>
+              </>
+            )}
+          </div>
+        </div>
+
+        <!-- Sağ: Proje Bilgileri -->
+        <div>
+          <div class="flex flex-wrap gap-2 mb-3">
+            {proje.data.categories.map(cat => (
+              <span class="inline-flex items-center gap-1.5 bg-eymen-50 text-eymen-600 text-xs font-bold uppercase tracking-wider px-3 py-1.5 rounded-full">
+                <svg class="w-3 h-3" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M7 7h.01M7 3h5c.512 0 1.024.195 1.414.586l7 7a2 2 0 010 2.828l-7 7a2 2 0 01-2.828 0l-7-7A1.994 1.994 0 013 12V7a4 4 0 014-4z"/></svg>
+                {cat}
+              </span>
+            ))}
+          </div>
+
+          <h1 class="text-2xl md:text-3xl font-bold text-koyu-900 mb-3 leading-tight">{proje.data.title}</h1>
+          <p class="text-koyu-600 leading-relaxed mb-6">{proje.data.description}</p>
+
+          <!-- İçerik (Markdown) -->
+          <div class="prose prose-sm max-w-none prose-headings:text-koyu-900 prose-headings:font-bold prose-headings:text-lg prose-p:text-koyu-600 prose-li:text-koyu-600 prose-strong:text-koyu-800 prose-ul:my-2 prose-p:my-2">
+            <Content />
+          </div>
+
+          <!-- CTA + Sosyal -->
+          <div class="flex items-center gap-2 mt-8">
+            <a
+              href={getWhatsAppUrl(whatsappMessages.proje)}
+              target="_blank"
+              rel="noopener noreferrer"
+              class="inline-flex items-center justify-center gap-1.5 bg-[#25D366] hover:bg-[#1fb855] text-white px-5 py-2.5 rounded-lg text-sm font-bold transition-all hover:shadow-lg hover:shadow-[#25D366]/25"
+            >
+              <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d={whatsappIcon}/></svg>
+              Teklif Al
+            </a>
+            {socialLinks.map(s => (
+              <a href={s.url} target="_blank" rel="noopener noreferrer" class={`w-9 h-9 bg-koyu-100 hover:bg-[${s.color}] hover:text-white rounded-lg flex items-center justify-center text-koyu-500 transition-all flex-shrink-0`} aria-label={s.name}>
+                <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d={s.icon}/></svg>
+              </a>
+            ))}
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Mobil Thumbnail Grid (sadece mobilde) -->
+  {hasGallery && (
+    <div class="md:hidden px-4 pb-6">
+      <div class="grid grid-cols-6 gap-1.5">
+        {images.slice(0, 6).map((img, i) => (
+          <button
+            class:list={[
+              'gallery-thumb rounded-lg overflow-hidden border-2 transition-all',
+              i === 0 ? 'border-eymen-500' : 'border-transparent hover:border-koyu-300'
+            ]}
+            data-index={i}
+          >
+            <img src={img} alt={`${proje.data.title} ${i+1}`} class="w-full aspect-square object-cover" loading="lazy" />
+          </button>
+        ))}
+      </div>
+    </div>
+  )}
+
+  <!-- Diğer Projeler -->
+  {allProjeler.length > 0 && (
+    <section class="bg-koyu-50 py-12 border-t border-koyu-100">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 class="text-2xl font-extrabold text-koyu-900 mb-8 text-center">Diğer Projelerimiz</h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          {allProjeler.map(p => (
+            <a
+              href={`/projelerimiz/${p.id}/`}
+              class="group bg-white rounded-2xl border border-koyu-100 overflow-hidden hover:shadow-xl hover:border-eymen-200 transition-all duration-300 hover:-translate-y-1"
+            >
+              <div class="aspect-[4/3] overflow-hidden relative">
+                <img
+                  src={p.data.image}
+                  alt={p.data.title}
+                  class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                  loading="lazy"
+                />
+                <div class="absolute top-3 left-3 flex flex-wrap gap-1.5">
+                  {p.data.categories.map(cat => (
+                    <span class="px-3 py-1 bg-eymen-500 text-white text-xs font-semibold rounded-full">
+                      {cat}
+                    </span>
+                  ))}
+                </div>
+              </div>
+              <div class="p-5">
+                <h3 class="font-bold text-koyu-900 mb-2 group-hover:text-eymen-600 transition-colors">{p.data.title}</h3>
+                <p class="text-sm text-koyu-500 leading-relaxed">{p.data.description}</p>
+              </div>
+            </a>
+          ))}
+        </div>
+      </div>
+    </section>
+  )}
+
+</BaseLayout>
+
+<script define:vars={{ images }}>
+  document.addEventListener('DOMContentLoaded', () => {
+    const mainImg = document.getElementById('main-image');
+    const counter = document.getElementById('counter');
+    const thumbs = document.querySelectorAll('.gallery-thumb');
+    const prevBtn = document.getElementById('prev-btn');
+    const nextBtn = document.getElementById('next-btn');
+    if (!mainImg || images.length <= 1) return;
+    let current = 0;
+
+    function goTo(index) {
+      current = (index + images.length) % images.length;
+      mainImg.src = images[current];
+      if (counter) counter.textContent = current + 1;
+      thumbs.forEach((t, i) => {
+        const idx = Number(t.dataset.index);
+        t.classList.toggle('border-eymen-500', idx === current);
+        t.classList.toggle('ring-1', idx === current);
+        t.classList.toggle('ring-eymen-300', idx === current);
+        t.classList.toggle('border-koyu-200', idx !== current);
+        t.classList.toggle('border-transparent', idx !== current);
+      });
+    }
+
+    if (prevBtn) prevBtn.addEventListener('click', () => goTo(current - 1));
+    if (nextBtn) nextBtn.addEventListener('click', () => goTo(current + 1));
+    thumbs.forEach(t => {
+      t.addEventListener('click', () => goTo(Number(t.dataset.index)));
+    });
+  });
+</script>

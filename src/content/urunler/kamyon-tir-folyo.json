@@ -1,0 +1,70 @@
+{
+  "title": "Kamyon / Tır Folyo Giydirme",
+  "description": "Kamyon ve tır folyo giydirme hizmeti. UV dayanımlı vinil, geniş yüzey kaplama. Eymen Reklam — 25 yıllık tecrübe, 2 yıl garanti.",
+  "category": "Folyo & Giydirme",
+  "categoryHref": "/hizmetlerimiz/folyo-giydirme",
+  "shortDesc": "Kamyon ve tır folyo giydirme ile araçlarınızı mobil reklam platformuna dönüştürün. UV dayanımlı vinil malzeme, şehirlerarası yollarda yüksek görünürlük.",
+  "mainImg": "/images/urunler/kamyon-tir-1.jpg",
+  "gallery": [
+    "/images/urunler/kamyon-tir-1.jpg",
+    "/images/urunler/kamyon-tir-2.jpg",
+    "/images/urunler/kamyon-tir-3.jpg",
+    "/images/urunler/kamyon-tir-4.jpg"
+  ],
+  "specs": [
+    { "icon": "M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4", "label": "Malzeme", "value": "UV Dayanımlı Vinil" },
+    { "icon": "M13 10V3L4 14h7v7l9-11h-7z", "label": "Kaplama", "value": "Tam / Kısmi Kaplama" },
+    { "icon": "M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z", "label": "Uygulama Süresi", "value": "2-4 İş Günü" },
+    { "icon": "M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z", "label": "Garanti", "value": "2 Yıl" }
+  ],
+  "descriptionSections": [
+    {
+      "icon": "M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z",
+      "title": "Kamyon / Tır Folyo Giydirme Nedir?",
+      "content": "Kamyon ve tır folyo giydirme, geniş yüzeyli araçları etkili birer reklam alanına dönüştüren profesyonel bir kaplama hizmetidir. Şehir içi ve şehirlerarası yollarda yüksek görünürlükle markanızın tanıtılmasını sağlar. Araçlarınız yalnızca taşıma aracı değil, aynı zamanda mobil tanıtım platformlarına dönüşür."
+    },
+    {
+      "icon": "M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10",
+      "title": "Kaplama Seçenekleri",
+      "content": "",
+      "list": [
+        { "bold": "Tam Kasa Kaplama", "text": "Kamyon veya tır kasasının tüm yüzeylerinin folyo ile kaplanması. Maksimum reklam etkisi." },
+        { "bold": "Branda Baskı", "text": "Tır brandalarına dijital baskı uygulaması. Ekonomik ve geniş yüzey kaplama." },
+        { "bold": "Kısmi Kaplama", "text": "Logo, marka adı ve iletişim bilgilerinin stratejik noktalara yerleştirilmesi." },
+        { "bold": "Filo Giydirme", "text": "Birden fazla aracın aynı kurumsal kimlikle kaplanması. Toplu indirim avantajı." }
+      ]
+    },
+    {
+      "icon": "M13 10V3L4 14h7v7l9-11h-7z",
+      "title": "Dayanıklı Malzeme ve Kaliteli Baskı",
+      "content": "Dış etkilere dayanıklı kaliteli vinil malzeme kullanıyoruz. UV dayanımlı laminasyon ile renk canlılığını uzun süre koruyoruz. Yağmur, güneş ve sert hava koşullarında bile solma ve soyulma olmaz. Uzun vadeli ekonomik bir reklam yatırımı sunuyoruz."
+    },
+    {
+      "icon": "M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.066 2.573c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.573 1.066c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.066-2.573c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z M15 12a3 3 0 11-6 0 3 3 0 016 0z",
+      "title": "Özel Tasarım ve Profesyonel Uygulama",
+      "content": "Her araca özel tasarım hazırlıyoruz. Araç ölçüleri alınarak birebir uygulama planı çıkarılır. Uzman ekibimiz geniş yüzeylerde bile kabarcıksız ve düzgün uygulama yapar. Kurumsal kimliğinize uygun renk, font ve görsel düzenleme ile fark yaratan sonuçlar üretiyoruz."
+    }
+  ],
+  "technicalSpecs": [
+    { "label": "Folyo Türü", "value": "Cast / Polimerik Vinil" },
+    { "label": "Laminasyon", "value": "Mat / Parlak Laminasyon" },
+    { "label": "Baskı Tekniği", "value": "Eko-Solvent / Latex Baskı" },
+    { "label": "Baskı Genişliği", "value": "160 cm (Birleşme ile Sınırsız)" },
+    { "label": "UV Dayanımı", "value": "3-5 Yıl" },
+    { "label": "Uyumlu Araçlar", "value": "Kamyon / Tır / Kamyonet / Dorse" },
+    { "label": "Uygulama", "value": "Profesyonel Atölye veya Yerinde" },
+    { "label": "Garanti", "value": "2 Yıl (Malzeme + İşçilik)" }
+  ],
+  "faq": [
+    { "q": "Kamyon folyo giydirme fiyatı ne kadar?", "a": "Fiyat; araç boyutu, kaplama türü (tam/kısmi), folyo kalitesi ve tasarım detaylarına göre değişir. Keşif sonrası detaylı teklif sunuyoruz." },
+    { "q": "Tır brandası üzerine de baskı yapılır mı?", "a": "Evet, tır brandalarına dijital baskı uygulaması yapıyoruz. Branda değişimi veya mevcut branda üzerine uygulama seçenekleri sunuyoruz." },
+    { "q": "Folyo araç boyasına zarar verir mi?", "a": "Hayır, kaliteli vinil folyo malzemeleri araç boyasına zarar vermeden sökülebilir." },
+    { "q": "Filo indirimi var mı?", "a": "Evet, birden fazla araç için kurumsal filo giydirme paketleri ve toplu indirim sunuyoruz." }
+  ],
+  "relatedProducts": [
+    { "img": "/images/urunler/komple-arac-1.jpg", "title": "Komple Araç Kaplama", "href": "/urunlerimiz/komple-arac-kaplama", "category": "Folyo & Giydirme" },
+    { "img": "/images/urunler/kismi-arac-1.jpg", "title": "Kısmi Araç Kaplama", "href": "/urunlerimiz/kismi-arac-kaplama", "category": "Folyo & Giydirme" },
+    { "img": "/images/urunler/doblo-folyo-1.jpg", "title": "Doblo Folyo Giydirme", "href": "/urunlerimiz/doblo-folyo-giydirme", "category": "Folyo & Giydirme" },
+    { "img": "/images/urunler/folyo-harf-1.jpg", "title": "Folyo Harf Kesim", "href": "/urunlerimiz/folyo-harf-kesim", "category": "Folyo & Giydirme" }
+  ]
+}

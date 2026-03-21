@@ -1,0 +1,65 @@
+{
+  "title": "Cephe Folyo Giydirme",
+  "description": "Bina, mağaza ve ofis cephelerine folyo giydirme hizmeti. Eymen Reklam — 25 yıllık tecrübe, 3 yıl garanti.",
+  "category": "Folyo & Giydirme",
+  "categoryHref": "/hizmetlerimiz/folyo-giydirme",
+  "shortDesc": "Bina, mağaza ve ofis cephelerine folyo giydirme hizmeti. Kompozit panel, cam ve duvar yüzeylerine profesyonel folyo uygulama ile kurumsal kimliğinizi cephenize taşıyın.",
+  "mainImg": "/images/urunler/cephe-giydirme-1.jpg",
+  "gallery": [
+    "/images/urunler/cephe-giydirme-1.jpg",
+    "/images/urunler/cephe-giydirme-2.jpg",
+    "/images/urunler/cephe-giydirme-3.jpg",
+    "/images/urunler/cephe-giydirme-4.jpg"
+  ],
+  "specs": [
+    { "icon": "M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4", "label": "Malzeme", "value": "Cast / Polimerik Folyo" },
+    { "icon": "M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z", "label": "Dayanıklılık", "value": "5-7 Yıl" },
+    { "icon": "M13 10V3L4 14h7v7l9-11h-7z", "label": "Uygulama", "value": "2-5 İş Günü" },
+    { "icon": "M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z", "label": "Garanti", "value": "3 Yıl" }
+  ],
+  "descriptionSections": [
+    {
+      "icon": "M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z",
+      "title": "Cephe Folyo Giydirme Nedir?",
+      "content": "Cephe folyo giydirme, bina dış cephesine özel folyo uygulayarak kurumsal kimlik, reklam veya dekoratif amaçlı görsel oluşturma işlemidir. Kompozit panel, cam, alüminyum ve düz duvar yüzeylere uygulanabilir. Mağaza cepheleri, iş merkezleri, AVM girişleri ve fabrika binaları için profesyonel cephe giydirme çözümleri sunuyoruz."
+    },
+    {
+      "icon": "M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10",
+      "title": "Uygulama Yüzeyleri",
+      "content": "",
+      "list": [
+        { "bold": "Kompozit Panel", "text": "Alüminyum kompozit panel (ACP) yüzeylere tam kaplama. Mağaza ve plaza cepheleri için en yaygın uygulama." },
+        { "bold": "Cam Cephe", "text": "Cam yüzeylere renkli, buzlu veya baskılı folyo uygulama. One-way vision ile iç mekan görünürlüğü korunur." },
+        { "bold": "Duvar Yüzeyi", "text": "Sıva veya boyalı duvar yüzeylere özel duvar folyosu uygulama. Pürüzsüz yüzey gerektirir." },
+        { "bold": "Alüminyum / Galvaniz", "text": "Metal cephe panellerine folyo kaplama. Renk değişimi veya marka görselliği için kullanılır." }
+      ]
+    },
+    {
+      "icon": "M13 10V3L4 14h7v7l9-11h-7z",
+      "title": "Neden Cephe Giydirme?",
+      "content": "Cephe giydirme, bina boyama veya cephe yenileme maliyetinin çok altında profesyonel bir görünüm sunar. Folyo değişimi kolay ve hızlıdır. Marka güncellemesi veya kiracı değişikliğinde cephe kolayca yenilenebilir. UV dayanımlı folyolar sayesinde renk solması olmadan yıllarca ilk günkü görünümünü korur."
+    }
+  ],
+  "technicalSpecs": [
+    { "label": "Folyo Türü", "value": "Cast / Polimerik (3M, Oracal, Avery)" },
+    { "label": "Baskı Teknolojisi", "value": "UV / Solvent / Lateks" },
+    { "label": "Laminasyon", "value": "UV Koruyucu Laminasyon" },
+    { "label": "Dış Mekan Dayanıklılığı", "value": "5-7 Yıl" },
+    { "label": "Uygulama Sıcaklığı", "value": "+10°C — +30°C" },
+    { "label": "Uygulama Süresi", "value": "2-5 İş Günü (cephe boyutuna göre)" },
+    { "label": "Sökülebilirlik", "value": "Isı ile hasarsız sökme" },
+    { "label": "Garanti", "value": "3 Yıl (Folyo + Uygulama)" }
+  ],
+  "faq": [
+    { "q": "Cephe giydirme ne kadar sürer?", "a": "Cephe boyutuna göre 2-5 iş günü arasında değişir. Büyük projelerde iskele kurulumu ek süre gerektirebilir." },
+    { "q": "Cephe folyosu kaç yıl dayanır?", "a": "Kaliteli cast folyo ve UV koruyucu laminasyon ile 5-7 yıl dış mekan dayanıklılığı sağlanır." },
+    { "q": "Cephe giydirme fiyatı nasıl hesaplanır?", "a": "Fiyat; cephe alanı (m²), folyo kalitesi, baskı detayı, yükseklik (iskele ihtiyacı) ve yüzey türüne göre belirlenir." },
+    { "q": "Kiralık mekanda cephe giydirme yapılabilir mi?", "a": "Evet, folyo uygulaması cepheye zarar vermez ve istendiğinde hasarsız sökülebilir. Kiralık mekanlar için ideal çözümdür." }
+  ],
+  "relatedProducts": [
+    { "img": "/images/urunler/komple-arac-1.jpg", "title": "Komple Araç Kaplama", "href": "/urunlerimiz/komple-arac-kaplama", "category": "Folyo & Giydirme" },
+    { "img": "/images/urunler/cam-folyo-1.jpg", "title": "Cam Folyo Giydirme", "href": "/urunlerimiz/cam-folyo-giydirme", "category": "Folyo & Giydirme" },
+    { "img": "/images/urunler/kutu-harf-1.jpg", "title": "Kutu Harf Tabela", "href": "/urunlerimiz/kutu-harf-tabela", "category": "Tabela" },
+    { "img": "/images/urunler/isikli-blok-1.jpg", "title": "Işıklı Blok Tabela", "href": "/urunlerimiz/isikli-blok-tabela", "category": "Tabela" }
+  ]
+}

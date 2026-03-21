@@ -1,0 +1,65 @@
+{
+  "title": "Cam Folyo Giydirme",
+  "description": "Mağaza, ofis ve araç camlarına folyo uygulama. Buzlu cam, renkli cam, tek yön görüş. Eymen Reklam — 25 yıllık tecrübe.",
+  "category": "Folyo & Giydirme",
+  "categoryHref": "/hizmetlerimiz/folyo-giydirme",
+  "shortDesc": "Mağaza, ofis ve araç camlarına folyo uygulama hizmeti. Buzlu cam, renkli cam, tek yön görüş (one-way vision) ve güvenlik filmi seçenekleriyle camlarınıza estetik ve fonksiyon kazandırın.",
+  "mainImg": "/images/urunler/cam-folyo-1.jpg",
+  "gallery": [
+    "/images/urunler/cam-folyo-1.jpg",
+    "/images/urunler/cam-folyo-2.jpg",
+    "/images/urunler/cam-folyo-3.jpg",
+    "/images/urunler/cam-folyo-4.jpg"
+  ],
+  "specs": [
+    { "icon": "M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4", "label": "Malzeme", "value": "Cam Folyosu / One-Way Vision" },
+    { "icon": "M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z", "label": "Dayanıklılık", "value": "5-7 Yıl" },
+    { "icon": "M13 10V3L4 14h7v7l9-11h-7z", "label": "Uygulama", "value": "1-2 İş Günü" },
+    { "icon": "M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z", "label": "Garanti", "value": "2 Yıl" }
+  ],
+  "descriptionSections": [
+    {
+      "icon": "M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z",
+      "title": "Cam Folyo Giydirme Nedir?",
+      "content": "Cam folyo giydirme, cam yüzeylere özel folyo uygulayarak estetik, mahremiyet, güneş koruması veya reklam amaçlı görsel oluşturma işlemidir. Mağaza vitrinleri, ofis bölmeleri, araç camları ve bina cephe camlarında yaygın olarak kullanılır. Profesyonel uygulama ile kabarcıksız, pürüzsüz sonuçlar elde edilir."
+    },
+    {
+      "icon": "M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10",
+      "title": "Cam Folyo Çeşitleri",
+      "content": "",
+      "list": [
+        { "bold": "Buzlu Cam Folyosu", "text": "Şeffaflığı azaltarak mahremiyet sağlar. Ofis bölme camları ve banyo camlarında çok tercih edilir." },
+        { "bold": "Renkli / Dekoratif Folyo", "text": "Cam yüzeye renk ve desen katar. Mağaza vitrini ve iç mekan dekorasyonu için ideal." },
+        { "bold": "One-Way Vision", "text": "Dışarıdan baskılı görsel, içeriden şeffaf görünüm. Mağaza vitrinleri ve araç camları için mükemmel." },
+        { "bold": "Güneş Kontrol Filmi", "text": "UV ışınlarını filtreler, ısı geçişini azaltır. Enerji tasarrufu sağlar ve mobilya solmasını önler." }
+      ]
+    },
+    {
+      "icon": "M13 10V3L4 14h7v7l9-11h-7z",
+      "title": "Uygulama Alanları",
+      "content": "Mağaza vitrinleri (reklam ve mahremiyet), ofis cam bölmeleri (kurumsal kimlik), araç camları (reklam ve güneş koruması), bina cephe camları (enerji verimliliği), hastane ve klinik camları (mahremiyet), restoran ve kafe camları (dekorasyon). Her alanda profesyonel uygulama hizmeti sunuyoruz."
+    }
+  ],
+  "technicalSpecs": [
+    { "label": "Folyo Türleri", "value": "Buzlu / Renkli / One-Way / Güneş Kontrol" },
+    { "label": "Baskı (One-Way)", "value": "Dijital UV / Solvent Baskı" },
+    { "label": "Delik Oranı (One-Way)", "value": "%50 / %60 / %70" },
+    { "label": "Dış Mekan Dayanıklılığı", "value": "5-7 Yıl" },
+    { "label": "UV Filtreleme", "value": "%99 (güneş kontrol filmi)" },
+    { "label": "Uygulama Süresi", "value": "1-2 İş Günü" },
+    { "label": "Sökülebilirlik", "value": "Hasarsız sökme" },
+    { "label": "Garanti", "value": "2 Yıl" }
+  ],
+  "faq": [
+    { "q": "Buzlu cam folyosu ışık geçirir mi?", "a": "Evet, buzlu cam folyosu ışık geçirgenliğini korur ancak görsel netliği azaltarak mahremiyet sağlar. Doğal aydınlık korunurken dışarıdan içeri bakılması engellenir." },
+    { "q": "One-way vision folyo gece nasıl görünür?", "a": "One-way vision folyo gündüz dışarıdan baskılı görsel, içeriden dışarıyı görme imkanı sunar. Gece iç mekan aydınlatıldığında dışarıdan içerisi kısmen görülebilir." },
+    { "q": "Cam folyosu söküldüğünde iz bırakır mı?", "a": "Kaliteli folyo ve profesyonel sökme işlemi ile cam yüzeyinde iz kalmaz. Yapışkan kalıntıları özel solvent ile temizlenir." },
+    { "q": "Cam folyo fiyatı nasıl hesaplanır?", "a": "Fiyat; folyo türü, uygulama alanı (m²), baskı varsa tasarım detayı ve konum (iç/dış mekan) göre belirlenir. Yerinde ölçüm sonrası net teklif sunuyoruz." }
+  ],
+  "relatedProducts": [
+    { "img": "/images/urunler/komple-arac-1.jpg", "title": "Komple Araç Kaplama", "href": "/urunlerimiz/komple-arac-kaplama", "category": "Folyo & Giydirme" },
+    { "img": "/images/urunler/cephe-giydirme-1.jpg", "title": "Cephe Giydirme", "href": "/urunlerimiz/cephe-giydirme", "category": "Folyo & Giydirme" },
+    { "img": "/images/urunler/kismi-arac-1.jpg", "title": "Kısmi Araç Kaplama", "href": "/urunlerimiz/kismi-arac-kaplama", "category": "Folyo & Giydirme" },
+    { "img": "/images/urunler/kutu-harf-1.jpg", "title": "Kutu Harf Tabela", "href": "/urunlerimiz/kutu-harf-tabela", "category": "Tabela" }
+  ]
+}

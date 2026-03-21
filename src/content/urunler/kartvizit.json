@@ -1,0 +1,70 @@
+{
+  "title": "Kartvizit Tasarım ve Baskı",
+  "description": "Kartvizit tasarım ve baskı hizmeti. Kuşe, kraft ve özel kağıt seçenekleri. Eymen Reklam — 25 yıllık tecrübe, 2 yıl garanti.",
+  "category": "Dijital Baskı",
+  "categoryHref": "/hizmetlerimiz/dijital-baski",
+  "shortDesc": "Kartvizit tasarım ve baskı hizmeti. Kuşe, kraft ve özel kağıt seçenekleriyle kurumsal kimliğinizi yansıtan profesyonel kartvizit çözümü.",
+  "mainImg": "/images/urunler/kartvizit-1.jpg",
+  "gallery": [
+    "/images/urunler/kartvizit-1.jpg",
+    "/images/urunler/kartvizit-2.jpg",
+    "/images/urunler/kartvizit-3.jpg",
+    "/images/urunler/kartvizit-4.jpg"
+  ],
+  "specs": [
+    { "icon": "M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4", "label": "Malzeme", "value": "Kuşe / Kraft / Bristol" },
+    { "icon": "M13 10V3L4 14h7v7l9-11h-7z", "label": "Baskı", "value": "Dijital / Ofset" },
+    { "icon": "M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z", "label": "Üretim Süresi", "value": "1-3 İş Günü" },
+    { "icon": "M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z", "label": "Garanti", "value": "2 Yıl" }
+  ],
+  "descriptionSections": [
+    {
+      "icon": "M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z",
+      "title": "Profesyonel Kartvizit Tasarımı",
+      "content": "Kartvizit, iş dünyasında ilk izlenim için en önemli araçlardan biridir. Kurumsal kimliğinizi yansıtan, şık ve profesyonel kartvizit tasarımları hazırlıyoruz. Logo, renk paleti ve yazı tipinize uygun özgün çalışmalar üretiyoruz."
+    },
+    {
+      "icon": "M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10",
+      "title": "Kartvizit Çeşitleri",
+      "content": "",
+      "list": [
+        { "bold": "Standart Kartvizit", "text": "350 gr kuşe kağıt üzerine çift taraflı baskı. Mat veya parlak laminasyon." },
+        { "bold": "Kraft Kartvizit", "text": "Doğal kraft kağıt üzerine baskı. Minimal ve organik görünüm." },
+        { "bold": "Kabartma Kartvizit", "text": "Kabartma (emboss) ve yaldız detaylarla premium görünüm." },
+        { "bold": "Özel Kesim Kartvizit", "text": "Standart dikdörtgen dışında özel formlarda kesim. Fark yaratan tasarım." }
+      ]
+    },
+    {
+      "icon": "M13 10V3L4 14h7v7l9-11h-7z",
+      "title": "Kaliteli Baskı ve Malzeme",
+      "content": "Yüksek çözünürlüklü dijital ve ofset baskı teknolojileriyle net ve canlı renkler sunuyoruz. Kuşe, bristol, kraft ve özel kağıt seçenekleriyle farklı dokunuşlar elde ediyoruz. Mat, parlak ve soft-touch laminasyon ile premium his katıyoruz."
+    },
+    {
+      "icon": "M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.066 2.573c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.573 1.066c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.066-2.573c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z M15 12a3 3 0 11-6 0 3 3 0 016 0z",
+      "title": "Hızlı Üretim ve Teslimat",
+      "content": "Acil siparişlerde aynı gün üretim imkânı sunuyoruz. Toplu siparişlerde birim fiyat avantajı sağlıyoruz. Tasarımdan baskıya kadar tüm süreci tek elden yönetiyoruz."
+    }
+  ],
+  "technicalSpecs": [
+    { "label": "Kağıt Türü", "value": "Kuşe / Bristol / Kraft / Özel" },
+    { "label": "Gramaj", "value": "300 — 400 gr/m²" },
+    { "label": "Standart Boyut", "value": "9x5 cm (85x55 mm)" },
+    { "label": "Baskı", "value": "Çift Taraflı CMYK" },
+    { "label": "Laminasyon", "value": "Mat / Parlak / Soft-Touch" },
+    { "label": "Özel Efektler", "value": "Kabartma / Yaldız / Spot UV" },
+    { "label": "Min. Sipariş", "value": "100 Adet" },
+    { "label": "Garanti", "value": "2 Yıl (Baskı Kalitesi)" }
+  ],
+  "faq": [
+    { "q": "Kartvizit fiyatı ne kadar?", "a": "Fiyat; kağıt türü, laminasyon, özel efektler ve adet sayısına göre değişir. 100 adetten başlayan siparişler alıyoruz." },
+    { "q": "Tasarım desteği var mı?", "a": "Evet, ücretsiz kartvizit tasarım desteği sunuyoruz. Kurumsal kimliğinize uygun tasarım hazırlıyoruz." },
+    { "q": "Acil sipariş alınıyor mu?", "a": "Evet, acil siparişlerde aynı gün veya ertesi gün teslimat imkânı sunuyoruz." },
+    { "q": "Özel boyut üretilebilir mi?", "a": "Evet, standart 9x5 cm dışında kare, mini veya özel formlarda üretim yapabiliyoruz." }
+  ],
+  "relatedProducts": [
+    { "img": "/images/urunler/katalog-1.jpg", "title": "Katalog Tasarım ve Baskı", "href": "/urunlerimiz/katalog", "category": "Dijital Baskı" },
+    { "img": "/images/urunler/insert-1.jpg", "title": "Insert Tasarım Baskı", "href": "/urunlerimiz/insert-tasarim", "category": "Dijital Baskı" },
+    { "img": "/images/urunler/fotoblok-1.jpg", "title": "Fotoblok Baskı", "href": "/urunlerimiz/fotoblok", "category": "Dijital Baskı" },
+    { "img": "/images/urunler/mat-kagit-1.jpg", "title": "Mat Kağıt Afiş Baskı", "href": "/urunlerimiz/mat-kagit-afis", "category": "Dijital Baskı" }
+  ]
+}

@@ -1,5 +1,15 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+import { getCollection } from 'astro:content';
+
+// Kategori eşleme: Content Collection category → filtre ID
+const categoryMap: Record<string, string> = {
+  'Tabela': 'tabela',
+  'UV Baskı': 'baski',
+  'Folyo & Giydirme': 'folyo',
+  'Bez & Afiş Baskı': 'baski',
+  'Display & Stand': 'display',
+};
 
 const categories = [
   { id: 'all', label: 'Tümü' },
@@ -7,68 +17,27 @@ const categories = [
   { id: 'folyo', label: 'Folyo & Araç' },
   { id: 'baski', label: 'Baskı' },
   { id: 'display', label: 'Display & Stand' },
-  { id: 'magaza', label: 'Mağaza' },
 ];
 
-const products = [
-  // Tabela
-  { title: 'Kutu Harf Tabela', category: 'tabela', image: '/images/kutu-harf.jpg', desc: 'LED aydınlatmalı 3D kutu harf. Paslanmaz, galvaniz veya alüminyum gövde.' },
-  { title: 'Totem Tabela', category: 'tabela', image: '/images/tabela-imalat.jpg', desc: 'Bağımsız ayaklı totem tabela. AVM, fabrika girişi uygulamaları.' },
-  { title: 'Çatı Tabelası', category: 'tabela', image: '/images/tabela-imalat.jpg', desc: 'Bina çatısına montajlı büyük ölçekli tabela sistemi.' },
-  { title: 'Neon-Led Tabela', category: 'tabela', image: '/images/kutu-harf.jpg', desc: 'Neon görünümlü LED tabela. Retro estetik, modern teknoloji.' },
-  { title: 'Işıklı Blok Tabela', category: 'tabela', image: '/images/tabela-imalat.jpg', desc: 'İçten aydınlatmalı kutu tabela. Vinileks veya pleksiglas yüzey.' },
-  { title: 'Askılı Tabela', category: 'tabela', image: '/images/kutu-harf.jpg', desc: 'Çift taraflı askılı mağaza tabelası. Cadde cephesi uygulamaları.' },
-  { title: 'Fener Tabela', category: 'tabela', image: '/images/tabela-imalat.jpg', desc: 'Işıklı fener tabela. Dışa dönük cephe uygulaması.' },
-  { title: 'Vakum Tabela', category: 'tabela', image: '/images/tabela-imalat.jpg', desc: 'Vakum form tabela. Plastik malzeme ile 3D yüzey efekti.' },
-  { title: 'Yönlendirme Tabelası', category: 'tabela', image: '/images/kutu-harf.jpg', desc: 'İç ve dış mekan yönlendirme tabela sistemi.' },
-  { title: 'Ofis Tabelası', category: 'tabela', image: '/images/kutu-harf.jpg', desc: 'İç mekan kapı ve resepsiyon tabelaları.' },
-  { title: 'İnşaat Tabelası', category: 'tabela', image: '/images/tabela-imalat.jpg', desc: 'Şantiye ve inşaat projesi tanıtım tabelaları.' },
-  { title: 'Vinil Branda Germe Tabela', category: 'tabela', image: '/images/dijital-baski.jpg', desc: 'Vinil branda germe sistem tabela. Büyük yüzeyler için.' },
-
-  // Folyo & Araç
-  { title: 'Komple Araç Kaplama', category: 'folyo', image: '/images/arac-giydirme.jpg', desc: 'Cast folyo ile komple araç giydirme. Filo branding çözümleri.' },
-  { title: 'Kısmi Araç Kaplama', category: 'folyo', image: '/images/arac-giydirme.jpg', desc: 'Kısmi araç kaplama. Logo, yazı ve grafik uygulamaları.' },
-  { title: 'Kamyon / Tır Giydirme', category: 'folyo', image: '/images/arac-giydirme.jpg', desc: 'Ticari araç, kamyon ve TIR folyo giydirme uygulamaları.' },
-  { title: 'Doblo Folyo Giydirme', category: 'folyo', image: '/images/arac-giydirme.jpg', desc: 'Doblo ve panelvan araç folyo giydirme çözümleri.' },
-  { title: 'Cephe Folyo Giydirme', category: 'folyo', image: '/images/cephe-giydirme.jpg', desc: 'Bina cephesi folyo kaplama ve yenileme projeleri.' },
-  { title: 'Cam Folyo Giydirme', category: 'folyo', image: '/images/cephe-giydirme.jpg', desc: 'Cam yüzeylere folyo uygulama. Güneş kontrol ve dekoratif.' },
-  { title: 'Cam Kumlama Folyo', category: 'folyo', image: '/images/cephe-giydirme.jpg', desc: 'Kumlama efektli cam folyo. Ofis bölme ve mahremiyet çözümü.' },
-  { title: 'Cam One Way Vision', category: 'folyo', image: '/images/cephe-giydirme.jpg', desc: 'Tek yön görüş folyo. Dışarıdan reklam, içeriden şeffaf görünüm.' },
-  { title: 'Folyo Harf Kesim', category: 'folyo', image: '/images/cephe-giydirme.jpg', desc: 'Plotter kesim folyo harf ve şekil uygulamaları.' },
-  { title: 'Özel Kesim Folyo Etiket', category: 'folyo', image: '/images/cephe-giydirme.jpg', desc: 'Özel kontur kesim folyo etiket ve sticker üretimi.' },
-
-  // Baskı
-  { title: 'Branda Baskı', category: 'baski', image: '/images/dijital-baski.jpg', desc: 'İç ve dış mekan branda baskı. Yüksek dayanım ve renk kalitesi.' },
-  { title: 'Mesh Branda Baskı', category: 'baski', image: '/images/dijital-baski.jpg', desc: 'Delikli mesh branda baskı. Rüzgar geçirgen, büyük cepheler için.' },
-  { title: 'Pankart Branda Baskı', category: 'baski', image: '/images/dijital-baski.jpg', desc: 'Açılış, kampanya ve etkinlik pankart branda baskı.' },
-  { title: 'Afiş Baskı', category: 'baski', image: '/images/dijital-baski.jpg', desc: 'Vinil ve kağıt afiş baskı. İç ve dış mekan seçenekleri.' },
-  { title: 'Mat Kağıt Poster', category: 'baski', image: '/images/dijital-baski.jpg', desc: 'Yüksek çözünürlük mat kağıt poster ve afiş baskı.' },
-  { title: 'Fotoblok Baskı', category: 'baski', image: '/images/dijital-baski.jpg', desc: 'Köpük levha üzeri dijital baskı. Sunum ve sergileme için.' },
-  { title: 'UV Baskı', category: 'baski', image: '/images/uv-baski.jpg', desc: 'Cam, metal, ahşap ve pleksiye doğrudan UV baskı.' },
-  { title: 'Bez Kampanya Afişi', category: 'baski', image: '/images/dijital-baski.jpg', desc: 'Kumaş baskı kampanya ve tanıtım afişleri.' },
-
-  // Display
-  { title: 'Lightbox Pano', category: 'display', image: '/images/dijital-baski.jpg', desc: 'İçten aydınlatmalı ışıklı reklam panosu. İç ve dış mekan.' },
-  { title: 'Roll-Up Banner', category: 'display', image: '/images/dijital-baski.jpg', desc: 'Taşınabilir roll-up banner sistemi. Fuar ve etkinlik için.' },
-  { title: 'X Banner', category: 'display', image: '/images/dijital-baski.jpg', desc: 'Ekonomik X banner standı. Hızlı kurulum.' },
-  { title: 'Fuar Standı', category: 'display', image: '/images/dijital-baski.jpg', desc: 'Özel tasarım fuar standı. Modüler ve kalıcı çözümler.' },
-
-  // Mağaza
-  { title: 'Mağaza Konsept Tasarım', category: 'magaza', image: '/images/cephe-giydirme.jpg', desc: 'Anahtar teslim mağaza iç ve dış mekan branding tasarımı.' },
-  { title: 'Vitrin Düzenleme', category: 'magaza', image: '/images/cephe-giydirme.jpg', desc: 'Mağaza vitrin tasarımı ve uygulama hizmetleri.' },
-  { title: 'İş Güvenliği Levhaları', category: 'magaza', image: '/images/tabela-imalat.jpg', desc: 'İSG mevzuatına uygun uyarı, yasak ve bilgi levhaları.' },
-];
+const urunler = await getCollection('urunler');
+const products = urunler.map(u => ({
+  title: u.data.title,
+  category: categoryMap[u.data.category] || 'tabela',
+  image: u.data.mainImg,
+  desc: u.data.shortDesc,
+  href: `/urunlerimiz/${u.id}/`,
+}));
 ---
 
-<BaseLayout title="Ürünlerimiz" description="Eymen Reklam ürün kataloğu — Tabela, UV baskı, araç giydirme, dijital baskı, folyo ve daha fazlası. 25 yıllık tecrübe ile üretim.">
+<BaseLayout title="Tabela ve Reklam Ürünleri Pendik İstanbul" description="Eymen Reklam ürün kataloğu — Kutu harf tabela, totem tabela, UV baskı, araç giydirme, dijital baskı ve folyo ürünleri. Pendik İstanbul'da 25 yıllık üretim tecrübesi.">
 
   <!-- Hero -->
   <section class="bg-koyu-900 pt-32 pb-16 md:pt-40 md:pb-24">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
       <p class="text-eymen-400 text-sm font-semibold uppercase tracking-wider mb-3">Ürün Kataloğu</p>
-      <h1 class="text-4xl md:text-5xl font-extrabold text-white mb-4">Ürünlerimiz</h1>
+      <h1 class="text-4xl md:text-5xl font-extrabold text-white mb-4">Tabela ve Reklam Ürünleri</h1>
       <p class="text-koyu-400 text-lg max-w-2xl mx-auto">
-        25 yılda 10.000'den fazla projede kullandığımız ürün yelpazesi. Kategori seçerek filtreleyebilirsiniz.
+        Pendik İstanbul'da 25 yılda 10.000'den fazla projede kullandığımız tabela ve reklam ürünleri. Kategori seçerek filtreleyebilirsiniz.
       </p>
     </div>
   </section>
@@ -106,12 +75,12 @@ const products = [
               </div>
               <div class="p-4">
                 <h3 class="font-bold text-koyu-900 text-sm mb-1 group-hover:text-eymen-600 transition-colors">{product.title}</h3>
-                <p class="text-xs text-koyu-500 leading-relaxed mb-3">{product.desc}</p>
+                <p class="text-xs text-koyu-500 leading-relaxed mb-3 line-clamp-2">{product.desc}</p>
                 <a
-                  href={`/teklif-al`}
+                  href={product.href}
                   class="inline-flex items-center gap-1.5 text-xs text-eymen-600 font-semibold hover:text-eymen-700 transition-colors"
                 >
-                  Teklif Al
+                  Detaylı Bilgi
                   <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
                 </a>
               </div>
