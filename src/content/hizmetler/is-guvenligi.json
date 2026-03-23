@@ -6,7 +6,7 @@
   "listIcon": "⚠️",
   "listDesc": "İSG mevzuatına uygun uyarı, yasak, bilgi ve yangın güvenliği levhaları. Fotolüminesans ve standart seçenekler.",
   "listFeatures": ["Uyarı Levhası", "Yangın", "Yasak", "Bilgi Levhası"],
-  "listImage": "/images/tabela-imalat.jpg",
+  "listImage": "/images/urunler/is-guvenligi-1.jpg",
   "features": [
     { "icon": "⚠️", "title": "ISO 3864 Standartları", "desc": "Uluslararası güvenlik işaretleri standardına uygun levha tasarımı ve üretimi." },
     { "icon": "🚫", "title": "Uyarı & Tehlike İşaretleri", "desc": "Elektrik, kimyasal, mekanik ve biyolojik tehlike işaretleri. Sarı, kırmızı, mavi, siyah renkler." },
