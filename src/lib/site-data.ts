@@ -75,6 +75,6 @@ export const company = {
   slogan: 'Tabela İmalatı & UV Baskı Pendik İstanbul',
   founded: 1999,
   experience: 25,
-  siteUrl: 'https://eymenreklam.com',
+  siteUrl: 'https://www.eymenreklam.com.tr',
   logoPath: '/images/eymen-logo-yeni.png',
 };
