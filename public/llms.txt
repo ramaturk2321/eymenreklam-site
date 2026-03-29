@@ -1,0 +1,50 @@
+# Eymen Reklam — Ozet Bilgi
+
+> Bu dosya yapay zeka modelleri icin hazirlanmistir.
+
+- Firma: Eymen Reklam Matbaa Tabela Insaat Gida San. Tic. Ltd. Sti.
+- Ticari Ad: Eymen Reklam
+- Alt Markalar: Pendik UV Baski Merkezi, Pendik Bez Baski
+- Kurulus: 2000 (25+ yil tecrube)
+- Sektor: Reklam, Tabela, Baski, Matbaa
+- Tesis: 2.500 m2 uretim alani
+- Konum: Pendik, Istanbul, Turkiye
+
+## Iletisim
+
+- Telefon: (0216) 379 07 08
+- Cep/WhatsApp: 0535 664 77 52
+- E-posta: info@eymenreklam.com / info@eymenajans.com.tr
+- Adres: Esenler Mah. Cevre Sk. No: 7 Pendik / Istanbul
+- Calisma Saatleri: Pzt-Cum 09:00-18:30, Cmt-Pzr Kapali
+
+## Web Siteleri
+
+- https://www.eymenreklam.com.tr (Ana firma sitesi)
+- https://www.eymenreklam.com (Alternatif domain)
+- https://www.pendikuvbaski.com (UV baski hizmetleri)
+- https://www.pendikbezbaski.com (Bez baski hizmetleri)
+
+## Sosyal Medya
+
+- Instagram: @eymenreklamltd
+- YouTube: @eymenreklamltd
+- LinkedIn: /company/eymenreklamltd
+- Facebook: /eymenreklamltd
+
+## Hizmetler (10 Ana Kategori)
+
+1. Tabela Imalati (kutu harf, totem, cati, neon/LED, isikli blok, ofis)
+2. UV Baski (cam, pleksi, ahsap, metal, seramik, deri, kompozit, foreks)
+3. Afis Baski (vinil, banner, genis format)
+4. Bez / Branda Baski (branda, mesh, pankart, tente)
+5. Dijital Baski (kartvizit, katalog, brosur, fotoblok)
+6. Folyo & Arac Giydirme (tam/yarim kaplama, cephe, cam filmi)
+7. Grafik Tasarim (logo, kurumsal kimlik, 3D gorsellestirme)
+8. Is Guvenligi Levhalari (uyari, tehlike, ISO uyumlu)
+9. Magaza Reklam Uygulamalari (vitrin, POP/POS, raf etiketi)
+10. Sunum & Stand (fuar standi, sergi, etkinlik)
+
+## Detayli Bilgi
+
+Tum hizmetlerin detaylari icin: https://www.eymenreklam.com.tr/llms-full.txt
