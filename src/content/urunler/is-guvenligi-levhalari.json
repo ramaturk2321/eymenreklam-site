@@ -4,14 +4,14 @@
   "category": "İş Güvenliği",
   "categoryHref": "/hizmetlerimiz/is-guvenligi",
   "shortDesc": "İş güvenliği levhaları ve uyarı tabelaları. UV dayanıklı, net semboller ve yüksek kontrastlı renklerle donatılmış endüstriyel güvenlik işaret sistemleri.",
-  "mainImg": "/images/urunler/is-guvenligi-1.jpg",
+  "mainImg": "/images/urunler/is-guvenligi-1.webp",
   "gallery": [
-    "/images/projeler/a101-depo-8.jpg",
-    "/images/projeler/a101-depo-5.jpg",
-    "/images/urunler/is-guvenligi-1.jpg",
-    "/images/urunler/is-guvenligi-2.jpg",
-    "/images/urunler/is-guvenligi-3.jpg",
-    "/images/urunler/is-guvenligi-4.jpg"
+    "/images/projeler/a101-depo-8.webp",
+    "/images/projeler/a101-depo-5.webp",
+    "/images/urunler/is-guvenligi-1.webp",
+    "/images/urunler/is-guvenligi-2.webp",
+    "/images/urunler/is-guvenligi-3.webp",
+    "/images/urunler/is-guvenligi-4.webp"
   ],
   "specs": [
     { "icon": "M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4", "label": "Malzeme", "value": "PVC / Alüminyum / Dekota" },
@@ -64,9 +64,9 @@
     { "q": "Dış mekânda dayanır mı?", "a": "Evet, UV dayanıklı malzeme ve baskı ile dış mekânda 3-5 yıl dayanıklılık sağlar." }
   ],
   "relatedProducts": [
-    { "img": "/images/urunler/uv-baski-1.jpg", "title": "UV Baskı", "href": "/urunlerimiz/uv-baski", "category": "UV Baskı" },
-    { "img": "/images/urunler/vinil-tabela-1.jpg", "title": "Vinil Tabela", "href": "/urunlerimiz/vinil-tabela", "category": "Tabela" },
-    { "img": "/images/urunler/fotoblok-1.jpg", "title": "Fotoblok Baskı", "href": "/urunlerimiz/fotoblok", "category": "Dijital Baskı" },
-    { "img": "/images/urunler/insaat-tabela-1.jpg", "title": "İnşaat Tabelası", "href": "/urunlerimiz/insaat-tabelasi", "category": "Tabela" }
+    { "img": "/images/urunler/uv-baski-1.webp", "title": "UV Baskı", "href": "/urunlerimiz/uv-baski", "category": "UV Baskı" },
+    { "img": "/images/urunler/vinil-tabela-1.webp", "title": "Vinil Tabela", "href": "/urunlerimiz/vinil-tabela", "category": "Tabela" },
+    { "img": "/images/urunler/fotoblok-1.webp", "title": "Fotoblok Baskı", "href": "/urunlerimiz/fotoblok", "category": "Dijital Baskı" },
+    { "img": "/images/urunler/insaat-tabela-1.webp", "title": "İnşaat Tabelası", "href": "/urunlerimiz/insaat-tabelasi", "category": "Tabela" }
   ]
 }

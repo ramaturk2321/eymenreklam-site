@@ -6,7 +6,7 @@
   "listIcon": "🖼️",
   "listDesc": "Vinil afiş, branda afiş, bez pankart ve poster baskı. Her boyutta iç ve dış mekan çözümleri.",
   "listFeatures": ["Vinil Afiş", "Branda Afiş", "Bez Pankart", "Poster"],
-  "listImage": "/images/urunler/afis-baski-1.jpg",
+  "listImage": "/images/urunler/afis-baski-1.webp",
   "features": [
     { "icon": "📋", "title": "Vinil Afiş Baskı", "desc": "Mat, parlak ve özel vinil malzemelere baskı. Kurumsal afişler ve reklam ilanları için ideal." },
     { "icon": "🎨", "title": "Branda Afiş", "desc": "Dayanıklı branda malzemeye renkli baskı. Dış mekan uygulamaları, 3+ yıl direktif." },
@@ -16,12 +16,12 @@
     { "icon": "⚡", "title": "Hızlı Üretim", "desc": "Tasarım onayından 24-48 saatte teslim. Acil projeler için ekspres seçeneği." }
   ],
   "products": [
-    { "title": "Afiş Baskı", "desc": "A4'den A0 boyutlarına kadar vinil ve kağıt afiş. Kurumsal, reklam, etkinlik afişleri.", "image": "/images/urunler/afis-baski-1.jpg", "href": "/urunlerimiz/afis-baski" },
-    { "title": "Afiş Branda", "desc": "Açık hava afişleri. Sokak, bulvar ve bina cephe montajı için dayanıklı branda baskı.", "image": "/images/urunler/afis-branda-1.jpg", "href": "/urunlerimiz/afis-branda" },
-    { "title": "Parlak Kağıt Afiş", "desc": "Parlak kuşe kağıda yüksek çözünürlüklü afiş baskı. Canlı renkler ve net detaylar.", "image": "/images/urunler/parlak-afis-1.jpg", "href": "/urunlerimiz/parlak-kagit-afis" },
-    { "title": "Mat Kağıt Afiş", "desc": "Mat kuşe kağıda afiş baskı. Yansımasız, profesyonel görünüm.", "image": "/images/urunler/mat-kagit-1.jpg", "href": "/urunlerimiz/mat-kagit-afis" },
+    { "title": "Afiş Baskı", "desc": "A4'den A0 boyutlarına kadar vinil ve kağıt afiş. Kurumsal, reklam, etkinlik afişleri.", "image": "/images/urunler/afis-baski-1.webp", "href": "/urunlerimiz/afis-baski" },
+    { "title": "Afiş Branda", "desc": "Açık hava afişleri. Sokak, bulvar ve bina cephe montajı için dayanıklı branda baskı.", "image": "/images/urunler/afis-branda-1.webp", "href": "/urunlerimiz/afis-branda" },
+    { "title": "Parlak Kağıt Afiş", "desc": "Parlak kuşe kağıda yüksek çözünürlüklü afiş baskı. Canlı renkler ve net detaylar.", "image": "/images/urunler/parlak-afis-1.webp", "href": "/urunlerimiz/parlak-kagit-afis" },
+    { "title": "Mat Kağıt Afiş", "desc": "Mat kuşe kağıda afiş baskı. Yansımasız, profesyonel görünüm.", "image": "/images/urunler/mat-kagit-1.webp", "href": "/urunlerimiz/mat-kagit-afis" },
     { "title": "Bez Pankart", "desc": "TNT ve mesh bez pankartlar. Renkli kampanya ve etkinlik afişleri.", "image": "/images/urunler/bez-pankart-1.webp", "href": "/urunlerimiz/bez-pankart" },
-    { "title": "Emlak İlan Branda", "desc": "Emlak ofisleri ve inşaat projeleri için ilan brandaları.", "image": "/images/urunler/emlak-branda-1.jpg", "href": "/urunlerimiz/emlak-ilan-branda" }
+    { "title": "Emlak İlan Branda", "desc": "Emlak ofisleri ve inşaat projeleri için ilan brandaları.", "image": "/images/urunler/emlak-branda-1.webp", "href": "/urunlerimiz/emlak-ilan-branda" }
   ],
   "process": [
     { "step": "01", "title": "Tasarım & Format", "desc": "Tasarım dosyası hazırlanır. Baskı boyutu, malzeme ve renk profili belirlenir." },

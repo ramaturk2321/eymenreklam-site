@@ -1,14 +1,14 @@
 ---
 title: "Doruk – Grafik Tasarım & Ambalaj"
 description: "Doruk Çikolata için afiş, broşür, hediye kutusu ve ambalaj tasarımları."
-image: "/images/projeler/doruk-dubai-afis-1.jpg"
+image: "/images/projeler/doruk-dubai-afis-1.webp"
 images:
-  - "/images/projeler/doruk-dubai-afis-1.jpg"
-  - "/images/projeler/doruk-dubai-afis-2.jpg"
-  - "/images/projeler/doruk-brosur-1.jpg"
-  - "/images/projeler/doruk-brosur-2.jpg"
-  - "/images/projeler/doruk-hediye-kutusu-1.jpg"
-  - "/images/projeler/doruk-hediye-kutusu-2.jpg"
+  - "/images/projeler/doruk-dubai-afis-1.webp"
+  - "/images/projeler/doruk-dubai-afis-2.webp"
+  - "/images/projeler/doruk-brosur-1.webp"
+  - "/images/projeler/doruk-brosur-2.webp"
+  - "/images/projeler/doruk-hediye-kutusu-1.webp"
+  - "/images/projeler/doruk-hediye-kutusu-2.webp"
 categories: ["Grafik Tasarım", "Afiş Baskı"]
 date: "2025-01-20"
 order: 18

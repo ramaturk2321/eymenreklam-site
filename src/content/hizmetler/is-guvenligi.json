@@ -6,7 +6,7 @@
   "listIcon": "⚠️",
   "listDesc": "İSG mevzuatına uygun uyarı, yasak, bilgi ve yangın güvenliği levhaları. Fotolüminesans ve standart seçenekler.",
   "listFeatures": ["Uyarı Levhası", "Yangın", "Yasak", "Bilgi Levhası"],
-  "listImage": "/images/urunler/is-guvenligi-1.jpg",
+  "listImage": "/images/urunler/is-guvenligi-1.webp",
   "features": [
     { "icon": "⚠️", "title": "ISO 3864 Standartları", "desc": "Uluslararası güvenlik işaretleri standardına uygun levha tasarımı ve üretimi." },
     { "icon": "🚫", "title": "Uyarı & Tehlike İşaretleri", "desc": "Elektrik, kimyasal, mekanik ve biyolojik tehlike işaretleri. Sarı, kırmızı, mavi, siyah renkler." },
@@ -16,12 +16,12 @@
     { "icon": "🔧", "title": "Özel Tasarım & Boyutlar", "desc": "Kurumsal renklere göre özel levha tasarımı. Standart ve özel boyutlar." }
   ],
   "products": [
-    { "title": "İş Güvenliği Levhaları", "desc": "İş yeri uyarı, tehlike, yasak ve zorunluluk işaretleri. ISO ve TSE standartlarında.", "image": "/images/urunler/is-guvenligi-1.jpg", "href": "/urunlerimiz/is-guvenligi-levhalari" },
-    { "title": "Uyarı Levhaları", "desc": "Elektrik, yükseklik, kaygan zemin, basınçlı sistem uyarı levhaları.", "image": "/images/urunler/is-guvenligi-2.jpg", "href": "/urunlerimiz/is-guvenligi-levhalari" },
-    { "title": "Tehlike İşaretleri", "desc": "Kimyasal, mekanik, ateş, zehir ve biyolojik tehlike işaretleri.", "image": "/images/urunler/is-guvenligi-3.jpg", "href": "/urunlerimiz/is-guvenligi-levhalari" },
-    { "title": "Acil Çıkış Levhaları", "desc": "Acil çıkış yönlendirmesi, yangın söndürücü konumu, ilk yardım levhaları.", "image": "/images/urunler/is-guvenligi-4.jpg", "href": "/urunlerimiz/is-guvenligi-levhalari" },
-    { "title": "Ofis Tabelası", "desc": "Kapı ve resepsiyon tabelaları. Kurumsal bilgilendirme ve yönlendirme.", "image": "/images/urunler/ofis-tabela-1.jpg", "href": "/urunlerimiz/ofis-tabelasi" },
-    { "title": "Fener Tabela", "desc": "Duvara dik montajlı çift taraflı yönlendirme tabelası.", "image": "/images/urunler/fener-tabela-1.jpg", "href": "/urunlerimiz/fener-tabela" }
+    { "title": "İş Güvenliği Levhaları", "desc": "İş yeri uyarı, tehlike, yasak ve zorunluluk işaretleri. ISO ve TSE standartlarında.", "image": "/images/urunler/is-guvenligi-1.webp", "href": "/urunlerimiz/is-guvenligi-levhalari" },
+    { "title": "Uyarı Levhaları", "desc": "Elektrik, yükseklik, kaygan zemin, basınçlı sistem uyarı levhaları.", "image": "/images/urunler/is-guvenligi-2.webp", "href": "/urunlerimiz/is-guvenligi-levhalari" },
+    { "title": "Tehlike İşaretleri", "desc": "Kimyasal, mekanik, ateş, zehir ve biyolojik tehlike işaretleri.", "image": "/images/urunler/is-guvenligi-3.webp", "href": "/urunlerimiz/is-guvenligi-levhalari" },
+    { "title": "Acil Çıkış Levhaları", "desc": "Acil çıkış yönlendirmesi, yangın söndürücü konumu, ilk yardım levhaları.", "image": "/images/urunler/is-guvenligi-4.webp", "href": "/urunlerimiz/is-guvenligi-levhalari" },
+    { "title": "Ofis Tabelası", "desc": "Kapı ve resepsiyon tabelaları. Kurumsal bilgilendirme ve yönlendirme.", "image": "/images/urunler/ofis-tabela-1.webp", "href": "/urunlerimiz/ofis-tabelasi" },
+    { "title": "Fener Tabela", "desc": "Duvara dik montajlı çift taraflı yönlendirme tabelası.", "image": "/images/urunler/fener-tabela-1.webp", "href": "/urunlerimiz/fener-tabela" }
   ],
   "process": [
     { "step": "01", "title": "Standart & Gereksinim", "desc": "İşyeri türü ve güvenlik gereksinimlerine göre levha türleri belirlenir." },

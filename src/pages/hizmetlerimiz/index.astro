@@ -37,7 +37,7 @@ const services = (await getCollection('hizmetler'))
           <a href={service.href} class="group bg-white rounded-2xl border border-koyu-100 overflow-hidden hover:shadow-xl hover:border-eymen-200 transition-all duration-300 hover:-translate-y-1">
             <!-- Görsel -->
             <div class="aspect-[16/10] overflow-hidden relative bg-koyu-200">
-              <img src={service.image} alt={service.title} class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" />
+              <img src={service.image} alt={service.title} width="600" height="400" loading="lazy" decoding="async" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
               <span class="absolute top-3 left-3 text-2xl bg-white/90 w-10 h-10 rounded-xl flex items-center justify-center">{service.icon}</span>
             </div>
             <!-- İçerik -->

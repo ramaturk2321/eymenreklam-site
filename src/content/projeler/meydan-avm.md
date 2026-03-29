@@ -1,10 +1,10 @@
 ---
 title: "Meydan AVM – Cephe Tabelası & Totem"
 description: "Meydan 77 Alışveriş Merkezi için komple cephe tabelası ve totem tabela tasarımı ve uygulaması."
-image: "/images/projeler/meydan-avm-1.jpg"
+image: "/images/projeler/meydan-avm-1.webp"
 images:
-  - "/images/projeler/meydan-avm-1.jpg"
-  - "/images/projeler/meydan-avm-2.jpg"
+  - "/images/projeler/meydan-avm-1.webp"
+  - "/images/projeler/meydan-avm-2.webp"
 categories: ["Tabela", "Mağaza Reklam"]
 date: "2025-01-15"
 order: 1

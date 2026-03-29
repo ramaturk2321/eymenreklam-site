@@ -4,12 +4,12 @@
   "category": "Display & Stand",
   "categoryHref": "/hizmetlerimiz/sunum-stand",
   "shortDesc": "A4 boyut alüminyum çerçeve. Sertifika, menü, bilgilendirme ve yönlendirme panosu için yaylı mekanizmalı profesyonel çerçeve sistemi.",
-  "mainImg": "/images/urunler/a4-cerceve-1.jpg",
+  "mainImg": "/images/urunler/a4-cerceve-1.webp",
   "gallery": [
-    "/images/urunler/a4-cerceve-1.jpg",
-    "/images/urunler/a4-cerceve-2.jpg",
-    "/images/urunler/a4-cerceve-3.jpg",
-    "/images/urunler/a4-cerceve-4.jpg"
+    "/images/urunler/a4-cerceve-1.webp",
+    "/images/urunler/a4-cerceve-2.webp",
+    "/images/urunler/a4-cerceve-3.webp",
+    "/images/urunler/a4-cerceve-4.webp"
   ],
   "specs": [
     { "icon": "M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4", "label": "Malzeme", "value": "Alüminyum Profil" },
@@ -57,9 +57,9 @@
     { "q": "Toplu sipariş indirimi var mı?", "a": "Evet, 10 adet ve üzeri siparişlerde özel fiyat avantajı sunuyoruz." }
   ],
   "relatedProducts": [
-    { "img": "/images/urunler/50x70-cerceve-1.jpg", "title": "50x70 Alüminyum Çerçeve", "href": "/urunlerimiz/50x70-cerceve", "category": "Display & Stand" },
-    { "img": "/images/urunler/alu-cerceve-1.jpg", "title": "Alüminyum Çerçeve", "href": "/urunlerimiz/aluminyum-cerceve", "category": "Display & Stand" },
-    { "img": "/images/urunler/lightbox-1.jpg", "title": "Lightbox Pano", "href": "/urunlerimiz/lightbox-pano", "category": "Display & Stand" },
-    { "img": "/images/urunler/donkart-1.jpg", "title": "Dönkart Afiş", "href": "/urunlerimiz/donkart", "category": "Display & Stand" }
+    { "img": "/images/urunler/50x70-cerceve-1.webp", "title": "50x70 Alüminyum Çerçeve", "href": "/urunlerimiz/50x70-cerceve", "category": "Display & Stand" },
+    { "img": "/images/urunler/alu-cerceve-1.webp", "title": "Alüminyum Çerçeve", "href": "/urunlerimiz/aluminyum-cerceve", "category": "Display & Stand" },
+    { "img": "/images/urunler/lightbox-1.webp", "title": "Lightbox Pano", "href": "/urunlerimiz/lightbox-pano", "category": "Display & Stand" },
+    { "img": "/images/urunler/donkart-1.webp", "title": "Dönkart Afiş", "href": "/urunlerimiz/donkart", "category": "Display & Stand" }
   ]
 }

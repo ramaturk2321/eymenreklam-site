@@ -1,17 +1,17 @@
 ---
 title: "A101 – Depo Tabela & Yönlendirme"
 description: "A101 lojistik deposu için yönlendirme tabelaları, iş güvenliği levhaları ve bölüm isimlikleri."
-image: "/images/projeler/a101-depo-8.jpg"
+image: "/images/projeler/a101-depo-8.webp"
 images:
-  - "/images/projeler/a101-depo-8.jpg"
-  - "/images/projeler/a101-depo-1.jpg"
-  - "/images/projeler/a101-depo-2.jpg"
-  - "/images/projeler/a101-depo-3.jpg"
-  - "/images/projeler/a101-depo-4.jpg"
-  - "/images/projeler/a101-depo-5.jpg"
-  - "/images/projeler/a101-depo-6.jpg"
-  - "/images/projeler/a101-depo-7.jpg"
-  - "/images/projeler/a101-depo-9.jpg"
+  - "/images/projeler/a101-depo-8.webp"
+  - "/images/projeler/a101-depo-1.webp"
+  - "/images/projeler/a101-depo-2.webp"
+  - "/images/projeler/a101-depo-3.webp"
+  - "/images/projeler/a101-depo-4.webp"
+  - "/images/projeler/a101-depo-5.webp"
+  - "/images/projeler/a101-depo-6.webp"
+  - "/images/projeler/a101-depo-7.webp"
+  - "/images/projeler/a101-depo-9.webp"
 categories: ["Tabela", "İş Güvenliği"]
 date: "2024-09-27"
 order: 11

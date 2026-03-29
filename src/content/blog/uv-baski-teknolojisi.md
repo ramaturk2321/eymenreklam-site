@@ -2,7 +2,7 @@
 title: "UV Baskı Teknolojisi: Yüzeylere Hayat Veren Sessiz Devrimin 7 Sırrı"
 description: "UV baskı teknolojisinin çalışma prensibi, uygulama alanları, teknik detayları ve doğru partner seçimi rehberi."
 excerpt: "UV baskı teknolojisinin tüm sırları: çalışma prensibi, uygulama alanları, teknik detaylar ve doğru partner seçimi."
-image: "/images/blog-uv.jpg"
+image: "/images/blog-uv.webp"
 category: "UV Baskı"
 date: "2026-02-18"
 author: "Eymen Reklam"

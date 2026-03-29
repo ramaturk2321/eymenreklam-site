@@ -4,13 +4,13 @@
   "category": "Mağaza Reklam",
   "categoryHref": "/hizmetlerimiz/magaza-reklam",
   "shortDesc": "Palet eteği baskı hizmeti. Market ve mağaza raf altı kampanya duyuruları için dikkat çekici, dayanıklı palet eteği çözümleri.",
-  "mainImg": "/images/urunler/palet-etegi-1.jpg",
+  "mainImg": "/images/urunler/palet-etegi-1.webp",
   "gallery": [
-    "/images/projeler/palet-etegi-prj-1.jpg",
-    "/images/urunler/palet-etegi-1.jpg",
-    "/images/urunler/palet-etegi-2.jpg",
-    "/images/urunler/palet-etegi-3.jpg",
-    "/images/urunler/palet-etegi-4.jpg"
+    "/images/projeler/palet-etegi-prj-1.webp",
+    "/images/urunler/palet-etegi-1.webp",
+    "/images/urunler/palet-etegi-2.webp",
+    "/images/urunler/palet-etegi-3.webp",
+    "/images/urunler/palet-etegi-4.webp"
   ],
   "specs": [
     { "icon": "M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4", "label": "Malzeme", "value": "Karton / PP Levha" },
@@ -56,9 +56,9 @@
     { "q": "Tasarım desteği var mı?", "a": "Evet, ücretsiz grafik tasarım desteği sunuyoruz." }
   ],
   "relatedProducts": [
-    { "img": "/images/urunler/donkart-1.jpg", "title": "Dönkart Afiş", "href": "/urunlerimiz/donkart", "category": "Display & Stand" },
-    { "img": "/images/urunler/market-branda-1.jpg", "title": "Market Branda Baskı", "href": "/urunlerimiz/market-branda", "category": "Bez Baskı" },
-    { "img": "/images/urunler/fotoblok-1.jpg", "title": "Fotoblok Baskı", "href": "/urunlerimiz/fotoblok", "category": "Dijital Baskı" },
-    { "img": "/images/urunler/uv-baski-1.jpg", "title": "UV Baskı", "href": "/urunlerimiz/uv-baski", "category": "UV Baskı" }
+    { "img": "/images/urunler/donkart-1.webp", "title": "Dönkart Afiş", "href": "/urunlerimiz/donkart", "category": "Display & Stand" },
+    { "img": "/images/urunler/market-branda-1.webp", "title": "Market Branda Baskı", "href": "/urunlerimiz/market-branda", "category": "Bez Baskı" },
+    { "img": "/images/urunler/fotoblok-1.webp", "title": "Fotoblok Baskı", "href": "/urunlerimiz/fotoblok", "category": "Dijital Baskı" },
+    { "img": "/images/urunler/uv-baski-1.webp", "title": "UV Baskı", "href": "/urunlerimiz/uv-baski", "category": "UV Baskı" }
   ]
 }

@@ -88,13 +88,13 @@ const breadcrumbSchema = {
                 ]}
                 data-img={img}
               >
-                <img src={img} alt={`${product.title} ${i+1}`} class="w-full h-full object-cover" />
+                <img src={img} alt={`${product.title} ${i+1}`} width="80" height="80" loading="lazy" decoding="async" class="w-full h-full object-cover" />
               </button>
             ))}
           </div>
           <!-- Ana Görsel -->
           <div class="relative flex-1 rounded-2xl overflow-hidden bg-koyu-100 group cursor-pointer h-[350px] md:h-[450px]" id="main-image-wrapper">
-            <img id="main-product-image" src={product.mainImg} alt={product.title} class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+            <img id="main-product-image" src={product.mainImg} alt={product.title} width="800" height="450" decoding="async" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
             <div class="absolute top-4 right-4 w-10 h-10 bg-white/80 backdrop-blur rounded-full flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
               <svg class="w-5 h-5 text-koyu-700" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7"/></svg>
             </div>
@@ -269,7 +269,7 @@ const breadcrumbSchema = {
         {relatedProducts.map(p => (
           <a href={p.href} class="group block">
             <div class="relative rounded-xl overflow-hidden bg-koyu-100 aspect-[4/3] mb-3">
-              <img src={p.img} alt={p.title} class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+              <img src={p.img} alt={p.title} width="400" height="300" loading="lazy" decoding="async" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
               <div class="absolute inset-0 bg-koyu-900/0 group-hover:bg-koyu-900/30 transition-all duration-300 flex items-center justify-center">
                 <span class="opacity-0 group-hover:opacity-100 transition-opacity w-10 h-10 bg-eymen-500 rounded-full flex items-center justify-center">
                   <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>

@@ -4,11 +4,11 @@
   "category": "Display & Stand",
   "categoryHref": "/hizmetlerimiz/sunum-stand",
   "shortDesc": "50x70 cm alüminyum çerçeve. Poster, afiş ve reklam panosu sunumu için yaylı mekanizmalı, kolay içerik değişimli profesyonel çerçeve sistemi.",
-  "mainImg": "/images/urunler/50x70-cerceve-1.jpg",
+  "mainImg": "/images/urunler/50x70-cerceve-1.webp",
   "gallery": [
-    "/images/urunler/50x70-cerceve-1.jpg",
-    "/images/urunler/50x70-cerceve-2.jpg",
-    "/images/urunler/50x70-cerceve-3.jpg"
+    "/images/urunler/50x70-cerceve-1.webp",
+    "/images/urunler/50x70-cerceve-2.webp",
+    "/images/urunler/50x70-cerceve-3.webp"
   ],
   "specs": [
     { "icon": "M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4", "label": "Malzeme", "value": "Alüminyum Profil" },
@@ -61,9 +61,9 @@
     { "q": "Farklı boyut seçenekleri var mı?", "a": "Evet, A4, A3, A2, A1, A0, 50x70, 70x100 cm gibi standart boyutlarda üretim yapıyoruz." }
   ],
   "relatedProducts": [
-    { "img": "/images/urunler/a4-cerceve-1.jpg", "title": "A4 Alüminyum Çerçeve", "href": "/urunlerimiz/a4-cerceve", "category": "Display & Stand" },
-    { "img": "/images/urunler/alu-cerceve-1.jpg", "title": "Alüminyum Çerçeve", "href": "/urunlerimiz/aluminyum-cerceve", "category": "Display & Stand" },
-    { "img": "/images/urunler/lightbox-1.jpg", "title": "Lightbox Pano", "href": "/urunlerimiz/lightbox-pano", "category": "Display & Stand" },
-    { "img": "/images/urunler/rollup-1.jpg", "title": "Roll-Up Banner", "href": "/urunlerimiz/rollup-banner", "category": "Display & Stand" }
+    { "img": "/images/urunler/a4-cerceve-1.webp", "title": "A4 Alüminyum Çerçeve", "href": "/urunlerimiz/a4-cerceve", "category": "Display & Stand" },
+    { "img": "/images/urunler/alu-cerceve-1.webp", "title": "Alüminyum Çerçeve", "href": "/urunlerimiz/aluminyum-cerceve", "category": "Display & Stand" },
+    { "img": "/images/urunler/lightbox-1.webp", "title": "Lightbox Pano", "href": "/urunlerimiz/lightbox-pano", "category": "Display & Stand" },
+    { "img": "/images/urunler/rollup-1.webp", "title": "Roll-Up Banner", "href": "/urunlerimiz/rollup-banner", "category": "Display & Stand" }
   ]
 }

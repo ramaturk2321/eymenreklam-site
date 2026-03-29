@@ -4,12 +4,12 @@
   "category": "UV Baskı",
   "categoryHref": "/hizmetlerimiz/uv-baski",
   "shortDesc": "Ahşap, metal, cam, akrilik, deri ve onlarca farklı yüzeye doğrudan baskı imkanı sunan UV baskı teknolojisi. Solmayan, çizilmeye dayanıklı, canlı renklerle markanıza özel üretim.",
-  "mainImg": "/images/urunler/uv-baski-1.jpg",
+  "mainImg": "/images/urunler/uv-baski-1.webp",
   "gallery": [
-    "/images/urunler/uv-baski-1.jpg",
-    "/images/urunler/uv-baski-2.jpg",
-    "/images/urunler/uv-baski-3.jpg",
-    "/images/urunler/uv-baski-4.jpg"
+    "/images/urunler/uv-baski-1.webp",
+    "/images/urunler/uv-baski-2.webp",
+    "/images/urunler/uv-baski-3.webp",
+    "/images/urunler/uv-baski-4.webp"
   ],
   "specs": [
     { "icon": "M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4", "label": "Malzeme", "value": "Ahşap / Metal / Cam / Akrilik" },
@@ -66,9 +66,9 @@
     { "q": "Beyaz mürekkep nedir, ne işe yarar?", "a": "Beyaz mürekkep, koyu renkli veya şeffaf yüzeylere baskıda alt katman olarak kullanılır. Bu sayede renkler canlılığını korur. Ayrıca şeffaf cam veya akrilik üzerine opak beyaz baskı yapmak için de kullanılır." }
   ],
   "relatedProducts": [
-    { "img": "/images/urunler/kutu-harf-1.jpg", "title": "Kutu Harf Tabela", "href": "/urunlerimiz/kutu-harf-tabela", "category": "Tabela" },
-    { "img": "/images/urunler/cephe-giydirme-1.jpg", "title": "Cephe Giydirme", "href": "/urunlerimiz/cephe-giydirme", "category": "Folyo & Giydirme" },
-    { "img": "/images/urunler/branda-1.jpg", "title": "Bez & Branda Baskı", "href": "/urunlerimiz/bez-branda-baski", "category": "Bez & Afiş Baskı" },
-    { "img": "/images/urunler/rollup-1.jpg", "title": "Roll Up Banner", "href": "/urunlerimiz/rollup-banner", "category": "Display & Stand" }
+    { "img": "/images/urunler/kutu-harf-1.webp", "title": "Kutu Harf Tabela", "href": "/urunlerimiz/kutu-harf-tabela", "category": "Tabela" },
+    { "img": "/images/urunler/cephe-giydirme-1.webp", "title": "Cephe Giydirme", "href": "/urunlerimiz/cephe-giydirme", "category": "Folyo & Giydirme" },
+    { "img": "/images/urunler/branda-1.webp", "title": "Bez & Branda Baskı", "href": "/urunlerimiz/bez-branda-baski", "category": "Bez & Afiş Baskı" },
+    { "img": "/images/urunler/rollup-1.webp", "title": "Roll Up Banner", "href": "/urunlerimiz/rollup-banner", "category": "Display & Stand" }
   ]
 }

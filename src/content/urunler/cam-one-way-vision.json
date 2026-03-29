@@ -4,12 +4,12 @@
   "category": "Folyo & Giydirme",
   "categoryHref": "/hizmetlerimiz/folyo-giydirme",
   "shortDesc": "Cam one way vision giydirme ile vitrin ve araç camlarınızı reklam yüzeyine dönüştürün. Dışarıdan opak, içeriden şeffaf. UV dayanımlı, profesyonel uygulama.",
-  "mainImg": "/images/urunler/one-way-1.jpg",
+  "mainImg": "/images/urunler/one-way-1.webp",
   "gallery": [
-    "/images/urunler/one-way-1.jpg",
-    "/images/urunler/one-way-2.jpg",
-    "/images/urunler/one-way-3.jpg",
-    "/images/urunler/one-way-4.jpg"
+    "/images/urunler/one-way-1.webp",
+    "/images/urunler/one-way-2.webp",
+    "/images/urunler/one-way-3.webp",
+    "/images/urunler/one-way-4.webp"
   ],
   "specs": [
     { "icon": "M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4", "label": "Malzeme", "value": "One Way Vision Folyo" },
@@ -62,9 +62,9 @@
     { "q": "Folyo söküldüğünde cam zarar görür mü?", "a": "Hayır, kaliteli malzeme ve profesyonel uygulama sayesinde cam yüzeyine zarar vermeden sökülür." }
   ],
   "relatedProducts": [
-    { "img": "/images/urunler/cam-folyo-1.jpg", "title": "Cam Folyo Giydirme", "href": "/urunlerimiz/cam-folyo-giydirme", "category": "Folyo & Giydirme" },
-    { "img": "/images/urunler/cam-kumlama-1.jpg", "title": "Cam Kumlama Folyo", "href": "/urunlerimiz/cam-kumlama-folyo", "category": "Folyo & Giydirme" },
-    { "img": "/images/urunler/cephe-folyo-1.jpg", "title": "Cephe Folyo Giydirme", "href": "/urunlerimiz/cephe-giydirme", "category": "Folyo & Giydirme" },
-    { "img": "/images/urunler/komple-arac-1.jpg", "title": "Komple Araç Kaplama", "href": "/urunlerimiz/komple-arac-kaplama", "category": "Folyo & Giydirme" }
+    { "img": "/images/urunler/cam-folyo-1.webp", "title": "Cam Folyo Giydirme", "href": "/urunlerimiz/cam-folyo-giydirme", "category": "Folyo & Giydirme" },
+    { "img": "/images/urunler/cam-kumlama-1.webp", "title": "Cam Kumlama Folyo", "href": "/urunlerimiz/cam-kumlama-folyo", "category": "Folyo & Giydirme" },
+    { "img": "/images/urunler/cephe-folyo-1.webp", "title": "Cephe Folyo Giydirme", "href": "/urunlerimiz/cephe-giydirme", "category": "Folyo & Giydirme" },
+    { "img": "/images/urunler/komple-arac-1.webp", "title": "Komple Araç Kaplama", "href": "/urunlerimiz/komple-arac-kaplama", "category": "Folyo & Giydirme" }
   ]
 }

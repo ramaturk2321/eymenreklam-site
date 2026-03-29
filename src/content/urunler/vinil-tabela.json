@@ -4,12 +4,12 @@
   "category": "Tabela",
   "categoryHref": "/hizmetlerimiz/tabela",
   "shortDesc": "Ekonomik vinil germe tabela çözümleri. Alüminyum çerçeve üzerine dijital baskılı vinil yüzey ile uygun fiyatlı, hızlı üretim ve kolay değiştirilebilir tabela seçeneği.",
-  "mainImg": "/images/urunler/vinil-tabela-1.jpg",
+  "mainImg": "/images/urunler/vinil-tabela-1.webp",
   "gallery": [
-    "/images/urunler/vinil-tabela-1.jpg",
-    "/images/urunler/vinil-tabela-2.jpg",
-    "/images/urunler/vinil-tabela-3.jpg",
-    "/images/urunler/vinil-tabela-4.jpg"
+    "/images/urunler/vinil-tabela-1.webp",
+    "/images/urunler/vinil-tabela-2.webp",
+    "/images/urunler/vinil-tabela-3.webp",
+    "/images/urunler/vinil-tabela-4.webp"
   ],
   "specs": [
     { "icon": "M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4", "label": "Malzeme", "value": "Alüminyum Çerçeve / Vinil" },
@@ -63,9 +63,9 @@
     { "q": "Işıklı vinil tabela yapılabilir mi?", "a": "Evet, alüminyum kasa içine LED modül yerleştirilerek arka aydınlatmalı (backlight) vinil tabela üretimi yapılmaktadır." }
   ],
   "relatedProducts": [
-    { "img": "/images/urunler/kutu-harf-1.jpg", "title": "Kutu Harf Tabela", "href": "/urunlerimiz/kutu-harf-tabela", "category": "Tabela" },
-    { "img": "/images/urunler/isikli-blok-1.jpg", "title": "Işıklı Blok Tabela", "href": "/urunlerimiz/isikli-blok-tabela", "category": "Tabela" },
-    { "img": "/images/urunler/fener-tabela-1.jpg", "title": "Fener Tabela", "href": "/urunlerimiz/fener-tabela", "category": "Tabela" },
-    { "img": "/images/urunler/totem-1.jpg", "title": "Totem Tabela", "href": "/urunlerimiz/totem-tabela", "category": "Tabela" }
+    { "img": "/images/urunler/kutu-harf-1.webp", "title": "Kutu Harf Tabela", "href": "/urunlerimiz/kutu-harf-tabela", "category": "Tabela" },
+    { "img": "/images/urunler/isikli-blok-1.webp", "title": "Işıklı Blok Tabela", "href": "/urunlerimiz/isikli-blok-tabela", "category": "Tabela" },
+    { "img": "/images/urunler/fener-tabela-1.webp", "title": "Fener Tabela", "href": "/urunlerimiz/fener-tabela", "category": "Tabela" },
+    { "img": "/images/urunler/totem-1.webp", "title": "Totem Tabela", "href": "/urunlerimiz/totem-tabela", "category": "Tabela" }
   ]
 }

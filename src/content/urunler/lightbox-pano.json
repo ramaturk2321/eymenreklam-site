@@ -4,14 +4,14 @@
   "category": "Display & Stand",
   "categoryHref": "/hizmetlerimiz/sunum-stand",
   "shortDesc": "Lightbox pano ve ışıklı reklam panosu. LED aydınlatmalı, enerji tasarruflu, eşit ışık dağılımlı profesyonel tanıtım çözümü.",
-  "mainImg": "/images/urunler/lightbox-1.jpg",
+  "mainImg": "/images/urunler/lightbox-1.webp",
   "gallery": [
-    "/images/projeler/suadiye-marmaris-prj-1.jpg",
-    "/images/urunler/lightbox-1.jpg",
-    "/images/urunler/lightbox-2.jpg",
-    "/images/urunler/lightbox-3.jpg",
-    "/images/urunler/lightbox-4.jpg",
-    "/images/urunler/lightbox-prj-1.jpg"
+    "/images/projeler/suadiye-marmaris-prj-1.webp",
+    "/images/urunler/lightbox-1.webp",
+    "/images/urunler/lightbox-2.webp",
+    "/images/urunler/lightbox-3.webp",
+    "/images/urunler/lightbox-4.webp",
+    "/images/urunler/lightbox-prj-1.webp"
   ],
   "specs": [
     { "icon": "M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4", "label": "Malzeme", "value": "Alüminyum Kasa + LED" },
@@ -64,9 +64,9 @@
     { "q": "LED ömrü ne kadar?", "a": "LED modüller ortalama 50.000 saat ömre sahiptir." }
   ],
   "relatedProducts": [
-    { "img": "/images/urunler/alu-cerceve-1.jpg", "title": "Alüminyum Çerçeve", "href": "/urunlerimiz/aluminyum-cerceve", "category": "Display & Stand" },
-    { "img": "/images/urunler/rollup-1.jpg", "title": "Roll-Up Banner", "href": "/urunlerimiz/rollup-banner", "category": "Display & Stand" },
-    { "img": "/images/urunler/donkart-1.jpg", "title": "Dönkart Afiş", "href": "/urunlerimiz/donkart", "category": "Display & Stand" },
-    { "img": "/images/urunler/isikli-blok-1.jpg", "title": "Işıklı Blok Tabela", "href": "/urunlerimiz/isikli-blok-tabela", "category": "Tabela" }
+    { "img": "/images/urunler/alu-cerceve-1.webp", "title": "Alüminyum Çerçeve", "href": "/urunlerimiz/aluminyum-cerceve", "category": "Display & Stand" },
+    { "img": "/images/urunler/rollup-1.webp", "title": "Roll-Up Banner", "href": "/urunlerimiz/rollup-banner", "category": "Display & Stand" },
+    { "img": "/images/urunler/donkart-1.webp", "title": "Dönkart Afiş", "href": "/urunlerimiz/donkart", "category": "Display & Stand" },
+    { "img": "/images/urunler/isikli-blok-1.webp", "title": "Işıklı Blok Tabela", "href": "/urunlerimiz/isikli-blok-tabela", "category": "Tabela" }
   ]
 }

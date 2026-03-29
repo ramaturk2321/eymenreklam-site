@@ -9,7 +9,7 @@
     "/images/urunler/bez-pankart-1.webp",
     "/images/urunler/bez-pankart-2.webp",
     "/images/urunler/bez-pankart-3.webp",
-    "/images/urunler/bez-pankart-4.jpg"
+    "/images/urunler/bez-pankart-4.webp"
   ],
   "specs": [
     { "icon": "M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4", "label": "Malzeme", "value": "Bez / Kumaş" },
@@ -61,9 +61,9 @@
     { "q": "Acil sipariş alınıyor mu?", "a": "Evet, acil siparişlerde aynı gün üretim imkânı sunuyoruz." }
   ],
   "relatedProducts": [
-    { "img": "/images/urunler/afis-branda-1.jpg", "title": "Afiş Branda", "href": "/urunlerimiz/afis-branda", "category": "Afiş Baskı" },
-    { "img": "/images/urunler/afis-baski-1.jpg", "title": "Afiş Baskı", "href": "/urunlerimiz/afis-baski", "category": "Afiş Baskı" },
-    { "img": "/images/urunler/mesh-1.jpg", "title": "Mesh Baskı", "href": "/urunlerimiz/mesh-baski", "category": "Bez Baskı" },
-    { "img": "/images/urunler/yelken-bayrak-1.jpg", "title": "Yelken Bayrak", "href": "/urunlerimiz/yelken-bayrak", "category": "Display & Stand" }
+    { "img": "/images/urunler/afis-branda-1.webp", "title": "Afiş Branda", "href": "/urunlerimiz/afis-branda", "category": "Afiş Baskı" },
+    { "img": "/images/urunler/afis-baski-1.webp", "title": "Afiş Baskı", "href": "/urunlerimiz/afis-baski", "category": "Afiş Baskı" },
+    { "img": "/images/urunler/mesh-1.webp", "title": "Mesh Baskı", "href": "/urunlerimiz/mesh-baski", "category": "Bez Baskı" },
+    { "img": "/images/urunler/yelken-bayrak-1.webp", "title": "Yelken Bayrak", "href": "/urunlerimiz/yelken-bayrak", "category": "Display & Stand" }
   ]
 }

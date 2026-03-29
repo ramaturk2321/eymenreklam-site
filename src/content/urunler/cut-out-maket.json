@@ -4,13 +4,13 @@
   "category": "Mağaza Reklam",
   "categoryHref": "/hizmetlerimiz/magaza-reklam",
   "shortDesc": "Cut-out maket uygulama. Mağaza, fuar ve etkinlik alanları için özel kesim figür, ürün maketi ve tanıtım standı.",
-  "mainImg": "/images/urunler/cut-out-maket-1.jpg",
+  "mainImg": "/images/urunler/cut-out-maket-1.webp",
   "gallery": [
-    "/images/projeler/hakmar-express-kontrol-1.jpg",
-    "/images/urunler/cut-out-maket-1.jpg",
-    "/images/urunler/cut-out-maket-2.jpg",
-    "/images/urunler/cut-out-maket-3.jpg",
-    "/images/urunler/cut-out-maket-4.jpg"
+    "/images/projeler/hakmar-express-kontrol-1.webp",
+    "/images/urunler/cut-out-maket-1.webp",
+    "/images/urunler/cut-out-maket-2.webp",
+    "/images/urunler/cut-out-maket-3.webp",
+    "/images/urunler/cut-out-maket-4.webp"
   ],
   "specs": [
     { "icon": "M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4", "label": "Malzeme", "value": "Forex / Karton / Dekota" },
@@ -62,9 +62,9 @@
     { "q": "Tasarım desteği var mı?", "a": "Evet, ücretsiz grafik tasarım ve kesim hattı hazırlama desteği sunuyoruz." }
   ],
   "relatedProducts": [
-    { "img": "/images/urunler/fotoblok-1.jpg", "title": "Fotoblok Baskı", "href": "/urunlerimiz/fotoblok", "category": "Dijital Baskı" },
-    { "img": "/images/urunler/uv-baski-1.jpg", "title": "UV Baskı", "href": "/urunlerimiz/uv-baski", "category": "UV Baskı" },
-    { "img": "/images/urunler/donkart-1.jpg", "title": "Dönkart Afiş", "href": "/urunlerimiz/donkart", "category": "Display & Stand" },
-    { "img": "/images/urunler/orumcek-stand-1.jpg", "title": "Örümcek Stand", "href": "/urunlerimiz/orumcek-stand", "category": "Display & Stand" }
+    { "img": "/images/urunler/fotoblok-1.webp", "title": "Fotoblok Baskı", "href": "/urunlerimiz/fotoblok", "category": "Dijital Baskı" },
+    { "img": "/images/urunler/uv-baski-1.webp", "title": "UV Baskı", "href": "/urunlerimiz/uv-baski", "category": "UV Baskı" },
+    { "img": "/images/urunler/donkart-1.webp", "title": "Dönkart Afiş", "href": "/urunlerimiz/donkart", "category": "Display & Stand" },
+    { "img": "/images/urunler/orumcek-stand-1.webp", "title": "Örümcek Stand", "href": "/urunlerimiz/orumcek-stand", "category": "Display & Stand" }
   ]
 }

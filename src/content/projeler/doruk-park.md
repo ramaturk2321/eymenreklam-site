@@ -1,12 +1,12 @@
 ---
 title: "Doruk Park Villaları – Kutu Harf Tabela"
 description: "Doruk Park Villaları için taş duvar üzerine kutu harf tabela üretim ve montaj uygulaması."
-image: "/images/projeler/doruk-park-1.jpg"
+image: "/images/projeler/doruk-park-1.webp"
 images:
-  - "/images/projeler/doruk-park-1.jpg"
-  - "/images/projeler/doruk-park-2.jpg"
-  - "/images/projeler/doruk-park-3.jpg"
-  - "/images/projeler/doruk-park-4.jpg"
+  - "/images/projeler/doruk-park-1.webp"
+  - "/images/projeler/doruk-park-2.webp"
+  - "/images/projeler/doruk-park-3.webp"
+  - "/images/projeler/doruk-park-4.webp"
 categories: ["Tabela"]
 date: "2026-03-13"
 order: 8

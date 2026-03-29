@@ -4,14 +4,14 @@
   "category": "Tabela",
   "categoryHref": "/hizmetlerimiz/tabela",
   "shortDesc": "Yüksek görünürlüklü totem tabela (pilon tabela) üretimi. Çelik konstrüksiyon gövde, LED aydınlatmalı kasetler ve profesyonel montaj ile markanızı uzak mesafelerden fark edilir kılın.",
-  "mainImg": "/images/urunler/totem-1.jpg",
+  "mainImg": "/images/urunler/totem-1.webp",
   "gallery": [
-    "/images/projeler/banat-totem-1.png",
-    "/images/projeler/unkar-totem-1.jpg",
-    "/images/projeler/hakmar-totem-ekspres-1.jpg",
-    "/images/urunler/totem-1.jpg",
-    "/images/urunler/totem-4.jpg",
-    "/images/urunler/totem-prj-1.jpg"
+    "/images/projeler/banat-totem-1.webp",
+    "/images/projeler/unkar-totem-1.webp",
+    "/images/projeler/hakmar-totem-ekspres-1.webp",
+    "/images/urunler/totem-1.webp",
+    "/images/urunler/totem-4.webp",
+    "/images/urunler/totem-prj-1.webp"
   ],
   "specs": [
     { "icon": "M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4", "label": "Malzeme", "value": "Çelik Konstrüksiyon / Alüminyum" },
@@ -66,9 +66,9 @@
     { "q": "Maksimum ne yükseklikte totem tabela yapılabilir?", "a": "10 metreye kadar standart üretim yapıyoruz. Daha yüksek projeler için özel mühendislik hesabı ve statik proje ile üretim mümkündür." }
   ],
   "relatedProducts": [
-    { "img": "/images/urunler/kutu-harf-1.jpg", "title": "Kutu Harf Tabela", "href": "/urunlerimiz/kutu-harf-tabela", "category": "Tabela" },
-    { "img": "/images/urunler/isikli-blok-1.jpg", "title": "Işıklı Blok Tabela", "href": "/urunlerimiz/isikli-blok-tabela", "category": "Tabela" },
-    { "img": "/images/urunler/fener-tabela-1.jpg", "title": "Fener Tabela", "href": "/urunlerimiz/fener-tabela", "category": "Tabela" },
-    { "img": "/images/urunler/vinil-tabela-1.jpg", "title": "Vinil Tabela", "href": "/urunlerimiz/vinil-tabela", "category": "Tabela" }
+    { "img": "/images/urunler/kutu-harf-1.webp", "title": "Kutu Harf Tabela", "href": "/urunlerimiz/kutu-harf-tabela", "category": "Tabela" },
+    { "img": "/images/urunler/isikli-blok-1.webp", "title": "Işıklı Blok Tabela", "href": "/urunlerimiz/isikli-blok-tabela", "category": "Tabela" },
+    { "img": "/images/urunler/fener-tabela-1.webp", "title": "Fener Tabela", "href": "/urunlerimiz/fener-tabela", "category": "Tabela" },
+    { "img": "/images/urunler/vinil-tabela-1.webp", "title": "Vinil Tabela", "href": "/urunlerimiz/vinil-tabela", "category": "Tabela" }
   ]
 }

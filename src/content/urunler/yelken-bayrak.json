@@ -4,13 +4,13 @@
   "category": "Display & Stand",
   "categoryHref": "/hizmetlerimiz/sunum-stand",
   "shortDesc": "Dış mekan yelken bayrak (plaj bayrağı) üretimi. Polyester kumaş üzerine dijital baskı, fiberglas veya alüminyum direk ile rüzgarda dalgalanan dikkat çekici tanıtım aracı.",
-  "mainImg": "/images/urunler/yelken-bayrak-1.jpg",
+  "mainImg": "/images/urunler/yelken-bayrak-1.webp",
   "gallery": [
-    "/images/projeler/rent-go-1.jpg",
-    "/images/urunler/yelken-bayrak-1.jpg",
-    "/images/urunler/yelken-bayrak-2.jpg",
-    "/images/urunler/yelken-bayrak-3.jpg",
-    "/images/urunler/yelken-bayrak-4.jpg"
+    "/images/projeler/rent-go-1.webp",
+    "/images/urunler/yelken-bayrak-1.webp",
+    "/images/urunler/yelken-bayrak-2.webp",
+    "/images/urunler/yelken-bayrak-3.webp",
+    "/images/urunler/yelken-bayrak-4.webp"
   ],
   "specs": [
     { "icon": "M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4", "label": "Malzeme", "value": "Polyester Kumaş + Fiberglas" },
@@ -58,9 +58,9 @@
     { "q": "Sadece kumaş sipariş edebilir miyim?", "a": "Evet, mevcut direk sisteminize uygun yedek kumaş üretimi yapıyoruz. Farklı etkinlikler için farklı kumaşlar sipariş edebilirsiniz." }
   ],
   "relatedProducts": [
-    { "img": "/images/urunler/rollup-1.jpg", "title": "Roll-Up Banner", "href": "/urunlerimiz/rollup-banner", "category": "Display & Stand" },
-    { "img": "/images/urunler/branda-1.jpg", "title": "Bez & Branda Baskı", "href": "/urunlerimiz/bez-branda-baski", "category": "Bez & Afiş Baskı" },
-    { "img": "/images/urunler/orumcek-stand-1.jpg", "title": "Örümcek Stand", "href": "/urunlerimiz/orumcek-stand", "category": "Display & Stand" },
-    { "img": "/images/urunler/mesh-1.jpg", "title": "Mesh Baskı", "href": "/urunlerimiz/mesh-baski", "category": "Bez & Afiş Baskı" }
+    { "img": "/images/urunler/rollup-1.webp", "title": "Roll-Up Banner", "href": "/urunlerimiz/rollup-banner", "category": "Display & Stand" },
+    { "img": "/images/urunler/branda-1.webp", "title": "Bez & Branda Baskı", "href": "/urunlerimiz/bez-branda-baski", "category": "Bez & Afiş Baskı" },
+    { "img": "/images/urunler/orumcek-stand-1.webp", "title": "Örümcek Stand", "href": "/urunlerimiz/orumcek-stand", "category": "Display & Stand" },
+    { "img": "/images/urunler/mesh-1.webp", "title": "Mesh Baskı", "href": "/urunlerimiz/mesh-baski", "category": "Bez & Afiş Baskı" }
   ]
 }

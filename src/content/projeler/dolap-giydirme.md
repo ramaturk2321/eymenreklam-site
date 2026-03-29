@@ -1,13 +1,13 @@
 ---
 title: "Aytaç – Dolap Giydirme"
 description: "Aytaç et ürünleri için derin dondurucu folyo giydirme tasarımı."
-image: "/images/projeler/dolap-giydirme-1.jpg"
+image: "/images/projeler/dolap-giydirme-1.webp"
 images:
-  - "/images/projeler/dolap-giydirme-1.jpg"
-  - "/images/projeler/dolap-giydirme-2.jpg"
-  - "/images/projeler/dolap-giydirme-3.jpg"
-  - "/images/projeler/dolap-giydirme-4.jpg"
-  - "/images/projeler/dolap-giydirme-5.jpg"
+  - "/images/projeler/dolap-giydirme-1.webp"
+  - "/images/projeler/dolap-giydirme-2.webp"
+  - "/images/projeler/dolap-giydirme-3.webp"
+  - "/images/projeler/dolap-giydirme-4.webp"
+  - "/images/projeler/dolap-giydirme-5.webp"
 categories: ["Folyo & Giydirme", "Mağaza Reklam"]
 date: "2022-05-10"
 order: 21

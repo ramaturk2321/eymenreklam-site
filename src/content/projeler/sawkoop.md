@@ -1,12 +1,12 @@
 ---
 title: "Sawkoop – Çatı Tabelası Uygulaması"
 description: "Sawkoop firması için kutu harf çatı tabelası üretim ve montaj uygulaması."
-image: "/images/projeler/sawkoop-1.jpg"
+image: "/images/projeler/sawkoop-1.webp"
 images:
-  - "/images/projeler/sawkoop-1.jpg"
-  - "/images/projeler/sawkoop-2.jpg"
-  - "/images/projeler/sawkoop-3.jpg"
-  - "/images/projeler/sawkoop-4.jpg"
+  - "/images/projeler/sawkoop-1.webp"
+  - "/images/projeler/sawkoop-2.webp"
+  - "/images/projeler/sawkoop-3.webp"
+  - "/images/projeler/sawkoop-4.webp"
 categories: ["Tabela"]
 date: "2026-03-05"
 order: 6

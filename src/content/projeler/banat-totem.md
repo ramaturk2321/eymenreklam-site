@@ -1,12 +1,12 @@
 ---
 title: "Banat – Totem Tabela"
 description: "Banat Ambalaj fabrika girişi için totem tabela tasarımı ve uygulaması."
-image: "/images/projeler/banat-totem-1.png"
+image: "/images/projeler/banat-totem-1.webp"
 images:
-  - "/images/projeler/banat-totem-1.png"
-  - "/images/projeler/banat-totem-2.png"
-  - "/images/projeler/banat-totem-3.png"
-  - "/images/projeler/banat-totem-4.png"
+  - "/images/projeler/banat-totem-1.webp"
+  - "/images/projeler/banat-totem-2.webp"
+  - "/images/projeler/banat-totem-3.webp"
+  - "/images/projeler/banat-totem-4.webp"
 categories: ["Tabela"]
 date: "2024-02-10"
 order: 13

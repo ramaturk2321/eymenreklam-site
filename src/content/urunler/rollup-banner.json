@@ -4,13 +4,13 @@
   "category": "Display & Stand",
   "categoryHref": "/hizmetlerimiz/sunum-stand",
   "shortDesc": "Taşınabilir roll-up banner sistemleri. Alüminyum mekanizma, dijital baskılı yüzey ile fuar, toplantı, mağaza ve etkinliklerde profesyonel sunum aracınız. Kutu içinde kolay taşıma.",
-  "mainImg": "/images/urunler/rollup-1.jpg",
+  "mainImg": "/images/urunler/rollup-1.webp",
   "gallery": [
-    "/images/projeler/bizim-toptan-prj-1.jpg",
-    "/images/urunler/rollup-1.jpg",
-    "/images/urunler/rollup-2.jpg",
-    "/images/urunler/rollup-3.jpg",
-    "/images/urunler/rollup-4.jpg"
+    "/images/projeler/bizim-toptan-prj-1.webp",
+    "/images/urunler/rollup-1.webp",
+    "/images/urunler/rollup-2.webp",
+    "/images/urunler/rollup-3.webp",
+    "/images/urunler/rollup-4.webp"
   ],
   "specs": [
     { "icon": "M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4", "label": "Malzeme", "value": "Alüminyum Mekanizma" },
@@ -58,9 +58,9 @@
     { "q": "Dış mekanda kullanılabilir mi?", "a": "Roll-up bannerlar iç mekan kullanımı için tasarlanmıştır. Dış mekanda rüzgara karşı dayanıksızdır. Dış mekan için yelken bayrak öneriyoruz." }
   ],
   "relatedProducts": [
-    { "img": "/images/urunler/yelken-bayrak-1.jpg", "title": "Yelken Bayrak", "href": "/urunlerimiz/yelken-bayrak", "category": "Display & Stand" },
-    { "img": "/images/urunler/orumcek-stand-1.jpg", "title": "Örümcek Stand", "href": "/urunlerimiz/orumcek-stand", "category": "Display & Stand" },
-    { "img": "/images/urunler/branda-1.jpg", "title": "Bez & Branda Baskı", "href": "/urunlerimiz/bez-branda-baski", "category": "Bez & Afiş Baskı" },
-    { "img": "/images/urunler/uv-baski-1.jpg", "title": "UV Baskı", "href": "/urunlerimiz/uv-baski", "category": "UV Baskı" }
+    { "img": "/images/urunler/yelken-bayrak-1.webp", "title": "Yelken Bayrak", "href": "/urunlerimiz/yelken-bayrak", "category": "Display & Stand" },
+    { "img": "/images/urunler/orumcek-stand-1.webp", "title": "Örümcek Stand", "href": "/urunlerimiz/orumcek-stand", "category": "Display & Stand" },
+    { "img": "/images/urunler/branda-1.webp", "title": "Bez & Branda Baskı", "href": "/urunlerimiz/bez-branda-baski", "category": "Bez & Afiş Baskı" },
+    { "img": "/images/urunler/uv-baski-1.webp", "title": "UV Baskı", "href": "/urunlerimiz/uv-baski", "category": "UV Baskı" }
   ]
 }

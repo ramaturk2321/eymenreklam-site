@@ -1,7 +1,7 @@
 ---
 title: "Çamlıbel Süt & Ürünleri"
 description: "Çamlıbel Süt & Ürünleri markası için araç giydirme ve folyo kaplama projesi."
-image: "/images/projeler/camlibel-sut.jpg"
+image: "/images/projeler/camlibel-sut.webp"
 categories: ["Folyo & Giydirme"]
 date: "2026-03-02"
 order: 5

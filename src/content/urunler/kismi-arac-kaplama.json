@@ -4,12 +4,12 @@
   "category": "Folyo & Giydirme",
   "categoryHref": "/hizmetlerimiz/folyo-giydirme",
   "shortDesc": "Araç kapı, kaput veya arka kısım kaplama ile ekonomik reklam çözümü. Cast folyo ile kısmi araç giydirme hizmeti. Araç boyasına zarar vermeden profesyonel uygulama.",
-  "mainImg": "/images/urunler/kismi-arac-1.jpg",
+  "mainImg": "/images/urunler/kismi-arac-1.webp",
   "gallery": [
-    "/images/urunler/kismi-arac-1.jpg",
-    "/images/urunler/kismi-arac-2.jpg",
-    "/images/urunler/kismi-arac-3.jpg",
-    "/images/urunler/kismi-arac-4.jpg"
+    "/images/urunler/kismi-arac-1.webp",
+    "/images/urunler/kismi-arac-2.webp",
+    "/images/urunler/kismi-arac-3.webp",
+    "/images/urunler/kismi-arac-4.webp"
   ],
   "specs": [
     { "icon": "M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4", "label": "Malzeme", "value": "Cast / Polimerik Folyo" },
@@ -56,9 +56,9 @@
     { "q": "Kısmi kaplama ne kadar sürer?", "a": "Genellikle 1-2 iş günü içinde tamamlanır. Basit uygulamalar (sadece kapı) aynı gün teslim edilebilir." }
   ],
   "relatedProducts": [
-    { "img": "/images/urunler/komple-arac-1.jpg", "title": "Komple Araç Kaplama", "href": "/urunlerimiz/komple-arac-kaplama", "category": "Folyo & Giydirme" },
-    { "img": "/images/urunler/cam-folyo-1.jpg", "title": "Cam Folyo Giydirme", "href": "/urunlerimiz/cam-folyo-giydirme", "category": "Folyo & Giydirme" },
-    { "img": "/images/urunler/doblo-1.jpg", "title": "Doblo Kaplama", "href": "/urunlerimiz/doblo-folyo-giydirme", "category": "Folyo & Giydirme" },
-    { "img": "/images/urunler/cephe-giydirme-1.jpg", "title": "Cephe Giydirme", "href": "/urunlerimiz/cephe-giydirme", "category": "Folyo & Giydirme" }
+    { "img": "/images/urunler/komple-arac-1.webp", "title": "Komple Araç Kaplama", "href": "/urunlerimiz/komple-arac-kaplama", "category": "Folyo & Giydirme" },
+    { "img": "/images/urunler/cam-folyo-1.webp", "title": "Cam Folyo Giydirme", "href": "/urunlerimiz/cam-folyo-giydirme", "category": "Folyo & Giydirme" },
+    { "img": "/images/urunler/doblo-1.webp", "title": "Doblo Kaplama", "href": "/urunlerimiz/doblo-folyo-giydirme", "category": "Folyo & Giydirme" },
+    { "img": "/images/urunler/cephe-giydirme-1.webp", "title": "Cephe Giydirme", "href": "/urunlerimiz/cephe-giydirme", "category": "Folyo & Giydirme" }
   ]
 }

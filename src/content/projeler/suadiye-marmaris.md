@@ -1,7 +1,7 @@
 ---
 title: "Suadiye Marmaris"
 description: "Suadiye Marmaris büfe için mağaza tabelası ve reklam uygulaması."
-image: "/images/projeler/suadiye-marmaris.jpg"
+image: "/images/projeler/suadiye-marmaris.webp"
 categories: ["Mağaza Reklam"]
 date: "2026-03-02"
 order: 3

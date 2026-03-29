@@ -4,13 +4,13 @@
   "category": "Tabela",
   "categoryHref": "/hizmetlerimiz/tabela",
   "shortDesc": "Diş hekimi ve klinik tabelası imalatı. Pleksi, alüminyum ve kompozit malzeme seçenekleriyle profesyonel klinik imajınızı güçlendirin. Yönlendirme levhaları dahil.",
-  "mainImg": "/images/urunler/dis-hekimi-tabela-1.jpg",
+  "mainImg": "/images/urunler/dis-hekimi-tabela-1.webp",
   "gallery": [
-    "/images/projeler/mevsim-dis-cephe-1.jpg",
-    "/images/urunler/dis-hekimi-tabela-1.jpg",
-    "/images/urunler/dis-hekimi-tabela-2.jpg",
-    "/images/urunler/dis-hekimi-tabela-3.jpg",
-    "/images/urunler/dis-hekimi-tabela-4.jpg"
+    "/images/projeler/mevsim-dis-cephe-1.webp",
+    "/images/urunler/dis-hekimi-tabela-1.webp",
+    "/images/urunler/dis-hekimi-tabela-2.webp",
+    "/images/urunler/dis-hekimi-tabela-3.webp",
+    "/images/urunler/dis-hekimi-tabela-4.webp"
   ],
   "specs": [
     { "icon": "M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4", "label": "Malzeme", "value": "Pleksi / Alüminyum / Kompozit" },
@@ -64,9 +64,9 @@
     { "q": "Tasarım desteği var mı?", "a": "Evet, ücretsiz grafik tasarım desteği sunuyoruz. Logonuz, kurumsal renkleriniz ve tercihlerinize göre tabela tasarımı hazırlıyoruz." }
   ],
   "relatedProducts": [
-    { "img": "/images/urunler/fener-tabela-1.jpg", "title": "Fener Tabela", "href": "/urunlerimiz/fener-tabela", "category": "Tabela" },
-    { "img": "/images/urunler/isikli-blok-1.jpg", "title": "Işıklı Blok Tabela", "href": "/urunlerimiz/isikli-blok-tabela", "category": "Tabela" },
-    { "img": "/images/urunler/kutu-harf-1.jpg", "title": "Kutu Harf Tabela", "href": "/urunlerimiz/kutu-harf-tabela", "category": "Tabela" },
-    { "img": "/images/urunler/askili-tabela-1.jpg", "title": "Askılı Tabela", "href": "/urunlerimiz/askili-tabela", "category": "Tabela" }
+    { "img": "/images/urunler/fener-tabela-1.webp", "title": "Fener Tabela", "href": "/urunlerimiz/fener-tabela", "category": "Tabela" },
+    { "img": "/images/urunler/isikli-blok-1.webp", "title": "Işıklı Blok Tabela", "href": "/urunlerimiz/isikli-blok-tabela", "category": "Tabela" },
+    { "img": "/images/urunler/kutu-harf-1.webp", "title": "Kutu Harf Tabela", "href": "/urunlerimiz/kutu-harf-tabela", "category": "Tabela" },
+    { "img": "/images/urunler/askili-tabela-1.webp", "title": "Askılı Tabela", "href": "/urunlerimiz/askili-tabela", "category": "Tabela" }
   ]
 }

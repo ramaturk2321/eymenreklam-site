@@ -4,13 +4,13 @@
   "category": "Folyo & Giydirme",
   "categoryHref": "/hizmetlerimiz/folyo-giydirme",
   "shortDesc": "Mağaza, ofis ve araç camlarına folyo uygulama hizmeti. Buzlu cam, renkli cam, tek yön görüş (one-way vision) ve güvenlik filmi seçenekleriyle camlarınıza estetik ve fonksiyon kazandırın.",
-  "mainImg": "/images/urunler/cam-folyo-1.jpg",
+  "mainImg": "/images/urunler/cam-folyo-1.webp",
   "gallery": [
-    "/images/projeler/eve-magazasi-prj-5.jpg",
-    "/images/urunler/cam-folyo-1.jpg",
-    "/images/urunler/cam-folyo-2.jpg",
-    "/images/urunler/cam-folyo-3.jpg",
-    "/images/urunler/cam-folyo-4.jpg"
+    "/images/projeler/eve-magazasi-prj-5.webp",
+    "/images/urunler/cam-folyo-1.webp",
+    "/images/urunler/cam-folyo-2.webp",
+    "/images/urunler/cam-folyo-3.webp",
+    "/images/urunler/cam-folyo-4.webp"
   ],
   "specs": [
     { "icon": "M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4", "label": "Malzeme", "value": "Cam Folyosu / One-Way Vision" },
@@ -58,9 +58,9 @@
     { "q": "Cam folyo fiyatı nasıl hesaplanır?", "a": "Fiyat; folyo türü, uygulama alanı (m²), baskı varsa tasarım detayı ve konum (iç/dış mekan) göre belirlenir. Yerinde ölçüm sonrası net teklif sunuyoruz." }
   ],
   "relatedProducts": [
-    { "img": "/images/urunler/komple-arac-1.jpg", "title": "Komple Araç Kaplama", "href": "/urunlerimiz/komple-arac-kaplama", "category": "Folyo & Giydirme" },
-    { "img": "/images/urunler/cephe-giydirme-1.jpg", "title": "Cephe Giydirme", "href": "/urunlerimiz/cephe-giydirme", "category": "Folyo & Giydirme" },
-    { "img": "/images/urunler/kismi-arac-1.jpg", "title": "Kısmi Araç Kaplama", "href": "/urunlerimiz/kismi-arac-kaplama", "category": "Folyo & Giydirme" },
-    { "img": "/images/urunler/kutu-harf-1.jpg", "title": "Kutu Harf Tabela", "href": "/urunlerimiz/kutu-harf-tabela", "category": "Tabela" }
+    { "img": "/images/urunler/komple-arac-1.webp", "title": "Komple Araç Kaplama", "href": "/urunlerimiz/komple-arac-kaplama", "category": "Folyo & Giydirme" },
+    { "img": "/images/urunler/cephe-giydirme-1.webp", "title": "Cephe Giydirme", "href": "/urunlerimiz/cephe-giydirme", "category": "Folyo & Giydirme" },
+    { "img": "/images/urunler/kismi-arac-1.webp", "title": "Kısmi Araç Kaplama", "href": "/urunlerimiz/kismi-arac-kaplama", "category": "Folyo & Giydirme" },
+    { "img": "/images/urunler/kutu-harf-1.webp", "title": "Kutu Harf Tabela", "href": "/urunlerimiz/kutu-harf-tabela", "category": "Tabela" }
   ]
 }

@@ -4,12 +4,12 @@
   "category": "Bez Baskı",
   "categoryHref": "/hizmetlerimiz/bez-baski",
   "shortDesc": "Pankart branda baskı hizmeti. Dış mekân reklamlarında dayanıklılığı ve yüksek görünürlüğüyle öne çıkan branda pankart çözümleri.",
-  "mainImg": "/images/urunler/pankart-branda-1.jpg",
+  "mainImg": "/images/urunler/pankart-branda-1.webp",
   "gallery": [
-    "/images/urunler/pankart-branda-1.jpg",
-    "/images/urunler/pankart-branda-2.jpg",
-    "/images/urunler/pankart-branda-3.jpg",
-    "/images/urunler/pankart-branda-4.jpg"
+    "/images/urunler/pankart-branda-1.webp",
+    "/images/urunler/pankart-branda-2.webp",
+    "/images/urunler/pankart-branda-3.webp",
+    "/images/urunler/pankart-branda-4.webp"
   ],
   "specs": [
     { "icon": "M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4", "label": "Malzeme", "value": "Vinil Branda (440 gr/m²)" },
@@ -63,8 +63,8 @@
   ],
   "relatedProducts": [
     { "img": "/images/urunler/bez-pankart-1.webp", "title": "Bez Pankart", "href": "/urunlerimiz/bez-pankart", "category": "Afiş Baskı" },
-    { "img": "/images/urunler/afis-branda-1.jpg", "title": "Afiş Branda", "href": "/urunlerimiz/afis-branda", "category": "Afiş Baskı" },
-    { "img": "/images/urunler/branda-1.jpg", "title": "Bez & Branda Baskı", "href": "/urunlerimiz/bez-branda-baski", "category": "Bez Baskı" },
-    { "img": "/images/urunler/mesh-1.jpg", "title": "Mesh Baskı", "href": "/urunlerimiz/mesh-baski", "category": "Bez Baskı" }
+    { "img": "/images/urunler/afis-branda-1.webp", "title": "Afiş Branda", "href": "/urunlerimiz/afis-branda", "category": "Afiş Baskı" },
+    { "img": "/images/urunler/branda-1.webp", "title": "Bez & Branda Baskı", "href": "/urunlerimiz/bez-branda-baski", "category": "Bez Baskı" },
+    { "img": "/images/urunler/mesh-1.webp", "title": "Mesh Baskı", "href": "/urunlerimiz/mesh-baski", "category": "Bez Baskı" }
   ]
 }

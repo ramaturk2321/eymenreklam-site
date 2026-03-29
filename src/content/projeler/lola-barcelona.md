@@ -1,7 +1,7 @@
 ---
 title: "Lola Barcelona – Mağaza Cephe Tabelası"
 description: "Lola Barcelona mağazası için ışıklı kutu harf cephe tabelası uygulaması."
-image: "/images/projeler/lola-barcelona-1.jpg"
+image: "/images/projeler/lola-barcelona-1.webp"
 categories: ["Tabela", "Mağaza Reklam"]
 date: "2026-03-18"
 order: 9

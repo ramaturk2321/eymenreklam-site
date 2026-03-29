@@ -6,7 +6,7 @@
   "listIcon": "🔤",
   "listDesc": "Kutu harf, totem, çatı, cephe ve yönlendirme tabelaları. CNC kesim ve LED aydınlatma ile anahtar teslim üretim ve montaj.",
   "listFeatures": ["Kutu Harf", "Totem", "Çatı Tabelası", "Neon-Led", "Işıklı Blok", "Ofis Tabelası"],
-  "listImage": "/images/kutu-harf.jpg",
+  "listImage": "/images/kutu-harf.webp",
   "features": [
     { "icon": "🔤", "title": "3D Kutu Harf Üretimi", "desc": "Paslanmaz çelik, galvaniz ve alüminyum malzemelerle CNC kesim kutu harf. LED modül aydınlatma ile gece-gündüz marka görünürlüğü." },
     { "icon": "📐", "title": "CNC Hassas Kesim", "desc": "Bilgisayar kontrollü CNC tezgahlarımızla milimetrik hassasiyette harf ve şekil kesimi. Karmaşık logolar bile kusursuz." },
@@ -16,12 +16,12 @@
     { "icon": "🎨", "title": "3D Tasarım & Ön İzleme", "desc": "Üretim öncesi binanıza özel 3D modelleme ve render. Tabelanızın cephedeki görünümünü önceden görün." }
   ],
   "products": [
-    { "title": "Kutu Harf Tabela", "desc": "LED aydınlatmalı 3D kutu harf. Paslanmaz, galvaniz veya alüminyum gövde seçenekleri.", "image": "/images/urunler/kutu-harf-1.jpg", "href": "/urunlerimiz/kutu-harf-tabela" },
-    { "title": "Totem Tabela", "desc": "Bağımsız ayaklı totem tabela. AVM, fabrika girişi ve yol kenarı uygulamaları için ideal.", "image": "/images/urunler/totem-1.jpg", "href": "/urunlerimiz/totem-tabela" },
-    { "title": "Çatı Tabelası", "desc": "Bina çatısına montajlı büyük ölçekli tabela. Uzak mesafeden marka görünürlüğü.", "image": "/images/urunler/cati-tabela-1.jpg", "href": "/urunlerimiz/cati-tabelasi" },
-    { "title": "Neon-Led Tabela", "desc": "Neon görünümlü LED tabela. Düşük enerji tüketimi ile retro estetik.", "image": "/images/urunler/neon-led-1.jpg", "href": "/urunlerimiz/neon-led-tabela" },
-    { "title": "Işıklı Blok Tabela", "desc": "İçten aydınlatmalı kutu tabela. Vinileks veya pleksiglas yüzey seçenekleri.", "image": "/images/urunler/isikli-blok-1.jpg", "href": "/urunlerimiz/isikli-blok-tabela" },
-    { "title": "Ofis Tabelası", "desc": "İç mekan kapı ve resepsiyon tabelaları. Şık ve kurumsal görünüm.", "image": "/images/urunler/ofis-tabela-1.jpg", "href": "/urunlerimiz/ofis-tabelasi" }
+    { "title": "Kutu Harf Tabela", "desc": "LED aydınlatmalı 3D kutu harf. Paslanmaz, galvaniz veya alüminyum gövde seçenekleri.", "image": "/images/urunler/kutu-harf-1.webp", "href": "/urunlerimiz/kutu-harf-tabela" },
+    { "title": "Totem Tabela", "desc": "Bağımsız ayaklı totem tabela. AVM, fabrika girişi ve yol kenarı uygulamaları için ideal.", "image": "/images/urunler/totem-1.webp", "href": "/urunlerimiz/totem-tabela" },
+    { "title": "Çatı Tabelası", "desc": "Bina çatısına montajlı büyük ölçekli tabela. Uzak mesafeden marka görünürlüğü.", "image": "/images/urunler/cati-tabela-1.webp", "href": "/urunlerimiz/cati-tabelasi" },
+    { "title": "Neon-Led Tabela", "desc": "Neon görünümlü LED tabela. Düşük enerji tüketimi ile retro estetik.", "image": "/images/urunler/neon-led-1.webp", "href": "/urunlerimiz/neon-led-tabela" },
+    { "title": "Işıklı Blok Tabela", "desc": "İçten aydınlatmalı kutu tabela. Vinileks veya pleksiglas yüzey seçenekleri.", "image": "/images/urunler/isikli-blok-1.webp", "href": "/urunlerimiz/isikli-blok-tabela" },
+    { "title": "Ofis Tabelası", "desc": "İç mekan kapı ve resepsiyon tabelaları. Şık ve kurumsal görünüm.", "image": "/images/urunler/ofis-tabela-1.webp", "href": "/urunlerimiz/ofis-tabelasi" }
   ],
   "process": [
     { "step": "01", "title": "Ücretsiz Keşif", "desc": "Uzman ekibimiz projenizi yerinde inceler, ölçüm ve fotoğraflama yapar." },

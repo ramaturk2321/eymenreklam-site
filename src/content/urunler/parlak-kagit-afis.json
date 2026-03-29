@@ -4,12 +4,12 @@
   "category": "Afiş Baskı",
   "categoryHref": "/hizmetlerimiz/afis-baski",
   "shortDesc": "Parlak kuşe kağıt üzerine afiş ve poster baskı. Canlı renkler ve parlak yüzey ile dikkat çekici, profesyonel tanıtım materyali.",
-  "mainImg": "/images/urunler/parlak-afis-1.jpg",
+  "mainImg": "/images/urunler/parlak-afis-1.webp",
   "gallery": [
-    "/images/urunler/parlak-afis-1.jpg",
-    "/images/urunler/parlak-afis-2.jpg",
-    "/images/urunler/parlak-afis-3.jpg",
-    "/images/urunler/parlak-afis-4.jpg"
+    "/images/urunler/parlak-afis-1.webp",
+    "/images/urunler/parlak-afis-2.webp",
+    "/images/urunler/parlak-afis-3.webp",
+    "/images/urunler/parlak-afis-4.webp"
   ],
   "specs": [
     { "icon": "M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4", "label": "Malzeme", "value": "Parlak Kuşe Kağıt" },
@@ -62,9 +62,9 @@
     { "q": "Çerçeve ile birlikte alınabilir mi?", "a": "Evet, alüminyum ve ahşap çerçeve seçenekleriyle set halinde teslim ediyoruz." }
   ],
   "relatedProducts": [
-    { "img": "/images/urunler/mat-kagit-1.jpg", "title": "Mat Kağıt Afiş Baskı", "href": "/urunlerimiz/mat-kagit-afis", "category": "Dijital Baskı" },
-    { "img": "/images/urunler/afis-baski-1.jpg", "title": "Afiş Baskı", "href": "/urunlerimiz/afis-baski", "category": "Afiş Baskı" },
-    { "img": "/images/urunler/fotoblok-1.jpg", "title": "Fotoblok Baskı", "href": "/urunlerimiz/fotoblok", "category": "Dijital Baskı" },
-    { "img": "/images/urunler/afis-branda-1.jpg", "title": "Afiş Branda", "href": "/urunlerimiz/afis-branda", "category": "Afiş Baskı" }
+    { "img": "/images/urunler/mat-kagit-1.webp", "title": "Mat Kağıt Afiş Baskı", "href": "/urunlerimiz/mat-kagit-afis", "category": "Dijital Baskı" },
+    { "img": "/images/urunler/afis-baski-1.webp", "title": "Afiş Baskı", "href": "/urunlerimiz/afis-baski", "category": "Afiş Baskı" },
+    { "img": "/images/urunler/fotoblok-1.webp", "title": "Fotoblok Baskı", "href": "/urunlerimiz/fotoblok", "category": "Dijital Baskı" },
+    { "img": "/images/urunler/afis-branda-1.webp", "title": "Afiş Branda", "href": "/urunlerimiz/afis-branda", "category": "Afiş Baskı" }
   ]
 }

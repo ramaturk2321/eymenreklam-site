@@ -1,15 +1,15 @@
 ---
 title: "GRL Marine Electronics – Fuar Standı"
 description: "GRL Marine Electronics için fuar standı tasarımı ve uygulaması."
-image: "/images/projeler/grl-marine-1.jpg"
+image: "/images/projeler/grl-marine-1.webp"
 images:
-  - "/images/projeler/grl-marine-1.jpg"
-  - "/images/projeler/grl-marine-2.jpg"
-  - "/images/projeler/grl-marine-3.jpg"
-  - "/images/projeler/grl-marine-4.jpg"
-  - "/images/projeler/grl-marine-5.jpg"
-  - "/images/projeler/grl-marine-6.jpg"
-  - "/images/projeler/grl-marine-7.jpg"
+  - "/images/projeler/grl-marine-1.webp"
+  - "/images/projeler/grl-marine-2.webp"
+  - "/images/projeler/grl-marine-3.webp"
+  - "/images/projeler/grl-marine-4.webp"
+  - "/images/projeler/grl-marine-5.webp"
+  - "/images/projeler/grl-marine-6.webp"
+  - "/images/projeler/grl-marine-7.webp"
 categories: ["Sunum & Stand"]
 date: "2024-04-10"
 order: 8

@@ -6,7 +6,7 @@
   "listIcon": "📄",
   "listDesc": "Fotoblok, kartvizit, katalog, afiş ve poster baskı. Yüksek çözünürlük ve hızlı üretim kapasitesi.",
   "listFeatures": ["Fotoblok", "Kartvizit", "Katalog", "Mat Kağıt Afiş"],
-  "listImage": "/images/dijital-baski.jpg",
+  "listImage": "/images/dijital-baski.webp",
   "features": [
     { "icon": "📸", "title": "Yüksek Çözünürlüklü Fotoblok", "desc": "Fotoğraf kalitesi dijital baskı. 300 DPI ye kadar çözünürlük. Mat veya parlak yüzey seçeneği." },
     { "icon": "🎴", "title": "Kurumsal Basılı Malzeme", "desc": "Kartvizit, kağıt, zarf, fatura formu, beyanname vs. kurumsal materyallerin çalışmaya hazır baskısı." },
@@ -16,12 +16,12 @@
     { "icon": "💰", "title": "Küçük Partiye Uygun Fiyatlar", "desc": "Kurşun baskıdan farklı olarak kalıp hazırlık maliyeti yoktur. Tek parçadan bin parçaya kadar ekonomik." }
   ],
   "products": [
-    { "title": "Fotoblok Baskı", "desc": "Fotoğraf kalitesi baskılar. Mat, parlak veya premium kağıt seçenekleri.", "image": "/images/urunler/fotoblok-1.jpg", "href": "/urunlerimiz/fotoblok" },
-    { "title": "Kartvizit", "desc": "Parlak, mat veya hatched kağıtlarda baskı. Standard 350 gr kağıt, goldfoil, vernik seçenekleri.", "image": "/images/urunler/kartvizit-1.jpg", "href": "/urunlerimiz/kartvizit" },
-    { "title": "Katalog & Broşür", "desc": "Renkli katalog ve folyo kapaklı broşürler. A4, A3 açık gibi çeşitli boyutlarda.", "image": "/images/urunler/katalog-1.jpg", "href": "/urunlerimiz/katalog" },
-    { "title": "Mat Kağıt Afiş", "desc": "Mat kuşe kağıda yüksek çözünürlüklü afiş baskı. Yansımasız profesyonel görünüm.", "image": "/images/urunler/mat-kagit-1.jpg", "href": "/urunlerimiz/mat-kagit-afis" },
-    { "title": "Insert Tasarım", "desc": "Kurumsal kimlik seti: antetli kağıt, zarf, dosya ve mapa tasarım ve baskısı.", "image": "/images/urunler/insert-1.jpg", "href": "/urunlerimiz/insert-tasarim" },
-    { "title": "Parlak Kağıt Afiş", "desc": "Parlak kuşe kağıda canlı renklerle afiş baskı.", "image": "/images/urunler/parlak-afis-1.jpg", "href": "/urunlerimiz/parlak-kagit-afis" }
+    { "title": "Fotoblok Baskı", "desc": "Fotoğraf kalitesi baskılar. Mat, parlak veya premium kağıt seçenekleri.", "image": "/images/urunler/fotoblok-1.webp", "href": "/urunlerimiz/fotoblok" },
+    { "title": "Kartvizit", "desc": "Parlak, mat veya hatched kağıtlarda baskı. Standard 350 gr kağıt, goldfoil, vernik seçenekleri.", "image": "/images/urunler/kartvizit-1.webp", "href": "/urunlerimiz/kartvizit" },
+    { "title": "Katalog & Broşür", "desc": "Renkli katalog ve folyo kapaklı broşürler. A4, A3 açık gibi çeşitli boyutlarda.", "image": "/images/urunler/katalog-1.webp", "href": "/urunlerimiz/katalog" },
+    { "title": "Mat Kağıt Afiş", "desc": "Mat kuşe kağıda yüksek çözünürlüklü afiş baskı. Yansımasız profesyonel görünüm.", "image": "/images/urunler/mat-kagit-1.webp", "href": "/urunlerimiz/mat-kagit-afis" },
+    { "title": "Insert Tasarım", "desc": "Kurumsal kimlik seti: antetli kağıt, zarf, dosya ve mapa tasarım ve baskısı.", "image": "/images/urunler/insert-1.webp", "href": "/urunlerimiz/insert-tasarim" },
+    { "title": "Parlak Kağıt Afiş", "desc": "Parlak kuşe kağıda canlı renklerle afiş baskı.", "image": "/images/urunler/parlak-afis-1.webp", "href": "/urunlerimiz/parlak-kagit-afis" }
   ],
   "process": [
     { "step": "01", "title": "Dosya Hazırlığı", "desc": "PDF formatında tasarım dosyası gönderirsiniz. Renk ayarı CMYK olmalı, yüksek çözünürlük (300 DPI) gerekmektedir." },

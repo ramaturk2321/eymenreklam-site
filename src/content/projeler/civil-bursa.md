@@ -1,7 +1,7 @@
 ---
 title: "Civil Bursa"
 description: "Civil markası için Bursa'da araç giydirme ve folyo kaplama uygulaması."
-image: "/images/projeler/civil-bursa.jpg"
+image: "/images/projeler/civil-bursa.webp"
 categories: ["Folyo & Giydirme"]
 date: "2026-03-02"
 order: 4

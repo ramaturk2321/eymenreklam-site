@@ -4,13 +4,13 @@
   "category": "Folyo & Giydirme",
   "categoryHref": "/hizmetlerimiz/folyo-giydirme",
   "shortDesc": "Kamyon ve tır folyo giydirme ile araçlarınızı mobil reklam platformuna dönüştürün. UV dayanımlı vinil malzeme, şehirlerarası yollarda yüksek görünürlük.",
-  "mainImg": "/images/urunler/kamyon-tir-1.jpg",
+  "mainImg": "/images/urunler/kamyon-tir-1.webp",
   "gallery": [
-    "/images/projeler/hakmar-ikram-araci-1.jpg",
-    "/images/urunler/kamyon-tir-1.jpg",
-    "/images/urunler/kamyon-tir-2.jpg",
-    "/images/urunler/kamyon-tir-3.jpg",
-    "/images/urunler/kamyon-tir-4.jpg"
+    "/images/projeler/hakmar-ikram-araci-1.webp",
+    "/images/urunler/kamyon-tir-1.webp",
+    "/images/urunler/kamyon-tir-2.webp",
+    "/images/urunler/kamyon-tir-3.webp",
+    "/images/urunler/kamyon-tir-4.webp"
   ],
   "specs": [
     { "icon": "M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4", "label": "Malzeme", "value": "UV Dayanımlı Vinil" },
@@ -63,9 +63,9 @@
     { "q": "Filo indirimi var mı?", "a": "Evet, birden fazla araç için kurumsal filo giydirme paketleri ve toplu indirim sunuyoruz." }
   ],
   "relatedProducts": [
-    { "img": "/images/urunler/komple-arac-1.jpg", "title": "Komple Araç Kaplama", "href": "/urunlerimiz/komple-arac-kaplama", "category": "Folyo & Giydirme" },
-    { "img": "/images/urunler/kismi-arac-1.jpg", "title": "Kısmi Araç Kaplama", "href": "/urunlerimiz/kismi-arac-kaplama", "category": "Folyo & Giydirme" },
-    { "img": "/images/urunler/doblo-folyo-1.jpg", "title": "Doblo Folyo Giydirme", "href": "/urunlerimiz/doblo-folyo-giydirme", "category": "Folyo & Giydirme" },
-    { "img": "/images/urunler/folyo-harf-1.jpg", "title": "Folyo Harf Kesim", "href": "/urunlerimiz/folyo-harf-kesim", "category": "Folyo & Giydirme" }
+    { "img": "/images/urunler/komple-arac-1.webp", "title": "Komple Araç Kaplama", "href": "/urunlerimiz/komple-arac-kaplama", "category": "Folyo & Giydirme" },
+    { "img": "/images/urunler/kismi-arac-1.webp", "title": "Kısmi Araç Kaplama", "href": "/urunlerimiz/kismi-arac-kaplama", "category": "Folyo & Giydirme" },
+    { "img": "/images/urunler/doblo-folyo-1.webp", "title": "Doblo Folyo Giydirme", "href": "/urunlerimiz/doblo-folyo-giydirme", "category": "Folyo & Giydirme" },
+    { "img": "/images/urunler/folyo-harf-1.webp", "title": "Folyo Harf Kesim", "href": "/urunlerimiz/folyo-harf-kesim", "category": "Folyo & Giydirme" }
   ]
 }

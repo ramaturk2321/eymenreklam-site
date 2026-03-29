@@ -4,12 +4,12 @@
   "category": "Tabela",
   "categoryHref": "/hizmetlerimiz/tabela",
   "shortDesc": "Işıklı ve ışıksız eczane tabelası imalatı. LED aydınlatmalı, alüminyum ve pleksi malzeme ile gece gündüz görünürlük sağlayan, yönetmeliğe uygun profesyonel tabela çözümü.",
-  "mainImg": "/images/urunler/eczane-1.jpg",
+  "mainImg": "/images/urunler/eczane-1.webp",
   "gallery": [
-    "/images/urunler/eczane-1.jpg",
-    "/images/urunler/eczane-2.jpg",
-    "/images/urunler/eczane-3.jpg",
-    "/images/urunler/eczane-4.jpg"
+    "/images/urunler/eczane-1.webp",
+    "/images/urunler/eczane-2.webp",
+    "/images/urunler/eczane-3.webp",
+    "/images/urunler/eczane-4.webp"
   ],
   "specs": [
     { "icon": "M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4", "label": "Malzeme", "value": "Alüminyum / Pleksi" },
@@ -64,9 +64,9 @@
     { "q": "Gece görünürlüğü nasıl sağlanır?", "a": "LED modül aydınlatma ile gece saatlerinde de eşit ve güçlü ışık dağılımı sağlanır. Işık rengi ve yoğunluğu tercihe göre ayarlanabilir." }
   ],
   "relatedProducts": [
-    { "img": "/images/urunler/fener-tabela-1.jpg", "title": "Fener Tabela", "href": "/urunlerimiz/fener-tabela", "category": "Tabela" },
-    { "img": "/images/urunler/isikli-blok-1.jpg", "title": "Işıklı Blok Tabela", "href": "/urunlerimiz/isikli-blok-tabela", "category": "Tabela" },
-    { "img": "/images/urunler/dis-hekimi-tabela-1.jpg", "title": "Diş Hekimi Tabelası", "href": "/urunlerimiz/dis-hekimi-tabelasi", "category": "Tabela" },
-    { "img": "/images/urunler/kutu-harf-1.jpg", "title": "Kutu Harf Tabela", "href": "/urunlerimiz/kutu-harf-tabela", "category": "Tabela" }
+    { "img": "/images/urunler/fener-tabela-1.webp", "title": "Fener Tabela", "href": "/urunlerimiz/fener-tabela", "category": "Tabela" },
+    { "img": "/images/urunler/isikli-blok-1.webp", "title": "Işıklı Blok Tabela", "href": "/urunlerimiz/isikli-blok-tabela", "category": "Tabela" },
+    { "img": "/images/urunler/dis-hekimi-tabela-1.webp", "title": "Diş Hekimi Tabelası", "href": "/urunlerimiz/dis-hekimi-tabelasi", "category": "Tabela" },
+    { "img": "/images/urunler/kutu-harf-1.webp", "title": "Kutu Harf Tabela", "href": "/urunlerimiz/kutu-harf-tabela", "category": "Tabela" }
   ]
 }

@@ -4,12 +4,12 @@
   "category": "Folyo & Giydirme",
   "categoryHref": "/hizmetlerimiz/folyo-giydirme",
   "shortDesc": "Özel kesim folyo etiket ve şekilli sticker imalatı. Dijital baskı teknolojisiyle canlı renkler, net kesim hatları ve uzun ömürlü yapışkanlı çıktı çözümü.",
-  "mainImg": "/images/urunler/ozel-etiket-1.jpg",
+  "mainImg": "/images/urunler/ozel-etiket-1.webp",
   "gallery": [
-    "/images/urunler/ozel-etiket-1.jpg",
-    "/images/urunler/ozel-etiket-2.jpg",
-    "/images/urunler/ozel-etiket-3.jpg",
-    "/images/urunler/ozel-etiket-4.jpg"
+    "/images/urunler/ozel-etiket-1.webp",
+    "/images/urunler/ozel-etiket-2.webp",
+    "/images/urunler/ozel-etiket-3.webp",
+    "/images/urunler/ozel-etiket-4.webp"
   ],
   "specs": [
     { "icon": "M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4", "label": "Malzeme", "value": "Yapışkanlı Folyo" },
@@ -62,9 +62,9 @@
     { "q": "Tasarım desteği var mı?", "a": "Evet, ücretsiz grafik tasarım desteği sunuyoruz. Logonuz ve tercihlerinize göre etiket tasarımı hazırlıyoruz." }
   ],
   "relatedProducts": [
-    { "img": "/images/urunler/standart-etiket-1.jpg", "title": "Standart Kesim Folyo Etiket", "href": "/urunlerimiz/standart-kesim-folyo-etiket", "category": "Folyo & Giydirme" },
-    { "img": "/images/urunler/folyo-harf-1.jpg", "title": "Folyo Harf Kesim", "href": "/urunlerimiz/folyo-harf-kesim", "category": "Folyo & Giydirme" },
-    { "img": "/images/urunler/cam-folyo-1.jpg", "title": "Cam Folyo Giydirme", "href": "/urunlerimiz/cam-folyo-giydirme", "category": "Folyo & Giydirme" },
-    { "img": "/images/urunler/cam-kumlama-1.jpg", "title": "Cam Kumlama Folyo", "href": "/urunlerimiz/cam-kumlama-folyo", "category": "Folyo & Giydirme" }
+    { "img": "/images/urunler/standart-etiket-1.webp", "title": "Standart Kesim Folyo Etiket", "href": "/urunlerimiz/standart-kesim-folyo-etiket", "category": "Folyo & Giydirme" },
+    { "img": "/images/urunler/folyo-harf-1.webp", "title": "Folyo Harf Kesim", "href": "/urunlerimiz/folyo-harf-kesim", "category": "Folyo & Giydirme" },
+    { "img": "/images/urunler/cam-folyo-1.webp", "title": "Cam Folyo Giydirme", "href": "/urunlerimiz/cam-folyo-giydirme", "category": "Folyo & Giydirme" },
+    { "img": "/images/urunler/cam-kumlama-1.webp", "title": "Cam Kumlama Folyo", "href": "/urunlerimiz/cam-kumlama-folyo", "category": "Folyo & Giydirme" }
   ]
 }

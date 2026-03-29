@@ -1,13 +1,13 @@
 ---
 title: "Keyfet Steakhouse – Konsept Tasarım"
 description: "Keyfet Steakhouse restoran için logo, iç mekan ve tabela konsept tasarımı."
-image: "/images/projeler/keyfet-5.jpg"
+image: "/images/projeler/keyfet-5.webp"
 images:
-  - "/images/projeler/keyfet-5.jpg"
-  - "/images/projeler/keyfet-1.jpg"
-  - "/images/projeler/keyfet-2.jpg"
-  - "/images/projeler/keyfet-3.jpg"
-  - "/images/projeler/keyfet-4.jpg"
+  - "/images/projeler/keyfet-5.webp"
+  - "/images/projeler/keyfet-1.webp"
+  - "/images/projeler/keyfet-2.webp"
+  - "/images/projeler/keyfet-3.webp"
+  - "/images/projeler/keyfet-4.webp"
 categories: ["Grafik Tasarım", "Mağaza Reklam"]
 date: "2024-03-21"
 order: 23

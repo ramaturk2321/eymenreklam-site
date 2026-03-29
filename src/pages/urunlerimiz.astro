@@ -71,7 +71,7 @@ const products = urunler.map(u => ({
           <div class="product-card group" data-category={product.category}>
             <div class="bg-white rounded-2xl border border-koyu-100 overflow-hidden hover:shadow-lg hover:border-eymen-200 transition-all duration-300 hover:-translate-y-1">
               <div class="aspect-[4/3] overflow-hidden bg-koyu-200">
-                <img src={product.image} alt={product.title} class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" />
+                <img src={product.image} alt={product.title} width="400" height="300" loading="lazy" decoding="async" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
               </div>
               <div class="p-4">
                 <h3 class="font-bold text-koyu-900 text-sm mb-1 group-hover:text-eymen-600 transition-colors">{product.title}</h3>

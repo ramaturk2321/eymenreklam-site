@@ -4,18 +4,18 @@
   "category": "Tabela",
   "categoryHref": "/hizmetlerimiz/tabela",
   "shortDesc": "LED aydınlatmalı 3D kutu harf tabela üretimi. Gündüz ve gece etkili marka görünürlüğü sağlayan, paslanmaz çelik, galvaniz veya alüminyum kasadan imal edilen profesyonel tabela çözümü.",
-  "mainImg": "/images/urunler/kutu-harf-1.jpg",
+  "mainImg": "/images/urunler/kutu-harf-1.webp",
   "gallery": [
-    "/images/projeler/bg-film-1.png",
-    "/images/projeler/turk-seker-1.jpg",
-    "/images/projeler/yildiz-entegre-1.png",
-    "/images/projeler/som-kagit-4.jpg",
-    "/images/urunler/kutu-harf-1.jpg",
-    "/images/urunler/kutu-harf-2.jpg",
-    "/images/urunler/kutu-harf-3.jpg",
-    "/images/urunler/kutu-harf-4.jpg",
-    "/images/urunler/kutu-harf-prj-1.jpg",
-    "/images/urunler/kutu-harf-prj-2.jpg"
+    "/images/projeler/bg-film-1.webp",
+    "/images/projeler/turk-seker-1.webp",
+    "/images/projeler/yildiz-entegre-1.webp",
+    "/images/projeler/som-kagit-4.webp",
+    "/images/urunler/kutu-harf-1.webp",
+    "/images/urunler/kutu-harf-2.webp",
+    "/images/urunler/kutu-harf-3.webp",
+    "/images/urunler/kutu-harf-4.webp",
+    "/images/urunler/kutu-harf-prj-1.webp",
+    "/images/urunler/kutu-harf-prj-2.webp"
   ],
   "specs": [
     { "icon": "M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4", "label": "Malzeme", "value": "Paslanmaz / Galvaniz / Alüminyum" },
@@ -70,9 +70,9 @@
     { "q": "Hangi illere montaj yapıyorsunuz?", "a": "İstanbul ve çevre illerde (Kocaeli, Sakarya, Tekirdağ, Edirne, Bursa) montaj hizmeti veriyoruz. Diğer iller için kargo ile gönderim yapıyoruz." }
   ],
   "relatedProducts": [
-    { "img": "/images/proje-totem.jpg", "title": "Totem Tabela", "href": "/urunlerimiz/totem-tabela", "category": "Tabela" },
-    { "img": "/images/proje-totem2.jpg", "title": "Çatı Tabelası", "href": "/urunlerimiz/cati-tabelasi", "category": "Tabela" },
-    { "img": "/images/tabela-imalat.jpg", "title": "Neon-Led Tabela", "href": "/urunlerimiz/neon-led-tabela", "category": "Tabela" },
+    { "img": "/images/proje-totem.webp", "title": "Totem Tabela", "href": "/urunlerimiz/totem-tabela", "category": "Tabela" },
+    { "img": "/images/proje-totem2.webp", "title": "Çatı Tabelası", "href": "/urunlerimiz/cati-tabelasi", "category": "Tabela" },
+    { "img": "/images/tabela-imalat.webp", "title": "Neon-Led Tabela", "href": "/urunlerimiz/neon-led-tabela", "category": "Tabela" },
     { "img": "/images/proje-magaza.png", "title": "Işıklı Blok Tabela", "href": "/urunlerimiz/isikli-blok-tabela", "category": "Tabela" }
   ]
 }

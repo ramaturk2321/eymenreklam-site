@@ -1,10 +1,10 @@
 ---
 title: "Unkar – Totem Tabela"
 description: "Unkar fabrika girişi için totem tabela tasarımı ve uygulaması."
-image: "/images/projeler/unkar-totem-1.jpg"
+image: "/images/projeler/unkar-totem-1.webp"
 images:
-  - "/images/projeler/unkar-totem-1.jpg"
-  - "/images/projeler/unkar-totem-2.jpg"
+  - "/images/projeler/unkar-totem-1.webp"
+  - "/images/projeler/unkar-totem-2.webp"
 categories: ["Tabela"]
 date: "2025-02-01"
 order: 14

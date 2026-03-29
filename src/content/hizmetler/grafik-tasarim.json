@@ -6,7 +6,7 @@
   "listIcon": "🎨",
   "listDesc": "Logo, kurumsal kimlik, katalog, broşür ve afiş tasarımı. Markanızı görsel olarak en etkili şekilde ifade ediyoruz.",
   "listFeatures": ["Logo Tasarım", "Kurumsal Kimlik", "Katalog & Broşür", "Afiş & Poster"],
-  "listImage": "/images/proje-afis.jpg",
+  "listImage": "/images/proje-afis.webp",
   "features": [
     { "icon": "🎯", "title": "Logo & Marka Kimliği", "desc": "Özgün logo tasarımı, renk paleti, tipografi ve marka kılavuzu hazırlama. Markanızın DNA'sını oluşturuyoruz." },
     { "icon": "📇", "title": "Kartvizit & Kurumsal Baskı", "desc": "Kartvizit, antetli kağıt, zarf, fatura formu ve kurumsal kırtasiye tasarımları." },
@@ -16,12 +16,12 @@
     { "icon": "📱", "title": "Dijital Medya Tasarımı", "desc": "Sosyal medya görselleri, web banner, e-posta şablonu ve dijital reklam tasarımları." }
   ],
   "products": [
-    { "title": "Logo Tasarım", "desc": "Özgün ve akılda kalıcı logo tasarımı. Vektörel dosya, renk kodları ve kullanım kılavuzu dahil.", "image": "/images/urunler/insert-1.jpg", "href": "/urunlerimiz/insert-tasarim" },
-    { "title": "Kartvizit Tasarım & Baskı", "desc": "Kurumsal kimliğinize uygun kartvizit tasarımı ve baskısı. Mat, parlak ve özel kağıt seçenekleri.", "image": "/images/urunler/kartvizit-1.jpg", "href": "/urunlerimiz/kartvizit" },
-    { "title": "Katalog & Broşür", "desc": "Ürün kataloğu ve tanıtım broşürü tasarım ve baskısı. Profesyonel düzen ve tipografi.", "image": "/images/urunler/katalog-1.jpg", "href": "/urunlerimiz/katalog" },
-    { "title": "Afiş & Poster", "desc": "Kampanya, etkinlik ve tanıtım afişleri. A4'den A0'a kadar tüm boyutlarda tasarım ve baskı.", "image": "/images/urunler/afis-baski-1.jpg", "href": "/urunlerimiz/afis-baski" },
-    { "title": "Tabela Tasarım", "desc": "Tabela, kutu harf ve cephe tasarımları. 3D görselleştirme ile montaj öncesi önizleme.", "image": "/images/urunler/kutu-harf-1.jpg", "href": "/urunlerimiz/kutu-harf-tabela" },
-    { "title": "Mağaza Konsept Tasarımı", "desc": "Mağaza iç ve dış cephe tasarımı. Tabeladan vitrine, yönlendirmeden dekorasyona bütüncül çözüm.", "image": "/images/urunler/bizim-toptan-1.jpg", "href": "/urunlerimiz/bizim-toptan-magazasi" }
+    { "title": "Logo Tasarım", "desc": "Özgün ve akılda kalıcı logo tasarımı. Vektörel dosya, renk kodları ve kullanım kılavuzu dahil.", "image": "/images/urunler/insert-1.webp", "href": "/urunlerimiz/insert-tasarim" },
+    { "title": "Kartvizit Tasarım & Baskı", "desc": "Kurumsal kimliğinize uygun kartvizit tasarımı ve baskısı. Mat, parlak ve özel kağıt seçenekleri.", "image": "/images/urunler/kartvizit-1.webp", "href": "/urunlerimiz/kartvizit" },
+    { "title": "Katalog & Broşür", "desc": "Ürün kataloğu ve tanıtım broşürü tasarım ve baskısı. Profesyonel düzen ve tipografi.", "image": "/images/urunler/katalog-1.webp", "href": "/urunlerimiz/katalog" },
+    { "title": "Afiş & Poster", "desc": "Kampanya, etkinlik ve tanıtım afişleri. A4'den A0'a kadar tüm boyutlarda tasarım ve baskı.", "image": "/images/urunler/afis-baski-1.webp", "href": "/urunlerimiz/afis-baski" },
+    { "title": "Tabela Tasarım", "desc": "Tabela, kutu harf ve cephe tasarımları. 3D görselleştirme ile montaj öncesi önizleme.", "image": "/images/urunler/kutu-harf-1.webp", "href": "/urunlerimiz/kutu-harf-tabela" },
+    { "title": "Mağaza Konsept Tasarımı", "desc": "Mağaza iç ve dış cephe tasarımı. Tabeladan vitrine, yönlendirmeden dekorasyona bütüncül çözüm.", "image": "/images/urunler/bizim-toptan-1.webp", "href": "/urunlerimiz/bizim-toptan-magazasi" }
   ],
   "process": [
     { "step": "01", "title": "Brifing & Analiz", "desc": "Markanızı, hedef kitlenizi ve beklentilerinizi anlıyoruz. Sektör ve rakip analizi yapıyoruz." },

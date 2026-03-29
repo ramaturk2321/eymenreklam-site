@@ -1,14 +1,14 @@
 ---
 title: "Tevfik Usta Kebap – Restoran Tabelası"
 description: "Tevfik Usta Kebap restoran için cephe tabelası ve iç mekan reklam uygulaması."
-image: "/images/projeler/tevfik-usta-1.jpg"
+image: "/images/projeler/tevfik-usta-1.webp"
 images:
-  - "/images/projeler/tevfik-usta-1.jpg"
-  - "/images/projeler/tevfik-usta-2.jpg"
-  - "/images/projeler/tevfik-usta-3.jpg"
-  - "/images/projeler/tevfik-usta-4.jpg"
-  - "/images/projeler/tevfik-usta-5.jpg"
-  - "/images/projeler/tevfik-usta-6.jpg"
+  - "/images/projeler/tevfik-usta-1.webp"
+  - "/images/projeler/tevfik-usta-2.webp"
+  - "/images/projeler/tevfik-usta-3.webp"
+  - "/images/projeler/tevfik-usta-4.webp"
+  - "/images/projeler/tevfik-usta-5.webp"
+  - "/images/projeler/tevfik-usta-6.webp"
 categories: ["Tabela", "Mağaza Reklam"]
 date: "2024-08-20"
 order: 3

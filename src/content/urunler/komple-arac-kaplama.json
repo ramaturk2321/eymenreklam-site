@@ -4,14 +4,14 @@
   "category": "Folyo & Giydirme",
   "categoryHref": "/hizmetlerimiz/folyo-giydirme",
   "shortDesc": "Araç filonuzu gezici reklam aracına dönüştürün. 3M ve Oracal cast folyo ile tam araç kaplama hizmeti. 5-7 yıl dayanıklılık, profesyonel uygulama ve 3 yıl garanti.",
-  "mainImg": "/images/urunler/komple-arac-1.jpg",
+  "mainImg": "/images/urunler/komple-arac-1.webp",
   "gallery": [
-    "/images/projeler/hakmar-ikram-araci-1.jpg",
-    "/images/projeler/hakmar-ikram-araci-2.jpg",
-    "/images/urunler/komple-arac-1.jpg",
-    "/images/urunler/komple-arac-2.jpg",
-    "/images/urunler/komple-arac-3.jpg",
-    "/images/urunler/komple-arac-4.jpg"
+    "/images/projeler/hakmar-ikram-araci-1.webp",
+    "/images/projeler/hakmar-ikram-araci-2.webp",
+    "/images/urunler/komple-arac-1.webp",
+    "/images/urunler/komple-arac-2.webp",
+    "/images/urunler/komple-arac-3.webp",
+    "/images/urunler/komple-arac-4.webp"
   ],
   "specs": [
     { "icon": "M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4", "label": "Malzeme", "value": "Cast Folyo (3M/Oracal)" },
@@ -66,9 +66,9 @@
     { "q": "Folyo sökmek istediğimde ne yapmalıyım?", "a": "Folyo ısı tabancası ile profesyonel şekilde sökülür ve araç orijinal haline döner. Sökme işlemi için bize ulaşmanız yeterlidir." }
   ],
   "relatedProducts": [
-    { "img": "/images/urunler/kismi-arac-1.jpg", "title": "Kısmi Araç Kaplama", "href": "/urunlerimiz/kismi-arac-kaplama", "category": "Folyo & Giydirme" },
-    { "img": "/images/urunler/doblo-1.jpg", "title": "Doblo Kaplama", "href": "/urunlerimiz/doblo-folyo-giydirme", "category": "Folyo & Giydirme" },
-    { "img": "/images/urunler/kamyon-1.jpg", "title": "Kamyon Kaplama", "href": "/urunlerimiz/kamyon-tir-folyo", "category": "Folyo & Giydirme" },
-    { "img": "/images/urunler/cephe-giydirme-1.jpg", "title": "Cephe Giydirme", "href": "/urunlerimiz/cephe-giydirme", "category": "Folyo & Giydirme" }
+    { "img": "/images/urunler/kismi-arac-1.webp", "title": "Kısmi Araç Kaplama", "href": "/urunlerimiz/kismi-arac-kaplama", "category": "Folyo & Giydirme" },
+    { "img": "/images/urunler/doblo-1.webp", "title": "Doblo Kaplama", "href": "/urunlerimiz/doblo-folyo-giydirme", "category": "Folyo & Giydirme" },
+    { "img": "/images/urunler/kamyon-1.webp", "title": "Kamyon Kaplama", "href": "/urunlerimiz/kamyon-tir-folyo", "category": "Folyo & Giydirme" },
+    { "img": "/images/urunler/cephe-giydirme-1.webp", "title": "Cephe Giydirme", "href": "/urunlerimiz/cephe-giydirme", "category": "Folyo & Giydirme" }
   ]
 }

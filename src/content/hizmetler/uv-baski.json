@@ -6,7 +6,7 @@
   "listIcon": "🖨️",
   "listDesc": "SwissQprint UV baskı makinemiz ile cam, metal, ahşap, plastik ve deri yüzeylere doğrudan yüksek çözünürlüklü baskı.",
   "listFeatures": ["Cam Baskı", "Metal Baskı", "Ahşap Baskı", "Pleksi Baskı"],
-  "listImage": "/images/uv-baski.jpg",
+  "listImage": "/images/uv-baski.webp",
   "features": [
     { "icon": "🎨", "title": "SwissQprint UV Teknolojisi", "desc": "İsviçre malı yüksek hassasiyetli UV baskı makineleri. 1440 dpi çözünürlükte fotoğraf kalitesi baskılar." },
     { "icon": "🪟", "title": "Çok Yüzeylu Baskı", "desc": "Cam, metal, alüminyum, ahşap, plastik, PVC, laminat ve PU üzerine doğrudan baskı yapabiliyoruz." },
@@ -16,12 +16,12 @@
     { "icon": "📐", "title": "Kalıp & Kesim Hizmeti", "desc": "Baskıdan sonra kalıp kesim, delik açma, köşe yuvarlaklaştırma işlemleri yapıyoruz." }
   ],
   "products": [
-    { "title": "UV Baskı", "desc": "Ahşap, metal, cam, plastik ve deri gibi her türlü yüzeye doğrudan UV baskı.", "image": "/images/urunler/uv-baski-1.jpg", "href": "/urunlerimiz/uv-baski" },
-    { "title": "Fotoblok Baskı", "desc": "Fotoğraf kalitesi dijital baskı. Mat veya parlak yüzey seçenekleri.", "image": "/images/urunler/fotoblok-1.jpg", "href": "/urunlerimiz/fotoblok" },
-    { "title": "İş Güvenliği Levhaları", "desc": "UV dayanıklı iş güvenliği uyarı ve tehlike levhaları.", "image": "/images/urunler/is-guvenligi-1.jpg", "href": "/urunlerimiz/is-guvenligi-levhalari" },
-    { "title": "Ofis Tabelası", "desc": "Kapı ve resepsiyon tabelaları. Pleksiglas, alüminyum ve ahşap seçenekler.", "image": "/images/urunler/ofis-tabela-1.jpg", "href": "/urunlerimiz/ofis-tabelasi" },
-    { "title": "Standart Kesim Folyo Etiket", "desc": "Standart şekillerde kesim folyo etiket baskı.", "image": "/images/urunler/standart-etiket-1.jpg", "href": "/urunlerimiz/standart-kesim-folyo-etiket" },
-    { "title": "Özel Kesim Folyo Etiket", "desc": "CNC ve plotter ile istenilen şekilde özel kesim folyo etiket.", "image": "/images/urunler/ozel-etiket-1.jpg", "href": "/urunlerimiz/ozel-kesim-folyo-etiket" }
+    { "title": "UV Baskı", "desc": "Ahşap, metal, cam, plastik ve deri gibi her türlü yüzeye doğrudan UV baskı.", "image": "/images/urunler/uv-baski-1.webp", "href": "/urunlerimiz/uv-baski" },
+    { "title": "Fotoblok Baskı", "desc": "Fotoğraf kalitesi dijital baskı. Mat veya parlak yüzey seçenekleri.", "image": "/images/urunler/fotoblok-1.webp", "href": "/urunlerimiz/fotoblok" },
+    { "title": "İş Güvenliği Levhaları", "desc": "UV dayanıklı iş güvenliği uyarı ve tehlike levhaları.", "image": "/images/urunler/is-guvenligi-1.webp", "href": "/urunlerimiz/is-guvenligi-levhalari" },
+    { "title": "Ofis Tabelası", "desc": "Kapı ve resepsiyon tabelaları. Pleksiglas, alüminyum ve ahşap seçenekler.", "image": "/images/urunler/ofis-tabela-1.webp", "href": "/urunlerimiz/ofis-tabelasi" },
+    { "title": "Standart Kesim Folyo Etiket", "desc": "Standart şekillerde kesim folyo etiket baskı.", "image": "/images/urunler/standart-etiket-1.webp", "href": "/urunlerimiz/standart-kesim-folyo-etiket" },
+    { "title": "Özel Kesim Folyo Etiket", "desc": "CNC ve plotter ile istenilen şekilde özel kesim folyo etiket.", "image": "/images/urunler/ozel-etiket-1.webp", "href": "/urunlerimiz/ozel-kesim-folyo-etiket" }
   ],
   "process": [
     { "step": "01", "title": "Tasarım & Hazırlık", "desc": "Özel formatda dosya hazırlanır. Malzeme ve boyut ölçümleri belirlenir." },

@@ -1,11 +1,11 @@
 ---
 title: "Etiler 2Plan – Bina Cephe Giydirme ve UV Baskı Uygulaması"
 description: "İstanbul Etiler'de 2Plan otomotiv markası için bina dış cephe branda giydirme ve UV baskı uygulaması."
-image: "/images/projeler/etiler-2plan.jpg"
+image: "/images/projeler/etiler-2plan.webp"
 images:
-  - "/images/projeler/etiler-2plan.jpg"
-  - "/images/projeler/etiler-2plan-2.jpg"
-  - "/images/projeler/etiler-2plan-3.jpg"
+  - "/images/projeler/etiler-2plan.webp"
+  - "/images/projeler/etiler-2plan-2.webp"
+  - "/images/projeler/etiler-2plan-3.webp"
 categories: ["UV Baskı", "Folyo & Giydirme"]
 date: "2026-03-07"
 order: 1

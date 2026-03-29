@@ -6,7 +6,7 @@
   "listIcon": "🏢",
   "listDesc": "Mağaza konsept tasarımı, vitrin düzenlemesi, raf etiketleme ve iç mekan branding. Anahtar teslim mağaza çözümleri.",
   "listFeatures": ["Konsept Tasarım", "Vitrin", "Raf Etiket", "İç Mekan"],
-  "listImage": "/images/urunler/hakmar-avm-1.jpg",
+  "listImage": "/images/urunler/hakmar-avm-1.webp",
   "features": [
     { "icon": "🎨", "title": "Konsept & Stil Tasarımı", "desc": "Mağazanızın kimliğine uygun konsept tasarımı. Renk, tipografi ve visual hierarchi uygunluğu sağlanır." },
     { "icon": "🪟", "title": "Vitrini Tasarımı", "desc": "Dikkat çekici ve satış odaklı vitrin düzenlemesi. Sezonsal değişim ve promosyon tasarımı." },
@@ -16,12 +16,12 @@
     { "icon": "✨", "title": "Mevsimsel & Tema Dekor", "desc": "Yılbaşı, oruç bayramı, sezon dekorasyonları. Tema bazlı iç mekan değişimleri." }
   ],
   "products": [
-    { "title": "Hakmar AVM", "desc": "Hakmar AVM mağazaları için komple tabela, branda, folyo ve iç mekân reklam uygulamaları.", "image": "/images/urunler/hakmar-avm-1.jpg", "href": "/urunlerimiz/hakmar-avm" },
-    { "title": "Eve Mağazası", "desc": "Eve mağazaları için tabela, branda, folyo giydirme ve iç mekân reklam uygulamaları.", "image": "/images/urunler/eve-magazasi-1.jpg", "href": "/urunlerimiz/eve-magazasi" },
-    { "title": "Bizim Toptan", "desc": "Bizim Toptan mağazaları için komple mağaza reklam çözümleri.", "image": "/images/urunler/bizim-toptan-1.jpg", "href": "/urunlerimiz/bizim-toptan-magazasi" },
-    { "title": "Cut-Out Maket", "desc": "Mağaza içi tanıtım için insan boyutunda veya özel kesim karton maketler.", "image": "/images/urunler/cut-out-maket-1.jpg", "href": "/urunlerimiz/cut-out-maket" },
-    { "title": "Palet Eteği", "desc": "Market ve mağaza raflarında ürün tanıtımı için palet eteği baskı uygulaması.", "image": "/images/urunler/palet-etegi-1.jpg", "href": "/urunlerimiz/palet-etegi" },
-    { "title": "Dönkart Afiş", "desc": "Mağaza içi kampanya ve ürün tanıtımı için çift taraflı dönkart afişler.", "image": "/images/urunler/donkart-1.jpg", "href": "/urunlerimiz/donkart" }
+    { "title": "Hakmar AVM", "desc": "Hakmar AVM mağazaları için komple tabela, branda, folyo ve iç mekân reklam uygulamaları.", "image": "/images/urunler/hakmar-avm-1.webp", "href": "/urunlerimiz/hakmar-avm" },
+    { "title": "Eve Mağazası", "desc": "Eve mağazaları için tabela, branda, folyo giydirme ve iç mekân reklam uygulamaları.", "image": "/images/urunler/eve-magazasi-1.webp", "href": "/urunlerimiz/eve-magazasi" },
+    { "title": "Bizim Toptan", "desc": "Bizim Toptan mağazaları için komple mağaza reklam çözümleri.", "image": "/images/urunler/bizim-toptan-1.webp", "href": "/urunlerimiz/bizim-toptan-magazasi" },
+    { "title": "Cut-Out Maket", "desc": "Mağaza içi tanıtım için insan boyutunda veya özel kesim karton maketler.", "image": "/images/urunler/cut-out-maket-1.webp", "href": "/urunlerimiz/cut-out-maket" },
+    { "title": "Palet Eteği", "desc": "Market ve mağaza raflarında ürün tanıtımı için palet eteği baskı uygulaması.", "image": "/images/urunler/palet-etegi-1.webp", "href": "/urunlerimiz/palet-etegi" },
+    { "title": "Dönkart Afiş", "desc": "Mağaza içi kampanya ve ürün tanıtımı için çift taraflı dönkart afişler.", "image": "/images/urunler/donkart-1.webp", "href": "/urunlerimiz/donkart" }
   ],
   "process": [
     { "step": "01", "title": "Konsept & Analiz", "desc": "Mağazanın cinsiyeti, hedef müşterisi, ürün çeşidi analiz edilir. Brand kimliği ve pazar durumu incelenir." },

@@ -4,13 +4,13 @@
   "category": "Display & Stand",
   "categoryHref": "/hizmetlerimiz/sunum-stand",
   "shortDesc": "Dönkart afiş tasarım ve baskı hizmeti. Mağaza içi kampanya, ürün tanıtımı ve raf üstü reklam için çift taraflı, dikkat çekici dönkart çözümleri.",
-  "mainImg": "/images/urunler/donkart-1.jpg",
+  "mainImg": "/images/urunler/donkart-1.webp",
   "gallery": [
-    "/images/projeler/dolap-giydirme-1.jpg",
-    "/images/urunler/donkart-1.jpg",
-    "/images/urunler/donkart-2.jpg",
-    "/images/urunler/donkart-3.jpg",
-    "/images/urunler/donkart-4.jpg"
+    "/images/projeler/dolap-giydirme-1.webp",
+    "/images/urunler/donkart-1.webp",
+    "/images/urunler/donkart-2.webp",
+    "/images/urunler/donkart-3.webp",
+    "/images/urunler/donkart-4.webp"
   ],
   "specs": [
     { "icon": "M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4", "label": "Malzeme", "value": "Sert Karton / Köpük" },
@@ -62,9 +62,9 @@
     { "q": "Tasarım desteği var mı?", "a": "Evet, ücretsiz grafik tasarım desteği sunuyoruz." }
   ],
   "relatedProducts": [
-    { "img": "/images/urunler/lightbox-1.jpg", "title": "Lightbox Pano", "href": "/urunlerimiz/lightbox-pano", "category": "Display & Stand" },
-    { "img": "/images/urunler/rollup-1.jpg", "title": "Roll-Up Banner", "href": "/urunlerimiz/rollup-banner", "category": "Display & Stand" },
-    { "img": "/images/urunler/alu-cerceve-1.jpg", "title": "Alüminyum Çerçeve", "href": "/urunlerimiz/aluminyum-cerceve", "category": "Display & Stand" },
-    { "img": "/images/urunler/fotoblok-1.jpg", "title": "Fotoblok Baskı", "href": "/urunlerimiz/fotoblok", "category": "Dijital Baskı" }
+    { "img": "/images/urunler/lightbox-1.webp", "title": "Lightbox Pano", "href": "/urunlerimiz/lightbox-pano", "category": "Display & Stand" },
+    { "img": "/images/urunler/rollup-1.webp", "title": "Roll-Up Banner", "href": "/urunlerimiz/rollup-banner", "category": "Display & Stand" },
+    { "img": "/images/urunler/alu-cerceve-1.webp", "title": "Alüminyum Çerçeve", "href": "/urunlerimiz/aluminyum-cerceve", "category": "Display & Stand" },
+    { "img": "/images/urunler/fotoblok-1.webp", "title": "Fotoblok Baskı", "href": "/urunlerimiz/fotoblok", "category": "Dijital Baskı" }
   ]
 }

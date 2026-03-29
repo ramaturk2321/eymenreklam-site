@@ -4,13 +4,13 @@
   "category": "Tabela",
   "categoryHref": "/hizmetlerimiz/tabela",
   "shortDesc": "İnşaat alanı, satılık daire ve proje tanıtım tabelası imalatı. Vinil branda, alüminyum ve dekota malzeme seçenekleriyle 3194 İmar Kanunu'na uygun, dayanıklı ve dikkat çekici tabela çözümü.",
-  "mainImg": "/images/urunler/insaat-tabela-1.jpg",
+  "mainImg": "/images/urunler/insaat-tabela-1.webp",
   "gallery": [
-    "/images/projeler/turk-seker-1.jpg",
-    "/images/urunler/insaat-tabela-1.jpg",
-    "/images/urunler/insaat-tabela-2.jpg",
-    "/images/urunler/insaat-tabela-3.jpg",
-    "/images/urunler/insaat-tabela-4.jpg"
+    "/images/projeler/turk-seker-1.webp",
+    "/images/urunler/insaat-tabela-1.webp",
+    "/images/urunler/insaat-tabela-2.webp",
+    "/images/urunler/insaat-tabela-3.webp",
+    "/images/urunler/insaat-tabela-4.webp"
   ],
   "specs": [
     { "icon": "M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4", "label": "Malzeme", "value": "Vinil Branda / Alüminyum / Dekota" },
@@ -64,9 +64,9 @@
     { "q": "Tasarım desteği var mı?", "a": "Evet, ücretsiz grafik tasarım desteği sunuyoruz. Proje görselleri, kat planları ve kurumsal kimliğinize uygun tabela tasarımı hazırlıyoruz." }
   ],
   "relatedProducts": [
-    { "img": "/images/urunler/cati-tabela-1.jpg", "title": "Çatı Tabelası", "href": "/urunlerimiz/cati-tabelasi", "category": "Tabela" },
-    { "img": "/images/urunler/vinil-tabela-1.jpg", "title": "Vinil Tabela", "href": "/urunlerimiz/vinil-tabela", "category": "Tabela" },
-    { "img": "/images/urunler/totem-1.jpg", "title": "Totem Tabela", "href": "/urunlerimiz/totem-tabela", "category": "Tabela" },
-    { "img": "/images/urunler/isikli-blok-1.jpg", "title": "Işıklı Blok Tabela", "href": "/urunlerimiz/isikli-blok-tabela", "category": "Tabela" }
+    { "img": "/images/urunler/cati-tabela-1.webp", "title": "Çatı Tabelası", "href": "/urunlerimiz/cati-tabelasi", "category": "Tabela" },
+    { "img": "/images/urunler/vinil-tabela-1.webp", "title": "Vinil Tabela", "href": "/urunlerimiz/vinil-tabela", "category": "Tabela" },
+    { "img": "/images/urunler/totem-1.webp", "title": "Totem Tabela", "href": "/urunlerimiz/totem-tabela", "category": "Tabela" },
+    { "img": "/images/urunler/isikli-blok-1.webp", "title": "Işıklı Blok Tabela", "href": "/urunlerimiz/isikli-blok-tabela", "category": "Tabela" }
   ]
 }

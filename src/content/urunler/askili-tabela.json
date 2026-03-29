@@ -4,12 +4,12 @@
   "category": "Tabela",
   "categoryHref": "/hizmetlerimiz/tabela",
   "shortDesc": "Çift taraflı askılı tabela imalatı. Demir, alüminyum ve kompozit malzeme seçenekleriyle her iki yönden yaya trafiğinin dikkatini çeken, dayanıklı ve estetik tabela çözümü.",
-  "mainImg": "/images/urunler/askili-tabela-1.jpg",
+  "mainImg": "/images/urunler/askili-tabela-1.webp",
   "gallery": [
-    "/images/urunler/askili-tabela-1.jpg",
-    "/images/urunler/askili-tabela-2.jpg",
-    "/images/urunler/askili-tabela-3.jpg",
-    "/images/urunler/askili-tabela-4.jpg"
+    "/images/urunler/askili-tabela-1.webp",
+    "/images/urunler/askili-tabela-2.webp",
+    "/images/urunler/askili-tabela-3.webp",
+    "/images/urunler/askili-tabela-4.webp"
   ],
   "specs": [
     { "icon": "M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4", "label": "Malzeme", "value": "Demir / Alüminyum / Kompozit" },
@@ -62,9 +62,9 @@
     { "q": "Hangi işletmelere uygun?", "a": "Kafeler, restoranlar, butik mağazalar, eczaneler, hukuk büroları ve cadde üzeri tüm işletmeler için idealdir." }
   ],
   "relatedProducts": [
-    { "img": "/images/urunler/fener-tabela-1.jpg", "title": "Fener Tabela", "href": "/urunlerimiz/fener-tabela", "category": "Tabela" },
-    { "img": "/images/urunler/kutu-harf-1.jpg", "title": "Kutu Harf Tabela", "href": "/urunlerimiz/kutu-harf-tabela", "category": "Tabela" },
-    { "img": "/images/urunler/isikli-blok-1.jpg", "title": "Işıklı Blok Tabela", "href": "/urunlerimiz/isikli-blok-tabela", "category": "Tabela" },
-    { "img": "/images/urunler/vinil-tabela-1.jpg", "title": "Vinil Tabela", "href": "/urunlerimiz/vinil-tabela", "category": "Tabela" }
+    { "img": "/images/urunler/fener-tabela-1.webp", "title": "Fener Tabela", "href": "/urunlerimiz/fener-tabela", "category": "Tabela" },
+    { "img": "/images/urunler/kutu-harf-1.webp", "title": "Kutu Harf Tabela", "href": "/urunlerimiz/kutu-harf-tabela", "category": "Tabela" },
+    { "img": "/images/urunler/isikli-blok-1.webp", "title": "Işıklı Blok Tabela", "href": "/urunlerimiz/isikli-blok-tabela", "category": "Tabela" },
+    { "img": "/images/urunler/vinil-tabela-1.webp", "title": "Vinil Tabela", "href": "/urunlerimiz/vinil-tabela", "category": "Tabela" }
   ]
 }

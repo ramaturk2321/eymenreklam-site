@@ -4,13 +4,13 @@
   "category": "Dijital Baskı",
   "categoryHref": "/hizmetlerimiz/dijital-baski",
   "shortDesc": "Katalog tasarım ve baskı hizmeti. Kurumsal, ürün ve hizmet katalogları için profesyonel tasarım ve yüksek kaliteli baskı çözümü.",
-  "mainImg": "/images/urunler/katalog-1.jpg",
+  "mainImg": "/images/urunler/katalog-1.webp",
   "gallery": [
-    "/images/projeler/doruk-brosur-1.jpg",
-    "/images/urunler/katalog-1.jpg",
-    "/images/urunler/katalog-2.jpg",
-    "/images/urunler/katalog-3.jpg",
-    "/images/urunler/katalog-4.jpg"
+    "/images/projeler/doruk-brosur-1.webp",
+    "/images/urunler/katalog-1.webp",
+    "/images/urunler/katalog-2.webp",
+    "/images/urunler/katalog-3.webp",
+    "/images/urunler/katalog-4.webp"
   ],
   "specs": [
     { "icon": "M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4", "label": "Malzeme", "value": "Kuşe / Mat Kağıt" },
@@ -62,9 +62,9 @@
     { "q": "Dijital katalog da hazırlanır mı?", "a": "Evet, basılı katalogun dijital versiyonunu da hazırlayabiliyoruz." }
   ],
   "relatedProducts": [
-    { "img": "/images/urunler/kartvizit-1.jpg", "title": "Kartvizit Tasarım ve Baskı", "href": "/urunlerimiz/kartvizit", "category": "Dijital Baskı" },
-    { "img": "/images/urunler/insert-1.jpg", "title": "Insert Tasarım Baskı", "href": "/urunlerimiz/insert-tasarim", "category": "Dijital Baskı" },
-    { "img": "/images/urunler/fotoblok-1.jpg", "title": "Fotoblok Baskı", "href": "/urunlerimiz/fotoblok", "category": "Dijital Baskı" },
-    { "img": "/images/urunler/mat-kagit-1.jpg", "title": "Mat Kağıt Afiş Baskı", "href": "/urunlerimiz/mat-kagit-afis", "category": "Dijital Baskı" }
+    { "img": "/images/urunler/kartvizit-1.webp", "title": "Kartvizit Tasarım ve Baskı", "href": "/urunlerimiz/kartvizit", "category": "Dijital Baskı" },
+    { "img": "/images/urunler/insert-1.webp", "title": "Insert Tasarım Baskı", "href": "/urunlerimiz/insert-tasarim", "category": "Dijital Baskı" },
+    { "img": "/images/urunler/fotoblok-1.webp", "title": "Fotoblok Baskı", "href": "/urunlerimiz/fotoblok", "category": "Dijital Baskı" },
+    { "img": "/images/urunler/mat-kagit-1.webp", "title": "Mat Kağıt Afiş Baskı", "href": "/urunlerimiz/mat-kagit-afis", "category": "Dijital Baskı" }
   ]
 }

@@ -75,7 +75,7 @@ const breadcrumbSchema = {
         {products.map(p => (
           <a href={p.href} class="group bg-white rounded-xl border border-koyu-100 overflow-hidden hover:shadow-xl hover:border-eymen-200 transition-all duration-300 hover:-translate-y-1">
             <div class="aspect-[4/3] overflow-hidden bg-koyu-200">
-              <img src={p.image} alt={p.title} class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" />
+              <img src={p.image} alt={p.title} width="400" height="300" loading="lazy" decoding="async" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
             </div>
             <div class="p-3 md:p-5">
               <h3 class="font-bold text-sm md:text-base text-koyu-900 mb-1 group-hover:text-eymen-600 transition-colors">{p.title}</h3>
