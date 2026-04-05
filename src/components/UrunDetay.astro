@@ -52,7 +52,7 @@ const breadcrumbSchema = {
 };
 ---
 
-<BaseLayout title={title} description={description}>
+<BaseLayout title={title} description={description} image={product.mainImg}>
 
   <!-- Schema.org: FAQ + Breadcrumb -->
   {faqSchema && <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />}
