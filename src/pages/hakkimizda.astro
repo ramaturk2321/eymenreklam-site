@@ -236,11 +236,19 @@ import { contact } from '../lib/site-data';
         <div>
           <h3 class="text-2xl font-extrabold text-koyu-900 mb-8">Teklif Talep Formu</h3>
 
-          <form class="space-y-5" action="https://api.web3forms.com/submit" method="POST">
+          <form class="space-y-5" id="iletisim-form">
             <input type="hidden" name="access_key" value="6eef2241-f453-4dd5-8881-0566fadae644" />
             <input type="hidden" name="subject" value="Eymen Reklam — Yeni Teklif Talebi" />
             <input type="hidden" name="from_name" value="Eymen Reklam Website" />
             <input type="checkbox" name="botcheck" class="hidden" style="display:none" />
+            <div id="form-success" class="hidden bg-green-50 border border-green-200 rounded-xl p-6 text-center">
+              <svg class="w-12 h-12 text-green-500 mx-auto mb-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+              <p class="text-lg font-semibold text-green-800">Mesajiniz basariyla gonderildi!</p>
+              <p class="text-sm text-green-600 mt-1">En kisa surede size donecegiz.</p>
+            </div>
+            <div id="form-error" class="hidden bg-red-50 border border-red-200 rounded-xl p-4 text-center">
+              <p class="text-sm font-medium text-red-700">Bir hata olustu. Lutfen tekrar deneyin veya bizi arayin.</p>
+            </div>
             <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
               <div>
                 <label for="name" class="block text-sm font-medium text-koyu-700 mb-1.5">Ad Soyad</label>
@@ -292,11 +300,46 @@ import { contact } from '../lib/site-data';
 
             <button
               type="submit"
+              id="form-submit-btn"
               class="w-full bg-eymen-500 hover:bg-eymen-600 text-white py-4 rounded-xl text-base font-semibold transition-colors"
             >
               Teklif Talebi Gönder
             </button>
           </form>
+
+          <script>
+            const form = document.getElementById('iletisim-form');
+            const btn = document.getElementById('form-submit-btn');
+            const successDiv = document.getElementById('form-success');
+            const errorDiv = document.getElementById('form-error');
+
+            form.addEventListener('submit', async (e) => {
+              e.preventDefault();
+              btn.disabled = true;
+              btn.textContent = 'Gonderiliyor...';
+              successDiv.classList.add('hidden');
+              errorDiv.classList.add('hidden');
+
+              try {
+                const res = await fetch('https://api.web3forms.com/submit', {
+                  method: 'POST',
+                  body: new FormData(form)
+                });
+                const data = await res.json();
+                if (data.success) {
+                  form.querySelectorAll('input:not([type=hidden]):not([type=checkbox]), textarea, select').forEach(el => el.value = '');
+                  successDiv.classList.remove('hidden');
+                  successDiv.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                } else {
+                  errorDiv.classList.remove('hidden');
+                }
+              } catch (err) {
+                errorDiv.classList.remove('hidden');
+              }
+              btn.disabled = false;
+              btn.textContent = 'Teklif Talebi Gönder';
+            });
+          </script>
         </div>
       </div>
     </div>
