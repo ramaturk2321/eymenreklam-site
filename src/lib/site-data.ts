@@ -73,7 +73,7 @@ export const company = {
   name: 'Eymen Reklam',
   fullName: 'Eymen Reklam Matbaa Tabela İnşaat Gıda San. Tic. Ltd. Şti.',
   slogan: 'Tabela İmalatı & UV Baskı Pendik İstanbul',
-  founded: 1999,
+  founded: 2000,
   experience: 25,
   siteUrl: 'https://www.eymenreklam.com.tr',
   logoPath: '/images/eymen-logo-yeni.png',
