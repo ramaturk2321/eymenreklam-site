@@ -91,7 +91,7 @@ const shareLinks = [
 ];
 ---
 
-<BaseLayout title={post.data.title} description={post.data.description}>
+<BaseLayout title={post.data.title} description={post.data.description} image={post.data.image}>
 
   <!-- Article + Breadcrumb Schema -->
   <script type="application/ld+json" set:html={JSON.stringify(articleSchema)} />

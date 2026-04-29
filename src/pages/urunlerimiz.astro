@@ -68,7 +68,7 @@ const products = urunler.map(u => ({
       <!-- Ürün Grid -->
       <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5" id="product-grid">
         {products.map(product => (
-          <div class="product-card group" data-category={product.category}>
+          <div class="product-card group" data-category={product.category} data-search={`${product.title} ${product.desc}`.toLocaleLowerCase('tr-TR')}>
             <div class="bg-white rounded-2xl border border-koyu-100 overflow-hidden hover:shadow-lg hover:border-eymen-200 transition-all duration-300 hover:-translate-y-1">
               <div class="aspect-[4/3] overflow-hidden bg-koyu-200">
                 <img src={product.image} alt={product.title} width="400" height="300" loading="lazy" decoding="async" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
@@ -88,6 +88,9 @@ const products = urunler.map(u => ({
           </div>
         ))}
       </div>
+      <p class="hidden text-center text-koyu-500 bg-koyu-50 rounded-xl border border-koyu-100 p-6 mt-8" id="no-results">
+        Aramanızla eşleşen ürün bulunamadı.
+      </p>
     </div>
   </section>
 
@@ -108,10 +111,41 @@ const products = urunler.map(u => ({
   const buttons = document.querySelectorAll('.filter-btn');
   const cards = document.querySelectorAll('.product-card');
   const countEl = document.getElementById('product-count');
+  const noResultsEl = document.getElementById('no-results');
+  const searchParams = new URLSearchParams(window.location.search);
+  const searchTerm = (searchParams.get('q') || '').trim();
+  const normalizedSearch = searchTerm.toLocaleLowerCase('tr-TR');
+  let activeFilter = 'all';
+
+  function updateProducts() {
+    let visible = 0;
+
+    cards.forEach(card => {
+      const category = card.getAttribute('data-category');
+      const searchText = card.getAttribute('data-search') || '';
+      const matchesCategory = activeFilter === 'all' || category === activeFilter;
+      const matchesSearch = !normalizedSearch || searchText.includes(normalizedSearch);
+
+      if (matchesCategory && matchesSearch) {
+        card.style.display = '';
+        visible++;
+      } else {
+        card.style.display = 'none';
+      }
+    });
+
+    if (countEl) {
+      countEl.textContent = searchTerm
+        ? `${visible} ürün gösteriliyor - "${searchTerm}" araması`
+        : `${visible} ürün gösteriliyor`;
+    }
+
+    noResultsEl?.classList.toggle('hidden', visible > 0);
+  }
 
   buttons.forEach(btn => {
     btn.addEventListener('click', () => {
-      const filter = btn.getAttribute('data-filter');
+      activeFilter = btn.getAttribute('data-filter') || 'all';
 
       buttons.forEach(b => {
         b.classList.remove('bg-eymen-500', 'text-white', 'border-eymen-500');
@@ -120,18 +154,9 @@ const products = urunler.map(u => ({
       btn.classList.remove('bg-white', 'text-koyu-600', 'border-koyu-200');
       btn.classList.add('bg-eymen-500', 'text-white', 'border-eymen-500');
 
-      let visible = 0;
-      cards.forEach(card => {
-        const category = card.getAttribute('data-category');
-        if (filter === 'all' || category === filter) {
-          card.style.display = '';
-          visible++;
-        } else {
-          card.style.display = 'none';
-        }
-      });
-
-      if (countEl) countEl.textContent = `${visible} ürün gösteriliyor`;
+      updateProducts();
     });
   });
+
+  updateProducts();
 </script>

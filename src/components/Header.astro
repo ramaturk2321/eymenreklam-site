@@ -29,21 +29,21 @@ const urunler = [
     items: [
       { href: '/urunlerimiz/komple-arac-kaplama', label: 'Komple Araç Kaplama' },
       { href: '/urunlerimiz/kismi-arac-kaplama', label: 'Kısmi Araç Kaplama' },
-      { href: '/urunlerimiz/cephe-folyo-giydirme', label: 'Cephe Folyo Giydirme' },
+      { href: '/urunlerimiz/cephe-giydirme', label: 'Cephe Folyo Giydirme' },
       { href: '/urunlerimiz/cam-folyo-giydirme', label: 'Cam Folyo Giydirme' },
       { href: '/urunlerimiz/folyo-harf-kesim', label: 'Folyo Harf Kesim' },
-      { href: '/urunlerimiz/kamyon-tir-giydirme', label: 'Kamyon/Tır Giydirme' },
+      { href: '/urunlerimiz/kamyon-tir-folyo', label: 'Kamyon/Tır Giydirme' },
     ]
   },
   {
     category: 'Baskı & Display',
     items: [
-      { href: '/urunlerimiz/branda-baski', label: 'Branda Baskı' },
-      { href: '/urunlerimiz/mesh-branda', label: 'Mesh Branda Baskı' },
+      { href: '/urunlerimiz/bez-branda-baski', label: 'Branda Baskı' },
+      { href: '/urunlerimiz/mesh-baski', label: 'Mesh Branda Baskı' },
       { href: '/urunlerimiz/pankart-branda', label: 'Pankart Branda Baskı' },
       { href: '/urunlerimiz/lightbox-pano', label: 'Lightbox Pano' },
-      { href: '/urunlerimiz/roll-up-banner', label: 'Roll-Up Banner' },
-      { href: '/urunlerimiz/dijital-baski', label: 'Dijital Baskı Ürünleri' },
+      { href: '/urunlerimiz/rollup-banner', label: 'Roll-Up Banner' },
+      { href: '/hizmetlerimiz/dijital-baski', label: 'Dijital Baskı Ürünleri' },
     ]
   },
 ];
@@ -83,7 +83,7 @@ const currentPath = Astro.url.pathname;
           <!-- Dil Seçimi -->
           <div class="flex items-center gap-1 border-r border-koyu-600 pr-4">
             <a href="/" class="px-2 py-0.5 text-xs font-bold text-eymen-400 bg-koyu-700 rounded">TR</a>
-            <a href="/en" class="px-2 py-0.5 text-xs font-medium text-koyu-400 hover:text-white rounded transition-colors">EN</a>
+            <span class="px-2 py-0.5 text-xs font-medium text-koyu-500 rounded cursor-not-allowed" aria-disabled="true">EN</span>
           </div>
           <!-- Sosyal Medya -->
           <div class="flex items-center gap-3">
@@ -155,17 +155,18 @@ const currentPath = Astro.url.pathname;
         <div class="flex items-center gap-3">
           <!-- Arama Kutusu Desktop -->
           <div class="hidden lg:flex items-center">
-            <div class="relative">
+            <form action="/urunlerimiz" method="get" role="search" class="relative">
               <input
                 type="text"
                 id="search-input"
+                name="q"
                 placeholder="Arama"
                 class="w-40 xl:w-48 pl-4 pr-10 py-2 text-sm border-2 border-koyu-200 rounded-full focus:border-eymen-500 focus:outline-none transition-colors text-koyu-700 placeholder:text-koyu-400"
               />
-              <button class="absolute right-3 top-1/2 -translate-y-1/2 text-koyu-400 hover:text-eymen-500 transition-colors" aria-label="Ara">
+              <button type="submit" class="absolute right-3 top-1/2 -translate-y-1/2 text-koyu-400 hover:text-eymen-500 transition-colors" aria-label="Ara">
                 <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg>
               </button>
-            </div>
+            </form>
           </div>
 
           <!-- Kurumsal Teklif CTA Desktop -->
@@ -264,6 +265,13 @@ const currentPath = Astro.url.pathname;
   // Mobile menu toggle
   const btn = document.getElementById('mobile-menu-btn');
   const menu = document.getElementById('mobile-menu');
+  const searchInput = document.getElementById('search-input') as HTMLInputElement | null;
+  const query = new URLSearchParams(window.location.search).get('q');
+
+  if (searchInput && query) {
+    searchInput.value = query;
+  }
+
   btn?.addEventListener('click', () => menu?.classList.toggle('hidden'));
 
   // Mobile accordion

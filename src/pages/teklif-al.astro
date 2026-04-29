@@ -161,7 +161,7 @@ const hizmetler = [
                 });
                 const data = await res.json();
                 if (data.success) {
-                  teklifForm.querySelectorAll('input:not([type=hidden]):not([type=checkbox]), textarea, select').forEach(el => {
+                  teklifForm.querySelectorAll('input:not([type=hidden]), textarea, select').forEach(el => {
                     if (el.type === 'checkbox') el.checked = false;
                     else el.value = '';
                   });
