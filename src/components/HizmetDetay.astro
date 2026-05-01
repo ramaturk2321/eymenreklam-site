@@ -3,6 +3,14 @@ interface Props {
   title: string;
   description: string;
   heroDesc: string;
+  heroImage?: string;
+  facility?: {
+    title: string;
+    description: string;
+    stats: { value: string; label: string }[];
+    machines: string[];
+    images: string[];
+  };
   features: { icon: string; title: string; desc: string }[];
   products: { title: string; desc: string; image: string; href: string }[];
   process: { step: string; title: string; desc: string }[];
@@ -13,7 +21,7 @@ interface Props {
 import BaseLayout from '../layouts/BaseLayout.astro';
 import { company, contact } from '../lib/site-data';
 
-const { title, description, heroDesc, features, products, process, sectors, faq } = Astro.props;
+const { title, description, heroDesc, heroImage, facility, features, products, process, sectors, faq } = Astro.props;
 
 // FAQ Schema
 const faqSchema = faq.length > 0 ? {
@@ -57,16 +65,64 @@ const breadcrumbSchema = {
     </div>
   </nav>
 
-  <!-- Hero (kompakt) -->
-  <section class="bg-koyu-900 pt-10 pb-10 md:pt-14 md:pb-14">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+  <!-- Hero -->
+  <section class="relative bg-koyu-900 overflow-hidden pt-12 pb-12 md:pt-20 md:pb-20">
+    {heroImage && (
+      <>
+        <img src={heroImage} alt="" class="absolute inset-0 w-full h-full object-cover opacity-70" loading="eager" decoding="async" />
+        <div class="absolute inset-0 bg-gradient-to-r from-koyu-900/90 via-koyu-900/60 to-koyu-900/20"></div>
+      </>
+    )}
+    <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="max-w-3xl">
         <p class="text-eymen-400 text-sm font-semibold uppercase tracking-wider mb-3">Eymen Reklam Hizmetleri</p>
-        <h1 class="text-3xl md:text-4xl font-extrabold text-white mb-4">{title}</h1>
-        <p class="text-koyu-300 text-base leading-relaxed">{heroDesc}</p>
+        <h1 class="text-3xl md:text-5xl font-extrabold text-white mb-4">{title}</h1>
+        <p class="text-koyu-200 text-base md:text-lg leading-relaxed">{heroDesc}</p>
       </div>
     </div>
   </section>
+
+  <!-- Üretim Tesisi -->
+  {facility && (
+    <section class="py-12 md:py-20 bg-koyu-50">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center max-w-3xl mx-auto mb-10 md:mb-12">
+          <p class="text-eymen-500 text-sm font-semibold uppercase tracking-wider mb-3">Üretim Tesisi</p>
+          <h2 class="text-3xl md:text-4xl font-extrabold text-koyu-900 mb-4">{facility.title}</h2>
+          <p class="text-koyu-500 leading-relaxed">{facility.description}</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6 mb-8 md:mb-10">
+          {facility.images.map((img, i) => (
+            <div class="aspect-[4/3] rounded-2xl overflow-hidden bg-koyu-200 shadow-md">
+              <img src={img} alt={`${facility.title} - Üretim ${i + 1}`} loading="lazy" decoding="async" class="w-full h-full object-cover" />
+            </div>
+          ))}
+        </div>
+
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-3 md:gap-6 mb-8">
+          {facility.stats.map(s => (
+            <div class="bg-white rounded-2xl p-4 md:p-6 text-center border border-koyu-100">
+              <div class="text-xl md:text-3xl font-extrabold text-eymen-600 mb-1">{s.value}</div>
+              <div class="text-xs md:text-sm text-koyu-500 font-medium leading-tight">{s.label}</div>
+            </div>
+          ))}
+        </div>
+
+        <div class="bg-white rounded-2xl p-6 md:p-8 border border-koyu-100">
+          <h3 class="font-bold text-koyu-900 mb-4 text-base md:text-lg">Makine Parkurumuz</h3>
+          <ul class="space-y-2.5">
+            {facility.machines.map(m => (
+              <li class="flex items-start gap-3 text-sm md:text-base text-koyu-700">
+                <svg class="w-5 h-5 flex-shrink-0 text-eymen-500 mt-0.5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
+                <span>{m}</span>
+              </li>
+            ))}
+          </ul>
+        </div>
+      </div>
+    </section>
+  )}
 
   <!-- Ürünler (hemen hero altında) -->
   <section class="py-10 md:py-14 bg-white">

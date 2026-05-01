@@ -4,12 +4,13 @@
   "category": "Bez & Afiş Baskı",
   "categoryHref": "/hizmetlerimiz/bez-baski",
   "shortDesc": "Rüzgar geçirgen mesh (örgü) branda baskı. Yüksek binalar, inşaat cepheleri, iskele kapatma ve büyük boyutlu dış mekan reklamları için ideal. Delikli yapısı sayesinde rüzgar direncini minimize eder.",
-  "mainImg": "/images/urunler/mesh-1.webp",
+  "mainImg": "/images/urunler/mesh-5.webp",
   "gallery": [
-    "/images/urunler/mesh-1.webp",
+    "/images/urunler/mesh-5.webp",
     "/images/urunler/mesh-2.webp",
     "/images/urunler/mesh-3.webp",
-    "/images/urunler/mesh-4.webp"
+    "/images/urunler/mesh-4.webp",
+    "/images/urunler/mesh-6.webp"
   ],
   "specs": [
     { "icon": "M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4", "label": "Malzeme", "value": "PVC Mesh (Delikli Branda)" },

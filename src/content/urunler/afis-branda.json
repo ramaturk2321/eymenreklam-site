@@ -4,12 +4,13 @@
   "category": "Afiş Baskı",
   "categoryHref": "/hizmetlerimiz/afis-baski",
   "shortDesc": "Branda afiş baskı hizmeti. Dış mekâna dayanıklı vinil branda üzerine yüksek çözünürlüklü dijital baskı. Kampanya, inşaat ve etkinlik afişleri için ideal.",
-  "mainImg": "/images/urunler/afis-branda-1.webp",
+  "mainImg": "/images/urunler/afis-branda-2.webp",
   "gallery": [
-    "/images/urunler/afis-branda-1.webp",
     "/images/urunler/afis-branda-2.webp",
     "/images/urunler/afis-branda-3.webp",
-    "/images/urunler/afis-branda-4.webp"
+    "/images/urunler/afis-branda-4.webp",
+    "/images/urunler/afis-branda-5.webp",
+    "/images/urunler/afis-branda-6.webp"
   ],
   "specs": [
     { "icon": "M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4", "label": "Malzeme", "value": "Vinil Branda (440 gr/m²)" },
@@ -64,7 +65,7 @@
   "relatedProducts": [
     { "img": "/images/urunler/afis-baski-1.webp", "title": "Afiş Baskı", "href": "/urunlerimiz/afis-baski", "category": "Afiş Baskı" },
     { "img": "/images/urunler/bez-pankart-1.webp", "title": "Bez Pankart", "href": "/urunlerimiz/bez-pankart", "category": "Afiş Baskı" },
-    { "img": "/images/urunler/mesh-1.webp", "title": "Mesh Baskı", "href": "/urunlerimiz/mesh-baski", "category": "Bez Baskı" },
+    { "img": "/images/urunler/mesh-5.webp", "title": "Mesh Baskı", "href": "/urunlerimiz/mesh-baski", "category": "Bez Baskı" },
     { "img": "/images/urunler/vinil-tabela-1.webp", "title": "Vinil Tabela", "href": "/urunlerimiz/vinil-tabela", "category": "Tabela" }
   ]
 }

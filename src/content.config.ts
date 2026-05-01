@@ -75,11 +75,22 @@ const hizmetler = defineCollection({
     title: z.string(),
     description: z.string(),
     heroDesc: z.string(),
+    heroImage: z.string().optional(),
     order: z.number(),
     listIcon: z.string(),
     listDesc: z.string(),
     listFeatures: z.array(z.string()),
     listImage: z.string(),
+    facility: z.object({
+      title: z.string(),
+      description: z.string(),
+      stats: z.array(z.object({
+        value: z.string(),
+        label: z.string(),
+      })),
+      machines: z.array(z.string()),
+      images: z.array(z.string()),
+    }).optional(),
     features: z.array(z.object({
       icon: z.string(),
       title: z.string(),

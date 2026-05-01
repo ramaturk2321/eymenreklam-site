@@ -1,27 +1,49 @@
 {
   "title": "Dijital Baskı",
-  "description": "Fotoblok, kartvizit, katalog, afiş ve poster dijital baskı. Hızlı üretim, makine üzerinde renk ayarlaması, küçük partilerde ekonomik çözüm. İstanbul Pendik.",
-  "heroDesc": "Yüksek hızlı dijital baskı makinelerimizle fotoblok, kartvizit, katalog, afiş, poster ve broşür hızlı ve ekonomik olarak üretiyoruz. Küçük partilerde kurşun baskıya göre çok daha uygun, makine üzerinde renk ayarı sayesinde renk tamlığı sağlanır. Aynı gün teslim seçeneğimiz var.",
+  "description": "Pendik tesisimizde 320 cm büyük format ve Mimaki orta format makinelerle banner, branda, afiş, fotoblok, kartvizit, katalog dijital baskı. Günlük 1500 m² kapasite, aynı gün üretim.",
+  "heroDesc": "Pendik üretim tesisimizde 5 baskı makinesi ve 5 sonlandırma makinesi ile branda, bez, UV baskı, fotoblok, kartvizit ve katalog baskısını lazer kesim, laminasyon ve cilt süreçleriyle birlikte uçtan uca kendi atölyemizde üretiyoruz. 320 cm büyük format genişlik, günlük 1500 m² üretim kapasitesi, aynı gün teslim seçeneği.",
+  "heroImage": "/images/uretim/dijital-baski-uretim-1.webp",
   "order": 3,
   "listIcon": "📄",
   "listDesc": "Fotoblok, kartvizit, katalog, afiş ve poster baskı. Yüksek çözünürlük ve hızlı üretim kapasitesi.",
   "listFeatures": ["Fotoblok", "Kartvizit", "Katalog", "Mat Kağıt Afiş"],
   "listImage": "/images/dijital-baski.webp",
+  "facility": {
+    "title": "Kendi Tesisimizde Üretim",
+    "description": "Pendik üretim tesisimizde 5 baskı makinesi ve 5 sonlandırma makinesi (lazer kesim, laminasyon, PVC kesim, selefon) ile branda, bez, UV baskı, banner, afiş ve mesh baskı işlerini uçtan uca aracı olmadan kendi atölyemizde üretiyoruz. 320 cm büyük format, günlük 1500 m² üretim kapasitesi, aynı gün teslim seçeneği.",
+    "stats": [
+      { "value": "1500 m²", "label": "Günlük Üretim Kapasitesi" },
+      { "value": "320 cm", "label": "Maksimum Baskı Genişliği" },
+      { "value": "10 Adet", "label": "Profesyonel Makine" },
+      { "value": "Aynı Gün", "label": "Üretim & Teslim" }
+    ],
+    "machines": [
+      "2 adet 320 cm Branda Baskı Makinası",
+      "1 adet 320 cm Bez Baskı Makinası",
+      "1 adet 160 cm Mimaki Baskı Makinası",
+      "1 adet 4x2 m UV Baskı Makinesi",
+      "1 adet Lazer Kesim Makinesi",
+      "1 adet 180 cm Laminasyon Makinesi",
+      "2 adet PVC Kesim Makinesi",
+      "1 adet Selefon Makinesi"
+    ],
+    "images": [
+      "/images/uretim/dijital-baski-uretim-1.webp",
+      "/images/uretim/dijital-baski-uretim-2.webp"
+    ]
+  },
   "features": [
+    { "icon": "🏭", "title": "Kendi Tesisimizde Üretim", "desc": "Pendik atölyemizde 4 adet profesyonel baskı makinesi. Aracı yok, taşeron yok, kalite kontrol bizde." },
+    { "icon": "📏", "title": "320 cm Büyük Format", "desc": "Branda, bez, banner ve mesh baskıda tek parça 320 cm genişlik. Uzunluk sınırsız." },
     { "icon": "📸", "title": "Yüksek Çözünürlüklü Fotoblok", "desc": "Fotoğraf kalitesi dijital baskı. 300 DPI ye kadar çözünürlük. Mat veya parlak yüzey seçeneği." },
     { "icon": "🎴", "title": "Kurumsal Basılı Malzeme", "desc": "Kartvizit, kağıt, zarf, fatura formu, beyanname vs. kurumsal materyallerin çalışmaya hazır baskısı." },
-    { "icon": "📑", "title": "Katalog & Broşür", "desc": "Sağlı sollu ya da dolu yapraklı kataloglar, ciltli broşürler. Renkli ve profesyonel görünüm." },
-    { "icon": "📋", "title": "Afiş & Poster", "desc": "A4'den A1 boyutlarına kadar renkli afiş ve posterler. Etkinlik, promosyon, metin afişleri." },
-    { "icon": "⚡", "title": "Hızlı Üretim", "desc": "Aynı gün teslim seçeneği vardır. Acil projeler için 4-6 saatte baskı yapabiliyoruz." },
+    { "icon": "⚡", "title": "Aynı Gün Üretim", "desc": "Günlük 1500 m² üretim kapasitesi. Acil projelerde 4-6 saatte teslim seçeneği." },
     { "icon": "💰", "title": "Küçük Partiye Uygun Fiyatlar", "desc": "Kurşun baskıdan farklı olarak kalıp hazırlık maliyeti yoktur. Tek parçadan bin parçaya kadar ekonomik." }
   ],
   "products": [
-    { "title": "Fotoblok Baskı", "desc": "Fotoğraf kalitesi baskılar. Mat, parlak veya premium kağıt seçenekleri.", "image": "/images/urunler/fotoblok-1.webp", "href": "/urunlerimiz/fotoblok" },
-    { "title": "Kartvizit", "desc": "Parlak, mat veya hatched kağıtlarda baskı. Standard 350 gr kağıt, goldfoil, vernik seçenekleri.", "image": "/images/urunler/kartvizit-1.webp", "href": "/urunlerimiz/kartvizit" },
-    { "title": "Katalog & Broşür", "desc": "Renkli katalog ve folyo kapaklı broşürler. A4, A3 açık gibi çeşitli boyutlarda.", "image": "/images/urunler/katalog-1.webp", "href": "/urunlerimiz/katalog" },
-    { "title": "Mat Kağıt Afiş", "desc": "Mat kuşe kağıda yüksek çözünürlüklü afiş baskı. Yansımasız profesyonel görünüm.", "image": "/images/urunler/mat-kagit-1.webp", "href": "/urunlerimiz/mat-kagit-afis" },
-    { "title": "Insert Tasarım", "desc": "Kurumsal kimlik seti: antetli kağıt, zarf, dosya ve mapa tasarım ve baskısı.", "image": "/images/urunler/insert-1.webp", "href": "/urunlerimiz/insert-tasarim" },
-    { "title": "Parlak Kağıt Afiş", "desc": "Parlak kuşe kağıda canlı renklerle afiş baskı.", "image": "/images/urunler/parlak-afis-1.webp", "href": "/urunlerimiz/parlak-kagit-afis" }
+    { "title": "Afiş Branda", "desc": "320 cm büyük format vinil branda baskı. Bina cephesi, inşaat ve etkinlik için UV korumalı.", "image": "/images/urunler/afis-branda-2.webp", "href": "/urunlerimiz/afis-branda" },
+    { "title": "Mesh Baskı", "desc": "Rüzgar geçirgen örgü branda. Yüksek bina cepheleri ve iskele kapatma için güvenli çözüm.", "image": "/images/urunler/mesh-5.webp", "href": "/urunlerimiz/mesh-baski" },
+    { "title": "Fotoblok Baskı", "desc": "Fotoğraf kalitesi baskılar. Mat, parlak veya premium kağıt seçenekleri.", "image": "/images/urunler/fotoblok-1.webp", "href": "/urunlerimiz/fotoblok" }
   ],
   "process": [
     { "step": "01", "title": "Dosya Hazırlığı", "desc": "PDF formatında tasarım dosyası gönderirsiniz. Renk ayarı CMYK olmalı, yüksek çözünürlük (300 DPI) gerekmektedir." },
@@ -31,6 +53,8 @@
   ],
   "sectors": ["Perakende & AVM", "Sağlık & Hastane", "Eğitim & Kamu", "Sanayi & Fabrika", "Banka & Finans", "Hukuk Büroları", "Turizm & Otelcilik", "Pazarlama & Reklam", "Medya & Yayın", "Organizasyon & Etkinlik"],
   "faq": [
+    { "q": "Maksimum baskı boyutu nedir?", "a": "Tek parça olarak 320 cm genişliğinde baskı yapabiliyoruz, uzunluk sınırsızdır. Daha büyük boyutlar birleştirme tekniği ile mümkündür." },
+    { "q": "Hangi baskı makineleri kullanılıyor?", "a": "Tesisimizde 2 adet 320 cm branda baskı, 1 adet 320 cm bez baskı, 1 adet 160 cm Mimaki ve 1 adet 4x2 m UV baskı makinemiz bulunmaktadır. Sonlandırma için lazer kesim, 180 cm laminasyon, 2 adet PVC kesim ve selefon makinelerimiz vardır. Toplam 10 profesyonel makine ile günlük 1500 m² üretim kapasitesi mevcuttur." },
     { "q": "Dijital baskı ve kurşun baskı farkı nedir?", "a": "Dijital baskıda kalıp hazırlık maliyeti yoktur, küçük partilerde ekonomiktir ve hızlıdır. Kurşun baskı yüksek baskı sayılarında (5000+) daha uygun hale gelir ve farklı kağıt türlerine baskı yapabilir." },
     { "q": "Renk doğruluğu ne kadar garantili?", "a": "Pantone renk eşleştirmesi yapıyor, CMYK renk profili ayarlaması sağlıyoruz. Test baskı önerilir ve ek ücretle yapılabilir." },
     { "q": "Hangi kağıt türleri kullanılıyor?", "a": "Renkli kağıt (90-350 gr), mat kağıt, parlak kağıt, kraft kağıt, eko kağıt gibi çeşitli seçenekler sunuyoruz. Özel kağıt istiyorsanız getirtebiliriz." },
