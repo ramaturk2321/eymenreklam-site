@@ -59,7 +59,7 @@
   "relatedProducts": [
     { "img": "/images/urunler/bizim-toptan-1.webp", "title": "Bizim Toptan Mağazası", "href": "/urunlerimiz/bizim-toptan-magazasi", "category": "Projelerimiz" },
     { "img": "/images/urunler/hakmar-avm-1.webp", "title": "Hakmar AVM", "href": "/urunlerimiz/hakmar-avm", "category": "Projelerimiz" },
-    { "img": "/images/urunler/cam-folyo-1.webp", "title": "Cam Folyo Giydirme", "href": "/urunlerimiz/cam-folyo-giydirme", "category": "Folyo & Giydirme" },
+    { "img": "/images/urunler/cam-folyo-2.webp", "title": "Cam Folyo Giydirme", "href": "/urunlerimiz/cam-folyo-giydirme", "category": "Folyo & Giydirme" },
     { "img": "/images/urunler/isikli-blok-1.webp", "title": "Işıklı Blok Tabela", "href": "/urunlerimiz/isikli-blok-tabela", "category": "Tabela" }
   ]
 }
