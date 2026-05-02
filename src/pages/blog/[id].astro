@@ -139,7 +139,7 @@ const shareLinks = [
         <!-- TOC (Mobil - inline) -->
         {tocHeadings.length > 2 && (
           <nav class="lg:hidden bg-koyu-50 rounded-xl p-5 mb-8 border border-koyu-100">
-            <h2 class="text-sm font-bold text-koyu-900 uppercase tracking-wider mb-3">Bu Yazıda</h2>
+            <h2 class="text-sm font-bold text-koyu-900 tracking-wider mb-3">BU YAZIDA</h2>
             <ul class="space-y-2">
               {tocHeadings.map(h => (
                 <li class={h.depth === 3 ? 'pl-4' : ''}>
@@ -185,7 +185,7 @@ const shareLinks = [
           <!-- TOC (Desktop - sidebar) -->
           {tocHeadings.length > 2 && (
             <nav class="bg-koyu-50 rounded-xl p-5 border border-koyu-100" id="sidebar-toc">
-              <h3 class="text-sm font-bold text-koyu-900 uppercase tracking-wider mb-3">Bu Yazıda</h3>
+              <h3 class="text-sm font-bold text-koyu-900 tracking-wider mb-3">BU YAZIDA</h3>
               <ul class="space-y-2">
                 {tocHeadings.map(h => (
                   <li class={h.depth === 3 ? 'pl-4' : ''}>
@@ -228,7 +228,7 @@ const shareLinks = [
 
           <!-- İlgili Hizmetler -->
           <div class="bg-koyu-50 rounded-xl p-5 border border-koyu-100">
-            <h3 class="text-sm font-bold text-koyu-900 uppercase tracking-wider mb-3">İlgili Hizmetler</h3>
+            <h3 class="text-sm font-bold text-koyu-900 tracking-wider mb-3">İLGİLİ HİZMETLER</h3>
             <div class="space-y-2">
               {relatedServices.map(s => (
                 <a
@@ -246,7 +246,7 @@ const shareLinks = [
           <!-- Diğer Yazılar (Sidebar) -->
           {otherPosts.length > 0 && (
             <div class="bg-koyu-50 rounded-xl p-5 border border-koyu-100">
-              <h3 class="text-sm font-bold text-koyu-900 uppercase tracking-wider mb-3">Diğer Yazılar</h3>
+              <h3 class="text-sm font-bold text-koyu-900 tracking-wider mb-3">DİĞER YAZILAR</h3>
               <div class="space-y-3">
                 {otherPosts.slice(0, 2).map(p => (
                   <a href={`/blog/${p.id}/`} class="flex gap-3 group">

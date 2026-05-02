@@ -105,7 +105,7 @@ const breadcrumbSchema = {
         <div>
           <a href={product.categoryHref} class="inline-flex items-center gap-1.5 bg-eymen-50 text-eymen-600 text-xs font-bold uppercase tracking-wider px-3 py-1.5 rounded-full mb-4 hover:bg-eymen-100 transition-colors">
             <svg class="w-3 h-3" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M7 7h.01M7 3h5c.512 0 1.024.195 1.414.586l7 7a2 2 0 010 2.828l-7 7a2 2 0 01-2.828 0l-7-7A1.994 1.994 0 013 12V7a4 4 0 014-4z"/></svg>
-            {product.category}
+            {product.category.toLocaleUpperCase('tr-TR')}
           </a>
 
           <h1 class="text-3xl md:text-4xl font-bold text-koyu-900 mb-4 leading-tight">{product.title}</h1>
@@ -121,7 +121,7 @@ const breadcrumbSchema = {
                   </svg>
                 </div>
                 <div>
-                  <div class="text-xs text-koyu-400 font-medium uppercase tracking-wider">{spec.label}</div>
+                  <div class="text-xs text-koyu-400 font-medium tracking-wider">{spec.label.toLocaleUpperCase('tr-TR')}</div>
                   <div class="text-sm text-koyu-800 font-semibold mt-0.5">{spec.value}</div>
                 </div>
               </div>
@@ -276,7 +276,7 @@ const breadcrumbSchema = {
                 </span>
               </div>
             </div>
-            <span class="text-xs text-koyu-400 font-medium uppercase tracking-wider">{p.category}</span>
+            <span class="text-xs text-koyu-400 font-medium tracking-wider">{p.category.toLocaleUpperCase('tr-TR')}</span>
             <h3 class="text-sm font-semibold text-koyu-800 group-hover:text-eymen-600 transition-colors mt-1">{p.title}</h3>
           </a>
         ))}

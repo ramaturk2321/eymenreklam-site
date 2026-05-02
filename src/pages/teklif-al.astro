@@ -15,7 +15,7 @@ const hizmetler = [
   <!-- Hero -->
   <section class="bg-koyu-900 pt-32 pb-12 md:pt-40 md:pb-16">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-      <p class="text-eymen-400 text-sm font-semibold uppercase tracking-wider mb-3">Kurumsal İletişim</p>
+      <p class="text-eymen-400 text-sm font-semibold tracking-wider mb-3">KURUMSAL İLETİŞİM</p>
       <h1 class="text-4xl md:text-5xl font-extrabold text-white mb-4">Kurumsal Teklif Alın</h1>
       <p class="text-koyu-400 text-lg max-w-2xl mx-auto">
         Projenizin detaylarını paylaşın, 24 saat içinde size özel fiyat teklifi ve 3D ön izleme ile dönüş yapalım.
@@ -37,11 +37,11 @@ const hizmetler = [
             <input type="checkbox" name="botcheck" class="hidden" style="display:none" />
             <div id="teklif-success" class="hidden bg-green-50 border border-green-200 rounded-xl p-6 text-center">
               <svg class="w-12 h-12 text-green-500 mx-auto mb-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
-              <p class="text-lg font-semibold text-green-800">Teklif talebiniz basariyla gonderildi!</p>
-              <p class="text-sm text-green-600 mt-1">Ekibimiz en kisa surede sizinle iletisime gececektir.</p>
+              <p class="text-lg font-semibold text-green-800">Teklif talebiniz başarıyla gönderildi!</p>
+              <p class="text-sm text-green-600 mt-1">Ekibimiz en kısa sürede sizinle iletişime geçecektir.</p>
             </div>
             <div id="teklif-error" class="hidden bg-red-50 border border-red-200 rounded-xl p-4 text-center">
-              <p class="text-sm font-medium text-red-700">Bir hata olustu. Lutfen tekrar deneyin veya bizi arayin.</p>
+              <p class="text-sm font-medium text-red-700">Bir hata oluştu. Lütfen tekrar deneyin veya bizi arayın.</p>
             </div>
             <!-- Firma Bilgileri -->
             <div>
@@ -150,7 +150,7 @@ const hizmetler = [
               e.preventDefault();
               teklifBtn.disabled = true;
               teklifBtn.querySelector('svg')?.classList.add('hidden');
-              teklifBtn.childNodes[0].textContent = 'Gonderiliyor... ';
+              teklifBtn.childNodes[0].textContent = 'Gönderiliyor... ';
               teklifSuccess.classList.add('hidden');
               teklifError.classList.add('hidden');
 

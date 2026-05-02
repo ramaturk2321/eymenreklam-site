@@ -1,6 +1,6 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
-import { contact } from '../lib/site-data';
+import { contact, getWhatsAppUrl } from '../lib/site-data';
 ---
 
 <BaseLayout title="İletişim — Eymen Reklam Pendik İstanbul" description="Eymen Reklam ile iletişime geçin. Pendik İstanbul'da tabela imalatı, dijital baskı ve reklam çözümleri için ücretsiz keşif ve teklif alın.">
@@ -8,7 +8,7 @@ import { contact } from '../lib/site-data';
   <!-- Hero -->
   <section class="bg-koyu-900 py-16 md:py-24">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-      <p class="text-eymen-400 text-sm font-semibold uppercase tracking-wider mb-3">Bize Ulaşın</p>
+      <p class="text-eymen-400 text-sm font-semibold tracking-wider mb-3">BİZE ULAŞIN</p>
       <h1 class="text-4xl md:text-5xl font-extrabold text-white mb-4">İletişim</h1>
       <p class="text-koyu-400 text-lg max-w-2xl mx-auto">
         Projeniz hakkında konuşmak, ücretsiz keşif ve teklif almak için bize ulaşın.
@@ -59,7 +59,7 @@ import { contact } from '../lib/site-data';
               <div>
                 <h4 class="font-semibold text-koyu-900 mb-1">WhatsApp</h4>
                 <a
-                  href="https://wa.me/905356647752?text=Merhaba%2C%20teklif%20almak%20istiyorum."
+                  href={getWhatsAppUrl()}
                   target="_blank"
                   rel="noopener noreferrer"
                   class="text-sm text-green-600 hover:text-green-700 font-medium transition-colors"
@@ -105,11 +105,11 @@ import { contact } from '../lib/site-data';
             <input type="checkbox" name="botcheck" class="hidden" style="display:none" />
             <div id="form-success" class="hidden bg-green-50 border border-green-200 rounded-xl p-6 text-center">
               <svg class="w-12 h-12 text-green-500 mx-auto mb-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
-              <p class="text-lg font-semibold text-green-800">Mesajiniz basariyla gonderildi!</p>
-              <p class="text-sm text-green-600 mt-1">En kisa surede size donecegiz.</p>
+              <p class="text-lg font-semibold text-green-800">Mesajınız başarıyla gönderildi!</p>
+              <p class="text-sm text-green-600 mt-1">En kısa sürede size döneceğiz.</p>
             </div>
             <div id="form-error" class="hidden bg-red-50 border border-red-200 rounded-xl p-4 text-center">
-              <p class="text-sm font-medium text-red-700">Bir hata olustu. Lutfen tekrar deneyin veya bizi arayin.</p>
+              <p class="text-sm font-medium text-red-700">Bir hata oluştu. Lütfen tekrar deneyin veya bizi arayın.</p>
             </div>
             <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
               <div>
@@ -178,7 +178,7 @@ import { contact } from '../lib/site-data';
             form.addEventListener('submit', async (e) => {
               e.preventDefault();
               btn.disabled = true;
-              btn.textContent = 'Gonderiliyor...';
+              btn.textContent = 'Gönderiliyor...';
               successDiv.classList.add('hidden');
               errorDiv.classList.add('hidden');
 

@@ -1,16 +1,14 @@
 ---
 import { socialLinks, contact } from '../lib/site-data';
+import { getCollection } from 'astro:content';
 
-const hizmetler = [
-  { href: '/hizmetlerimiz/tabela', label: 'Tabela', icon: '🔤' },
-  { href: '/hizmetlerimiz/dijital-baski', label: 'Dijital Baskı', icon: '🖨️' },
-  { href: '/hizmetlerimiz/uv-baski', label: 'UV Baskı', icon: '☀️' },
-  { href: '/hizmetlerimiz/folyo-giydirme', label: 'Folyo & Giydirme', icon: '🚗' },
-  { href: '/hizmetlerimiz/sunum-stand', label: 'Display & Stand', icon: '📐' },
-  { href: '/hizmetlerimiz/bez-baski', label: 'Bez & Afiş Baskı', icon: '🖼️' },
-  { href: '/hizmetlerimiz/grafik-tasarim', label: 'Grafik Tasarım', icon: '🎨' },
-  { href: '/hizmetlerimiz/magaza-reklam', label: 'Kurumsal Hizmetler', icon: '🏢' },
-];
+const hizmetler = (await getCollection('hizmetler'))
+  .sort((a, b) => a.data.order - b.data.order)
+  .map(h => ({
+    href: `/hizmetlerimiz/${h.id}`,
+    label: h.data.title,
+    icon: h.data.listIcon,
+  }));
 
 const urunler = [
   {
@@ -104,7 +102,7 @@ const currentPath = Astro.url.pathname;
       <div class="flex items-center justify-between h-20 md:h-24">
         <!-- Logo -->
         <a href="/" class="flex-shrink-0">
-          <img src="/images/eymen-logo-yeni.png" alt="Eymen Reklam" width="300" height="150" class="h-14 md:h-[150px] w-auto" />
+          <img src="/images/eymen-logo-yeni.png" alt="Eymen Reklam" width="300" height="150" class="h-14 md:h-16 w-auto" />
         </a>
 
         <!-- Desktop Nav -->
@@ -227,7 +225,7 @@ const currentPath = Astro.url.pathname;
           <div class="mobile-accordion-content hidden pl-4 space-y-1">
             {urunler.map(group => (
               <div class="mb-2">
-                <p class="px-4 py-1 text-xs font-bold text-koyu-400 uppercase">{group.category}</p>
+                <p class="px-4 py-1 text-xs font-bold text-koyu-400">{group.category.toLocaleUpperCase('tr-TR')}</p>
                 {group.items.map(item => (
                   <a href={item.href} class="block px-4 py-2 text-sm text-koyu-500 hover:text-eymen-600 hover:bg-koyu-50 rounded-lg">
                     {item.label}

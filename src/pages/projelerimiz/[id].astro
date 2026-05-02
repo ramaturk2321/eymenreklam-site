@@ -109,7 +109,7 @@ const allProjeler = (await getCollection('projeler'))
               Teklif Al
             </a>
             {socialLinks.map(s => (
-              <a href={s.url} target="_blank" rel="noopener noreferrer" class={`w-9 h-9 bg-koyu-100 hover:bg-[${s.color}] hover:text-white rounded-lg flex items-center justify-center text-koyu-500 transition-all flex-shrink-0`} aria-label={s.name}>
+              <a href={s.url} target="_blank" rel="noopener noreferrer" data-hover-bg={s.color} class="social-share-icon w-9 h-9 bg-koyu-100 rounded-lg flex items-center justify-center text-koyu-500 transition-all flex-shrink-0" aria-label={s.name}>
                 <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d={s.icon}/></svg>
               </a>
             ))}
@@ -206,6 +206,20 @@ const allProjeler = (await getCollection('projeler'))
     if (nextBtn) nextBtn.addEventListener('click', () => goTo(current + 1));
     thumbs.forEach(t => {
       t.addEventListener('click', () => goTo(Number(t.dataset.index)));
+    });
+  });
+</script>
+
+<script>
+  document.querySelectorAll<HTMLElement>('.social-share-icon').forEach(el => {
+    const color = el.dataset.hoverBg || '';
+    el.addEventListener('mouseenter', () => {
+      el.style.backgroundColor = color;
+      el.style.color = 'white';
+    });
+    el.addEventListener('mouseleave', () => {
+      el.style.backgroundColor = '';
+      el.style.color = '';
     });
   });
 </script>
