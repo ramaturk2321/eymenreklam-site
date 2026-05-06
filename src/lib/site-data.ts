@@ -13,7 +13,7 @@ export const contact = {
   whatsappUrl: 'https://wa.me/905356647752',
   email: 'info@eymenreklam.com.tr',
   emailHref: 'mailto:info@eymenreklam.com.tr',
-  address: 'Esenler Mah. Çevre Sk. No: 7 Pendik / İSTANBUL',
+  address: 'Esenler Mah. Suda Sk. No: 2, 34899 Pendik / İstanbul',
   addressShort: 'Pendik, İstanbul',
   mapsUrl: 'https://maps.google.com/?q=Eymen+Reklam+Pendik',
 };
