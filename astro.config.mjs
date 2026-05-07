@@ -7,6 +7,7 @@ import compress from 'astro-compress';
 // https://astro.build/config
 export default defineConfig({
   site: 'https://www.eymenreklam.com.tr',
+  trailingSlash: 'always',
   server: { port: 4321 },
   integrations: [
     sitemap(),

@@ -1,0 +1,11 @@
+{
+  "trailingSlash": true,
+  "redirects": [
+    {
+      "source": "/:path*",
+      "has": [{ "type": "query", "key": "page_id" }],
+      "destination": "/:path*",
+      "permanent": true
+    }
+  ]
+}
