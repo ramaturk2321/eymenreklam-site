@@ -1,3 +1,45 @@
 {
-  "trailingSlash": true
+  "trailingSlash": true,
+  "redirects": [
+    {
+      "source": "/projelerimiz/hakmar-ikram-araci/",
+      "destination": "/projelerimiz/arac-giydirme-uygulamalari/",
+      "permanent": true
+    },
+    {
+      "source": "/projelerimiz/tatbak-arac-giydirme/",
+      "destination": "/projelerimiz/arac-giydirme-uygulamalari/",
+      "permanent": true
+    },
+    {
+      "source": "/projelerimiz/ekspres-arac-giydirme/",
+      "destination": "/projelerimiz/arac-giydirme-uygulamalari/",
+      "permanent": true
+    },
+    {
+      "source": "/projelerimiz/haket-arac-giydirme/",
+      "destination": "/projelerimiz/arac-giydirme-uygulamalari/",
+      "permanent": true
+    },
+    {
+      "source": "/projelerimiz/unkar-arac-giydirme/",
+      "destination": "/projelerimiz/arac-giydirme-uygulamalari/",
+      "permanent": true
+    },
+    {
+      "source": "/projelerimiz/rencber-arac-giydirme/",
+      "destination": "/projelerimiz/arac-giydirme-uygulamalari/",
+      "permanent": true
+    },
+    {
+      "source": "/projelerimiz/sivas-tir-giydirme/",
+      "destination": "/projelerimiz/arac-giydirme-uygulamalari/",
+      "permanent": true
+    },
+    {
+      "source": "/projelerimiz/ticari-arac-giydirme/",
+      "destination": "/projelerimiz/arac-giydirme-uygulamalari/",
+      "permanent": true
+    }
+  ]
 }
