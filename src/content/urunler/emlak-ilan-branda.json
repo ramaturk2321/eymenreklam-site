@@ -1,6 +1,7 @@
 {
   "title": "Emlak İlan Branda Baskı",
-  "description": "Emlak ilan branda ve bez baskı hizmeti. Satılık, kiralık ilan brandaları. Eymen Reklam — 25 yıllık tecrübe, 2 yıl garanti.",
+  "seoTitle": "Emlak Branda Baskı | Satılık Kiralık İlan Brandası",
+  "description": "Emlak branda baskı, satılık kiralık ilan brandası ve emlakçı branda afiş üretimi. Dayanıklı vinil branda, net baskı, hızlı teslim.",
   "category": "Bez Baskı",
   "categoryHref": "/hizmetlerimiz/bez-baski",
   "shortDesc": "Emlak ilan branda ve bez baskı hizmeti. Satılık ve kiralık gayrimenkul ilanları için hava koşullarına dayanıklı, net ve canlı baskı kalitesi.",
@@ -21,7 +22,7 @@
     {
       "icon": "M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z",
       "title": "Emlak İlan Branda Nedir?",
-      "content": "Emlak ilan branda, gayrimenkul satış ve kiralama ilanlarını dikkat çekici şekilde sergilemek için kullanılan dış mekân reklam aracıdır. Hava koşullarına dayanıklı malzemeden üretilir ve güneş ışığına karşı solmaya dirençlidir. Net ve canlı baskı kalitesi sayesinde ilan uzaktan bile kolayca okunur."
+      "content": "Emlak ilan branda, gayrimenkul satış ve kiralama ilanlarını dikkat çekici şekilde sergilemek için kullanılan dış mekân reklam aracıdır. Satılık branda, kiralık ilan brandası ve emlakçı branda afişleri için hava koşullarına dayanıklı vinil malzeme kullanılır. Net ve canlı baskı kalitesi sayesinde ilan uzaktan bile kolayca okunur."
     },
     {
       "icon": "M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10",
@@ -41,8 +42,8 @@
     },
     {
       "icon": "M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.066 2.573c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.573 1.066c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.066-2.573c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z M15 12a3 3 0 11-6 0 3 3 0 016 0z",
-      "title": "Ekonomik ve Hızlı Çözüm",
-      "content": "Geleneksel reklam yöntemlerine göre çok daha ekonomik bir tanıtım aracıdır. Hızlı üretim ve kolay kurulum avantajlarıyla emlak ilanlarınızı kısa sürede yayına alıyoruz. Ücretsiz tasarım desteği ile profesyonel görünümlü ilanlar hazırlıyoruz."
+      "title": "Emlakçılar İçin Hızlı Branda Çözümü",
+      "content": "Emlak ofisleri, inşaat firmaları ve bireysel ilanlar için tek adet veya toplu emlak branda baskı üretimi yapılır. Geleneksel reklam yöntemlerine göre çok daha ekonomik bir tanıtım aracıdır. Hızlı üretim ve kolay kurulum avantajlarıyla emlak ilanlarınızı kısa sürede yayına alıyoruz. Ücretsiz tasarım desteği ile profesyonel görünümlü ilanlar hazırlıyoruz."
     }
   ],
   "technicalSpecs": [
@@ -56,7 +57,7 @@
     { "label": "Garanti", "value": "2 Yıl (Baskı + Malzeme)" }
   ],
   "faq": [
-    { "q": "Emlak ilan branda fiyatı ne kadar?", "a": "Fiyat; boyut, malzeme türü ve adet miktarına göre değişir. m² bazında fiyatlandırma yapıyoruz." },
+    { "q": "Emlak branda baskı fiyatı ne kadar?", "a": "Fiyat; boyut, malzeme türü ve adet miktarına göre değişir. m² bazında fiyatlandırma yapıyoruz." },
     { "q": "Dış mekânda ne kadar dayanır?", "a": "Vinil branda dış mekânda 2-3 yıl, bez malzeme ise 1-2 yıl dayanıklılık sunar." },
     { "q": "Acil sipariş alınıyor mu?", "a": "Evet, acil siparişlerde aynı gün üretim ve teslimat imkânı sunuyoruz." },
     { "q": "Tasarım desteği var mı?", "a": "Evet, ücretsiz grafik tasarım desteği sunuyoruz. İlan bilgilerinizi iletmeniz yeterlidir." }

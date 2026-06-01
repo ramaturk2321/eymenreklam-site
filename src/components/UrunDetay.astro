@@ -1,5 +1,5 @@
 ---
-import { socialLinks, getWhatsAppUrl, whatsappMessages, whatsappIcon } from '../lib/site-data';
+import { contact, company, getWhatsAppUrl, whatsappMessages, whatsappIcon } from '../lib/site-data';
 
 interface Props {
   title: string;
@@ -28,6 +28,8 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 
 const { title, description, product, descriptionSections, technicalSpecs, faq, relatedProducts } = Astro.props;
 const waUrl = getWhatsAppUrl(whatsappMessages.product(product.title));
+const pageUrl = new URL(Astro.url.pathname, Astro.site).toString();
+const imageUrl = new URL(product.mainImg, Astro.site).toString();
 
 // FAQ Schema
 const faqSchema = faq.length > 0 ? {
@@ -50,6 +52,48 @@ const breadcrumbSchema = {
     { '@type': 'ListItem', position: 3, name: product.title },
   ],
 };
+
+const serviceSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'Service',
+  name: product.title,
+  description,
+  image: imageUrl,
+  url: pageUrl,
+  serviceType: product.category,
+  provider: {
+    '@type': 'LocalBusiness',
+    name: company.name,
+    legalName: company.fullName,
+    url: company.siteUrl,
+    telephone: contact.phoneHref.replace('tel:', ''),
+    email: contact.email,
+    address: {
+      '@type': 'PostalAddress',
+      streetAddress: 'Esenler Mah. Suda Sk. No: 2',
+      addressLocality: 'Pendik',
+      addressRegion: 'İstanbul',
+      postalCode: '34899',
+      addressCountry: 'TR',
+    },
+  },
+  areaServed: [
+    { '@type': 'City', name: 'İstanbul' },
+    { '@type': 'AdministrativeArea', name: 'Pendik' },
+  ],
+  hasOfferCatalog: {
+    '@type': 'OfferCatalog',
+    name: `${product.title} hizmet kapsamı`,
+    itemListElement: technicalSpecs.slice(0, 6).map((spec) => ({
+      '@type': 'Offer',
+      itemOffered: {
+        '@type': 'Service',
+        name: `${product.title} - ${spec.label}`,
+        description: spec.value,
+      },
+    })),
+  },
+};
 ---
 
 <BaseLayout title={title} description={description} image={product.mainImg}>
@@ -57,6 +101,7 @@ const breadcrumbSchema = {
   <!-- Schema.org: FAQ + Breadcrumb -->
   {faqSchema && <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />}
   <script type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)} />
+  <script type="application/ld+json" set:html={JSON.stringify(serviceSchema)} />
 
   <!-- Breadcrumb -->
   <nav class="bg-koyu-50 border-b border-koyu-100 py-3">
