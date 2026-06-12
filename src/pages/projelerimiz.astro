@@ -144,8 +144,11 @@ const allCategories = Object.entries(categoryCount).sort((a, b) => b[1] - a[1]);
                   <img
                     src={project.data.image}
                     alt={project.data.title}
+                    width="600"
+                    height="450"
                     class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                     loading="lazy"
+                    decoding="async"
                   />
                   <div class="absolute top-3 left-3 flex flex-wrap gap-1.5">
                     {project.data.categories.map(cat => (

@@ -1,6 +1,6 @@
 ---
 title: "UV Baskı Teknolojisi: Yüzeylere Hayat Veren Sessiz Devrimin 7 Sırrı"
-description: "UV baskı teknolojisinin çalışma prensibi, uygulama alanları, teknik detayları ve doğru partner seçimi rehberi."
+description: "UV baskı teknolojisi rehberi: çalışma prensibi, uygulama alanları ve teknik detaylar. Pendik İstanbul'da UV baskı için ücretsiz teklif alın."
 excerpt: "UV baskı teknolojisinin tüm sırları: çalışma prensibi, uygulama alanları, teknik detaylar ve doğru partner seçimi."
 image: "/images/blog-uv.webp"
 category: "UV Baskı"
@@ -57,6 +57,20 @@ Yılların deneyimiyle söyleyebiliriz ki her baskı işinin doğru bir yöntemi
 
 UV baskı kalitesi, büyük ölçüde kullanılan ekipman, mürekkep kalitesi ve operatör deneyimine bağlıdır. Profesyonel bir UV baskı partneri seçerken dikkat edilmesi gereken birkaç kritik faktör vardır: makine parkurunun güncelliği, renk yönetim sistemi (ICC profil) kullanımı, malzeme çeşitliliği ve uygulama sonrası destek.
 
-Eymen Reklam olarak 25 yıllık sektör deneyimimiz, geniş makina parkurumuz ve profesyonel ekibimizle UV baskıda en yüksek kalite standartlarını sunuyoruz. Flatbed ve rulo UV baskı hatlarımızla, küçük promosyon ürünlerinden devasa cephe giydirmelerine kadar her ölçekte çözüm üretiyoruz.
+**Eymen Reklam** olarak Pendik İstanbul'daki 2500 m² üretim tesisimizde, 25 yıllık sektör deneyimimiz, geniş makina parkurumuz ve profesyonel ekibimizle [UV baskıda](/hizmetlerimiz/uv-baski/) en yüksek kalite standartlarını sunuyoruz. Flatbed ve rulo UV baskı hatlarımızla, küçük promosyon ürünlerinden devasa cephe giydirmelerine kadar her ölçekte çözüm üretiyoruz. İstanbul Anadolu Yakası'nda tamamladığımız [UV baskı projelerimize](/projelerimiz/) göz atabilirsiniz.
 
-Projeniz için ücretsiz keşif ve teklif almak için bizimle iletişime geçin.
+## Sıkça Sorulan Sorular
+
+### UV baskı fiyatları nasıl hesaplanır?
+
+UV baskı fiyatı metrekare üzerinden hesaplanır ve üç faktöre bağlıdır: malzeme türü (kompozit, akrilik, cam, ahşap vb.), baskı katmanları (beyaz alt katman veya vernik eklenmesi fiyatı artırır) ve adet/metraj (yüksek metrajlarda birim fiyat düşer). Projenize özel net fiyat için [ücretsiz teklif](/teklif-al/) isteyebilirsiniz.
+
+### UV baskı hangi malzemelere uygulanabilir?
+
+Kompozit panel, akrilik (pleksi), cam, ahşap, MDF, alüminyum, foreks, karton ve kumaş dahil hemen her düz yüzeye uygulanabilir. 30 cm kalınlığa kadar rijit malzemelere doğrudan baskı yapılabilir; branda ve folyo gibi esnek malzemeler ise [rulo UV baskı](/urunlerimiz/uv-baski/) hattında basılır.
+
+### UV baskı dış mekanda solmaz mı?
+
+UV mürekkepler pigment bazlı olduğu için solvent baskıya göre UV ışınlarına karşı çok daha dayanıklıdır. Doğru malzeme ve uygulamayla dış mekanda 5-7 yıl renk canlılığını korur. İç mekan uygulamalarında bu süre 10 yılı aşabilir.
+
+Pendik İstanbul'da UV baskı için ücretsiz keşif ve teklif almak üzere [bizimle iletişime geçin](/iletisim/).

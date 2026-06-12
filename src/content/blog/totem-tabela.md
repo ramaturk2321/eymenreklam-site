@@ -1,6 +1,6 @@
 ---
 title: "Totem Tabela: Markanızın Sokaktaki En Güçlü Elçisinin 7 Sırrı"
-description: "Totem tabela türleri, malzeme seçimi, rüzgâr dayanımı hesaplamaları, belediye izinleri ve etkili tasarım ilkeleri rehberi."
+description: "Totem tabela türleri, malzeme, rüzgâr dayanımı ve belediye izinleri rehberi. Pendik İstanbul'da totem tabela imalatı için ücretsiz teklif alın."
 excerpt: "Totem tabela hakkında bilmeniz gereken her şey: türleri, malzeme seçimi, rüzgâr dayanımı hesaplamaları, belediye izinleri ve etkili tasarım ilkeleri."
 image: "/images/blog-totem.webp"
 category: "Tabela"
@@ -65,6 +65,20 @@ Az bilinen ama kritik bir detay: Belediye sınırları içinde totem tabela yük
 
 Totem tabela üretimi, çelik konstrüksiyon, elektrik tesisatı, grafik tasarım ve montaj gibi farklı disiplinlerin bir arada çalışmasını gerektirir. Deneyimsiz bir üreticinin elinden çıkan bir totem, rüzgârda sallanabilir, ışığı homojen dağıtamayabilir veya birkaç yıl içinde paslanmaya başlayabilir.
 
-**Eymen Reklam** olarak 25 yıllık sektör deneyimimiz, kendi bünyemizdeki çelik atölyemiz ve profesyonel montaj ekibimizle totem tabela üretiminde uçtan uca çözüm sunuyoruz. Tasarımdan üretime, belediye izin süreçlerinden montaja kadar her aşamada yanınızdayız.
+**Eymen Reklam** olarak Pendik İstanbul'daki üretim tesisimizde, 25 yıllık sektör deneyimimiz, kendi bünyemizdeki çelik atölyemiz ve profesyonel montaj ekibimizle [totem tabela](/urunlerimiz/totem-tabela/) üretiminde uçtan uca çözüm sunuyoruz. Tasarımdan üretime, belediye izin süreçlerinden montaja kadar her aşamada yanınızdayız. İstanbul genelinde tamamladığımız [totem tabela projelerimizi](/projelerimiz/) inceleyebilir, diğer [tabela imalatı hizmetlerimize](/hizmetlerimiz/tabela/) göz atabilirsiniz.
 
-Projeniz için ücretsiz keşif ve teklif almak için bizimle iletişime geçin.
+## Sıkça Sorulan Sorular
+
+### Totem tabela fiyatları neye göre belirlenir?
+
+Totem tabela fiyatını dört ana faktör belirler: yükseklik ve boyut, konstrüksiyon tipi (pylon, monoblok), aydınlatma sistemi (LED iç aydınlatma, dijital ekran) ve zemin/temel koşulları. 3 metrelik bir monoblok totem ile 10 metrelik çift taraflı LED'li pylon totem arasında ciddi fiyat farkı vardır. Projenize özel net fiyat için [ücretsiz teklif](/teklif-al/) alabilirsiniz.
+
+### Totem tabela üretimi ne kadar sürer?
+
+Standart bir totem tabelanın üretimi, tasarım onayından sonra ortalama 7-15 iş günü sürer. Betonarme temel gerektiren büyük totemlerde temel kürlenme süresi (yaklaşık 1 hafta) bu süreye eklenir. Belediye izin süreci ilçeye göre 2-6 hafta arasında değişebilir.
+
+### Totem tabela için belediye izni şart mı?
+
+Evet. Türkiye'de kamuya açık alanda veya yoldan görünür konumda totem tabela yerleştirmek için belediyeden ilan ve reklam izni alınması zorunludur. Kendi parseliniz içinde dahi olsa statik hesap raporu istenebilir. Eymen Reklam olarak Pendik ve çevre ilçelerdeki izin süreçlerinde müşterilerimize başvuru dosyası hazırlığında destek veriyoruz.
+
+Pendik İstanbul'da totem tabela imalatı için ücretsiz keşif ve teklif almak üzere [bizimle iletişime geçin](/iletisim/).
