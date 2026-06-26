@@ -16,7 +16,7 @@ const pages = Array.from({ length: TOTAL }, (_, i) =>
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
       <p class="text-eymen-400 text-xs font-semibold tracking-wider mb-1">ONLİNE KATALOG</p>
       <h1 class="text-2xl md:text-3xl font-extrabold text-white">Promosyon Ürünleri 2026</h1>
-      <p class="text-koyu-400 text-sm mt-1 hidden md:block">Sayfaları çevirmek için kenarlara tıklayın veya okları kullanın</p>
+      <p class="text-koyu-400 text-sm mt-1 hidden md:block">Sayfayı çevirmek için kenarlara tıklayın · ürünleri yakından görmek için sayfaya çift tıklayın veya 🔍 Yakınlaştır'a basın</p>
     </div>
   </section>
 
@@ -55,6 +55,7 @@ const pages = Array.from({ length: TOTAL }, (_, i) =>
           <span id="page-cur">1</span> / <span id="page-tot">{TOTAL}</span>
         </span>
         <button id="ctrl-next" class="ctrl-btn">Sonraki ›</button>
+        <button id="ctrl-zoom" class="ctrl-btn ctrl-btn-accent" aria-label="Yakınlaştır">🔍 Yakınlaştır</button>
         <button id="ctrl-fs" class="ctrl-btn" aria-label="Tam ekran">⛶ Tam Ekran</button>
       </div>
 
@@ -72,8 +73,25 @@ const pages = Array.from({ length: TOTAL }, (_, i) =>
     </div>
   </section>
 
+  <!-- Zoom Lightbox -->
+  <div id="lb" class="lb" aria-hidden="true">
+    <div class="lb-bar">
+      <button id="lb-prev" class="lb-ctrl" aria-label="Önceki sayfa">‹</button>
+      <span class="lb-count"><span id="lb-cur">1</span> / {TOTAL}</span>
+      <button id="lb-next" class="lb-ctrl" aria-label="Sonraki sayfa">›</button>
+      <span class="lb-sep"></span>
+      <button id="lb-out" class="lb-ctrl" aria-label="Uzaklaştır">−</button>
+      <button id="lb-in" class="lb-ctrl" aria-label="Yakınlaştır">+</button>
+      <button id="lb-close" class="lb-ctrl" aria-label="Kapat">✕</button>
+    </div>
+    <div id="lb-stage" class="lb-stage">
+      <img id="lb-img" alt="Katalog sayfası — yakın görünüm" draggable="false" />
+    </div>
+    <p class="lb-hint">Tekerlek / iki parmak ile yakınlaştır · sürükleyerek gez · ← → sayfa · ESC kapat</p>
+  </div>
+
   <style>
-    #flipbook { touch-action: pan-y; }
+    #flipbook { touch-action: pan-y; cursor: zoom-in; }
     .page { background: #fff; overflow: hidden; }
     .page img { width: 100%; height: 100%; object-fit: contain; display: block; background: #fff; }
 
@@ -92,10 +110,48 @@ const pages = Array.from({ length: TOTAL }, (_, i) =>
     }
     .ctrl-btn:hover { background: #374151; }
     .ctrl-btn:disabled { opacity: .4; cursor: default; }
+    .ctrl-btn-accent { background: #ea580c; color: #fff; }
+    .ctrl-btn-accent:hover { background: #c2410c; }
 
     /* Tam ekran */
     #flip-wrap:fullscreen { background: #0b1120; display: flex; align-items: center; }
     #flip-wrap:fullscreen #flipbook { max-height: 92vh; }
+
+    /* Lightbox */
+    .lb {
+      position: fixed; inset: 0; z-index: 100; background: rgba(8,12,22,.97);
+      display: none; flex-direction: column; align-items: center; justify-content: center;
+    }
+    .lb.open { display: flex; }
+    .lb-bar {
+      position: fixed; top: 0; left: 0; right: 0; z-index: 2;
+      display: flex; align-items: center; justify-content: center; gap: 10px;
+      padding: 12px; background: linear-gradient(rgba(0,0,0,.55), transparent);
+    }
+    .lb-ctrl {
+      width: 42px; height: 42px; border-radius: 9999px;
+      background: rgba(255,255,255,.14); color: #fff; font-size: 22px; line-height: 1;
+      display: flex; align-items: center; justify-content: center; cursor: pointer;
+      transition: background .15s;
+    }
+    .lb-ctrl:hover { background: rgba(255,255,255,.3); }
+    .lb-count { color: #fff; font-size: 14px; font-weight: 600; min-width: 64px; text-align: center; }
+    .lb-sep { width: 1px; height: 26px; background: rgba(255,255,255,.2); margin: 0 4px; }
+    .lb-stage {
+      width: 100vw; height: 100vh; overflow: hidden;
+      display: flex; align-items: center; justify-content: center; touch-action: none;
+    }
+    #lb-img {
+      max-width: 96vw; max-height: 92vh; object-fit: contain;
+      transform-origin: center center; cursor: grab; user-select: none;
+      transition: transform .08s linear; will-change: transform;
+    }
+    #lb-img.grabbing { cursor: grabbing; transition: none; }
+    .lb-hint {
+      position: fixed; bottom: 10px; left: 0; right: 0; text-align: center;
+      color: rgba(255,255,255,.6); font-size: 12px; padding: 0 16px;
+    }
+    @media (max-width: 640px) { .lb-hint { display: none; } }
   </style>
 
   <!-- StPageFlip UMD (global window.St) — Astro bundle'lamasın diye is:inline -->
@@ -139,11 +195,6 @@ const pages = Array.from({ length: TOTAL }, (_, i) =>
     document.getElementById('ctrl-next').addEventListener('click', flipNext);
     document.getElementById('ctrl-prev').addEventListener('click', flipPrev);
 
-    document.addEventListener('keydown', (e) => {
-      if (e.key === 'ArrowRight') flipNext();
-      if (e.key === 'ArrowLeft') flipPrev();
-    });
-
     goto.addEventListener('change', () => {
       let n = Math.min(Math.max(1, Number(goto.value)), total);
       pageFlip.flip(n - 1);
@@ -155,6 +206,125 @@ const pages = Array.from({ length: TOTAL }, (_, i) =>
     fsBtn.addEventListener('click', () => {
       if (!document.fullscreenElement) wrap.requestFullscreen?.();
       else document.exitFullscreen?.();
+    });
+
+    /* ---------- Zoom Lightbox ---------- */
+    const lb = document.getElementById('lb');
+    const lbImg = document.getElementById('lb-img');
+    const lbStage = document.getElementById('lb-stage');
+    const lbCur = document.getElementById('lb-cur');
+    const pad = (n) => String(n).padStart(3, '0');
+
+    let lbPage = 1;          // 1-index
+    let scale = 1, tx = 0, ty = 0;
+    const MIN = 1, MAX = 4;
+
+    function applyTransform() {
+      lbImg.style.transform = `translate(${tx}px, ${ty}px) scale(${scale})`;
+    }
+    function resetView() { scale = 1; tx = 0; ty = 0; applyTransform(); }
+
+    function loadLbPage(n) {
+      lbPage = Math.min(Math.max(1, n), total);
+      lbCur.textContent = String(lbPage);
+      lbImg.src = `/promosyon/pages-hd/${pad(lbPage)}.webp`;
+      resetView();
+    }
+    function openLb(n) {
+      loadLbPage(n);
+      lb.classList.add('open');
+      lb.setAttribute('aria-hidden', 'false');
+      document.body.style.overflow = 'hidden';
+    }
+    function closeLb() {
+      lb.classList.remove('open');
+      lb.setAttribute('aria-hidden', 'true');
+      document.body.style.overflow = '';
+    }
+
+    // Açma: 🔍 buton + flipbook çift tıklama (mevcut sayfadan)
+    document.getElementById('ctrl-zoom').addEventListener('click', () =>
+      openLb(pageFlip.getCurrentPageIndex() + 1));
+    el.addEventListener('dblclick', () =>
+      openLb(pageFlip.getCurrentPageIndex() + 1));
+
+    document.getElementById('lb-close').addEventListener('click', closeLb);
+    document.getElementById('lb-prev').addEventListener('click', () => loadLbPage(lbPage - 1));
+    document.getElementById('lb-next').addEventListener('click', () => loadLbPage(lbPage + 1));
+
+    function zoomBy(factor, cx, cy) {
+      const prev = scale;
+      scale = Math.min(MAX, Math.max(MIN, scale * factor));
+      if (scale === MIN) { tx = 0; ty = 0; }
+      else if (cx != null) {
+        // imleç etrafında yakınlaştır
+        const r = scale / prev;
+        const rect = lbStage.getBoundingClientRect();
+        const ox = cx - rect.left - rect.width / 2;
+        const oy = cy - rect.top - rect.height / 2;
+        tx = ox - (ox - tx) * r;
+        ty = oy - (oy - ty) * r;
+      }
+      applyTransform();
+    }
+    document.getElementById('lb-in').addEventListener('click', () => zoomBy(1.4));
+    document.getElementById('lb-out').addEventListener('click', () => zoomBy(1 / 1.4));
+
+    // Tekerlek zoom
+    lbStage.addEventListener('wheel', (e) => {
+      e.preventDefault();
+      zoomBy(e.deltaY < 0 ? 1.15 : 1 / 1.15, e.clientX, e.clientY);
+    }, { passive: false });
+
+    // Sürükle (pan) + çift tık zoom toggle
+    let drag = false, sx = 0, sy = 0;
+    lbImg.addEventListener('pointerdown', (e) => {
+      if (scale === 1) return;
+      drag = true; sx = e.clientX - tx; sy = e.clientY - ty;
+      lbImg.classList.add('grabbing'); lbImg.setPointerCapture(e.pointerId);
+    });
+    lbImg.addEventListener('pointermove', (e) => {
+      if (!drag) return;
+      tx = e.clientX - sx; ty = e.clientY - sy; applyTransform();
+    });
+    const endDrag = () => { drag = false; lbImg.classList.remove('grabbing'); };
+    lbImg.addEventListener('pointerup', endDrag);
+    lbImg.addEventListener('pointercancel', endDrag);
+    lbImg.addEventListener('dblclick', (e) => {
+      e.stopPropagation();
+      zoomBy(scale > 1 ? 0.001 : 2.2, e.clientX, e.clientY);
+    });
+
+    // Mobil pinch-zoom (iki parmak)
+    const pts = new Map();
+    let pinchStart = 0, scaleStart = 1;
+    lbStage.addEventListener('pointerdown', (e) => pts.set(e.pointerId, e));
+    lbStage.addEventListener('pointermove', (e) => {
+      if (!pts.has(e.pointerId)) return;
+      pts.set(e.pointerId, e);
+      if (pts.size === 2) {
+        const [a, b] = [...pts.values()];
+        const d = Math.hypot(a.clientX - b.clientX, a.clientY - b.clientY);
+        if (!pinchStart) { pinchStart = d; scaleStart = scale; }
+        else { scale = Math.min(MAX, Math.max(MIN, scaleStart * d / pinchStart)); applyTransform(); }
+      }
+    });
+    const clearPt = (e) => { pts.delete(e.pointerId); if (pts.size < 2) pinchStart = 0; };
+    lbStage.addEventListener('pointerup', clearPt);
+    lbStage.addEventListener('pointercancel', clearPt);
+
+    // Klavye: lightbox açıksa onu, değilse kitabı yönet
+    document.addEventListener('keydown', (e) => {
+      if (lb.classList.contains('open')) {
+        if (e.key === 'Escape') closeLb();
+        else if (e.key === 'ArrowRight') loadLbPage(lbPage + 1);
+        else if (e.key === 'ArrowLeft') loadLbPage(lbPage - 1);
+        else if (e.key === '+' || e.key === '=') zoomBy(1.4);
+        else if (e.key === '-') zoomBy(1 / 1.4);
+      } else {
+        if (e.key === 'ArrowRight') flipNext();
+        if (e.key === 'ArrowLeft') flipPrev();
+      }
     });
   </script>
 </BaseLayout>
