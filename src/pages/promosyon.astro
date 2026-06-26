@@ -1,0 +1,160 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+// 138 sayfa, public/promosyon/pages/001.webp ... 138.webp
+const TOTAL = 138;
+const pages = Array.from({ length: TOTAL }, (_, i) =>
+  `/promosyon/pages/${String(i + 1).padStart(3, '0')}.webp`
+);
+---
+
+<BaseLayout
+  title="Promosyon Ürünleri Kataloğu 2026"
+  description="Eymen Reklam 2026 promosyon ürünleri online kataloğu. Kalemler, defterler, kupalar, çantalar ve daha fazlası — sayfaları çevirerek inceleyin.">
+
+  <section class="bg-koyu-900 pt-8 pb-4">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <p class="text-eymen-400 text-xs font-semibold tracking-wider mb-1">ONLİNE KATALOG</p>
+      <h1 class="text-2xl md:text-3xl font-extrabold text-white">Promosyon Ürünleri 2026</h1>
+      <p class="text-koyu-400 text-sm mt-1 hidden md:block">Sayfaları çevirmek için kenarlara tıklayın veya okları kullanın</p>
+    </div>
+  </section>
+
+  <!-- Flipbook alanı -->
+  <section class="bg-koyu-900 pb-8 select-none">
+    <div class="mx-auto px-2 sm:px-4" style="max-width: 1100px;">
+
+      <!-- Kitap -->
+      <div id="flip-wrap" class="relative flex items-center justify-center">
+        <button id="prev" aria-label="Önceki sayfa"
+          class="nav-arrow left-0 md:-left-4">‹</button>
+
+        <div id="flipbook" class="mx-auto">
+          {pages.map((src, i) => (
+            <div class="page" data-density={i === 0 || i === TOTAL - 1 ? 'hard' : 'soft'}>
+              <img
+                src={src}
+                alt={`Promosyon kataloğu sayfa ${i + 1}`}
+                loading={i < 2 ? 'eager' : 'lazy'}
+                decoding="async"
+                draggable="false"
+                width="450" height="620"
+              />
+            </div>
+          ))}
+        </div>
+
+        <button id="next" aria-label="Sonraki sayfa"
+          class="nav-arrow right-0 md:-right-4">›</button>
+      </div>
+
+      <!-- Kontrol çubuğu -->
+      <div class="flex items-center justify-center gap-3 mt-5 flex-wrap">
+        <button id="ctrl-prev" class="ctrl-btn">‹ Önceki</button>
+        <span class="text-koyu-300 text-sm font-medium tabular-nums">
+          <span id="page-cur">1</span> / <span id="page-tot">{TOTAL}</span>
+        </span>
+        <button id="ctrl-next" class="ctrl-btn">Sonraki ›</button>
+        <button id="ctrl-fs" class="ctrl-btn" aria-label="Tam ekran">⛶ Tam Ekran</button>
+      </div>
+
+      <!-- Sayfaya git -->
+      <div class="flex items-center justify-center gap-2 mt-3">
+        <label for="goto" class="text-koyu-400 text-xs">Sayfaya git:</label>
+        <input id="goto" type="number" min="1" max={TOTAL} value="1"
+          class="w-16 bg-koyu-800 text-white text-sm rounded px-2 py-1 border border-koyu-700 text-center" />
+      </div>
+
+      <p class="text-center text-koyu-500 text-xs mt-6">
+        Beğendiğiniz ürün için <a href="/iletisim/" class="text-eymen-400 hover:underline">bize ulaşın</a> ·
+        WhatsApp: (0216) 379 07 08
+      </p>
+    </div>
+  </section>
+
+  <style>
+    #flipbook { touch-action: pan-y; }
+    .page { background: #fff; overflow: hidden; }
+    .page img { width: 100%; height: 100%; object-fit: contain; display: block; background: #fff; }
+
+    .nav-arrow {
+      position: absolute; top: 50%; transform: translateY(-50%); z-index: 20;
+      width: 44px; height: 44px; border-radius: 9999px;
+      background: rgba(255,255,255,.12); color: #fff; font-size: 28px; line-height: 1;
+      display: flex; align-items: center; justify-content: center;
+      backdrop-filter: blur(4px); transition: background .15s; cursor: pointer;
+    }
+    .nav-arrow:hover { background: rgba(255,255,255,.25); }
+
+    .ctrl-btn {
+      background: #1f2937; color: #e5e7eb; font-size: 14px; font-weight: 500;
+      padding: 8px 14px; border-radius: 8px; transition: background .15s; cursor: pointer;
+    }
+    .ctrl-btn:hover { background: #374151; }
+    .ctrl-btn:disabled { opacity: .4; cursor: default; }
+
+    /* Tam ekran */
+    #flip-wrap:fullscreen { background: #0b1120; display: flex; align-items: center; }
+    #flip-wrap:fullscreen #flipbook { max-height: 92vh; }
+  </style>
+
+  <!-- StPageFlip UMD (global window.St) — Astro bundle'lamasın diye is:inline -->
+  <script is:inline src="/promosyon/page-flip.browser.js"></script>
+  <script is:inline>
+    const PageFlip = window.St.PageFlip;
+
+    const el = document.getElementById('flipbook');
+    const total = Number(document.getElementById('page-tot').textContent);
+
+    const pageFlip = new PageFlip(el, {
+      width: 450,
+      height: 620,            // 561.12 x 773.76 oranı ≈ 0.725
+      size: 'stretch',
+      minWidth: 280, maxWidth: 760,
+      minHeight: 386, maxHeight: 1040,
+      maxShadowOpacity: 0.5,
+      showCover: true,
+      mobileScrollSupport: true,
+      useMouseEvents: true,
+    });
+
+    pageFlip.loadFromHTML(document.querySelectorAll('.page'));
+
+    const cur = document.getElementById('page-cur');
+    const goto = document.getElementById('goto');
+
+    function updateUI() {
+      // StPageFlip 0-index; insana 1-index göster
+      const idx = pageFlip.getCurrentPageIndex();
+      cur.textContent = String(idx + 1);
+      goto.value = String(idx + 1);
+    }
+    pageFlip.on('flip', updateUI);
+
+    const flipNext = () => pageFlip.flipNext();
+    const flipPrev = () => pageFlip.flipPrev();
+
+    document.getElementById('next').addEventListener('click', flipNext);
+    document.getElementById('prev').addEventListener('click', flipPrev);
+    document.getElementById('ctrl-next').addEventListener('click', flipNext);
+    document.getElementById('ctrl-prev').addEventListener('click', flipPrev);
+
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'ArrowRight') flipNext();
+      if (e.key === 'ArrowLeft') flipPrev();
+    });
+
+    goto.addEventListener('change', () => {
+      let n = Math.min(Math.max(1, Number(goto.value)), total);
+      pageFlip.flip(n - 1);
+    });
+
+    // Tam ekran
+    const fsBtn = document.getElementById('ctrl-fs');
+    const wrap = document.getElementById('flip-wrap');
+    fsBtn.addEventListener('click', () => {
+      if (!document.fullscreenElement) wrap.requestFullscreen?.();
+      else document.exitFullscreen?.();
+    });
+  </script>
+</BaseLayout>
