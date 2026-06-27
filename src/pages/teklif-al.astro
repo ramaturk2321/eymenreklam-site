@@ -1,6 +1,6 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
-import { contact } from '../lib/site-data';
+import { company, contact } from '../lib/site-data';
 
 const hizmetler = [
   'Kutu Harf Tabela', 'Totem Tabela', 'Çatı Tabelası', 'Cephe Tabelası',
@@ -242,7 +242,7 @@ const hizmetler = [
           <!-- Rakamlar -->
           <div class="grid grid-cols-2 gap-3">
             <div class="bg-koyu-900 rounded-xl p-4 text-center">
-              <div class="text-2xl font-extrabold text-eymen-500">25+</div>
+              <div class="text-2xl font-extrabold text-eymen-500">{company.experience}+</div>
               <div class="text-xs text-koyu-400 mt-1">Yıl Tecrübe</div>
             </div>
             <div class="bg-koyu-900 rounded-xl p-4 text-center">

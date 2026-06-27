@@ -76,13 +76,8 @@ const currentPath = Astro.url.pathname;
           </a>
         </div>
 
-        <!-- Sağ: Dil + Sosyal Medya -->
+        <!-- Sağ: Sosyal Medya -->
         <div class="flex items-center gap-4">
-          <!-- Dil Seçimi -->
-          <div class="flex items-center gap-1 border-r border-koyu-600 pr-4">
-            <a href="/" class="px-2 py-0.5 text-xs font-bold text-eymen-400 bg-koyu-700 rounded">TR</a>
-            <span class="px-2 py-0.5 text-xs font-medium text-koyu-500 rounded cursor-not-allowed" aria-disabled="true">EN</span>
-          </div>
           <!-- Sosyal Medya -->
           <div class="flex items-center gap-3">
             {socialLinks.map(s => (

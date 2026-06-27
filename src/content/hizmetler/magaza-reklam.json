@@ -8,7 +8,7 @@
   "listFeatures": ["Konsept Tasarım", "Vitrin", "Raf Etiket", "İç Mekan"],
   "listImage": "/images/urunler/hakmar-avm-1.webp",
   "features": [
-    { "icon": "🎨", "title": "Konsept & Stil Tasarımı", "desc": "Mağazanızın kimliğine uygun konsept tasarımı. Renk, tipografi ve visual hierarchi uygunluğu sağlanır." },
+    { "icon": "🎨", "title": "Konsept & Stil Tasarımı", "desc": "Mağazanızın kimliğine uygun konsept tasarımı. Renk, tipografi ve görsel hiyerarşi uygunluğu sağlanır." },
     { "icon": "🪟", "title": "Vitrini Tasarımı", "desc": "Dikkat çekici ve satış odaklı vitrin düzenlemesi. Sezonsal değişim ve promosyon tasarımı." },
     { "icon": "📍", "title": "İç Mekan Dekorasyonu", "desc": "Duvar grafikleri, raf dekorasyonu, tavan tasarımı. Alışveriş deneyimini artırıcı ortam yaratma." },
     { "icon": "💰", "title": "POS & Etiket Tasarımı", "desc": "Ürün etiketleri, fiyat etiketleri, promosyon afişleri. Satış noktası grafikleri." },
@@ -35,6 +35,6 @@
     { "q": "Küçük mağazalar için de hizmet veriliyor mu?", "a": "Evet. Bütçenize göre küçük çaplı dekorasyon ve vitrin tasarımından anahtar teslim çözümlere kadar farklı paketler sunuyoruz." },
     { "q": "Zincir mağaza konsepti uyguluyorsunuz?", "a": "Evet. Birden fazla mağazanız varsa tutarlı kimlik sağlamak adına denetim listeleri ve uygulama rehberleri hazırlarız." },
     { "q": "Mevsimsel dekorasyon değişimi ne kadar sık yapılmalı?", "a": "Perakende sektörüne göre değişir. Fashion her 2 haftada, gıda/genel ticari mağazalar ayda bir, elektronik 3 ayda bir değiştirilebilir." },
-    { "q": "Mağazanız tasarlamadığım alet eser, yardımcı olabilir misiniz?", "a": "Evet. Tam iş güvenliği ve tasarım konsultasyonuyla mevcut mağazanızı yeniden tasarımlayabiliriz. Rehab projeleri için bütçe planlaması yapabiliriz." }
+    { "q": "Mağazamı başka bir firma tasarladıysa, yardımcı olabilir misiniz?", "a": "Evet. Tam iş güvenliği ve tasarım konsültasyonuyla mevcut mağazanızı yeniden tasarımlayabiliriz. Rehab projeleri için bütçe planlaması yapabiliriz." }
   ]
 }

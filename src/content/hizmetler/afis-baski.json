@@ -9,9 +9,9 @@
   "listImage": "/images/urunler/afis-baski-1.webp",
   "features": [
     { "icon": "📋", "title": "Vinil Afiş Baskı", "desc": "Mat, parlak ve özel vinil malzemelere baskı. Kurumsal afişler ve reklam ilanları için ideal." },
-    { "icon": "🎨", "title": "Branda Afiş", "desc": "Dayanıklı branda malzemeye renkli baskı. Dış mekan uygulamaları, 3+ yıl direktif." },
+    { "icon": "🎨", "title": "Branda Afiş", "desc": "Dayanıklı branda malzemeye renkli baskı. Dış mekan uygulamaları, 3+ yıl dirençli." },
     { "icon": "📢", "title": "Bez Pankart", "desc": "TNT ve mesh bezlere baskı. Etkinlik, festival, kampanya pankartları." },
-    { "icon": "📐", "title": "Geniş Format Baskı", "desc": "A0 (84×118 cm) ve üzeri boyutlar. Meter başına hızlı üretim kapasitesi." },
+    { "icon": "📐", "title": "Geniş Format Baskı", "desc": "A0 (84×118 cm) ve üzeri boyutlar. Metre başına hızlı üretim kapasitesi." },
     { "icon": "✨", "title": "Yüksek Kalite Renk", "desc": "CMYK profesyonel renk ayarı. Pantone eşleştirmesi ve renk doğruluğu garantisi." },
     { "icon": "⚡", "title": "Hızlı Üretim", "desc": "Tasarım onayından 24-48 saatte teslim. Acil projeler için ekspres seçeneği." }
   ],
@@ -26,14 +26,14 @@
   "process": [
     { "step": "01", "title": "Tasarım & Format", "desc": "Tasarım dosyası hazırlanır. Baskı boyutu, malzeme ve renk profili belirlenir." },
     { "step": "02", "title": "Dosya Kontrol", "desc": "Tasarım kontrol edilerek boyut, çözünürlük ve renk uyumu sağlanır." },
-    { "step": "03", "title": "Geniş Format Baskı", "desc": "Seçilen malzeme baskı makinesine yüklenir. Tasarım yüksek kalitede basmılır." },
+    { "step": "03", "title": "Geniş Format Baskı", "desc": "Seçilen malzeme baskı makinesine yüklenir. Tasarım yüksek kalitede basılır." },
     { "step": "04", "title": "Kesim & Paketleme", "desc": "Kesilir, kenarlar işlenir. Montaj noktaları işaretlenir. Paketlenerek teslim edilir." }
   ],
   "sectors": ["Pazarlama & Reklam", "Organizasyon & Etkinlik", "Perakende & AVM", "Sağlık & Hastane", "Eğitim & Kamu", "Turizm & Otelcilik", "Kültür & Sanat", "Spor & Rekreasyon", "İnşaat & Gayrimenkul", "Gıda & Restoran"],
   "faq": [
-    { "q": "En büyük afiş boyutu ne kadar?", "a": "Geniş format baskı makinemiz 3.5m eninde baskı yapabiliyor. Uzunluk teorik olarak sınırsız, meter başına hesaplanır. A0 (84×118 cm) ve daha büyük boyutlara rahatlıkla çıkabiliyoruz." },
+    { "q": "En büyük afiş boyutu ne kadar?", "a": "Geniş format baskı makinemiz 3.5m eninde baskı yapabiliyor. Uzunluk teorik olarak sınırsız, metre başına hesaplanır. A0 (84×118 cm) ve daha büyük boyutlara rahatlıkla çıkabiliyoruz." },
     { "q": "Vinil ve branda afiş arasında fark nedir?", "a": "Vinil afiş iç mekan ve kısa süreli dış mekan (2-3 ay) için uygundur. Branda afiş açık hava koşullarına dayanıklı ve 3+ yıl kalır." },
-    { "q": "Afiş montajı sağlıyor musunuz?", "a": "Montaj hizmeti sundukça bölgelerde yapıyoruz, genellikle müşteri tarafından yapılır. İstanbul bölgesinde montaj hizmeti verilebilir (ek ücret)." },
+    { "q": "Afiş montajı sağlıyor musunuz?", "a": "Montaj hizmeti sunduğumuz bölgelerde yapıyoruz, genellikle müşteri tarafından yapılır. İstanbul bölgesinde montaj hizmeti verilebilir (ek ücret)." },
     { "q": "Renk doğruluğu konusunda endişeli isem?", "a": "Test baskı yapabiliriz (ücretli). Pantone renk kodunuz varsa hassas eşleştirme yaparız. Baskı öncesi onay için örnek sunabiliriz." },
     { "q": "Acil projeler için ne kadar hızlı gidebiliyor?", "a": "Tasarım onaydan sonra 24 saatte baskı ve teslim yapabiliriz. Çok acil projeler için saat 15:00 öncesi onay alınırsa aynı gün teslim mümkündür." }
   ]

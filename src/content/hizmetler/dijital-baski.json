@@ -33,7 +33,7 @@
     ]
   },
   "features": [
-    { "icon": "🏭", "title": "Kendi Tesisimizde Üretim", "desc": "Pendik atölyemizde 4 adet profesyonel baskı makinesi. Aracı yok, taşeron yok, kalite kontrol bizde." },
+    { "icon": "🏭", "title": "Kendi Tesisimizde Üretim", "desc": "Pendik atölyemizde 5 adet profesyonel baskı makinesi. Aracı yok, taşeron yok, kalite kontrol bizde." },
     { "icon": "📏", "title": "320 cm Büyük Format", "desc": "Branda, bez, banner ve mesh baskıda tek parça 320 cm genişlik. Uzunluk sınırsız." },
     { "icon": "📸", "title": "Yüksek Çözünürlüklü Fotoblok", "desc": "Fotoğraf kalitesi dijital baskı. 300 DPI ye kadar çözünürlük. Mat veya parlak yüzey seçeneği." },
     { "icon": "🎴", "title": "Kurumsal Basılı Malzeme", "desc": "Kartvizit, kağıt, zarf, fatura formu, beyanname vs. kurumsal materyallerin çalışmaya hazır baskısı." },
@@ -59,6 +59,6 @@
     { "q": "Renk doğruluğu ne kadar garantili?", "a": "Pantone renk eşleştirmesi yapıyor, CMYK renk profili ayarlaması sağlıyoruz. Test baskı önerilir ve ek ücretle yapılabilir." },
     { "q": "Hangi kağıt türleri kullanılıyor?", "a": "Renkli kağıt (90-350 gr), mat kağıt, parlak kağıt, kraft kağıt, eko kağıt gibi çeşitli seçenekler sunuyoruz. Özel kağıt istiyorsanız getirtebiliriz." },
     { "q": "Tasarım hizmetiniz var mı?", "a": "Evet. Grafik tasarımcı ekibimiz tasarım konusunda danışmanlık veya tasarım hizmetleri sunabilir. Ücret tasarım karmaşıklığına göre değişir." },
-    { "q": "Aynı gün teslim gerçek mi?", "a": "Sabah erken saatlerde gelen ve acil işlemlenen siparişler aynı gün teslim edilebilir. Saat 11'den önce onaylanmış basit siparişler için mümkündür." }
+    { "q": "Aynı gün teslim gerçek mi?", "a": "Sabah erken saatlerde gelen ve acil işleme alınan siparişler aynı gün teslim edilebilir. Saat 11'den önce onaylanmış basit siparişler için mümkündür." }
   ]
 }

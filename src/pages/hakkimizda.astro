@@ -1,9 +1,9 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
-import { contact } from '../lib/site-data';
+import { company, contact } from '../lib/site-data';
 ---
 
-<BaseLayout title="Hakkımızda — Tabela İmalatı Pendik İstanbul" description="Eymen Reklam — 2000'den beri Pendik İstanbul'da tabela imalatı ve dijital baskı. 2.500m² üretim tesisi, 25+ yıllık tecrübe.">
+<BaseLayout title="Hakkımızda — Tabela İmalatı Pendik İstanbul" description={`Eymen Reklam — 2000'den beri Pendik İstanbul'da tabela imalatı ve dijital baskı. 2.500m² üretim tesisi, ${company.experience}+ yıllık tecrübe.`}>
 
   <!-- Hero -->
   <section class="bg-koyu-900 py-16 md:py-24">
@@ -60,7 +60,7 @@ import { contact } from '../lib/site-data';
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
         <div class="text-center">
-          <div class="text-4xl md:text-5xl font-extrabold text-eymen-500">25+</div>
+          <div class="text-4xl md:text-5xl font-extrabold text-eymen-500">{company.experience}+</div>
           <div class="text-sm text-koyu-600 mt-2 font-medium">Yıllık Tecrübe</div>
         </div>
         <div class="text-center">

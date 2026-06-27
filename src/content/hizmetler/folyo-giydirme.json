@@ -8,16 +8,16 @@
   "listFeatures": ["Araç Kaplama", "Cephe Folyo", "Cam Folyo", "One Way Vision", "Kamyon/Tır"],
   "listImage": "/images/arac-giydirme.webp",
   "features": [
-    { "icon": "🚗", "title": "Araç Giydirmesi (Full Wrap)", "desc": "Araç tuğlasının tamamına folyo kaplanması. Markalaştırma, reklam, koruma amaçlı çalışmalar." },
+    { "icon": "🚗", "title": "Araç Giydirmesi (Full Wrap)", "desc": "Araç gövdesinin tamamına folyo kaplanması. Markalaştırma, reklam, koruma amaçlı çalışmalar." },
     { "icon": "🏢", "title": "Bina Cephesi & Dekor", "desc": "Geniş cephe kaplama, pencere dekorasyonu, iç mekan duvar folyo uygulamaları." },
-    { "icon": "🪟", "title": "Cam Folyo Uygulamaları", "desc": "One-way-vision, dekoratif desenleme, mat cam, ısı kontrol filmaları." },
+    { "icon": "🪟", "title": "Cam Folyo Uygulamaları", "desc": "One-way-vision, dekoratif desenleme, mat cam, ısı kontrol filmleri." },
     { "icon": "✨", "title": "Premium Folyo Malzemeleri", "desc": "Avery Dennison ve 3M kalitesi folyo. 5-7 yıl dış mekan garantili, UV dirençli, dayanıklı." },
     { "icon": "👨‍🔧", "title": "Profesyonel Kurulum", "desc": "Eğitimli ve deneyimli montaj ekibi. Hava kabarcığı ve buruşuk olmayan tam uyum sağlanır." },
     { "icon": "🔧", "title": "Onarım & Bakım", "desc": "Hasar gören folyo kısmi değişim ve bakım hizmetleri sunuyoruz." }
   ],
   "products": [
     { "title": "Komple Araç Kaplama", "desc": "Araç dış cephesinin tamamına kurumsal markalama veya reklam folyo uygulaması.", "image": "/images/urunler/komple-arac-1.webp", "href": "/urunlerimiz/komple-arac-kaplama" },
-    { "title": "Kısmi Araç Kaplama", "desc": "Araçın yan kapı, çatı, ön arka bölümlerine seçmeli folyo uygulaması.", "image": "/images/urunler/kismi-arac-1.webp", "href": "/urunlerimiz/kismi-arac-kaplama" },
+    { "title": "Kısmi Araç Kaplama", "desc": "Aracın yan kapı, çatı, ön arka bölümlerine seçmeli folyo uygulaması.", "image": "/images/urunler/kismi-arac-1.webp", "href": "/urunlerimiz/kismi-arac-kaplama" },
     { "title": "Cephe Folyo Giydirme", "desc": "Büyük ölçekli bina cephesi giydirmesi. Depo, şantiye, fabrika cepheleri.", "image": "/images/hayvan_hastanasi/hayvan2.webp", "href": "/urunlerimiz/cephe-giydirme" },
     { "title": "Cam One Way Vision", "desc": "Camdan dışarı bakılabiliyor, dışarıdan içeri görülmüyor. Gizlilik ve markalama için ideal.", "image": "/images/urunler/one-way-1.webp", "href": "/urunlerimiz/cam-one-way-vision" },
     { "title": "Cam Kumlama Folyo", "desc": "Pencere, kapı ve ofis bölmelerine kumlama folyo ile mahremiyet ve estetik.", "image": "/images/urunler/cam-kumlama-1.webp", "href": "/urunlerimiz/cam-kumlama-folyo" },
