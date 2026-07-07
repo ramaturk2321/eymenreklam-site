@@ -10,7 +10,7 @@ const services = (await getCollection('hizmetler'))
     desc: h.data.listDesc,
     features: h.data.listFeatures,
     image: h.data.listImage,
-    href: `/hizmetlerimiz/${h.id}`,
+    href: `/hizmetlerimiz/${h.id}/`,
     icon: h.data.listIcon,
   }));
 ---
@@ -24,7 +24,7 @@ const services = (await getCollection('hizmetler'))
       <h1 class="text-4xl md:text-5xl font-extrabold text-white mb-4">Tabela İmalatı ve Reklam Hizmetleri</h1>
       <p class="text-koyu-400 text-lg max-w-2xl mx-auto">
         Pendik İstanbul'da tabela imalatından UV baskıya, araç giydirmeden dijital baskıya kadar
-        tüm kurumsal reklam ihtiyaçlarınız için profesyonel çözümler.
+        kurumsal reklam ihtiyacınızı birlikte planlıyor, üretimden montaja tek elden yürütüyoruz.
       </p>
     </div>
   </section>
@@ -60,9 +60,9 @@ const services = (await getCollection('hizmetler'))
   <section class="bg-gradient-to-br from-eymen-500 to-eymen-700 py-16">
     <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
       <h2 class="text-3xl font-extrabold text-white mb-4">Projeniz İçin Kurumsal Teklif Alın</h2>
-      <p class="text-eymen-100 mb-8">Uzman ekibimiz projenizi inceler, 3D ön izleme hazırlar ve detaylı fiyat teklifi sunar.</p>
+      <p class="text-eymen-100 mb-8">Projenizi birlikte inceleyelim: 3D ön izleme ve detaylı fiyat teklifiyle size dönelim.</p>
       <div class="flex flex-col sm:flex-row gap-4 justify-center">
-        <a href="/teklif-al" class="inline-flex items-center justify-center gap-2 bg-white text-eymen-600 hover:bg-koyu-50 px-8 py-4 rounded-xl text-base font-bold transition-all">
+        <a href="/teklif-al/" class="inline-flex items-center justify-center gap-2 bg-white text-eymen-600 hover:bg-koyu-50 px-8 py-4 rounded-xl text-base font-bold transition-all">
           Kurumsal Teklif Formu
         </a>
         <a href={contact.phoneHref} class="inline-flex items-center justify-center gap-2 border-2 border-white/30 hover:border-white/60 text-white px-8 py-4 rounded-xl text-base font-semibold transition-all">

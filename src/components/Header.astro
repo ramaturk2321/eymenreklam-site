@@ -14,42 +14,42 @@ const urunler = [
   {
     category: 'Tabela',
     items: [
-      { href: '/urunlerimiz/kutu-harf-tabela', label: 'Kutu Harf Tabela' },
-      { href: '/urunlerimiz/totem-tabela', label: 'Totem Tabela' },
-      { href: '/urunlerimiz/cati-tabelasi', label: 'Çatı Tabelası' },
-      { href: '/urunlerimiz/neon-led-tabela', label: 'Neon-Led Tabela' },
-      { href: '/urunlerimiz/isikli-blok-tabela', label: 'Işıklı Blok Tabela' },
-      { href: '/urunlerimiz/ofis-tabelasi', label: 'Ofis Tabelası' },
+      { href: '/urunlerimiz/kutu-harf-tabela/', label: 'Kutu Harf Tabela' },
+      { href: '/urunlerimiz/totem-tabela/', label: 'Totem Tabela' },
+      { href: '/urunlerimiz/cati-tabelasi/', label: 'Çatı Tabelası' },
+      { href: '/urunlerimiz/neon-led-tabela/', label: 'Neon-Led Tabela' },
+      { href: '/urunlerimiz/isikli-blok-tabela/', label: 'Işıklı Blok Tabela' },
+      { href: '/urunlerimiz/ofis-tabelasi/', label: 'Ofis Tabelası' },
     ]
   },
   {
     category: 'Folyo & Araç',
     items: [
-      { href: '/urunlerimiz/komple-arac-kaplama', label: 'Komple Araç Kaplama' },
-      { href: '/urunlerimiz/kismi-arac-kaplama', label: 'Kısmi Araç Kaplama' },
-      { href: '/urunlerimiz/cephe-giydirme', label: 'Cephe Folyo Giydirme' },
-      { href: '/urunlerimiz/cam-folyo-giydirme', label: 'Cam Folyo Giydirme' },
-      { href: '/urunlerimiz/folyo-harf-kesim', label: 'Folyo Harf Kesim' },
-      { href: '/urunlerimiz/kamyon-tir-folyo', label: 'Kamyon/Tır Giydirme' },
+      { href: '/urunlerimiz/komple-arac-kaplama/', label: 'Komple Araç Kaplama' },
+      { href: '/urunlerimiz/kismi-arac-kaplama/', label: 'Kısmi Araç Kaplama' },
+      { href: '/urunlerimiz/cephe-giydirme/', label: 'Cephe Folyo Giydirme' },
+      { href: '/urunlerimiz/cam-folyo-giydirme/', label: 'Cam Folyo Giydirme' },
+      { href: '/urunlerimiz/folyo-harf-kesim/', label: 'Folyo Harf Kesim' },
+      { href: '/urunlerimiz/kamyon-tir-folyo/', label: 'Kamyon/Tır Giydirme' },
     ]
   },
   {
     category: 'Baskı & Display',
     items: [
-      { href: '/urunlerimiz/bez-branda-baski', label: 'Branda Baskı' },
-      { href: '/urunlerimiz/mesh-baski', label: 'Mesh Branda Baskı' },
-      { href: '/urunlerimiz/pankart-branda', label: 'Pankart Branda Baskı' },
-      { href: '/urunlerimiz/lightbox-pano', label: 'Lightbox Pano' },
-      { href: '/urunlerimiz/rollup-banner', label: 'Roll-Up Banner' },
-      { href: '/hizmetlerimiz/dijital-baski', label: 'Dijital Baskı Ürünleri' },
+      { href: '/urunlerimiz/bez-branda-baski/', label: 'Branda Baskı' },
+      { href: '/urunlerimiz/mesh-baski/', label: 'Mesh Branda Baskı' },
+      { href: '/urunlerimiz/pankart-branda/', label: 'Pankart Branda Baskı' },
+      { href: '/urunlerimiz/lightbox-pano/', label: 'Lightbox Pano' },
+      { href: '/urunlerimiz/rollup-banner/', label: 'Roll-Up Banner' },
+      { href: '/hizmetlerimiz/dijital-baski/', label: 'Dijital Baskı Ürünleri' },
     ]
   },
 ];
 
 const navLinks = [
-  { href: '/projelerimiz', label: 'Projelerimiz' },
-  { href: '/hakkimizda', label: 'Hakkımızda' },
-  { href: '/iletisim', label: 'İletişim' },
+  { href: '/projelerimiz/', label: 'Projelerimiz' },
+  { href: '/hakkimizda/', label: 'Hakkımızda' },
+  { href: '/iletisim/', label: 'İletişim' },
 ];
 
 const currentPath = Astro.url.pathname;
@@ -123,7 +123,7 @@ const currentPath = Astro.url.pathname;
                   ))}
                 </div>
                 <div class="mt-4 pt-4 border-t border-koyu-100">
-                  <a href="/hizmetlerimiz" class="text-sm text-eymen-600 font-semibold hover:text-eymen-700 transition-colors">
+                  <a href="/hizmetlerimiz/" class="text-sm text-eymen-600 font-semibold hover:text-eymen-700 transition-colors">
                     Tüm Hizmetleri Görüntüle →
                   </a>
                 </div>
@@ -167,7 +167,7 @@ const currentPath = Astro.url.pathname;
 
           <!-- Kurumsal Teklif CTA Desktop -->
           <a
-            href="/teklif-al"
+            href="/teklif-al/"
             class="hidden lg:inline-flex items-center gap-2 bg-eymen-500 hover:bg-eymen-600 text-white px-6 py-3 rounded-lg text-sm font-bold transition-all hover:shadow-lg hover:shadow-eymen-500/20"
           >
             <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
@@ -240,7 +240,7 @@ const currentPath = Astro.url.pathname;
           </a>
         ))}
 
-        <a href="/teklif-al" class="block w-full text-center bg-eymen-500 hover:bg-eymen-600 text-white px-4 py-3 rounded-lg text-sm font-bold mt-3">
+        <a href="/teklif-al/" class="block w-full text-center bg-eymen-500 hover:bg-eymen-600 text-white px-4 py-3 rounded-lg text-sm font-bold mt-3">
           Kurumsal Teklif Al
         </a>
 
