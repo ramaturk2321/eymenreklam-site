@@ -1,5 +1,30 @@
 {
   "trailingSlash": true,
+  "rewrites": [
+    {
+      "source": "/sunum",
+      "destination": "/eymen-reklam-sunumu.pdf"
+    },
+    {
+      "source": "/sunum/",
+      "destination": "/eymen-reklam-sunumu.pdf"
+    }
+  ],
+  "headers": [
+    {
+      "source": "/eymen-reklam-sunumu.pdf",
+      "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex"
+        },
+        {
+          "key": "Content-Disposition",
+          "value": "inline; filename=\"Eymen-Reklam-Sunum.pdf\""
+        }
+      ]
+    }
+  ],
   "redirects": [
     {
       "source": "/projelerimiz/hakmar-ikram-araci/",
