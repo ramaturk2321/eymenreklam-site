@@ -1,6 +1,7 @@
 ---
 interface Props {
   title: string;
+  seoTitle?: string;
   description: string;
   heroDesc: string;
   heroImage?: string;
@@ -21,7 +22,7 @@ interface Props {
 import BaseLayout from '../layouts/BaseLayout.astro';
 import { company, contact, getWhatsAppUrl, whatsappMessages } from '../lib/site-data';
 
-const { title, description, heroDesc, heroImage, facility, features, products, process, sectors, faq } = Astro.props;
+const { title, seoTitle, description, heroDesc, heroImage, facility, features, products, process, sectors, faq } = Astro.props;
 
 // FAQ Schema
 const faqSchema = faq.length > 0 ? {
@@ -46,7 +47,7 @@ const breadcrumbSchema = {
 };
 ---
 
-<BaseLayout title={title} description={description}>
+<BaseLayout title={seoTitle ?? title} description={description}>
 
   <!-- Schema.org: FAQ + Breadcrumb -->
   {faqSchema && <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />}

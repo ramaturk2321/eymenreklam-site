@@ -74,6 +74,7 @@ const hizmetler = defineCollection({
   loader: glob({ pattern: '**/*.json', base: './src/content/hizmetler' }),
   schema: z.object({
     title: z.string(),
+    seoTitle: z.string().optional(),
     description: z.string(),
     heroDesc: z.string(),
     heroImage: z.string().optional(),
