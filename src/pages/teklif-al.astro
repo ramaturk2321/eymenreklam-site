@@ -161,6 +161,7 @@ const hizmetler = [
                 });
                 const data = await res.json();
                 if (data.success) {
+                  if (window.trackEvent) window.trackEvent('quote_submit', { form: 'teklif-al' });
                   teklifForm.querySelectorAll('input:not([type=hidden]), textarea, select').forEach(el => {
                     if (el.type === 'checkbox') el.checked = false;
                     else el.value = '';

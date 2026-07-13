@@ -189,6 +189,7 @@ import { contact, getWhatsAppUrl } from '../lib/site-data';
                 });
                 const data = await res.json();
                 if (data.success) {
+                  if (window.trackEvent) window.trackEvent('contact_submit', { form: 'iletisim' });
                   form.querySelectorAll('input:not([type=hidden]):not([type=checkbox]), textarea, select').forEach(el => el.value = '');
                   successDiv.classList.remove('hidden');
                   successDiv.scrollIntoView({ behavior: 'smooth', block: 'center' });
