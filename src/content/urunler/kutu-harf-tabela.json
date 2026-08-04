@@ -70,9 +70,9 @@
     { "q": "Hangi illere montaj yapıyorsunuz?", "a": "İstanbul ve çevre illerde (Kocaeli, Sakarya, Tekirdağ, Edirne, Bursa) montaj hizmeti veriyoruz. Diğer iller için kargo ile gönderim yapıyoruz." }
   ],
   "relatedProducts": [
-    { "img": "/images/proje-totem.webp", "title": "Totem Tabela", "href": "/urunlerimiz/totem-tabela", "category": "Tabela" },
-    { "img": "/images/proje-totem2.webp", "title": "Çatı Tabelası", "href": "/urunlerimiz/cati-tabelasi", "category": "Tabela" },
-    { "img": "/images/tabela-imalat.webp", "title": "Neon-Led Tabela", "href": "/urunlerimiz/neon-led-tabela", "category": "Tabela" },
-    { "img": "/images/proje-magaza.png", "title": "Işıklı Blok Tabela", "href": "/urunlerimiz/isikli-blok-tabela", "category": "Tabela" }
+    { "img": "/images/urunler/totem-1.webp", "title": "Totem Tabela", "href": "/urunlerimiz/totem-tabela", "category": "Tabela" },
+    { "img": "/images/urunler/cati-tabela-1.webp", "title": "Çatı Tabelası", "href": "/urunlerimiz/cati-tabelasi", "category": "Tabela" },
+    { "img": "/images/urunler/neon-led-1.webp", "title": "Neon LED Tabela", "href": "/urunlerimiz/neon-led-tabela", "category": "Tabela" },
+    { "img": "/images/urunler/isikli-blok-1.webp", "title": "Işıklı Blok Tabela", "href": "/urunlerimiz/isikli-blok-tabela", "category": "Tabela" }
   ]
 }
