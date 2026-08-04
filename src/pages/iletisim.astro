@@ -114,12 +114,12 @@ import { contact, getWhatsAppUrl } from '../lib/site-data';
             <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
               <div>
                 <label for="name" class="block text-sm font-medium text-koyu-700 mb-1.5">Ad Soyad</label>
-                <input type="text" id="name" name="name" required
+                <input type="text" id="name" name="name" required autocomplete="name"
                   class="w-full px-4 py-3 border border-koyu-200 rounded-xl text-sm focus:ring-2 focus:ring-eymen-500 focus:border-eymen-500 outline-none transition-colors" />
               </div>
               <div>
                 <label for="company" class="block text-sm font-medium text-koyu-700 mb-1.5">Firma Adı</label>
-                <input type="text" id="company" name="company"
+                <input type="text" id="company" name="company" autocomplete="organization"
                   class="w-full px-4 py-3 border border-koyu-200 rounded-xl text-sm focus:ring-2 focus:ring-eymen-500 focus:border-eymen-500 outline-none transition-colors" />
               </div>
             </div>
@@ -127,12 +127,12 @@ import { contact, getWhatsAppUrl } from '../lib/site-data';
             <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
               <div>
                 <label for="phone" class="block text-sm font-medium text-koyu-700 mb-1.5">Telefon</label>
-                <input type="tel" id="phone" name="phone" required
+                <input type="tel" id="phone" name="phone" required autocomplete="tel" inputmode="tel"
                   class="w-full px-4 py-3 border border-koyu-200 rounded-xl text-sm focus:ring-2 focus:ring-eymen-500 focus:border-eymen-500 outline-none transition-colors" />
               </div>
               <div>
                 <label for="email" class="block text-sm font-medium text-koyu-700 mb-1.5">E-posta</label>
-                <input type="email" id="email" name="email"
+                <input type="email" id="email" name="email" autocomplete="email" inputmode="email"
                   class="w-full px-4 py-3 border border-koyu-200 rounded-xl text-sm focus:ring-2 focus:ring-eymen-500 focus:border-eymen-500 outline-none transition-colors" />
               </div>
             </div>
@@ -159,6 +159,16 @@ import { contact, getWhatsAppUrl } from '../lib/site-data';
                 class="w-full px-4 py-3 border border-koyu-200 rounded-xl text-sm focus:ring-2 focus:ring-eymen-500 focus:border-eymen-500 outline-none transition-colors resize-none"
                 placeholder="Projeniz hakkında kısa bilgi veriniz (boyut, malzeme, adet vb.)"></textarea>
             </div>
+
+            <label class="flex items-start gap-3 cursor-pointer">
+              <input type="checkbox" name="kvkk_onay" value="Okudum, onaylıyorum" required
+                class="mt-1 rounded border-koyu-300 text-eymen-500 focus:ring-eymen-500 flex-shrink-0" />
+              <span class="text-sm text-koyu-600 leading-relaxed">
+                <a href="/gizlilik/" target="_blank" rel="noopener" class="text-eymen-600 font-medium hover:underline">KVKK Aydınlatma Metnini</a>
+                okudum; kişisel verilerimin teklif hazırlanması amacıyla işlenmesine ve bu kapsamda yurt dışındaki
+                hizmet sağlayıcılara aktarılmasına açık rıza veriyorum.
+              </span>
+            </label>
 
             <button
               type="submit"

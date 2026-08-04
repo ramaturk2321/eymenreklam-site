@@ -1,0 +1,129 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { contact } from '../lib/site-data';
+
+const guncelleme = '4 Ağustos 2026';
+
+const cerezler = [
+  {
+    ad: '_ga, _ga_*',
+    saglayici: 'Google Analytics',
+    tur: 'Analitik',
+    sure: '14 ay',
+    amac: 'Ziyaretçileri birbirinden ayırt eder; hangi sayfaların ne kadar görüntülendiğini ölçer.',
+  },
+  {
+    ad: 'Vercel Analytics',
+    saglayici: 'Vercel Inc.',
+    tur: 'Analitik',
+    sure: 'Oturum',
+    amac: 'Sayfa görüntüleme ve site performansını çerezsiz, anonim biçimde ölçer.',
+  },
+];
+---
+
+<BaseLayout
+  title="Çerez Politikası"
+  description="Eymen Reklam internet sitesinde hangi çerezlerin kullanıldığını, ne amaçla toplandığını ve çerez tercihlerinizi nasıl yönetebileceğinizi açıklıyoruz."
+>
+
+  <!-- Hero -->
+  <section class="bg-koyu-900 pt-32 pb-12 md:pt-40 md:pb-16">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <p class="text-eymen-400 text-sm font-semibold tracking-wider mb-3">YASAL BİLGİLENDİRME</p>
+      <h1 class="text-3xl md:text-4xl font-extrabold text-white mb-4">Çerez Politikası</h1>
+      <p class="text-koyu-400 text-base">Son güncelleme: {guncelleme}</p>
+    </div>
+  </section>
+
+  <section class="py-16 md:py-20">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="space-y-10 text-koyu-700 leading-relaxed">
+
+        <div>
+          <h2 class="text-xl md:text-2xl font-bold text-koyu-900 mb-4 pb-2 border-b border-koyu-100">Çerez Nedir?</h2>
+          <p>
+            Çerezler, bir internet sitesini ziyaret ettiğinizde cihazınıza kaydedilen küçük metin dosyalarıdır.
+            Sitenin doğru çalışmasını sağlar ve ziyaretçilerin siteyi nasıl kullandığını anlamamıza yardımcı olur.
+          </p>
+        </div>
+
+        <div>
+          <h2 class="text-xl md:text-2xl font-bold text-koyu-900 mb-4 pb-2 border-b border-koyu-100">Bu Sitede Hangi Çerezler Kullanılıyor?</h2>
+          <p class="mb-4">
+            Sitemizde <strong>reklam veya profilleme amaçlı çerez kullanılmamaktadır</strong>. Kullanılan çerezler
+            yalnızca site trafiğini ölçmeye yöneliktir:
+          </p>
+          <div class="overflow-x-auto">
+            <table class="w-full text-sm border border-koyu-200 rounded-xl overflow-hidden">
+              <thead class="bg-koyu-50">
+                <tr>
+                  <th class="text-left px-4 py-3 font-semibold text-koyu-900 border-b border-koyu-200">Çerez</th>
+                  <th class="text-left px-4 py-3 font-semibold text-koyu-900 border-b border-koyu-200">Sağlayıcı</th>
+                  <th class="text-left px-4 py-3 font-semibold text-koyu-900 border-b border-koyu-200">Tür</th>
+                  <th class="text-left px-4 py-3 font-semibold text-koyu-900 border-b border-koyu-200">Süre</th>
+                  <th class="text-left px-4 py-3 font-semibold text-koyu-900 border-b border-koyu-200">Amaç</th>
+                </tr>
+              </thead>
+              <tbody>
+                {cerezler.map(c => (
+                  <tr class="border-b border-koyu-100 last:border-0">
+                    <td class="px-4 py-3 font-medium text-koyu-900 whitespace-nowrap">{c.ad}</td>
+                    <td class="px-4 py-3 whitespace-nowrap">{c.saglayici}</td>
+                    <td class="px-4 py-3 whitespace-nowrap">{c.tur}</td>
+                    <td class="px-4 py-3 whitespace-nowrap">{c.sure}</td>
+                    <td class="px-4 py-3">{c.amac}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <div>
+          <h2 class="text-xl md:text-2xl font-bold text-koyu-900 mb-4 pb-2 border-b border-koyu-100">Çerezleri Nasıl Yönetebilirsiniz?</h2>
+          <p class="mb-4">
+            Analitik çerezler sitenin çalışması için zorunlu değildir. Tarayıcınızın ayarlarından çerezleri
+            engelleyebilir veya silebilirsiniz — bu durumda sitemiz normal şekilde çalışmaya devam eder.
+          </p>
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 text-sm">
+            <a href="https://support.google.com/chrome/answer/95647?hl=tr" target="_blank" rel="noopener noreferrer" class="flex items-center justify-between bg-koyu-50 hover:bg-koyu-100 rounded-xl px-4 py-3 transition-colors">
+              <span class="font-medium text-koyu-800">Google Chrome</span>
+              <span class="text-eymen-600">→</span>
+            </a>
+            <a href="https://support.apple.com/tr-tr/guide/safari/sfri11471/mac" target="_blank" rel="noopener noreferrer" class="flex items-center justify-between bg-koyu-50 hover:bg-koyu-100 rounded-xl px-4 py-3 transition-colors">
+              <span class="font-medium text-koyu-800">Safari</span>
+              <span class="text-eymen-600">→</span>
+            </a>
+            <a href="https://support.mozilla.org/tr/kb/cerezleri-silme-web-sitelerinin-bilgilerini-kaldirma" target="_blank" rel="noopener noreferrer" class="flex items-center justify-between bg-koyu-50 hover:bg-koyu-100 rounded-xl px-4 py-3 transition-colors">
+              <span class="font-medium text-koyu-800">Mozilla Firefox</span>
+              <span class="text-eymen-600">→</span>
+            </a>
+            <a href="https://support.microsoft.com/tr-tr/microsoft-edge/microsoft-edge-de-tanımlama-bilgilerini-silme-63947406-40ac-c3b8-57b9-2a946a29ae09" target="_blank" rel="noopener noreferrer" class="flex items-center justify-between bg-koyu-50 hover:bg-koyu-100 rounded-xl px-4 py-3 transition-colors">
+              <span class="font-medium text-koyu-800">Microsoft Edge</span>
+              <span class="text-eymen-600">→</span>
+            </a>
+          </div>
+          <p class="mt-4 text-sm">
+            Google Analytics ölçümünü tüm sitelerde kapatmak için Google'ın
+            <a href="https://tools.google.com/dlpage/gaoptout" target="_blank" rel="noopener noreferrer" class="text-eymen-600 font-medium hover:underline">devre dışı bırakma eklentisini</a>
+            kullanabilirsiniz.
+          </p>
+        </div>
+
+        <div>
+          <h2 class="text-xl md:text-2xl font-bold text-koyu-900 mb-4 pb-2 border-b border-koyu-100">Kişisel Verileriniz</h2>
+          <p class="text-sm md:text-base">
+            Çerezler yoluyla toplanan verilerin işlenmesine ilişkin ayrıntılı bilgi için
+            <a href="/gizlilik/" class="text-eymen-600 font-medium hover:underline">Gizlilik Politikası ve KVKK Aydınlatma Metnimizi</a>
+            inceleyebilir, sorularınız için
+            <a href={contact.emailHref} class="text-eymen-600 font-medium hover:underline">{contact.email}</a>
+            adresinden bize ulaşabilirsiniz.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+</BaseLayout>

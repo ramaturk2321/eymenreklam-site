@@ -5,7 +5,7 @@ import { getCollection } from 'astro:content';
 const hizmetler = (await getCollection('hizmetler'))
   .sort((a, b) => a.data.order - b.data.order)
   .map(h => ({
-    href: `/hizmetlerimiz/${h.id}`,
+    href: `/hizmetlerimiz/${h.id}/`,
     label: h.data.title,
     icon: h.data.listIcon,
   }));

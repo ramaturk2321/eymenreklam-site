@@ -78,9 +78,16 @@ const year = new Date().getFullYear();
   <!-- Copyright -->
   <div class="border-t border-koyu-800">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-5">
-      <p class="text-center text-xs text-koyu-400">
-        &copy; {year} {company.fullName} — {company.experience} Yıllık Üretim Tecrübesi
-      </p>
+      <div class="flex flex-col sm:flex-row items-center justify-center gap-2 sm:gap-4 text-xs text-koyu-400">
+        <p class="text-center">
+          &copy; {year} {company.fullName} — {company.experience} Yıllık Üretim Tecrübesi
+        </p>
+        <span class="hidden sm:inline text-koyu-700">|</span>
+        <div class="flex items-center gap-4">
+          <a href="/gizlilik/" class="hover:text-eymen-400 transition-colors">Gizlilik &amp; KVKK</a>
+          <a href="/cerez-politikasi/" class="hover:text-eymen-400 transition-colors">Çerez Politikası</a>
+        </div>
+      </div>
     </div>
   </div>
 </footer>

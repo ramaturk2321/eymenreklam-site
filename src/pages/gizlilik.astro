@@ -1,0 +1,237 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { company, contact } from '../lib/site-data';
+
+const guncelleme = '4 Ağustos 2026';
+---
+
+<BaseLayout
+  title="Gizlilik Politikası ve KVKK Aydınlatma Metni"
+  description="Eymen Reklam olarak kişisel verilerinizi 6698 sayılı KVKK kapsamında nasıl işlediğimizi, kimlerle paylaştığımızı ve haklarınızı bu metinde açıklıyoruz."
+>
+
+  <!-- Hero -->
+  <section class="bg-koyu-900 pt-32 pb-12 md:pt-40 md:pb-16">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <p class="text-eymen-400 text-sm font-semibold tracking-wider mb-3">YASAL BİLGİLENDİRME</p>
+      <h1 class="text-3xl md:text-4xl font-extrabold text-white mb-4">Gizlilik Politikası ve KVKK Aydınlatma Metni</h1>
+      <p class="text-koyu-400 text-base">Son güncelleme: {guncelleme}</p>
+    </div>
+  </section>
+
+  <!-- İçerik -->
+  <section class="py-16 md:py-20">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="space-y-10 text-koyu-700 leading-relaxed">
+
+        <div>
+          <p>
+            6698 sayılı Kişisel Verilerin Korunması Kanunu ("KVKK") uyarınca, veri sorumlusu sıfatıyla
+            <strong>{company.fullName}</strong> ("Eymen Reklam", "Şirket") tarafından kişisel verilerinizin hangi
+            amaçlarla işlendiği, kimlere aktarılabileceği ve bu konudaki haklarınız aşağıda açıklanmıştır.
+          </p>
+        </div>
+
+        <!-- 1 -->
+        <div>
+          <h2 class="text-xl md:text-2xl font-bold text-koyu-900 mb-4 pb-2 border-b border-koyu-100">1. Veri Sorumlusu</h2>
+          <ul class="space-y-2 text-sm md:text-base">
+            <li><strong>Ticaret unvanı:</strong> {company.fullName}</li>
+            <li><strong>Adres:</strong> {contact.address}</li>
+            <li><strong>Telefon:</strong> <a href={contact.phoneHref} class="text-eymen-600 hover:underline">{contact.phone}</a></li>
+            <li><strong>E-posta:</strong> <a href={contact.emailHref} class="text-eymen-600 hover:underline">{contact.email}</a></li>
+            <li><strong>İnternet sitesi:</strong> {company.siteUrl}</li>
+          </ul>
+        </div>
+
+        <!-- 2 -->
+        <div>
+          <h2 class="text-xl md:text-2xl font-bold text-koyu-900 mb-4 pb-2 border-b border-koyu-100">2. İşlenen Kişisel Veriler</h2>
+          <p class="mb-4">Sitemiz üzerinden yalnızca sizin bize ilettiğiniz veriler işlenir:</p>
+          <div class="space-y-4">
+            <div class="bg-koyu-50 rounded-xl p-5">
+              <h3 class="font-semibold text-koyu-900 mb-2">a) Teklif ve iletişim formları aracılığıyla</h3>
+              <p class="text-sm">
+                Ad-soyad, firma adı, unvan/pozisyon, e-posta adresi, telefon numarası, proje lokasyonu ve
+                tarafınızca serbest metin alanına girilen proje bilgileri (kimlik ve iletişim verisi).
+              </p>
+            </div>
+            <div class="bg-koyu-50 rounded-xl p-5">
+              <h3 class="font-semibold text-koyu-900 mb-2">b) Site kullanımı sırasında otomatik olarak</h3>
+              <p class="text-sm">
+                Ziyaret edilen sayfalar, ziyaret süresi, yönlendiren kaynak, cihaz ve tarayıcı bilgisi ile
+                anonimleştirilmiş IP verisi (işlem güvenliği ve site trafiği verisi). Bu veriler Google Analytics
+                ve Vercel Analytics çerezleri/teknolojileri ile toplanır. Ayrıntı için
+                <a href="/cerez-politikasi/" class="text-eymen-600 font-medium hover:underline">Çerez Politikamıza</a> bakabilirsiniz.
+              </p>
+            </div>
+            <div class="bg-koyu-50 rounded-xl p-5">
+              <h3 class="font-semibold text-koyu-900 mb-2">c) Telefon ve WhatsApp üzerinden</h3>
+              <p class="text-sm">
+                Bizimle telefon veya WhatsApp yoluyla iletişime geçmeniz halinde ilettiğiniz iletişim bilgileri ve
+                talep içeriği.
+              </p>
+            </div>
+          </div>
+          <p class="mt-4 text-sm bg-eymen-50 border border-eymen-200 rounded-xl p-4">
+            <strong>Önemli:</strong> Sitemiz üzerinden özel nitelikli kişisel veri (sağlık, din, biyometrik veri vb.)
+            talep edilmez. Lütfen serbest metin alanlarına bu tür bilgiler girmeyiniz.
+          </p>
+        </div>
+
+        <!-- 3 -->
+        <div>
+          <h2 class="text-xl md:text-2xl font-bold text-koyu-900 mb-4 pb-2 border-b border-koyu-100">3. İşleme Amaçları</h2>
+          <ul class="space-y-2 list-disc list-inside text-sm md:text-base">
+            <li>Talep ettiğiniz fiyat teklifinin hazırlanması ve tarafınıza iletilmesi</li>
+            <li>Keşif, ölçü alma ve üretim süreçlerinin planlanması</li>
+            <li>Soru, talep ve şikâyetlerinizin yanıtlanması</li>
+            <li>Sözleşme kurulması halinde sipariş, üretim, sevkiyat ve montaj süreçlerinin yürütülmesi</li>
+            <li>Yasal saklama ve faturalandırma yükümlülüklerimizin yerine getirilmesi</li>
+            <li>İnternet sitemizin performansının ölçülmesi ve iyileştirilmesi</li>
+          </ul>
+        </div>
+
+        <!-- 4 -->
+        <div>
+          <h2 class="text-xl md:text-2xl font-bold text-koyu-900 mb-4 pb-2 border-b border-koyu-100">4. Hukuki Sebep</h2>
+          <p class="mb-3">Kişisel verileriniz KVKK m.5 kapsamında aşağıdaki hukuki sebeplere dayanılarak işlenir:</p>
+          <ul class="space-y-2 list-disc list-inside text-sm md:text-base">
+            <li><strong>m.5/2-c:</strong> Bir sözleşmenin kurulması veya ifasıyla doğrudan doğruya ilgili olması (teklif hazırlama, sipariş süreci)</li>
+            <li><strong>m.5/2-ç:</strong> Şirketimizin hukuki yükümlülüğünü yerine getirebilmesi (vergi, ticaret mevzuatı)</li>
+            <li><strong>m.5/2-f:</strong> Temel hak ve özgürlüklerinize zarar vermemek kaydıyla meşru menfaatlerimiz (site güvenliği, hizmet iyileştirme)</li>
+            <li><strong>m.5/1:</strong> Zorunlu olmayan çerezler ve pazarlama amaçlı iletişim için açık rızanız</li>
+          </ul>
+        </div>
+
+        <!-- 5 -->
+        <div>
+          <h2 class="text-xl md:text-2xl font-bold text-koyu-900 mb-4 pb-2 border-b border-koyu-100">5. Aktarım ve Yurt Dışına Aktarım</h2>
+          <p class="mb-4">
+            Kişisel verileriniz pazarlama amacıyla üçüncü kişilere <strong>satılmaz ve kiralanmaz</strong>.
+            Verileriniz yalnızca hizmetin yürütülmesi için gerekli olduğu ölçüde aşağıdaki taraflarla paylaşılır:
+          </p>
+          <div class="overflow-x-auto">
+            <table class="w-full text-sm border border-koyu-200 rounded-xl overflow-hidden">
+              <thead class="bg-koyu-50">
+                <tr>
+                  <th class="text-left px-4 py-3 font-semibold text-koyu-900 border-b border-koyu-200">Alıcı</th>
+                  <th class="text-left px-4 py-3 font-semibold text-koyu-900 border-b border-koyu-200">Amaç</th>
+                  <th class="text-left px-4 py-3 font-semibold text-koyu-900 border-b border-koyu-200">Konum</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="border-b border-koyu-100">
+                  <td class="px-4 py-3">Web3Forms</td>
+                  <td class="px-4 py-3">Form gönderimlerinin e-posta olarak iletilmesi</td>
+                  <td class="px-4 py-3">Yurt dışı</td>
+                </tr>
+                <tr class="border-b border-koyu-100">
+                  <td class="px-4 py-3">Vercel Inc.</td>
+                  <td class="px-4 py-3">Site barındırma ve trafik analizi</td>
+                  <td class="px-4 py-3">Yurt dışı</td>
+                </tr>
+                <tr class="border-b border-koyu-100">
+                  <td class="px-4 py-3">Google (Analytics)</td>
+                  <td class="px-4 py-3">Site kullanım istatistikleri</td>
+                  <td class="px-4 py-3">Yurt dışı</td>
+                </tr>
+                <tr>
+                  <td class="px-4 py-3">Yetkili kamu kurumları</td>
+                  <td class="px-4 py-3">Mevzuattan doğan bilgi ve belge talepleri</td>
+                  <td class="px-4 py-3">Türkiye</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <p class="mt-4 text-sm">
+            Formu göndererek verilerinizin, teklif talebinizin tarafımıza ulaştırılması amacıyla yukarıda belirtilen
+            yurt dışı hizmet sağlayıcılara aktarılmasına KVKK m.9 kapsamında açık rıza vermiş olursunuz. Dilerseniz
+            form yerine <a href={contact.phoneHref} class="text-eymen-600 font-medium hover:underline">{contact.phone}</a>
+            numarasından telefonla veya
+            <a href={contact.emailHref} class="text-eymen-600 font-medium hover:underline">{contact.email}</a>
+            adresinden e-posta ile bize doğrudan ulaşabilirsiniz.
+          </p>
+        </div>
+
+        <!-- 6 -->
+        <div>
+          <h2 class="text-xl md:text-2xl font-bold text-koyu-900 mb-4 pb-2 border-b border-koyu-100">6. Toplama Yöntemi ve Saklama Süresi</h2>
+          <p class="mb-3">
+            Kişisel verileriniz internet sitemizdeki formlar, e-posta, telefon ve WhatsApp kanalları üzerinden
+            elektronik ortamda toplanır.
+          </p>
+          <ul class="space-y-2 list-disc list-inside text-sm md:text-base">
+            <li>Sonuçlanmayan teklif talepleri: son iletişimden itibaren <strong>2 yıl</strong></li>
+            <li>Sözleşmeye dönüşen kayıtlar: ticari defter ve belge saklama yükümlülüğü gereği <strong>10 yıl</strong></li>
+            <li>Site analitiği verileri: <strong>14 ay</strong></li>
+          </ul>
+          <p class="mt-3 text-sm">
+            Süre sonunda verileriniz silinir, yok edilir veya anonim hale getirilir.
+          </p>
+        </div>
+
+        <!-- 7 -->
+        <div>
+          <h2 class="text-xl md:text-2xl font-bold text-koyu-900 mb-4 pb-2 border-b border-koyu-100">7. KVKK m.11 Kapsamındaki Haklarınız</h2>
+          <p class="mb-3">Veri sorumlusuna başvurarak aşağıdaki haklarınızı kullanabilirsiniz:</p>
+          <ul class="space-y-2 list-disc list-inside text-sm md:text-base">
+            <li>Kişisel verilerinizin işlenip işlenmediğini öğrenme</li>
+            <li>İşlenmişse buna ilişkin bilgi talep etme</li>
+            <li>İşlenme amacını ve amaca uygun kullanılıp kullanılmadığını öğrenme</li>
+            <li>Yurt içinde veya yurt dışında verilerin aktarıldığı üçüncü kişileri bilme</li>
+            <li>Eksik veya yanlış işlenmişse düzeltilmesini isteme</li>
+            <li>KVKK m.7'de öngörülen şartlar çerçevesinde silinmesini veya yok edilmesini isteme</li>
+            <li>Düzeltme, silme ve yok etme işlemlerinin verilerin aktarıldığı üçüncü kişilere bildirilmesini isteme</li>
+            <li>Münhasıran otomatik sistemlerle analiz edilmesi suretiyle aleyhinize bir sonuç doğmasına itiraz etme</li>
+            <li>Kanuna aykırı işleme sebebiyle zarara uğramanız halinde zararın giderilmesini talep etme</li>
+          </ul>
+        </div>
+
+        <!-- 8 -->
+        <div>
+          <h2 class="text-xl md:text-2xl font-bold text-koyu-900 mb-4 pb-2 border-b border-koyu-100">8. Başvuru Yöntemi</h2>
+          <p class="mb-4">
+            Taleplerinizi, kimliğinizi tespit edici bilgi ve belgelerle birlikte aşağıdaki yollarla iletebilirsiniz.
+            Başvurularınız en geç <strong>30 gün</strong> içinde ücretsiz olarak sonuçlandırılır.
+          </p>
+          <div class="bg-koyu-50 rounded-xl p-5 space-y-2 text-sm">
+            <p><strong>Yazılı başvuru:</strong> {contact.address}</p>
+            <p><strong>E-posta:</strong> <a href={contact.emailHref} class="text-eymen-600 hover:underline">{contact.email}</a></p>
+          </div>
+        </div>
+
+        <!-- 9 -->
+        <div>
+          <h2 class="text-xl md:text-2xl font-bold text-koyu-900 mb-4 pb-2 border-b border-koyu-100">9. Veri Güvenliği</h2>
+          <p class="text-sm md:text-base">
+            Kişisel verilerinizin hukuka aykırı olarak işlenmesini ve erişilmesini önlemek amacıyla teknik ve idari
+            tedbirler alınmaktadır. İnternet sitemiz uçtan uca HTTPS/TLS şifrelemesi ile sunulur, form iletimleri
+            şifreli bağlantı üzerinden gerçekleştirilir ve verilere yalnızca yetkili personel erişebilir.
+          </p>
+        </div>
+
+        <!-- 10 -->
+        <div>
+          <h2 class="text-xl md:text-2xl font-bold text-koyu-900 mb-4 pb-2 border-b border-koyu-100">10. Değişiklikler</h2>
+          <p class="text-sm md:text-base">
+            Bu metin, mevzuattaki değişiklikler veya hizmetlerimizdeki güncellemeler doğrultusunda revize edilebilir.
+            Güncel sürüm her zaman bu sayfada yayımlanır.
+          </p>
+        </div>
+
+        <!-- CTA -->
+        <div class="bg-koyu-900 rounded-2xl p-8 text-center">
+          <h2 class="text-xl font-bold text-white mb-3">Sorunuz mu var?</h2>
+          <p class="text-koyu-400 text-sm mb-6">Kişisel verilerinizle ilgili her türlü talebiniz için bize ulaşın.</p>
+          <a href="/iletisim/" class="inline-flex items-center justify-center gap-2 bg-eymen-500 hover:bg-eymen-600 text-white px-8 py-3.5 rounded-xl text-base font-bold transition-all">
+            İletişime Geçin
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+</BaseLayout>
