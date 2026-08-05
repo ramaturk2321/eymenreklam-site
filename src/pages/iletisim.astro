@@ -160,16 +160,6 @@ import { contact, getWhatsAppUrl } from '../lib/site-data';
                 placeholder="Projeniz hakkında kısa bilgi veriniz (boyut, malzeme, adet vb.)"></textarea>
             </div>
 
-            <label class="flex items-start gap-3 cursor-pointer">
-              <input type="checkbox" name="kvkk_onay" value="Okudum, onaylıyorum" required
-                class="mt-1 rounded border-koyu-300 text-eymen-500 focus:ring-eymen-500 flex-shrink-0" />
-              <span class="text-sm text-koyu-600 leading-relaxed">
-                <a href="/gizlilik/" target="_blank" rel="noopener" class="text-eymen-600 font-medium hover:underline">KVKK Aydınlatma Metnini</a>
-                okudum; kişisel verilerimin teklif hazırlanması amacıyla işlenmesine ve bu kapsamda yurt dışındaki
-                hizmet sağlayıcılara aktarılmasına açık rıza veriyorum.
-              </span>
-            </label>
-
             <button
               type="submit"
               id="form-submit-btn"
@@ -177,6 +167,11 @@ import { contact, getWhatsAppUrl } from '../lib/site-data';
             >
               Teklif Talebi Gönder
             </button>
+
+            <p class="text-xs text-koyu-500 text-center">
+              Bilgileriniz gizli tutulur, yalnızca teklif hazırlamak için kullanılır ve üçüncü kişilerle paylaşılmaz.
+              <a href="/gizlilik/" class="text-koyu-500 underline decoration-koyu-300 hover:text-eymen-600">Ayrıntı</a>
+            </p>
           </form>
 
           <script>
