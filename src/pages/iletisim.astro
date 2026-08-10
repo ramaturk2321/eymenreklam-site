@@ -175,10 +175,14 @@ import { contact, getWhatsAppUrl } from '../lib/site-data';
           </form>
 
           <script>
-            const form = document.getElementById('iletisim-form');
-            const btn = document.getElementById('form-submit-btn');
+            import { formuKoru } from '../lib/form-guard';
+
+            const form = document.getElementById('iletisim-form') as HTMLFormElement;
+            const btn = document.getElementById('form-submit-btn') as HTMLButtonElement;
             const successDiv = document.getElementById('form-success');
             const errorDiv = document.getElementById('form-error');
+
+            const guard = formuKoru(form);
 
             form.addEventListener('submit', async (e) => {
               e.preventDefault();
@@ -187,10 +191,22 @@ import { contact, getWhatsAppUrl } from '../lib/site-data';
               successDiv.classList.add('hidden');
               errorDiv.classList.add('hidden');
 
+              const kontrol = guard.degerlendir();
+
+              // Bot: başarı ekranını göster ama hiçbir şey gönderme.
+              // Hata vermiyoruz ki bot taktik değiştirip tekrar denemesin.
+              if (kontrol.engelle) {
+                form.reset();
+                successDiv.classList.remove('hidden');
+                btn.disabled = false;
+                btn.textContent = 'Teklif Talebi Gönder';
+                return;
+              }
+
               try {
                 const res = await fetch('https://api.web3forms.com/submit', {
                   method: 'POST',
-                  body: new FormData(form)
+                  body: guard.veriHazirla(kontrol)
                 });
                 const data = await res.json();
                 if (data.success) {

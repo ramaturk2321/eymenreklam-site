@@ -144,10 +144,14 @@ const hizmetler = [
           </form>
 
           <script>
-            const teklifForm = document.getElementById('teklif-form');
-            const teklifBtn = document.getElementById('teklif-submit-btn');
+            import { formuKoru } from '../lib/form-guard';
+
+            const teklifForm = document.getElementById('teklif-form') as HTMLFormElement;
+            const teklifBtn = document.getElementById('teklif-submit-btn') as HTMLButtonElement;
             const teklifSuccess = document.getElementById('teklif-success');
             const teklifError = document.getElementById('teklif-error');
+
+            const teklifGuard = formuKoru(teklifForm);
 
             teklifForm.addEventListener('submit', async (e) => {
               e.preventDefault();
@@ -157,10 +161,22 @@ const hizmetler = [
               teklifSuccess.classList.add('hidden');
               teklifError.classList.add('hidden');
 
+              const teklifKontrol = teklifGuard.degerlendir();
+
+              // Bot: başarı ekranını göster ama hiçbir şey gönderme.
+              if (teklifKontrol.engelle) {
+                teklifForm.reset();
+                teklifSuccess.classList.remove('hidden');
+                teklifBtn.disabled = false;
+                teklifBtn.querySelector('svg')?.classList.remove('hidden');
+                teklifBtn.childNodes[0].textContent = 'Teklif Talebini Gönder ';
+                return;
+              }
+
               try {
                 const res = await fetch('https://api.web3forms.com/submit', {
                   method: 'POST',
-                  body: new FormData(teklifForm)
+                  body: teklifGuard.veriHazirla(teklifKontrol)
                 });
                 const data = await res.json();
                 if (data.success) {

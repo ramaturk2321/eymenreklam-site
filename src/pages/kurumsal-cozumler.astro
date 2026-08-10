@@ -457,24 +457,40 @@ const sektorler = ['Perakende & Market Zinciri', 'AVM & Mağazacılık', 'Franch
   </section>
 
   <script>
+    import { formuKoru } from '../lib/form-guard';
+
     const demoForm = document.getElementById('demo-form') as HTMLFormElement | null;
     const demoBtn = document.getElementById('demo-submit-btn') as HTMLButtonElement | null;
     const demoSuccess = document.getElementById('demo-success');
     const demoError = document.getElementById('demo-error');
 
+    const demoGuard = demoForm ? formuKoru(demoForm) : null;
+
     demoForm?.addEventListener('submit', async (e) => {
       e.preventDefault();
-      if (!demoBtn) return;
+      if (!demoBtn || !demoGuard) return;
       demoBtn.disabled = true;
       demoBtn.querySelector('svg')?.classList.add('hidden');
       demoBtn.childNodes[0].textContent = 'Gönderiliyor... ';
       demoSuccess?.classList.add('hidden');
       demoError?.classList.add('hidden');
 
+      const demoKontrol = demoGuard.degerlendir();
+
+      // Bot: başarı ekranını göster ama hiçbir şey gönderme.
+      if (demoKontrol.engelle) {
+        demoForm.reset();
+        demoSuccess?.classList.remove('hidden');
+        demoBtn.disabled = false;
+        demoBtn.querySelector('svg')?.classList.remove('hidden');
+        demoBtn.childNodes[0].textContent = 'Kurumsal Demo Talep Et ';
+        return;
+      }
+
       try {
         const res = await fetch('https://api.web3forms.com/submit', {
           method: 'POST',
-          body: new FormData(demoForm),
+          body: demoGuard.veriHazirla(demoKontrol),
         });
         const data = await res.json();
         if (data.success) {
