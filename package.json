@@ -8,6 +8,7 @@
   "scripts": {
     "dev": "astro dev",
     "build": "astro build",
+    "check": "astro check",
     "preview": "astro preview",
     "astro": "astro"
   },
@@ -19,7 +20,9 @@
     "tailwindcss": "^4.2.2"
   },
   "devDependencies": {
+    "@astrojs/check": "^0.9.10",
     "@tailwindcss/typography": "^0.5.20",
-    "astro-compress": "^2.4.1"
+    "astro-compress": "^2.4.1",
+    "typescript": "^5.9.3"
   }
 }
