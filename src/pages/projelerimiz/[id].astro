@@ -23,7 +23,7 @@ const allProjeler = (await getCollection('projeler'))
   .slice(0, 3);
 ---
 
-<BaseLayout title={proje.data.title} description={proje.data.description}>
+<BaseLayout title={proje.data.title} description={proje.data.description} image={proje.data.image}>
 
   <!-- Breadcrumb -->
   <nav class="bg-koyu-50 border-b border-koyu-100 py-3">

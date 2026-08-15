@@ -19,6 +19,7 @@
     "tailwindcss": "^4.2.2"
   },
   "devDependencies": {
+    "@tailwindcss/typography": "^0.5.20",
     "astro-compress": "^2.4.1"
   }
 }
