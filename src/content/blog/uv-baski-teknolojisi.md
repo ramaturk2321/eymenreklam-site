@@ -1,5 +1,6 @@
 ---
 title: "UV Baskı Teknolojisi: Yüzeylere Hayat Veren Sessiz Devrimin 7 Sırrı"
+seoTitle: "UV Baskı Teknolojisi Nasıl Çalışır?"
 description: "UV baskı teknolojisi rehberi: çalışma prensibi, uygulama alanları ve teknik detaylar. Pendik İstanbul'da UV baskı için ücretsiz teklif alın."
 excerpt: "UV baskı teknolojisinin tüm sırları: çalışma prensibi, uygulama alanları, teknik detaylar ve doğru partner seçimi."
 image: "/images/blog-uv.webp"

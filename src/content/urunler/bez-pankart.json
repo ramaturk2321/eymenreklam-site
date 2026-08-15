@@ -62,7 +62,7 @@
   ],
   "relatedProducts": [
     { "img": "/images/urunler/afis-branda-2.webp", "title": "Afiş Branda", "href": "/urunlerimiz/afis-branda", "category": "Afiş Baskı" },
-    { "img": "/images/urunler/afis-baski-1.webp", "title": "Afiş Baskı", "href": "/urunlerimiz/afis-baski", "category": "Afiş Baskı" },
+    { "img": "/images/urunler/afis-baski-1.webp", "title": "Dijital Afiş Baskı", "href": "/urunlerimiz/afis-baski", "category": "Afiş Baskı" },
     { "img": "/images/urunler/mesh-1.webp", "title": "Mesh Baskı", "href": "/urunlerimiz/mesh-baski", "category": "Bez Baskı" },
     { "img": "/images/urunler/yelken-bayrak-1.webp", "title": "Yelken Bayrak", "href": "/urunlerimiz/yelken-bayrak", "category": "Display & Stand" }
   ]

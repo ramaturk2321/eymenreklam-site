@@ -5,6 +5,7 @@ const projeler = defineCollection({
   loader: glob({ pattern: '**/*.md', base: './src/content/projeler' }),
   schema: z.object({
     title: z.string(),
+    seoTitle: z.string().optional(),
     description: z.string(),
     image: z.string(),
     images: z.array(z.string()).optional(),
@@ -18,6 +19,7 @@ const blog = defineCollection({
   loader: glob({ pattern: '**/*.md', base: './src/content/blog' }),
   schema: z.object({
     title: z.string(),
+    seoTitle: z.string().optional(),
     description: z.string(),
     excerpt: z.string(),
     image: z.string(),

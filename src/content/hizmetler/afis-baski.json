@@ -1,5 +1,6 @@
 {
   "title": "Afiş Baskı",
+  "seoTitle": "Afiş Baskı Pendik İstanbul",
   "description": "Vinil afiş, branda afiş ve bez pankart baskı. Geniş format, dış mekan dayanıklı, A0'a kadar boyutlar. İstanbul Pendik.",
   "heroDesc": "Vinil folyo, branda ve bez malzemelere afiş baskı yapıyoruz. A4'den A0 ve daha büyük boyutlara kadar profesyonel afiş üretiyoruz. Etkinlik, ticari kampanya, sosyal haber, bulvar afişleri ve reklam ilanları için hızlı, yüksek kaliteli çözümler sunuyoruz.",
   "order": 6,
@@ -16,7 +17,7 @@
     { "icon": "⚡", "title": "Hızlı Üretim", "desc": "Tasarım onayından 24-48 saatte teslim. Acil projeler için ekspres seçeneği." }
   ],
   "products": [
-    { "title": "Afiş Baskı", "desc": "A4'den A0 boyutlarına kadar vinil ve kağıt afiş. Kurumsal, reklam, etkinlik afişleri.", "image": "/images/urunler/afis-baski-1.webp", "href": "/urunlerimiz/afis-baski" },
+    { "title": "Dijital Afiş Baskı", "desc": "A4'den A0 boyutlarına kadar vinil ve kağıt afiş. Kurumsal, reklam, etkinlik afişleri.", "image": "/images/urunler/afis-baski-1.webp", "href": "/urunlerimiz/afis-baski" },
     { "title": "Afiş Branda", "desc": "Açık hava afişleri. Sokak, bulvar ve bina cephe montajı için dayanıklı branda baskı.", "image": "/images/urunler/afis-branda-2.webp", "href": "/urunlerimiz/afis-branda" },
     { "title": "Parlak Kağıt Afiş", "desc": "Parlak kuşe kağıda yüksek çözünürlüklü afiş baskı. Canlı renkler ve net detaylar.", "image": "/images/urunler/parlak-afis-1.webp", "href": "/urunlerimiz/parlak-kagit-afis" },
     { "title": "Mat Kağıt Afiş", "desc": "Mat kuşe kağıda afiş baskı. Yansımasız, profesyonel görünüm.", "image": "/images/urunler/mat-kagit-1.webp", "href": "/urunlerimiz/mat-kagit-afis" },

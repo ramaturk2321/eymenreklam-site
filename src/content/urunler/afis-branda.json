@@ -63,7 +63,7 @@
     { "q": "Çift taraflı baskı yapılır mı?", "a": "Evet, blockout branda malzeme ile çift taraflı baskı mümkündür." }
   ],
   "relatedProducts": [
-    { "img": "/images/urunler/afis-baski-1.webp", "title": "Afiş Baskı", "href": "/urunlerimiz/afis-baski", "category": "Afiş Baskı" },
+    { "img": "/images/urunler/afis-baski-1.webp", "title": "Dijital Afiş Baskı", "href": "/urunlerimiz/afis-baski", "category": "Afiş Baskı" },
     { "img": "/images/urunler/bez-pankart-1.webp", "title": "Bez Pankart", "href": "/urunlerimiz/bez-pankart", "category": "Afiş Baskı" },
     { "img": "/images/urunler/mesh-5.webp", "title": "Mesh Baskı", "href": "/urunlerimiz/mesh-baski", "category": "Bez Baskı" },
     { "img": "/images/urunler/vinil-tabela-1.webp", "title": "Vinil Tabela", "href": "/urunlerimiz/vinil-tabela", "category": "Tabela" }

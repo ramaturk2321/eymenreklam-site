@@ -1,5 +1,6 @@
 ---
 title: "Tabela Yaptırmak İstiyorum: Malzemeden Montaja Tam Teknik Rehber (2026)"
+seoTitle: "Tabela Yaptırmak: Malzeme ve Montaj Rehberi"
 description: "Tabela yaptırmadan önce bilmeniz gereken her şey: malzeme seçimi, maliyet hesabı, belediye ruhsatı ve doğru firma seçimi rehberi."
 excerpt: "Tabela yaptırmadan önce bilmeniz gereken 4 kritik soru: malzeme seçimi, maliyet hesabı, belediye ruhsatı ve doğru firma seçimi. 25 yıllık üretim deneyimimizle yanıtlıyoruz."
 image: "/images/blog-tabela.webp"

@@ -1,5 +1,6 @@
 ---
 title: "Totem Tabela: Markanızın Sokaktaki En Güçlü Elçisinin 7 Sırrı"
+seoTitle: "Totem Tabela Rehberi: Malzeme ve İzinler"
 description: "Totem tabela türleri, malzeme, rüzgâr dayanımı ve belediye izinleri rehberi. Pendik İstanbul'da totem tabela imalatı için ücretsiz teklif alın."
 excerpt: "Totem tabela hakkında bilmeniz gereken her şey: türleri, malzeme seçimi, rüzgâr dayanımı hesaplamaları, belediye izinleri ve etkili tasarım ilkeleri."
 image: "/images/blog-totem.webp"

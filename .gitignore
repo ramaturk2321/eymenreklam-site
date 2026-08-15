@@ -20,6 +20,11 @@ pnpm-debug.log*
 # macOS-specific files
 .DS_Store
 
+# kaynak tasarim dosyalari — public/ altina sizmasin, yayina cikmasin
+*.psd
+*.ai
+*.indd
+
 # jetbrains setting folder
 .idea/
 .vercel

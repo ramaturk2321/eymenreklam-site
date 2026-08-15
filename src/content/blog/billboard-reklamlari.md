@@ -1,5 +1,6 @@
 ---
 title: "Billboard Reklamları: Markanızı Gökyüzüne Taşımanın 7 Sırrı"
+seoTitle: "Billboard Reklamı: Boyut, Maliyet ve Tasarım"
 description: "Billboard reklamları rehberi: boyutlar, maliyet, konum ve tasarım. Pendik İstanbul'da billboard üretimi için Eymen Reklam'dan ücretsiz teklif alın."
 excerpt: "Şehirlerin siluetini şekillendiren billboard reklamları hakkında bilmeniz gereken her şey: boyutlar, maliyetler ve tasarım ilkeleri."
 image: "/images/blog-billboard.webp"
