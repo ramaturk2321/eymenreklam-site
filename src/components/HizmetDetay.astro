@@ -5,6 +5,8 @@ interface Props {
   description: string;
   heroDesc: string;
   heroImage?: string;
+  /** Sosyal paylaşım görseli (og:image). heroImage yoksa listImage geçilir. */
+  ogImage?: string;
   facility?: {
     title: string;
     description: string;
@@ -22,7 +24,7 @@ interface Props {
 import BaseLayout from '../layouts/BaseLayout.astro';
 import { company, contact, getWhatsAppUrl, whatsappMessages } from '../lib/site-data';
 
-const { title, seoTitle, description, heroDesc, heroImage, facility, features, products, process, sectors, faq } = Astro.props;
+const { title, seoTitle, description, heroDesc, heroImage, ogImage, facility, features, products, process, sectors, faq } = Astro.props;
 
 // FAQ Schema
 const faqSchema = faq.length > 0 ? {
@@ -47,7 +49,7 @@ const breadcrumbSchema = {
 };
 ---
 
-<BaseLayout title={seoTitle ?? title} description={description}>
+<BaseLayout title={seoTitle ?? title} description={description} image={ogImage ?? heroImage}>
 
   <!-- Schema.org: FAQ + Breadcrumb -->
   {faqSchema && <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />}
