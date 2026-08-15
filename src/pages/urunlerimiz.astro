@@ -110,7 +110,7 @@ const products = urunler.map(u => ({
 
 <script>
   const buttons = document.querySelectorAll('.filter-btn');
-  const cards = document.querySelectorAll('.product-card');
+  const cards = document.querySelectorAll<HTMLElement>('.product-card');
   const countEl = document.getElementById('product-count');
   const noResultsEl = document.getElementById('no-results');
   const searchParams = new URLSearchParams(window.location.search);

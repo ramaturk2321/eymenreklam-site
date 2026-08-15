@@ -158,15 +158,15 @@ const hizmetler = [
               teklifBtn.disabled = true;
               teklifBtn.querySelector('svg')?.classList.add('hidden');
               teklifBtn.childNodes[0].textContent = 'Gönderiliyor... ';
-              teklifSuccess.classList.add('hidden');
-              teklifError.classList.add('hidden');
+              teklifSuccess?.classList.add('hidden');
+              teklifError?.classList.add('hidden');
 
               const teklifKontrol = teklifGuard.degerlendir();
 
               // Bot: başarı ekranını göster ama hiçbir şey gönderme.
               if (teklifKontrol.engelle) {
                 teklifForm.reset();
-                teklifSuccess.classList.remove('hidden');
+                teklifSuccess?.classList.remove('hidden');
                 teklifBtn.disabled = false;
                 teklifBtn.querySelector('svg')?.classList.remove('hidden');
                 teklifBtn.childNodes[0].textContent = 'Teklif Talebini Gönder ';
@@ -181,17 +181,17 @@ const hizmetler = [
                 const data = await res.json();
                 if (data.success) {
                   if (window.trackEvent) window.trackEvent('quote_submit', { form: 'teklif-al' });
-                  teklifForm.querySelectorAll('input:not([type=hidden]), textarea, select').forEach(el => {
-                    if (el.type === 'checkbox') el.checked = false;
+                  teklifForm.querySelectorAll<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>('input:not([type=hidden]), textarea, select').forEach(el => {
+                    if (el instanceof HTMLInputElement && el.type === 'checkbox') el.checked = false;
                     else el.value = '';
                   });
-                  teklifSuccess.classList.remove('hidden');
-                  teklifSuccess.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                  teklifSuccess?.classList.remove('hidden');
+                  teklifSuccess?.scrollIntoView({ behavior: 'smooth', block: 'center' });
                 } else {
-                  teklifError.classList.remove('hidden');
+                  teklifError?.classList.remove('hidden');
                 }
               } catch (err) {
-                teklifError.classList.remove('hidden');
+                teklifError?.classList.remove('hidden');
               }
               teklifBtn.disabled = false;
               teklifBtn.querySelector('svg')?.classList.remove('hidden');

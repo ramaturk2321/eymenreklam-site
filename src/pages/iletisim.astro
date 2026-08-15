@@ -188,8 +188,8 @@ import { contact, getWhatsAppUrl } from '../lib/site-data';
               e.preventDefault();
               btn.disabled = true;
               btn.textContent = 'Gönderiliyor...';
-              successDiv.classList.add('hidden');
-              errorDiv.classList.add('hidden');
+              successDiv?.classList.add('hidden');
+              errorDiv?.classList.add('hidden');
 
               const kontrol = guard.degerlendir();
 
@@ -197,7 +197,7 @@ import { contact, getWhatsAppUrl } from '../lib/site-data';
               // Hata vermiyoruz ki bot taktik değiştirip tekrar denemesin.
               if (kontrol.engelle) {
                 form.reset();
-                successDiv.classList.remove('hidden');
+                successDiv?.classList.remove('hidden');
                 btn.disabled = false;
                 btn.textContent = 'Teklif Talebi Gönder';
                 return;
@@ -211,14 +211,14 @@ import { contact, getWhatsAppUrl } from '../lib/site-data';
                 const data = await res.json();
                 if (data.success) {
                   if (window.trackEvent) window.trackEvent('contact_submit', { form: 'iletisim' });
-                  form.querySelectorAll('input:not([type=hidden]):not([type=checkbox]), textarea, select').forEach(el => el.value = '');
-                  successDiv.classList.remove('hidden');
-                  successDiv.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                  form.querySelectorAll<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>('input:not([type=hidden]):not([type=checkbox]), textarea, select').forEach(el => el.value = '');
+                  successDiv?.classList.remove('hidden');
+                  successDiv?.scrollIntoView({ behavior: 'smooth', block: 'center' });
                 } else {
-                  errorDiv.classList.remove('hidden');
+                  errorDiv?.classList.remove('hidden');
                 }
               } catch (err) {
-                errorDiv.classList.remove('hidden');
+                errorDiv?.classList.remove('hidden');
               }
               btn.disabled = false;
               btn.textContent = 'Teklif Talebi Gönder';

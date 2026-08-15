@@ -65,7 +65,7 @@ const { title, description = `Eymen Reklam — Tabela İmalatı & UV Baskı Pend
 
       // WhatsApp ve telefon tıklamalarını site genelinde yakala (event delegation)
       document.addEventListener('click', (e) => {
-        const link = e.target && e.target.closest ? e.target.closest('a') : null;
+        const link = e.target instanceof Element ? e.target.closest('a') : null;
         if (!link) return;
         const href = link.getAttribute('href') || '';
         if (href.includes('wa.me')) {
