@@ -1,6 +1,6 @@
 ---
-title: "Unkar – Totem Tabela"
-description: "Unkar fabrika girişi için totem tabela tasarımı ve uygulaması."
+title: "Ünkar – Totem Tabela"
+description: "Ünkar fabrika girişi için hak-et ve Ünkar markalı totem tabela tasarımı, imalatı ve montajı. Pendik İstanbul totem tabela Eymen Reklam'da."
 image: "/images/projeler/unkar-totem-1.webp"
 images:
   - "/images/projeler/unkar-totem-1.webp"
@@ -10,4 +10,4 @@ date: "2025-02-01"
 order: 14
 ---
 
-Unkar fabrika girişi için Haket ve Unkar markalarını içeren totem tabela tasarımı ve uygulaması gerçekleştirdik.
+Ünkar fabrika girişi için hak-et ve Ünkar markalarını bir arada taşıyan totem tabela tasarımı, imalatı ve montajını gerçekleştirdik.
