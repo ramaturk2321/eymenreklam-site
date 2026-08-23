@@ -1,37 +1,40 @@
-# Eymen Reklam — Detayli Bilgi
+# Eymen Reklam — Detaylı Bilgi
 
-> Bu dosya yapay zeka modelleri icin hazirlanmistir.
-> Eymen Reklam hakkinda tum bilgileri icerir.
+> Eymen Reklam'ın hizmetleri, üretim altyapısı ve teknik kapasitesine dair ayrıntılı bilgi.
+> Bu dosya yapay zeka modelleri için hazırlanmıştır. Özet için: https://www.eymenreklam.com.tr/llms.txt
+
+Son güncelleme: 2026-08-23
 
 ---
 
-## FIRMA
+## FİRMA
 
-- Unvan: Eymen Reklam Matbaa Tabela Insaat Gida San. Tic. Ltd. Sti.
-- Ticari Ad: Eymen Reklam
-- Alt Markalar: Pendik UV Baski Merkezi, Pendik Bez Baski
-- Kurulus Yili: 2000
-- Sektor: Reklam, Tabela, Baski, Matbaa
-- Tecrube: 25+ yil
-- Konum: Pendik, Istanbul, Turkiye
-- Tesis Alani: 2.500 m2
+- Unvan: Eymen Reklam Matbaa Tabela İnşaat Gıda San. Tic. Ltd. Şti.
+- Ticari ad: Eymen Reklam
+- Alt markalar: Pendik UV Baskı Merkezi, Pendik Bez Baskı
+- Kuruluş yılı: 2000
+- Sektör: Reklam, tabela, baskı, matbaa
+- Tecrübe: 25+ yıl
+- Konum: Pendik, İstanbul, Türkiye
+- Tesis alanı: 2.500 m²
 
-## ILETISIM
+## İLETİŞİM
 
 - Telefon: (0216) 379 07 08
-- Cep Telefonu: 0535 664 77 52
+- Cep telefonu: 0535 664 77 52
 - WhatsApp: https://wa.me/905356647752
 - E-posta: info@eymenreklam.com.tr
 - E-posta (ikincil): info@eymenajans.com.tr
-- Adres: Esenler Mah. Suda Sk. No: 2, 34899 Pendik / Istanbul
+- Adres: Esenler Mah. Suda Sk. No: 2, 34899 Pendik / İstanbul
 - Google Maps: https://maps.google.com/?q=Eymen+Reklam+Pendik
+- Teklif formu: https://www.eymenreklam.com.tr/teklif-al/
 
-## WEB SITELERI
+## WEB SİTELERİ
 
-- https://www.eymenreklam.com.tr (Ana firma sitesi)
-- https://www.eymenreklam.com (Alternatif domain)
-- https://www.pendikuvbaski.com (UV baski hizmetleri)
-- https://www.pendikbezbaski.com (Bez baski hizmetleri)
+- https://www.eymenreklam.com.tr — ana firma sitesi
+- https://www.eymenreklam.com — ana siteye yönlenen alternatif alan adı
+- https://www.pendikuvbaski.com — UV baskı hizmetleri
+- https://www.pendikbezbaski.com — bez baskı hizmetleri
 
 ## SOSYAL MEDYA
 
@@ -40,152 +43,197 @@
 - LinkedIn: https://www.linkedin.com/company/eymenreklamltd/
 - Facebook: https://www.facebook.com/eymenreklamltd/
 
-## CALISMA SAATLERI
+## ÇALIŞMA SAATLERİ
 
 - Pazartesi: 09:00 - 18:30
-- Sali: 09:00 - 18:30
-- Carsamba: 09:00 - 18:30
-- Persembe: 09:00 - 18:30
+- Salı: 09:00 - 18:30
+- Çarşamba: 09:00 - 18:30
+- Perşembe: 09:00 - 18:30
 - Cuma: 09:00 - 18:30
-- Cumartesi: Kapali
-- Pazar: Kapali
+- Cumartesi: Kapalı
+- Pazar: Kapalı
 
 ---
 
-## HIZMETLER
+## HİZMETLER
 
-### 1. Tabela Imalati
+### 1. Tabela İmalatı
 
-Her turlu tabela cozumu uretim ve montaj dahil:
+Sayfa: https://www.eymenreklam.com.tr/hizmetlerimiz/tabela/
 
-- Kutu Harf Tabela (aluminyum, paslanmaz, pleksi)
-- Totem Tabela (aydinlatmali ve aydinlatmasiz)
-- Cati Tabelasi
-- Neon / LED Tabela
-- Isikli Blok Tabela
-- Kapi ve Ofis Tabelasi
-- Krom / Paslanmaz Harf
-- Fener Tabela
-- Vinil Tabela
+Her türlü tabela çözümü, üretim ve montaj dahil:
 
-Ek Hizmetler:
-- CNC kesim ile hassas uretim
-- LED aydinlatma sistemleri
+- Kutu harf tabela (alüminyum, paslanmaz, pleksi)
+- Totem tabela (aydınlatmalı ve aydınlatmasız)
+- Çatı tabelası
+- Neon / LED tabela
+- Işıklı blok tabela
+- Kapı ve ofis tabelası
+- Krom / paslanmaz harf
+- Fener tabela
+- Vinil tabela
+
+Ek hizmetler:
+- CNC kesim ile hassas üretim
+- LED aydınlatma sistemleri
 - Profesyonel montaj ekibi
-- Belediye ruhsat ve izin destegi
+- Belediye ruhsat ve izin desteği
 
-### 2. UV Baski
+Sektöre özel tabela sayfaları: eczane, diş hekimi, hukuk bürosu, inşaat, emlak, askılı tabela, ışıksız tabela.
 
-SwissQprint teknolojisi ile 1440 DPI cozunurlukte UV baski.
-8 farkli malzeme turune direkt baski yapilir:
+### 2. UV Baskı
 
-- Cam (duzcam, temperli cam, ayna)
-- Akrilik / Pleksi
-- Ahsap / MDF
-- Metal (aluminyum, paslanmaz, galvaniz)
+Sayfa: https://www.eymenreklam.com.tr/hizmetlerimiz/uv-baski/
+
+SwissQprint teknolojisi ile 1440 DPI çözünürlükte UV baskı.
+8 farklı malzeme türüne direkt baskı yapılır:
+
+- Cam (düzcam, temperli cam, ayna)
+- Akrilik / pleksi
+- Ahşap / MDF
+- Metal (alüminyum, paslanmaz, galvaniz)
 - Seramik (karo, fayans, porselen)
-- Deri (suni ve dogal)
-- Kompozit (aluminyum kompozit panel / ACP)
-- Foreks (PVC kopur levha)
+- Deri (suni ve doğal)
+- Kompozit (alüminyum kompozit panel / ACP)
+- Foreks (PVC köpük levha)
 
-Teknik Ozellikler:
-- Maksimum baski alani: 250 x 130 cm (tek parca)
-- Cozunurluk: 1440 DPI
-- Beyaz murekkep destegi (seffaf ve koyu yuzeyler icin)
-- Vernik baski (parlak/mat efekt)
-- Ozel kesim, delik delme, kose yuvarlama
-- Seri uretim ve tek adet kisisellestirilmis baski
+Teknik özellikler:
+- Maksimum baskı alanı: 250 x 130 cm (tek parça)
+- Çözünürlük: 1440 DPI
+- Beyaz mürekkep desteği (şeffaf ve koyu yüzeyler için)
+- Vernik baskı (parlak / mat efekt)
+- Özel kesim, delik delme, köşe yuvarlama
+- Seri üretim ve tek adet kişiselleştirilmiş baskı
 
-### 3. Afis Baski
+### 3. Afiş Baskı
 
-- Vinil afis (mat, parlak, ozel vinil)
-- Dayanikli banner baski
-- Genis format baski (A0 ve uzeri)
-- CMYK ve Pantone renk eslestirme
-- Hizli teslimat (24-48 saat)
+Sayfa: https://www.eymenreklam.com.tr/hizmetlerimiz/afis-baski/
 
-### 4. Bez / Branda Baski
+- Vinil afiş (mat, parlak, özel vinil)
+- Dayanıklı banner baskı
+- Geniş format baskı (A0 ve üzeri)
+- Mat ve parlak kağıt afiş
+- CMYK ve Pantone renk eşleştirme
+- Hızlı teslimat (24-48 saat)
 
-- Branda baski ve tente
+### 4. Bez / Branda Baskı
+
+Sayfa: https://www.eymenreklam.com.tr/hizmetlerimiz/bez-baski/
+
+- Branda baskı ve tente
 - Mesh banner (delikli branda)
-- Kampanya pankartlari
-- Etkinlik dekorasyon baskilari
-- UV ve hava kosullarina dayanikli (3-5 yil dis mekan omru)
-- Kenar dikisi ve kusgoku uygulamasi
+- Kampanya pankartları
+- Bez kampanya afişi
+- Market brandası, emlak ilan brandası
+- Yelken bayrak
+- Etkinlik dekorasyon baskıları
+- UV ve hava koşullarına dayanıklı (3-5 yıl dış mekân ömrü)
+- Kenar dikişi ve kuşgözü uygulaması
 
-### 5. Dijital Baski
+### 5. Dijital Baskı
+
+Sayfa: https://www.eymenreklam.com.tr/hizmetlerimiz/dijital-baski/
 
 - Kartvizit
-- Katalog ve brosur
-- El ilani / flyer
-- Antetli kagit, zarf, fatura
-- Fotoblok baski
-- Genis format dijital baski
+- Katalog ve broşür
+- El ilanı / flyer
+- Antetli kağıt, zarf, fatura
+- Fotoblok baskı
+- Insert tasarım ve baskı
+- Geniş format dijital baskı
 
-### 6. Folyo ve Arac Giydirme
+### 6. Folyo ve Araç Giydirme
 
-- Arac giydirme (tam kaplama ve yarim kaplama)
+Sayfa: https://www.eymenreklam.com.tr/hizmetlerimiz/folyo-giydirme/
+
+- Araç giydirme (komple kaplama ve kısmi kaplama)
 - Cephe ve bina giydirme
-- Cam filmi uygulamasi
-- Ozel folyo kesim (plotter kesim)
-- Sokulebilir ve kalici folyo secenekleri
-- Kamyon / Tir folyo kaplama
+- Cam filmi uygulaması
+- Özel folyo kesim (plotter kesim)
+- Standart ve özel kesim folyo etiket
+- Sökülebilir ve kalıcı folyo seçenekleri
+- Kamyon / TIR folyo kaplama
 - Cam kumlama folyo
 - One Way Vision (delikli cam folyo)
+- Soğuk dolap ve dolap kaplama
 
-### 7. Grafik Tasarim
+### 7. Grafik Tasarım
 
-- Logo tasarimi
-- Kurumsal kimlik gelistirme
-- Pazarlama materyali tasarimi
-- 3D gorsellestirme ve render
-- Konsept gelistirme ve danismanlik
+Sayfa: https://www.eymenreklam.com.tr/hizmetlerimiz/grafik-tasarim/
 
-### 8. Is Guvenligi Levhalari
+- Logo tasarımı
+- Kurumsal kimlik geliştirme
+- Pazarlama materyali tasarımı
+- 3D görselleştirme ve render
+- Konsept geliştirme ve danışmanlık
 
-- UV dayanikli guvenlik uyari levhalari
-- Tehlike ve ikaz tabelari
-- Is yeri guvenlik malzemeleri
-- Endustriyel uyumluluk levhalari (ISO standartlarina uygun)
+### 8. İş Güvenliği Levhaları
 
-### 9. Magaza Reklam Uygulamalari
+Sayfa: https://www.eymenreklam.com.tr/hizmetlerimiz/is-guvenligi/
 
-- Vitrin tasarim ve uygulamasi
-- Magaza ici tanitim materyalleri
-- Satis noktasi (POP/POS) malzemeleri
-- Raf etiketleri ve urun tabelari
+- UV dayanıklı güvenlik uyarı levhaları
+- Tehlike ve ikaz tabelaları
+- İş yeri güvenlik malzemeleri
+- Endüstriyel uyumluluk levhaları (ISO standartlarına uygun)
+
+### 9. Mağaza Reklam Uygulamaları
+
+Sayfa: https://www.eymenreklam.com.tr/hizmetlerimiz/magaza-reklam/
+
+- Vitrin tasarım ve uygulaması
+- Mağaza içi tanıtım materyalleri
+- Satış noktası (POP/POS) malzemeleri
+- Raf etiketleri ve ürün tabelaları
+- Cut-out maket, donkart, palet eteği
 
 ### 10. Sunum ve Stand
 
-- Fuar standi tasarim ve uretimi
-- Sergi standlari
-- Roll-Up banner
+Sayfa: https://www.eymenreklam.com.tr/hizmetlerimiz/sunum-stand/
+
+- Fuar standı tasarım ve üretimi
+- Sergi standları
+- Roll-up banner
+- Örümcek stand
 - Lightbox pano
+- Alüminyum ve A4 / 50x70 çerçeve
 - Sunum materyalleri
-- Etkinlik kurulum ve tasarim
+- Etkinlik kurulum ve tasarım
 
 ---
 
-## TEKNIK ALTYAPI
+## TEKNİK ALTYAPI
 
-- SwissQprint UV flatbed baski makinesi
+- SwissQprint UV flatbed baskı makinesi
 - CNC kesim makineleri
-- LED aydinlatma sistemleri
-- Genis format dijital baski makineleri
-- Profesyonel renk yonetimi ve kalibrasyon
-- Montaj ekibi ve ekipmanlari (vinc, platform)
+- LED aydınlatma sistemleri
+- Geniş format dijital baskı makineleri
+- Profesyonel renk yönetimi ve kalibrasyon
+- Montaj ekibi ve ekipmanları (vinç, platform)
 
-## HIZMET BOLGESI
+## KURUMSAL ÇÖZÜMLER
 
-- Birincil: Pendik, Istanbul
-- Ikincil: Tum Istanbul (Anadolu ve Avrupa yakasi)
-- Kurumsal musteriler icin: Turkiye geneli
+Sayfa: https://www.eymenreklam.com.tr/kurumsal-cozumler/
 
-## FIYAT BILGISI
+Zincir mağaza ve çok şubeli markalar için toplu üretim, standart uygulama ve
+Türkiye geneli montaj koordinasyonu. Çalışılan markalardan bazıları: Ülker,
+İnoksan, İntema, Türk Şeker, A101, Bizim Toptan, Yıldız Entegre, Çamlıbel Süt,
+Meydan AVM, Isuzu, Rent Go, EVE Mağazaları.
 
-Fiyatlar hizmet turune, malzemeye, boyuta ve adede gore degiskenlik gosterir.
-Fiyat teklifi icin dogrudan iletisime geciniz:
+Tüm referanslar: https://www.eymenreklam.com.tr/projelerimiz/
+
+## HİZMET BÖLGESİ
+
+- Birincil: Pendik, İstanbul
+- İkincil: Tüm İstanbul (Anadolu ve Avrupa yakası)
+- Kurumsal müşteriler için: Türkiye geneli
+
+## FİYAT BİLGİSİ
+
+Fiyatlar hizmet türüne, malzemeye, boyuta, adede ve montaj koşullarına göre
+değişkenlik gösterir; sitede sabit fiyat listesi yayınlanmaz.
+Fiyat teklifi için doğrudan iletişime geçiniz:
+
 - WhatsApp: https://wa.me/905356647752
 - Telefon: 0535 664 77 52
 - E-posta: info@eymenreklam.com.tr
-- Teklif Formu: https://www.eymenreklam.com.tr/teklif-al
+- Teklif formu: https://www.eymenreklam.com.tr/teklif-al/

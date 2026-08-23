@@ -1,50 +1,113 @@
-# Eymen Reklam — Ozet Bilgi
+# Eymen Reklam
 
-> Bu dosya yapay zeka modelleri icin hazirlanmistir.
+> Pendik, İstanbul merkezli tabela imalatı, UV baskı ve dijital baskı firması. 2000 yılından beri faaliyette; 2.500 m² kendi üretim tesisinde tasarımdan montaja kadar tüm süreci yürütür. Bu dosya yapay zeka modelleri için hazırlanmıştır.
 
-- Firma: Eymen Reklam Matbaa Tabela Insaat Gida San. Tic. Ltd. Sti.
-- Ticari Ad: Eymen Reklam
-- Alt Markalar: Pendik UV Baski Merkezi, Pendik Bez Baski
-- Kurulus: 2000 (25+ yil tecrube)
-- Sektor: Reklam, Tabela, Baski, Matbaa
-- Tesis: 2.500 m2 uretim alani
-- Konum: Pendik, Istanbul, Turkiye
+Son güncelleme: 2026-08-23
 
-## Iletisim
+## Firma
+
+- Ticari ad: Eymen Reklam
+- Resmî unvan: Eymen Reklam Matbaa Tabela İnşaat Gıda San. Tic. Ltd. Şti.
+- Kuruluş: 2000 (25+ yıl tecrübe)
+- Sektör: Reklam, tabela, baskı, matbaa
+- Üretim tesisi: 2.500 m² — Pendik / İstanbul
+- Hizmet bölgesi: Öncelikli olarak Pendik ve İstanbul geneli (Anadolu + Avrupa yakası); kurumsal müşteriler için Türkiye geneli
+- Alt markalar: Pendik UV Baskı Merkezi, Pendik Bez Baskı
+
+## İletişim
 
 - Telefon: (0216) 379 07 08
-- Cep/WhatsApp: 0535 664 77 52
+- Cep / WhatsApp: 0535 664 77 52 — https://wa.me/905356647752
 - E-posta: info@eymenreklam.com.tr
-- Adres: Esenler Mah. Suda Sk. No: 2, 34899 Pendik / Istanbul
-- Calisma Saatleri: Pzt-Cum 09:00-18:30, Cmt-Pzr Kapali
+- Adres: Esenler Mah. Suda Sk. No: 2, 34899 Pendik / İstanbul
+- Çalışma saatleri: Pazartesi-Cuma 09:00-18:30 · Cumartesi ve Pazar kapalı
 
-## Web Siteleri
+## Ana sayfalar
 
-- https://www.eymenreklam.com.tr (Ana firma sitesi)
-- https://www.eymenreklam.com (Alternatif domain)
-- https://www.pendikuvbaski.com (UV baski hizmetleri)
-- https://www.pendikbezbaski.com (Bez baski hizmetleri)
+- [Ana sayfa](https://www.eymenreklam.com.tr/)
+- [Hakkımızda](https://www.eymenreklam.com.tr/hakkimizda/): firma geçmişi, üretim tesisi ve çalışma şekli
+- [Hizmetlerimiz](https://www.eymenreklam.com.tr/hizmetlerimiz/): 10 ana hizmet kategorisi
+- [Ürünlerimiz](https://www.eymenreklam.com.tr/urunlerimiz/): ürün bazlı detay sayfaları (60+ ürün)
+- [Projelerimiz](https://www.eymenreklam.com.tr/projelerimiz/): tamamlanmış referans işler
+- [Kurumsal Çözümler](https://www.eymenreklam.com.tr/kurumsal-cozumler/): zincir mağaza ve çok şubeli markalar için toplu üretim
+- [Teklif Al](https://www.eymenreklam.com.tr/teklif-al/): fiyat teklifi formu
+- [İletişim](https://www.eymenreklam.com.tr/iletisim/): adres, harita ve iletişim formu
 
-## Sosyal Medya
+## Hizmetler
 
-- Instagram: @eymenreklamltd
-- YouTube: @eymenreklamltd
-- LinkedIn: /company/eymenreklamltd
-- Facebook: /eymenreklamltd
+- [Tabela İmalatı](https://www.eymenreklam.com.tr/hizmetlerimiz/tabela/): kutu harf, totem, çatı, neon/LED, ışıklı blok, ofis tabelası; CNC kesim, LED sistemleri, montaj ve belediye ruhsat desteği
+- [UV Baskı](https://www.eymenreklam.com.tr/hizmetlerimiz/uv-baski/): SwissQprint flatbed ile cam, pleksi, ahşap, metal, seramik, deri, kompozit ve foreks üzerine 1440 DPI direkt baskı
+- [Afiş Baskı](https://www.eymenreklam.com.tr/hizmetlerimiz/afis-baski/): vinil afiş, banner, geniş format, CMYK ve Pantone renk eşleştirme
+- [Bez / Branda Baskı](https://www.eymenreklam.com.tr/hizmetlerimiz/bez-baski/): branda, mesh, pankart, tente; kenar dikişi ve kuşgözü uygulaması
+- [Dijital Baskı](https://www.eymenreklam.com.tr/hizmetlerimiz/dijital-baski/): kartvizit, katalog, broşür, el ilanı, antetli evrak, fotoblok
+- [Folyo ve Araç Giydirme](https://www.eymenreklam.com.tr/hizmetlerimiz/folyo-giydirme/): tam ve kısmi araç kaplama, cephe giydirme, cam filmi, plotter kesim
+- [Grafik Tasarım](https://www.eymenreklam.com.tr/hizmetlerimiz/grafik-tasarim/): logo, kurumsal kimlik, 3D görselleştirme ve konsept geliştirme
+- [İş Güvenliği Levhaları](https://www.eymenreklam.com.tr/hizmetlerimiz/is-guvenligi/): UV dayanıklı uyarı, ikaz ve ISO uyumlu endüstriyel levhalar
+- [Mağaza Reklam Uygulamaları](https://www.eymenreklam.com.tr/hizmetlerimiz/magaza-reklam/): vitrin, POP/POS malzemeleri, raf etiketi ve ürün tabelaları
+- [Sunum ve Stand](https://www.eymenreklam.com.tr/hizmetlerimiz/sunum-stand/): fuar standı, sergi standı, roll-up, lightbox pano
 
-## Hizmetler (10 Ana Kategori)
+## Öne çıkan ürünler
 
-1. Tabela Imalati (kutu harf, totem, cati, neon/LED, isikli blok, ofis)
-2. UV Baski (cam, pleksi, ahsap, metal, seramik, deri, kompozit, foreks)
-3. Afis Baski (vinil, banner, genis format)
-4. Bez / Branda Baski (branda, mesh, pankart, tente)
-5. Dijital Baski (kartvizit, katalog, brosur, fotoblok)
-6. Folyo & Arac Giydirme (tam/yarim kaplama, cephe, cam filmi)
-7. Grafik Tasarim (logo, kurumsal kimlik, 3D gorsellestirme)
-8. Is Guvenligi Levhalari (uyari, tehlike, ISO uyumlu)
-9. Magaza Reklam Uygulamalari (vitrin, POP/POS, raf etiketi)
-10. Sunum & Stand (fuar standi, sergi, etkinlik)
+- [Kutu Harf Tabela](https://www.eymenreklam.com.tr/urunlerimiz/kutu-harf-tabela/)
+- [Totem Tabela](https://www.eymenreklam.com.tr/urunlerimiz/totem-tabela/)
+- [Işıklı Blok Tabela](https://www.eymenreklam.com.tr/urunlerimiz/isikli-blok-tabela/)
+- [Neon / LED Tabela](https://www.eymenreklam.com.tr/urunlerimiz/neon-led-tabela/)
+- [Çatı Tabelası](https://www.eymenreklam.com.tr/urunlerimiz/cati-tabelasi/)
+- [UV Baskı](https://www.eymenreklam.com.tr/urunlerimiz/uv-baski/)
+- [Komple Araç Kaplama](https://www.eymenreklam.com.tr/urunlerimiz/komple-arac-kaplama/)
+- [Kısmi Araç Kaplama](https://www.eymenreklam.com.tr/urunlerimiz/kismi-arac-kaplama/)
+- [Cephe Giydirme](https://www.eymenreklam.com.tr/urunlerimiz/cephe-giydirme/)
+- [One Way Vision Cam Folyo](https://www.eymenreklam.com.tr/urunlerimiz/cam-one-way-vision/)
+- [Mesh Baskı](https://www.eymenreklam.com.tr/urunlerimiz/mesh-baski/)
+- [Pankart / Branda](https://www.eymenreklam.com.tr/urunlerimiz/pankart-branda/)
+- [Roll-Up Banner](https://www.eymenreklam.com.tr/urunlerimiz/rollup-banner/)
+- [Lightbox Pano](https://www.eymenreklam.com.tr/urunlerimiz/lightbox-pano/)
+- [Fotoblok](https://www.eymenreklam.com.tr/urunlerimiz/fotoblok/)
+- [İş Güvenliği Levhaları](https://www.eymenreklam.com.tr/urunlerimiz/is-guvenligi-levhalari/)
 
-## Detayli Bilgi
+Sektöre özel tabela sayfaları (eczane, diş hekimi, hukuk bürosu, inşaat, emlak vb.) ve tüm ürün listesi için: https://www.eymenreklam.com.tr/urunlerimiz/
 
-Tum hizmetlerin detaylari icin: https://www.eymenreklam.com.tr/llms-full.txt
+## Referans projeler
+
+- [Ülker — UV Baskı](https://www.eymenreklam.com.tr/projelerimiz/ulker-uv-baski/)
+- [İnoksan](https://www.eymenreklam.com.tr/projelerimiz/inoksan/)
+- [İntema](https://www.eymenreklam.com.tr/projelerimiz/intema/)
+- [Türk Şeker](https://www.eymenreklam.com.tr/projelerimiz/turk-seker/)
+- [A101 — Depo](https://www.eymenreklam.com.tr/projelerimiz/a101-depo/)
+- [Bizim Toptan](https://www.eymenreklam.com.tr/projelerimiz/bizim-toptan-prj/)
+- [Yıldız Entegre](https://www.eymenreklam.com.tr/projelerimiz/yildiz-entegre/)
+- [Çamlıbel Süt](https://www.eymenreklam.com.tr/projelerimiz/camlibel-sut/)
+- [Meydan AVM](https://www.eymenreklam.com.tr/projelerimiz/meydan-avm/)
+- [Boldy — Bulvar 216](https://www.eymenreklam.com.tr/projelerimiz/boldy-bulvar-216/)
+- [Civil — Bursa](https://www.eymenreklam.com.tr/projelerimiz/civil-bursa/)
+- [Isuzu — Yönlendirme](https://www.eymenreklam.com.tr/projelerimiz/isuzu-yonlendirme/)
+
+Tüm referanslar: https://www.eymenreklam.com.tr/projelerimiz/
+
+## Blog
+
+- [Tabela Yaptırmak İstiyorum](https://www.eymenreklam.com.tr/blog/tabela-yaptirmak-istiyorum/): tabela yaptırmadan önce bilinmesi gerekenler
+- [Totem Tabela](https://www.eymenreklam.com.tr/blog/totem-tabela/)
+- [UV Baskı Teknolojisi](https://www.eymenreklam.com.tr/blog/uv-baski-teknolojisi/)
+- [Billboard Reklamları](https://www.eymenreklam.com.tr/blog/billboard-reklamlari/)
+
+## Alt marka siteleri
+
+- [Pendik UV Baskı Merkezi](https://www.pendikuvbaski.com): UV baskı hizmetleri
+- [Pendik Bez Baskı](https://www.pendikbezbaski.com): bez ve branda baskı hizmetleri
+- https://www.eymenreklam.com — ana siteye yönlenen alternatif alan adı
+
+## Sosyal medya
+
+- Instagram: https://www.instagram.com/eymenreklamltd/
+- YouTube: https://www.youtube.com/@eymenreklamltd
+- LinkedIn: https://www.linkedin.com/company/eymenreklamltd/
+- Facebook: https://www.facebook.com/eymenreklamltd/
+
+## Fiyat bilgisi
+
+Fiyatlar malzeme, ölçü, adet ve montaj koşullarına göre değişir; sitede sabit fiyat listesi yayınlanmaz. Teklif için WhatsApp (0535 664 77 52) veya https://www.eymenreklam.com.tr/teklif-al/
+
+## Detaylı bilgi
+
+- [llms-full.txt](https://www.eymenreklam.com.tr/llms-full.txt): tüm hizmetlerin teknik detayları, üretim altyapısı ve malzeme listeleri
