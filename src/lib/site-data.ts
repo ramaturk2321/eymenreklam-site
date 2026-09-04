@@ -16,6 +16,18 @@ export const contact = {
   address: 'Esenler Mah. Suda Sk. No: 2, 34899 Pendik / İstanbul',
   addressShort: 'Pendik, İstanbul',
   mapsUrl: 'https://maps.google.com/?q=Eymen+Reklam+Pendik',
+  // İletişim sayfasındaki Google Maps embed'iyle aynı nokta (yer kimliği 0x14cadb446eabc9a5:0xd6030b0d851dcd1f)
+  geo: { latitude: 40.8929624, longitude: 29.2675766 },
+};
+
+// ─── Çalışma Saatleri (tek kaynak: JSON-LD + iletişim + teklif sayfası buradan okur) ───
+export const hours = {
+  days: 'Pazartesi - Cuma',
+  open: '08:30',
+  close: '18:30',
+  closedDays: 'Cumartesi - Pazar: Kapalı',
+  schemaDays: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'],
+  label: 'Pazartesi - Cuma: 08:30 - 18:30',
 };
 
 // ─── WhatsApp Mesaj Şablonları ───

@@ -1,6 +1,6 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
-import { contact, getWhatsAppUrl } from '../lib/site-data';
+import { contact, getWhatsAppUrl, hours } from '../lib/site-data';
 ---
 
 <BaseLayout title="İletişim — Eymen Reklam Pendik İstanbul" description="Eymen Reklam ile iletişime geçin. Pendik İstanbul'da tabela imalatı, dijital baskı ve reklam çözümleri için ücretsiz keşif ve teklif alın.">
@@ -87,8 +87,8 @@ import { contact, getWhatsAppUrl } from '../lib/site-data';
               </div>
               <div>
                 <h4 class="font-semibold text-koyu-900 mb-1">Çalışma Saatleri</h4>
-                <p class="text-sm text-koyu-600">Pazartesi - Cuma: 09:00 - 18:30</p>
-                <p class="text-sm text-koyu-500">Cumartesi - Pazar: Kapalı</p>
+                <p class="text-sm text-koyu-600">{hours.label}</p>
+                <p class="text-sm text-koyu-500">{hours.closedDays}</p>
               </div>
             </div>
           </div>

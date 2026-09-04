@@ -1,6 +1,6 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
-import { company, contact } from '../lib/site-data';
+import { company, contact, hours } from '../lib/site-data';
 
 const hizmetler = [
   'Kutu Harf Tabela', 'Totem Tabela', 'Çatı Tabelası', 'Cephe Tabelası',
@@ -256,7 +256,7 @@ const hizmetler = [
               Pendik, İstanbul<br />
               2.500m² kapalı üretim alanı
             </p>
-            <p class="text-xs text-koyu-500 mt-3">Pazartesi – Cumartesi: 08:30 – 18:30</p>
+            <p class="text-xs text-koyu-500 mt-3">{hours.label}</p>
           </div>
 
           <!-- Rakamlar -->

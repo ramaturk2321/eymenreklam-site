@@ -1,5 +1,5 @@
 ---
-import { contact, company } from '../lib/site-data';
+import { contact, company, hours } from '../lib/site-data';
 
 interface Props {
   title: string;
@@ -36,15 +36,15 @@ const jsonLd = {
   },
   geo: {
     '@type': 'GeoCoordinates',
-    latitude: 40.8803,
-    longitude: 29.2336,
+    latitude: contact.geo.latitude,
+    longitude: contact.geo.longitude,
   },
   openingHoursSpecification: [
     {
       '@type': 'OpeningHoursSpecification',
-      dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'],
-      opens: '09:00',
-      closes: '18:30',
+      dayOfWeek: hours.schemaDays,
+      opens: hours.open,
+      closes: hours.close,
     },
   ],
   contactPoint: {
