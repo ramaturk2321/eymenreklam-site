@@ -1,8 +1,9 @@
 {
   "title": "UV Baskı",
+  "seoTitle": "UV Baskı Ürünleri: Cam, Ahşap ve Pleksi",
   "description": "Ahşap, metal, cam ve akrilik yüzeylere UV baskı. Solmayan, çizilmeye dayanıklı, canlı renkler. Eymen Reklam — 25 yıllık tecrübe, 2 yıl garanti.",
   "category": "UV Baskı",
-  "categoryHref": "/hizmetlerimiz/uv-baski",
+  "categoryHref": "/hizmetlerimiz/uv-baski/",
   "shortDesc": "Ahşap, metal, cam, akrilik, deri ve onlarca farklı yüzeye doğrudan baskı imkanı sunan UV baskı teknolojisi. Solmayan, çizilmeye dayanıklı, canlı renklerle markanıza özel üretim.",
   "mainImg": "/images/urunler/uv-baski-1.webp",
   "gallery": [
@@ -66,9 +67,9 @@
     { "q": "Beyaz mürekkep nedir, ne işe yarar?", "a": "Beyaz mürekkep, koyu renkli veya şeffaf yüzeylere baskıda alt katman olarak kullanılır. Bu sayede renkler canlılığını korur. Ayrıca şeffaf cam veya akrilik üzerine opak beyaz baskı yapmak için de kullanılır." }
   ],
   "relatedProducts": [
-    { "img": "/images/urunler/kutu-harf-1.webp", "title": "Kutu Harf Tabela", "href": "/urunlerimiz/kutu-harf-tabela", "category": "Tabela" },
-    { "img": "/images/urunler/cephe-giydirme-3.webp", "title": "Cephe Giydirme", "href": "/urunlerimiz/cephe-giydirme", "category": "Folyo & Giydirme" },
-    { "img": "/images/urunler/branda-1.webp", "title": "Bez & Branda Baskı", "href": "/urunlerimiz/bez-branda-baski", "category": "Bez & Afiş Baskı" },
-    { "img": "/images/urunler/rollup-1.webp", "title": "Roll Up Banner", "href": "/urunlerimiz/rollup-banner", "category": "Display & Stand" }
+    { "img": "/images/urunler/kutu-harf-1.webp", "title": "Kutu Harf Tabela", "href": "/urunlerimiz/kutu-harf-tabela/", "category": "Tabela" },
+    { "img": "/images/urunler/cephe-giydirme-3.webp", "title": "Cephe Giydirme", "href": "/urunlerimiz/cephe-giydirme/", "category": "Folyo & Giydirme" },
+    { "img": "/images/urunler/branda-1.webp", "title": "Bez & Branda Baskı", "href": "/urunlerimiz/bez-branda-baski/", "category": "Bez & Afiş Baskı" },
+    { "img": "/images/urunler/rollup-1.webp", "title": "Roll Up Banner", "href": "/urunlerimiz/rollup-banner/", "category": "Display & Stand" }
   ]
 }

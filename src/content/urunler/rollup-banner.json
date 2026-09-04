@@ -1,8 +1,9 @@
 {
   "title": "Roll-Up Banner",
+  "seoTitle": "Roll-Up Banner Baskı Pendik İstanbul",
   "description": "Taşınabilir roll-up banner sistemleri. Alüminyum mekanizma, dijital baskı. Eymen Reklam — 25 yıllık tecrübe.",
   "category": "Display & Stand",
-  "categoryHref": "/hizmetlerimiz/sunum-stand",
+  "categoryHref": "/hizmetlerimiz/sunum-stand/",
   "shortDesc": "Taşınabilir roll-up banner sistemleri. Alüminyum mekanizma, dijital baskılı yüzey ile fuar, toplantı, mağaza ve etkinliklerde profesyonel sunum aracınız. Kutu içinde kolay taşıma.",
   "mainImg": "/images/urunler/rollup-1.webp",
   "gallery": [
@@ -57,9 +58,9 @@
     { "q": "Dış mekanda kullanılabilir mi?", "a": "Roll-up bannerlar iç mekan kullanımı için tasarlanmıştır. Dış mekanda rüzgara karşı dayanıksızdır. Dış mekan için yelken bayrak öneriyoruz." }
   ],
   "relatedProducts": [
-    { "img": "/images/urunler/yelken-bayrak-1.webp", "title": "Yelken Bayrak", "href": "/urunlerimiz/yelken-bayrak", "category": "Display & Stand" },
-    { "img": "/images/urunler/orumcek-stand-1.webp", "title": "Örümcek Stand", "href": "/urunlerimiz/orumcek-stand", "category": "Display & Stand" },
-    { "img": "/images/urunler/branda-1.webp", "title": "Bez & Branda Baskı", "href": "/urunlerimiz/bez-branda-baski", "category": "Bez & Afiş Baskı" },
-    { "img": "/images/urunler/uv-baski-1.webp", "title": "UV Baskı", "href": "/urunlerimiz/uv-baski", "category": "UV Baskı" }
+    { "img": "/images/urunler/yelken-bayrak-1.webp", "title": "Yelken Bayrak", "href": "/urunlerimiz/yelken-bayrak/", "category": "Display & Stand" },
+    { "img": "/images/urunler/orumcek-stand-1.webp", "title": "Örümcek Stand", "href": "/urunlerimiz/orumcek-stand/", "category": "Display & Stand" },
+    { "img": "/images/urunler/branda-1.webp", "title": "Bez & Branda Baskı", "href": "/urunlerimiz/bez-branda-baski/", "category": "Bez & Afiş Baskı" },
+    { "img": "/images/urunler/uv-baski-1.webp", "title": "UV Baskı", "href": "/urunlerimiz/uv-baski/", "category": "UV Baskı" }
   ]
 }

@@ -1,8 +1,9 @@
 {
   "title": "Lightbox Pano",
+  "seoTitle": "Lightbox Pano İmalatı Pendik İstanbul",
   "description": "Lightbox pano ve ışıklı reklam panosu. LED aydınlatmalı, enerji tasarruflu. Eymen Reklam — 25 yıllık tecrübe, 2 yıl garanti.",
   "category": "Display & Stand",
-  "categoryHref": "/hizmetlerimiz/sunum-stand",
+  "categoryHref": "/hizmetlerimiz/sunum-stand/",
   "shortDesc": "Lightbox pano ve ışıklı reklam panosu. LED aydınlatmalı, enerji tasarruflu, eşit ışık dağılımlı profesyonel tanıtım çözümü.",
   "mainImg": "/images/urunler/lightbox-1.webp",
   "gallery": [
@@ -64,9 +65,9 @@
     { "q": "LED ömrü ne kadar?", "a": "LED modüller ortalama 50.000 saat ömre sahiptir." }
   ],
   "relatedProducts": [
-    { "img": "/images/urunler/alu-cerceve-1.webp", "title": "Alüminyum Çerçeve", "href": "/urunlerimiz/aluminyum-cerceve", "category": "Display & Stand" },
-    { "img": "/images/urunler/rollup-1.webp", "title": "Roll-Up Banner", "href": "/urunlerimiz/rollup-banner", "category": "Display & Stand" },
-    { "img": "/images/urunler/donkart-1.webp", "title": "Dönkart Afiş", "href": "/urunlerimiz/donkart", "category": "Display & Stand" },
-    { "img": "/images/urunler/isikli-blok-1.webp", "title": "Işıklı Blok Tabela", "href": "/urunlerimiz/isikli-blok-tabela", "category": "Tabela" }
+    { "img": "/images/urunler/alu-cerceve-1.webp", "title": "Alüminyum Çerçeve", "href": "/urunlerimiz/aluminyum-cerceve/", "category": "Display & Stand" },
+    { "img": "/images/urunler/rollup-1.webp", "title": "Roll-Up Banner", "href": "/urunlerimiz/rollup-banner/", "category": "Display & Stand" },
+    { "img": "/images/urunler/donkart-1.webp", "title": "Dönkart Afiş", "href": "/urunlerimiz/donkart/", "category": "Display & Stand" },
+    { "img": "/images/urunler/isikli-blok-1.webp", "title": "Işıklı Blok Tabela", "href": "/urunlerimiz/isikli-blok-tabela/", "category": "Tabela" }
   ]
 }

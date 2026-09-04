@@ -1,8 +1,9 @@
 {
   "title": "Kartvizit Tasarım ve Baskı",
+  "seoTitle": "Kartvizit Tasarım ve Baskı Pendik İstanbul",
   "description": "Kartvizit tasarım ve baskı hizmeti. Kuşe, kraft ve özel kağıt seçenekleri. Eymen Reklam — 25 yıllık tecrübe, 2 yıl garanti.",
   "category": "Dijital Baskı",
-  "categoryHref": "/hizmetlerimiz/dijital-baski",
+  "categoryHref": "/hizmetlerimiz/dijital-baski/",
   "shortDesc": "Kartvizit tasarım ve baskı hizmeti. Kuşe, kraft ve özel kağıt seçenekleriyle kurumsal kimliğinizi yansıtan profesyonel kartvizit çözümü.",
   "mainImg": "/images/urunler/kartvizit-1.webp",
   "gallery": [
@@ -62,9 +63,9 @@
     { "q": "Özel boyut üretilebilir mi?", "a": "Evet, standart 9x5 cm dışında kare, mini veya özel formlarda üretim yapabiliyoruz." }
   ],
   "relatedProducts": [
-    { "img": "/images/urunler/katalog-1.webp", "title": "Katalog Tasarım ve Baskı", "href": "/urunlerimiz/katalog", "category": "Dijital Baskı" },
-    { "img": "/images/urunler/insert-1.webp", "title": "Insert Tasarım Baskı", "href": "/urunlerimiz/insert-tasarim", "category": "Dijital Baskı" },
-    { "img": "/images/urunler/fotoblok-1.webp", "title": "Fotoblok Baskı", "href": "/urunlerimiz/fotoblok", "category": "Dijital Baskı" },
-    { "img": "/images/urunler/mat-kagit-1.webp", "title": "Mat Kağıt Afiş Baskı", "href": "/urunlerimiz/mat-kagit-afis", "category": "Dijital Baskı" }
+    { "img": "/images/urunler/katalog-1.webp", "title": "Katalog Tasarım ve Baskı", "href": "/urunlerimiz/katalog/", "category": "Dijital Baskı" },
+    { "img": "/images/urunler/insert-1.webp", "title": "Insert Tasarım Baskı", "href": "/urunlerimiz/insert-tasarim/", "category": "Dijital Baskı" },
+    { "img": "/images/urunler/fotoblok-1.webp", "title": "Fotoblok Baskı", "href": "/urunlerimiz/fotoblok/", "category": "Dijital Baskı" },
+    { "img": "/images/urunler/mat-kagit-1.webp", "title": "Mat Kağıt Afiş Baskı", "href": "/urunlerimiz/mat-kagit-afis/", "category": "Dijital Baskı" }
   ]
 }

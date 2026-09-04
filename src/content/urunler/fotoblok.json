@@ -1,8 +1,9 @@
 {
   "title": "Fotoblok Baskı",
+  "seoTitle": "Fotoblok Baskı Pendik İstanbul",
   "description": "Fotoblok baskı ürünleri. Hafif, dayanıklı köpük panel üzerine yüksek çözünürlük baskı. Eymen Reklam — 25 yıllık tecrübe, 2 yıl garanti.",
   "category": "Dijital Baskı",
-  "categoryHref": "/hizmetlerimiz/dijital-baski",
+  "categoryHref": "/hizmetlerimiz/dijital-baski/",
   "shortDesc": "Fotoblok baskı ürünleri. Hafif ve dayanıklı köpük panel üzerine yüksek çözünürlüklü baskı. Mağaza, fuar, sergi ve ofis alanlarında profesyonel görsel sunum.",
   "mainImg": "/images/urunler/fotoblok-1.webp",
   "gallery": [
@@ -63,9 +64,9 @@
     { "q": "Çift taraflı baskı yapılır mı?", "a": "Evet, fotoblok panelin her iki yüzüne de baskı uygulanabilir." }
   ],
   "relatedProducts": [
-    { "img": "/images/urunler/mat-kagit-1.webp", "title": "Mat Kağıt Afiş Baskı", "href": "/urunlerimiz/mat-kagit-afis", "category": "Dijital Baskı" },
-    { "img": "/images/urunler/insert-1.webp", "title": "Insert Tasarım Baskı", "href": "/urunlerimiz/insert-tasarim", "category": "Dijital Baskı" },
-    { "img": "/images/urunler/kartvizit-1.webp", "title": "Kartvizit Tasarım ve Baskı", "href": "/urunlerimiz/kartvizit", "category": "Dijital Baskı" },
-    { "img": "/images/urunler/katalog-1.webp", "title": "Katalog Tasarım ve Baskı", "href": "/urunlerimiz/katalog", "category": "Dijital Baskı" }
+    { "img": "/images/urunler/mat-kagit-1.webp", "title": "Mat Kağıt Afiş Baskı", "href": "/urunlerimiz/mat-kagit-afis/", "category": "Dijital Baskı" },
+    { "img": "/images/urunler/insert-1.webp", "title": "Insert Tasarım Baskı", "href": "/urunlerimiz/insert-tasarim/", "category": "Dijital Baskı" },
+    { "img": "/images/urunler/kartvizit-1.webp", "title": "Kartvizit Tasarım ve Baskı", "href": "/urunlerimiz/kartvizit/", "category": "Dijital Baskı" },
+    { "img": "/images/urunler/katalog-1.webp", "title": "Katalog Tasarım ve Baskı", "href": "/urunlerimiz/katalog/", "category": "Dijital Baskı" }
   ]
 }

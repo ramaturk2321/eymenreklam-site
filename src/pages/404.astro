@@ -1,0 +1,79 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { getCollection } from 'astro:content';
+import { contact } from '../lib/site-data';
+
+const hizmetler = (await getCollection('hizmetler'))
+  .sort((a, b) => a.data.order - b.data.order)
+  .slice(0, 6);
+---
+
+<BaseLayout title="Sayfa Bulunamadı" description="Aradığınız sayfa taşınmış veya kaldırılmış olabilir. Eymen Reklam hizmetlerine, projelerine ve iletişim bilgilerine buradan ulaşın.">
+
+  <section class="bg-koyu-900 pt-32 pb-16 md:pt-40 md:pb-24">
+    <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <p class="text-eymen-400 text-sm font-semibold tracking-wider mb-3">HATA 404</p>
+      <h1 class="text-4xl md:text-5xl font-extrabold text-white mb-4">Aradığınız sayfa burada değil</h1>
+      <p class="text-koyu-400 text-lg max-w-2xl mx-auto mb-8">
+        Bağlantı eski olabilir ya da sayfa taşınmış olabilir. Aşağıdan arama yapabilir veya doğrudan hizmetlerimize geçebilirsiniz.
+      </p>
+
+      <form action="/urunlerimiz/" method="get" role="search" class="relative max-w-xl mx-auto">
+        <label for="notfound-search" class="sr-only">Ürün veya hizmet ara</label>
+        <input
+          type="text"
+          id="notfound-search"
+          name="q"
+          placeholder="Ne arıyordunuz? (örn. kutu harf tabela)"
+          class="w-full pl-5 pr-14 py-4 text-base rounded-full border-2 border-koyu-700 bg-koyu-800 text-white placeholder:text-koyu-500 focus:border-eymen-500 focus:outline-none transition-colors"
+        />
+        <button type="submit" class="absolute right-2 top-1/2 -translate-y-1/2 bg-eymen-500 hover:bg-eymen-600 text-white rounded-full p-3 transition-colors" aria-label="Ara">
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg>
+        </button>
+      </form>
+    </div>
+  </section>
+
+  <section class="py-16 md:py-20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid md:grid-cols-3 gap-4 mb-14">
+        <a href="/" class="block bg-white border border-koyu-100 rounded-2xl p-6 hover:border-eymen-300 hover:shadow-lg transition-all">
+          <h2 class="font-bold text-koyu-900 mb-1">Ana Sayfa</h2>
+          <p class="text-sm text-koyu-500">Tabela imalatı, UV baskı ve dijital baskıya genel bakış.</p>
+        </a>
+        <a href="/projelerimiz/" class="block bg-white border border-koyu-100 rounded-2xl p-6 hover:border-eymen-300 hover:shadow-lg transition-all">
+          <h2 class="font-bold text-koyu-900 mb-1">Projelerimiz</h2>
+          <p class="text-sm text-koyu-500">Pendik İstanbul'da hayata geçirdiğimiz tabela ve reklam uygulamaları.</p>
+        </a>
+        <a href="/iletisim/" class="block bg-white border border-koyu-100 rounded-2xl p-6 hover:border-eymen-300 hover:shadow-lg transition-all">
+          <h2 class="font-bold text-koyu-900 mb-1">İletişim</h2>
+          <p class="text-sm text-koyu-500">Ücretsiz keşif ve teklif için bize ulaşın.</p>
+        </a>
+      </div>
+
+      <h2 class="text-2xl font-extrabold text-koyu-900 mb-6 text-center">Hizmetlerimiz</h2>
+      <ul class="grid sm:grid-cols-2 lg:grid-cols-3 gap-3 list-none p-0 m-0">
+        {hizmetler.map(h => (
+          <li>
+            <a href={`/hizmetlerimiz/${h.id}/`} class="flex items-start gap-3 bg-koyu-50 border border-koyu-100 rounded-xl p-4 hover:border-eymen-300 hover:bg-white transition-all">
+              <span class="text-2xl leading-none" aria-hidden="true">{h.data.listIcon}</span>
+              <span>
+                <span class="block font-semibold text-koyu-900">{h.data.title}</span>
+                <span class="block text-sm text-koyu-500 line-clamp-2">{h.data.listDesc}</span>
+              </span>
+            </a>
+          </li>
+        ))}
+      </ul>
+
+      <div class="mt-14 text-center">
+        <p class="text-koyu-600 mb-4">Aradığınızı bulamadıysanız doğrudan yazın veya arayın:</p>
+        <div class="flex flex-wrap justify-center gap-3">
+          <a href={contact.whatsappUrl} target="_blank" rel="noopener" class="inline-flex items-center gap-2 bg-green-600 hover:bg-green-700 text-white px-6 py-3 rounded-xl font-bold transition-colors">WhatsApp ile Yaz</a>
+          <a href={contact.phoneHref} class="inline-flex items-center gap-2 bg-eymen-500 hover:bg-eymen-600 text-white px-6 py-3 rounded-xl font-bold transition-colors">{contact.phone}</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</BaseLayout>

@@ -3,7 +3,7 @@
   "seoTitle": "Soğuk Dolap Kaplama Pendik İstanbul",
   "description": "Derin dondurucu, dondurma dolabı ve içecek dolabı folyo kaplama. Tasarım, baskı ve yerinde uygulama Pendik İstanbul'da. Ücretsiz keşif için arayın.",
   "category": "Folyo & Giydirme",
-  "categoryHref": "/hizmetlerimiz/folyo-giydirme",
+  "categoryHref": "/hizmetlerimiz/folyo-giydirme/",
   "shortDesc": "Market ve bakkal reyonlarındaki derin dondurucu, dondurma dolabı ve dikey camlı içecek dolaplarının folyo ile giydirilmesi. Tasarım, dijital baskı, kesim ve yerinde uygulama tek elden.",
   "mainImg": "/images/urunler/soguk-dolap-kaplama-1.webp",
   "gallery": [
@@ -65,9 +65,9 @@
     { "q": "Soğuk dolap kaplama fiyatı nasıl hesaplanır?", "a": "Fiyat; dolabın ölçüsü, kaplanacak yüzey sayısı, folyo ve laminasyon tercihi, tasarım ihtiyacı ve uygulama yapılacak şube sayısına göre belirlenir. Ölçü ve fotoğrafları paylaşmanız halinde aynı gün teklif çıkarıyoruz." }
   ],
   "relatedProducts": [
-    { "img": "/images/urunler/cam-folyo-2.webp", "title": "Cam Folyo Giydirme", "href": "/urunlerimiz/cam-folyo-giydirme", "category": "Folyo & Giydirme" },
-    { "img": "/images/urunler/palet-etegi-1.webp", "title": "Palet Eteği Baskı", "href": "/urunlerimiz/palet-etegi", "category": "Mağaza Reklam" },
-    { "img": "/images/urunler/ozel-etiket-1.webp", "title": "Özel Kesim Folyo Etiket", "href": "/urunlerimiz/ozel-kesim-folyo-etiket", "category": "Folyo & Giydirme" },
-    { "img": "/images/urunler/market-branda-1.webp", "title": "Market Branda Baskı", "href": "/urunlerimiz/market-branda", "category": "Bez Baskı" }
+    { "img": "/images/urunler/cam-folyo-2.webp", "title": "Cam Folyo Giydirme", "href": "/urunlerimiz/cam-folyo-giydirme/", "category": "Folyo & Giydirme" },
+    { "img": "/images/urunler/palet-etegi-1.webp", "title": "Palet Eteği Baskı", "href": "/urunlerimiz/palet-etegi/", "category": "Mağaza Reklam" },
+    { "img": "/images/urunler/ozel-etiket-1.webp", "title": "Özel Kesim Folyo Etiket", "href": "/urunlerimiz/ozel-kesim-folyo-etiket/", "category": "Folyo & Giydirme" },
+    { "img": "/images/urunler/market-branda-1.webp", "title": "Market Branda Baskı", "href": "/urunlerimiz/market-branda/", "category": "Bez Baskı" }
   ]
 }

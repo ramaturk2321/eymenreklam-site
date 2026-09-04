@@ -1,8 +1,9 @@
 {
   "title": "Cephe Folyo Giydirme",
+  "seoTitle": "Cephe Folyo Giydirme Pendik İstanbul",
   "description": "Bina, mağaza ve ofis cephelerine folyo giydirme hizmeti. Eymen Reklam — 25 yıllık tecrübe, 3 yıl garanti.",
   "category": "Folyo & Giydirme",
-  "categoryHref": "/hizmetlerimiz/folyo-giydirme",
+  "categoryHref": "/hizmetlerimiz/folyo-giydirme/",
   "shortDesc": "Bina, mağaza ve ofis cephelerine folyo giydirme hizmeti. Kompozit panel, cam ve duvar yüzeylerine profesyonel folyo uygulama ile kurumsal kimliğinizi cephenize taşıyın.",
   "mainImg": "/images/hayvan_hastanasi/hayvan2.webp",
   "gallery": [
@@ -60,9 +61,9 @@
     { "q": "Kiralık mekanda cephe giydirme yapılabilir mi?", "a": "Evet, folyo uygulaması cepheye zarar vermez ve istendiğinde hasarsız sökülebilir. Kiralık mekanlar için ideal çözümdür." }
   ],
   "relatedProducts": [
-    { "img": "/images/urunler/komple-arac-1.webp", "title": "Komple Araç Kaplama", "href": "/urunlerimiz/komple-arac-kaplama", "category": "Folyo & Giydirme" },
-    { "img": "/images/urunler/cam-folyo-2.webp", "title": "Cam Folyo Giydirme", "href": "/urunlerimiz/cam-folyo-giydirme", "category": "Folyo & Giydirme" },
-    { "img": "/images/urunler/kutu-harf-1.webp", "title": "Kutu Harf Tabela", "href": "/urunlerimiz/kutu-harf-tabela", "category": "Tabela" },
-    { "img": "/images/urunler/isikli-blok-1.webp", "title": "Işıklı Blok Tabela", "href": "/urunlerimiz/isikli-blok-tabela", "category": "Tabela" }
+    { "img": "/images/urunler/komple-arac-1.webp", "title": "Komple Araç Kaplama", "href": "/urunlerimiz/komple-arac-kaplama/", "category": "Folyo & Giydirme" },
+    { "img": "/images/urunler/cam-folyo-2.webp", "title": "Cam Folyo Giydirme", "href": "/urunlerimiz/cam-folyo-giydirme/", "category": "Folyo & Giydirme" },
+    { "img": "/images/urunler/kutu-harf-1.webp", "title": "Kutu Harf Tabela", "href": "/urunlerimiz/kutu-harf-tabela/", "category": "Tabela" },
+    { "img": "/images/urunler/isikli-blok-1.webp", "title": "Işıklı Blok Tabela", "href": "/urunlerimiz/isikli-blok-tabela/", "category": "Tabela" }
   ]
 }

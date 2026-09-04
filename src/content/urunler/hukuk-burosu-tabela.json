@@ -1,8 +1,9 @@
 {
   "title": "Hukuk Bürosu Tabela",
+  "seoTitle": "Hukuk Bürosu Tabelası Pendik İstanbul",
   "description": "Avukat ofisi ve hukuk bürosu tabelası. Alüminyum, kompozit ve pleksi malzeme. Eymen Reklam — 25 yıllık tecrübe, 2 yıl garanti.",
   "category": "Tabela",
-  "categoryHref": "/hizmetlerimiz/tabela",
+  "categoryHref": "/hizmetlerimiz/tabela/",
   "shortDesc": "Hukuk bürosu ve avukat ofisi tabela imalatı. Alüminyum, kompozit ve pleksi malzeme seçenekleriyle kurumsal kimliğinizi yansıtan, TBB yönetmeliğine uygun profesyonel tabela çözümü.",
   "mainImg": "/images/urunler/hukuk-tabela-1.webp",
   "gallery": [
@@ -63,9 +64,9 @@
     { "q": "Tasarım desteği var mı?", "a": "Evet, ücretsiz grafik tasarım desteği sunuyoruz. Kurumsal kimliğinize uygun tabela tasarımı hazırlıyoruz." }
   ],
   "relatedProducts": [
-    { "img": "/images/urunler/dis-hekimi-tabela-1.webp", "title": "Diş Hekimi Tabelası", "href": "/urunlerimiz/dis-hekimi-tabelasi", "category": "Tabela" },
-    { "img": "/images/urunler/askili-tabela-1.webp", "title": "Askılı Tabela", "href": "/urunlerimiz/askili-tabela", "category": "Tabela" },
-    { "img": "/images/urunler/fener-tabela-1.webp", "title": "Fener Tabela", "href": "/urunlerimiz/fener-tabela", "category": "Tabela" },
-    { "img": "/images/urunler/kutu-harf-1.webp", "title": "Kutu Harf Tabela", "href": "/urunlerimiz/kutu-harf-tabela", "category": "Tabela" }
+    { "img": "/images/urunler/dis-hekimi-tabela-1.webp", "title": "Diş Hekimi Tabelası", "href": "/urunlerimiz/dis-hekimi-tabelasi/", "category": "Tabela" },
+    { "img": "/images/urunler/askili-tabela-1.webp", "title": "Askılı Tabela", "href": "/urunlerimiz/askili-tabela/", "category": "Tabela" },
+    { "img": "/images/urunler/fener-tabela-1.webp", "title": "Fener Tabela", "href": "/urunlerimiz/fener-tabela/", "category": "Tabela" },
+    { "img": "/images/urunler/kutu-harf-1.webp", "title": "Kutu Harf Tabela", "href": "/urunlerimiz/kutu-harf-tabela/", "category": "Tabela" }
   ]
 }

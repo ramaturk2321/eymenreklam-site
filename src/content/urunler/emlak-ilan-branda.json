@@ -3,7 +3,7 @@
   "seoTitle": "Emlak Branda Baskı | Satılık Kiralık İlan",
   "description": "Emlak branda baskı, satılık kiralık ilan brandası ve emlakçı branda afiş üretimi. Dayanıklı vinil branda, net baskı, hızlı teslim.",
   "category": "Bez Baskı",
-  "categoryHref": "/hizmetlerimiz/bez-baski",
+  "categoryHref": "/hizmetlerimiz/bez-baski/",
   "shortDesc": "Emlak ilan branda ve bez baskı hizmeti. Satılık ve kiralık gayrimenkul ilanları için hava koşullarına dayanıklı, net ve canlı baskı kalitesi.",
   "mainImg": "/images/urunler/emlak-branda-1.webp",
   "gallery": [
@@ -63,9 +63,9 @@
     { "q": "Tasarım desteği var mı?", "a": "Evet, ücretsiz grafik tasarım desteği sunuyoruz. İlan bilgilerinizi iletmeniz yeterlidir." }
   ],
   "relatedProducts": [
-    { "img": "/images/urunler/market-branda-1.webp", "title": "Market Branda Baskı", "href": "/urunlerimiz/market-branda", "category": "Bez Baskı" },
-    { "img": "/images/urunler/branda-1.webp", "title": "Bez & Branda Baskı", "href": "/urunlerimiz/bez-branda-baski", "category": "Bez Baskı" },
-    { "img": "/images/urunler/afis-branda-2.webp", "title": "Afiş Branda", "href": "/urunlerimiz/afis-branda", "category": "Afiş Baskı" },
-    { "img": "/images/urunler/pankart-branda-1.webp", "title": "Pankart Branda Baskı", "href": "/urunlerimiz/pankart-branda", "category": "Bez Baskı" }
+    { "img": "/images/urunler/market-branda-1.webp", "title": "Market Branda Baskı", "href": "/urunlerimiz/market-branda/", "category": "Bez Baskı" },
+    { "img": "/images/urunler/branda-1.webp", "title": "Bez & Branda Baskı", "href": "/urunlerimiz/bez-branda-baski/", "category": "Bez Baskı" },
+    { "img": "/images/urunler/afis-branda-2.webp", "title": "Afiş Branda", "href": "/urunlerimiz/afis-branda/", "category": "Afiş Baskı" },
+    { "img": "/images/urunler/pankart-branda-1.webp", "title": "Pankart Branda Baskı", "href": "/urunlerimiz/pankart-branda/", "category": "Bez Baskı" }
   ]
 }

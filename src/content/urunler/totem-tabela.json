@@ -1,8 +1,9 @@
 {
   "title": "Totem Tabela",
+  "seoTitle": "Totem Tabela İmalatı Pendik İstanbul",
   "description": "Yüksek görünürlüklü totem tabela (pilon tabela) üretimi. Çelik konstrüksiyon, LED aydınlatma. Eymen Reklam — 25 yıllık tecrübe, 2 yıl garanti.",
   "category": "Tabela",
-  "categoryHref": "/hizmetlerimiz/tabela",
+  "categoryHref": "/hizmetlerimiz/tabela/",
   "shortDesc": "Yüksek görünürlüklü totem tabela (pilon tabela) üretimi. Çelik konstrüksiyon gövde, LED aydınlatmalı kasetler ve profesyonel montaj ile markanızı uzak mesafelerden fark edilir kılın.",
   "mainImg": "/images/urunler/totem-1.webp",
   "gallery": [
@@ -68,9 +69,9 @@
     { "q": "Maksimum ne yükseklikte totem tabela yapılabilir?", "a": "10 metreye kadar standart üretim yapıyoruz. Daha yüksek projeler için özel mühendislik hesabı ve statik proje ile üretim mümkündür." }
   ],
   "relatedProducts": [
-    { "img": "/images/urunler/kutu-harf-1.webp", "title": "Kutu Harf Tabela", "href": "/urunlerimiz/kutu-harf-tabela", "category": "Tabela" },
-    { "img": "/images/urunler/isikli-blok-1.webp", "title": "Işıklı Blok Tabela", "href": "/urunlerimiz/isikli-blok-tabela", "category": "Tabela" },
-    { "img": "/images/urunler/fener-tabela-1.webp", "title": "Fener Tabela", "href": "/urunlerimiz/fener-tabela", "category": "Tabela" },
-    { "img": "/images/urunler/vinil-tabela-1.webp", "title": "Vinil Tabela", "href": "/urunlerimiz/vinil-tabela", "category": "Tabela" }
+    { "img": "/images/urunler/kutu-harf-1.webp", "title": "Kutu Harf Tabela", "href": "/urunlerimiz/kutu-harf-tabela/", "category": "Tabela" },
+    { "img": "/images/urunler/isikli-blok-1.webp", "title": "Işıklı Blok Tabela", "href": "/urunlerimiz/isikli-blok-tabela/", "category": "Tabela" },
+    { "img": "/images/urunler/fener-tabela-1.webp", "title": "Fener Tabela", "href": "/urunlerimiz/fener-tabela/", "category": "Tabela" },
+    { "img": "/images/urunler/vinil-tabela-1.webp", "title": "Vinil Tabela", "href": "/urunlerimiz/vinil-tabela/", "category": "Tabela" }
   ]
 }

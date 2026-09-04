@@ -3,7 +3,7 @@
   "seoTitle": "Palet Eteği Baskı | Market Raf Altı Reklam",
   "description": "Palet eteği baskı hizmeti. Market raf altı reklam, palet kenarı kampanya duyuruları ve mağaza içi tanıtım için özel ölçülü üretim.",
   "category": "Mağaza Reklam",
-  "categoryHref": "/hizmetlerimiz/magaza-reklam",
+  "categoryHref": "/hizmetlerimiz/magaza-reklam/",
   "shortDesc": "Palet eteği baskı hizmeti. Market ve mağaza raf altı kampanya duyuruları için dikkat çekici, dayanıklı palet eteği çözümleri.",
   "mainImg": "/images/urunler/palet-etegi-1.webp",
   "gallery": [
@@ -57,9 +57,9 @@
     { "q": "Tasarım desteği var mı?", "a": "Evet, ücretsiz grafik tasarım desteği sunuyoruz." }
   ],
   "relatedProducts": [
-    { "img": "/images/urunler/donkart-1.webp", "title": "Dönkart Afiş", "href": "/urunlerimiz/donkart", "category": "Display & Stand" },
-    { "img": "/images/urunler/market-branda-1.webp", "title": "Market Branda Baskı", "href": "/urunlerimiz/market-branda", "category": "Bez Baskı" },
-    { "img": "/images/urunler/fotoblok-1.webp", "title": "Fotoblok Baskı", "href": "/urunlerimiz/fotoblok", "category": "Dijital Baskı" },
-    { "img": "/images/urunler/uv-baski-1.webp", "title": "UV Baskı", "href": "/urunlerimiz/uv-baski", "category": "UV Baskı" }
+    { "img": "/images/urunler/donkart-1.webp", "title": "Dönkart Afiş", "href": "/urunlerimiz/donkart/", "category": "Display & Stand" },
+    { "img": "/images/urunler/market-branda-1.webp", "title": "Market Branda Baskı", "href": "/urunlerimiz/market-branda/", "category": "Bez Baskı" },
+    { "img": "/images/urunler/fotoblok-1.webp", "title": "Fotoblok Baskı", "href": "/urunlerimiz/fotoblok/", "category": "Dijital Baskı" },
+    { "img": "/images/urunler/uv-baski-1.webp", "title": "UV Baskı", "href": "/urunlerimiz/uv-baski/", "category": "UV Baskı" }
   ]
 }

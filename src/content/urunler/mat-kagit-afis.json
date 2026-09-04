@@ -1,8 +1,9 @@
 {
   "title": "Mat Kağıt Afiş / Poster Baskı",
+  "seoTitle": "Mat Kağıt Afiş Poster Baskı Pendik İstanbul",
   "description": "Mat kağıt afiş ve poster baskı hizmeti. Yüksek çözünürlük, canlı renkler. Eymen Reklam — 25 yıllık tecrübe, 2 yıl garanti.",
   "category": "Dijital Baskı",
-  "categoryHref": "/hizmetlerimiz/dijital-baski",
+  "categoryHref": "/hizmetlerimiz/dijital-baski/",
   "shortDesc": "Mat kağıt afiş ve poster baskı hizmeti. Yüksek çözünürlüklü dijital baskı ile etkinlik, kampanya ve dekorasyon amaçlı profesyonel afiş çözümü.",
   "mainImg": "/images/urunler/mat-kagit-1.webp",
   "gallery": [
@@ -63,9 +64,9 @@
     { "q": "Tasarım desteği var mı?", "a": "Evet, ücretsiz grafik tasarım desteği sunuyoruz." }
   ],
   "relatedProducts": [
-    { "img": "/images/urunler/fotoblok-1.webp", "title": "Fotoblok Baskı", "href": "/urunlerimiz/fotoblok", "category": "Dijital Baskı" },
-    { "img": "/images/urunler/insert-1.webp", "title": "Insert Tasarım Baskı", "href": "/urunlerimiz/insert-tasarim", "category": "Dijital Baskı" },
-    { "img": "/images/urunler/kartvizit-1.webp", "title": "Kartvizit Tasarım ve Baskı", "href": "/urunlerimiz/kartvizit", "category": "Dijital Baskı" },
-    { "img": "/images/urunler/katalog-1.webp", "title": "Katalog Tasarım ve Baskı", "href": "/urunlerimiz/katalog", "category": "Dijital Baskı" }
+    { "img": "/images/urunler/fotoblok-1.webp", "title": "Fotoblok Baskı", "href": "/urunlerimiz/fotoblok/", "category": "Dijital Baskı" },
+    { "img": "/images/urunler/insert-1.webp", "title": "Insert Tasarım Baskı", "href": "/urunlerimiz/insert-tasarim/", "category": "Dijital Baskı" },
+    { "img": "/images/urunler/kartvizit-1.webp", "title": "Kartvizit Tasarım ve Baskı", "href": "/urunlerimiz/kartvizit/", "category": "Dijital Baskı" },
+    { "img": "/images/urunler/katalog-1.webp", "title": "Katalog Tasarım ve Baskı", "href": "/urunlerimiz/katalog/", "category": "Dijital Baskı" }
   ]
 }

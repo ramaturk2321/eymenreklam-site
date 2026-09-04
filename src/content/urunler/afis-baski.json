@@ -3,7 +3,7 @@
   "seoTitle": "Dijital Afiş Baskı | Kuşe, Branda, Vinil",
   "description": "Kuşe kağıt, branda ve vinil üzerine dijital afiş baskı. Yüksek çözünürlük, 1-3 iş günü teslim. Eymen Reklam — 25 yıllık tecrübe.",
   "category": "Afiş Baskı",
-  "categoryHref": "/hizmetlerimiz/afis-baski",
+  "categoryHref": "/hizmetlerimiz/afis-baski/",
   "shortDesc": "Afiş baskı hizmeti. Kampanya, etkinlik ve tanıtım afişleri için yüksek çözünürlüklü dijital baskı. Kuşe kağıt, branda ve vinil seçenekleri.",
   "mainImg": "/images/urunler/afis-baski-1.webp",
   "gallery": [
@@ -65,9 +65,9 @@
     { "q": "Tasarım desteği var mı?", "a": "Evet, ücretsiz grafik tasarım desteği sunuyoruz." }
   ],
   "relatedProducts": [
-    { "img": "/images/urunler/mat-kagit-1.webp", "title": "Mat Kağıt Afiş Baskı", "href": "/urunlerimiz/mat-kagit-afis", "category": "Dijital Baskı" },
-    { "img": "/images/urunler/fotoblok-1.webp", "title": "Fotoblok Baskı", "href": "/urunlerimiz/fotoblok", "category": "Dijital Baskı" },
-    { "img": "/images/urunler/afis-branda-2.webp", "title": "Afiş Branda", "href": "/urunlerimiz/afis-branda", "category": "Afiş Baskı" },
-    { "img": "/images/urunler/bez-pankart-1.webp", "title": "Bez Pankart", "href": "/urunlerimiz/bez-pankart", "category": "Afiş Baskı" }
+    { "img": "/images/urunler/mat-kagit-1.webp", "title": "Mat Kağıt Afiş Baskı", "href": "/urunlerimiz/mat-kagit-afis/", "category": "Dijital Baskı" },
+    { "img": "/images/urunler/fotoblok-1.webp", "title": "Fotoblok Baskı", "href": "/urunlerimiz/fotoblok/", "category": "Dijital Baskı" },
+    { "img": "/images/urunler/afis-branda-2.webp", "title": "Afiş Branda", "href": "/urunlerimiz/afis-branda/", "category": "Afiş Baskı" },
+    { "img": "/images/urunler/bez-pankart-1.webp", "title": "Bez Pankart", "href": "/urunlerimiz/bez-pankart/", "category": "Afiş Baskı" }
   ]
 }

@@ -3,7 +3,7 @@
   "seoTitle": "Tır Kaplama ve Kamyon Folyo Giydirme İstanbul",
   "description": "Tır kaplama, kamyon folyo giydirme ve dorse branda baskı hizmeti. UV dayanımlı vinil, geniş yüzey kaplama ve profesyonel uygulama.",
   "category": "Folyo & Giydirme",
-  "categoryHref": "/hizmetlerimiz/folyo-giydirme",
+  "categoryHref": "/hizmetlerimiz/folyo-giydirme/",
   "shortDesc": "Kamyon ve tır folyo giydirme ile araçlarınızı mobil reklam platformuna dönüştürün. UV dayanımlı vinil malzeme, şehirlerarası yollarda yüksek görünürlük.",
   "mainImg": "/images/urunler/kamyon-tir-2.webp",
   "gallery": [
@@ -64,9 +64,9 @@
     { "q": "Filo indirimi var mı?", "a": "Evet, birden fazla araç için kurumsal filo giydirme paketleri ve toplu indirim sunuyoruz." }
   ],
   "relatedProducts": [
-    { "img": "/images/urunler/komple-arac-1.webp", "title": "Komple Araç Kaplama", "href": "/urunlerimiz/komple-arac-kaplama", "category": "Folyo & Giydirme" },
-    { "img": "/images/urunler/kismi-arac-1.webp", "title": "Kısmi Araç Kaplama", "href": "/urunlerimiz/kismi-arac-kaplama", "category": "Folyo & Giydirme" },
-    { "img": "/images/urunler/doblo-folyo-1.webp", "title": "Doblo Folyo Giydirme", "href": "/urunlerimiz/doblo-folyo-giydirme", "category": "Folyo & Giydirme" },
-    { "img": "/images/urunler/folyo-harf-1.webp", "title": "Folyo Harf Kesim", "href": "/urunlerimiz/folyo-harf-kesim", "category": "Folyo & Giydirme" }
+    { "img": "/images/urunler/komple-arac-1.webp", "title": "Komple Araç Kaplama", "href": "/urunlerimiz/komple-arac-kaplama/", "category": "Folyo & Giydirme" },
+    { "img": "/images/urunler/kismi-arac-1.webp", "title": "Kısmi Araç Kaplama", "href": "/urunlerimiz/kismi-arac-kaplama/", "category": "Folyo & Giydirme" },
+    { "img": "/images/urunler/doblo-folyo-1.webp", "title": "Doblo Folyo Giydirme", "href": "/urunlerimiz/doblo-folyo-giydirme/", "category": "Folyo & Giydirme" },
+    { "img": "/images/urunler/folyo-harf-1.webp", "title": "Folyo Harf Kesim", "href": "/urunlerimiz/folyo-harf-kesim/", "category": "Folyo & Giydirme" }
   ]
 }

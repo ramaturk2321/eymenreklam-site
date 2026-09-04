@@ -1,8 +1,9 @@
 {
   "title": "Yelken Bayrak",
+  "seoTitle": "Yelken Bayrak Baskı Pendik İstanbul",
   "description": "Dış mekan yelken bayrak üretimi. Polyester kumaş, dijital süblimasyon baskı. Eymen Reklam — 25 yıllık tecrübe.",
   "category": "Display & Stand",
-  "categoryHref": "/hizmetlerimiz/sunum-stand",
+  "categoryHref": "/hizmetlerimiz/sunum-stand/",
   "shortDesc": "Dış mekan yelken bayrak (plaj bayrağı) üretimi. Polyester kumaş üzerine dijital baskı, fiberglas veya alüminyum direk ile rüzgarda dalgalanan dikkat çekici tanıtım aracı.",
   "mainImg": "/images/urunler/yelken-bayrak-1.webp",
   "gallery": [
@@ -58,9 +59,9 @@
     { "q": "Sadece kumaş sipariş edebilir miyim?", "a": "Evet, mevcut direk sisteminize uygun yedek kumaş üretimi yapıyoruz. Farklı etkinlikler için farklı kumaşlar sipariş edebilirsiniz." }
   ],
   "relatedProducts": [
-    { "img": "/images/urunler/rollup-1.webp", "title": "Roll-Up Banner", "href": "/urunlerimiz/rollup-banner", "category": "Display & Stand" },
-    { "img": "/images/urunler/branda-1.webp", "title": "Bez & Branda Baskı", "href": "/urunlerimiz/bez-branda-baski", "category": "Bez & Afiş Baskı" },
-    { "img": "/images/urunler/orumcek-stand-1.webp", "title": "Örümcek Stand", "href": "/urunlerimiz/orumcek-stand", "category": "Display & Stand" },
-    { "img": "/images/urunler/mesh-1.webp", "title": "Mesh Baskı", "href": "/urunlerimiz/mesh-baski", "category": "Bez & Afiş Baskı" }
+    { "img": "/images/urunler/rollup-1.webp", "title": "Roll-Up Banner", "href": "/urunlerimiz/rollup-banner/", "category": "Display & Stand" },
+    { "img": "/images/urunler/branda-1.webp", "title": "Bez & Branda Baskı", "href": "/urunlerimiz/bez-branda-baski/", "category": "Bez & Afiş Baskı" },
+    { "img": "/images/urunler/orumcek-stand-1.webp", "title": "Örümcek Stand", "href": "/urunlerimiz/orumcek-stand/", "category": "Display & Stand" },
+    { "img": "/images/urunler/mesh-1.webp", "title": "Mesh Baskı", "href": "/urunlerimiz/mesh-baski/", "category": "Bez & Afiş Baskı" }
   ]
 }

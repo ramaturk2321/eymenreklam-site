@@ -1,8 +1,9 @@
 {
   "title": "Folyo Harf Kesim Uygulama",
+  "seoTitle": "Folyo Harf Kesim Uygulama Pendik İstanbul",
   "description": "Folyo harf kesim uygulama. Cam, metal ve çeşitli yüzeylere profesyonel harf montajı. Eymen Reklam — 25 yıllık tecrübe, 2 yıl garanti.",
   "category": "Folyo & Giydirme",
-  "categoryHref": "/hizmetlerimiz/folyo-giydirme",
+  "categoryHref": "/hizmetlerimiz/folyo-giydirme/",
   "shortDesc": "Folyo harf kesim uygulama ile cam, metal ve çeşitli yüzeylere profesyonel harf montajı. UV dayanımlı malzeme, plotter kesim kalitesi ve hızlı uygulama.",
   "mainImg": "/images/urunler/folyo-harf-1.webp",
   "gallery": [
@@ -61,9 +62,9 @@
     { "q": "Tasarım desteği var mı?", "a": "Evet, ücretsiz grafik tasarım desteği sunuyoruz. Firmanızın logosuna ve kurumsal kimliğine uygun harf tasarımı hazırlıyoruz." }
   ],
   "relatedProducts": [
-    { "img": "/images/urunler/cam-folyo-2.webp", "title": "Cam Folyo Giydirme", "href": "/urunlerimiz/cam-folyo-giydirme", "category": "Folyo & Giydirme" },
-    { "img": "/images/urunler/cam-kumlama-1.webp", "title": "Cam Kumlama Folyo", "href": "/urunlerimiz/cam-kumlama-folyo", "category": "Folyo & Giydirme" },
-    { "img": "/images/urunler/cephe-giydirme-3.webp", "title": "Cephe Folyo Giydirme", "href": "/urunlerimiz/cephe-giydirme", "category": "Folyo & Giydirme" },
-    { "img": "/images/urunler/ozel-etiket-1.webp", "title": "Özel Kesim Folyo Etiket", "href": "/urunlerimiz/ozel-kesim-folyo-etiket", "category": "Folyo & Giydirme" }
+    { "img": "/images/urunler/cam-folyo-2.webp", "title": "Cam Folyo Giydirme", "href": "/urunlerimiz/cam-folyo-giydirme/", "category": "Folyo & Giydirme" },
+    { "img": "/images/urunler/cam-kumlama-1.webp", "title": "Cam Kumlama Folyo", "href": "/urunlerimiz/cam-kumlama-folyo/", "category": "Folyo & Giydirme" },
+    { "img": "/images/urunler/cephe-giydirme-3.webp", "title": "Cephe Folyo Giydirme", "href": "/urunlerimiz/cephe-giydirme/", "category": "Folyo & Giydirme" },
+    { "img": "/images/urunler/ozel-etiket-1.webp", "title": "Özel Kesim Folyo Etiket", "href": "/urunlerimiz/ozel-kesim-folyo-etiket/", "category": "Folyo & Giydirme" }
   ]
 }

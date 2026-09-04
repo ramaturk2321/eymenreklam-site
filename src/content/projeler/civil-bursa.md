@@ -1,5 +1,6 @@
 ---
 title: "Civil Bursa"
+seoTitle: "Civil Bursa Araç Giydirme Uygulaması"
 description: "Civil markası için Bursa'da araç giydirme ve folyo kaplama uygulaması."
 image: "/images/projeler/civil-bursa.webp"
 categories: ["Folyo & Giydirme"]

@@ -1,8 +1,9 @@
 {
   "title": "Bizim Toptan Mağazası",
+  "seoTitle": "Bizim Toptan Mağaza Reklam Uygulaması",
   "description": "Bizim Toptan mağaza reklam uygulamaları. Tabela, branda, folyo ve iç mekân reklam. Eymen Reklam — 25 yıllık tecrübe.",
-  "category": "Projelerimiz",
-  "categoryHref": "/hizmetlerimiz/magaza-reklam",
+  "category": "Mağaza Reklam",
+  "categoryHref": "/hizmetlerimiz/magaza-reklam/",
   "shortDesc": "Bizim Toptan mağazaları için tabela, branda, folyo giydirme ve iç mekân reklam uygulamaları. Komple mağaza reklam çözümleri.",
   "mainImg": "/images/urunler/bizim-toptan-1.webp",
   "gallery": [
@@ -56,9 +57,9 @@
     { "q": "Tasarım desteği var mı?", "a": "Evet, kurumsal kimliğe uygun ücretsiz tasarım desteği sunuyoruz." }
   ],
   "relatedProducts": [
-    { "img": "/images/urunler/hakmar-avm-1.webp", "title": "Hakmar AVM", "href": "/urunlerimiz/hakmar-avm", "category": "Projelerimiz" },
-    { "img": "/images/urunler/eve-magazasi-1.webp", "title": "Eve Mağazası", "href": "/urunlerimiz/eve-magazasi", "category": "Projelerimiz" },
-    { "img": "/images/urunler/market-branda-1.webp", "title": "Market Branda Baskı", "href": "/urunlerimiz/market-branda", "category": "Bez Baskı" },
-    { "img": "/images/urunler/isikli-blok-1.webp", "title": "Işıklı Blok Tabela", "href": "/urunlerimiz/isikli-blok-tabela", "category": "Tabela" }
+    { "img": "/images/urunler/hakmar-avm-1.webp", "title": "Hakmar AVM", "href": "/urunlerimiz/hakmar-avm/", "category": "Mağaza Reklam" },
+    { "img": "/images/urunler/eve-magazasi-1.webp", "title": "Eve Mağazası", "href": "/urunlerimiz/eve-magazasi/", "category": "Mağaza Reklam" },
+    { "img": "/images/urunler/market-branda-1.webp", "title": "Market Branda Baskı", "href": "/urunlerimiz/market-branda/", "category": "Bez Baskı" },
+    { "img": "/images/urunler/isikli-blok-1.webp", "title": "Işıklı Blok Tabela", "href": "/urunlerimiz/isikli-blok-tabela/", "category": "Tabela" }
   ]
 }

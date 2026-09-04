@@ -1,8 +1,9 @@
 {
   "title": "İnşaat Tabelası",
+  "seoTitle": "İnşaat Tabelası İmalatı Pendik İstanbul",
   "description": "Satılık daire, proje tanıtım ve inşaat alanı tabelası imalatı. Vinil branda, alüminyum ve dekota malzeme. Eymen Reklam — 25 yıllık tecrübe, 2 yıl garanti.",
   "category": "Tabela",
-  "categoryHref": "/hizmetlerimiz/tabela",
+  "categoryHref": "/hizmetlerimiz/tabela/",
   "shortDesc": "İnşaat alanı, satılık daire ve proje tanıtım tabelası imalatı. Vinil branda, alüminyum ve dekota malzeme seçenekleriyle 3194 İmar Kanunu'na uygun, dayanıklı ve dikkat çekici tabela çözümü.",
   "mainImg": "/images/urunler/insaat-tabela-1.webp",
   "gallery": [
@@ -64,9 +65,9 @@
     { "q": "Tasarım desteği var mı?", "a": "Evet, ücretsiz grafik tasarım desteği sunuyoruz. Proje görselleri, kat planları ve kurumsal kimliğinize uygun tabela tasarımı hazırlıyoruz." }
   ],
   "relatedProducts": [
-    { "img": "/images/urunler/cati-tabela-1.webp", "title": "Çatı Tabelası", "href": "/urunlerimiz/cati-tabelasi", "category": "Tabela" },
-    { "img": "/images/urunler/vinil-tabela-1.webp", "title": "Vinil Tabela", "href": "/urunlerimiz/vinil-tabela", "category": "Tabela" },
-    { "img": "/images/urunler/totem-1.webp", "title": "Totem Tabela", "href": "/urunlerimiz/totem-tabela", "category": "Tabela" },
-    { "img": "/images/urunler/isikli-blok-1.webp", "title": "Işıklı Blok Tabela", "href": "/urunlerimiz/isikli-blok-tabela", "category": "Tabela" }
+    { "img": "/images/urunler/cati-tabela-1.webp", "title": "Çatı Tabelası", "href": "/urunlerimiz/cati-tabelasi/", "category": "Tabela" },
+    { "img": "/images/urunler/vinil-tabela-1.webp", "title": "Vinil Tabela", "href": "/urunlerimiz/vinil-tabela/", "category": "Tabela" },
+    { "img": "/images/urunler/totem-1.webp", "title": "Totem Tabela", "href": "/urunlerimiz/totem-tabela/", "category": "Tabela" },
+    { "img": "/images/urunler/isikli-blok-1.webp", "title": "Işıklı Blok Tabela", "href": "/urunlerimiz/isikli-blok-tabela/", "category": "Tabela" }
   ]
 }

@@ -2,14 +2,21 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 import { getCollection } from 'astro:content';
 import { company } from '../lib/site-data';
+import type { UrunKategori } from '../lib/kategoriler';
 
-// Kategori eşleme: Content Collection category → filtre ID
-const categoryMap: Record<string, string> = {
+// Kategori eşleme: Content Collection category (URUN_KATEGORILERI enum'u) → filtre ID.
+// Her enum değeri burada olmak ZORUNDA; eksik olursa build kırılır, ürün sessizce yanlış sekmeye düşmez.
+const categoryMap: Record<UrunKategori, string> = {
   'Tabela': 'tabela',
-  'UV Baskı': 'baski',
   'Folyo & Giydirme': 'folyo',
+  'UV Baskı': 'baski',
+  'Dijital Baskı': 'baski',
+  'Afiş Baskı': 'baski',
+  'Bez Baskı': 'baski',
   'Bez & Afiş Baskı': 'baski',
+  'İş Güvenliği': 'baski',
   'Display & Stand': 'display',
+  'Mağaza Reklam': 'magaza',
 };
 
 const categories = [
@@ -18,16 +25,21 @@ const categories = [
   { id: 'folyo', label: 'Folyo & Araç' },
   { id: 'baski', label: 'Baskı' },
   { id: 'display', label: 'Display & Stand' },
+  { id: 'magaza', label: 'Mağaza Reklam' },
 ];
 
 const urunler = await getCollection('urunler');
-const products = urunler.map(u => ({
+const products = urunler.map(u => {
+  const filterId = categoryMap[u.data.category];
+  if (!filterId) throw new Error(`Ürün "${u.id}" için filtre eşlemesi yok: "${u.data.category}"`);
+  return {
   title: u.data.title,
-  category: categoryMap[u.data.category] || 'tabela',
+  category: filterId,
   image: u.data.mainImg,
   desc: u.data.shortDesc,
   href: `/urunlerimiz/${u.id}/`,
-}));
+  };
+});
 ---
 
 <BaseLayout title="Tabela ve Reklam Ürünleri Pendik İstanbul" description={`Eymen Reklam ürün kataloğu — Kutu harf tabela, totem tabela, UV baskı, araç giydirme ve folyo ürünleri. Pendik İstanbul'da ${company.experience} yıllık tecrübe.`}>

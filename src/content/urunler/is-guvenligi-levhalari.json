@@ -1,8 +1,9 @@
 {
   "title": "İş Güvenliği Levhaları",
+  "seoTitle": "İş Güvenliği Uyarı Levhaları Baskı İstanbul",
   "description": "İş güvenliği levhaları, uyarı tabelaları ve ikaz işaretleri. Eymen Reklam — 25 yıllık tecrübe, 2 yıl garanti.",
   "category": "İş Güvenliği",
-  "categoryHref": "/hizmetlerimiz/is-guvenligi",
+  "categoryHref": "/hizmetlerimiz/is-guvenligi/",
   "shortDesc": "İş güvenliği levhaları ve uyarı tabelaları. UV dayanıklı, net semboller ve yüksek kontrastlı renklerle donatılmış endüstriyel güvenlik işaret sistemleri.",
   "mainImg": "/images/urunler/is-guvenligi-1.webp",
   "gallery": [
@@ -64,9 +65,9 @@
     { "q": "Dış mekânda dayanır mı?", "a": "Evet, UV dayanıklı malzeme ve baskı ile dış mekânda 3-5 yıl dayanıklılık sağlar." }
   ],
   "relatedProducts": [
-    { "img": "/images/urunler/uv-baski-1.webp", "title": "UV Baskı", "href": "/urunlerimiz/uv-baski", "category": "UV Baskı" },
-    { "img": "/images/urunler/vinil-tabela-1.webp", "title": "Vinil Tabela", "href": "/urunlerimiz/vinil-tabela", "category": "Tabela" },
-    { "img": "/images/urunler/fotoblok-1.webp", "title": "Fotoblok Baskı", "href": "/urunlerimiz/fotoblok", "category": "Dijital Baskı" },
-    { "img": "/images/urunler/insaat-tabela-1.webp", "title": "İnşaat Tabelası", "href": "/urunlerimiz/insaat-tabelasi", "category": "Tabela" }
+    { "img": "/images/urunler/uv-baski-1.webp", "title": "UV Baskı", "href": "/urunlerimiz/uv-baski/", "category": "UV Baskı" },
+    { "img": "/images/urunler/vinil-tabela-1.webp", "title": "Vinil Tabela", "href": "/urunlerimiz/vinil-tabela/", "category": "Tabela" },
+    { "img": "/images/urunler/fotoblok-1.webp", "title": "Fotoblok Baskı", "href": "/urunlerimiz/fotoblok/", "category": "Dijital Baskı" },
+    { "img": "/images/urunler/insaat-tabela-1.webp", "title": "İnşaat Tabelası", "href": "/urunlerimiz/insaat-tabelasi/", "category": "Tabela" }
   ]
 }

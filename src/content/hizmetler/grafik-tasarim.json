@@ -1,5 +1,6 @@
 {
   "title": "Grafik Tasarım",
+  "seoTitle": "Grafik Tasarım Hizmeti Pendik İstanbul",
   "description": "Logo, kurumsal kimlik, katalog, broşür, afiş ve ambalaj tasarımı. Profesyonel grafik tasarım hizmetleri. İstanbul Pendik.",
   "heroDesc": "Logo, kurumsal kimlik, katalog, broşür, afiş, ambalaj ve dijital medya tasarımlarını profesyonel grafik tasarım ekibimizle hazırlıyoruz. 25 yıllık sektör deneyimimizle markanızı görsel olarak en etkili şekilde ifade ediyoruz.",
   "order": 10,
@@ -16,12 +17,12 @@
     { "icon": "📱", "title": "Dijital Medya Tasarımı", "desc": "Sosyal medya görselleri, web banner, e-posta şablonu ve dijital reklam tasarımları." }
   ],
   "products": [
-    { "title": "Logo Tasarım", "desc": "Özgün ve akılda kalıcı logo tasarımı. Vektörel dosya, renk kodları ve kullanım kılavuzu dahil.", "image": "/images/urunler/insert-1.webp", "href": "/urunlerimiz/insert-tasarim" },
-    { "title": "Kartvizit Tasarım & Baskı", "desc": "Kurumsal kimliğinize uygun kartvizit tasarımı ve baskısı. Mat, parlak ve özel kağıt seçenekleri.", "image": "/images/urunler/kartvizit-1.webp", "href": "/urunlerimiz/kartvizit" },
-    { "title": "Katalog & Broşür", "desc": "Ürün kataloğu ve tanıtım broşürü tasarım ve baskısı. Profesyonel düzen ve tipografi.", "image": "/images/urunler/katalog-1.webp", "href": "/urunlerimiz/katalog" },
-    { "title": "Afiş & Poster", "desc": "Kampanya, etkinlik ve tanıtım afişleri. A4'den A0'a kadar tüm boyutlarda tasarım ve baskı.", "image": "/images/urunler/afis-baski-1.webp", "href": "/urunlerimiz/afis-baski" },
-    { "title": "Tabela Tasarım", "desc": "Tabela, kutu harf ve cephe tasarımları. 3D görselleştirme ile montaj öncesi önizleme.", "image": "/images/urunler/kutu-harf-1.webp", "href": "/urunlerimiz/kutu-harf-tabela" },
-    { "title": "Mağaza Konsept Tasarımı", "desc": "Mağaza iç ve dış cephe tasarımı. Tabeladan vitrine, yönlendirmeden dekorasyona bütüncül çözüm.", "image": "/images/urunler/bizim-toptan-1.webp", "href": "/urunlerimiz/bizim-toptan-magazasi" }
+    { "title": "Logo Tasarım", "desc": "Özgün ve akılda kalıcı logo tasarımı. Vektörel dosya, renk kodları ve kullanım kılavuzu dahil.", "image": "/images/urunler/insert-1.webp", "href": "/urunlerimiz/insert-tasarim/" },
+    { "title": "Kartvizit Tasarım & Baskı", "desc": "Kurumsal kimliğinize uygun kartvizit tasarımı ve baskısı. Mat, parlak ve özel kağıt seçenekleri.", "image": "/images/urunler/kartvizit-1.webp", "href": "/urunlerimiz/kartvizit/" },
+    { "title": "Katalog & Broşür", "desc": "Ürün kataloğu ve tanıtım broşürü tasarım ve baskısı. Profesyonel düzen ve tipografi.", "image": "/images/urunler/katalog-1.webp", "href": "/urunlerimiz/katalog/" },
+    { "title": "Afiş & Poster", "desc": "Kampanya, etkinlik ve tanıtım afişleri. A4'den A0'a kadar tüm boyutlarda tasarım ve baskı.", "image": "/images/urunler/afis-baski-1.webp", "href": "/urunlerimiz/afis-baski/" },
+    { "title": "Tabela Tasarım", "desc": "Tabela, kutu harf ve cephe tasarımları. 3D görselleştirme ile montaj öncesi önizleme.", "image": "/images/urunler/kutu-harf-1.webp", "href": "/urunlerimiz/kutu-harf-tabela/" },
+    { "title": "Mağaza Konsept Tasarımı", "desc": "Mağaza iç ve dış cephe tasarımı. Tabeladan vitrine, yönlendirmeden dekorasyona bütüncül çözüm.", "image": "/images/urunler/bizim-toptan-1.webp", "href": "/urunlerimiz/bizim-toptan-magazasi/" }
   ],
   "process": [
     { "step": "01", "title": "Brifing & Analiz", "desc": "Markanızı, hedef kitlenizi ve beklentilerinizi anlıyoruz. Sektör ve rakip analizi yapıyoruz." },

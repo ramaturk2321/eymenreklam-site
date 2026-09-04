@@ -1,8 +1,9 @@
 {
   "title": "Kutu Harf Tabela",
+  "seoTitle": "Kutu Harf Tabela İmalatı Pendik İstanbul",
   "description": "LED aydınlatmalı 3D kutu harf tabela imalatı. Paslanmaz çelik, galvaniz, alüminyum seçenekleri. Eymen Reklam — 25 yıllık tecrübe, 2 yıl garanti.",
   "category": "Tabela",
-  "categoryHref": "/hizmetlerimiz/tabela",
+  "categoryHref": "/hizmetlerimiz/tabela/",
   "shortDesc": "LED aydınlatmalı 3D kutu harf tabela üretimi. Gündüz ve gece etkili marka görünürlüğü sağlayan, paslanmaz çelik, galvaniz veya alüminyum kasadan imal edilen profesyonel tabela çözümü.",
   "mainImg": "/images/urunler/kutu-harf-1.webp",
   "gallery": [
@@ -70,9 +71,9 @@
     { "q": "Hangi illere montaj yapıyorsunuz?", "a": "İstanbul ve çevre illerde (Kocaeli, Sakarya, Tekirdağ, Edirne, Bursa) montaj hizmeti veriyoruz. Diğer iller için kargo ile gönderim yapıyoruz." }
   ],
   "relatedProducts": [
-    { "img": "/images/urunler/totem-1.webp", "title": "Totem Tabela", "href": "/urunlerimiz/totem-tabela", "category": "Tabela" },
-    { "img": "/images/urunler/cati-tabela-1.webp", "title": "Çatı Tabelası", "href": "/urunlerimiz/cati-tabelasi", "category": "Tabela" },
-    { "img": "/images/urunler/neon-led-1.webp", "title": "Neon LED Tabela", "href": "/urunlerimiz/neon-led-tabela", "category": "Tabela" },
-    { "img": "/images/urunler/isikli-blok-1.webp", "title": "Işıklı Blok Tabela", "href": "/urunlerimiz/isikli-blok-tabela", "category": "Tabela" }
+    { "img": "/images/urunler/totem-1.webp", "title": "Totem Tabela", "href": "/urunlerimiz/totem-tabela/", "category": "Tabela" },
+    { "img": "/images/urunler/cati-tabela-1.webp", "title": "Çatı Tabelası", "href": "/urunlerimiz/cati-tabelasi/", "category": "Tabela" },
+    { "img": "/images/urunler/neon-led-1.webp", "title": "Neon LED Tabela", "href": "/urunlerimiz/neon-led-tabela/", "category": "Tabela" },
+    { "img": "/images/urunler/isikli-blok-1.webp", "title": "Işıklı Blok Tabela", "href": "/urunlerimiz/isikli-blok-tabela/", "category": "Tabela" }
   ]
 }

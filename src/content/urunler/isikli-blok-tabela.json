@@ -1,8 +1,9 @@
 {
   "title": "Işıklı Blok Tabela",
+  "seoTitle": "Işıklı Blok Tabela Pendik İstanbul",
   "description": "İç ve dış mekan ışıklı blok tabela. Pleksiglas yüzey, LED iç aydınlatma. Eymen Reklam — 25 yıllık tecrübe, 2 yıl garanti.",
   "category": "Tabela",
-  "categoryHref": "/hizmetlerimiz/tabela",
+  "categoryHref": "/hizmetlerimiz/tabela/",
   "shortDesc": "İç ve dış mekan ışıklı blok tabela imalatı. Pleksiglas yüzey üzerine dijital baskı veya folyo uygulama, LED iç aydınlatma ile gece-gündüz etkili kurumsal görünüm.",
   "mainImg": "/images/urunler/isikli-blok-1.webp",
   "gallery": [
@@ -65,9 +66,9 @@
     { "q": "Grafik değişimi yapılabiliyor mu?", "a": "Pleksiglas yüzeyde folyo veya baskı değişimi yapılabilir. Bu işlem genellikle tabelayı sökmeden yerinde gerçekleştirilebilir." }
   ],
   "relatedProducts": [
-    { "img": "/images/urunler/kutu-harf-1.webp", "title": "Kutu Harf Tabela", "href": "/urunlerimiz/kutu-harf-tabela", "category": "Tabela" },
-    { "img": "/images/urunler/totem-1.webp", "title": "Totem Tabela", "href": "/urunlerimiz/totem-tabela", "category": "Tabela" },
-    { "img": "/images/urunler/fener-tabela-1.webp", "title": "Fener Tabela", "href": "/urunlerimiz/fener-tabela", "category": "Tabela" },
-    { "img": "/images/urunler/vinil-tabela-1.webp", "title": "Vinil Tabela", "href": "/urunlerimiz/vinil-tabela", "category": "Tabela" }
+    { "img": "/images/urunler/kutu-harf-1.webp", "title": "Kutu Harf Tabela", "href": "/urunlerimiz/kutu-harf-tabela/", "category": "Tabela" },
+    { "img": "/images/urunler/totem-1.webp", "title": "Totem Tabela", "href": "/urunlerimiz/totem-tabela/", "category": "Tabela" },
+    { "img": "/images/urunler/fener-tabela-1.webp", "title": "Fener Tabela", "href": "/urunlerimiz/fener-tabela/", "category": "Tabela" },
+    { "img": "/images/urunler/vinil-tabela-1.webp", "title": "Vinil Tabela", "href": "/urunlerimiz/vinil-tabela/", "category": "Tabela" }
   ]
 }

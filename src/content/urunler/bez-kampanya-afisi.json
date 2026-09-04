@@ -1,8 +1,9 @@
 {
   "title": "Bez Kampanya Afişi Baskı",
+  "seoTitle": "Bez Kampanya Afişi Baskı Pendik İstanbul",
   "description": "Bez kampanya afişi baskı hizmeti. Dayanıklı kumaş üzerine canlı renkli dijital baskı. Eymen Reklam — 25 yıllık tecrübe, 2 yıl garanti.",
   "category": "Bez Baskı",
-  "categoryHref": "/hizmetlerimiz/bez-baski",
+  "categoryHref": "/hizmetlerimiz/bez-baski/",
   "shortDesc": "Bez kampanya afişi baskı hizmeti. Mağaza, fuar ve etkinlik alanları için dayanıklı kumaş üzerine yüksek çözünürlüklü dijital baskı.",
   "mainImg": "/images/urunler/bez-kampanya-1.webp",
   "gallery": [
@@ -61,9 +62,9 @@
     { "q": "Tasarım desteği var mı?", "a": "Evet, ücretsiz grafik tasarım desteği sunuyoruz." }
   ],
   "relatedProducts": [
-    { "img": "/images/urunler/bez-pankart-1.webp", "title": "Bez Pankart", "href": "/urunlerimiz/bez-pankart", "category": "Afiş Baskı" },
-    { "img": "/images/urunler/branda-1.webp", "title": "Bez & Branda Baskı", "href": "/urunlerimiz/bez-branda-baski", "category": "Bez Baskı" },
-    { "img": "/images/urunler/market-branda-1.webp", "title": "Market Branda Baskı", "href": "/urunlerimiz/market-branda", "category": "Bez Baskı" },
-    { "img": "/images/urunler/mesh-1.webp", "title": "Mesh Baskı", "href": "/urunlerimiz/mesh-baski", "category": "Bez Baskı" }
+    { "img": "/images/urunler/bez-pankart-1.webp", "title": "Bez Pankart", "href": "/urunlerimiz/bez-pankart/", "category": "Afiş Baskı" },
+    { "img": "/images/urunler/branda-1.webp", "title": "Bez & Branda Baskı", "href": "/urunlerimiz/bez-branda-baski/", "category": "Bez Baskı" },
+    { "img": "/images/urunler/market-branda-1.webp", "title": "Market Branda Baskı", "href": "/urunlerimiz/market-branda/", "category": "Bez Baskı" },
+    { "img": "/images/urunler/mesh-1.webp", "title": "Mesh Baskı", "href": "/urunlerimiz/mesh-baski/", "category": "Bez Baskı" }
   ]
 }

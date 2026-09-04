@@ -92,6 +92,101 @@
       "source": "/projelerimiz/ticari-arac-giydirme/",
       "destination": "/projelerimiz/arac-giydirme-uygulamalari/",
       "permanent": true
+    },
+    {
+      "source": "/Index.html",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/sitemap.html",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/about.html",
+      "destination": "/hakkimizda/",
+      "permanent": true
+    },
+    {
+      "source": "/hakkimizda.html",
+      "destination": "/hakkimizda/",
+      "permanent": true
+    },
+    {
+      "source": "/misyon.html",
+      "destination": "/hakkimizda/",
+      "permanent": true
+    },
+    {
+      "source": "/vizyon.html",
+      "destination": "/hakkimizda/",
+      "permanent": true
+    },
+    {
+      "source": "/calisma.html",
+      "destination": "/hakkimizda/",
+      "permanent": true
+    },
+    {
+      "source": "/ajans.html",
+      "destination": "/hakkimizda/",
+      "permanent": true
+    },
+    {
+      "source": "/contacts.html",
+      "destination": "/iletisim/",
+      "permanent": true
+    },
+    {
+      "source": "/iletisim.html",
+      "destination": "/iletisim/",
+      "permanent": true
+    },
+    {
+      "source": "/fiyat.html",
+      "destination": "/teklif-al/",
+      "permanent": true
+    },
+    {
+      "source": "/gallery.html",
+      "destination": "/projelerimiz/",
+      "permanent": true
+    },
+    {
+      "source": "/referanslarimiz.html",
+      "destination": "/projelerimiz/",
+      "permanent": true
+    },
+    {
+      "source": "/hizmetlerimiz.html",
+      "destination": "/hizmetlerimiz/",
+      "permanent": true
+    },
+    {
+      "source": "/privacy.html",
+      "destination": "/gizlilik/",
+      "permanent": true
+    },
+    {
+      "source": "/promosyon.html",
+      "destination": "/promosyon/",
+      "permanent": true
+    },
+    {
+      "source": "/tabela-cesitleri-blog/",
+      "destination": "/blog/tabela-yaptirmak-istiyorum/",
+      "permanent": true
+    },
+    {
+      "source": "/urun/:slug/",
+      "destination": "/urunlerimiz/:slug/",
+      "permanent": true
+    },
+    {
+      "source": "/urun/:slug",
+      "destination": "/urunlerimiz/:slug/",
+      "permanent": true
     }
   ]
 }

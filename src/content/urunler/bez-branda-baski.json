@@ -1,8 +1,9 @@
 {
   "title": "Bez & Branda Baskı",
+  "seoTitle": "Bez ve Branda Baskı Pendik İstanbul",
   "description": "Yüksek çözünürlüklü bez ve branda baskı. Dış mekan reklamları, pankart, cephe kapatma. Eymen Reklam — 25 yıllık tecrübe.",
   "category": "Bez & Afiş Baskı",
-  "categoryHref": "/hizmetlerimiz/bez-baski",
+  "categoryHref": "/hizmetlerimiz/bez-baski/",
   "shortDesc": "Yüksek çözünürlüklü bez ve branda baskı hizmeti. Açık hava reklamları, etkinlik pankartları, inşaat görselleri ve cephe kapatma için dayanıklı branda baskı çözümleri.",
   "mainImg": "/images/urunler/branda-1.webp",
   "gallery": [
@@ -57,9 +58,9 @@
     { "q": "Branda dış mekanda ne kadar dayanır?", "a": "Standart branda dış mekanda 2-3 yıl dayanır. Doğrudan güneş alan yerlerde renk solması süre ile görülebilir." }
   ],
   "relatedProducts": [
-    { "img": "/images/urunler/mesh-1.webp", "title": "Mesh Baskı", "href": "/urunlerimiz/mesh-baski", "category": "Bez & Afiş Baskı" },
-    { "img": "/images/urunler/rollup-1.webp", "title": "Roll-Up Banner", "href": "/urunlerimiz/rollup-banner", "category": "Display & Stand" },
-    { "img": "/images/urunler/yelken-bayrak-1.webp", "title": "Yelken Bayrak", "href": "/urunlerimiz/yelken-bayrak", "category": "Display & Stand" },
-    { "img": "/images/urunler/uv-baski-1.webp", "title": "UV Baskı", "href": "/urunlerimiz/uv-baski", "category": "UV Baskı" }
+    { "img": "/images/urunler/mesh-1.webp", "title": "Mesh Baskı", "href": "/urunlerimiz/mesh-baski/", "category": "Bez & Afiş Baskı" },
+    { "img": "/images/urunler/rollup-1.webp", "title": "Roll-Up Banner", "href": "/urunlerimiz/rollup-banner/", "category": "Display & Stand" },
+    { "img": "/images/urunler/yelken-bayrak-1.webp", "title": "Yelken Bayrak", "href": "/urunlerimiz/yelken-bayrak/", "category": "Display & Stand" },
+    { "img": "/images/urunler/uv-baski-1.webp", "title": "UV Baskı", "href": "/urunlerimiz/uv-baski/", "category": "UV Baskı" }
   ]
 }

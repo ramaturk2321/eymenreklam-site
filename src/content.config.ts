@@ -1,5 +1,10 @@
 import { defineCollection, z } from 'astro:content';
 import { glob } from 'astro/loaders';
+import { URUN_KATEGORILERI } from './lib/kategoriler';
+
+// İç linkler her zaman / ile bitmeli (trailingSlash: 'always') — aksi hâlde her tıklama 308 yönlendirme yapar.
+const icLink = z.string().regex(/^\/[^\s]*\/$/, 'İç link "/" ile başlayıp "/" ile bitmeli (örn. /urunlerimiz/totem-tabela/)');
+
 
 const projeler = defineCollection({
   loader: glob({ pattern: '**/*.md', base: './src/content/projeler' }),
@@ -36,8 +41,8 @@ const urunler = defineCollection({
     title: z.string(),
     seoTitle: z.string().optional(),
     description: z.string(),
-    category: z.string(),
-    categoryHref: z.string(),
+    category: z.enum(URUN_KATEGORILERI),
+    categoryHref: icLink,
     shortDesc: z.string(),
     mainImg: z.string(),
     gallery: z.array(z.string()),
@@ -66,8 +71,8 @@ const urunler = defineCollection({
     relatedProducts: z.array(z.object({
       img: z.string(),
       title: z.string(),
-      href: z.string(),
-      category: z.string(),
+      href: icLink,
+      category: z.enum(URUN_KATEGORILERI),
     })),
   }),
 });
@@ -104,7 +109,7 @@ const hizmetler = defineCollection({
       title: z.string(),
       desc: z.string(),
       image: z.string(),
-      href: z.string(),
+      href: icLink,
     })),
     process: z.array(z.object({
       step: z.string(),

@@ -1,8 +1,9 @@
 {
   "title": "Diş Hekimi Tabelası",
+  "seoTitle": "Diş Hekimi Tabelası Pendik İstanbul",
   "description": "Diş kliniği ve hekim ofisi tabelası. Pleksi, alüminyum ve kompozit malzeme. Eymen Reklam — 25 yıllık tecrübe, 2 yıl garanti.",
   "category": "Tabela",
-  "categoryHref": "/hizmetlerimiz/tabela",
+  "categoryHref": "/hizmetlerimiz/tabela/",
   "shortDesc": "Diş hekimi ve klinik tabelası imalatı. Pleksi, alüminyum ve kompozit malzeme seçenekleriyle profesyonel klinik imajınızı güçlendirin. Yönlendirme levhaları dahil.",
   "mainImg": "/images/urunler/dis-hekimi-tabela-1.webp",
   "gallery": [
@@ -64,9 +65,9 @@
     { "q": "Tasarım desteği var mı?", "a": "Evet, ücretsiz grafik tasarım desteği sunuyoruz. Logonuz, kurumsal renkleriniz ve tercihlerinize göre tabela tasarımı hazırlıyoruz." }
   ],
   "relatedProducts": [
-    { "img": "/images/urunler/fener-tabela-1.webp", "title": "Fener Tabela", "href": "/urunlerimiz/fener-tabela", "category": "Tabela" },
-    { "img": "/images/urunler/isikli-blok-1.webp", "title": "Işıklı Blok Tabela", "href": "/urunlerimiz/isikli-blok-tabela", "category": "Tabela" },
-    { "img": "/images/urunler/kutu-harf-1.webp", "title": "Kutu Harf Tabela", "href": "/urunlerimiz/kutu-harf-tabela", "category": "Tabela" },
-    { "img": "/images/urunler/askili-tabela-1.webp", "title": "Askılı Tabela", "href": "/urunlerimiz/askili-tabela", "category": "Tabela" }
+    { "img": "/images/urunler/fener-tabela-1.webp", "title": "Fener Tabela", "href": "/urunlerimiz/fener-tabela/", "category": "Tabela" },
+    { "img": "/images/urunler/isikli-blok-1.webp", "title": "Işıklı Blok Tabela", "href": "/urunlerimiz/isikli-blok-tabela/", "category": "Tabela" },
+    { "img": "/images/urunler/kutu-harf-1.webp", "title": "Kutu Harf Tabela", "href": "/urunlerimiz/kutu-harf-tabela/", "category": "Tabela" },
+    { "img": "/images/urunler/askili-tabela-1.webp", "title": "Askılı Tabela", "href": "/urunlerimiz/askili-tabela/", "category": "Tabela" }
   ]
 }

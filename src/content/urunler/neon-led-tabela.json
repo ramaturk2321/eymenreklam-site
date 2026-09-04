@@ -1,8 +1,9 @@
 {
   "title": "Neon LED Tabela",
+  "seoTitle": "Neon LED Tabela İmalatı Pendik İstanbul",
   "description": "Neon LED ışıklı tabela imalatı. Enerji verimli, dikkat çekici, iç ve dış mekân. Eymen Reklam — 25 yıllık tecrübe, 2 yıl garanti.",
   "category": "Tabela",
-  "categoryHref": "/hizmetlerimiz/tabela",
+  "categoryHref": "/hizmetlerimiz/tabela/",
   "shortDesc": "Neon LED ışıklı tabela imalatı. Alüminyum kasa, pleksi yüzey ve enerji verimli LED sistemlerle gündüz ve gece dikkat çekici, modern ve şık tabela çözümü.",
   "mainImg": "/images/urunler/neon-led-1.webp",
   "gallery": [
@@ -65,9 +66,9 @@
     { "q": "Tasarım desteği var mı?", "a": "Evet, ücretsiz grafik tasarım desteği sunuyoruz. Yazı tipi, renk ve boyut tercihlerinize göre özel tasarım hazırlıyoruz." }
   ],
   "relatedProducts": [
-    { "img": "/images/urunler/kutu-harf-1.webp", "title": "Kutu Harf Tabela", "href": "/urunlerimiz/kutu-harf-tabela", "category": "Tabela" },
-    { "img": "/images/urunler/isikli-blok-1.webp", "title": "Işıklı Blok Tabela", "href": "/urunlerimiz/isikli-blok-tabela", "category": "Tabela" },
-    { "img": "/images/urunler/fener-tabela-1.webp", "title": "Fener Tabela", "href": "/urunlerimiz/fener-tabela", "category": "Tabela" },
-    { "img": "/images/urunler/cati-tabela-1.webp", "title": "Çatı Tabelası", "href": "/urunlerimiz/cati-tabelasi", "category": "Tabela" }
+    { "img": "/images/urunler/kutu-harf-1.webp", "title": "Kutu Harf Tabela", "href": "/urunlerimiz/kutu-harf-tabela/", "category": "Tabela" },
+    { "img": "/images/urunler/isikli-blok-1.webp", "title": "Işıklı Blok Tabela", "href": "/urunlerimiz/isikli-blok-tabela/", "category": "Tabela" },
+    { "img": "/images/urunler/fener-tabela-1.webp", "title": "Fener Tabela", "href": "/urunlerimiz/fener-tabela/", "category": "Tabela" },
+    { "img": "/images/urunler/cati-tabela-1.webp", "title": "Çatı Tabelası", "href": "/urunlerimiz/cati-tabelasi/", "category": "Tabela" }
   ]
 }

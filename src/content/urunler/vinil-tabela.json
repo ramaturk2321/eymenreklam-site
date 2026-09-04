@@ -1,8 +1,9 @@
 {
   "title": "Vinil Tabela",
+  "seoTitle": "Vinil Tabela İmalatı Pendik İstanbul",
   "description": "Ekonomik vinil germe tabela çözümleri. Alüminyum çerçeve, dijital baskılı vinil yüzey. Eymen Reklam — 25 yıllık tecrübe.",
   "category": "Tabela",
-  "categoryHref": "/hizmetlerimiz/tabela",
+  "categoryHref": "/hizmetlerimiz/tabela/",
   "shortDesc": "Ekonomik vinil germe tabela çözümleri. Alüminyum çerçeve üzerine dijital baskılı vinil yüzey ile uygun fiyatlı, hızlı üretim ve kolay değiştirilebilir tabela seçeneği.",
   "mainImg": "/images/urunler/vinil-tabela-1.webp",
   "gallery": [
@@ -63,9 +64,9 @@
     { "q": "Işıklı vinil tabela yapılabilir mi?", "a": "Evet, alüminyum kasa içine LED modül yerleştirilerek arka aydınlatmalı (backlight) vinil tabela üretimi yapılmaktadır." }
   ],
   "relatedProducts": [
-    { "img": "/images/urunler/kutu-harf-1.webp", "title": "Kutu Harf Tabela", "href": "/urunlerimiz/kutu-harf-tabela", "category": "Tabela" },
-    { "img": "/images/urunler/isikli-blok-1.webp", "title": "Işıklı Blok Tabela", "href": "/urunlerimiz/isikli-blok-tabela", "category": "Tabela" },
-    { "img": "/images/urunler/fener-tabela-1.webp", "title": "Fener Tabela", "href": "/urunlerimiz/fener-tabela", "category": "Tabela" },
-    { "img": "/images/urunler/totem-1.webp", "title": "Totem Tabela", "href": "/urunlerimiz/totem-tabela", "category": "Tabela" }
+    { "img": "/images/urunler/kutu-harf-1.webp", "title": "Kutu Harf Tabela", "href": "/urunlerimiz/kutu-harf-tabela/", "category": "Tabela" },
+    { "img": "/images/urunler/isikli-blok-1.webp", "title": "Işıklı Blok Tabela", "href": "/urunlerimiz/isikli-blok-tabela/", "category": "Tabela" },
+    { "img": "/images/urunler/fener-tabela-1.webp", "title": "Fener Tabela", "href": "/urunlerimiz/fener-tabela/", "category": "Tabela" },
+    { "img": "/images/urunler/totem-1.webp", "title": "Totem Tabela", "href": "/urunlerimiz/totem-tabela/", "category": "Tabela" }
   ]
 }

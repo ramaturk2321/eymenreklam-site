@@ -1,8 +1,9 @@
 {
   "title": "Mesh Baskı",
+  "seoTitle": "Mesh Baskı Pendik İstanbul",
   "description": "Rüzgar geçirgen mesh branda baskı. Yüksek binalar, inşaat cepheleri için güvenli çözüm. Eymen Reklam — 25 yıllık tecrübe.",
   "category": "Bez & Afiş Baskı",
-  "categoryHref": "/hizmetlerimiz/bez-baski",
+  "categoryHref": "/hizmetlerimiz/bez-baski/",
   "shortDesc": "Rüzgar geçirgen mesh (örgü) branda baskı. Yüksek binalar, inşaat cepheleri, iskele kapatma ve büyük boyutlu dış mekan reklamları için ideal. Delikli yapısı sayesinde rüzgar direncini minimize eder.",
   "mainImg": "/images/urunler/mesh-5.webp",
   "gallery": [
@@ -58,9 +59,9 @@
     { "q": "Mesh baskı fiyatı branda ile aynı mı?", "a": "Benzer fiyat aralığındadır. Proje boyutu ve baskı detayına göre teklif sunuyoruz." }
   ],
   "relatedProducts": [
-    { "img": "/images/urunler/branda-1.webp", "title": "Bez & Branda Baskı", "href": "/urunlerimiz/bez-branda-baski", "category": "Bez & Afiş Baskı" },
-    { "img": "/images/urunler/uv-baski-1.webp", "title": "UV Baskı", "href": "/urunlerimiz/uv-baski", "category": "UV Baskı" },
-    { "img": "/images/urunler/rollup-1.webp", "title": "Roll-Up Banner", "href": "/urunlerimiz/rollup-banner", "category": "Display & Stand" },
-    { "img": "/images/urunler/cephe-giydirme-3.webp", "title": "Cephe Giydirme", "href": "/urunlerimiz/cephe-giydirme", "category": "Folyo & Giydirme" }
+    { "img": "/images/urunler/branda-1.webp", "title": "Bez & Branda Baskı", "href": "/urunlerimiz/bez-branda-baski/", "category": "Bez & Afiş Baskı" },
+    { "img": "/images/urunler/uv-baski-1.webp", "title": "UV Baskı", "href": "/urunlerimiz/uv-baski/", "category": "UV Baskı" },
+    { "img": "/images/urunler/rollup-1.webp", "title": "Roll-Up Banner", "href": "/urunlerimiz/rollup-banner/", "category": "Display & Stand" },
+    { "img": "/images/urunler/cephe-giydirme-3.webp", "title": "Cephe Giydirme", "href": "/urunlerimiz/cephe-giydirme/", "category": "Folyo & Giydirme" }
   ]
 }

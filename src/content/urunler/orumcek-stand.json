@@ -1,8 +1,9 @@
 {
   "title": "Örümcek Stand",
+  "seoTitle": "Örümcek Stand Baskı Pendik İstanbul",
   "description": "Örümcek stand (spider stand) uygulama. Fuar ve etkinlik tanıtımı. Eymen Reklam — 25 yıllık tecrübe, 2 yıl garanti.",
   "category": "Display & Stand",
-  "categoryHref": "/hizmetlerimiz/sunum-stand",
+  "categoryHref": "/hizmetlerimiz/sunum-stand/",
   "shortDesc": "Örümcek stand uygulama. Fuar, etkinlik ve mağaza tanıtımı için taşınabilir, hızlı kurulumlu, çift taraflı baskılı profesyonel stand çözümü.",
   "mainImg": "/images/urunler/orumcek-stand-1.webp",
   "gallery": [
@@ -62,9 +63,9 @@
     { "q": "Kaç dakikada kurulur?", "a": "Örümcek stand yaklaşık 1-2 dakikada alet gerektirmeden kurulur." }
   ],
   "relatedProducts": [
-    { "img": "/images/urunler/rollup-1.webp", "title": "Roll-Up Banner", "href": "/urunlerimiz/rollup-banner", "category": "Display & Stand" },
-    { "img": "/images/urunler/yelken-bayrak-1.webp", "title": "Yelken Bayrak", "href": "/urunlerimiz/yelken-bayrak", "category": "Display & Stand" },
-    { "img": "/images/urunler/donkart-1.webp", "title": "Dönkart Afiş", "href": "/urunlerimiz/donkart", "category": "Display & Stand" },
-    { "img": "/images/urunler/lightbox-1.webp", "title": "Lightbox Pano", "href": "/urunlerimiz/lightbox-pano", "category": "Display & Stand" }
+    { "img": "/images/urunler/rollup-1.webp", "title": "Roll-Up Banner", "href": "/urunlerimiz/rollup-banner/", "category": "Display & Stand" },
+    { "img": "/images/urunler/yelken-bayrak-1.webp", "title": "Yelken Bayrak", "href": "/urunlerimiz/yelken-bayrak/", "category": "Display & Stand" },
+    { "img": "/images/urunler/donkart-1.webp", "title": "Dönkart Afiş", "href": "/urunlerimiz/donkart/", "category": "Display & Stand" },
+    { "img": "/images/urunler/lightbox-1.webp", "title": "Lightbox Pano", "href": "/urunlerimiz/lightbox-pano/", "category": "Display & Stand" }
   ]
 }

@@ -1,8 +1,9 @@
 {
   "title": "Alüminyum Çerçeve",
+  "seoTitle": "Alüminyum Afiş Çerçevesi Pendik İstanbul",
   "description": "Alüminyum çerçeve sistemleri. Poster, afiş ve reklam panosu çerçeveleri. Eymen Reklam — 25 yıllık tecrübe, 2 yıl garanti.",
   "category": "Display & Stand",
-  "categoryHref": "/hizmetlerimiz/sunum-stand",
+  "categoryHref": "/hizmetlerimiz/sunum-stand/",
   "shortDesc": "Alüminyum çerçeve sistemleri. Poster, afiş ve reklam panosu sunumu için yaylı mekanizmalı, farklı boyut ve renk seçenekli profesyonel çerçeveler.",
   "mainImg": "/images/urunler/alu-cerceve-1.webp",
   "gallery": [
@@ -62,9 +63,9 @@
     { "q": "Toplu sipariş indirimi var mı?", "a": "Evet, 10 adet ve üzeri siparişlerde özel fiyat avantajı sunuyoruz." }
   ],
   "relatedProducts": [
-    { "img": "/images/urunler/50x70-cerceve-1.webp", "title": "50x70 Alüminyum Çerçeve", "href": "/urunlerimiz/50x70-cerceve", "category": "Display & Stand" },
-    { "img": "/images/urunler/a4-cerceve-1.webp", "title": "A4 Alüminyum Çerçeve", "href": "/urunlerimiz/a4-cerceve", "category": "Display & Stand" },
-    { "img": "/images/urunler/lightbox-1.webp", "title": "Lightbox Pano", "href": "/urunlerimiz/lightbox-pano", "category": "Display & Stand" },
-    { "img": "/images/urunler/rollup-1.webp", "title": "Roll-Up Banner", "href": "/urunlerimiz/rollup-banner", "category": "Display & Stand" }
+    { "img": "/images/urunler/50x70-cerceve-1.webp", "title": "50x70 Alüminyum Çerçeve", "href": "/urunlerimiz/50x70-cerceve/", "category": "Display & Stand" },
+    { "img": "/images/urunler/a4-cerceve-1.webp", "title": "A4 Alüminyum Çerçeve", "href": "/urunlerimiz/a4-cerceve/", "category": "Display & Stand" },
+    { "img": "/images/urunler/lightbox-1.webp", "title": "Lightbox Pano", "href": "/urunlerimiz/lightbox-pano/", "category": "Display & Stand" },
+    { "img": "/images/urunler/rollup-1.webp", "title": "Roll-Up Banner", "href": "/urunlerimiz/rollup-banner/", "category": "Display & Stand" }
   ]
 }

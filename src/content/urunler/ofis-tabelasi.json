@@ -1,8 +1,9 @@
 {
   "title": "Ofis Tabelası",
+  "seoTitle": "Ofis Tabelası İmalatı Pendik İstanbul",
   "description": "Ofis içi yönlendirme ve kapı tabelası imalatı. Pleksi, alüminyum ve ahşap malzeme. Eymen Reklam — 25 yıllık tecrübe, 2 yıl garanti.",
   "category": "Tabela",
-  "categoryHref": "/hizmetlerimiz/tabela",
+  "categoryHref": "/hizmetlerimiz/tabela/",
   "shortDesc": "Ofis içi yönlendirme ve kapı tabelası imalatı. Pleksi, alüminyum ve ahşap malzeme seçenekleriyle kurumsal kimliğinizi yansıtan, şık ve işlevsel tabela çözümü.",
   "mainImg": "/images/urunler/ofis-tabela-1.webp",
   "gallery": [
@@ -65,9 +66,9 @@
     { "q": "Montaj hizmeti dahil mi?", "a": "Evet, tüm ofis tabelalarımız montaj dahil teslim edilmektedir. Uzman ekibimiz hızlı ve temiz montaj yapmaktadır." }
   ],
   "relatedProducts": [
-    { "img": "/images/urunler/hukuk-tabela-1.webp", "title": "Hukuk Bürosu Tabela", "href": "/urunlerimiz/hukuk-burosu-tabela", "category": "Tabela" },
-    { "img": "/images/urunler/dis-hekimi-tabela-1.webp", "title": "Diş Hekimi Tabelası", "href": "/urunlerimiz/dis-hekimi-tabelasi", "category": "Tabela" },
-    { "img": "/images/urunler/kutu-harf-1.webp", "title": "Kutu Harf Tabela", "href": "/urunlerimiz/kutu-harf-tabela", "category": "Tabela" },
-    { "img": "/images/urunler/isikli-blok-1.webp", "title": "Işıklı Blok Tabela", "href": "/urunlerimiz/isikli-blok-tabela", "category": "Tabela" }
+    { "img": "/images/urunler/hukuk-tabela-1.webp", "title": "Hukuk Bürosu Tabela", "href": "/urunlerimiz/hukuk-burosu-tabela/", "category": "Tabela" },
+    { "img": "/images/urunler/dis-hekimi-tabela-1.webp", "title": "Diş Hekimi Tabelası", "href": "/urunlerimiz/dis-hekimi-tabelasi/", "category": "Tabela" },
+    { "img": "/images/urunler/kutu-harf-1.webp", "title": "Kutu Harf Tabela", "href": "/urunlerimiz/kutu-harf-tabela/", "category": "Tabela" },
+    { "img": "/images/urunler/isikli-blok-1.webp", "title": "Işıklı Blok Tabela", "href": "/urunlerimiz/isikli-blok-tabela/", "category": "Tabela" }
   ]
 }

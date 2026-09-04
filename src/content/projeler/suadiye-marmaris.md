@@ -1,5 +1,6 @@
 ---
 title: "Suadiye Marmaris"
+seoTitle: "Suadiye Marmaris Büfe Tabela Uygulaması"
 description: "Suadiye Marmaris büfe için mağaza tabelası ve reklam uygulaması."
 image: "/images/projeler/suadiye-marmaris.webp"
 categories: ["Mağaza Reklam"]

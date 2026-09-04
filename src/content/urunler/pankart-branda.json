@@ -1,8 +1,9 @@
 {
   "title": "Pankart Branda Baskı",
+  "seoTitle": "Pankart Branda Baskı Pendik İstanbul",
   "description": "Pankart branda baskı hizmeti. Dış mekân dayanıklı, UV korumalı pankart. Eymen Reklam — 25 yıllık tecrübe, 2 yıl garanti.",
   "category": "Bez Baskı",
-  "categoryHref": "/hizmetlerimiz/bez-baski",
+  "categoryHref": "/hizmetlerimiz/bez-baski/",
   "shortDesc": "Pankart branda baskı hizmeti. Dış mekân reklamlarında dayanıklılığı ve yüksek görünürlüğüyle öne çıkan branda pankart çözümleri.",
   "mainImg": "/images/urunler/pankart-branda-1.webp",
   "gallery": [
@@ -62,9 +63,9 @@
     { "q": "Acil sipariş alınıyor mu?", "a": "Evet, acil siparişlerde aynı gün üretim ve teslimat imkânı sunuyoruz." }
   ],
   "relatedProducts": [
-    { "img": "/images/urunler/bez-pankart-1.webp", "title": "Bez Pankart", "href": "/urunlerimiz/bez-pankart", "category": "Afiş Baskı" },
-    { "img": "/images/urunler/afis-branda-2.webp", "title": "Afiş Branda", "href": "/urunlerimiz/afis-branda", "category": "Afiş Baskı" },
-    { "img": "/images/urunler/branda-1.webp", "title": "Bez & Branda Baskı", "href": "/urunlerimiz/bez-branda-baski", "category": "Bez Baskı" },
-    { "img": "/images/urunler/mesh-1.webp", "title": "Mesh Baskı", "href": "/urunlerimiz/mesh-baski", "category": "Bez Baskı" }
+    { "img": "/images/urunler/bez-pankart-1.webp", "title": "Bez Pankart", "href": "/urunlerimiz/bez-pankart/", "category": "Afiş Baskı" },
+    { "img": "/images/urunler/afis-branda-2.webp", "title": "Afiş Branda", "href": "/urunlerimiz/afis-branda/", "category": "Afiş Baskı" },
+    { "img": "/images/urunler/branda-1.webp", "title": "Bez & Branda Baskı", "href": "/urunlerimiz/bez-branda-baski/", "category": "Bez Baskı" },
+    { "img": "/images/urunler/mesh-1.webp", "title": "Mesh Baskı", "href": "/urunlerimiz/mesh-baski/", "category": "Bez Baskı" }
   ]
 }
