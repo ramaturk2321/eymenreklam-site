@@ -1,6 +1,6 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
-import { contact, getWhatsAppUrl, hours } from '../lib/site-data';
+import { contact, getWhatsAppUrl, hours, company } from '../lib/site-data';
 ---
 
 <BaseLayout title="İletişim — Eymen Reklam Pendik İstanbul" description="Eymen Reklam ile iletişime geçin. Pendik İstanbul'da tabela imalatı, dijital baskı ve reklam çözümleri için ücretsiz keşif ve teklif alın.">
@@ -33,9 +33,11 @@ import { contact, getWhatsAppUrl, hours } from '../lib/site-data';
               </div>
               <div>
                 <h4 class="font-semibold text-koyu-900 mb-1">Adres</h4>
-                <p class="text-sm text-koyu-600">Eymen Reklam Matbaa Tanıtım İnşaat Ltd. Şti.</p>
-                <p class="text-sm text-koyu-600">Esenler Mah. Suda Sk. No: 2</p>
-                <p class="text-sm text-koyu-600">34899 Pendik / İstanbul</p>
+                <p class="text-sm text-koyu-600 mb-2">{company.fullName}</p>
+                <p class="text-xs font-semibold text-koyu-500 uppercase tracking-wider">{contact.addressLabel}</p>
+                <p class="text-sm text-koyu-600 mb-2">{contact.address}</p>
+                <p class="text-xs font-semibold text-koyu-500 uppercase tracking-wider">{contact.addressOfficeLabel}</p>
+                <p class="text-sm text-koyu-600">{contact.addressOffice}</p>
               </div>
             </div>
 

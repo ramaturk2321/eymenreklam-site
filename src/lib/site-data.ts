@@ -13,7 +13,20 @@ export const contact = {
   whatsappUrl: 'https://wa.me/905356647752',
   email: 'info@eymenreklam.com.tr',
   emailHref: 'mailto:info@eymenreklam.com.tr',
+  // Üretim tesisi & showroom — müşteri ziyareti, harita ve JSON-LD konumu bu adres
   address: 'Esenler Mah. Suda Sk. No: 2, 34899 Pendik / İstanbul',
+  addressLabel: 'Üretim Tesisi & Showroom',
+  // Ofis / idari merkez — ticaret sicilindeki kayıtlı adres (KVKK yazılı başvuru buraya)
+  addressOffice: 'Esenler Mah. Çevre Sok. No: 7, 34899 Pendik / İstanbul',
+  addressOfficeLabel: 'Ofis / İdari Merkez',
+  postal: {
+    '@type': 'PostalAddress',
+    streetAddress: 'Esenler Mah. Suda Sk. No: 2',
+    addressLocality: 'Pendik',
+    addressRegion: 'İstanbul',
+    postalCode: '34899',
+    addressCountry: 'TR',
+  },
   addressShort: 'Pendik, İstanbul',
   mapsUrl: 'https://maps.google.com/?q=Eymen+Reklam+Pendik',
   // İletişim sayfasındaki Google Maps embed'iyle aynı nokta (yer kimliği 0x14cadb446eabc9a5:0xd6030b0d851dcd1f)
@@ -83,7 +96,7 @@ export const whatsappIcon = 'M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273
 // ─── Firma Bilgileri ───
 export const company = {
   name: 'Eymen Reklam',
-  fullName: 'Eymen Reklam Matbaa Tabela İnşaat Gıda San. Tic. Ltd. Şti.',
+  fullName: 'Eymen Reklam Matbaa Tanıtım İnşaat Ltd. Şti.',
   slogan: 'Tabela İmalatı & UV Baskı Pendik İstanbul',
   founded: 2000,
   experience: 25,

@@ -26,14 +26,7 @@ const jsonLd = {
   telephone: contact.phoneHref.replace('tel:', ''),
   email: contact.email,
   foundingDate: String(company.founded),
-  address: {
-    '@type': 'PostalAddress',
-    streetAddress: 'Esenler Mah. Suda Sk. No: 2',
-    addressLocality: 'Pendik',
-    addressRegion: 'İstanbul',
-    postalCode: '34899',
-    addressCountry: 'TR',
-  },
+  address: contact.postal,
   geo: {
     '@type': 'GeoCoordinates',
     latitude: contact.geo.latitude,

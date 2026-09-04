@@ -37,7 +37,7 @@ const guncelleme = '4 Ağustos 2026';
           <h2 class="text-xl md:text-2xl font-bold text-koyu-900 mb-4 pb-2 border-b border-koyu-100">1. Veri Sorumlusu</h2>
           <ul class="space-y-2 text-sm md:text-base">
             <li><strong>Ticaret unvanı:</strong> {company.fullName}</li>
-            <li><strong>Adres:</strong> {contact.address}</li>
+            <li><strong>Adres:</strong> {contact.addressOffice} (üretim tesisi: {contact.address})</li>
             <li><strong>Telefon:</strong> <a href={contact.phoneHref} class="text-eymen-600 hover:underline">{contact.phone}</a></li>
             <li><strong>E-posta:</strong> <a href={contact.emailHref} class="text-eymen-600 hover:underline">{contact.email}</a></li>
             <li><strong>İnternet sitesi:</strong> {company.siteUrl}</li>
@@ -196,7 +196,7 @@ const guncelleme = '4 Ağustos 2026';
             Başvurularınız en geç <strong>30 gün</strong> içinde ücretsiz olarak sonuçlandırılır.
           </p>
           <div class="bg-koyu-50 rounded-xl p-5 space-y-2 text-sm">
-            <p><strong>Yazılı başvuru:</strong> {contact.address}</p>
+            <p><strong>Yazılı başvuru:</strong> {contact.addressOffice}</p>
             <p><strong>E-posta:</strong> <a href={contact.emailHref} class="text-eymen-600 hover:underline">{contact.email}</a></p>
           </div>
         </div>

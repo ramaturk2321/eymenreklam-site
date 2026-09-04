@@ -68,14 +68,7 @@ const serviceSchema = {
     url: company.siteUrl,
     telephone: contact.phoneHref.replace('tel:', ''),
     email: contact.email,
-    address: {
-      '@type': 'PostalAddress',
-      streetAddress: 'Esenler Mah. Suda Sk. No: 2',
-      addressLocality: 'Pendik',
-      addressRegion: 'İstanbul',
-      postalCode: '34899',
-      addressCountry: 'TR',
-    },
+    address: contact.postal,
   },
   areaServed: [
     { '@type': 'City', name: 'İstanbul' },
