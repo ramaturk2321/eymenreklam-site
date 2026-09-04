@@ -377,46 +377,46 @@ const sektorler = ['Perakende & Market Zinciri', 'AVM & Mağazacılık', 'Franch
           <input type="hidden" name="from_name" value="Eymen Reklam Website — Kurumsal Çözümler" />
           <input type="checkbox" name="botcheck" class="hidden" style="display:none" />
 
-          <div id="demo-success" class="hidden bg-green-50 border border-green-200 rounded-xl p-6 text-center">
+          <div id="demo-success" role="status" aria-live="polite" tabindex="-1" class="hidden outline-none bg-green-50 border border-green-200 rounded-xl p-6 text-center">
             <svg class="w-12 h-12 text-green-500 mx-auto mb-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
             <p class="text-lg font-semibold text-green-800">Demo talebiniz alındı!</p>
             <p class="text-sm text-green-600 mt-1">Kurumsal ekibimiz en kısa sürede sizinle iletişime geçecek.</p>
           </div>
-          <div id="demo-error" class="hidden bg-red-50 border border-red-200 rounded-xl p-4 text-center">
+          <div id="demo-error" role="alert" class="hidden bg-red-50 border border-red-200 rounded-xl p-4 text-center">
             <p class="text-sm font-medium text-red-700">Bir hata oluştu. Lütfen tekrar deneyin veya bizi arayın.</p>
           </div>
 
           <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
             <div>
-              <label class="block text-sm font-medium text-koyu-700 mb-1">Firma Adı *</label>
-              <input type="text" name="firma" required class="w-full px-4 py-3 rounded-xl border border-koyu-200 focus:border-eymen-500 focus:ring-2 focus:ring-eymen-500/20 outline-none transition-all text-sm" placeholder="ABC Perakende A.Ş." />
+              <label for="dm-firma" class="block text-sm font-medium text-koyu-700 mb-1">Firma Adı *</label>
+              <input id="dm-firma" type="text" name="firma" required class="w-full px-4 py-3 rounded-xl border border-koyu-200 focus:border-eymen-500 focus:ring-2 focus:ring-eymen-500/20 outline-none transition-all text-sm" placeholder="ABC Perakende A.Ş." />
             </div>
             <div>
-              <label class="block text-sm font-medium text-koyu-700 mb-1">Sektör</label>
-              <select name="sektor" class="w-full px-4 py-3 rounded-xl border border-koyu-200 focus:border-eymen-500 focus:ring-2 focus:ring-eymen-500/20 outline-none transition-all text-sm">
+              <label for="dm-sektor" class="block text-sm font-medium text-koyu-700 mb-1">Sektör</label>
+              <select id="dm-sektor" name="sektor" class="w-full px-4 py-3 rounded-xl border border-koyu-200 focus:border-eymen-500 focus:ring-2 focus:ring-eymen-500/20 outline-none transition-all text-sm">
                 <option value="">Seçiniz</option>
                 {sektorler.map(s => (<option>{s}</option>))}
               </select>
             </div>
             <div>
-              <label class="block text-sm font-medium text-koyu-700 mb-1">Ad Soyad *</label>
-              <input type="text" name="ad_soyad" required class="w-full px-4 py-3 rounded-xl border border-koyu-200 focus:border-eymen-500 focus:ring-2 focus:ring-eymen-500/20 outline-none transition-all text-sm" placeholder="Ahmet Yılmaz" />
+              <label for="dm-ad_soyad" class="block text-sm font-medium text-koyu-700 mb-1">Ad Soyad *</label>
+              <input id="dm-ad_soyad" type="text" name="ad_soyad" required class="w-full px-4 py-3 rounded-xl border border-koyu-200 focus:border-eymen-500 focus:ring-2 focus:ring-eymen-500/20 outline-none transition-all text-sm" placeholder="Ahmet Yılmaz" />
             </div>
             <div>
-              <label class="block text-sm font-medium text-koyu-700 mb-1">Unvan / Pozisyon</label>
-              <input type="text" name="unvan" class="w-full px-4 py-3 rounded-xl border border-koyu-200 focus:border-eymen-500 focus:ring-2 focus:ring-eymen-500/20 outline-none transition-all text-sm" placeholder="Pazarlama Müdürü" />
+              <label for="dm-unvan" class="block text-sm font-medium text-koyu-700 mb-1">Unvan / Pozisyon</label>
+              <input id="dm-unvan" type="text" name="unvan" class="w-full px-4 py-3 rounded-xl border border-koyu-200 focus:border-eymen-500 focus:ring-2 focus:ring-eymen-500/20 outline-none transition-all text-sm" placeholder="Pazarlama Müdürü" />
             </div>
             <div>
-              <label class="block text-sm font-medium text-koyu-700 mb-1">E-posta *</label>
-              <input type="email" name="email" required class="w-full px-4 py-3 rounded-xl border border-koyu-200 focus:border-eymen-500 focus:ring-2 focus:ring-eymen-500/20 outline-none transition-all text-sm" placeholder="ahmet@firma.com" />
+              <label for="dm-email" class="block text-sm font-medium text-koyu-700 mb-1">E-posta *</label>
+              <input id="dm-email" type="email" name="email" required class="w-full px-4 py-3 rounded-xl border border-koyu-200 focus:border-eymen-500 focus:ring-2 focus:ring-eymen-500/20 outline-none transition-all text-sm" placeholder="ahmet@firma.com" />
             </div>
             <div>
-              <label class="block text-sm font-medium text-koyu-700 mb-1">Telefon *</label>
-              <input type="tel" name="telefon" required class="w-full px-4 py-3 rounded-xl border border-koyu-200 focus:border-eymen-500 focus:ring-2 focus:ring-eymen-500/20 outline-none transition-all text-sm" placeholder="0532 XXX XX XX" />
+              <label for="dm-telefon" class="block text-sm font-medium text-koyu-700 mb-1">Telefon *</label>
+              <input id="dm-telefon" type="tel" name="telefon" required class="w-full px-4 py-3 rounded-xl border border-koyu-200 focus:border-eymen-500 focus:ring-2 focus:ring-eymen-500/20 outline-none transition-all text-sm" placeholder="0532 XXX XX XX" />
             </div>
             <div>
-              <label class="block text-sm font-medium text-koyu-700 mb-1">Yaklaşık Şube Sayısı</label>
-              <select name="sube_sayisi" class="w-full px-4 py-3 rounded-xl border border-koyu-200 focus:border-eymen-500 focus:ring-2 focus:ring-eymen-500/20 outline-none transition-all text-sm">
+              <label for="dm-sube_sayisi" class="block text-sm font-medium text-koyu-700 mb-1">Yaklaşık Şube Sayısı</label>
+              <select id="dm-sube_sayisi" name="sube_sayisi" class="w-full px-4 py-3 rounded-xl border border-koyu-200 focus:border-eymen-500 focus:ring-2 focus:ring-eymen-500/20 outline-none transition-all text-sm">
                 <option value="">Seçiniz</option>
                 <option>1 – 10 şube</option>
                 <option>10 – 50 şube</option>
@@ -425,8 +425,8 @@ const sektorler = ['Perakende & Market Zinciri', 'AVM & Mağazacılık', 'Franch
               </select>
             </div>
             <div>
-              <label class="block text-sm font-medium text-koyu-700 mb-1">Öncelikli İhtiyaç</label>
-              <select name="ihtiyac" class="w-full px-4 py-3 rounded-xl border border-koyu-200 focus:border-eymen-500 focus:ring-2 focus:ring-eymen-500/20 outline-none transition-all text-sm">
+              <label for="dm-ihtiyac" class="block text-sm font-medium text-koyu-700 mb-1">Öncelikli İhtiyaç</label>
+              <select id="dm-ihtiyac" name="ihtiyac" class="w-full px-4 py-3 rounded-xl border border-koyu-200 focus:border-eymen-500 focus:ring-2 focus:ring-eymen-500/20 outline-none transition-all text-sm">
                 <option value="">Seçiniz</option>
                 <option>Gönderi / iş takip sistemi</option>
                 <option>Otomatik insert & afiş üretimi</option>
@@ -437,8 +437,8 @@ const sektorler = ['Perakende & Market Zinciri', 'AVM & Mağazacılık', 'Franch
           </div>
 
           <div>
-            <label class="block text-sm font-medium text-koyu-700 mb-1">Kısa Not</label>
-            <textarea rows="3" name="not" class="w-full px-4 py-3 rounded-xl border border-koyu-200 focus:border-eymen-500 focus:ring-2 focus:ring-eymen-500/20 outline-none transition-all text-sm resize-none" placeholder="Mevcut operasyonunuz ve beklentiniz hakkında kısaca yazın..."></textarea>
+            <label for="dm-not" class="block text-sm font-medium text-koyu-700 mb-1">Kısa Not</label>
+            <textarea id="dm-not" rows="3" name="not" class="w-full px-4 py-3 rounded-xl border border-koyu-200 focus:border-eymen-500 focus:ring-2 focus:ring-eymen-500/20 outline-none transition-all text-sm resize-none" placeholder="Mevcut operasyonunuz ve beklentiniz hakkında kısaca yazın..."></textarea>
           </div>
 
           <div class="pt-2 flex flex-col sm:flex-row sm:items-center gap-4">
@@ -482,6 +482,7 @@ const sektorler = ['Perakende & Market Zinciri', 'AVM & Mağazacılık', 'Franch
       if (demoKontrol.engelle) {
         demoForm.reset();
         demoSuccess?.classList.remove('hidden');
+        demoSuccess?.focus();
         demoBtn.disabled = false;
         demoBtn.querySelector('svg')?.classList.remove('hidden');
         demoBtn.childNodes[0].textContent = 'Kurumsal Demo Talep Et ';
@@ -501,6 +502,7 @@ const sektorler = ['Perakende & Market Zinciri', 'AVM & Mağazacılık', 'Franch
             else field.value = '';
           });
           demoSuccess?.classList.remove('hidden');
+        demoSuccess?.focus();
           demoSuccess?.scrollIntoView({ behavior: 'smooth', block: 'center' });
         } else {
           demoError?.classList.remove('hidden');

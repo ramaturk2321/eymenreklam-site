@@ -155,7 +155,7 @@ for (const cat of categories) {
               </a>
             </div>
             <a href={contact.mapsUrl} target="_blank" rel="noopener noreferrer" class="slide-up slide-delay-3 mt-6 inline-flex items-center gap-2 text-white/90 hover:text-white text-sm font-medium group">
-              <span class="flex items-center gap-0.5 text-yellow-400" aria-label="5 yıldız">
+              <span class="flex items-center gap-0.5 text-yellow-400" role="img" aria-label="5 yıldız">
                 <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.828 1.48 8.279L12 18.896l-7.416 4.517 1.48-8.279L.001 9.306l8.332-1.151z"/></svg>
                 <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.828 1.48 8.279L12 18.896l-7.416 4.517 1.48-8.279L.001 9.306l8.332-1.151z"/></svg>
                 <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.828 1.48 8.279L12 18.896l-7.416 4.517 1.48-8.279L.001 9.306l8.332-1.151z"/></svg>
@@ -177,6 +177,7 @@ for (const cat of categories) {
     <!-- Dark Tab Bar -->
     <div class="sticky top-20 lg:top-[132px] z-30 bg-koyu-600 shadow-lg">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 class="sr-only">Ürün Galerisi</h2>
         <div class="flex overflow-x-auto scrollbar-hide" id="category-tabs">
           {categories.map((cat, i) => (
             <button
@@ -187,6 +188,7 @@ for (const cat of categories) {
                   : 'text-koyu-300 hover:text-white hover:bg-koyu-500'
               ]}
               data-category={cat.id}
+              aria-pressed={i === 0 ? 'true' : 'false'}
             >
               {cat.label}
             </button>
@@ -407,9 +409,11 @@ for (const cat of categories) {
       // Tüm sekmeleri pasif yap
       tabs.forEach(t => {
         t.className = 'category-tab whitespace-nowrap px-5 lg:px-6 py-4 text-sm font-semibold transition-all flex-shrink-0 relative text-koyu-300 hover:text-white hover:bg-koyu-500';
+        t.setAttribute('aria-pressed', 'false');
       });
       // Aktif sekme — bold + turuncu arka plan
       tab.className = 'category-tab whitespace-nowrap px-5 lg:px-6 py-4 text-sm font-extrabold transition-all flex-shrink-0 relative bg-eymen-500 text-white';
+      tab.setAttribute('aria-pressed', 'true');
 
       // Tüm panelleri gizle
       panels.forEach(p => p.classList.add('hidden'));

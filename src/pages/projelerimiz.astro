@@ -43,6 +43,7 @@ const allCategories = Object.entries(categoryCount).sort((a, b) => b[1] - a[1]);
                 <button
                   class="filter-btn active w-full flex items-center justify-between px-3 py-2.5 rounded-lg text-sm font-medium transition-all"
                   data-category="all"
+                  aria-pressed="true"
                 >
                   <span>Tümü</span>
                   <span class="cat-count text-xs bg-koyu-200 text-koyu-600 px-2 py-0.5 rounded-full">{projeler.length}</span>
@@ -51,6 +52,7 @@ const allCategories = Object.entries(categoryCount).sort((a, b) => b[1] - a[1]);
                   <button
                     class="filter-btn w-full flex items-center justify-between px-3 py-2.5 rounded-lg text-sm font-medium transition-all"
                     data-category={cat}
+                    aria-pressed="false"
                   >
                     <span>{cat}</span>
                     <span class="cat-count text-xs bg-koyu-200 text-koyu-600 px-2 py-0.5 rounded-full">{count}</span>

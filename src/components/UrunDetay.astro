@@ -161,7 +161,7 @@ const serviceSchema = {
                   </svg>
                 </div>
                 <div>
-                  <div class="text-xs text-koyu-400 font-medium tracking-wider">{spec.label.toLocaleUpperCase('tr-TR')}</div>
+                  <div class="text-xs text-koyu-600 font-medium tracking-wider">{spec.label.toLocaleUpperCase('tr-TR')}</div>
                   <div class="text-sm text-koyu-800 font-semibold mt-0.5">{spec.value}</div>
                 </div>
               </div>
@@ -179,7 +179,7 @@ const serviceSchema = {
               <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d={whatsappIcon}/></svg>
               Teklif Al
             </a>
-            <span class="text-xs text-koyu-400 ml-1">Paylaş:</span>
+            <span class="text-xs text-koyu-600 ml-1">Paylaş:</span>
             <a href={`https://www.linkedin.com/sharing/share-offsite/?url=https://www.eymenreklam.com.tr${Astro.url.pathname}`} target="_blank" rel="noopener noreferrer" class="w-9 h-9 bg-koyu-100 hover:bg-[#0A66C2] hover:text-white rounded-lg flex items-center justify-center text-koyu-500 transition-all flex-shrink-0" aria-label="LinkedIn'de Paylaş">
               <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
             </a>
@@ -200,9 +200,9 @@ const serviceSchema = {
     <div class="bg-koyu-600 shadow-lg">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="flex overflow-x-auto scrollbar-hide">
-          <button class="product-tab whitespace-nowrap px-6 py-4 text-sm font-extrabold transition-all flex-shrink-0 bg-eymen-500 text-white" data-tab="aciklama">Açıklama</button>
-          <button class="product-tab whitespace-nowrap px-6 py-4 text-sm font-semibold transition-all flex-shrink-0 text-koyu-300 hover:text-white hover:bg-koyu-500" data-tab="teknik">Teknik Özellikler</button>
-          <button class="product-tab whitespace-nowrap px-6 py-4 text-sm font-semibold transition-all flex-shrink-0 text-koyu-300 hover:text-white hover:bg-koyu-500" data-tab="sss">Sıkça Sorulan Sorular</button>
+          <button aria-pressed="true" class="product-tab whitespace-nowrap px-6 py-4 text-sm font-extrabold transition-all flex-shrink-0 bg-eymen-500 text-white" data-tab="aciklama">Açıklama</button>
+          <button aria-pressed="false" class="product-tab whitespace-nowrap px-6 py-4 text-sm font-semibold transition-all flex-shrink-0 text-koyu-300 hover:text-white hover:bg-koyu-500" data-tab="teknik">Teknik Özellikler</button>
+          <button aria-pressed="false" class="product-tab whitespace-nowrap px-6 py-4 text-sm font-semibold transition-all flex-shrink-0 text-koyu-300 hover:text-white hover:bg-koyu-500" data-tab="sss">Sıkça Sorulan Sorular</button>
         </div>
       </div>
     </div>
@@ -219,7 +219,7 @@ const serviceSchema = {
                     <path stroke-linecap="round" stroke-linejoin="round" d={section.icon}/>
                   </svg>
                 </div>
-                <h3 class="text-lg md:text-xl font-bold text-koyu-900">{section.title}</h3>
+                <h2 class="text-lg md:text-xl font-bold text-koyu-900">{section.title}</h2>
               </div>
               {section.content && (
                 <p class="text-koyu-600 leading-relaxed text-[15px]">{section.content}</p>
@@ -249,7 +249,7 @@ const serviceSchema = {
             <div class="w-10 h-10 bg-eymen-100 text-eymen-600 rounded-xl flex items-center justify-center">
               <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"/></svg>
             </div>
-            <h3 class="text-lg md:text-xl font-bold text-koyu-900">Teknik Özellikler</h3>
+            <h2 class="text-lg md:text-xl font-bold text-koyu-900">Teknik Özellikler</h2>
           </div>
           <div class="rounded-xl overflow-hidden border border-koyu-100 bg-white">
             <table class="w-full">
@@ -278,12 +278,12 @@ const serviceSchema = {
             <div class="w-10 h-10 bg-eymen-100 text-eymen-600 rounded-xl flex items-center justify-center">
               <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
             </div>
-            <h3 class="text-lg md:text-xl font-bold text-koyu-900">Sıkça Sorulan Sorular</h3>
+            <h2 class="text-lg md:text-xl font-bold text-koyu-900">Sıkça Sorulan Sorular</h2>
           </div>
           <div class="space-y-3">
             {faq.map((item, i) => (
               <div class="bg-white border border-koyu-100 rounded-xl overflow-hidden">
-                <button class="faq-btn w-full flex items-center justify-between px-5 py-4 text-left hover:bg-koyu-50/50 transition-colors">
+                <button aria-expanded="false" class="faq-btn w-full flex items-center justify-between px-5 py-4 text-left hover:bg-koyu-50/50 transition-colors">
                   <div class="flex items-center gap-3 pr-4">
                     <span class="w-7 h-7 bg-eymen-100 text-eymen-600 rounded-lg flex items-center justify-center flex-shrink-0 text-xs font-bold">{i + 1}</span>
                     <span class="text-[15px] font-semibold text-koyu-800">{item.q}</span>
@@ -316,7 +316,7 @@ const serviceSchema = {
                 </span>
               </div>
             </div>
-            <span class="text-xs text-koyu-400 font-medium tracking-wider">{p.category.toLocaleUpperCase('tr-TR')}</span>
+            <span class="text-xs text-koyu-600 font-medium tracking-wider">{p.category.toLocaleUpperCase('tr-TR')}</span>
             <h3 class="text-sm font-semibold text-koyu-800 group-hover:text-eymen-600 transition-colors mt-1">{p.title}</h3>
           </a>
         ))}
@@ -357,8 +357,10 @@ const serviceSchema = {
       const target = (tab as HTMLElement).dataset.tab;
       ptabs.forEach(t => {
         t.className = 'product-tab whitespace-nowrap px-6 py-4 text-sm font-semibold transition-all flex-shrink-0 text-koyu-300 hover:text-white hover:bg-koyu-500';
+        t.setAttribute('aria-pressed', 'false');
       });
       tab.className = 'product-tab whitespace-nowrap px-6 py-4 text-sm font-extrabold transition-all flex-shrink-0 bg-eymen-500 text-white';
+      tab.setAttribute('aria-pressed', 'true');
       ppanels.forEach(p => p.classList.add('hidden'));
       document.querySelector(`[data-panel="${target}"]`)?.classList.remove('hidden');
     });
@@ -369,7 +371,8 @@ const serviceSchema = {
     btn.addEventListener('click', () => {
       const content = btn.nextElementSibling;
       const icon = btn.querySelector('.faq-icon');
-      content?.classList.toggle('hidden');
+      const acik = content?.classList.toggle('hidden') === false;
+      btn.setAttribute('aria-expanded', String(acik));
       icon?.classList.toggle('rotate-180');
     });
   });

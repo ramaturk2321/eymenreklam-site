@@ -48,8 +48,9 @@ const { title, description = `Eymen Reklam — Tabela İmalatı & UV Baskı Pend
     <SEO title={title} description={description} image={image} />
   </head>
   <body class="min-h-screen flex flex-col">
+    <a href="#icerik" class="sr-only focus:not-sr-only focus:fixed focus:top-3 focus:left-3 focus:z-[100] focus:bg-eymen-700 focus:text-white focus:px-4 focus:py-2 focus:rounded-lg focus:font-semibold focus:shadow-lg">İçeriğe atla</a>
     <Header />
-    <main class="flex-1 pt-20 lg:pt-[132px]">
+    <main id="icerik" tabindex="-1" class="flex-1 pt-20 lg:pt-[132px] outline-none">
       <slot />
     </main>
     <Footer />

@@ -117,8 +117,8 @@ const shareLinks = [
       <div class="max-w-3xl">
         <div class="flex items-center gap-3 mb-4">
           <span class="px-3 py-1 bg-eymen-50 text-eymen-700 text-xs font-bold rounded-full">{post.data.category}</span>
-          <time class="text-sm text-koyu-400" datetime={post.data.date}>{dateFormatted}</time>
-          <span class="text-sm text-koyu-400">— {post.data.author}</span>
+          <time class="text-sm text-koyu-600" datetime={post.data.date}>{dateFormatted}</time>
+          <span class="text-sm text-koyu-600">— {post.data.author}</span>
         </div>
         <h1 class="text-3xl md:text-4xl font-extrabold text-koyu-900 leading-tight">{post.data.title}</h1>
         <p class="text-koyu-500 mt-4 text-lg leading-relaxed">{post.data.excerpt}</p>
@@ -254,7 +254,7 @@ const shareLinks = [
                     <img src={p.data.image} srcset={srcset(p.data.image)} sizes="64px" alt={p.data.title} width="64" height="64" class="w-16 h-16 rounded-lg object-cover shrink-0" loading="lazy" decoding="async" />
                     <div class="min-w-0">
                       <h4 class="text-sm font-semibold text-koyu-800 group-hover:text-eymen-600 transition-colors leading-snug line-clamp-2">{p.data.title}</h4>
-                      <span class="text-xs text-koyu-400 mt-1 block">{new Date(p.data.date).toLocaleDateString('tr-TR', { day: 'numeric', month: 'short', year: 'numeric' })}</span>
+                      <span class="text-xs text-koyu-600 mt-1 block">{new Date(p.data.date).toLocaleDateString('tr-TR', { day: 'numeric', month: 'short', year: 'numeric' })}</span>
                     </div>
                   </a>
                 ))}
@@ -300,7 +300,7 @@ const shareLinks = [
               <div class="p-5">
                 <div class="flex items-center gap-2 mb-2">
                   <span class="px-2.5 py-0.5 bg-eymen-50 text-eymen-700 text-xs font-semibold rounded-full">{p.data.category}</span>
-                  <span class="text-xs text-koyu-400">{new Date(p.data.date).toLocaleDateString('tr-TR', { day: 'numeric', month: 'long', year: 'numeric' })}</span>
+                  <span class="text-xs text-koyu-600">{new Date(p.data.date).toLocaleDateString('tr-TR', { day: 'numeric', month: 'long', year: 'numeric' })}</span>
                 </div>
                 <h3 class="font-bold text-koyu-900 group-hover:text-eymen-600 transition-colors leading-snug">{p.data.title}</h3>
                 <p class="text-sm text-koyu-500 mt-2 leading-relaxed line-clamp-2">{p.data.excerpt}</p>

@@ -35,14 +35,14 @@ const posts = (await getCollection('blog'))
             <div class="p-6">
               <div class="flex items-center gap-3 mb-3">
                 <span class="px-2.5 py-0.5 bg-eymen-50 text-eymen-700 text-xs font-semibold rounded-full">{post.data.category}</span>
-                <span class="text-xs text-koyu-400">{new Date(post.data.date).toLocaleDateString('tr-TR', { day: 'numeric', month: 'long', year: 'numeric' })}</span>
+                <span class="text-xs text-koyu-600">{new Date(post.data.date).toLocaleDateString('tr-TR', { day: 'numeric', month: 'long', year: 'numeric' })}</span>
               </div>
               <h2 class="text-lg font-bold text-koyu-900 mb-2 group-hover:text-eymen-600 transition-colors leading-snug">
                 <a href={`/blog/${post.id}/`}>{post.data.title}</a>
               </h2>
               <p class="text-sm text-koyu-500 leading-relaxed line-clamp-3">{post.data.excerpt}</p>
               <div class="mt-4">
-                <a href={`/blog/${post.id}/`} class="text-sm text-eymen-600 font-semibold hover:text-eymen-700 transition-colors inline-flex items-center gap-1">
+                <a href={`/blog/${post.id}/`} class="text-sm text-eymen-700 font-semibold hover:text-eymen-800 transition-colors inline-flex items-center gap-1">
                   Devamını Oku
                   <svg class="w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
                 </a>
