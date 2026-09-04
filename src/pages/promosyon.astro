@@ -1,4 +1,5 @@
 ---
+import { contact, getWhatsAppUrl } from '../lib/site-data';
 import BaseLayout from '../layouts/BaseLayout.astro';
 
 // 138 sayfa, public/promosyon/pages/001.webp ... 138.webp
@@ -70,7 +71,7 @@ const pages = Array.from({ length: TOTAL }, (_, i) =>
 
       <p class="text-center text-koyu-500 text-xs mt-6">
         Beğendiğiniz ürün için <a href="/iletisim/" class="text-eymen-400 hover:underline">bize ulaşın</a> ·
-        WhatsApp: (0216) 379 07 08
+        WhatsApp: <a href={getWhatsAppUrl('Merhaba, promosyon kataloğundan teklif almak istiyorum.')} target="_blank" rel="noopener" class="text-eymen-400 hover:underline">{contact.mobile}</a>
       </p>
     </div>
   </section>
