@@ -1,5 +1,6 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+import { srcset, boyut, SIZES } from '../lib/gorsel';
 import { getCollection } from 'astro:content';
 import { company, contact, getWhatsAppUrl, whatsappMessages, whatsappIcon } from '../lib/site-data';
 
@@ -143,6 +144,8 @@ const allCategories = Object.entries(categoryCount).sort((a, b) => b[1] - a[1]);
                 <div class="aspect-[4/3] overflow-hidden relative">
                   <img
                     src={project.data.image}
+                    srcset={srcset(project.data.image)}
+                    sizes={SIZES.projeListe}
                     alt={project.data.title}
                     width="600"
                     height="450"

@@ -1,5 +1,6 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+import { srcset, boyut, SIZES } from '../lib/gorsel';
 import { company, contact, getWhatsAppUrl } from '../lib/site-data';
 import { getCollection } from 'astro:content';
 
@@ -130,7 +131,7 @@ for (const cat of categories) {
   <!-- ========== HERO SLIDER ========== -->
   <section class="relative bg-koyu-900 overflow-hidden" id="hero">
     <div class="relative h-[500px] md:h-[600px] lg:h-[700px]">
-      <img src="/images/yenifabrika-opt.webp" alt="Eymen Reklam Üretim Tesisi" class="w-full h-full object-cover" width="1920" height="742" fetchpriority="high" />
+      <img src="/images/yenifabrika-opt.webp" srcset={srcset('/images/yenifabrika-opt.webp')} sizes="100vw" alt="Eymen Reklam Üretim Tesisi" class="w-full h-full object-cover" width="1920" height="742" fetchpriority="high" />
       <div class="absolute inset-0 bg-gradient-to-r from-koyu-900/90 via-koyu-900/60 to-koyu-900/30"></div>
       <div class="absolute inset-0 flex items-center">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
@@ -209,6 +210,8 @@ for (const cat of categories) {
               <div class="relative rounded-xl overflow-hidden bg-koyu-100 aspect-[4/3]">
                 <img
                   src={product.img}
+                  srcset={srcset(product.img)}
+                  sizes={SIZES.kart4}
                   alt={product.title}
                   width="400"
                   height="300"
@@ -256,7 +259,7 @@ for (const cat of categories) {
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="relative rounded-3xl overflow-hidden bg-koyu-900">
         <div class="absolute inset-0">
-          <img src="/images/tabela-imalat.webp" alt="" aria-hidden="true" class="w-full h-full object-cover opacity-15" width="1600" height="600" loading="lazy" decoding="async" />
+          <img src="/images/tabela-imalat.webp" srcset={srcset('/images/tabela-imalat.webp')} sizes="(min-width: 1280px) 1200px, 100vw" alt="" aria-hidden="true" class="w-full h-full object-cover opacity-15" width="1600" height="600" loading="lazy" decoding="async" />
           <div class="absolute inset-0 bg-gradient-to-r from-koyu-900 via-koyu-900/95 to-koyu-800/80"></div>
         </div>
         <div class="relative grid grid-cols-1 lg:grid-cols-2 gap-10 p-8 md:p-14 items-center">
@@ -317,7 +320,7 @@ for (const cat of categories) {
       <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
         {projeler.map(project => (
           <a href={`/projelerimiz/${project.id}/`} class="group relative rounded-2xl overflow-hidden h-72 block">
-            <img src={project.data.image} alt={project.data.title} width="600" height="400" loading="lazy" decoding="async" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" />
+            <img src={project.data.image} srcset={srcset(project.data.image)} sizes={SIZES.kart3} alt={project.data.title} width="600" height="400" loading="lazy" decoding="async" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" />
             <div class="absolute inset-0 bg-gradient-to-t from-koyu-900/90 via-koyu-900/20 to-transparent opacity-60 group-hover:opacity-100 transition-opacity duration-300"></div>
             <div class="absolute bottom-0 left-0 right-0 p-6 translate-y-2 group-hover:translate-y-0 transition-transform duration-300">
               <span class="text-eymen-400 text-xs font-bold tracking-wider">{project.data.categories[0].toLocaleUpperCase('tr-TR')}</span>

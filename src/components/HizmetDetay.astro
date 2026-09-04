@@ -22,6 +22,7 @@ interface Props {
 }
 
 import BaseLayout from '../layouts/BaseLayout.astro';
+import { srcset, boyut, SIZES } from '../lib/gorsel';
 import { company, contact, getWhatsAppUrl, whatsappMessages } from '../lib/site-data';
 
 const { title, seoTitle, description, heroDesc, heroImage, ogImage, facility, features, products, process, sectors, faq } = Astro.props;
@@ -72,7 +73,7 @@ const breadcrumbSchema = {
   <section class="relative bg-koyu-900 overflow-hidden pt-12 pb-12 md:pt-20 md:pb-20">
     {heroImage && (
       <>
-        <img src={heroImage} alt="" class="absolute inset-0 w-full h-full object-cover opacity-70" loading="eager" decoding="async" />
+        <img src={heroImage} srcset={srcset(heroImage)} sizes="100vw" {...boyut(heroImage)} alt="" class="absolute inset-0 w-full h-full object-cover opacity-70" loading="eager" decoding="async" />
         <div class="absolute inset-0 bg-gradient-to-r from-koyu-900/90 via-koyu-900/60 to-koyu-900/20"></div>
       </>
     )}
@@ -108,7 +109,7 @@ const breadcrumbSchema = {
         <div class="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6 mb-8 md:mb-10">
           {facility.images.map((img, i) => (
             <div class="aspect-[4/3] rounded-2xl overflow-hidden bg-koyu-200 shadow-md">
-              <img src={img} alt={`${facility.title} - Üretim ${i + 1}`} loading="lazy" decoding="async" class="w-full h-full object-cover" />
+              <img src={img} srcset={srcset(img)} sizes="(min-width: 768px) 50vw, 100vw" {...boyut(img)} alt={`${facility.title} - Üretim ${i + 1}`} loading="lazy" decoding="async" class="w-full h-full object-cover" />
             </div>
           ))}
         </div>
@@ -144,7 +145,7 @@ const breadcrumbSchema = {
         {products.map(p => (
           <a href={p.href} class="group bg-white rounded-xl border border-koyu-100 overflow-hidden hover:shadow-xl hover:border-eymen-200 transition-all duration-300 hover:-translate-y-1">
             <div class="aspect-[4/3] overflow-hidden bg-koyu-200">
-              <img src={p.image} alt={p.title} width="400" height="300" loading="lazy" decoding="async" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+              <img src={p.image} srcset={srcset(p.image)} sizes="(min-width: 1280px) 400px, (min-width: 640px) 33vw, 50vw" alt={p.title} width="400" height="300" loading="lazy" decoding="async" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
             </div>
             <div class="p-3 md:p-5">
               <h3 class="font-bold text-sm md:text-base text-koyu-900 mb-1 group-hover:text-eymen-600 transition-colors">{p.title}</h3>

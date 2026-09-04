@@ -1,5 +1,6 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
+import { srcset, boyut, SIZES } from '../../lib/gorsel';
 import { getCollection, render } from 'astro:content';
 import { company, contact, getWhatsAppUrl, whatsappIcon, socialLinks } from '../../lib/site-data';
 
@@ -133,7 +134,7 @@ const shareLinks = [
       <article>
         <!-- Kapak Görseli -->
         <div class="rounded-2xl overflow-hidden mb-10">
-          <img src={post.data.image} alt={post.data.title} width="1200" height="675" fetchpriority="high" decoding="async" class="w-full aspect-[16/9] object-cover" />
+          <img src={post.data.image} srcset={srcset(post.data.image)} sizes="(min-width: 1024px) 800px, 100vw" alt={post.data.title} width="1200" height="675" fetchpriority="high" decoding="async" class="w-full aspect-[16/9] object-cover" />
         </div>
 
         <!-- TOC (Mobil - inline) -->
@@ -250,7 +251,7 @@ const shareLinks = [
               <div class="space-y-3">
                 {otherPosts.slice(0, 2).map(p => (
                   <a href={`/blog/${p.id}/`} class="flex gap-3 group">
-                    <img src={p.data.image} alt={p.data.title} width="64" height="64" class="w-16 h-16 rounded-lg object-cover shrink-0" loading="lazy" decoding="async" />
+                    <img src={p.data.image} srcset={srcset(p.data.image)} sizes="64px" alt={p.data.title} width="64" height="64" class="w-16 h-16 rounded-lg object-cover shrink-0" loading="lazy" decoding="async" />
                     <div class="min-w-0">
                       <h4 class="text-sm font-semibold text-koyu-800 group-hover:text-eymen-600 transition-colors leading-snug line-clamp-2">{p.data.title}</h4>
                       <span class="text-xs text-koyu-400 mt-1 block">{new Date(p.data.date).toLocaleDateString('tr-TR', { day: 'numeric', month: 'short', year: 'numeric' })}</span>
@@ -294,7 +295,7 @@ const shareLinks = [
           {otherPosts.map(p => (
             <a href={`/blog/${p.id}/`} class="group bg-white rounded-2xl border border-koyu-100 overflow-hidden hover:shadow-xl hover:border-eymen-200 transition-all duration-300 hover:-translate-y-1">
               <div class="aspect-[16/9] overflow-hidden">
-                <img src={p.data.image} alt={p.data.title} width="600" height="400" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" decoding="async" />
+                <img src={p.data.image} srcset={srcset(p.data.image)} sizes={SIZES.kart3} alt={p.data.title} width="600" height="400" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" decoding="async" />
               </div>
               <div class="p-5">
                 <div class="flex items-center gap-2 mb-2">

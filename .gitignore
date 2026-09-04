@@ -29,3 +29,9 @@ pnpm-debug.log*
 .idea/
 .vercel
 .claude/worktrees/
+
+# responsive görsel varyantları — build'de üretilir (scripts/gorsel-varyant.mjs), repo'ya girmez
+public/images/**/*-240.webp
+public/images/**/*-480.webp
+public/images/**/*-800.webp
+public/images/**/*-1200.webp
