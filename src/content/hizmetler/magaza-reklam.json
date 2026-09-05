@@ -1,154 +1,44 @@
 {
-  "title": "Mağaza Reklam Uygulamaları",
-  "seoTitle": "Mağaza Reklam Uygulamaları Pendik İstanbul",
-  "description": "Perakende store branding, konsept tasarım, vitrini tasarımı, iç mekan dekorasyonu. Anahtar teslim mağaza reklam çözümleri. İstanbul Pendik.",
-  "heroDesc": "Perakende mağazalar için anahtar teslim reklam ve branding çözümleri sunuyoruz. Giriş dekorasyon, vitrin tasarımı, iç mekan grafikleri, raf etiketleri ve promosyon afişlerinden oluşan komple çözümler sağlıyoruz. Kurumsal kimliğinizi mağazada yaşatan, satış artışını hedefleyen tasarım ve uygulama hizmetleri.",
+  "title": "Mağaza Tasarım ve Reklam Uygulamaları",
+  "seoTitle": "Mağaza Tasarım ve Reklam Uygulamaları",
+  "description": "Mağaza tasarım ve uygulama: konsept, vitrin, tabela, lightbox, raf etiketi ve cephe giydirme tek elden. PAWCO, Hakmar Express ve Eve referanslarıyla anahtar teslim mağaza reklam uygulaması. Pendik İstanbul.",
+  "heroDesc": "Mağaza tasarım ve uygulama işini tek elden yürütüyoruz: konsept ve vitrin tasarımı, cephe ve iç mekan tabelası, lightbox ve raf başlıkları, cam folyo, zemin ve duvar grafikleri, promosyon afişleri. 800'den fazla mağazalı Hakmar Express'ten butik pet store PAWCO'ya kadar perakende markalarının mağazalarını tasarımdan montaja kadar biz uyguluyoruz. Kurumsal kimliğinizi mağazada yaşatan, satışı hedefleyen çözümler.",
   "order": 9,
   "listIcon": "🏢",
-  "listDesc": "Mağaza konsept tasarımı, vitrin düzenlemesi, raf etiketleme ve iç mekan branding. Anahtar teslim mağaza çözümleri.",
-  "listFeatures": [
-    "Konsept Tasarım",
-    "Vitrin",
-    "Raf Etiket",
-    "İç Mekan"
-  ],
+  "listDesc": "Mağaza tasarım ve uygulama: konsept, vitrin, tabela, lightbox, raf etiketleme ve iç mekan branding. Anahtar teslim mağaza reklam çözümleri.",
+  "listFeatures": ["Konsept Tasarım", "Vitrin", "Tabela & Lightbox", "Raf Etiket", "İç Mekan"],
   "listImage": "/images/urunler/hakmar-avm-1.webp",
   "features": [
-    {
-      "icon": "🎨",
-      "title": "Konsept & Stil Tasarımı",
-      "desc": "Mağazanızın kimliğine uygun konsept tasarımı. Renk, tipografi ve görsel hiyerarşi uygunluğu sağlanır."
-    },
-    {
-      "icon": "🪟",
-      "title": "Vitrini Tasarımı",
-      "desc": "Dikkat çekici ve satış odaklı vitrin düzenlemesi. Sezonsal değişim ve promosyon tasarımı."
-    },
-    {
-      "icon": "📍",
-      "title": "İç Mekan Dekorasyonu",
-      "desc": "Duvar grafikleri, raf dekorasyonu, tavan tasarımı. Alışveriş deneyimini artırıcı ortam yaratma."
-    },
-    {
-      "icon": "💰",
-      "title": "POS & Etiket Tasarımı",
-      "desc": "Ürün etiketleri, fiyat etiketleri, promosyon afişleri. Satış noktası grafikleri."
-    },
-    {
-      "icon": "🚪",
-      "title": "Giriş & Entrance Tasarımı",
-      "desc": "Mağaza girişi dekorasyon. Kapı, kemerleri, giriş hol tasarımı."
-    },
-    {
-      "icon": "✨",
-      "title": "Mevsimsel & Tema Dekor",
-      "desc": "Yılbaşı, oruç bayramı, sezon dekorasyonları. Tema bazlı iç mekan değişimleri."
-    }
+    { "icon": "🎨", "title": "Konsept ve Mağaza Tasarımı", "desc": "Markanızın kimliğine uygun mağaza konsepti: renk, tipografi, malzeme ve görsel hiyerarşi tek dilde kurgulanır." },
+    { "icon": "🪟", "title": "Vitrin Tasarımı", "desc": "Dikkat çeken, satış odaklı vitrin düzenlemesi. Sezon ve kampanya değişimlerinde hızlı yenileme." },
+    { "icon": "💡", "title": "Tabela ve Lightbox", "desc": "Cephe kutu harf, AVM koridoru lightbox panolar, ışıklı piktogram ve yönlendirme tabelaları." },
+    { "icon": "📍", "title": "İç Mekan Uygulaması", "desc": "Duvar grafikleri, zemin folyoları, raf başlıkları, tavan tabelaları ve cam folyo uygulamaları." },
+    { "icon": "💰", "title": "POS ve Etiket Tasarımı", "desc": "Fiyat etiketleri, raf altı palet eteği, dönkart ve promosyon afişleri; satış noktası grafikleri." },
+    { "icon": "✨", "title": "Sezonluk ve Tematik Dekor", "desc": "Yılbaşı, bayram, okula dönüş ve sezon dekorasyonları; tema bazlı iç mekan değişimleri." }
   ],
   "products": [
-    {
-      "title": "PAWCO Kozzy AVM Lightbox Koridoru",
-      "desc": "AVM koridoru boyunca uzanan büyük format LED lightbox pano duvarı; kampanya görselleri ve hizmet iletişimi tek ışıklı yüzeyde.",
-      "image": "/images/projeler/pawco-kozzy-avm-2.webp",
-      "href": "/projelerimiz/pawco-kozzy-avm-lightbox/"
-    },
-    {
-      "title": "Hakmar AVM",
-      "desc": "Hakmar AVM mağazaları için komple tabela, branda, folyo ve iç mekân reklam uygulamaları.",
-      "image": "/images/urunler/hakmar-avm-1.webp",
-      "href": "/urunlerimiz/hakmar-avm/"
-    },
-    {
-      "title": "Eve Mağazası",
-      "desc": "Eve mağazaları için tabela, branda, folyo giydirme ve iç mekân reklam uygulamaları.",
-      "image": "/images/urunler/eve-magazasi-1.webp",
-      "href": "/urunlerimiz/eve-magazasi/"
-    },
-    {
-      "title": "Bizim Toptan",
-      "desc": "Bizim Toptan mağazaları için komple mağaza reklam çözümleri.",
-      "image": "/images/urunler/bizim-toptan-1.webp",
-      "href": "/urunlerimiz/bizim-toptan-magazasi/"
-    },
-    {
-      "title": "Soğuk Dolap Kaplama",
-      "desc": "Derin dondurucu, dondurma ve içecek dolaplarına baskılı folyo giydirme.",
-      "image": "/images/urunler/soguk-dolap-kaplama-1.webp",
-      "href": "/urunlerimiz/soguk-dolap-kaplama/"
-    },
-    {
-      "title": "Cut-Out Maket",
-      "desc": "Mağaza içi tanıtım için insan boyutunda veya özel kesim karton maketler.",
-      "image": "/images/urunler/cut-out-maket-1.webp",
-      "href": "/urunlerimiz/cut-out-maket/"
-    },
-    {
-      "title": "Palet Eteği",
-      "desc": "Market ve mağaza raflarında ürün tanıtımı için palet eteği baskı uygulaması.",
-      "image": "/images/urunler/palet-etegi-1.webp",
-      "href": "/urunlerimiz/palet-etegi/"
-    },
-    {
-      "title": "Dönkart Afiş",
-      "desc": "Mağaza içi kampanya ve ürün tanıtımı için çift taraflı dönkart afişler.",
-      "image": "/images/urunler/donkart-1.webp",
-      "href": "/urunlerimiz/donkart/"
-    }
+    { "title": "PAWCO Water Garden AVM", "desc": "Kutu harf, ışıklı piktogram, pati tavan tabelası, raf başlıkları ve mağaza içi görseller: komple mağaza uygulaması.", "image": "/images/projeler/pawco-water-garden-avm-1.webp", "href": "/projelerimiz/pawco-water-garden-avm/" },
+    { "title": "PAWCO Kozzy AVM", "desc": "Pleksi ışıklı kutu harf, cam folyo ve forex bilgi panoları.", "image": "/images/projeler/pawco-kozzy-avm-1.webp", "href": "/projelerimiz/pawco-kozzy-avm/" },
+    { "title": "PAWCO Kozzy AVM Lightbox Koridoru", "desc": "AVM koridoru boyunca büyük format LED lightbox pano duvarı.", "image": "/images/projeler/pawco-kozzy-avm-2.webp", "href": "/projelerimiz/pawco-kozzy-avm-lightbox/" },
+    { "title": "Hakmar AVM", "desc": "Zincir market mağaza reklam uygulaması: cephe, iç mekan ve kampanya görselleri.", "image": "/images/urunler/hakmar-avm-1.webp", "href": "/urunlerimiz/hakmar-avm/" },
+    { "title": "Eve Mağazaları", "desc": "Kozmetik mağazaları için kutu harf, vitrin folyo ve cephe giydirme.", "image": "/images/projeler/eve-magazasi-prj-1.webp", "href": "/projelerimiz/eve-magazalari/" },
+    { "title": "Bizim Toptan", "desc": "Roll-up banner ve mağaza içi stand uygulamaları.", "image": "/images/urunler/bizim-toptan-1.webp", "href": "/urunlerimiz/bizim-toptan-magazasi/" },
+    { "title": "Soğuk Dolap Kaplama", "desc": "Market dolaplarına marka ve kampanya folyosu.", "image": "/images/urunler/soguk-dolap-kaplama-1.webp", "href": "/urunlerimiz/soguk-dolap-kaplama/" },
+    { "title": "Palet Eteği", "desc": "Raf altı ve palet çevresi kampanya baskıları.", "image": "/images/urunler/palet-etegi-1.webp", "href": "/urunlerimiz/palet-etegi/" }
   ],
   "process": [
-    {
-      "step": "01",
-      "title": "Konsept & Analiz",
-      "desc": "Mağazanın cinsiyeti, hedef müşterisi, ürün çeşidi analiz edilir. Brand kimliği ve pazar durumu incelenir."
-    },
-    {
-      "step": "02",
-      "title": "Tasarım & Öncü İzleme",
-      "desc": "3D görseller ve mockup ile tasarım sunulur. Müşteri onayından sonra final tasarım hazırlanır."
-    },
-    {
-      "step": "03",
-      "title": "İmalat & Hazırlık",
-      "desc": "Grafikler, etiketler, dekoratif elemanlar üretilir. Malzeme ve aksesuarlar hazırlanır."
-    },
-    {
-      "step": "04",
-      "title": "Montaj & Kurulum",
-      "desc": "Profesyonel ekip tarafından yerinde montaj yapılır. Açılış hazırlığı ve ince ayar tamamlanır."
-    }
+    { "step": "01", "title": "Keşif ve Analiz", "desc": "Mağazanın konumu, hedef müşterisi, ürün grubu ve marka kimliği incelenir; ölçü ve fotoğraf alınır." },
+    { "step": "02", "title": "Tasarım ve Onay", "desc": "3D görseller ve mockup ile konsept sunulur. Onay sonrası uygulama dosyaları hazırlanır." },
+    { "step": "03", "title": "İmalat", "desc": "Tabela, lightbox, folyo, grafikler ve etiketler kendi tesisimizde üretilir." },
+    { "step": "04", "title": "Montaj ve Teslim", "desc": "Kendi ekibimiz yerinde montaj yapar; açılışa hazır teslim edilir." }
   ],
-  "sectors": [
-    "Perakende & AVM",
-    "Tekstil & Moda",
-    "Elektronik & Teknoloji",
-    "Gıda & Kahvehane",
-    "Spor & Rekreasyon",
-    "Kozmetik & Güzellik",
-    "Ayakkabı & Çanta",
-    "Mobilya & Ev",
-    "Turizm & Otelcilik",
-    "Sağlık & Eczane"
-  ],
+  "sectors": ["Perakende & AVM", "Tekstil & Moda", "Elektronik & Teknoloji", "Gıda & Kahvehane", "Spor & Rekreasyon", "Kozmetik & Güzellik", "Ayakkabı & Çanta", "Mobilya & Ev", "Turizm & Otelcilik", "Sağlık & Eczane"],
   "faq": [
-    {
-      "q": "Mağaza branding projesinin süresi ne kadar?",
-      "a": "Konsept tasarımdan sonra 3-4 hafta sürer. Tasarım onayından üretim ve montaja kadar ortalama 10 iş gününü alır."
-    },
-    {
-      "q": "Küçük mağazalar için de hizmet veriliyor mu?",
-      "a": "Evet. Bütçenize göre küçük çaplı dekorasyon ve vitrin tasarımından anahtar teslim çözümlere kadar farklı paketler sunuyoruz."
-    },
-    {
-      "q": "Zincir mağaza konsepti uyguluyorsunuz?",
-      "a": "Evet. Birden fazla mağazanız varsa tutarlı kimlik sağlamak adına denetim listeleri ve uygulama rehberleri hazırlarız."
-    },
-    {
-      "q": "Mevsimsel dekorasyon değişimi ne kadar sık yapılmalı?",
-      "a": "Perakende sektörüne göre değişir. Fashion her 2 haftada, gıda/genel ticari mağazalar ayda bir, elektronik 3 ayda bir değiştirilebilir."
-    },
-    {
-      "q": "Mağazamı başka bir firma tasarladıysa, yardımcı olabilir misiniz?",
-      "a": "Evet. Tam iş güvenliği ve tasarım konsültasyonuyla mevcut mağazanızı yeniden tasarımlayabiliriz. Rehab projeleri için bütçe planlaması yapabiliriz."
-    }
+    { "q": "Mağaza tasarım ve uygulama hizmeti neleri kapsar?", "a": "Konsept ve vitrin tasarımı, cephe kutu harf tabela, lightbox ve ışıklı piktogramlar, cam folyo, duvar ve zemin grafikleri, raf başlıkları, fiyat etiketleri ve promosyon afişleri. Tasarım, üretim ve montajı tek firmadan alırsınız." },
+    { "q": "Mağaza uygulaması ne kadar sürer?", "a": "Konsept onayından sonra üretim ve montaj ortalama 10 iş günü sürer. AVM mağazalarında AVM yönetiminin çalışma saatlerine göre gece montajı da yapıyoruz." },
+    { "q": "Küçük mağazalar için de hizmet veriliyor mu?", "a": "Evet. Tek vitrin ve tabela yenilemesinden anahtar teslim mağaza uygulamasına kadar bütçeye göre farklı kapsamlar sunuyoruz." },
+    { "q": "Zincir mağaza konseptini birden fazla şubeye uyguluyor musunuz?", "a": "Evet. Hakmar Express gibi zincir markalar için şube bazlı uygulama rehberi hazırlıyor, tüm şubelerde aynı kimliği aynı malzeme ve ölçülerle uyguluyoruz." },
+    { "q": "Sezonluk dekorasyon ne sıklıkla değişmeli?", "a": "Tekstil ve moda mağazalarında 2-4 haftada bir, gıda ve genel perakendede ayda bir, elektronikte 3 ayda bir yenileme öneriyoruz." },
+    { "q": "Mağazamı başka bir firma tasarladıysa yardımcı olabilir misiniz?", "a": "Evet. Mevcut konsepti koruyarak eksik uygulamaları tamamlayabilir ya da yenileme için bütçe planı çıkarabiliriz." }
   ]
 }

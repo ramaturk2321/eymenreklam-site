@@ -1,8 +1,8 @@
 {
   "title": "Tabela İmalatı",
-  "seoTitle": "Tabela İmalatı ve Montajı Pendik İstanbul",
-  "description": "Kutu harf, totem, çatı, cephe ve yönlendirme tabelaları. CNC kesim ve LED aydınlatma ile anahtar teslim üretim ve montaj. Pendik İstanbul.",
-  "heroDesc": "Kutu harf tabeladan totem tabelaya, çatı tabelasından neon LED'e kadar tüm tabela türlerinde anahtar teslim imalat ve montaj. 25 yıllık üretim deneyimi, 2.500m² tesiste CNC kesim ve LED aydınlatma sistemleriyle kurumsal standartlarda tabela üretiyoruz.",
+  "seoTitle": "Tabela İmalatı ve Montajı Pendik Tabelacı",
+  "description": "Pendik tabelacı: kutu harf, totem, çatı, fener ve ofis tabelası imalatı ve montajı. CNC kesim, LED aydınlatma, 2 yıl garanti. Ücretsiz keşif, Pendik İstanbul.",
+  "heroDesc": "Pendik'in 25 yıllık tabelacısı olarak kutu harf tabeladan totem tabelaya, çatı tabelasından neon LED'e kadar tüm tabela türlerinde anahtar teslim imalat ve montaj yapıyoruz. 2.500 m² tesiste CNC kesim ve LED aydınlatma sistemleriyle kurumsal standartlarda tabela üretiyor, İstanbul geneline montaj ekibimizle gidiyoruz.",
   "order": 1,
   "listIcon": "🔤",
   "listDesc": "Kutu harf, totem, çatı, cephe ve yönlendirme tabelaları. CNC kesim ve LED aydınlatma ile anahtar teslim üretim ve montaj.",
@@ -38,6 +38,7 @@
     { "q": "Tabela üretim süresi ne kadar?", "a": "Standart bir kutu harf tabela projesi keşiften montaja kadar ortalama 7-10 iş günü sürer. Acil projeler için hızlandırılmış üretim seçeneğimiz mevcuttur." },
     { "q": "Belediye ruhsatı konusunda yardımcı oluyor musunuz?", "a": "Evet. Tabela yönetmeliğine uygun tasarım yapıyor ve ruhsat başvuru süreçlerinde müşterilerimize destek sağlıyoruz." },
     { "q": "LED aydınlatma garanti süresi ne kadar?", "a": "LED modüllerimizde 2 yıl garanti sunuyoruz. LED ömrü ortalama 50.000 saattir, bu da yaklaşık 5-6 yıl kesintisiz kullanım anlamına gelir." },
-    { "q": "İstanbul dışına tabela montajı yapıyor musunuz?", "a": "Evet. Türkiye genelinde kurumsal müşterilerimize montaj hizmeti veriyoruz. Zincir mağaza ve filo projelerde tüm şehirlerde hizmet sunuyoruz." }
+    { "q": "İstanbul dışına tabela montajı yapıyor musunuz?", "a": "Evet. Türkiye genelinde kurumsal müşterilerimize montaj hizmeti veriyoruz. Zincir mağaza ve filo projelerde tüm şehirlerde hizmet sunuyoruz." },
+    { "q": "Pendik'te tabelacı arıyorum, keşfe geliyor musunuz?", "a": "Evet. Pendik, Kartal, Tuzla, Maltepe ve tüm Anadolu Yakası'nda ücretsiz yerinde keşif yapıyor; ölçü ve fotoğraf sonrası aynı gün yazılı teklif veriyoruz." }
   ]
 }

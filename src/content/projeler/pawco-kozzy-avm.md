@@ -24,4 +24,4 @@ PAWCO Super Pet Store'un Kozzy AVM şubesi için mağaza giriş cephesinde 5 mm 
 
 AVM koridoru boyunca uzanan lightbox panolarda PAWCO'nun kedi-köpek görselli kampanya tasarımları ve Pet Kreş iletişimi büyük formatta basıldı. Giriş camında kemik formlu açılış-kapanış folyosu, kapı yanında "Neden ozon?" bilgi panosu, ödeme noktası ve 7 aşamalı kontrol noktası panoları folyo baskı forex olarak üretildi.
 
-Raf başlıkları ve mağaza içi yönlendirmeler markanın kimliğine uygun renk ve tipografiyle tamamlandı.
+Raf başlıkları ve mağaza içi yönlendirmeler markanın kimliğine uygun renk ve tipografiyle tamamlandı. Tasarımdan montaja tüm süreci [mağaza tasarım ve reklam uygulamaları](/hizmetlerimiz/magaza-reklam/) hizmetimiz kapsamında tek elden yürüttük.

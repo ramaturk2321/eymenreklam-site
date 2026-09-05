@@ -12,4 +12,4 @@ date: "2024-06-10"
 order: 2
 ---
 
-Eve kozmetik mağazaları için ışıklı kutu harf tabela, vitrin folyo giydirme ve iç mekan reklam uygulamaları gerçekleştirdik. Marka kimliğine uygun, dikkat çekici mağaza tasarımlarıyla müşteri trafiğini artırdık.
+Eve kozmetik mağazaları için ışıklı kutu harf tabela, vitrin folyo giydirme ve iç mekan reklam uygulamaları gerçekleştirdik. Marka kimliğine uygun, dikkat çekici mağaza tasarımlarıyla müşteri trafiğini artırdık. Detaylar için [mağaza tasarım ve reklam uygulamaları](/hizmetlerimiz/magaza-reklam/) sayfamıza bakabilirsiniz.

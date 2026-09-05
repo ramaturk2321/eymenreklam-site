@@ -36,13 +36,28 @@ const { title, description = `Eymen Reklam — Tabela İmalatı & UV Baskı Pend
       @font-face { font-family: 'Poppins'; font-style: normal; font-weight: 700; font-display: swap; src: url('/fonts/poppins-700.woff2') format('woff2'); }
       @font-face { font-family: 'Poppins'; font-style: normal; font-weight: 800; font-display: swap; src: url('/fonts/poppins-800.woff2') format('woff2'); }
     </style>
-    <!-- Google Analytics 4 -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-BP7BT5C1X1"></script>
+    <!-- Google Analytics 4 — gtag.js (191 KB) ana iş parçacığını kilitlediği için ilk etkileşimde
+         veya load + 4 sn sonra yüklenir; gtag() çağrıları dataLayer'da kuyruklanır, olay kaybı olmaz. -->
     <script is:inline>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
       gtag('config', 'G-BP7BT5C1X1');
+      (function () {
+        var yuklendi = false;
+        function yukle() {
+          if (yuklendi) return;
+          yuklendi = true;
+          var s = document.createElement('script');
+          s.async = true;
+          s.src = 'https://www.googletagmanager.com/gtag/js?id=G-BP7BT5C1X1';
+          document.head.appendChild(s);
+        }
+        ['pointerdown', 'keydown', 'touchstart', 'scroll'].forEach(function (e) {
+          window.addEventListener(e, yukle, { once: true, passive: true });
+        });
+        window.addEventListener('load', function () { setTimeout(yukle, 4000); });
+      })();
     </script>
     <title>{title} | Eymen Reklam</title>
     <SEO title={title} description={description} image={image} />
