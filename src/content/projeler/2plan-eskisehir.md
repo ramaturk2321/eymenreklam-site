@@ -1,7 +1,7 @@
 ---
 title: "2Plan Eskişehir – Totem Tabela Uygulaması"
 description: "2Plan Otomotiv Eskişehir şubesi için totem tabela üretim ve montaj uygulaması."
-image: "/images/projeler/2plan-eskisehir-1.webp"
+image: "/images/projeler/2plan-eskisehir-3.webp"
 images:
   - "/images/projeler/2plan-eskisehir-1.webp"
   - "/images/projeler/2plan-eskisehir-2.webp"

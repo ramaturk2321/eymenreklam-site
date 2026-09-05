@@ -212,6 +212,21 @@
       "source": "/urun/:slug",
       "destination": "/urunlerimiz/:slug/",
       "permanent": true
+    },
+    {
+      "source": "/projelerimiz/ramazan-tabela-uv/",
+      "destination": "/projelerimiz/",
+      "permanent": true
+    },
+    {
+      "source": "/projelerimiz/dupli-color-foreks/",
+      "destination": "/projelerimiz/",
+      "permanent": true
+    },
+    {
+      "source": "/projelerimiz/artema-stand-uv/",
+      "destination": "/projelerimiz/",
+      "permanent": true
     }
   ]
 }

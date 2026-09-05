@@ -1,7 +1,7 @@
 ---
 title: "Som Kağıt – Duvar Giydirme & Tabela"
 description: "Som Kağıt ofis için duvar giydirme ve kutu harf tabela uygulaması."
-image: "/images/projeler/som-kagit-4.webp"
+image: "/images/projeler/som-kagit-2.webp"
 images:
   - "/images/projeler/som-kagit-4.webp"
   - "/images/projeler/som-kagit-1.webp"

@@ -1,7 +1,7 @@
 ---
 title: "İntema – Yönlendirme Tabelası"
 description: "İntema mağazası için iç mekan yönlendirme tabelası uygulaması."
-image: "/images/projeler/intema-1.webp"
+image: "/images/projeler/intema-3.webp"
 images:
   - "/images/projeler/intema-1.webp"
   - "/images/projeler/intema-2.webp"

@@ -1,7 +1,7 @@
 ---
 title: "Araç Giydirme Uygulamaları"
 description: "Hakmar, Tatbak, Hakmar Express, Haket, Unkar, Rençber, Sivas ve farklı ticari araçlar için folyo giydirme uygulamaları."
-image: "/images/projeler/arac-giydirme-uygulamalari-kapak.webp"
+image: "/images/projeler/tatbak-arac-giydirme-1.webp"
 images:
   - "/images/projeler/hakmar-ikram-araci-1.webp"
   - "/images/projeler/hakmar-ikram-araci-2.webp"

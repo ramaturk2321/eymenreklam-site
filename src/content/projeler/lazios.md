@@ -1,7 +1,7 @@
 ---
 title: "Lazios – Menü Panosu ve Lightbox Uygulaması"
 description: "Lazios pizzacı için ışıklı menü panosu ve lightbox tabela uygulaması."
-image: "/images/projeler/lazios-1.webp"
+image: "/images/projeler/lazios-3.webp"
 images:
   - "/images/projeler/lazios-1.webp"
   - "/images/projeler/lazios-2.webp"

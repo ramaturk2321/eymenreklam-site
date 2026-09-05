@@ -1,7 +1,7 @@
 ---
 title: "Isuzu Fabrikası İç Yönlendirme Tabelaları"
 description: "Isuzu fabrikası için iç mekan yönlendirme tabela sistemi tasarımı ve uygulaması."
-image: "/images/projeler/isuzu-yonlendirme.webp"
+image: "/images/projeler/isuzu-yonlendirme-9.webp"
 images:
   - "/images/projeler/isuzu-yonlendirme.webp"
   - "/images/projeler/isuzu-yonlendirme-2.webp"
