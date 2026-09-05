@@ -22,7 +22,9 @@
     { "title": "Çatı Tabelası", "desc": "Bina çatısına montajlı büyük ölçekli tabela. Uzak mesafeden marka görünürlüğü.", "image": "/images/urunler/cati-tabela-1.webp", "href": "/urunlerimiz/cati-tabelasi/" },
     { "title": "Neon-Led Tabela", "desc": "Neon görünümlü LED tabela. Düşük enerji tüketimi ile retro estetik.", "image": "/images/urunler/neon-led-1.webp", "href": "/urunlerimiz/neon-led-tabela/" },
     { "title": "Işıklı Blok Tabela", "desc": "İçten aydınlatmalı kutu tabela. Vinileks veya pleksiglas yüzey seçenekleri.", "image": "/images/urunler/isikli-blok-1.webp", "href": "/urunlerimiz/isikli-blok-tabela/" },
-    { "title": "Ofis Tabelası", "desc": "İç mekan kapı ve resepsiyon tabelaları. Şık ve kurumsal görünüm.", "image": "/images/urunler/ofis-tabela-1.webp", "href": "/urunlerimiz/ofis-tabelasi/" }
+    { "title": "Ofis Tabelası", "desc": "İç mekan kapı ve resepsiyon tabelaları. Şık ve kurumsal görünüm.", "image": "/images/urunler/ofis-tabela-1.webp", "href": "/urunlerimiz/ofis-tabelasi/" },
+    { "title": "Fener Tabela", "desc": "Duvara dik montajlı çift taraflı, LED veya neon aydınlatmalı tabela.", "image": "/images/urunler/fener-tabela-1.webp", "href": "/urunlerimiz/fener-tabela/" },
+    { "title": "Avukat ve Hukuk Bürosu Tabelası", "desc": "Pirinç plaket, pleksi kapı tabelası ve kutu harf modelleri. TBB yönetmeliğine uygun.", "image": "/images/urunler/hukuk-tabela-1.webp", "href": "/urunlerimiz/hukuk-burosu-tabela/" }
   ],
   "process": [
     { "step": "01", "title": "Ücretsiz Keşif", "desc": "Uzman ekibimiz projenizi yerinde inceler, ölçüm ve fotoğraflama yapar." },

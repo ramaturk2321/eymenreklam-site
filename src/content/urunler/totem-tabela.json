@@ -1,10 +1,10 @@
 {
   "title": "Totem Tabela",
-  "seoTitle": "Totem Tabela İmalatı Pendik İstanbul",
-  "description": "Yüksek görünürlüklü totem tabela (pilon tabela) üretimi. Çelik konstrüksiyon, LED aydınlatma. Eymen Reklam — 25 yıllık tecrübe, 2 yıl garanti.",
+  "seoTitle": "Totem Tabela İmalatı ve Fiyatları Pendik",
+  "description": "Totem tabela imalatı ve fiyatları: küçük totem, dükkan önü totem, AVM ve pylon totem. Çelik gövde, LED, 7-15 iş günü teslim, 2 yıl garanti. Ücretsiz keşif.",
   "category": "Tabela",
   "categoryHref": "/hizmetlerimiz/tabela/",
-  "shortDesc": "Yüksek görünürlüklü totem tabela (pilon tabela) üretimi. Çelik konstrüksiyon gövde, LED aydınlatmalı kasetler ve profesyonel montaj ile markanızı uzak mesafelerden fark edilir kılın.",
+  "shortDesc": "Küçük totemden 10 metrelik pylon toteme kadar totem tabela imalatı. Çelik konstrüksiyon gövde, LED aydınlatmalı kasetler, betonarme temel ve profesyonel montaj ile markanızı uzak mesafeden fark edilir kılın. Keşif ve fiyat teklifi ücretsiz.",
   "mainImg": "/images/urunler/totem-1.webp",
   "gallery": [
     "/images/projeler/beko-bereket-totem-1.webp",
@@ -30,14 +30,19 @@
     },
     {
       "icon": "M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10",
-      "title": "Boyutlandırma ve Tasarım Seçenekleri",
+      "title": "Totem Tabela Çeşitleri ve Boyutları",
       "content": "",
       "list": [
-        { "bold": "Mini Totem (2-4 m)", "text": "Mağaza önü ve küçük işletmeler için ideal. Kaldırım seviyesinden görünürlük sağlar." },
-        { "bold": "Standart Totem (4-6 m)", "text": "Cadde kenarı işletmeler, restoranlar ve showroomlar için en çok tercih edilen boyut aralığı." },
-        { "bold": "Dev Totem (6-10 m)", "text": "AVM, akaryakıt istasyonu ve sanayi tesisleri için uzak mesafeden fark edilecek büyük boyutlu totemler." },
-        { "bold": "Çift Taraflı Kaset", "text": "Her iki yönden de okunabilir LED aydınlatmalı kaset paneller. Birden fazla marka için bölmeli tasarım." }
+        { "bold": "Küçük Totem Tabela (2-4 m)", "text": "Dükkan önü, kafe, eczane ve küçük işletmeler için kaldırım seviyesinden görünürlük sağlayan kompakt totem." },
+        { "bold": "Dükkan Önü Totem (4-6 m)", "text": "Cadde kenarı mağazalar, restoranlar ve showroomlar için en çok tercih edilen boyut aralığı. Belediye sınırı olan 6 m'ye uygun." },
+        { "bold": "AVM ve Akaryakıt Totemi (6-10 m)", "text": "AVM, akaryakıt istasyonu ve sanayi tesisleri için uzak mesafeden fark edilen, çok markalı bölmeli pylon totemler." },
+        { "bold": "Çift Taraflı Kaset", "text": "Her iki yönden okunabilir LED aydınlatmalı kaset paneller. Birden fazla marka veya kiracı için bölmeli tasarım." }
       ]
+    },
+    {
+      "icon": "M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z",
+      "title": "Totem Tabela Fiyatları Neye Göre Belirlenir?",
+      "content": "Totem tabela fiyatını beş kalem belirler: toplam yükseklik ve kaset ölçüsü, gövde tipi (monoblok ya da pylon), aydınlatma sistemi (LED modül, neon flex veya ışıksız), betonarme temel ihtiyacı ve montaj yeri koşulları. Küçük bir dükkan önü totemi ile çift taraflı 10 metrelik LED'li AVM totemi arasında ciddi fark vardır; bu yüzden liste fiyatı yerine ücretsiz keşif sonrası kalem kalem yazılı teklif veriyoruz. Teklife çelik konstrüksiyon, LED, elektrik, temel ve montaj ayrı ayrı yazılır."
     },
     {
       "icon": "M13 10V3L4 14h7v7l9-11h-7z",
@@ -63,7 +68,8 @@
     { "label": "Garanti", "value": "2 Yıl (Konstrüksiyon + LED + İşçilik)" }
   ],
   "faq": [
-    { "q": "Totem tabela fiyatı neye göre değişir?", "a": "Fiyat; yükseklik, kaset boyutu ve sayısı, malzeme kalitesi, aydınlatma tipi ve montaj koşullarına göre değişir. Ücretsiz keşif sonrası detaylı fiyat teklifi sunuyoruz." },
+    { "q": "Totem tabela fiyatları ne kadar?", "a": "Fiyat; yükseklik, kaset boyutu ve sayısı, gövde tipi, aydınlatma ve temel/montaj koşullarına göre belirlenir. Ücretsiz keşif sonrası konstrüksiyon, LED, temel ve montajı ayrı kalemler hâlinde gösteren yazılı teklif sunuyoruz." },
+    { "q": "Dükkan önü için küçük totem tabela yapılıyor mu?", "a": "Evet. 2-4 metre arası küçük totem tabelalar dükkan önü, kafe ve eczane gibi işletmeler için en çok ürettiğimiz modeldir. Tek veya çift taraflı, LED'li ya da ışıksız üretilir." },
     { "q": "Totem tabela için belediye izni gerekli mi?", "a": "Evet, çoğu belediye totem tabela için ilan-reklam ruhsatı istemektedir. İzin sürecinde size yardımcı oluyoruz ve gerekli projeleri hazırlıyoruz." },
     { "q": "LED aydınlatma bakımı nasıl yapılır?", "a": "LED modüllerimiz 50.000 saat ömürlüdür ve genellikle bakım gerektirmez. Garanti süresi içinde arıza durumunda ücretsiz değişim yapıyoruz. Periyodik temizlik öneriyoruz." },
     { "q": "Maksimum ne yükseklikte totem tabela yapılabilir?", "a": "10 metreye kadar standart üretim yapıyoruz. Daha yüksek projeler için özel mühendislik hesabı ve statik proje ile üretim mümkündür." }

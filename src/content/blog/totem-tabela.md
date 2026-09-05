@@ -1,6 +1,6 @@
 ---
 title: "Totem Tabela: Markanızın Sokaktaki En Güçlü Elçisinin 7 Sırrı"
-seoTitle: "Totem Tabela Rehberi: Malzeme ve İzinler"
+seoTitle: "Totem Tabela Nedir? Türleri ve İzinler"
 description: "Totem tabela türleri, malzeme, rüzgâr dayanımı ve belediye izinleri rehberi. Pendik İstanbul'da totem tabela imalatı için ücretsiz teklif alın."
 excerpt: "Totem tabela hakkında bilmeniz gereken her şey: türleri, malzeme seçimi, rüzgâr dayanımı hesaplamaları, belediye izinleri ve etkili tasarım ilkeleri."
 image: "/images/blog-totem.webp"
@@ -19,6 +19,8 @@ Totem tabela, genellikle yerden bağımsız olarak konumlandırılan, dikey form
 İşte şaşırtıcı bir veri: Yapılan araştırmalara göre, serbest duran bir totem tabela, cephe tabelalarına kıyasla %47 daha fazla dikkat çeker. Bunun nedeni basit bir algı psikolojisiyle açıklanabilir — insan gözü, çevresinden bağımsız olarak dikine yükselen yapılara doğal bir refleksle yönelir.
 
 Totem tabelaların bir diğer kritik avantajı, 360 derece görünürlük sunabilmesidir. Üç veya dört yüzlü tasarımlarla her yönden okunabilir hâle gelen totem, özellikle kavşak ve döner kavşak noktalarında rakipsiz bir performans sergiler.
+
+> **Fiyat ve imalat için:** Pendik'teki atölyemizde ürettiğimiz modeller, ölçüler ve teklif süreci [totem tabela imalatı ve fiyatları](/urunlerimiz/totem-tabela/) sayfasında. Bu yazı ise malzeme, izin ve tasarım konularını anlatan rehberdir.
 
 ## Totem Tabela Türleri ve Kullanım Alanları
 
@@ -72,7 +74,7 @@ Totem tabela üretimi, çelik konstrüksiyon, elektrik tesisatı, grafik tasarı
 
 ### Totem tabela fiyatları neye göre belirlenir?
 
-Totem tabela fiyatını dört ana faktör belirler: yükseklik ve boyut, konstrüksiyon tipi (pylon, monoblok), aydınlatma sistemi (LED iç aydınlatma, dijital ekran) ve zemin/temel koşulları. 3 metrelik bir monoblok totem ile 10 metrelik çift taraflı LED'li pylon totem arasında ciddi fiyat farkı vardır. Projenize özel net fiyat için [ücretsiz teklif](/teklif-al/) alabilirsiniz.
+Totem tabela fiyatını dört ana faktör belirler: yükseklik ve boyut, konstrüksiyon tipi (pylon, monoblok), aydınlatma sistemi (LED iç aydınlatma, dijital ekran) ve zemin/temel koşulları. 3 metrelik bir monoblok totem ile 10 metrelik çift taraflı LED'li pylon totem arasında ciddi fiyat farkı vardır. Fiyatı belirleyen kalemleri [totem tabela imalatı ve fiyatları](/urunlerimiz/totem-tabela/) sayfasında açıkladık; projenize özel net fiyat için [ücretsiz teklif](/teklif-al/) alabilirsiniz.
 
 ### Totem tabela üretimi ne kadar sürer?
 

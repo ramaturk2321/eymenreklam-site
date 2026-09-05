@@ -1,10 +1,10 @@
 {
   "title": "Fener Tabela",
-  "seoTitle": "Fener Tabela İmalatı Pendik İstanbul",
-  "description": "Duvara montajlı çift taraflı fener tabela. LED veya neon aydınlatmalı. Eymen Reklam — 25 yıllık tecrübe, 2 yıl garanti.",
+  "seoTitle": "Fener Tabela İmalatı ve Fiyatları Pendik",
+  "description": "Çift taraflı fener tabela imalatı ve fiyatları. LED, neon veya ışıksız; 40x40-60x80 cm standart ölçüler, 3-7 iş günü teslim, 2 yıl garanti. Ücretsiz keşif.",
   "category": "Tabela",
   "categoryHref": "/hizmetlerimiz/tabela/",
-  "shortDesc": "Duvara montajlı çift taraflı fener tabela imalatı. LED veya neon aydınlatmalı, alüminyum veya galvaniz kasadan üretilen, yaya trafiğinin yoğun olduğu caddelerde ideal görünürlük sağlayan tabela çözümü.",
+  "shortDesc": "Duvara dik monte edilen çift taraflı fener tabela imalatı. LED veya neon aydınlatmalı, alüminyum ya da galvaniz kasalı; 40x40 cm'den 60x80 cm'ye standart ölçüler, özel şekil seçeneği. Cadde üzeri mağaza, eczane, kafe ve ofisler için 3-7 iş gününde üretim.",
   "mainImg": "/images/urunler/fener-tabela-1.webp",
   "gallery": [
     "/images/urunler/fener-tabela-1.webp",
@@ -36,6 +36,22 @@
       ]
     },
     {
+      "icon": "M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z",
+      "title": "Fener Tabela Fiyatları Neye Göre Belirlenir?",
+      "content": "Fener tabela fiyatını dört kalem belirler: kasa ölçüsü (40x40, 50x50, 60x60 ya da 60x80 cm), aydınlatma tipi (LED modül, neon flex veya ışıksız), yüz malzemesi (pleksiglas veya polikarbon) ve montaj yüksekliği ile braket tipi. Standart ölçüde LED'li bir fener tabela en ekonomik seçenektir; özel kesim şekiller ve neon uygulamalar fiyatı artırır. Keşif sonrası kasa, aydınlatma ve montajı ayrı gösteren yazılı teklif veriyoruz."
+    },
+    {
+      "icon": "M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0z",
+      "title": "Hangi İşletmeler İçin Uygun?",
+      "content": "",
+      "list": [
+        { "bold": "Eczane ve Sağlık", "text": "Yeşil E ışıklı eczane fenerleri, klinik ve diş hekimi tabelaları." },
+        { "bold": "Kafe, Restoran, Bar", "text": "Neon veya LED'li, marka logosuna özel kesim fenerler." },
+        { "bold": "Mağaza ve Berber", "text": "Yaya trafiğinin yoğun olduğu cadde üzeri dükkanlar için çift yönlü görünürlük." },
+        { "bold": "Ofis ve Hukuk Bürosu", "text": "Bina girişine sade, kurumsal görünümlü ışıklı veya ışıksız fener." }
+      ]
+    },
+    {
       "icon": "M13 10V3L4 14h7v7l9-11h-7z",
       "title": "Montaj ve Dayanıklılık",
       "content": "Fener tabelalar özel duvar braketi ile binaya sağlam şekilde monte edilir. Rüzgar yüküne dayanıklı tasarımı sayesinde dış mekan koşullarında güvenle kullanılır. Elektrik bağlantısı gizli kablo kanallarıyla yapılır. Elektrostatik toz boya ile kaplanan kasa, korozyona ve UV ışınlarına karşı uzun ömürlüdür."
@@ -59,10 +75,12 @@
     { "label": "Garanti", "value": "2 Yıl (LED + Kasa + İşçilik)" }
   ],
   "faq": [
-    { "q": "Fener tabela fiyatı ne kadar?", "a": "Fiyat; boyut, malzeme, aydınlatma tipi (LED/neon/ışıksız) ve şekle göre değişir. Standart 50x50 cm LED fener tabela için uygun fiyatlar sunuyoruz. Detaylı teklif için bizimle iletişime geçin." },
+    { "q": "Fener tabela fiyatı ne kadar?", "a": "Fiyat; kasa ölçüsü, aydınlatma tipi (LED, neon veya ışıksız), yüz malzemesi ve montaj yüksekliğine göre belirlenir. Standart 50x50 cm LED fener tabela en ekonomik modeldir. Ücretsiz keşif sonrası kalemleri ayrı gösteren yazılı teklif sunuyoruz." },
     { "q": "Fener tabela hangi yüksekliğe monte edilir?", "a": "Genellikle yerden 2.5-4 metre yüksekliğe monte edilir. Belediye yönetmeliklerine ve bina yapısına göre ideal yükseklik belirlenir." },
     { "q": "Çift taraflı mı üretiliyor?", "a": "Evet, fener tabelalar standart olarak çift taraflı üretilir. Her iki yüzde de aynı veya farklı tasarım uygulanabilir." },
-    { "q": "Belediye izni gerekiyor mu?", "a": "Çoğu belediye fener tabela için ilan-reklam vergisi ve ruhsat istemektedir. İzin sürecinizde size yardımcı oluyoruz." }
+    { "q": "Belediye izni gerekiyor mu?", "a": "Çoğu belediye fener tabela için ilan-reklam vergisi ve ruhsat istemektedir. İzin sürecinizde size yardımcı oluyoruz." },
+    { "q": "Fener tabela ölçüleri nelerdir?", "a": "Standart ölçüler 40x40, 50x50, 60x60 ve 60x80 cm'dir. Kasa derinliği 10-15 cm arasındadır. Daire, altıgen veya logoya özel kesim şekiller de üretiyoruz." },
+    { "q": "Fener tabela ne kadar sürede üretilir?", "a": "Tasarım onayından sonra standart ölçülerde 3-7 iş günü içinde üretim ve montaj tamamlanır. Özel şekil ve neon uygulamalarda süre biraz uzayabilir." }
   ],
   "relatedProducts": [
     { "img": "/images/urunler/kutu-harf-1.webp", "title": "Kutu Harf Tabela", "href": "/urunlerimiz/kutu-harf-tabela/", "category": "Tabela" },
