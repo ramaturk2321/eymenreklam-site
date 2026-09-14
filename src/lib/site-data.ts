@@ -7,8 +7,8 @@
 export const contact = {
   phone: '(0216) 379 07 08',
   phoneHref: 'tel:+902163790708',
-  mobile: '0535 664 77 52',
-  mobileHref: 'tel:+905356647752',
+  mobile: '0545 549 11 62',
+  mobileHref: 'tel:+905455491162',
   whatsapp: '905455491162',
   whatsappDisplay: '0545 549 11 62',
   whatsappUrl: 'https://wa.me/905455491162',

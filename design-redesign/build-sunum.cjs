@@ -793,7 +793,7 @@ const TOTAL = 14;
   // Sol kolon — iletişim bilgileri
   const info = [
     { l: "ADRES", v: "Esenler Mah. Çevre Sk. No: 7\nPendik / İSTANBUL" },
-    { l: "TELEFON", v: "(0216) 379 07 08\n0535 664 77 52" },
+    { l: "TELEFON", v: "(0216) 379 07 08\n0545 549 11 62" },
     { l: "E-POSTA", v: "info@eymenreklam.com\ninfo@eymenreklam.com.tr" },
     { l: "WEB", v: "www.eymenreklam.com.tr" },
   ];
