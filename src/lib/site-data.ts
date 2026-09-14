@@ -9,8 +9,9 @@ export const contact = {
   phoneHref: 'tel:+902163790708',
   mobile: '0535 664 77 52',
   mobileHref: 'tel:+905356647752',
-  whatsapp: '905356647752',
-  whatsappUrl: 'https://wa.me/905356647752',
+  whatsapp: '905455491162',
+  whatsappDisplay: '0545 549 11 62',
+  whatsappUrl: 'https://wa.me/905455491162',
   email: 'info@eymenreklam.com.tr',
   emailHref: 'mailto:info@eymenreklam.com.tr',
   // Üretim tesisi & showroom — müşteri ziyareti, harita ve JSON-LD konumu bu adres
