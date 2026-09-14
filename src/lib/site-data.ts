@@ -97,6 +97,7 @@ export const whatsappIcon = 'M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273
 export const company = {
   name: 'Eymen Reklam',
   fullName: 'Eymen Reklam Matbaa Tanıtım İnşaat Ltd. Şti.',
+  alternateName: 'Eymen Ajans',
   slogan: 'Tabela İmalatı & UV Baskı Pendik İstanbul',
   founded: 2000,
   experience: 25,

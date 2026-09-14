@@ -20,6 +20,7 @@ const jsonLd = {
   '@type': ['LocalBusiness', 'Organization'],
   name: company.name,
   legalName: company.fullName,
+  alternateName: company.alternateName,
   description: company.slogan,
   url: company.siteUrl,
   logo: new URL(company.logoPath, Astro.site).toString(),
