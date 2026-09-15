@@ -67,7 +67,7 @@ const serviceSchema = {
     name: company.name,
     legalName: company.fullName,
     url: company.siteUrl,
-    telephone: contact.phoneHref.replace('tel:', ''),
+    telephone: contact.mobileHref.replace('tel:', ''),
     email: contact.email,
     address: contact.postal,
   },

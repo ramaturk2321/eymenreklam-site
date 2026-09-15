@@ -24,7 +24,8 @@ const jsonLd = {
   description: company.slogan,
   url: company.siteUrl,
   logo: new URL(company.logoPath, Astro.site).toString(),
-  telephone: contact.phoneHref.replace('tel:', ''),
+  // Ana telefon = müşteri hattı 0545 (Google İşletme Profili'nde de birincil numara bu)
+  telephone: contact.mobileHref.replace('tel:', ''),
   email: contact.email,
   foundingDate: String(company.founded),
   address: contact.postal,
@@ -43,7 +44,8 @@ const jsonLd = {
   ],
   contactPoint: {
     '@type': 'ContactPoint',
-    telephone: `+${contact.whatsapp}`,
+    // İkincil: ofis sabit hattı
+    telephone: contact.phoneHref.replace('tel:', ''),
     contactType: 'customer service',
     availableLanguage: 'Turkish',
   },
