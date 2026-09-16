@@ -1,6 +1,7 @@
 ---
 import HizmetDetay from '../../components/HizmetDetay.astro';
 import { getCollection } from 'astro:content';
+import { hizmetReferanslari, type HizmetId } from '../../lib/referanslar';
 
 export async function getStaticPaths() {
   const hizmetler = await getCollection('hizmetler');
@@ -27,4 +28,5 @@ const d = hizmet.data;
   process={d.process}
   sectors={d.sectors}
   faq={d.faq}
+  referanslar={hizmetReferanslari(hizmet.id as HizmetId)}
 />

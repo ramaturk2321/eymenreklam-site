@@ -2,6 +2,7 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 import { srcset, boyut, SIZES } from '../lib/gorsel';
 import { company, contact, getWhatsAppUrl } from '../lib/site-data';
+import { oneCikanMarkalar, tumReferanslar } from '../lib/referanslar';
 import { getCollection } from 'astro:content';
 
 // Kategori sekmeleri ve ürünleri
@@ -283,6 +284,24 @@ for (const cat of categories) {
           </div>
         ))}
       </div>
+    </div>
+  </section>
+
+  <!-- ========== REFERANS MARKALAR ========== -->
+  <section class="py-12 md:py-16 bg-koyu-50 border-b border-koyu-100" aria-labelledby="referans-baslik">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <p class="text-eymen-700 text-sm font-semibold tracking-wider mb-2">BİZE GÜVENEN MARKALAR</p>
+      <h2 id="referans-baslik" class="text-2xl md:text-3xl font-extrabold text-koyu-900 mb-6">Hakmar’dan Ülker’e {tumReferanslar.length} kurumsal referans</h2>
+      <ul class="flex flex-wrap justify-center gap-2">
+        {oneCikanMarkalar.map(r => (
+          <li>
+            {r.href
+              ? <a href={r.href} class="inline-block px-3.5 py-1.5 rounded-full bg-white border border-koyu-200 text-sm font-semibold text-koyu-800 hover:border-eymen-500 hover:text-eymen-700 transition-colors">{r.ad}</a>
+              : <span class="inline-block px-3.5 py-1.5 rounded-full bg-white border border-koyu-200 text-sm font-semibold text-koyu-800">{r.ad}</span>}
+          </li>
+        ))}
+      </ul>
+      <a href="/referanslarimiz/" class="inline-flex items-center gap-2 mt-6 text-eymen-700 font-semibold hover:text-eymen-800">Tüm referanslar ve yaptığımız işler →</a>
     </div>
   </section>
 

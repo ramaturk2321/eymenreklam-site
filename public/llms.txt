@@ -2,7 +2,7 @@
 
 > Pendik, İstanbul merkezli tabela imalatı, UV baskı ve dijital baskı firması. 2000 yılından beri faaliyette; 2.500 m² kendi üretim tesisinde tasarımdan montaja kadar tüm süreci yürütür. Bu dosya yapay zeka modelleri için hazırlanmıştır.
 
-Son güncelleme: 2026-08-23
+Son güncelleme: 2026-09-16
 
 ## Firma
 
@@ -29,7 +29,8 @@ Son güncelleme: 2026-08-23
 - [Hakkımızda](https://www.eymenreklam.com.tr/hakkimizda/): firma geçmişi, üretim tesisi ve çalışma şekli
 - [Hizmetlerimiz](https://www.eymenreklam.com.tr/hizmetlerimiz/): 10 ana hizmet kategorisi
 - [Ürünlerimiz](https://www.eymenreklam.com.tr/urunlerimiz/): ürün bazlı detay sayfaları (60+ ürün)
-- [Projelerimiz](https://www.eymenreklam.com.tr/projelerimiz/): tamamlanmış referans işler
+- [Projelerimiz](https://www.eymenreklam.com.tr/projelerimiz/): tamamlanmış referans işler (fotoğraflı)
+- [Referanslarımız](https://www.eymenreklam.com.tr/referanslarimiz/): sektöre göre müşteri listesi, her marka için yapılan iş ve ölçek
 - [Kurumsal Çözümler](https://www.eymenreklam.com.tr/kurumsal-cozumler/): zincir mağaza ve çok şubeli markalar için toplu üretim
 - [Teklif Al](https://www.eymenreklam.com.tr/teklif-al/): fiyat teklifi formu
 - [İletişim](https://www.eymenreklam.com.tr/iletisim/): adres, harita ve iletişim formu
@@ -68,6 +69,19 @@ Son güncelleme: 2026-08-23
 
 Sektöre özel tabela sayfaları (eczane, diş hekimi, hukuk bürosu, inşaat, emlak vb.) ve tüm ürün listesi için: https://www.eymenreklam.com.tr/urunlerimiz/
 
+## Müşteriler ve referanslar
+
+Tam liste (sektöre göre, her marka için yapılan iş): https://www.eymenreklam.com.tr/referanslarimiz/
+
+- Perakende & market zincirleri: Hakmar / Hakmar Express (800+ mağaza; cephe tabelası, kutu harf, insert-afiş, araç giydirme, Haktat ambalaj), Tarım Kredi KOOP Market (İstanbul şubeleri; kompozit cephe, ışıklı kutu harf, folyo), A101 (depo yönlendirme + iş güvenliği levhaları), Bizim Toptan (roll-up, stand), Civil (Bursa, Kars, Sakarya mağaza tabelaları), PAWCO Super Pet Store (Kozzy AVM + Water Garden AVM; kutu harf, lightbox, neon LED), Eve Mağazaları, Boldy, Tatlıköy (3 şube), Lola Barcelona, Suadiye Marmaris
+- Gıda & hızlı tüketim: Ülker (cam UV baskı), Türk Şeker (kutu harf cephe), Tatbak (FOODIST 2026 40 m² fuar standı, araç giydirme), Çamlıbel Süt (araç giydirme), Doruk Çikolata (ambalaj tasarımı), Unkar / hak-et (totem, dolap kaplama), Aytaç, Asperox (palet eteği), Rençber
+- Sanayi, otomotiv & kurumsal: Anadolu Isuzu (fabrika iç yönlendirme), Beko bayisi (totem), 2Plan Otomotiv (Eskişehir totem, Etiler cephe giydirme), İntema / Eczacıbaşı (yönlendirme), Yıldız Entegre (cephe tabelası), İnoksan (fuar standı), Banat Ambalaj (totem), Som Kağıt, Seri Otomotiv (kurumsal kimlik), Rent Go, GRL Marine, BG Film
+- AVM, gayrimenkul & inşaat: Meydan 77 AVM (cephe tabelası + totem), Kiler GYO Referans Pendik (satış ofisi reklam bandı), Doruk Park Villaları (kutu harf), Sawkoop (çatı tabelası), Göktemiz İnşaat (billboard), ASKO (totem tasarımı)
+- Sağlık, spor, restoran & hizmet: Züber Padel Club İzmir (branda, skor tabelası), Mevsim Diş, MedicaBoss, Tevfik Usta Kebap, Keyfet Steakhouse, Lazios Pizza
+- Kurumsal sunumda logosu bulunan diğer markalar: Aytemiz, Total
+
+Çok şubeli işlerde çalışma modeli: şube bazlı uygulama rehberi, Pendik'te merkezî üretim, kendi montaj ekibi; aynı ölçü/malzeme/renk standardı her şubeye uygulanır. İstanbul dışı uygulamalar: Bursa, Kars, Sakarya, Eskişehir, İzmir, Çerkezköy.
+
 ## Referans projeler
 
 - [Ülker — UV Baskı](https://www.eymenreklam.com.tr/projelerimiz/ulker-uv-baski/)
@@ -83,7 +97,7 @@ Sektöre özel tabela sayfaları (eczane, diş hekimi, hukuk bürosu, inşaat, e
 - [Civil — Bursa](https://www.eymenreklam.com.tr/projelerimiz/civil-bursa/)
 - [Isuzu — Yönlendirme](https://www.eymenreklam.com.tr/projelerimiz/isuzu-yonlendirme/)
 
-Tüm referanslar: https://www.eymenreklam.com.tr/projelerimiz/
+Tüm fotoğraflı projeler: https://www.eymenreklam.com.tr/projelerimiz/ · Sektöre göre müşteri listesi: https://www.eymenreklam.com.tr/referanslarimiz/
 
 ## Blog
 

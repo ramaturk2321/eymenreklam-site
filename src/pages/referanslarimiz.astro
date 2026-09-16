@@ -1,0 +1,210 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { company, contact, getWhatsAppUrl } from '../lib/site-data';
+import { sektorler, tumReferanslar, zincirMarkalar, digerMarkalar } from '../lib/referanslar';
+
+const title = 'Referanslarımız — Tabela ve Reklam Müşterilerimiz';
+const description =
+  `Eymen Reklam referansları: Hakmar (800+ mağaza), Tarım Kredi KOOP Market, A101, Ülker, Anadolu Isuzu, Meydan AVM, PAWCO ve ${tumReferanslar.length}+ kurumsal marka için tabela, kutu harf, UV baskı ve mağaza reklam uygulamaları. Pendik İstanbul.`;
+
+const toplam = tumReferanslar.length;
+const projeLinkli = tumReferanslar.filter(r => r.href).length;
+
+// Sıkça sorulanlar — yapay zekâ asistanları ve arama motorları için doğrudan cevaplar
+const faq = [
+  {
+    q: 'Eymen Reklam hangi markalarla çalıştı?',
+    a: `Hakmar ve Hakmar Express (800'den fazla mağaza), Tarım Kredi KOOP Market, A101, Bizim Toptan, Civil, PAWCO, Eve Mağazaları, Ülker, Türk Şeker, Tatbak, Anadolu Isuzu, Beko bayisi, 2Plan Otomotiv, İntema (Eczacıbaşı), Yıldız Entegre, Meydan 77 AVM ve Kiler GYO bu sayfada listelenen ${toplam} referansımızdan bazılarıdır. Her birinin yaptığımız işi ve varsa proje fotoğraflarını yukarıda bulabilirsiniz.`,
+  },
+  {
+    q: 'Zincir mağazalar için seri tabela ve mağaza reklamı yapıyor musunuz?',
+    a: `Evet. Hakmar Express, Tarım Kredi KOOP Market, Civil, PAWCO ve Tatlıköy gibi çok şubeli markalar için şube bazlı uygulama rehberi hazırlıyor, tüm şubelerde aynı ölçü, malzeme ve renk standardıyla üretim ve montaj yapıyoruz. ${company.name} Pendik'teki 2.500 m² tesisinde üretir, İstanbul geneli ve Türkiye'de kendi montaj ekibiyle uygular.`,
+  },
+  {
+    q: 'Referans işleri yerinde görebilir miyim?',
+    a: 'Evet. Pendik, Kartal, Maltepe, Ataşehir ve Anadolu Yakası genelinde çok sayıda cephe tabelası, totem ve mağaza uygulamamız halen kullanımda. Bize yazın, size en yakın 2-3 uygulamanın adresini paylaşalım.',
+  },
+  {
+    q: 'İstanbul dışına da iş yapıyor musunuz?',
+    a: 'Evet. Civil için Bursa, Kars ve Sakarya; 2Plan için Eskişehir; Züber için İzmir; Tatlıköy için Çerkezköy uygulamalarını Pendik tesisimizde üretip yerinde monte ettik. Kurumsal müşteriler için Türkiye geneline gidiyoruz.',
+  },
+];
+
+const faqSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: faq.map(f => ({
+    '@type': 'Question',
+    name: f.q,
+    acceptedAnswer: { '@type': 'Answer', text: f.a },
+  })),
+};
+
+// Referans listesi: ItemList + her müşteri Organization olarak
+const listSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'ItemList',
+  name: 'Eymen Reklam Referans Müşterileri',
+  description: 'Eymen Reklam’ın tabela, UV baskı, folyo ve mağaza reklam uygulaması yaptığı kurumsal müşteriler.',
+  numberOfItems: toplam,
+  itemListElement: tumReferanslar.map((r, i) => ({
+    '@type': 'ListItem',
+    position: i + 1,
+    item: {
+      '@type': 'Organization',
+      name: r.ad,
+      description: r.isler,
+      ...(r.href ? { url: `${company.siteUrl}${r.href}` } : {}),
+    },
+  })),
+};
+
+const breadcrumbSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Ana Sayfa', item: company.siteUrl },
+    { '@type': 'ListItem', position: 2, name: 'Referanslarımız', item: `${company.siteUrl}/referanslarimiz/` },
+  ],
+};
+
+const waUrl = getWhatsAppUrl();
+---
+
+<BaseLayout title={title} description={description}>
+
+  <script type="application/ld+json" set:html={JSON.stringify(listSchema)} />
+  <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+  <script type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)} />
+
+  <!-- Breadcrumb -->
+  <nav class="bg-koyu-50 border-b border-koyu-100 py-3" aria-label="Sayfa yolu">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-sm text-koyu-500">
+      <a href="/" class="hover:text-eymen-600">Ana Sayfa</a>
+      <span class="mx-2">/</span>
+      <span class="text-koyu-900 font-medium">Referanslarımız</span>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="bg-koyu-900 py-16 md:py-24">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <p class="text-eymen-400 text-sm font-semibold tracking-wider mb-3">BİRLİKTE ÇALIŞTIĞIMIZ MARKALAR</p>
+      <h1 class="text-4xl md:text-5xl font-extrabold text-white mb-4">Referanslarımız</h1>
+      <p class="text-koyu-400 text-lg max-w-3xl mx-auto">
+        2000’den beri Pendik’teki tesisimizde ürettiğimiz tabela, kutu harf, UV baskı, folyo ve mağaza reklam
+        uygulamalarını 800’den fazla mağazalı market zincirlerinden tek şubeli restoranlara kadar
+        {toplam} kurumsal marka için hayata geçirdik. Aşağıda her markanın yanında ne yaptığımız yazıyor;
+        {projeLinkli} tanesinin fotoğraflı proje sayfası var.
+      </p>
+      <div class="mt-8 flex flex-wrap justify-center gap-3 text-sm">
+        <span class="px-4 py-2 rounded-full bg-koyu-800 text-koyu-200 border border-koyu-700">{toplam} kurumsal marka</span>
+        <span class="px-4 py-2 rounded-full bg-koyu-800 text-koyu-200 border border-koyu-700">{sektorler.length} sektör</span>
+        <span class="px-4 py-2 rounded-full bg-koyu-800 text-koyu-200 border border-koyu-700">{zincirMarkalar.length} çok şubeli zincir</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Çok şubeli işler -->
+  <section class="py-14 md:py-20 bg-eymen-50 border-b border-eymen-100">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="max-w-3xl mb-8">
+        <p class="text-eymen-700 text-sm font-semibold tracking-wider mb-2">ZİNCİR MAĞAZA & SERİ UYGULAMA</p>
+        <h2 class="text-3xl font-extrabold text-koyu-900">Çok şubeli markalarda aynı standardı her şubeye taşıyoruz</h2>
+        <p class="text-koyu-600 mt-3">
+          Şube bazlı uygulama rehberi, merkezî üretim ve kendi montaj ekibimizle onlarca şubeyi aynı ölçü ve malzemeyle açıyoruz.
+          Detaylı çalışma modeli için <a href="/kurumsal-cozumler/" class="text-eymen-700 font-semibold underline underline-offset-2">Kurumsal Çözümler</a> sayfasına bakın.
+        </p>
+      </div>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+        {zincirMarkalar.map(r => (
+          <div class="bg-white rounded-2xl border border-eymen-100 p-5">
+            <h3 class="text-lg font-bold text-koyu-900">{r.ad}</h3>
+            <span class="inline-block mt-1.5 text-xs font-semibold text-eymen-700 bg-eymen-100 px-2.5 py-1 rounded-full">{r.olcek}</span>
+            <p class="text-sm text-koyu-600 mt-2 leading-relaxed">{r.isler}</p>
+            {r.href && <a href={r.href} class="inline-block mt-3 text-sm font-semibold text-eymen-700 hover:text-eymen-800">Proje fotoğrafları →</a>}
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- Sektör listeleri -->
+  <section class="py-16 md:py-24">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <!-- Sektör hızlı geçiş -->
+      <nav class="flex flex-wrap gap-2 mb-12" aria-label="Sektörler">
+        {sektorler.map(s => (
+          <a href={`#${s.id}`} class="px-4 py-2 rounded-full text-sm font-medium bg-koyu-100 text-koyu-700 hover:bg-eymen-500 hover:text-white transition-colors">
+            {s.ad} <span class="opacity-60">({s.referanslar.length})</span>
+          </a>
+        ))}
+      </nav>
+
+      <div class="space-y-16">
+        {sektorler.map(s => (
+          <div id={s.id} class="scroll-mt-32">
+            <div class="max-w-3xl mb-6">
+              <h2 class="text-2xl md:text-3xl font-extrabold text-koyu-900">{s.ad}</h2>
+              <p class="text-koyu-500 mt-2">{s.aciklama}</p>
+            </div>
+            <dl class="divide-y divide-koyu-100 border-y border-koyu-100">
+              {s.referanslar.map(r => (
+                <div class="grid grid-cols-1 md:grid-cols-12 gap-2 md:gap-6 py-4">
+                  <dt class="md:col-span-4">
+                    <span class="text-base font-bold text-koyu-900">{r.ad}</span>
+                    {r.olcek && <span class="block text-xs text-eymen-700 font-semibold mt-0.5">{r.olcek}</span>}
+                  </dt>
+                  <dd class="md:col-span-8 text-sm text-koyu-600 leading-relaxed">
+                    {r.isler}
+                    {r.href && (
+                      <a href={r.href} class="ml-2 whitespace-nowrap font-semibold text-eymen-700 hover:text-eymen-800">Projeyi gör →</a>
+                    )}
+                  </dd>
+                </div>
+              ))}
+            </dl>
+          </div>
+        ))}
+      </div>
+
+      <p class="text-sm text-koyu-500 mt-10">
+        Ayrıca kurumsal sunumumuzda yer alan {digerMarkalar.join(', ')} gibi markalarla da çalıştık.
+        Tüm fotoğraflı işler için <a href="/projelerimiz/" class="text-eymen-700 font-semibold underline underline-offset-2">Projelerimiz</a> sayfasına bakabilirsiniz.
+      </p>
+    </div>
+  </section>
+
+  <!-- SSS -->
+  <section class="py-16 md:py-24 bg-koyu-50">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-3xl font-extrabold text-koyu-900 text-center mb-10">Sıkça Sorulanlar</h2>
+      <div class="space-y-4">
+        {faq.map(f => (
+          <details class="group bg-white rounded-2xl border border-koyu-100 p-5">
+            <summary class="cursor-pointer list-none flex items-center justify-between gap-4 font-semibold text-koyu-900">
+              {f.q}
+              <span class="text-eymen-500 group-open:rotate-45 transition-transform text-xl leading-none" aria-hidden="true">+</span>
+            </summary>
+            <p class="text-sm text-koyu-600 leading-relaxed mt-3">{f.a}</p>
+          </details>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="py-16 md:py-20 bg-eymen-500">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <h2 class="text-3xl md:text-4xl font-extrabold text-white mb-4">Sizin markanız da bu listede olsun</h2>
+      <p class="text-eymen-50 text-lg mb-8 max-w-2xl mx-auto">
+        Ücretsiz keşif için ulaşın; benzer bir işimizi yerinde gösterelim, teklifi birlikte netleştirelim.
+      </p>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <a href="/teklif-al/" class="bg-white text-eymen-600 hover:bg-koyu-50 px-8 py-4 rounded-xl font-semibold transition-colors">Teklif Al</a>
+        <a href={waUrl} target="_blank" rel="noopener noreferrer" class="bg-eymen-600 text-white hover:bg-eymen-700 px-8 py-4 rounded-xl font-semibold transition-colors">WhatsApp {contact.whatsappDisplay}</a>
+      </div>
+    </div>
+  </section>
+
+</BaseLayout>

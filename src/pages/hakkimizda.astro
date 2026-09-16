@@ -2,6 +2,7 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 import { srcset, boyut, SIZES } from '../lib/gorsel';
 import { company, contact } from '../lib/site-data';
+import { oneCikanMarkalar, tumReferanslar } from '../lib/referanslar';
 ---
 
 <BaseLayout title="Hakkımızda — Tabela İmalatı Pendik İstanbul" description={`Eymen Reklam (Eymen Ajans) — 2000'den beri Pendik İstanbul'da tabela imalatı ve dijital baskı. 2.500m² üretim tesisi, ${company.experience}+ yıllık tecrübe.`}>
@@ -103,6 +104,31 @@ import { company, contact } from '../lib/site-data';
           <h3 class="text-lg font-bold text-koyu-900 mb-3">Geniş Hizmet Ağı</h3>
           <p class="text-sm text-koyu-500 leading-relaxed">Tabela üretiminden dijital baskıya, araç giydirmeden kurumsal çözümlere kadar geniş bir hizmet yelpazesiyle yanınızdayız.</p>
         </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Referanslar -->
+  <section class="py-16 md:py-24 bg-white border-y border-koyu-100">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-10">
+        <p class="text-eymen-700 text-sm font-semibold tracking-wider mb-3">REFERANSLARIMIZ</p>
+        <h2 class="text-3xl font-extrabold text-koyu-900">Birlikte çalıştığımız markalar</h2>
+        <p class="text-koyu-500 text-lg max-w-2xl mx-auto mt-4">
+          800’den fazla mağazalı Hakmar’dan tek şubeli restoranlara kadar {tumReferanslar.length} kurumsal marka için tabela, UV baskı, folyo ve mağaza reklam uygulaması yaptık.
+        </p>
+      </div>
+      <ul class="flex flex-wrap justify-center gap-2.5">
+        {oneCikanMarkalar.map(r => (
+          <li>
+            {r.href
+              ? <a href={r.href} class="inline-block px-4 py-2 rounded-full bg-koyu-50 border border-koyu-200 text-sm font-semibold text-koyu-800 hover:border-eymen-500 hover:text-eymen-700 transition-colors">{r.ad}</a>
+              : <span class="inline-block px-4 py-2 rounded-full bg-koyu-50 border border-koyu-200 text-sm font-semibold text-koyu-800">{r.ad}</span>}
+          </li>
+        ))}
+      </ul>
+      <div class="text-center mt-8">
+        <a href="/referanslarimiz/" class="inline-flex items-center gap-2 text-eymen-700 font-semibold hover:text-eymen-800">Tüm referanslar ve yaptığımız işler →</a>
       </div>
     </div>
   </section>

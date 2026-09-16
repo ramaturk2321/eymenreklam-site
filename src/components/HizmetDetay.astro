@@ -19,13 +19,15 @@ interface Props {
   process: { step: string; title: string; desc: string }[];
   sectors: string[];
   faq: { q: string; a: string }[];
+  /** Bu hizmette çalıştığımız markalar (src/lib/referanslar.ts) */
+  referanslar?: { ad: string; isler: string; olcek?: string; href?: string }[];
 }
 
 import BaseLayout from '../layouts/BaseLayout.astro';
 import { srcset, boyut, SIZES } from '../lib/gorsel';
 import { company, contact, getWhatsAppUrl, whatsappMessages } from '../lib/site-data';
 
-const { title, seoTitle, description, heroDesc, heroImage, ogImage, facility, features, products, process, sectors, faq } = Astro.props;
+const { title, seoTitle, description, heroDesc, heroImage, ogImage, facility, features, products, process, sectors, faq, referanslar = [] } = Astro.props;
 
 // FAQ Schema
 const faqSchema = faq.length > 0 ? {
@@ -211,6 +213,31 @@ const breadcrumbSchema = {
       </div>
     </div>
   </section>
+
+  <!-- Referanslar -->
+  {referanslar.length > 0 && (
+    <section class="py-16 md:py-24 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center max-w-2xl mx-auto mb-10">
+          <h2 class="text-3xl md:text-4xl font-extrabold text-koyu-900">{title} Yaptığımız Markalar</h2>
+          <div class="w-12 h-1 bg-eymen-500 mx-auto mt-4"></div>
+          <p class="text-koyu-500 mt-4">Aşağıdaki markalar için bu hizmeti ürettik ve yerinde uyguladık. Fotoğraflı olanlar proje sayfasına gider.</p>
+        </div>
+        <ul class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+          {referanslar.map(r => (
+            <li class="rounded-2xl border border-koyu-100 bg-koyu-50 p-5">
+              <h3 class="font-bold text-koyu-900">{r.href ? <a href={r.href} class="hover:text-eymen-700">{r.ad}</a> : r.ad}</h3>
+              {r.olcek && <span class="inline-block mt-1.5 text-xs font-semibold text-eymen-700 bg-eymen-100 px-2.5 py-1 rounded-full">{r.olcek}</span>}
+              <p class="text-sm text-koyu-600 mt-2 leading-relaxed">{r.isler}</p>
+            </li>
+          ))}
+        </ul>
+        <div class="text-center mt-8">
+          <a href="/referanslarimiz/" class="inline-flex items-center gap-2 text-eymen-700 font-semibold hover:text-eymen-800">Tüm referanslarımız →</a>
+        </div>
+      </div>
+    </section>
+  )}
 
   <!-- SSS -->
   {faq.length > 0 && (
