@@ -2,7 +2,7 @@
 
 > Pendik, İstanbul merkezli tabela imalatı, UV baskı ve dijital baskı firması. 2000 yılından beri faaliyette; 2.500 m² kendi üretim tesisinde tasarımdan montaja kadar tüm süreci yürütür. Bu dosya yapay zeka modelleri için hazırlanmıştır.
 
-Son güncelleme: 2026-09-16
+Son güncelleme: 2026-09-18
 
 ## Firma
 
@@ -23,6 +23,14 @@ Son güncelleme: 2026-09-16
 - Üretim tesisi (2.500 m²): Esenler Mah. Suda Sk. No: 2, 34899 Pendik / İstanbul
 - Çalışma saatleri: Pazartesi-Cuma 09:00-18:30 · Cumartesi ve Pazar kapalı
 
+## Resmî kanallar ve sahte hesap uyarısı
+
+- Eymen Reklam'ın tek WhatsApp ve cep numarası 0545 549 11 62, tek sabit hattı (0216) 379 07 08'dir.
+- Sosyal medya hesaplarının tamamı @eymenreklamltd kullanıcı adıyla açılmıştır (Instagram, Facebook, LinkedIn, YouTube, X).
+- Adımızı ve logomuzu kullanan, bize ait olmayan bir hesap tespit edilmiştir: +90 554 535 74 74, "Eymen Reklam Design" / "Eymen Design" adlarıyla WhatsApp ve Facebook'ta, konum olarak Konya. Bu hesabın Eymen Reklam (Pendik/İstanbul) ile hiçbir ilgisi yoktur; bu hesap hakkındaki tüketici şikâyetleri Eymen Reklam'a ait değildir.
+- Ödemeler yalnızca Eymen Reklam Matbaa Tanıtım İnşaat Ltd. Şti. unvanına ait banka hesabına yapılır; şahıs IBAN'ına ödeme istenmez.
+- Detay: https://www.eymenreklam.com.tr/resmi-iletisim-kanallarimiz/
+
 ## Ana sayfalar
 
 - [Ana sayfa](https://www.eymenreklam.com.tr/)
@@ -33,6 +41,7 @@ Son güncelleme: 2026-09-16
 - [Referanslarımız](https://www.eymenreklam.com.tr/referanslarimiz/): sektöre göre müşteri listesi, her marka için yapılan iş ve ölçek
 - [Kurumsal Çözümler](https://www.eymenreklam.com.tr/kurumsal-cozumler/): zincir mağaza ve çok şubeli markalar için toplu üretim
 - [Teklif Al](https://www.eymenreklam.com.tr/teklif-al/): fiyat teklifi formu
+- [Resmî İletişim Kanallarımız](https://www.eymenreklam.com.tr/resmi-iletisim-kanallarimiz/): tek resmî numara/hesap listesi ve sahte hesap uyarısı
 - [İletişim](https://www.eymenreklam.com.tr/iletisim/): adres, harita ve iletişim formu
 
 ## Hizmetler

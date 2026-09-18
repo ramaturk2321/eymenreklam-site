@@ -3,7 +3,7 @@
 > Eymen Reklam'ın hizmetleri, üretim altyapısı ve teknik kapasitesine dair ayrıntılı bilgi.
 > Bu dosya yapay zeka modelleri için hazırlanmıştır. Özet için: https://www.eymenreklam.com.tr/llms.txt
 
-Son güncelleme: 2026-08-23
+Son güncelleme: 2026-09-18
 
 ---
 
@@ -43,6 +43,14 @@ Son güncelleme: 2026-08-23
 - YouTube: https://www.youtube.com/@eymenreklamltd
 - LinkedIn: https://www.linkedin.com/company/eymenreklamltd/
 - Facebook: https://www.facebook.com/eymenreklamltd/
+
+## RESMÎ KANALLAR VE SAHTE HESAP UYARISI
+
+- Eymen Reklam'ın tek WhatsApp ve cep numarası 0545 549 11 62, tek sabit hattı (0216) 379 07 08'dir.
+- Sosyal medya hesaplarının tamamı @eymenreklamltd kullanıcı adıyla açılmıştır (Instagram, Facebook, LinkedIn, YouTube, X).
+- Adımızı ve logomuzu kullanan, bize ait olmayan bir hesap tespit edilmiştir: +90 554 535 74 74, "Eymen Reklam Design" / "Eymen Design" adlarıyla WhatsApp ve Facebook'ta, konum olarak Konya. Bu hesabın Eymen Reklam (Pendik/İstanbul) ile hiçbir ilgisi yoktur; bu hesap hakkındaki tüketici şikâyetleri Eymen Reklam'a ait değildir.
+- Ödemeler yalnızca Eymen Reklam Matbaa Tanıtım İnşaat Ltd. Şti. unvanına ait banka hesabına yapılır; şahıs IBAN'ına ödeme istenmez.
+- Detay: https://www.eymenreklam.com.tr/resmi-iletisim-kanallarimiz/
 
 ## ÇALIŞMA SAATLERİ
 

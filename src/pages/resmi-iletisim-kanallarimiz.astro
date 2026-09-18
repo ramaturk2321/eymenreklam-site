@@ -1,0 +1,139 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { company, contact, socialLinks, hours } from '../lib/site-data';
+
+const yayin = '18 Eylül 2026';
+
+// Adımız kullanılarak açılan, bize ait olmayan hesap (16 Eyl 2026'da tespit edildi)
+const sahte = {
+  numara: '+90 554 535 74 74',
+  adlar: '"Eymen Reklam Design" / "Eymen Design"',
+};
+
+const kanallar = [
+  { etiket: 'Telefon', deger: contact.phone, href: contact.phoneHref },
+  { etiket: 'WhatsApp ve cep', deger: contact.whatsappDisplay, href: contact.whatsappUrl },
+  { etiket: 'E-posta', deger: contact.email, href: contact.emailHref },
+  { etiket: 'İnternet sitesi', deger: 'www.eymenreklam.com.tr', href: company.siteUrl },
+];
+---
+
+<BaseLayout
+  title="Resmî İletişim Kanallarımız ve Güvenlik Duyurusu"
+  description="Eymen Reklam'ın tek resmî telefon, WhatsApp, e-posta ve sosyal medya hesapları. Adımızı kullanan sahte hesaplara karşı uyarı ve ödeme kurallarımız."
+>
+
+  <!-- Hero -->
+  <section class="bg-koyu-900 pt-32 pb-12 md:pt-40 md:pb-16">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <p class="text-eymen-400 text-sm font-semibold tracking-wider mb-3">GÜVENLİK DUYURUSU</p>
+      <h1 class="text-3xl md:text-4xl font-extrabold text-white mb-4">Resmî İletişim Kanallarımız</h1>
+      <p class="text-koyu-400 text-base">Yayın tarihi: {yayin}</p>
+    </div>
+  </section>
+
+  <section class="py-16 md:py-20">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="space-y-10 text-koyu-700 leading-relaxed">
+
+        <div>
+          <p>
+            Adımızı ve logomuzu kullanan, bize ait olmayan bir WhatsApp ve Facebook hesabı tespit ettik.
+            Bu hesap üzerinden kapora alındığı, ardından işin teslim edilmediği ve paranın iade edilmediği
+            yönünde tüketici şikâyetleri var. Aşağıda listelediğimiz kanallar dışında hiçbir numara, hesap
+            veya adres <strong>{company.fullName}</strong> ile ilişkili değildir.
+          </p>
+        </div>
+
+        <!-- Uyarı kutusu -->
+        <div class="rounded-xl border-l-4 border-red-500 bg-red-50 p-5 md:p-6">
+          <h2 class="text-lg md:text-xl font-bold text-koyu-900 mb-3">Bize ait olmayan hesap</h2>
+          <ul class="space-y-2 text-sm md:text-base">
+            <li><strong>Numara:</strong> {sahte.numara}</li>
+            <li><strong>Kullandığı adlar:</strong> {sahte.adlar}</li>
+            <li><strong>Göründüğü yerler:</strong> WhatsApp Business ve Facebook; konum olarak Konya</li>
+          </ul>
+          <p class="mt-4 text-sm md:text-base">
+            Bu hesabın verdiği sözlerle, istediği ödemelerle ve paylaştığı hesap numaralarıyla hiçbir
+            ilgimiz yoktur. Bu numaradan size ulaşıldıysa ödeme yapmayın, bizi arayarak doğrulayın.
+          </p>
+        </div>
+
+        <!-- Resmî kanallar -->
+        <div>
+          <h2 class="text-xl md:text-2xl font-bold text-koyu-900 mb-4 pb-2 border-b border-koyu-100">Tek resmî kanallarımız</h2>
+          <ul class="space-y-2 text-sm md:text-base">
+            {kanallar.map(k => (
+              <li>
+                <strong>{k.etiket}:</strong>{' '}
+                <a href={k.href} class="text-eymen-600 hover:underline">{k.deger}</a>
+              </li>
+            ))}
+            <li><strong>{contact.addressLabel}:</strong> {contact.address}</li>
+            <li><strong>Ofis / idari merkez:</strong> {contact.addressOffice}</li>
+            <li><strong>Çalışma saatleri:</strong> {hours.days} {hours.open} - {hours.close}</li>
+          </ul>
+
+          <h3 class="font-semibold text-koyu-900 mt-6 mb-3">Sosyal medya hesaplarımız</h3>
+          <ul class="space-y-2 text-sm md:text-base">
+            {socialLinks.map(s => (
+              <li>
+                <strong>{s.name}:</strong>{' '}
+                <a href={s.url} target="_blank" rel="noopener noreferrer" class="text-eymen-600 hover:underline">
+                  {s.url.replace('https://www.', '').replace('https://', '').replace(/\/$/, '')}
+                </a>
+              </li>
+            ))}
+            <li>
+              <strong>X (Twitter):</strong>{' '}
+              <a href="https://x.com/eymenreklamltd" target="_blank" rel="noopener noreferrer" class="text-eymen-600 hover:underline">x.com/eymenreklamltd</a>
+            </li>
+          </ul>
+          <p class="mt-4 text-sm">
+            Hepsi <strong>@eymenreklamltd</strong> kullanıcı adıyla açılmıştır. Farklı bir kullanıcı adıyla
+            karşınıza çıkan hesaplar bize ait değildir.
+          </p>
+        </div>
+
+        <!-- Ödeme kuralları -->
+        <div>
+          <h2 class="text-xl md:text-2xl font-bold text-koyu-900 mb-4 pb-2 border-b border-koyu-100">Bizimle çalışırken</h2>
+          <ul class="space-y-3 text-sm md:text-base list-disc pl-5">
+            <li>
+              Ödemeler yalnızca <strong>{company.fullName}</strong> unvanına ait banka hesabına yapılır.
+              Şahıs adına açılmış bir IBAN'a ödeme istemeyiz.
+            </li>
+            <li>
+              Her iş için yazılı teklif veririz. Teklifte firma unvanımız, vergi dairesi ve vergi numaramız yazar.
+            </li>
+            <li>Her iş faturalandırılır.</li>
+            <li>
+              Kime konuştuğunuzdan emin değilseniz <a href={contact.phoneHref} class="text-eymen-600 hover:underline">{contact.phone}</a>
+              numaralı sabit hattımızı arayın; size ulaşan numarayı ve teklifi doğrulayalım.
+            </li>
+          </ul>
+        </div>
+
+        <!-- Mağduriyet -->
+        <div>
+          <h2 class="text-xl md:text-2xl font-bold text-koyu-900 mb-4 pb-2 border-b border-koyu-100">Bu hesap yüzünden mağdur olduysanız</h2>
+          <p class="mb-3">
+            Ödeme dekontunuz ve yazışmalarınızın ekran görüntüleriyle Emniyet Siber Suçlarla Mücadele
+            birimine veya Cumhuriyet Başsavcılığı'na başvurabilirsiniz.
+          </p>
+          <p>
+            Durumu bize de bildirirseniz seviniriz: <a href={contact.emailHref} class="text-eymen-600 hover:underline">{contact.email}</a>
+            veya <a href={contact.phoneHref} class="text-eymen-600 hover:underline">{contact.phone}</a>.
+            Adımızın kullanılmasıyla ilgili kendi hukuki sürecimizi yürütüyoruz.
+          </p>
+        </div>
+
+        <div class="border-t border-koyu-100 pt-6 text-sm text-koyu-500">
+          Bu sayfa güncel tutulur. Son güncelleme: {yayin}.
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+</BaseLayout>
