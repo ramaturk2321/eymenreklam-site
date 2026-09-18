@@ -74,10 +74,24 @@ const { title, description = `Eymen Reklam — Tabela İmalatı & UV Baskı Pend
       import { inject, track } from '@vercel/analytics';
       inject();
 
-      // Dönüşüm takibi — form success dallarından çağrılabilsin diye global yardımcı
-      window.trackEvent = (name, props) => {
-        try { track(name, props || {}); } catch (e) {}
-      };
+      // gtag() head'deki is:inline script'te tanımlı; gtag.js geç yüklendiği için
+      // çağrılar dataLayer'da kuyruklanır ve script gelince işlenir (olay kaybı olmaz).
+      function gtagSafe() {
+        window.dataLayer = window.dataLayer || [];
+        if (typeof window.gtag === 'function') window.gtag.apply(null, arguments);
+        else window.dataLayer.push(arguments);
+      }
+
+      // Dönüşüm olayı — İKİ hedefe birden: Vercel Analytics (site analizi) +
+      // GA4/Google Ads (dönüşüm sayımı). Ads yalnızca gtag tarafını görebilir.
+      function send(name, props) {
+        const p = props || {};
+        try { track(name, p); } catch (e) {}
+        try { gtagSafe('event', name, p); } catch (e) {}
+      }
+
+      // Form success dallarından çağrılabilsin diye global yardımcı
+      window.trackEvent = (name, props) => send(name, props);
 
       // WhatsApp ve telefon tıklamalarını site genelinde yakala (event delegation)
       document.addEventListener('click', (e) => {
@@ -87,10 +101,10 @@ const { title, description = `Eymen Reklam — Tabela İmalatı & UV Baskı Pend
         if (href.includes('wa.me')) {
           // Sosyal paylaşım linki (wa.me/?text=...) hariç → sadece bize yazan lead'ler
           if (!/wa\.me\/\?/.test(href)) {
-            track('whatsapp_click', { path: location.pathname });
+            send('whatsapp_click', { path: location.pathname });
           }
         } else if (href.indexOf('tel:') === 0) {
-          track('phone_click', { number: href.slice(4), path: location.pathname });
+          send('phone_click', { number: href.slice(4), path: location.pathname });
         }
       }, true);
     </script>
