@@ -50,7 +50,7 @@
   ],
   "technicalSpecs": [
     { "label": "Baskı Teknolojisi", "value": "UV LED Flatbed (Düz Yatak)" },
-    { "label": "Maksimum Baskı Alanı", "value": "250 x 130 cm" },
+    { "label": "Maksimum Baskı Alanı", "value": "400 x 200 cm (4x2 m flatbed)" },
     { "label": "Çözünürlük", "value": "720 — 1440 DPI" },
     { "label": "Mürekkep Türü", "value": "UV Kürleme Mürekkebi (CMYK + Beyaz)" },
     { "label": "Baskı Kalınlığı", "value": "0 — 10 cm malzeme kalınlığı" },
