@@ -21,13 +21,21 @@ interface Props {
   faq: { q: string; a: string }[];
   /** Bu hizmette çalıştığımız markalar (src/lib/referanslar.ts) */
   referanslar?: { ad: string; isler: string; olcek?: string; href?: string }[];
+  /** H1 için uzun başlık; verilmezse title kullanılır */
+  heroTitle?: string;
+  /** Gerçek iş fotoğrafları */
+  gallery?: { src: string; alt: string; href?: string }[];
+  /** Fiyatı belirleyen etkenler — rakam/fiyat aralığı yazılmaz */
+  fiyatFaktorleri?: { baslik: string; aciklama: string }[];
+  /** Hizmet bölgesi */
+  bolge?: { baslik: string; metin: string; ilceler: string[] };
 }
 
 import BaseLayout from '../layouts/BaseLayout.astro';
 import { srcset, boyut, SIZES } from '../lib/gorsel';
 import { company, contact, getWhatsAppUrl, whatsappMessages } from '../lib/site-data';
 
-const { title, seoTitle, description, heroDesc, heroImage, ogImage, facility, features, products, process, sectors, faq, referanslar = [] } = Astro.props;
+const { title, seoTitle, description, heroDesc, heroImage, ogImage, facility, features, products, process, sectors, faq, referanslar = [], heroTitle, gallery = [], fiyatFaktorleri = [], bolge } = Astro.props;
 
 // FAQ Schema
 const faqSchema = faq.length > 0 ? {
@@ -82,7 +90,7 @@ const breadcrumbSchema = {
     <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="max-w-3xl">
         <p class="text-eymen-400 text-sm font-semibold tracking-wider mb-3">EYMEN REKLAM HİZMETLERİ</p>
-        <h1 class="text-3xl md:text-5xl font-extrabold text-white mb-4">{title}</h1>
+        <h1 class="text-3xl md:text-5xl font-extrabold text-white mb-4">{heroTitle ?? title}</h1>
         <p class="text-koyu-200 text-base md:text-lg leading-relaxed mb-6 md:mb-8">{heroDesc}</p>
         <div class="flex flex-col sm:flex-row gap-3">
           <a href="/iletisim/" class="inline-flex items-center justify-center gap-2 bg-eymen-500 hover:bg-eymen-600 text-white px-6 py-3.5 rounded-xl text-sm md:text-base font-bold transition-all hover:shadow-lg hover:shadow-eymen-500/25">
@@ -158,6 +166,34 @@ const breadcrumbSchema = {
       </div>
     </div>
   </section>
+
+  <!-- Gerçek işler galerisi -->
+  {gallery.length > 0 && (
+    <section class="py-12 md:py-20 bg-koyu-900" aria-labelledby="galeri-baslik">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center max-w-2xl mx-auto mb-8 md:mb-10">
+          <p class="text-eymen-400 text-sm font-semibold tracking-wider mb-3">SAHADAN</p>
+          <h2 id="galeri-baslik" class="text-3xl md:text-4xl font-extrabold text-white">{title} İşlerimizden</h2>
+          <p class="text-koyu-300 mt-4">Aşağıdaki fotoğrafların tamamı kendi tesisimizde ürettiğimiz ve sahada uyguladığımız işlerden. Bağlantılı olanlar proje sayfasına gider.</p>
+        </div>
+        <ul class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 md:gap-4">
+          {gallery.map(g => {
+            const Kart = g.href ? 'a' : 'div';
+            return (
+              <li>
+                <Kart href={g.href} class="group block aspect-[4/3] rounded-xl overflow-hidden bg-koyu-800 ring-1 ring-white/10 hover:ring-eymen-400 transition-all">
+                  <img src={g.src} srcset={srcset(g.src)} sizes="(min-width: 1024px) 300px, (min-width: 768px) 33vw, 50vw" {...boyut(g.src)} alt={g.alt} loading="lazy" decoding="async" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+                </Kart>
+              </li>
+            );
+          })}
+        </ul>
+        <div class="text-center mt-8">
+          <a href="/projelerimiz/" class="inline-flex items-center gap-2 text-eymen-400 font-semibold hover:text-eymen-300">Tüm projelerimiz →</a>
+        </div>
+      </div>
+    </section>
+  )}
 
   <!-- Özellikler -->
   <section class="py-12 md:py-20 bg-koyu-50">
@@ -235,6 +271,53 @@ const breadcrumbSchema = {
         <div class="text-center mt-8">
           <a href="/referanslarimiz/" class="inline-flex items-center gap-2 text-eymen-700 font-semibold hover:text-eymen-800">Tüm referanslarımız →</a>
         </div>
+      </div>
+    </section>
+  )}
+
+  <!-- Fiyatı ne belirler (rakam yok) -->
+  {fiyatFaktorleri.length > 0 && (
+    <section class="py-16 md:py-24 bg-white" aria-labelledby="fiyat-baslik">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center max-w-2xl mx-auto mb-10">
+          <p class="text-eymen-500 text-sm font-semibold tracking-wider mb-3">FİYATLANDIRMA</p>
+          <h2 id="fiyat-baslik" class="text-3xl md:text-4xl font-extrabold text-koyu-900">{title} Fiyatını Ne Belirler?</h2>
+          <p class="text-koyu-500 mt-4">Her iş ölçüsüne ve malzemesine göre hesaplanır; bu yüzden liste fiyatı yayınlamıyoruz. Aşağıdaki bilgileri iletirseniz aynı gün net fiyat veriyoruz.</p>
+        </div>
+        <ol class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+          {fiyatFaktorleri.map((f, i) => (
+            <li class="flex gap-4 rounded-2xl border border-koyu-100 bg-koyu-50 p-6">
+              <span class="w-9 h-9 flex-shrink-0 rounded-xl bg-eymen-500 text-white font-bold flex items-center justify-center">{i + 1}</span>
+              <div>
+                <h3 class="font-bold text-koyu-900 mb-1">{f.baslik}</h3>
+                <p class="text-sm text-koyu-600 leading-relaxed">{f.aciklama}</p>
+              </div>
+            </li>
+          ))}
+        </ol>
+        <div class="mt-10 flex flex-col sm:flex-row gap-3 justify-center">
+          <a href={getWhatsAppUrl(whatsappMessages.product(title))} target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center gap-2 bg-green-600 hover:bg-green-700 text-white px-6 py-3.5 rounded-xl font-bold transition-all">Ölçü ve malzemeyi WhatsApp'tan gönder</a>
+          <a href="/teklif-al/" class="inline-flex items-center justify-center gap-2 bg-eymen-500 hover:bg-eymen-600 text-white px-6 py-3.5 rounded-xl font-bold transition-all">Teklif formunu doldur</a>
+        </div>
+      </div>
+    </section>
+  )}
+
+  <!-- Hizmet bölgesi -->
+  {bolge && (
+    <section class="py-12 md:py-16 bg-koyu-50 border-y border-koyu-100" aria-labelledby="bolge-baslik">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 lg:grid-cols-5 gap-8 items-start">
+        <div class="lg:col-span-2">
+          <p class="text-eymen-500 text-sm font-semibold tracking-wider mb-3">HİZMET BÖLGESİ</p>
+          <h2 id="bolge-baslik" class="text-2xl md:text-3xl font-extrabold text-koyu-900 mb-3">{bolge.baslik}</h2>
+          <p class="text-koyu-600 leading-relaxed">{bolge.metin}</p>
+        </div>
+        <ul class="lg:col-span-3 flex flex-wrap gap-2.5">
+          {bolge.ilceler.map(il => (
+            <li class="px-4 py-2 bg-white text-koyu-800 text-sm font-medium rounded-full border border-koyu-200">{il}</li>
+          ))}
+          <li class="px-4 py-2 bg-eymen-50 text-eymen-800 text-sm font-semibold rounded-full border border-eymen-200">Türkiye geneline kargo</li>
+        </ul>
       </div>
     </section>
   )}

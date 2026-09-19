@@ -30,16 +30,6 @@ const categories = [
     ]
   },
   {
-    id: 'dijital-baski',
-    label: 'Dijital Baskı',
-    products: [
-      { img: '/images/urunler/afis-branda-5.webp', title: 'Afiş Branda', href: '/urunlerimiz/afis-branda/' },
-      { img: '/images/urunler/fotoblok-4.webp', title: 'Fotoblok Baskı', href: '/urunlerimiz/fotoblok/' },
-      { img: '/images/projeler/goktemiz-billboard-1.webp', title: 'Göktemiz – Billboard Baskı', href: '/projelerimiz/goktemiz-billboard/', proje: true },
-      { img: '/images/projeler/mevsim-dis-cephe-1.webp', title: 'Mevsim Diş – Cephe Reklam', href: '/projelerimiz/mevsim-dis/', proje: true },
-    ]
-  },
-  {
     id: 'uv-baski',
     label: 'UV Baskı',
     products: [
@@ -48,6 +38,29 @@ const categories = [
       { img: '/images/urunler/uv-flatbed-1.webp', title: 'Karton & PVC UV Baskı', href: '/urunlerimiz/uv-baski/' },
       { img: '/images/projeler/etiler-2plan-4.webp', title: 'Etiler 2Plan – UV Baskı Vinil Germe', href: '/projelerimiz/etiler-2plan/', proje: true },
       { img: '/images/projeler/uv-baski-03.webp', title: 'UV Flatbed Üretim', href: '/projelerimiz/flatbed-uv-uretim/', proje: true },
+    ]
+  },
+  {
+    id: 'bez-baski',
+    label: 'Branda & Bez Baskı',
+    products: [
+      { img: '/images/projeler/boldy-bulvar-216-1.webp', title: 'Boldy Bulvar 216 – Cephe Branda Germe', href: '/projelerimiz/boldy-bulvar-216/', proje: true },
+      { img: '/images/projeler/zuber-padel-izmir-1.webp', title: 'Züber Padel İzmir – Kort Branda & Mesh', href: '/projelerimiz/zuber-padel-izmir/', proje: true },
+      { img: '/images/urunler/market-branda-1.webp', title: 'Market Branda', href: '/urunlerimiz/market-branda/' },
+      { img: '/images/urunler/mesh-5.webp', title: 'Mesh (Delikli) Branda Baskı', href: '/urunlerimiz/mesh-baski/' },
+      { img: '/images/urunler/emlak-branda-3.webp', title: 'Bez & Branda Baskı', href: '/urunlerimiz/bez-branda-baski/' },
+      { img: '/images/urunler/bez-pankart-4.webp', title: 'Bez Pankart', href: '/urunlerimiz/bez-pankart/' },
+      { img: '/images/urunler/emlak-branda-1.webp', title: 'Emlak İlan Branda', href: '/urunlerimiz/emlak-ilan-branda/' },
+    ]
+  },
+  {
+    id: 'dijital-baski',
+    label: 'Dijital Baskı',
+    products: [
+      { img: '/images/urunler/afis-branda-5.webp', title: 'Afiş Branda', href: '/urunlerimiz/afis-branda/' },
+      { img: '/images/urunler/fotoblok-4.webp', title: 'Fotoblok Baskı', href: '/urunlerimiz/fotoblok/' },
+      { img: '/images/projeler/goktemiz-billboard-1.webp', title: 'Göktemiz – Billboard Baskı', href: '/projelerimiz/goktemiz-billboard/', proje: true },
+      { img: '/images/projeler/mevsim-dis-cephe-1.webp', title: 'Mevsim Diş – Cephe Reklam', href: '/projelerimiz/mevsim-dis/', proje: true },
     ]
   },
   {
@@ -84,20 +97,6 @@ const categories = [
     ]
   },
   {
-    id: 'bez-baski',
-    label: 'Bez & Afiş Baskı',
-    products: [
-      { img: '/images/urunler/branda-1.webp', title: 'Bez & Branda Baskı', href: '/urunlerimiz/bez-branda-baski/' },
-      { img: '/images/urunler/bez-pankart-4.webp', title: 'Bez Pankart', href: '/urunlerimiz/bez-pankart/' },
-      { img: '/images/urunler/mesh-1.webp', title: 'Mesh Baskı', href: '/urunlerimiz/mesh-baski/' },
-
-      { img: '/images/urunler/market-branda-1.webp', title: 'Market Branda', href: '/urunlerimiz/market-branda/' },
-      { img: '/images/urunler/emlak-branda-1.webp', title: 'Emlak İlan Branda', href: '/urunlerimiz/emlak-ilan-branda/' },
-      { img: '/images/projeler/boldy-bulvar-216-1.webp', title: 'Boldy Bulvar 216 – Branda Germe', href: '/projelerimiz/boldy-bulvar-216/', proje: true },
-      { img: '/images/projeler/zuber-padel-izmir-1.webp', title: 'Züber Padel İzmir – Kort Branda', href: '/projelerimiz/zuber-padel-izmir/', proje: true },
-    ]
-  },
-  {
     id: 'grafik-tasarim',
     label: 'Grafik Tasarım',
     products: [
@@ -123,7 +122,14 @@ const categories = [
       { img: '/images/projeler/civil-bursa-2.webp', title: 'Civil Bursa – Mağaza Uygulaması', href: '/projelerimiz/civil-bursa/', proje: true },
       { img: '/images/projeler/pawco-water-garden-avm-1.webp', title: 'PAWCO Water Garden AVM – Mağaza Uygulaması', href: '/projelerimiz/pawco-water-garden-avm/', proje: true },
     ]
-  },
+  }
+];
+
+// Hero altındaki 3 ana hizmet kartı (19 Eyl 2026: UV ve branda öne çıkarma kararı)
+const anaHizmetler = [
+  { href: '/hizmetlerimiz/tabela/', img: '/images/projeler/meydan-avm-1.webp', alt: 'Meydan AVM cephe tabelası', etiket: 'İMALAT + MONTAJ', title: 'Tabela İmalatı', desc: 'Kutu harf, totem, ışıklı ve çatı tabelası. Keşiften montaja kendi ekibimizle.' },
+  { href: '/hizmetlerimiz/uv-baski/', img: '/images/urunler/uv-flatbed-1.webp', alt: '4x2 m UV flatbed baskı makinesi başında Eymen Reklam ekibi', etiket: '4x2 m FLATBED', title: 'UV Baskı', desc: 'Cam, ahşap, metal, pleksi ve kompozite doğrudan baskı. Kesim ve montaj dâhil.' },
+  { href: '/hizmetlerimiz/bez-baski/', img: '/images/projeler/zuber-padel-izmir-1.webp', alt: 'Züber Padel kort çevresi baskılı branda', etiket: '320 cm KENDİ TESİSİMİZDE', title: 'Branda & Bez Baskı', desc: 'Cephe brandası, mesh, pankart ve bez afiş. Kuşgözü, kaynak ve montaj bizden.' },
 ];
 
 const stats = [
@@ -155,7 +161,7 @@ for (const cat of categories) {
 
 ---
 
-<BaseLayout title="Tabela İmalatı & UV Baskı Pendik İstanbul" description={`Eymen Reklam — Pendik'in ${company.experience} yıllık reklam ve tabela firması: tabela imalatı, UV baskı, araç giydirme, dijital baskı. ☎ (0216) 379 07 08 — Ücretsiz keşif ve teklif.`}>
+<BaseLayout title="Tabela, UV ve Branda Baskı Pendik İstanbul" description={`Eymen Reklam — Pendik'in ${company.experience} yıllık reklam firması: tabela imalatı, UV baskı, branda ve bez baskı, araç giydirme. Kendi tesisimizde üretim. ☎ (0216) 379 07 08 — Ücretsiz keşif ve teklif.`}>
 
   <!-- ========== HERO SLIDER ========== -->
   <section class="relative bg-koyu-900 overflow-hidden" id="hero">
@@ -167,11 +173,11 @@ for (const cat of categories) {
           <div class="max-w-2xl">
             <p class="slide-up text-eymen-400 text-sm md:text-base font-semibold tracking-widest mb-4">2000'DEN BERİ</p>
             <h1 class="slide-up slide-delay-1 text-4xl md:text-6xl lg:text-7xl font-extrabold text-white leading-tight mb-6">
-              İstanbul Tabela İmalatı<br/>
-              <span class="text-eymen-500">UV Baskı & Dijital Baskı</span>
+              İstanbul'da Tabela İmalatı,<br/>
+              <span class="text-eymen-500">UV Baskı & Branda Baskı</span>
             </h1>
             <p class="slide-up slide-delay-2 text-lg md:text-xl text-koyu-300 mb-8 max-w-xl">
-              Markanızı birlikte görünür kılalım. Tabela imalatı, UV baskı ve dijital baskıda fikirden montaja kadar yanınızdayız — İstanbul Pendik'ten Türkiye'nin her yerine.
+              Tabela, UV baskı ve branda/bez baskıyı Pendik'teki kendi tesisimizde üretiyor, İstanbul'un her yerine montajla teslim ediyoruz. 4x2 m UV flatbed, 320 cm branda makineleri, kendi montaj ekibimiz.
             </p>
             <div class="slide-up slide-delay-3 flex flex-col sm:flex-row gap-4">
               <a href={getWhatsAppUrl()} target="_blank" rel="noopener noreferrer"
@@ -197,6 +203,29 @@ for (const cat of categories) {
             </a>
           </div>
         </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== 3 ANA HİZMET ========== -->
+  <section class="bg-koyu-50 border-b border-koyu-100" aria-labelledby="ana-hizmet-baslik">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 md:py-14">
+      <h2 id="ana-hizmet-baslik" class="sr-only">Ana hizmetlerimiz</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6">
+        {anaHizmetler.map(h => (
+          <a href={h.href} class="group relative rounded-2xl overflow-hidden bg-koyu-900 aspect-[16/10] md:aspect-[4/3] lg:aspect-[16/10] shadow-md hover:shadow-xl transition-all hover:-translate-y-1">
+            <img src={h.img} srcset={srcset(h.img)} sizes="(min-width: 768px) 33vw, 100vw" {...boyut(h.img)} alt={h.alt} loading="lazy" decoding="async" class="absolute inset-0 w-full h-full object-cover opacity-80 group-hover:opacity-90 group-hover:scale-105 transition-all duration-500" />
+            <div class="absolute inset-0 bg-gradient-to-t from-koyu-900 via-koyu-900/50 to-transparent"></div>
+            <div class="absolute inset-x-0 bottom-0 p-5 md:p-6">
+              <span class="inline-block text-[11px] font-bold tracking-wider text-eymen-300 bg-eymen-500/20 border border-eymen-400/40 rounded-full px-2.5 py-1 mb-2">{h.etiket}</span>
+              <h3 class="text-xl md:text-2xl font-extrabold text-white">{h.title}</h3>
+              <p class="text-koyu-200 text-sm mt-1 leading-snug">{h.desc}</p>
+              <span class="inline-flex items-center gap-1 text-eymen-300 text-sm font-semibold mt-3 group-hover:gap-2 transition-all">Detay ve teklif
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+              </span>
+            </div>
+          </a>
+        ))}
       </div>
     </div>
   </section>
@@ -404,7 +433,7 @@ for (const cat of categories) {
         Markanızın Fiziksel Varlığını<br/>Tanımlayalım
       </h2>
       <p class="text-white/80 text-lg mb-10 max-w-2xl mx-auto">
-        Projenizi birlikte planlayalım: tabela, UV baskı ve kurumsal reklamda ücretsiz keşif ve teklif için ulaşın,
+        Projenizi birlikte planlayalım: tabela, UV baskı ve branda baskıda ücretsiz keşif ve teklif için ulaşın,
         24 saat içinde dönüş yapalım.
       </p>
       <div class="flex flex-col sm:flex-row gap-4 justify-center">

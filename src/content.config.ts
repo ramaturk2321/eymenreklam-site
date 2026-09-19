@@ -85,6 +85,8 @@ const hizmetler = defineCollection({
     description: z.string(),
     heroDesc: z.string(),
     heroImage: z.string().optional(),
+    /** H1 için uzun başlık; menü/breadcrumb title'ı kullanmaya devam eder */
+    heroTitle: z.string().optional(),
     order: z.number(),
     listIcon: z.string(),
     listDesc: z.string(),
@@ -121,6 +123,23 @@ const hizmetler = defineCollection({
       q: z.string(),
       a: z.string(),
     })),
+    /** Gerçek iş fotoğrafları galerisi; href varsa proje/ürün sayfasına gider */
+    gallery: z.array(z.object({
+      src: z.string(),
+      alt: z.string(),
+      href: icLink.optional(),
+    })).optional(),
+    /** "Fiyatı ne belirler" kartları — rakam/fiyat aralığı YAZILMAZ (Ramazan kararı, 19 Eyl 2026) */
+    fiyatFaktorleri: z.array(z.object({
+      baslik: z.string(),
+      aciklama: z.string(),
+    })).optional(),
+    /** Hizmet bölgesi bloğu */
+    bolge: z.object({
+      baslik: z.string(),
+      metin: z.string(),
+      ilceler: z.array(z.string()),
+    }).optional(),
   }),
 });
 
