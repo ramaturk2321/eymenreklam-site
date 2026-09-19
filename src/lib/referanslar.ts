@@ -150,7 +150,7 @@ export const sektorler: Sektor[] = [
       },
       {
         ad: 'Tatbak',
-        isler: 'FOODIST 2026 fuarında 40 m² ada stant, ışıklı kutu harf tabela ve ticari araç giydirme.',
+        isler: 'FOODIST 2026 fuarında 40 m² ada stant, Gebze mağazası kutu harf tabela, cam folyo ve iç mekân görselleri, ticari araç giydirme.',
         href: '/projelerimiz/tatbak-foodist-stant/',
         hizmetler: ['sunum-stand', 'tabela', 'folyo-giydirme'],
         oneCikan: true,
