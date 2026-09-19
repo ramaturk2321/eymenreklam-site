@@ -139,6 +139,7 @@ const hizmetler = defineCollection({
       baslik: z.string(),
       metin: z.string(),
       ilceler: z.array(z.string()),
+      link: z.object({ href: icLink, label: z.string() }).optional(),
     }).optional(),
   }),
 });

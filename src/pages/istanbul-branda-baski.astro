@@ -1,0 +1,222 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { srcset, boyut } from '../lib/gorsel';
+import { company, contact, getWhatsAppUrl } from '../lib/site-data';
+
+// İstanbul geneli branda/mesh/bez iniş sayfası (19 Eyl 2026). Pendik odaklı hizmet sayfası: /hizmetlerimiz/bez-baski/
+// Fiyat aralığı / rakam YAZILMAZ (Ramazan kararı).
+const title = 'İstanbul Branda Baskı – Üretim ve Montaj';
+const description = "İstanbul'un 39 ilçesine branda, mesh ve bez baskı. Pendik'teki tesisimizde 320 cm makinelerle üretim, kuşgözü ve kaynak dâhil; Anadolu Yakası'nda kendi ekibimizle montaj.";
+const heroImage = '/images/projeler/mevsim-dis-cephe-1.webp';
+const wa = getWhatsAppUrl('Merhaba, İstanbul içinde branda baskı için fiyat almak istiyorum. Ölçü ve kullanım yeri: ');
+
+const anadolu = ['Pendik', 'Tuzla', 'Kartal', 'Maltepe', 'Kadıköy', 'Ataşehir', 'Ümraniye', 'Üsküdar', 'Sancaktepe', 'Çekmeköy', 'Sultanbeyli', 'Beykoz', 'Şile', 'Adalar'];
+const avrupa = ['Beşiktaş', 'Şişli', 'Kağıthane', 'Beyoğlu', 'Fatih', 'Zeytinburnu', 'Bakırköy', 'Bahçelievler', 'Güngören', 'Esenler', 'Bağcılar', 'Başakşehir', 'Küçükçekmece', 'Avcılar', 'Beylikdüzü', 'Esenyurt', 'Büyükçekmece', 'Silivri', 'Çatalca', 'Arnavutköy', 'Eyüpsultan', 'Gaziosmanpaşa', 'Sultangazi', 'Bayrampaşa', 'Sarıyer'];
+
+const urunler = [
+  { title: 'Cephe Brandası', desc: 'Bina ve mağaza cephesi, açılış ve kampanya brandaları. 440 g / 510 g PVC, kuşgözü ve kaynak dâhil.', img: '/images/projeler/boldy-bulvar-216-1.webp', href: '/urunlerimiz/bez-branda-baski/' },
+  { title: 'Mesh (Delikli) Branda', desc: 'İskele, yüksek cephe ve spor sahası çevresi için rüzgârı geçiren delikli branda.', img: '/images/urunler/mesh-5.webp', href: '/urunlerimiz/mesh-baski/' },
+  { title: 'Market ve Mağaza Kampanya Brandası', desc: 'Zincir mağazalar için aynı görselden çok şubeye ölçülü üretim ve şube bazlı paketleme.', img: '/images/urunler/market-branda-1.webp', href: '/urunlerimiz/market-branda/' },
+  { title: 'Pankart ve Açılış Bandı', desc: 'Açılış, indirim, okul ve etkinlik pankartları. Kuşgözlü, iple asılmaya hazır.', img: '/images/urunler/pankart-branda-1.webp', href: '/urunlerimiz/pankart-branda/' },
+  { title: 'Emlak ve İnşaat İlan Brandası', desc: 'Satılık, kiralık ve proje tanıtım brandaları; şantiye çevresi kapatma.', img: '/images/urunler/emlak-branda-3.webp', href: '/urunlerimiz/emlak-ilan-branda/' },
+  { title: 'Bez Afiş ve Sarkıt', desc: 'Mağaza içi kampanya afişleri, tavandan sarkıt görseller, fuar ve etkinlik bezleri.', img: '/images/urunler/bez-kampanya-4.webp', href: '/urunlerimiz/bez-kampanya-afisi/' },
+];
+
+const isler = [
+  { ad: 'Boldy Yemek & Market — Ataşehir', isler: 'Bulvar 216 mağazasında cephe branda germe ve dijital baskı.', href: '/projelerimiz/boldy-bulvar-216/' },
+  { ad: 'Hakmar Express — İstanbul geneli', isler: 'Mağaza cephelerine kampanya brandaları ve afiş serileri; şube bazlı üretim ve dağıtım.', href: '/urunlerimiz/hakmar-avm/' },
+  { ad: '2Plan Otomotiv — Etiler', isler: 'Bina cephesine branda giydirme ve UV baskı; Avrupa Yakası uygulaması.', href: '/projelerimiz/etiler-2plan/' },
+  { ad: 'Kiler GYO Referans — Pendik', isler: 'Satış ofisi cephesi boyunca dijital baskılı reklam bandı.', href: '/projelerimiz/kiler-gyo-referans-pendik/' },
+  { ad: 'Mevsim Diş — cephe reklamı', isler: 'Klinik binası cephesine büyük boy branda reklam.', href: '/projelerimiz/mevsim-dis/' },
+  { ad: 'Züber Padel Club — İzmir', isler: 'Kort çevresi kuşgözlü PVC branda ve mesh; Pendik\'te üretilip İzmir\'e gönderildi.', href: '/projelerimiz/zuber-padel-izmir/' },
+];
+
+const faq = [
+  { q: "İstanbul'un her ilçesine branda baskı yapıyor musunuz?", a: "Evet. Üretim Pendik'teki tesisimizde yapılır. Anadolu Yakası'ndaki 14 ilçede keşif ve montajı kendi ekibimiz yapar. Avrupa Yakası'na kuşgözlü, asılmaya hazır olarak araçla teslim ediyoruz; büyük cephe işlerinde montaj ekibimiz planlı olarak gelir." },
+  { q: 'Branda baskı fiyatı İstanbul içinde neye göre değişir?', a: 'Metrekare, branda gramajı (440 g, 510 g, mesh veya bez), kuşgözü ve kaynak gibi sonlandırma, adet ve montaj ihtiyacı belirler. Liste fiyatı yayınlamıyoruz; ölçü ve kullanım yerini WhatsApp\'tan yazarsanız aynı gün net fiyat veriyoruz.' },
+  { q: 'Ne kadar sürede teslim edersiniz?', a: 'Standart işler dosya onayından sonra 1-3 iş gününde hazır olur. Acil işlerde aynı gün üretim yapabiliyor, Anadolu Yakası\'nda ertesi gün montaj planlayabiliyoruz.' },
+  { q: 'En büyük branda ölçüsü nedir?', a: 'Makinelerimiz 320 cm genişliğinde tek parça basar; uzunlukta sınır yoktur. Daha geniş cepheler için parçalar ısı kaynağıyla birleştirilir, ek yeri görünmez.' },
+  { q: 'Mesh mi branda mı seçmeliyim?', a: 'Rüzgâr alan yüksek cepheler, iskele ve spor sahası çevresi için mesh (delikli branda) daha güvenlidir. Tam kapatıcı görsel ve mağaza cephesi için branda seçilir. Keşifte yerine göre öneriyoruz.' },
+  { q: 'Zincir mağazalar için toplu üretim yapıyor musunuz?', a: 'Evet. Hakmar Express gibi zincirler için aynı kampanya görselini onlarca şubeye ölçüsüne göre basıp şube bazında paketleyerek teslim ediyoruz.' },
+];
+
+const faqSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: faq.map(f => ({ '@type': 'Question', name: f.q, acceptedAnswer: { '@type': 'Answer', text: f.a } })),
+};
+const breadcrumbSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Ana Sayfa', item: company.siteUrl },
+    { '@type': 'ListItem', position: 2, name: 'Branda & Bez Baskı', item: `${company.siteUrl}/hizmetlerimiz/bez-baski/` },
+    { '@type': 'ListItem', position: 3, name: 'İstanbul Branda Baskı' },
+  ],
+};
+const serviceSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'Service',
+  name: 'İstanbul Branda Baskı',
+  serviceType: 'Branda, mesh ve bez baskı',
+  provider: { '@type': 'LocalBusiness', name: company.name, url: company.siteUrl },
+  areaServed: [...anadolu, ...avrupa].map(il => ({ '@type': 'AdministrativeArea', name: `${il}, İstanbul` })),
+  url: `${company.siteUrl}/istanbul-branda-baski/`,
+};
+---
+
+<BaseLayout title={title} description={description} image={heroImage}>
+  <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+  <script type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)} />
+  <script type="application/ld+json" set:html={JSON.stringify(serviceSchema)} />
+
+  <nav class="bg-koyu-50 border-b border-koyu-100 py-3">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <ol class="flex items-center gap-2 text-sm text-koyu-500">
+        <li><a href="/" class="hover:text-eymen-600">Ana Sayfa</a></li>
+        <li class="text-koyu-300">/</li>
+        <li><a href="/hizmetlerimiz/bez-baski/" class="hover:text-eymen-600">Branda & Bez Baskı</a></li>
+        <li class="text-koyu-300">/</li>
+        <li class="text-koyu-800 font-medium">İstanbul Branda Baskı</li>
+      </ol>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="relative bg-koyu-900 overflow-hidden pt-12 pb-12 md:pt-20 md:pb-20">
+    <img src={heroImage} srcset={srcset(heroImage)} sizes="100vw" {...boyut(heroImage)} alt="" class="absolute inset-0 w-full h-full object-cover opacity-60" loading="eager" decoding="async" />
+    <div class="absolute inset-0 bg-gradient-to-r from-koyu-900/95 via-koyu-900/70 to-koyu-900/30"></div>
+    <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="max-w-3xl">
+        <p class="text-eymen-400 text-sm font-semibold tracking-wider mb-3">İSTANBUL GENELİ · 39 İLÇE</p>
+        <h1 class="text-3xl md:text-5xl font-extrabold text-white mb-4">İstanbul Branda Baskı: Pendik'teki Tesisimizden 39 İlçeye Üretim ve Montaj</h1>
+        <p class="text-koyu-200 text-base md:text-lg leading-relaxed mb-6 md:mb-8">
+          Cephe brandası, mesh, market kampanya brandası, pankart ve bez afişi Pendik'teki kendi tesisimizde 320 cm genişliğinde makinelerle basıyoruz.
+          Kuşgözü ve kenar kaynağı standart. Anadolu Yakası'nda montajı kendi ekibimiz yapar, Avrupa Yakası'na asılmaya hazır teslim ederiz.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-3">
+          <a href={wa} target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center gap-2 bg-green-600 hover:bg-green-700 text-white px-6 py-3.5 rounded-xl font-bold transition-all">Ölçüyü WhatsApp'tan gönder, aynı gün fiyat al</a>
+          <a href={contact.phoneHref} class="inline-flex items-center justify-center gap-2 border-2 border-white/30 hover:border-white/60 text-white px-6 py-3.5 rounded-xl font-semibold transition-all">{contact.phone}</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Neden biz -->
+  <section class="py-12 md:py-16 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6">
+      {[
+        ['320 cm', 'Tek parça baskı genişliği, sınırsız uzunluk'],
+        ['1500 m²', 'Günlük üretim kapasitesi, 3 geniş format makine'],
+        ['1-3 iş günü', 'Standart teslim; acil işte aynı gün üretim'],
+        [`${company.experience} yıl`, 'Pendik\'te üretim, İstanbul genelinde uygulama'],
+      ].map(([v, l]) => (
+        <div class="rounded-2xl border border-koyu-100 bg-koyu-50 p-5 text-center">
+          <div class="text-2xl md:text-3xl font-extrabold text-eymen-600">{v}</div>
+          <div class="text-xs md:text-sm text-koyu-600 mt-1 leading-snug">{l}</div>
+        </div>
+      ))}
+    </div>
+  </section>
+
+  <!-- Ürünler -->
+  <section class="py-12 md:py-20 bg-koyu-50" aria-labelledby="urun-baslik">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-2xl mx-auto mb-10">
+        <h2 id="urun-baslik" class="text-3xl md:text-4xl font-extrabold text-koyu-900">İstanbul'da En Çok İstenen Branda İşleri</h2>
+        <p class="text-koyu-500 mt-4">Hepsi kendi tesisimizde basılır, kuşgözü ve kaynakla asılmaya hazır teslim edilir.</p>
+      </div>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+        {urunler.map(u => (
+          <a href={u.href} class="group bg-white rounded-2xl border border-koyu-100 overflow-hidden hover:shadow-xl hover:border-eymen-200 transition-all hover:-translate-y-1">
+            <div class="aspect-[4/3] overflow-hidden bg-koyu-200">
+              <img src={u.img} srcset={srcset(u.img)} sizes="(min-width: 1024px) 400px, (min-width: 640px) 50vw, 100vw" {...boyut(u.img)} alt={u.title} loading="lazy" decoding="async" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+            </div>
+            <div class="p-5">
+              <h3 class="font-bold text-koyu-900 group-hover:text-eymen-600 transition-colors">{u.title}</h3>
+              <p class="text-sm text-koyu-500 mt-1 leading-relaxed">{u.desc}</p>
+            </div>
+          </a>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- İlçeler -->
+  <section class="py-12 md:py-20 bg-white" aria-labelledby="ilce-baslik">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="max-w-3xl mb-10">
+        <h2 id="ilce-baslik" class="text-3xl md:text-4xl font-extrabold text-koyu-900">Hangi İlçelere Nasıl Hizmet Veriyoruz?</h2>
+        <p class="text-koyu-600 mt-4 leading-relaxed">Tesisimiz Pendik'te. Baskı her zaman burada yapılır; fark, montajın kimin yaptığıdır.</p>
+      </div>
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+        <div class="rounded-2xl border border-eymen-200 bg-eymen-50 p-6 md:p-8">
+          <h3 class="text-xl font-extrabold text-koyu-900">Anadolu Yakası: keşif + baskı + montaj bizden</h3>
+          <p class="text-sm text-koyu-700 mt-2 leading-relaxed">Cephe brandası, mesh ve pankart montajını kendi ekibimiz yapar; gerekirse iskele veya vinç planlarız. Keşfe ücretsiz geliyoruz.</p>
+          <ul class="flex flex-wrap gap-2 mt-4">
+            {anadolu.map(il => <li class="px-3.5 py-1.5 bg-white text-koyu-800 text-sm font-medium rounded-full border border-eymen-200">{il}</li>)}
+          </ul>
+        </div>
+        <div class="rounded-2xl border border-koyu-200 bg-koyu-50 p-6 md:p-8">
+          <h3 class="text-xl font-extrabold text-koyu-900">Avrupa Yakası: asılmaya hazır teslim, büyük işte montaj planlı</h3>
+          <p class="text-sm text-koyu-700 mt-2 leading-relaxed">Kuşgözlü ve kaynaklı olarak araçla teslim ediyoruz; kendi ekibiniz asabilir. Cephe giydirme gibi büyük işlerde montaj ekibimiz randevuyla gelir (Etiler 2Plan örneği).</p>
+          <ul class="flex flex-wrap gap-2 mt-4">
+            {avrupa.map(il => <li class="px-3.5 py-1.5 bg-white text-koyu-800 text-sm font-medium rounded-full border border-koyu-200">{il}</li>)}
+          </ul>
+        </div>
+      </div>
+      <p class="text-sm text-koyu-500 mt-6">İstanbul dışı: Kocaeli (Gebze, Darıca, İzmit) araçla; diğer iller rulo halinde kargo ile. İzmir ve Bursa'daki projelerimiz bu şekilde teslim edildi.</p>
+    </div>
+  </section>
+
+  <!-- Referans işler -->
+  <section class="py-12 md:py-20 bg-koyu-900" aria-labelledby="is-baslik">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-2xl mx-auto mb-10">
+        <p class="text-eymen-400 text-sm font-semibold tracking-wider mb-3">SAHADAN</p>
+        <h2 id="is-baslik" class="text-3xl md:text-4xl font-extrabold text-white">İstanbul'da Yaptığımız Branda İşleri</h2>
+      </div>
+      <ul class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+        {isler.map(r => (
+          <li class="rounded-2xl bg-koyu-800 border border-white/10 p-5">
+            <h3 class="font-bold text-white"><a href={r.href} class="hover:text-eymen-300">{r.ad}</a></h3>
+            <p class="text-sm text-koyu-300 mt-2 leading-relaxed">{r.isler}</p>
+          </li>
+        ))}
+      </ul>
+      <div class="text-center mt-8">
+        <a href="/hizmetlerimiz/bez-baski/" class="inline-flex items-center gap-2 text-eymen-400 font-semibold hover:text-eymen-300">Fotoğraflı galeri ve makine parkı: Branda & Bez Baskı sayfası →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- SSS -->
+  <section class="py-16 md:py-24 bg-koyu-50">
+    <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-3xl md:text-4xl font-extrabold text-koyu-900 text-center mb-12">İstanbul Branda Baskı Hakkında Sık Sorulanlar</h2>
+      <div class="space-y-4">
+        {faq.map(f => (
+          <details class="group bg-white rounded-xl border border-koyu-100 overflow-hidden">
+            <summary class="flex items-center justify-between cursor-pointer p-5 font-semibold text-koyu-900 hover:text-eymen-600">
+              {f.q}
+              <svg class="w-5 h-5 flex-shrink-0 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+            </summary>
+            <div class="px-5 pb-5 text-sm text-koyu-500 leading-relaxed">{f.a}</div>
+          </details>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="bg-gradient-to-br from-eymen-500 to-eymen-700 py-16 md:py-20">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <h2 class="text-3xl md:text-4xl font-extrabold text-white mb-4">Ölçüyü Gönderin, Aynı Gün Fiyat Verelim</h2>
+      <p class="text-eymen-100 text-lg mb-8 max-w-2xl mx-auto">Cephe genişliği ve yüksekliği, kullanım yeri ve adedi yazmanız yeterli. Anadolu Yakası'nda ücretsiz keşfe geliyoruz.</p>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <a href={wa} target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center gap-2 bg-white text-eymen-600 hover:bg-koyu-50 px-8 py-4 rounded-xl font-bold transition-all">WhatsApp ile Yaz</a>
+        <a href="/teklif-al/" class="inline-flex items-center justify-center gap-2 border-2 border-white/40 hover:border-white text-white px-8 py-4 rounded-xl font-semibold transition-all">Teklif Formu</a>
+      </div>
+    </div>
+  </section>
+</BaseLayout>

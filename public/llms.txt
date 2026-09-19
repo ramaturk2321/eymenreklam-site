@@ -39,14 +39,16 @@ Son güncelleme: 2026-09-16
 
 - [Tabela İmalatı](https://www.eymenreklam.com.tr/hizmetlerimiz/tabela/): kutu harf, totem, çatı, neon/LED, ışıklı blok, ofis tabelası; CNC kesim, LED sistemleri, montaj ve belediye ruhsat desteği
 - [UV Baskı](https://www.eymenreklam.com.tr/hizmetlerimiz/uv-baski/): SwissQprint flatbed ile cam, pleksi, ahşap, metal, seramik, deri, kompozit ve foreks üzerine 1440 DPI direkt baskı
-- [Afiş Baskı](https://www.eymenreklam.com.tr/hizmetlerimiz/afis-baski/): vinil afiş, banner, geniş format, CMYK ve Pantone renk eşleştirme
-- [Bez / Branda Baskı](https://www.eymenreklam.com.tr/hizmetlerimiz/bez-baski/): branda, mesh, pankart, tente; kenar dikişi ve kuşgözü uygulaması
+- [Afiş Baskı](https://www.eymenreklam.com.tr/hizmetlerimiz/afis-baski/): kuşe/mat kâğıt ve vinil (yapışkanlı) afiş, A0'a kadar poster, zincir mağaza kampanya afişleri; adetli üretim
+- [Branda & Bez Baskı](https://www.eymenreklam.com.tr/hizmetlerimiz/bez-baski/): cephe brandası, mesh (delikli branda), pankart, bez afiş; Pendik tesisinde 2×320 cm branda + 320 cm bez makinesi, kuşgözü/kaynak ve montaj dâhil, fiyat m² üzerinden (liste fiyatı yayınlanmaz)
 - [Dijital Baskı](https://www.eymenreklam.com.tr/hizmetlerimiz/dijital-baski/): kartvizit, katalog, broşür, el ilanı, antetli evrak, fotoblok
 - [Folyo ve Araç Giydirme](https://www.eymenreklam.com.tr/hizmetlerimiz/folyo-giydirme/): tam ve kısmi araç kaplama, cephe giydirme, cam filmi, plotter kesim
 - [Grafik Tasarım](https://www.eymenreklam.com.tr/hizmetlerimiz/grafik-tasarim/): logo, kurumsal kimlik, 3D görselleştirme ve konsept geliştirme
 - [İş Güvenliği Levhaları](https://www.eymenreklam.com.tr/hizmetlerimiz/is-guvenligi/): UV dayanıklı uyarı, ikaz ve ISO uyumlu endüstriyel levhalar
 - [Mağaza Reklam Uygulamaları](https://www.eymenreklam.com.tr/hizmetlerimiz/magaza-reklam/): vitrin, POP/POS malzemeleri, raf etiketi ve ürün tabelaları
 - [Sunum ve Stand](https://www.eymenreklam.com.tr/hizmetlerimiz/sunum-stand/): fuar standı, sergi standı, roll-up, lightbox pano
+- [İstanbul Branda Baskı](https://www.eymenreklam.com.tr/istanbul-branda-baski/): İstanbul'un 39 ilçesine branda, mesh ve bez baskı; Pendik tesisinde 320 cm üretim, Anadolu Yakası'nda kendi ekiple montaj
+- [Anadolu Yakası UV Baskı](https://www.eymenreklam.com.tr/anadolu-yakasi-uv-baski/): Kadıköy'den Gebze'ye 4x2 m flatbed UV baskı, kesim ve montaj
 
 ## Öne çıkan ürünler
 

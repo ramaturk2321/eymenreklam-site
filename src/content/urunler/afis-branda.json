@@ -2,8 +2,8 @@
   "title": "Afiş Branda",
   "seoTitle": "Afiş Branda Baskı Pendik İstanbul",
   "description": "Branda afiş baskı hizmeti. Dış mekân dayanıklı, UV korumalı, büyük boyut. Eymen Reklam — 25 yıllık tecrübe, 2 yıl garanti.",
-  "category": "Afiş Baskı",
-  "categoryHref": "/hizmetlerimiz/afis-baski/",
+  "category": "Branda & Bez Baskı",
+  "categoryHref": "/hizmetlerimiz/bez-baski/",
   "shortDesc": "Branda afiş baskı hizmeti. Dış mekâna dayanıklı vinil branda üzerine yüksek çözünürlüklü dijital baskı. Kampanya, inşaat ve etkinlik afişleri için ideal.",
   "mainImg": "/images/urunler/afis-branda-2.webp",
   "gallery": [
@@ -66,7 +66,7 @@
   "relatedProducts": [
     { "img": "/images/urunler/afis-baski-1.webp", "title": "Dijital Afiş Baskı", "href": "/urunlerimiz/afis-baski/", "category": "Afiş Baskı" },
     { "img": "/images/urunler/bez-pankart-1.webp", "title": "Bez Pankart", "href": "/urunlerimiz/bez-pankart/", "category": "Afiş Baskı" },
-    { "img": "/images/urunler/mesh-5.webp", "title": "Mesh Baskı", "href": "/urunlerimiz/mesh-baski/", "category": "Bez Baskı" },
+    { "img": "/images/urunler/mesh-5.webp", "title": "Mesh Baskı", "href": "/urunlerimiz/mesh-baski/", "category": "Branda & Bez Baskı" },
     { "img": "/images/urunler/vinil-tabela-1.webp", "title": "Vinil Tabela", "href": "/urunlerimiz/vinil-tabela/", "category": "Tabela" }
   ]
 }

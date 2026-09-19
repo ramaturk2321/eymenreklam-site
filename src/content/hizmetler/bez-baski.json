@@ -8,16 +8,33 @@
   "order": 3,
   "listIcon": "🏗️",
   "listDesc": "Cephe brandası, mesh (delikli branda), pankart ve bez afiş. 320 cm makinelerle kendi tesisimizde baskı, kuşgözü ve montaj dâhil.",
-  "listFeatures": ["Branda Baskı", "Mesh Branda", "Pankart", "Bez Afiş"],
+  "listFeatures": [
+    "Branda Baskı",
+    "Mesh Branda",
+    "Pankart",
+    "Bez Afiş"
+  ],
   "listImage": "/images/projeler/zuber-padel-izmir-1.webp",
   "facility": {
     "title": "Branda ve Bez Baskıyı Kendi Tesisimizde Yapıyoruz",
     "description": "Branda işini dışarıya vermiyoruz. Pendik tesisimizde 320 cm genişliğinde iki branda baskı ve bir bez baskı makinesi, laminasyon ve kesim hattıyla günlük 1500 m² üretim yapıyoruz. Baskıdan sonra kenar kaynağı, kuşgözü, cep ve halat kanalı aynı atölyede tamamlanır; acil işlerde aynı gün üretim ve ertesi gün montaj mümkündür.",
     "stats": [
-      { "value": "320 cm", "label": "Tek Parça Baskı Genişliği" },
-      { "value": "1500 m²", "label": "Günlük Üretim Kapasitesi" },
-      { "value": "3 Adet", "label": "Geniş Format Baskı Makinesi" },
-      { "value": "Aynı Gün", "label": "Acil Üretim Seçeneği" }
+      {
+        "value": "320 cm",
+        "label": "Tek Parça Baskı Genişliği"
+      },
+      {
+        "value": "1500 m²",
+        "label": "Günlük Üretim Kapasitesi"
+      },
+      {
+        "value": "3 Adet",
+        "label": "Geniş Format Baskı Makinesi"
+      },
+      {
+        "value": "Aynı Gün",
+        "label": "Acil Üretim Seçeneği"
+      }
     ],
     "machines": [
       "2 adet 320 cm Branda Baskı Makinesi",
@@ -32,62 +49,247 @@
     ]
   },
   "features": [
-    { "icon": "🏗️", "title": "Cephe ve İnşaat Brandası", "desc": "440 g ve 510 g PVC branda ile bina cephesi, şantiye çevresi, açılış ve kampanya brandaları." },
-    { "icon": "🕸️", "title": "Mesh (Delikli) Branda", "desc": "Rüzgârı geçiren delikli branda. İskele, yüksek cephe, spor sahası ve kort çevresi için güvenli çözüm." },
-    { "icon": "🧵", "title": "Bez ve Tekstil Baskı", "desc": "Mağaza içi kampanya afişleri, tavandan sarkıt görseller, fuar ve etkinlik bezleri." },
-    { "icon": "📢", "title": "Pankart ve Kampanya Bandı", "desc": "Açılış, indirim, okul ve etkinlik pankartları. Kuşgözlü, iple asılmaya hazır teslim." },
-    { "icon": "🏭", "title": "320 cm Kendi Tesisimizde", "desc": "Üç geniş format makine, günlük 1500 m² kapasite. Renk, termin ve fiyatı biz kontrol ediyoruz." },
-    { "icon": "🔩", "title": "Kuşgözü, Kaynak ve Montaj", "desc": "Kenar kaynağı, kuşgözü, cep ve halat kanalı atölyede; cephe montajı kendi ekibimizle." }
+    {
+      "icon": "🏗️",
+      "title": "Cephe ve İnşaat Brandası",
+      "desc": "440 g ve 510 g PVC branda ile bina cephesi, şantiye çevresi, açılış ve kampanya brandaları."
+    },
+    {
+      "icon": "🕸️",
+      "title": "Mesh (Delikli) Branda",
+      "desc": "Rüzgârı geçiren delikli branda. İskele, yüksek cephe, spor sahası ve kort çevresi için güvenli çözüm."
+    },
+    {
+      "icon": "🧵",
+      "title": "Bez ve Tekstil Baskı",
+      "desc": "Mağaza içi kampanya afişleri, tavandan sarkıt görseller, fuar ve etkinlik bezleri."
+    },
+    {
+      "icon": "📢",
+      "title": "Pankart ve Kampanya Bandı",
+      "desc": "Açılış, indirim, okul ve etkinlik pankartları. Kuşgözlü, iple asılmaya hazır teslim."
+    },
+    {
+      "icon": "🏭",
+      "title": "320 cm Kendi Tesisimizde",
+      "desc": "Üç geniş format makine, günlük 1500 m² kapasite. Renk, termin ve fiyatı biz kontrol ediyoruz."
+    },
+    {
+      "icon": "🔩",
+      "title": "Kuşgözü, Kaynak ve Montaj",
+      "desc": "Kenar kaynağı, kuşgözü, cep ve halat kanalı atölyede; cephe montajı kendi ekibimizle."
+    }
   ],
   "products": [
-    { "title": "Bez & Branda Baskı", "desc": "Cephe, şantiye ve kampanya brandaları. 440 g / 510 g PVC branda, kuşgözlü teslim.", "image": "/images/urunler/emlak-branda-3.webp", "href": "/urunlerimiz/bez-branda-baski/" },
-    { "title": "Mesh Baskı", "desc": "Delikli, rüzgâr geçiren branda. İskele, yüksek cephe ve spor sahası çevresi için.", "image": "/images/urunler/mesh-5.webp", "href": "/urunlerimiz/mesh-baski/" },
-    { "title": "Market Branda", "desc": "Market ve mağaza cephe kampanya brandaları. Zincir şubelere toplu üretim.", "image": "/images/urunler/market-branda-1.webp", "href": "/urunlerimiz/market-branda/" },
-    { "title": "Pankart Branda", "desc": "Açılış, indirim ve etkinlik pankartları. Kuşgözlü, asılmaya hazır.", "image": "/images/urunler/pankart-branda-1.webp", "href": "/urunlerimiz/pankart-branda/" },
-    { "title": "Bez Pankart", "desc": "Okul, spor kulübü ve organizasyon bez pankartları.", "image": "/images/urunler/bez-pankart-1.webp", "href": "/urunlerimiz/bez-pankart/" },
-    { "title": "Bez Kampanya Afişi", "desc": "Mağaza içi kampanya ve promosyon bez afişleri. Sarkıt ve duvar asma seçenekleri.", "image": "/images/urunler/bez-kampanya-1.webp", "href": "/urunlerimiz/bez-kampanya-afisi/" }
+    {
+      "title": "Bez & Branda Baskı",
+      "desc": "Cephe, şantiye ve kampanya brandaları. 440 g / 510 g PVC branda, kuşgözlü teslim.",
+      "image": "/images/urunler/emlak-branda-3.webp",
+      "href": "/urunlerimiz/bez-branda-baski/"
+    },
+    {
+      "title": "Mesh Baskı",
+      "desc": "Delikli, rüzgâr geçiren branda. İskele, yüksek cephe ve spor sahası çevresi için.",
+      "image": "/images/urunler/mesh-5.webp",
+      "href": "/urunlerimiz/mesh-baski/"
+    },
+    {
+      "title": "Market Branda",
+      "desc": "Market ve mağaza cephe kampanya brandaları. Zincir şubelere toplu üretim.",
+      "image": "/images/urunler/market-branda-1.webp",
+      "href": "/urunlerimiz/market-branda/"
+    },
+    {
+      "title": "Pankart Branda",
+      "desc": "Açılış, indirim ve etkinlik pankartları. Kuşgözlü, asılmaya hazır.",
+      "image": "/images/urunler/pankart-branda-1.webp",
+      "href": "/urunlerimiz/pankart-branda/"
+    },
+    {
+      "title": "Bez Pankart",
+      "desc": "Okul, spor kulübü ve organizasyon bez pankartları.",
+      "image": "/images/urunler/bez-pankart-1.webp",
+      "href": "/urunlerimiz/bez-pankart/"
+    },
+    {
+      "title": "Bez Kampanya Afişi",
+      "desc": "Mağaza içi kampanya ve promosyon bez afişleri. Sarkıt ve duvar asma seçenekleri.",
+      "image": "/images/urunler/bez-kampanya-1.webp",
+      "href": "/urunlerimiz/bez-kampanya-afisi/"
+    }
   ],
   "gallery": [
-    { "src": "/images/projeler/zuber-padel-izmir-1.webp", "alt": "Züber Padel Club İzmir kort çevresi baskılı branda ve marka bantları", "href": "/projelerimiz/zuber-padel-izmir/" },
-    { "src": "/images/urunler/mesh-5.webp", "alt": "Züber tenis kortu çevresinde sponsor logolu mesh branda", "href": "/projelerimiz/zuber-padel-izmir/" },
-    { "src": "/images/urunler/mesh-6.webp", "alt": "Kort çiti üzerine gerilmiş delikli mesh branda baskı", "href": "/projelerimiz/zuber-padel-izmir/" },
-    { "src": "/images/urunler/afis-branda-5.webp", "alt": "Kapalı kort çevresi baskılı branda uygulaması", "href": "/projelerimiz/zuber-padel-izmir/" },
-    { "src": "/images/projeler/boldy-bulvar-216-1.webp", "alt": "Boldy Bulvar 216 Ataşehir mağazası cephe branda germe", "href": "/projelerimiz/boldy-bulvar-216/" },
-    { "src": "/images/projeler/boldy-bulvar-216-2.webp", "alt": "Boldy mağaza cephesinde turuncu kampanya brandası yakın plan", "href": "/projelerimiz/boldy-bulvar-216/" },
-    { "src": "/images/urunler/market-branda-1.webp", "alt": "Hakmar Express mağaza cephesinde kampanya brandası", "href": "/urunlerimiz/market-branda/" },
-    { "src": "/images/urunler/market-branda-2.webp", "alt": "Toptan market cephesinde kampanya brandası", "href": "/urunlerimiz/market-branda/" },
-    { "src": "/images/urunler/market-branda-3.webp", "alt": "Market cephesi branda uygulaması, otopark tarafı", "href": "/urunlerimiz/market-branda/" },
-    { "src": "/images/urunler/emlak-branda-3.webp", "alt": "Hakmar mağaza cephesine kuşgözlü kampanya brandası montajı", "href": "/urunlerimiz/bez-branda-baski/" },
-    { "src": "/images/projeler/mevsim-dis-cephe-1.webp", "alt": "Mevsim Diş kliniği bina cephesine büyük boy branda reklam", "href": "/projelerimiz/mevsim-dis/" },
-    { "src": "/images/projeler/etiler-2plan-2.webp", "alt": "Etiler 2Plan binası cephe branda germe", "href": "/projelerimiz/etiler-2plan/" }
+    {
+      "src": "/images/projeler/zuber-padel-izmir-1.webp",
+      "alt": "Züber Padel Club İzmir kort çevresi baskılı branda ve marka bantları",
+      "href": "/projelerimiz/zuber-padel-izmir/"
+    },
+    {
+      "src": "/images/urunler/mesh-5.webp",
+      "alt": "Züber tenis kortu çevresinde sponsor logolu mesh branda",
+      "href": "/projelerimiz/zuber-padel-izmir/"
+    },
+    {
+      "src": "/images/urunler/mesh-6.webp",
+      "alt": "Kort çiti üzerine gerilmiş delikli mesh branda baskı",
+      "href": "/projelerimiz/zuber-padel-izmir/"
+    },
+    {
+      "src": "/images/urunler/afis-branda-5.webp",
+      "alt": "Kapalı kort çevresi baskılı branda uygulaması",
+      "href": "/projelerimiz/zuber-padel-izmir/"
+    },
+    {
+      "src": "/images/projeler/boldy-bulvar-216-1.webp",
+      "alt": "Boldy Bulvar 216 Ataşehir mağazası cephe branda germe",
+      "href": "/projelerimiz/boldy-bulvar-216/"
+    },
+    {
+      "src": "/images/projeler/boldy-bulvar-216-2.webp",
+      "alt": "Boldy mağaza cephesinde turuncu kampanya brandası yakın plan",
+      "href": "/projelerimiz/boldy-bulvar-216/"
+    },
+    {
+      "src": "/images/urunler/market-branda-1.webp",
+      "alt": "Hakmar Express mağaza cephesinde kampanya brandası",
+      "href": "/urunlerimiz/market-branda/"
+    },
+    {
+      "src": "/images/urunler/market-branda-2.webp",
+      "alt": "Toptan market cephesinde kampanya brandası",
+      "href": "/urunlerimiz/market-branda/"
+    },
+    {
+      "src": "/images/urunler/market-branda-3.webp",
+      "alt": "Market cephesi branda uygulaması, otopark tarafı",
+      "href": "/urunlerimiz/market-branda/"
+    },
+    {
+      "src": "/images/urunler/emlak-branda-3.webp",
+      "alt": "Hakmar mağaza cephesine kuşgözlü kampanya brandası montajı",
+      "href": "/urunlerimiz/bez-branda-baski/"
+    },
+    {
+      "src": "/images/projeler/mevsim-dis-cephe-1.webp",
+      "alt": "Mevsim Diş kliniği bina cephesine büyük boy branda reklam",
+      "href": "/projelerimiz/mevsim-dis/"
+    },
+    {
+      "src": "/images/projeler/etiler-2plan-2.webp",
+      "alt": "Etiler 2Plan binası cephe branda germe",
+      "href": "/projelerimiz/etiler-2plan/"
+    }
   ],
   "fiyatFaktorleri": [
-    { "baslik": "Malzeme", "aciklama": "440 g standart branda, 510 g ağır branda, arkası siyah (blackout) branda, delikli mesh veya bez. Kullanım yeri ve süresi malzemeyi belirler." },
-    { "baslik": "Ölçü ve metrekare", "aciklama": "Fiyat m² üzerinden hesaplanır. 320 cm'e kadar tek parça basıyoruz; daha geniş işler ısı kaynağıyla birleştirilir." },
-    { "baslik": "Sonlandırma", "aciklama": "Kenar kaynağı ve kuşgözü standarttır. Cep, halat kanalı, çıta yeri ve özel dikiş ayrıca planlanır." },
-    { "baslik": "Adet ve tekrar", "aciklama": "Aynı görselden çok şubeye üretimde birim fiyat düşer. Zincir mağaza kampanyalarında dağıtımı da üstleniyoruz." },
-    { "baslik": "Montaj", "aciklama": "Cephe yüksekliği, iskele veya vinç ihtiyacı ve germe konstrüksiyonu montaj bedelini belirler. Anadolu Yakası'nda kendi ekibimiz uygular." },
-    { "baslik": "Teslim süresi", "aciklama": "Standart 1-3 iş günü. Aynı gün üretim ve ertesi gün montaj istenen acil işler ayrıca planlanır." }
+    {
+      "baslik": "Malzeme",
+      "aciklama": "440 g standart branda, 510 g ağır branda, arkası siyah (blackout) branda, delikli mesh veya bez. Kullanım yeri ve süresi malzemeyi belirler."
+    },
+    {
+      "baslik": "Ölçü ve metrekare",
+      "aciklama": "Fiyat m² üzerinden hesaplanır. 320 cm'e kadar tek parça basıyoruz; daha geniş işler ısı kaynağıyla birleştirilir."
+    },
+    {
+      "baslik": "Sonlandırma",
+      "aciklama": "Kenar kaynağı ve kuşgözü standarttır. Cep, halat kanalı, çıta yeri ve özel dikiş ayrıca planlanır."
+    },
+    {
+      "baslik": "Adet ve tekrar",
+      "aciklama": "Aynı görselden çok şubeye üretimde birim fiyat düşer. Zincir mağaza kampanyalarında dağıtımı da üstleniyoruz."
+    },
+    {
+      "baslik": "Montaj",
+      "aciklama": "Cephe yüksekliği, iskele veya vinç ihtiyacı ve germe konstrüksiyonu montaj bedelini belirler. Anadolu Yakası'nda kendi ekibimiz uygular."
+    },
+    {
+      "baslik": "Teslim süresi",
+      "aciklama": "Standart 1-3 iş günü. Aynı gün üretim ve ertesi gün montaj istenen acil işler ayrıca planlanır."
+    }
   ],
   "bolge": {
     "baslik": "Pendik'ten Anadolu Yakası'nın Tamamına",
     "metin": "Tesisimiz Pendik'te. Anadolu Yakası'ndaki cephe ve mağaza işlerinde keşif, baskı ve montajı kendi ekibimiz yapıyor. Avrupa Yakası ve Türkiye geneline rulo halinde kargo veya araçla teslimat yapıyoruz; İzmir ve Bursa'daki projelerimiz bu şekilde teslim edildi.",
-    "ilceler": ["Pendik", "Tuzla", "Kartal", "Maltepe", "Kadıköy", "Ataşehir", "Ümraniye", "Sancaktepe", "Çekmeköy", "Sultanbeyli", "Üsküdar", "Gebze"]
+    "ilceler": [
+      "Pendik",
+      "Tuzla",
+      "Kartal",
+      "Maltepe",
+      "Kadıköy",
+      "Ataşehir",
+      "Ümraniye",
+      "Sancaktepe",
+      "Çekmeköy",
+      "Sultanbeyli",
+      "Üsküdar",
+      "Gebze"
+    ],
+    "link": {
+      "href": "/istanbul-branda-baski/",
+      "label": "İstanbul geneli branda baskı sayfası"
+    }
   },
   "process": [
-    { "step": "01", "title": "Ölçü ve Malzeme", "desc": "Cephe veya alan ölçüsü alınır; branda, mesh ya da bez seçimi kullanım yerine göre yapılır." },
-    { "step": "02", "title": "Tasarım Onayı", "desc": "Baskı dosyası ölçüye göre hazırlanır, renk ve yerleşim onayınız alınır." },
-    { "step": "03", "title": "320 cm Geniş Format Baskı", "desc": "Kendi tesisimizde branda veya bez makinesinde basılır, renk kontrolü yapılır." },
-    { "step": "04", "title": "Kaynak, Kuşgözü ve Montaj", "desc": "Kenarlar kaynaklanır, kuşgözü takılır. Cephe işlerinde kendi ekibimiz monte eder." }
+    {
+      "step": "01",
+      "title": "Ölçü ve Malzeme",
+      "desc": "Cephe veya alan ölçüsü alınır; branda, mesh ya da bez seçimi kullanım yerine göre yapılır."
+    },
+    {
+      "step": "02",
+      "title": "Tasarım Onayı",
+      "desc": "Baskı dosyası ölçüye göre hazırlanır, renk ve yerleşim onayınız alınır."
+    },
+    {
+      "step": "03",
+      "title": "320 cm Geniş Format Baskı",
+      "desc": "Kendi tesisimizde branda veya bez makinesinde basılır, renk kontrolü yapılır."
+    },
+    {
+      "step": "04",
+      "title": "Kaynak, Kuşgözü ve Montaj",
+      "desc": "Kenarlar kaynaklanır, kuşgözü takılır. Cephe işlerinde kendi ekibimiz monte eder."
+    }
   ],
-  "sectors": ["İnşaat & Gayrimenkul", "Perakende & Zincir Mağaza", "Spor Tesisleri", "Organizasyon & Etkinlik", "Otomotiv & Lojistik", "Sanayi & Fabrika", "Eğitim & Okul", "Turizm & Otelcilik", "Sağlık & Hastane", "Kamu & Belediye"],
+  "sectors": [
+    "İnşaat & Gayrimenkul",
+    "Perakende & Zincir Mağaza",
+    "Spor Tesisleri",
+    "Organizasyon & Etkinlik",
+    "Otomotiv & Lojistik",
+    "Sanayi & Fabrika",
+    "Eğitim & Okul",
+    "Turizm & Otelcilik",
+    "Sağlık & Hastane",
+    "Kamu & Belediye"
+  ],
   "faq": [
-    { "q": "Branda baskı fiyatı nasıl belirlenir?", "a": "Metrekare, branda gramajı (440 g / 510 g / mesh / bez), kuşgözü ve kaynak gibi sonlandırma, adet ve montaj ihtiyacı fiyatı belirler. Ölçü ve kullanım yerini WhatsApp'tan yazarsanız aynı gün net fiyat veriyoruz." },
-    { "q": "En büyük branda boyutu ne kadar?", "a": "Makinelerimiz 320 cm genişliğinde tek parça basar; uzunlukta sınır yoktur. Daha geniş cepheler için parçalar ısı kaynağıyla birleştirilir, ek yeri görünmez." },
-    { "q": "Mesh ve branda arasındaki fark nedir?", "a": "Branda opak ve tam kapatıcıdır. Mesh delikli olduğu için rüzgârı geçirir; iskele, yüksek cephe ve spor sahası çevresi gibi rüzgâr alan yerlerde daha güvenlidir." },
-    { "q": "Branda ne kadar sürede hazır olur?", "a": "Standart işler dosya onayından sonra 1-3 iş gününde teslim edilir. Acil işlerde aynı gün üretim yapabiliyoruz." },
-    { "q": "Branda dış mekânda ne kadar dayanır?", "a": "Kaliteli PVC branda ve solvent baskı dış mekânda 2-3 yıl solmadan kalır. Mesh ve sürekli güneş alan cephelerde kullanım süresi biraz daha kısadır." },
-    { "q": "Montaj yapıyor musunuz?", "a": "Evet. Anadolu Yakası'nda cephe brandası, mesh ve pankart montajını kendi ekibimiz yapar; gerekirse iskele veya vinç planlarız. Diğer bölgelere kuşgözlü, asılmaya hazır olarak kargolarız." },
-    { "q": "Zincir mağazalar için toplu üretim yapıyor musunuz?", "a": "Evet. Hakmar gibi zincirler için aynı kampanya görselini onlarca şubeye ölçüsüne göre basıp şube bazında paketleyerek teslim ediyoruz." }
+    {
+      "q": "Branda baskı fiyatı nasıl belirlenir?",
+      "a": "Metrekare, branda gramajı (440 g / 510 g / mesh / bez), kuşgözü ve kaynak gibi sonlandırma, adet ve montaj ihtiyacı fiyatı belirler. Ölçü ve kullanım yerini WhatsApp'tan yazarsanız aynı gün net fiyat veriyoruz."
+    },
+    {
+      "q": "En büyük branda boyutu ne kadar?",
+      "a": "Makinelerimiz 320 cm genişliğinde tek parça basar; uzunlukta sınır yoktur. Daha geniş cepheler için parçalar ısı kaynağıyla birleştirilir, ek yeri görünmez."
+    },
+    {
+      "q": "Mesh ve branda arasındaki fark nedir?",
+      "a": "Branda opak ve tam kapatıcıdır. Mesh delikli olduğu için rüzgârı geçirir; iskele, yüksek cephe ve spor sahası çevresi gibi rüzgâr alan yerlerde daha güvenlidir."
+    },
+    {
+      "q": "Branda ne kadar sürede hazır olur?",
+      "a": "Standart işler dosya onayından sonra 1-3 iş gününde teslim edilir. Acil işlerde aynı gün üretim yapabiliyoruz."
+    },
+    {
+      "q": "Branda dış mekânda ne kadar dayanır?",
+      "a": "Kaliteli PVC branda ve solvent baskı dış mekânda 2-3 yıl solmadan kalır. Mesh ve sürekli güneş alan cephelerde kullanım süresi biraz daha kısadır."
+    },
+    {
+      "q": "Montaj yapıyor musunuz?",
+      "a": "Evet. Anadolu Yakası'nda cephe brandası, mesh ve pankart montajını kendi ekibimiz yapar; gerekirse iskele veya vinç planlarız. Diğer bölgelere kuşgözlü, asılmaya hazır olarak kargolarız."
+    },
+    {
+      "q": "Zincir mağazalar için toplu üretim yapıyor musunuz?",
+      "a": "Evet. Hakmar gibi zincirler için aynı kampanya görselini onlarca şubeye ölçüsüne göre basıp şube bazında paketleyerek teslim ediyoruz."
+    }
   ]
 }

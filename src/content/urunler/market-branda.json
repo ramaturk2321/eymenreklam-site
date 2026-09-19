@@ -2,7 +2,7 @@
   "title": "Market Branda Baskı",
   "seoTitle": "Market Branda Baskı Pendik İstanbul",
   "description": "Market branda ve bez baskı hizmeti. Kampanya, indirim ve tanıtım brandaları. Eymen Reklam — 25 yıllık tecrübe, 2 yıl garanti.",
-  "category": "Bez Baskı",
+  "category": "Branda & Bez Baskı",
   "categoryHref": "/hizmetlerimiz/bez-baski/",
   "shortDesc": "Market ve mağazalar için branda ve bez baskı çözümleri. Kampanya duyuruları, indirimler ve tanıtımlar için dayanıklı ve uygun fiyatlı branda baskı.",
   "mainImg": "/images/urunler/market-branda-1.webp",
@@ -62,9 +62,9 @@
     { "q": "Tasarım desteği var mı?", "a": "Evet, ücretsiz grafik tasarım desteği sunuyoruz." }
   ],
   "relatedProducts": [
-    { "img": "/images/urunler/bez-kampanya-1.webp", "title": "Bez Kampanya Afişi", "href": "/urunlerimiz/bez-kampanya-afisi/", "category": "Bez Baskı" },
-    { "img": "/images/urunler/branda-1.webp", "title": "Bez & Branda Baskı", "href": "/urunlerimiz/bez-branda-baski/", "category": "Bez Baskı" },
-    { "img": "/images/urunler/emlak-branda-1.webp", "title": "Emlak İlan Branda", "href": "/urunlerimiz/emlak-ilan-branda/", "category": "Bez Baskı" },
+    { "img": "/images/urunler/bez-kampanya-1.webp", "title": "Bez Kampanya Afişi", "href": "/urunlerimiz/bez-kampanya-afisi/", "category": "Branda & Bez Baskı" },
+    { "img": "/images/urunler/branda-1.webp", "title": "Bez & Branda Baskı", "href": "/urunlerimiz/bez-branda-baski/", "category": "Branda & Bez Baskı" },
+    { "img": "/images/urunler/emlak-branda-1.webp", "title": "Emlak İlan Branda", "href": "/urunlerimiz/emlak-ilan-branda/", "category": "Branda & Bez Baskı" },
     { "img": "/images/urunler/afis-branda-2.webp", "title": "Afiş Branda", "href": "/urunlerimiz/afis-branda/", "category": "Afiş Baskı" }
   ]
 }

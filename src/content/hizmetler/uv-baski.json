@@ -8,16 +8,33 @@
   "order": 2,
   "listIcon": "🖨️",
   "listDesc": "4x2 m SwissQprint UV flatbed ile cam, metal, ahşap, pleksi ve kompozit yüzeylere doğrudan yüksek çözünürlüklü baskı. Kesim ve montaj dâhil.",
-  "listFeatures": ["Cam Baskı", "Metal Baskı", "Ahşap Baskı", "Pleksi Baskı"],
+  "listFeatures": [
+    "Cam Baskı",
+    "Metal Baskı",
+    "Ahşap Baskı",
+    "Pleksi Baskı"
+  ],
   "listImage": "/images/uv-baski.webp",
   "facility": {
     "title": "UV Baskıyı Kendi Tesisimizde Yapıyoruz",
     "description": "UV baskıyı dışarıya fason vermiyoruz. Pendik'teki üretim tesisimizde 4x2 m UV flatbed makinemiz, lazer ve PVC kesim hattımız ve laminasyon makinemizle baskıdan kesime kadar her adım kendi ekibimizin elinden çıkıyor. Bu sayede renk, termin ve fiyatı biz kontrol ediyoruz; acil işlerde aynı gün üretime girebiliyoruz.",
     "stats": [
-      { "value": "4x2 m", "label": "UV Flatbed Baskı Alanı" },
-      { "value": "10 cm", "label": "Malzeme Kalınlığına Kadar" },
-      { "value": "CMYK+W", "label": "Beyaz Altbaskı ve Vernik" },
-      { "value": "1 Adet", "label": "Minimum Sipariş" }
+      {
+        "value": "4x2 m",
+        "label": "UV Flatbed Baskı Alanı"
+      },
+      {
+        "value": "10 cm",
+        "label": "Malzeme Kalınlığına Kadar"
+      },
+      {
+        "value": "CMYK+W",
+        "label": "Beyaz Altbaskı ve Vernik"
+      },
+      {
+        "value": "1 Adet",
+        "label": "Minimum Sipariş"
+      }
     ],
     "machines": [
       "1 adet 4x2 m SwissQprint UV Flatbed Baskı Makinesi",
@@ -32,62 +49,247 @@
     ]
   },
   "features": [
-    { "icon": "🎨", "title": "SwissQprint UV Teknolojisi", "desc": "İsviçre malı yüksek hassasiyetli UV flatbed. 1440 dpi'a kadar çözünürlükte fotoğraf kalitesinde baskı." },
-    { "icon": "🪟", "title": "Çok Yüzeyli Baskı", "desc": "Cam, ayna, alüminyum, kompozit, MDF, masif ahşap, pleksi, foreks, PVC, laminat ve deri üzerine doğrudan baskı." },
-    { "icon": "✨", "title": "Solmayan & Dayanıklı Renkler", "desc": "UV ışını altında sertleşen mürekkep. Dış mekânda uzun ömür, çizilmeye ve kimyasallara direnç." },
-    { "icon": "⚪", "title": "Beyaz Altbaskı & Vernik", "desc": "Şeffaf ve koyu yüzeylerde beyaz altbaskı, üstüne kabartma vernik ve spot lak efekti." },
-    { "icon": "📐", "title": "Kesim & Montaj Dâhil", "desc": "Baskı sonrası lazer / CNC şekilli kesim, delik, köşe yuvarlama ve gerekirse yerinde montaj." },
-    { "icon": "🎯", "title": "Tek Adetten Seri Üretime", "desc": "Numune ve prototipten bin adetlik promosyon ve iş güvenliği levhası serilerine kadar aynı kalite." }
+    {
+      "icon": "🎨",
+      "title": "SwissQprint UV Teknolojisi",
+      "desc": "İsviçre malı yüksek hassasiyetli UV flatbed. 1440 dpi'a kadar çözünürlükte fotoğraf kalitesinde baskı."
+    },
+    {
+      "icon": "🪟",
+      "title": "Çok Yüzeyli Baskı",
+      "desc": "Cam, ayna, alüminyum, kompozit, MDF, masif ahşap, pleksi, foreks, PVC, laminat ve deri üzerine doğrudan baskı."
+    },
+    {
+      "icon": "✨",
+      "title": "Solmayan & Dayanıklı Renkler",
+      "desc": "UV ışını altında sertleşen mürekkep. Dış mekânda uzun ömür, çizilmeye ve kimyasallara direnç."
+    },
+    {
+      "icon": "⚪",
+      "title": "Beyaz Altbaskı & Vernik",
+      "desc": "Şeffaf ve koyu yüzeylerde beyaz altbaskı, üstüne kabartma vernik ve spot lak efekti."
+    },
+    {
+      "icon": "📐",
+      "title": "Kesim & Montaj Dâhil",
+      "desc": "Baskı sonrası lazer / CNC şekilli kesim, delik, köşe yuvarlama ve gerekirse yerinde montaj."
+    },
+    {
+      "icon": "🎯",
+      "title": "Tek Adetten Seri Üretime",
+      "desc": "Numune ve prototipten bin adetlik promosyon ve iş güvenliği levhası serilerine kadar aynı kalite."
+    }
   ],
   "products": [
-    { "title": "UV Baskı", "desc": "Ahşap, metal, cam, pleksi ve kompozit gibi sert yüzeylere doğrudan UV baskı.", "image": "/images/urunler/uv-baski-1.webp", "href": "/urunlerimiz/uv-baski/" },
-    { "title": "İş Güvenliği Levhaları", "desc": "Dekota ve kompozit üzerine UV baskı uyarı, tehlike ve yönlendirme levhaları.", "image": "/images/projeler/uv-baski-05.webp", "href": "/urunlerimiz/is-guvenligi-levhalari/" },
-    { "title": "Fotoblok Baskı", "desc": "Fotoğraf kalitesinde dijital baskı. Mat veya parlak yüzey seçenekleri.", "image": "/images/urunler/fotoblok-1.webp", "href": "/urunlerimiz/fotoblok/" },
-    { "title": "Ofis Tabelası", "desc": "Kapı ve resepsiyon tabelaları. Pleksi, alüminyum ve ahşap üzerine UV baskı.", "image": "/images/urunler/ofis-tabela-1.webp", "href": "/urunlerimiz/ofis-tabelasi/" },
-    { "title": "Standart Kesim Folyo Etiket", "desc": "Standart şekillerde kesim folyo etiket baskı.", "image": "/images/urunler/standart-etiket-1.webp", "href": "/urunlerimiz/standart-kesim-folyo-etiket/" },
-    { "title": "Özel Kesim Folyo Etiket", "desc": "CNC ve plotter ile istenilen şekilde özel kesim folyo etiket.", "image": "/images/urunler/ozel-etiket-1.webp", "href": "/urunlerimiz/ozel-kesim-folyo-etiket/" }
+    {
+      "title": "UV Baskı",
+      "desc": "Ahşap, metal, cam, pleksi ve kompozit gibi sert yüzeylere doğrudan UV baskı.",
+      "image": "/images/urunler/uv-baski-1.webp",
+      "href": "/urunlerimiz/uv-baski/"
+    },
+    {
+      "title": "İş Güvenliği Levhaları",
+      "desc": "Dekota ve kompozit üzerine UV baskı uyarı, tehlike ve yönlendirme levhaları.",
+      "image": "/images/projeler/uv-baski-05.webp",
+      "href": "/urunlerimiz/is-guvenligi-levhalari/"
+    },
+    {
+      "title": "Fotoblok Baskı",
+      "desc": "Fotoğraf kalitesinde dijital baskı. Mat veya parlak yüzey seçenekleri.",
+      "image": "/images/urunler/fotoblok-1.webp",
+      "href": "/urunlerimiz/fotoblok/"
+    },
+    {
+      "title": "Ofis Tabelası",
+      "desc": "Kapı ve resepsiyon tabelaları. Pleksi, alüminyum ve ahşap üzerine UV baskı.",
+      "image": "/images/urunler/ofis-tabela-1.webp",
+      "href": "/urunlerimiz/ofis-tabelasi/"
+    },
+    {
+      "title": "Standart Kesim Folyo Etiket",
+      "desc": "Standart şekillerde kesim folyo etiket baskı.",
+      "image": "/images/urunler/standart-etiket-1.webp",
+      "href": "/urunlerimiz/standart-kesim-folyo-etiket/"
+    },
+    {
+      "title": "Özel Kesim Folyo Etiket",
+      "desc": "CNC ve plotter ile istenilen şekilde özel kesim folyo etiket.",
+      "image": "/images/urunler/ozel-etiket-1.webp",
+      "href": "/urunlerimiz/ozel-kesim-folyo-etiket/"
+    }
   ],
   "gallery": [
-    { "src": "/images/projeler/uv-baski-13.webp", "alt": "Ülker promosyon panolarının UV flatbed üzerinde baskısı, Eymen Reklam Pendik tesisi", "href": "/projelerimiz/ulker-uv-baski/" },
-    { "src": "/images/projeler/uv-baski-10.webp", "alt": "Ülker 'Varsa Mutluluk Var' kampanyası UV baskı panolar", "href": "/projelerimiz/ulker-uv-baski/" },
-    { "src": "/images/projeler/uv-baski-12.webp", "alt": "Ülker kampanya görsellerinin dekota üzerine UV baskısı", "href": "/projelerimiz/ulker-uv-baski/" },
-    { "src": "/images/projeler/uv-baski-05.webp", "alt": "İş güvenliği levhalarının UV flatbed makinede seri baskısı", "href": "/projelerimiz/is-guvenligi-uv/" },
-    { "src": "/images/projeler/uv-baski-06.webp", "alt": "Şantiye uyarı ve iş güvenliği levhaları UV baskı", "href": "/projelerimiz/is-guvenligi-uv/" },
-    { "src": "/images/projeler/uv-baski-07.webp", "alt": "UV LED kürleme ile fotoğraf baskısı, flatbed baskı kafası", "href": "/projelerimiz/flatbed-uv-uretim/" },
-    { "src": "/images/projeler/uv-baski-08.webp", "alt": "UV flatbed baskı sırasında mürekkebin anında kürlenmesi", "href": "/projelerimiz/flatbed-uv-uretim/" },
-    { "src": "/images/projeler/uv-baski-03.webp", "alt": "4x2 m UV flatbed masasında levha baskısı", "href": "/projelerimiz/flatbed-uv-uretim/" },
-    { "src": "/images/projeler/etiler-2plan-4.webp", "alt": "Etiler 2Plan binası cephe görseli, UV baskı ve vinil germe", "href": "/projelerimiz/etiler-2plan/" },
-    { "src": "/images/projeler/etiler-2plan.webp", "alt": "Etiler 2Plan cephe giydirme uygulaması yakın plan", "href": "/projelerimiz/etiler-2plan/" },
-    { "src": "/images/urunler/uv-baski-1.webp", "alt": "Kompozit levha üzerine kurumsal logo UV baskı", "href": "/urunlerimiz/uv-baski/" },
-    { "src": "/images/urunler/uv-baski-2.webp", "alt": "Şekilli kesim pleksi üzerine renkli UV baskı", "href": "/urunlerimiz/uv-baski/" }
+    {
+      "src": "/images/projeler/uv-baski-13.webp",
+      "alt": "Ülker promosyon panolarının UV flatbed üzerinde baskısı, Eymen Reklam Pendik tesisi",
+      "href": "/projelerimiz/ulker-uv-baski/"
+    },
+    {
+      "src": "/images/projeler/uv-baski-10.webp",
+      "alt": "Ülker 'Varsa Mutluluk Var' kampanyası UV baskı panolar",
+      "href": "/projelerimiz/ulker-uv-baski/"
+    },
+    {
+      "src": "/images/projeler/uv-baski-12.webp",
+      "alt": "Ülker kampanya görsellerinin dekota üzerine UV baskısı",
+      "href": "/projelerimiz/ulker-uv-baski/"
+    },
+    {
+      "src": "/images/projeler/uv-baski-05.webp",
+      "alt": "İş güvenliği levhalarının UV flatbed makinede seri baskısı",
+      "href": "/projelerimiz/is-guvenligi-uv/"
+    },
+    {
+      "src": "/images/projeler/uv-baski-06.webp",
+      "alt": "Şantiye uyarı ve iş güvenliği levhaları UV baskı",
+      "href": "/projelerimiz/is-guvenligi-uv/"
+    },
+    {
+      "src": "/images/projeler/uv-baski-07.webp",
+      "alt": "UV LED kürleme ile fotoğraf baskısı, flatbed baskı kafası",
+      "href": "/projelerimiz/flatbed-uv-uretim/"
+    },
+    {
+      "src": "/images/projeler/uv-baski-08.webp",
+      "alt": "UV flatbed baskı sırasında mürekkebin anında kürlenmesi",
+      "href": "/projelerimiz/flatbed-uv-uretim/"
+    },
+    {
+      "src": "/images/projeler/uv-baski-03.webp",
+      "alt": "4x2 m UV flatbed masasında levha baskısı",
+      "href": "/projelerimiz/flatbed-uv-uretim/"
+    },
+    {
+      "src": "/images/projeler/etiler-2plan-4.webp",
+      "alt": "Etiler 2Plan binası cephe görseli, UV baskı ve vinil germe",
+      "href": "/projelerimiz/etiler-2plan/"
+    },
+    {
+      "src": "/images/projeler/etiler-2plan.webp",
+      "alt": "Etiler 2Plan cephe giydirme uygulaması yakın plan",
+      "href": "/projelerimiz/etiler-2plan/"
+    },
+    {
+      "src": "/images/urunler/uv-baski-1.webp",
+      "alt": "Kompozit levha üzerine kurumsal logo UV baskı",
+      "href": "/urunlerimiz/uv-baski/"
+    },
+    {
+      "src": "/images/urunler/uv-baski-2.webp",
+      "alt": "Şekilli kesim pleksi üzerine renkli UV baskı",
+      "href": "/urunlerimiz/uv-baski/"
+    }
   ],
   "fiyatFaktorleri": [
-    { "baslik": "Malzeme ve yüzey", "aciklama": "Cam, pleksi, MDF, kompozit, foreks, metal... Malzemeyi biz temin ediyorsak levha bedeli eklenir; kendi malzemenizi getirirseniz yalnızca baskı ücreti ödersiniz." },
-    { "baslik": "Baskı alanı ve adet", "aciklama": "Fiyat m² üzerinden hesaplanır. Aynı görselden adet arttıkça makine hazırlığı bölündüğü için birim fiyat düşer." },
-    { "baslik": "Beyaz altbaskı ve vernik", "aciklama": "Şeffaf cam ve koyu yüzeylerde beyaz altbaskı, kabartma vernik veya spot lak ek katman demektir; her katman baskı süresini etkiler." },
-    { "baslik": "Kesim ve sonlandırma", "aciklama": "Düz kesim standarttır. Lazer veya CNC ile şekilli kesim, delik, köşe yuvarlama ve montaj aparatı ayrıca hesaplanır." },
-    { "baslik": "Dosya hazırlığı", "aciklama": "Baskıya hazır vektör dosya gönderirseniz tasarım bedeli yoktur. Tasarım veya rötuş gerekiyorsa süresi kadar eklenir." },
-    { "baslik": "Teslim süresi", "aciklama": "Standart terminde en uygun fiyatı veririz. Aynı gün ve gece vardiyası gerektiren acil işler ayrıca planlanır." }
+    {
+      "baslik": "Malzeme ve yüzey",
+      "aciklama": "Cam, pleksi, MDF, kompozit, foreks, metal... Malzemeyi biz temin ediyorsak levha bedeli eklenir; kendi malzemenizi getirirseniz yalnızca baskı ücreti ödersiniz."
+    },
+    {
+      "baslik": "Baskı alanı ve adet",
+      "aciklama": "Fiyat m² üzerinden hesaplanır. Aynı görselden adet arttıkça makine hazırlığı bölündüğü için birim fiyat düşer."
+    },
+    {
+      "baslik": "Beyaz altbaskı ve vernik",
+      "aciklama": "Şeffaf cam ve koyu yüzeylerde beyaz altbaskı, kabartma vernik veya spot lak ek katman demektir; her katman baskı süresini etkiler."
+    },
+    {
+      "baslik": "Kesim ve sonlandırma",
+      "aciklama": "Düz kesim standarttır. Lazer veya CNC ile şekilli kesim, delik, köşe yuvarlama ve montaj aparatı ayrıca hesaplanır."
+    },
+    {
+      "baslik": "Dosya hazırlığı",
+      "aciklama": "Baskıya hazır vektör dosya gönderirseniz tasarım bedeli yoktur. Tasarım veya rötuş gerekiyorsa süresi kadar eklenir."
+    },
+    {
+      "baslik": "Teslim süresi",
+      "aciklama": "Standart terminde en uygun fiyatı veririz. Aynı gün ve gece vardiyası gerektiren acil işler ayrıca planlanır."
+    }
   ],
   "bolge": {
     "baslik": "Pendik'ten Anadolu Yakası'nın Tamamına",
     "metin": "Üretim tesisimiz Pendik'te. Anadolu Yakası'ndaki işlerde keşfe kendimiz geliyor, baskıyı tesisimizde yapıp montajı kendi ekibimizle tamamlıyoruz. Avrupa Yakası ve Türkiye geneline paketli kargo veya araçla teslimat yapıyoruz.",
-    "ilceler": ["Pendik", "Tuzla", "Kartal", "Maltepe", "Kadıköy", "Ataşehir", "Ümraniye", "Sancaktepe", "Çekmeköy", "Sultanbeyli", "Üsküdar", "Gebze"]
+    "ilceler": [
+      "Pendik",
+      "Tuzla",
+      "Kartal",
+      "Maltepe",
+      "Kadıköy",
+      "Ataşehir",
+      "Ümraniye",
+      "Sancaktepe",
+      "Çekmeköy",
+      "Sultanbeyli",
+      "Üsküdar",
+      "Gebze"
+    ],
+    "link": {
+      "href": "/anadolu-yakasi-uv-baski/",
+      "label": "Anadolu Yakası UV baskı sayfası"
+    }
   },
   "process": [
-    { "step": "01", "title": "Tasarım & Hazırlık", "desc": "Baskıya hazır dosya kontrol edilir. Malzeme, ölçü ve beyaz altbaskı ihtiyacı netleştirilir." },
-    { "step": "02", "title": "Makine Ayarı & Test", "desc": "Malzeme türüne göre UV flatbed ayarlanır. Test baskı ile renk ve yapışma kontrol edilir." },
-    { "step": "03", "title": "UV Baskı", "desc": "SwissQprint flatbed üzerinde baskı yapılır, UV LED ile mürekkep anında kürlenir." },
-    { "step": "04", "title": "Kesim, Kontrol & Teslim", "desc": "Lazer / CNC kesim, delik ve köşe işlemleri yapılır. Kalite kontrolden sonra paketlenir veya yerinde monte edilir." }
+    {
+      "step": "01",
+      "title": "Tasarım & Hazırlık",
+      "desc": "Baskıya hazır dosya kontrol edilir. Malzeme, ölçü ve beyaz altbaskı ihtiyacı netleştirilir."
+    },
+    {
+      "step": "02",
+      "title": "Makine Ayarı & Test",
+      "desc": "Malzeme türüne göre UV flatbed ayarlanır. Test baskı ile renk ve yapışma kontrol edilir."
+    },
+    {
+      "step": "03",
+      "title": "UV Baskı",
+      "desc": "SwissQprint flatbed üzerinde baskı yapılır, UV LED ile mürekkep anında kürlenir."
+    },
+    {
+      "step": "04",
+      "title": "Kesim, Kontrol & Teslim",
+      "desc": "Lazer / CNC kesim, delik ve köşe işlemleri yapılır. Kalite kontrolden sonra paketlenir veya yerinde monte edilir."
+    }
   ],
-  "sectors": ["Perakende & AVM", "Sağlık & Hastane", "Otomotiv", "İnşaat & Gayrimenkul", "Turizm & Otelcilik", "Tekstil & Moda", "Elektronik & Teknoloji", "Spor & Rekreasyon", "Yayın & Medya", "Kamu & Belediye"],
+  "sectors": [
+    "Perakende & AVM",
+    "Sağlık & Hastane",
+    "Otomotiv",
+    "İnşaat & Gayrimenkul",
+    "Turizm & Otelcilik",
+    "Tekstil & Moda",
+    "Elektronik & Teknoloji",
+    "Spor & Rekreasyon",
+    "Yayın & Medya",
+    "Kamu & Belediye"
+  ],
   "faq": [
-    { "q": "UV baskı fiyatı neye göre belirlenir?", "a": "Malzeme türü, baskı alanı (m²), adet, beyaz altbaskı veya vernik katmanı, şekilli kesim ihtiyacı ve teslim süresi fiyatı belirler. Ölçü, malzeme ve adedi WhatsApp'tan gönderirseniz aynı gün net fiyat veriyoruz." },
-    { "q": "UV baskı dayanıklılığı ne kadar sürer?", "a": "UV ışınlarıyla sertleşen mürekkepler dış mekân koşullarında yıllarca solmadan kalır; iç mekânda ömür çok daha uzundur. Darbe ve kırılma dayanımı ise baskının değil malzemenin özelliğidir." },
-    { "q": "Hangi malzemelere baskı yapabilirsiniz?", "a": "Cam, ayna, alüminyum, kompozit, çelik, MDF, masif ahşap, pleksi, polikarbonat, foreks, PVC, laminat ve deri gibi 10 cm kalınlığa kadar her düz yüzeye baskı yapıyoruz." },
-    { "q": "Küçük partide veya tek adet üretim yapıyor musunuz?", "a": "Evet. Tek parça numuneden başlıyoruz. Kurumsal hediye ve promosyon işlerinde onlarca ile binlerce adet arası seri üretim de yapıyoruz." },
-    { "q": "Anadolu Yakası'nda montaj yapıyor musunuz?", "a": "Evet. Pendik, Tuzla, Kartal, Maltepe, Kadıköy, Ataşehir, Ümraniye ve çevre ilçelerde keşif ve montajı kendi ekibimiz yapar. Diğer bölgelere paketli kargo ile gönderiyoruz." },
-    { "q": "Renk uyumu veya özel renk istiyorsam?", "a": "Pantone kodunuz veya fiziksel örneğinizle renk ayarı yaparız. Kritik işlerde üretim öncesi test baskı öneriyoruz." },
-    { "q": "Üretim süresi ne kadar?", "a": "Dosya onayından sonra standart işler birkaç iş günü içinde teslim edilir. Acil işlerde aynı gün veya ertesi gün üretim planlayabiliyoruz." }
+    {
+      "q": "UV baskı fiyatı neye göre belirlenir?",
+      "a": "Malzeme türü, baskı alanı (m²), adet, beyaz altbaskı veya vernik katmanı, şekilli kesim ihtiyacı ve teslim süresi fiyatı belirler. Ölçü, malzeme ve adedi WhatsApp'tan gönderirseniz aynı gün net fiyat veriyoruz."
+    },
+    {
+      "q": "UV baskı dayanıklılığı ne kadar sürer?",
+      "a": "UV ışınlarıyla sertleşen mürekkepler dış mekân koşullarında yıllarca solmadan kalır; iç mekânda ömür çok daha uzundur. Darbe ve kırılma dayanımı ise baskının değil malzemenin özelliğidir."
+    },
+    {
+      "q": "Hangi malzemelere baskı yapabilirsiniz?",
+      "a": "Cam, ayna, alüminyum, kompozit, çelik, MDF, masif ahşap, pleksi, polikarbonat, foreks, PVC, laminat ve deri gibi 10 cm kalınlığa kadar her düz yüzeye baskı yapıyoruz."
+    },
+    {
+      "q": "Küçük partide veya tek adet üretim yapıyor musunuz?",
+      "a": "Evet. Tek parça numuneden başlıyoruz. Kurumsal hediye ve promosyon işlerinde onlarca ile binlerce adet arası seri üretim de yapıyoruz."
+    },
+    {
+      "q": "Anadolu Yakası'nda montaj yapıyor musunuz?",
+      "a": "Evet. Pendik, Tuzla, Kartal, Maltepe, Kadıköy, Ataşehir, Ümraniye ve çevre ilçelerde keşif ve montajı kendi ekibimiz yapar. Diğer bölgelere paketli kargo ile gönderiyoruz."
+    },
+    {
+      "q": "Renk uyumu veya özel renk istiyorsam?",
+      "a": "Pantone kodunuz veya fiziksel örneğinizle renk ayarı yaparız. Kritik işlerde üretim öncesi test baskı öneriyoruz."
+    },
+    {
+      "q": "Üretim süresi ne kadar?",
+      "a": "Dosya onayından sonra standart işler birkaç iş günü içinde teslim edilir. Acil işlerde aynı gün veya ertesi gün üretim planlayabiliyoruz."
+    }
   ]
 }

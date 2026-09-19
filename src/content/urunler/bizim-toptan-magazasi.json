@@ -59,7 +59,7 @@
   "relatedProducts": [
     { "img": "/images/urunler/hakmar-avm-1.webp", "title": "Hakmar AVM", "href": "/urunlerimiz/hakmar-avm/", "category": "Mağaza Reklam" },
     { "img": "/images/urunler/eve-magazasi-1.webp", "title": "Eve Mağazası", "href": "/urunlerimiz/eve-magazasi/", "category": "Mağaza Reklam" },
-    { "img": "/images/urunler/market-branda-1.webp", "title": "Market Branda Baskı", "href": "/urunlerimiz/market-branda/", "category": "Bez Baskı" },
+    { "img": "/images/urunler/market-branda-1.webp", "title": "Market Branda Baskı", "href": "/urunlerimiz/market-branda/", "category": "Branda & Bez Baskı" },
     { "img": "/images/urunler/isikli-blok-1.webp", "title": "Işıklı Blok Tabela", "href": "/urunlerimiz/isikli-blok-tabela/", "category": "Tabela" }
   ]
 }

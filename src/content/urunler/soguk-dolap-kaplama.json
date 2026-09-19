@@ -68,6 +68,6 @@
     { "img": "/images/urunler/cam-folyo-2.webp", "title": "Cam Folyo Giydirme", "href": "/urunlerimiz/cam-folyo-giydirme/", "category": "Folyo & Giydirme" },
     { "img": "/images/urunler/palet-etegi-1.webp", "title": "Palet Eteği Baskı", "href": "/urunlerimiz/palet-etegi/", "category": "Mağaza Reklam" },
     { "img": "/images/urunler/ozel-etiket-1.webp", "title": "Özel Kesim Folyo Etiket", "href": "/urunlerimiz/ozel-kesim-folyo-etiket/", "category": "Folyo & Giydirme" },
-    { "img": "/images/urunler/market-branda-1.webp", "title": "Market Branda Baskı", "href": "/urunlerimiz/market-branda/", "category": "Bez Baskı" }
+    { "img": "/images/urunler/market-branda-1.webp", "title": "Market Branda Baskı", "href": "/urunlerimiz/market-branda/", "category": "Branda & Bez Baskı" }
   ]
 }

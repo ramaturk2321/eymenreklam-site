@@ -1,5 +1,5 @@
 {
-  "title": "UV Baskı",
+  "title": "UV Baskı Ürünleri: Cam, Ahşap, Metal ve Pleksi",
   "seoTitle": "UV Baskı Ürünleri: Cam, Ahşap ve Pleksi",
   "description": "Ahşap, metal, cam ve akrilik yüzeylere UV baskı. Solmayan, çizilmeye dayanıklı, canlı renkler. Eymen Reklam — 25 yıllık tecrübe, 2 yıl garanti.",
   "category": "UV Baskı",
@@ -69,7 +69,7 @@
   "relatedProducts": [
     { "img": "/images/urunler/kutu-harf-1.webp", "title": "Kutu Harf Tabela", "href": "/urunlerimiz/kutu-harf-tabela/", "category": "Tabela" },
     { "img": "/images/urunler/cephe-giydirme-3.webp", "title": "Cephe Giydirme", "href": "/urunlerimiz/cephe-giydirme/", "category": "Folyo & Giydirme" },
-    { "img": "/images/urunler/branda-1.webp", "title": "Bez & Branda Baskı", "href": "/urunlerimiz/bez-branda-baski/", "category": "Bez & Afiş Baskı" },
+    { "img": "/images/urunler/branda-1.webp", "title": "Bez & Branda Baskı", "href": "/urunlerimiz/bez-branda-baski/", "category": "Branda & Bez Baskı" },
     { "img": "/images/urunler/rollup-1.webp", "title": "Roll Up Banner", "href": "/urunlerimiz/rollup-banner/", "category": "Display & Stand" }
   ]
 }
