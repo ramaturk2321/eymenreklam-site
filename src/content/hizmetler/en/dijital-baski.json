@@ -1,0 +1,154 @@
+{
+  "title": "Large-Format Digital Printing",
+  "seoTitle": "Large-Format Digital Printing in Istanbul",
+  "description": "Banner, mesh, poster, foam board and catalogue printing on 320 cm wide-format presses at our Istanbul facility. 1,500 m² daily capacity, same-day production available.",
+  "heroDesc": "At our production facility in Pendik, Istanbul, five printing machines and five finishing machines handle banner, fabric, UV, foam board, business card and catalogue printing end to end — including laser cutting, lamination and binding — in our own workshop. 320 cm wide-format width, 1,500 m² of daily capacity, and a same-day delivery option.",
+  "heroImage": "/images/uretim/dijital-baski-uretim-1.webp",
+  "order": 4,
+  "listIcon": "📄",
+  "listDesc": "Foam board, business cards, catalogues, posters and large-format prints. High resolution with fast production capacity.",
+  "listFeatures": [
+    "Foam Board",
+    "Business Cards",
+    "Catalogues",
+    "Paper Posters"
+  ],
+  "listImage": "/images/dijital-baski.webp",
+  "facility": {
+    "title": "Produced in Our Own Facility",
+    "description": "Our facility in Pendik, Istanbul runs five printing machines and five finishing machines — laser cutting, lamination, PVC cutting and cellophane — so banner, fabric, UV, poster and mesh work is produced end to end in our own workshop with no intermediary. 320 cm wide format, 1,500 m² of daily capacity, and a same-day delivery option.",
+    "stats": [
+      { "value": "1,500 m²", "label": "Daily Production Capacity" },
+      { "value": "320 cm", "label": "Maximum Print Width" },
+      { "value": "10", "label": "Production Machines" },
+      { "value": "Same day", "label": "Production and Delivery" }
+    ],
+    "machines": [
+      "2 × 320 cm banner printing presses",
+      "1 × 320 cm fabric printing press",
+      "1 × 160 cm Mimaki roll-to-roll printer",
+      "1 × 4x2 m UV flatbed press",
+      "1 × laser cutting machine",
+      "1 × 180 cm laminating machine",
+      "2 × PVC cutting plotters",
+      "1 × cellophane laminator"
+    ],
+    "images": [
+      "/images/uretim/dijital-baski-uretim-1.webp",
+      "/images/uretim/dijital-baski-uretim-2.webp"
+    ]
+  },
+  "features": [
+    {
+      "icon": "🏭",
+      "title": "Produced in Our Own Facility",
+      "desc": "Five professional printing machines in our Pendik workshop. No middleman, no subcontractor — quality control stays with us."
+    },
+    {
+      "icon": "📏",
+      "title": "320 cm Wide Format",
+      "desc": "Single-piece width of 320 cm on banner, fabric and mesh printing, with no limit on length."
+    },
+    {
+      "icon": "📸",
+      "title": "High-Resolution Foam Board",
+      "desc": "Photographic-quality digital printing at up to 300 dpi, with a matte or gloss surface."
+    },
+    {
+      "icon": "🎴",
+      "title": "Corporate Print Materials",
+      "desc": "Business cards, letterheads, envelopes, invoice forms and other corporate stationery, print-ready."
+    },
+    {
+      "icon": "⚡",
+      "title": "Same-Day Production",
+      "desc": "1,500 m² of daily capacity, with four-to-six-hour turnaround on urgent projects."
+    },
+    {
+      "icon": "💰",
+      "title": "Economical for Small Runs",
+      "desc": "Unlike offset, there is no plate set-up cost, so anything from one piece to a thousand stays economical."
+    }
+  ],
+  "products": [
+    {
+      "title": "Large-Format Banner",
+      "desc": "320 cm wide-format vinyl banner printing with UV protection, for façades, construction sites and events.",
+      "image": "/images/urunler/afis-branda-2.webp"
+    },
+    {
+      "title": "Mesh Printing",
+      "desc": "Wind-permeable perforated banner, the safe choice for tall façades and scaffolding.",
+      "image": "/images/urunler/mesh-5.webp"
+    },
+    {
+      "title": "Foam Board Printing",
+      "desc": "Photographic-quality prints on matte, gloss or premium stock.",
+      "image": "/images/urunler/fotoblok-1.webp"
+    }
+  ],
+  "process": [
+    {
+      "step": "01",
+      "title": "Artwork",
+      "desc": "You send the design as a PDF. Colours should be CMYK and resolution at least 300 dpi."
+    },
+    {
+      "step": "02",
+      "title": "Prepress Check",
+      "desc": "We check the file for colour and dimensional accuracy and tell you if anything needs correcting."
+    },
+    {
+      "step": "03",
+      "title": "Digital Printing",
+      "desc": "Your material is loaded onto the press, colour is set on the machine and the job is printed."
+    },
+    {
+      "step": "04",
+      "title": "Finishing and Delivery",
+      "desc": "Cutting, folding and binding as required, then a final check, packing and delivery."
+    }
+  ],
+  "sectors": [
+    "Retail and Shopping Centres",
+    "Healthcare and Hospitals",
+    "Education and Public Sector",
+    "Industry and Manufacturing",
+    "Banking and Finance",
+    "Law Firms",
+    "Tourism and Hospitality",
+    "Marketing and Advertising",
+    "Media and Publishing",
+    "Events and Organisations"
+  ],
+  "faq": [
+    {
+      "q": "What is the maximum print size?",
+      "a": "We print 320 cm wide in a single piece, with no limit on length. Larger sizes are produced by joining panels."
+    },
+    {
+      "q": "What machines do you use?",
+      "a": "Two 320 cm banner presses, one 320 cm fabric press, one 160 cm Mimaki and one 4x2 m UV flatbed. For finishing we have laser cutting, a 180 cm laminator, two PVC cutting plotters and a cellophane laminator — ten machines in total, with 1,500 m² of daily capacity."
+    },
+    {
+      "q": "What is the difference between digital and offset printing?",
+      "a": "Digital printing has no plate set-up cost, which makes it economical and fast for small runs. Offset becomes more economical at higher volumes (5,000+) and prints on a wider range of stocks."
+    },
+    {
+      "q": "How accurate is the colour?",
+      "a": "We match Pantone references and manage the CMYK colour profile. For colour-critical work we recommend a test print, which can be produced for a small additional charge."
+    },
+    {
+      "q": "Which paper stocks do you offer?",
+      "a": "Coated stock from 90 to 350 gsm, matte, gloss, kraft and recycled papers. If you need a special stock, we can source it."
+    },
+    {
+      "q": "Do you offer design services?",
+      "a": "Yes. Our in-house graphic design team can advise on or produce the artwork; the fee depends on the complexity of the design."
+    },
+    {
+      "q": "Is same-day delivery really possible?",
+      "a": "Yes, for straightforward orders approved before 11:00 and flagged as urgent."
+    }
+  ]
+}

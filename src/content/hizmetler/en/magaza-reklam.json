@@ -1,0 +1,151 @@
+{
+  "title": "Retail Branding",
+  "seoTitle": "Retail Store Design and Branding in Istanbul",
+  "description": "Store design and installation: concept, window displays, signage, lightboxes, shelf headers and façade wrapping from one supplier. Turnkey retail branding in Istanbul.",
+  "heroDesc": "We handle store design and installation from a single point: concept and window design, façade and interior signage, lightboxes and shelf headers, window film, floor and wall graphics, and promotional posters. From Hakmar Express with more than 800 stores to the boutique pet store PAWCO, we take retail brands from design through to installation — so the corporate identity actually lives in the store and works for sales.",
+  "order": 9,
+  "listIcon": "🏢",
+  "listDesc": "Store design and installation: concept, window displays, signage, lightboxes, shelf labelling and interior branding. Turnkey retail solutions.",
+  "listFeatures": [
+    "Concept Design",
+    "Window Displays",
+    "Signage & Lightboxes",
+    "Shelf Labelling",
+    "Interior Branding"
+  ],
+  "listImage": "/images/urunler/hakmar-avm-1.webp",
+  "features": [
+    {
+      "icon": "🎨",
+      "title": "Concept and Store Design",
+      "desc": "A store concept built around your brand: colour, typography, materials and visual hierarchy set out in one consistent language."
+    },
+    {
+      "icon": "🪟",
+      "title": "Window Display Design",
+      "desc": "Window schemes that draw attention and sell, designed so seasonal and campaign changes can be made quickly."
+    },
+    {
+      "icon": "💡",
+      "title": "Signage and Lightboxes",
+      "desc": "Façade channel letters, mall corridor lightbox panels, illuminated pictograms and wayfinding signs."
+    },
+    {
+      "icon": "📍",
+      "title": "Interior Applications",
+      "desc": "Wall graphics, floor vinyl, shelf headers, ceiling signage and window film."
+    },
+    {
+      "icon": "💰",
+      "title": "POS and Labelling",
+      "desc": "Price labels, pallet skirts, rotating cards and promotional posters — the graphics that work at the point of sale."
+    },
+    {
+      "icon": "✨",
+      "title": "Seasonal and Themed Décor",
+      "desc": "New year, holiday, back-to-school and seasonal schemes, with themed interior changeovers."
+    }
+  ],
+  "products": [
+    {
+      "title": "Pet Store, Water Garden Mall",
+      "desc": "Channel letters, illuminated pictograms, ceiling signage, shelf headers and in-store graphics — a complete store fit-out.",
+      "image": "/images/projeler/pawco-water-garden-avm-1.webp"
+    },
+    {
+      "title": "Pet Store, Kozzy Mall",
+      "desc": "Illuminated acrylic channel letters, window film and PVC information panels.",
+      "image": "/images/projeler/pawco-kozzy-avm-1.webp"
+    },
+    {
+      "title": "Mall Corridor Lightbox Wall",
+      "desc": "A run of large-format LED lightbox panels along a shopping centre corridor.",
+      "image": "/images/projeler/pawco-kozzy-avm-2.webp"
+    },
+    {
+      "title": "Supermarket Chain Branding",
+      "desc": "Retail branding for a supermarket chain: façade, interior and campaign graphics.",
+      "image": "/images/urunler/hakmar-avm-1.webp"
+    },
+    {
+      "title": "Cosmetics Stores",
+      "desc": "Channel letters, window film and façade wrapping for a cosmetics retail chain.",
+      "image": "/images/projeler/eve-magazasi-prj-1.webp"
+    },
+    {
+      "title": "Wholesale Stores",
+      "desc": "Roll-up banners and in-store display units.",
+      "image": "/images/urunler/bizim-toptan-1.webp"
+    },
+    {
+      "title": "Cooler and Freezer Wrapping",
+      "desc": "Brand and campaign vinyl applied to in-store refrigeration units.",
+      "image": "/images/urunler/soguk-dolap-kaplama-1.webp"
+    },
+    {
+      "title": "Pallet Skirts",
+      "desc": "Campaign printing for shelf bases and pallet surrounds.",
+      "image": "/images/urunler/palet-etegi-1.webp"
+    }
+  ],
+  "process": [
+    {
+      "step": "01",
+      "title": "Survey and Analysis",
+      "desc": "We look at the store's location, target customer, product range and brand identity, and take measurements and photographs."
+    },
+    {
+      "step": "02",
+      "title": "Design and Approval",
+      "desc": "The concept is presented with 3D visuals and mock-ups. Once approved, we prepare the production files."
+    },
+    {
+      "step": "03",
+      "title": "Manufacturing",
+      "desc": "Signage, lightboxes, vinyl, graphics and labels are all produced in our own facility."
+    },
+    {
+      "step": "04",
+      "title": "Installation and Handover",
+      "desc": "Our own team installs on site and hands the store over ready for opening."
+    }
+  ],
+  "sectors": [
+    "Retail and Shopping Centres",
+    "Textiles and Fashion",
+    "Electronics and Technology",
+    "Food and Coffee Shops",
+    "Sports and Recreation",
+    "Cosmetics and Beauty",
+    "Footwear and Accessories",
+    "Furniture and Homeware",
+    "Tourism and Hospitality",
+    "Healthcare and Pharmacies"
+  ],
+  "faq": [
+    {
+      "q": "What does retail branding cover?",
+      "a": "Concept and window design, façade channel letters, lightboxes and illuminated pictograms, window film, wall and floor graphics, shelf headers, price labels and promotional posters. Design, production and installation all come from one company."
+    },
+    {
+      "q": "How long does a store fit-out take?",
+      "a": "Around 10 working days from concept approval to completed installation. In shopping centres we also work overnight where mall management requires it."
+    },
+    {
+      "q": "Do you work with small stores too?",
+      "a": "Yes. We scope the work to the budget, from a single window and sign refresh through to a full turnkey fit-out."
+    },
+    {
+      "q": "Can you roll one concept out across a chain?",
+      "a": "Yes. For chains such as Hakmar Express we prepare a branch-level application guide and apply the same identity, materials and dimensions in every store."
+    },
+    {
+      "q": "How often should seasonal décor change?",
+      "a": "Every two to four weeks in fashion and textiles, monthly in food and general retail, and quarterly in electronics."
+    },
+    {
+      "q": "Can you work with a store another agency designed?",
+      "a": "Yes. We can complete the missing elements while keeping the existing concept, or prepare a budgeted plan for a refresh."
+    }
+  ]
+}

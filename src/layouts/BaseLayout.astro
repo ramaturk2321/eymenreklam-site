@@ -4,23 +4,37 @@ import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import WhatsAppButton from '../components/WhatsAppButton.astro';
 import SEO from '../components/SEO.astro';
-import { company } from '../lib/site-data';
+import { company, contact } from '../lib/site-data';
+import { sozluk, DIL_BILGISI } from '../i18n';
+import type { Dil, YolAnahtari } from '../i18n';
 
 interface Props {
   title: string;
   description?: string;
   image?: string;
+  /** Sayfanın dili — EN/AR sayfaları bunu açıkça verir, TR sayfaları vermez. */
+  lang?: Dil;
+  /** hreflang ve dil değiştirici için sayfa anahtarı. Yalnızca TR'de yayınlanan
+   *  sayfalarda (ürün, blog) verilmez; o zaman hreflang basılmaz. */
+  sayfa?: YolAnahtari;
+  /** Hizmet/proje detayında TR slug */
+  slug?: string;
+  tur?: 'hizmet' | 'proje';
 }
 
-const { title, description = `Eymen Reklam — Tabela İmalatı & UV Baskı Pendik İstanbul. ☎ (0216) 379 07 08 — ${company.experience} yıllık üretim tecrübesi.`, image } = Astro.props;
+const { title, description, image, lang = 'tr', sayfa, slug, tur } = Astro.props;
+const s = sozluk(lang);
+const dilBilgi = DIL_BILGISI[lang];
+const aciklama = description ?? `${s.seo.varsayilanAciklama} ☎ ${contact.phone}`;
+const kimlik = sayfa ? { anahtar: sayfa, slug, tur } : undefined;
 ---
 
 <!doctype html>
-<html lang="tr">
+<html lang={dilBilgi.htmlLang} dir={dilBilgi.dir}>
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content={description} />
+    <meta name="description" content={aciklama} />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <link rel="icon" type="image/x-icon" href="/favicon.ico" />
     <link rel="apple-touch-icon" href="/favicon.png" />
@@ -59,17 +73,17 @@ const { title, description = `Eymen Reklam — Tabela İmalatı & UV Baskı Pend
         window.addEventListener('load', function () { setTimeout(yukle, 4000); });
       })();
     </script>
-    <title>{title} | Eymen Reklam</title>
-    <SEO title={title} description={description} image={image} />
+    <title>{title} | {s.seo.siteAdi}</title>
+    <SEO title={title} description={aciklama} image={image} lang={lang} kimlik={kimlik} />
   </head>
   <body class="min-h-screen flex flex-col">
-    <a href="#icerik" class="sr-only focus:not-sr-only focus:fixed focus:top-3 focus:left-3 focus:z-[100] focus:bg-eymen-700 focus:text-white focus:px-4 focus:py-2 focus:rounded-lg focus:font-semibold focus:shadow-lg">İçeriğe atla</a>
-    <Header />
+    <a href="#icerik" class="sr-only focus:not-sr-only focus:fixed focus:top-3 focus:left-3 focus:z-[100] focus:bg-eymen-700 focus:text-white focus:px-4 focus:py-2 focus:rounded-lg focus:font-semibold focus:shadow-lg">{s.nav.icerigeGec}</a>
+    <Header lang={lang} kimlik={kimlik} />
     <main id="icerik" tabindex="-1" class="flex-1 pt-20 lg:pt-[132px] outline-none">
       <slot />
     </main>
-    <Footer />
-    <WhatsAppButton />
+    <Footer lang={lang} />
+    <WhatsAppButton lang={lang} />
     <script>
       import { inject, track } from '@vercel/analytics';
       inject();

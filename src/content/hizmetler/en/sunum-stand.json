@@ -1,0 +1,147 @@
+{
+  "title": "Displays & Stands",
+  "seoTitle": "Exhibition Stands and Display Systems in Istanbul",
+  "description": "Lightboxes, roll-up banners, X-banners and event stands. Portable and permanent display systems produced in Istanbul.",
+  "heroDesc": "We design and build the illuminated signs, roll-up banners, X-banners and custom stand systems used at events, trade fairs and in retail interiors. Aluminium frames, LED lighting and high-quality printed panels make up professional display solutions.",
+  "heroImage": "/images/projeler/pawco-kozzy-avm-4.webp",
+  "order": 7,
+  "listIcon": "📐",
+  "listDesc": "Lightbox panels, roll-up banners, X-banners and exhibition stands. Portable and permanent display solutions.",
+  "listFeatures": [
+    "Lightbox",
+    "Roll-Up",
+    "X-Banner",
+    "Exhibition Stands"
+  ],
+  "listImage": "/images/projeler/pawco-kozzy-avm-2.webp",
+  "features": [
+    {
+      "icon": "💡",
+      "title": "LED Lightboxes",
+      "desc": "Interior lightboxes for stores and receptions. Energy-efficient LED lighting with a changeable panel."
+    },
+    {
+      "icon": "📍",
+      "title": "Roll-Up Banners",
+      "desc": "Portable roll-up systems on a durable aluminium frame. Set up and packed away in minutes."
+    },
+    {
+      "icon": "✕",
+      "title": "X-Banners and L-Banners",
+      "desc": "Quick-assembly banners for trade fairs, events and in-store displays."
+    },
+    {
+      "icon": "🎪",
+      "title": "Event Stand Systems",
+      "desc": "Modular stand systems, with custom designs for trade fairs, conferences and exhibitions."
+    },
+    {
+      "icon": "🖼️",
+      "title": "Printed Panel Design",
+      "desc": "High-quality panel printing with bespoke design and consistent corporate identity."
+    },
+    {
+      "icon": "⚙️",
+      "title": "Technical Support and Set-Up",
+      "desc": "Advice before the project, an assembly guide, and technical support on site."
+    }
+  ],
+  "products": [
+    {
+      "title": "40 m² Trade Fair Stand",
+      "desc": "An island stand with a timber-slatted illuminated channel letter sign, sub-brand display niches, a welcome desk and a hospitality area — turnkey from design to on-site build.",
+      "image": "/images/projeler/tatbak-foodist-stant-1.webp"
+    },
+    {
+      "title": "Mall Corridor Lightbox Wall",
+      "desc": "A run of large-format LED lightbox panels along a shopping centre corridor, carrying campaign visuals on one illuminated surface.",
+      "image": "/images/projeler/pawco-kozzy-avm-3.webp"
+    },
+    {
+      "title": "LED Lightbox",
+      "desc": "Interior illuminated signage for stores, receptions and hotel entrances, with energy-efficient LEDs.",
+      "image": "/images/urunler/lightbox-1.webp"
+    },
+    {
+      "title": "Roll-Up Banner",
+      "desc": "Portable roll-up system on an aluminium frame, for offices, stands and events.",
+      "image": "/images/urunler/rollup-1.webp"
+    },
+    {
+      "title": "Pop-Up Display Stand",
+      "desc": "Portable fabric-printed stand on an aluminium frame — fast to assemble at fairs and events.",
+      "image": "/images/urunler/orumcek-stand-1.webp"
+    },
+    {
+      "title": "Feather Flags",
+      "desc": "Flags that move in the wind and draw the eye, for shop fronts and event areas.",
+      "image": "/images/urunler/yelken-bayrak-1.webp"
+    },
+    {
+      "title": "Snap Frames",
+      "desc": "Spring-loaded aluminium frames for posters and information displays.",
+      "image": "/images/urunler/alu-cerceve-1.webp"
+    },
+    {
+      "title": "Double-Sided Hanging Cards",
+      "desc": "Double-sided in-store promotional pieces, hung from the ceiling or mounted above shelves.",
+      "image": "/images/urunler/donkart-1.webp"
+    }
+  ],
+  "process": [
+    {
+      "step": "01",
+      "title": "Concept and Design",
+      "desc": "We agree the display concept against your budget and requirements, and prepare a 3D design."
+    },
+    {
+      "step": "02",
+      "title": "Materials and Production",
+      "desc": "Aluminium frames, acrylic panels and other components are prepared, and the printing is produced."
+    },
+    {
+      "step": "03",
+      "title": "Assembly and Testing",
+      "desc": "The system is assembled and tested in our workshop, quality checked, and an assembly guide is prepared."
+    },
+    {
+      "step": "04",
+      "title": "Delivery and Set-Up Support",
+      "desc": "Delivered packed, with set-up support and technical guidance at the venue."
+    }
+  ],
+  "sectors": [
+    "Marketing and Advertising",
+    "Events and Organisations",
+    "Retail and Shopping Centres",
+    "Industry and Manufacturing",
+    "Technology and Software",
+    "Healthcare and Hospitals",
+    "Tourism and Hospitality",
+    "Education and Public Sector",
+    "Finance and Insurance",
+    "Construction and Real Estate"
+  ],
+  "faq": [
+    {
+      "q": "How quickly does a roll-up banner set up?",
+      "a": "One to two minutes. The panel pulls up onto the aluminium frame, and it packs away just as easily for transport."
+    },
+    {
+      "q": "How long do lightbox LEDs last?",
+      "a": "Our LED modules are rated for 50,000 hours — roughly five to six years of continuous use. They carry a two-year warranty."
+    },
+    {
+      "q": "What is the difference between an X-banner and a roll-up?",
+      "a": "An X-banner is cheaper and simpler. A roll-up looks more professional, uses more durable materials and lasts longer."
+    },
+    {
+      "q": "Can I replace a damaged stand panel?",
+      "a": "Yes. Panels are replaceable — send us the old one and we will produce a new panel to the same size."
+    },
+    {
+      "q": "How many times can a stand system be reused?",
+      "a": "The aluminium frame lasts indefinitely. A panel starts to show wear after 50–100 uses, which is typically two to three years."
+    }
+  ]
+}

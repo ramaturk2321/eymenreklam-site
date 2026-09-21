@@ -1,0 +1,141 @@
+{
+  "title": "Poster Printing",
+  "seoTitle": "Poster and Large-Format Paper Printing in Istanbul",
+  "heroTitle": "Poster Printing: Paper and Self-Adhesive Vinyl, in Any Quantity",
+  "description": "Gloss paper, matte paper and self-adhesive vinyl poster printing. A3 to A0 and beyond, in-store campaign posters and event posters. Same-day production in our Istanbul facility.",
+  "heroDesc": "We print in-store campaign posters, window posters, event and concert posters and institutional notices on gloss coated, matte coated and self-adhesive vinyl stock. From A3 to A0 and larger, from a single copy to several thousand, produced the same day at our facility in Pendik, Istanbul. For banner, mesh and fabric work, see our Banner & Mesh Printing page.",
+  "order": 6,
+  "listIcon": "🖼️",
+  "listDesc": "Gloss and matte paper posters, self-adhesive vinyl posters, sizes up to A0. Fast production in any quantity for retail campaigns and events.",
+  "listFeatures": [
+    "Gloss Paper Posters",
+    "Matte Paper Posters",
+    "Vinyl Posters",
+    "Large Posters"
+  ],
+  "listImage": "/images/urunler/afis-baski-1.webp",
+  "features": [
+    {
+      "icon": "📄",
+      "title": "Paper Posters",
+      "desc": "A3, A2, A1, A0 and custom sizes on gloss or matte coated stock — ideal for windows and notice boards."
+    },
+    {
+      "icon": "📋",
+      "title": "Self-Adhesive Vinyl Posters",
+      "desc": "Vinyl posters applied to glass, walls and boards, available in matte, gloss and clear."
+    },
+    {
+      "icon": "🏪",
+      "title": "In-Store Campaign Posters",
+      "desc": "Weekly campaign posters for retail chains, with quantity, size and packing organised branch by branch."
+    },
+    {
+      "icon": "🔢",
+      "title": "Any Quantity",
+      "desc": "From one copy to several thousand. Unit price falls at higher volumes and delivery is split by branch."
+    },
+    {
+      "icon": "✨",
+      "title": "Consistent Colour",
+      "desc": "The same colour in every batch of a series. We work to Pantone references and test-print colour-critical jobs."
+    },
+    {
+      "icon": "⚡",
+      "title": "Same-Day Production",
+      "desc": "Printing and cutting in our own facility — standard jobs approved before midday are ready the same day."
+    }
+  ],
+  "products": [
+    {
+      "title": "Digital Poster Printing",
+      "desc": "Paper and vinyl posters from A3 to A0 and beyond, for corporate, advertising and event use.",
+      "image": "/images/urunler/afis-baski-1.webp"
+    },
+    {
+      "title": "Gloss Paper Posters",
+      "desc": "High-resolution printing on gloss coated stock — vivid colour, sharp detail.",
+      "image": "/images/urunler/parlak-afis-1.webp"
+    },
+    {
+      "title": "Matte Paper Posters",
+      "desc": "Printing on matte coated stock — no glare, easy to read under lighting.",
+      "image": "/images/urunler/mat-kagit-1.webp"
+    },
+    {
+      "title": "Foam Board Printing",
+      "desc": "Printing onto rigid foam board where the poster needs a solid backing.",
+      "image": "/images/urunler/fotoblok-1.webp"
+    },
+    {
+      "title": "Insert and Campaign Design",
+      "desc": "Campaign poster and insert design for retail chains, with weekly template production.",
+      "image": "/images/urunler/insert-1.webp"
+    },
+    {
+      "title": "Banner & Mesh Printing",
+      "desc": "For outdoor and large-format work, banner, mesh and fabric printing has its own page.",
+      "image": "/images/urunler/market-branda-1.webp"
+    }
+  ],
+  "process": [
+    {
+      "step": "01",
+      "title": "Size, Quantity and Stock",
+      "desc": "We agree the poster size, the quantity and the stock — gloss, matte or vinyl."
+    },
+    {
+      "step": "02",
+      "title": "File Check",
+      "desc": "Resolution, bleed and colour profile are checked, and retouching is done where needed."
+    },
+    {
+      "step": "03",
+      "title": "Printing",
+      "desc": "Digital printing in our own facility, with colour held consistent across every batch of a series."
+    },
+    {
+      "step": "04",
+      "title": "Cutting and Packing",
+      "desc": "Cut to size, packed by branch or location, and delivered."
+    }
+  ],
+  "sectors": [
+    "Retail and Chain Stores",
+    "Marketing and Advertising",
+    "Events and Organisations",
+    "Education and Schools",
+    "Healthcare and Hospitals",
+    "Culture and the Arts",
+    "Tourism and Hospitality",
+    "Sports and Recreation",
+    "Food and Restaurants",
+    "Public Sector and Municipalities"
+  ],
+  "faq": [
+    {
+      "q": "Which poster sizes do you print?",
+      "a": "A3, A2, A1 and A0 as standard, plus custom sizes. On paper we print single-piece up to the roll width; for anything larger outdoors we recommend banner."
+    },
+    {
+      "q": "Should I choose paper or vinyl?",
+      "a": "Paper is enough, and cheaper, for indoor boards, window backs and short-term notices. Choose self-adhesive vinyl if it will be stuck to glass or a wall, or will sit in a damp environment."
+    },
+    {
+      "q": "What determines the price?",
+      "a": "Size, quantity, stock and lead time. The unit price falls as quantity rises. Send us the size and quantity and we will quote the same day."
+    },
+    {
+      "q": "Do you produce weekly campaign posters for retail chains?",
+      "a": "Yes. We have produced insert and poster series for Hakmar Express for years, splitting quantities and sizes by branch list and packing them branch by branch."
+    },
+    {
+      "q": "How quickly can you deliver?",
+      "a": "Standard paper and vinyl posters are ready the same day or the next day after artwork approval. Large series are scheduled according to quantity."
+    },
+    {
+      "q": "Do you print posters for outdoor use?",
+      "a": "Vinyl posters work for short-term outdoor notices. For anything that has to survive rain, sun and wind over time we print banner or mesh — see our Banner & Mesh Printing page."
+    }
+  ]
+}

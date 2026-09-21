@@ -1,0 +1,157 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { company, contact } from '../../lib/site-data';
+import { yol } from '../../i18n';
+
+const guncelleme = '21 September 2026';
+---
+
+<BaseLayout
+  title="Privacy Policy"
+  description="How Eymen Reklam collects, uses and protects personal data, and your rights under Turkish data protection law (KVKK)."
+  lang="en"
+  sayfa="gizlilik"
+>
+
+  <section class="bg-koyu-900 pt-32 pb-12 md:pt-40 md:pb-16">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <h1 class="text-3xl md:text-4xl font-extrabold text-white mb-4">Privacy Policy</h1>
+      <p class="text-koyu-400">Last updated: {guncelleme}</p>
+    </div>
+  </section>
+
+  <section class="py-12 md:py-16">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="bg-eymen-50 border border-eymen-200 rounded-xl p-5 mb-10 text-sm text-koyu-700">
+        This is an English summary prepared for readers outside Turkey. Personal data is processed under Turkish
+        Law No. 6698 on the Protection of Personal Data (KVKK), and the
+        <a href={yol('tr', 'gizlilik')} class="text-eymen-700 underline">Turkish version of this policy</a>
+        is the legally binding text.
+      </div>
+
+      <div class="space-y-10">
+        <div>
+          <h2 class="text-xl md:text-2xl font-bold text-koyu-900 mb-4 pb-2 border-b border-koyu-100">1. Data Controller</h2>
+          <div class="text-koyu-600 leading-relaxed space-y-2">
+            <p>{company.fullName}</p>
+            <p>Registered office: {contact.addressOffice}</p>
+            <p>Production facility: {contact.address}</p>
+            <p>Email: <a href={contact.emailHref} class="text-eymen-600 hover:text-eymen-700">{contact.email}</a> · Phone: +90 216 379 07 08</p>
+          </div>
+        </div>
+
+        <div>
+          <h2 class="text-xl md:text-2xl font-bold text-koyu-900 mb-4 pb-2 border-b border-koyu-100">2. Data We Process</h2>
+          <div class="text-koyu-600 leading-relaxed space-y-4">
+            <div>
+              <h3 class="font-semibold text-koyu-900 mb-2">a) Through the quote and contact forms</h3>
+              <p>Name, company name, job title, phone number, email address, country, project location and the details you write about your project.</p>
+            </div>
+            <div>
+              <h3 class="font-semibold text-koyu-900 mb-2">b) Automatically while you use the site</h3>
+              <p>IP address, browser and device information, pages visited and the time of the visit, collected through Google Analytics and Vercel Analytics.</p>
+            </div>
+            <div>
+              <h3 class="font-semibold text-koyu-900 mb-2">c) By phone and WhatsApp</h3>
+              <p>Your phone number and the content of the messages you send us.</p>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <h2 class="text-xl md:text-2xl font-bold text-koyu-900 mb-4 pb-2 border-b border-koyu-100">3. Purposes</h2>
+          <ul class="text-koyu-600 leading-relaxed list-disc list-inside space-y-1.5">
+            <li>Preparing and sending you a quotation</li>
+            <li>Planning, producing and installing the work you order</li>
+            <li>Meeting our legal and accounting obligations</li>
+            <li>Understanding how the website is used and improving it</li>
+          </ul>
+        </div>
+
+        <div>
+          <h2 class="text-xl md:text-2xl font-bold text-koyu-900 mb-4 pb-2 border-b border-koyu-100">4. Legal Basis</h2>
+          <p class="text-koyu-600 leading-relaxed">
+            Data is processed under Article 5 of the KVKK: because it is necessary for entering into or performing
+            a contract, because we have a legal obligation, and on the basis of our legitimate interests in running
+            and improving our business.
+          </p>
+        </div>
+
+        <div>
+          <h2 class="text-xl md:text-2xl font-bold text-koyu-900 mb-4 pb-2 border-b border-koyu-100">5. Transfers, Including Outside Turkey</h2>
+          <p class="text-koyu-600 leading-relaxed mb-4">
+            We do not sell your data or share it for marketing purposes. It is shared only with the service
+            providers that make the website and our correspondence work:
+          </p>
+          <ul class="text-koyu-600 leading-relaxed list-disc list-inside space-y-1.5">
+            <li><strong>Web3Forms</strong> — delivers form submissions to our email</li>
+            <li><strong>Vercel</strong> — website hosting and traffic analytics</li>
+            <li><strong>Google Analytics</strong> — anonymised visit statistics</li>
+            <li><strong>WhatsApp (Meta)</strong> — if you choose to contact us that way</li>
+          </ul>
+          <p class="text-koyu-600 leading-relaxed mt-4">
+            Some of these providers hold data on servers outside Turkey. Where required we also share data with
+            our accountants and with public authorities when the law obliges us to.
+          </p>
+        </div>
+
+        <div>
+          <h2 class="text-xl md:text-2xl font-bold text-koyu-900 mb-4 pb-2 border-b border-koyu-100">6. Retention</h2>
+          <p class="text-koyu-600 leading-relaxed">
+            Quote requests are kept for as long as the commercial relationship requires, and records with an
+            accounting or legal dimension for the periods set out in Turkish law (generally ten years). Analytics
+            data is kept for the retention period of the relevant platform.
+          </p>
+        </div>
+
+        <div>
+          <h2 class="text-xl md:text-2xl font-bold text-koyu-900 mb-4 pb-2 border-b border-koyu-100">7. Your Rights</h2>
+          <p class="text-koyu-600 leading-relaxed mb-4">Under Article 11 of the KVKK you have the right to:</p>
+          <ul class="text-koyu-600 leading-relaxed list-disc list-inside space-y-1.5">
+            <li>Learn whether we process your personal data, and request information if we do</li>
+            <li>Learn the purpose of the processing and whether the data is used accordingly</li>
+            <li>Know the third parties, in Turkey or abroad, to whom the data has been transferred</li>
+            <li>Ask for incomplete or inaccurate data to be corrected</li>
+            <li>Ask for the data to be erased or destroyed</li>
+            <li>Object to a result produced solely by automated analysis</li>
+            <li>Claim compensation for damage caused by unlawful processing</li>
+          </ul>
+        </div>
+
+        <div>
+          <h2 class="text-xl md:text-2xl font-bold text-koyu-900 mb-4 pb-2 border-b border-koyu-100">8. How to Apply</h2>
+          <p class="text-koyu-600 leading-relaxed">
+            Write to <a href={contact.emailHref} class="text-eymen-600 hover:text-eymen-700">{contact.email}</a>,
+            or send a signed written application to our registered office at {contact.addressOffice}. We respond
+            within 30 days at the latest.
+          </p>
+        </div>
+
+        <div>
+          <h2 class="text-xl md:text-2xl font-bold text-koyu-900 mb-4 pb-2 border-b border-koyu-100">9. Security</h2>
+          <p class="text-koyu-600 leading-relaxed">
+            The site is served over HTTPS. Form data is transmitted encrypted, access to our systems is limited to
+            authorised staff, and we take the technical and administrative measures required by the KVKK.
+          </p>
+        </div>
+
+        <div>
+          <h2 class="text-xl md:text-2xl font-bold text-koyu-900 mb-4 pb-2 border-b border-koyu-100">10. Changes</h2>
+          <p class="text-koyu-600 leading-relaxed">
+            We may update this policy. The current version is always the one published on this page, with its date
+            of last update shown at the top.
+          </p>
+        </div>
+
+        <div class="bg-koyu-900 rounded-2xl p-8 text-center">
+          <h2 class="text-xl font-bold text-white mb-3">Any questions?</h2>
+          <p class="text-koyu-400 mb-5">Write to us about anything in this policy and we will answer.</p>
+          <a href={contact.emailHref} class="inline-flex items-center gap-2 bg-eymen-500 hover:bg-eymen-600 text-white px-6 py-3 rounded-xl font-semibold transition-colors">
+            {contact.email}
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</BaseLayout>

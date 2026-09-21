@@ -14,8 +14,13 @@ const hizmetler = (await getCollection('hizmetler'))
     <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
       <p class="text-eymen-400 text-sm font-semibold tracking-wider mb-3">HATA 404</p>
       <h1 class="text-4xl md:text-5xl font-extrabold text-white mb-4">Aradığınız sayfa burada değil</h1>
-      <p class="text-koyu-400 text-lg max-w-2xl mx-auto mb-8">
+      <p class="text-koyu-400 text-lg max-w-2xl mx-auto mb-4">
         Bağlantı eski olabilir ya da sayfa taşınmış olabilir. Aşağıdan arama yapabilir veya doğrudan hizmetlerimize geçebilirsiniz.
+      </p>
+      <p class="text-koyu-500 text-sm max-w-2xl mx-auto mb-8" lang="en">
+        This page could not be found.
+        <a href="/en/" class="text-eymen-400 underline hover:text-eymen-300">Go to the English home page</a> or
+        <a href="/en/contact/" class="text-eymen-400 underline hover:text-eymen-300">contact us</a>.
       </p>
 
       <form action="/urunlerimiz/" method="get" role="search" class="relative max-w-xl mx-auto">

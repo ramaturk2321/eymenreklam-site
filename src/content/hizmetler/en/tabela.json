@@ -1,0 +1,152 @@
+{
+  "title": "Signage Manufacturing",
+  "seoTitle": "Signage Manufacturing and Installation in Istanbul",
+  "description": "Channel letters, pylon signs, roof signs, projecting signs and office signage manufactured and installed in Istanbul. CNC cutting, LED illumination, 2-year warranty, free site survey.",
+  "heroDesc": "As a signage manufacturer with 25 years in Istanbul, we produce and install every type of sign — channel letters, pylon signs, roof signs, neon-effect LED — on a turnkey basis. We manufacture to corporate standards in our 2,500 m² facility with CNC cutting and LED lighting systems, and our own installation team works across Istanbul and the rest of Turkey.",
+  "order": 1,
+  "listIcon": "🔤",
+  "listDesc": "Channel letters, pylon signs, roof signs, façade and wayfinding signage. Turnkey manufacturing and installation with CNC cutting and LED illumination.",
+  "listFeatures": [
+    "Channel Letters",
+    "Pylon Signs",
+    "Roof Signs",
+    "Neon-Effect LED",
+    "Lightbox Signs",
+    "Office Signage"
+  ],
+  "listImage": "/images/kutu-harf.webp",
+  "features": [
+    {
+      "icon": "🔤",
+      "title": "3D Channel Letter Production",
+      "desc": "CNC-cut channel letters in stainless steel, galvanised steel and aluminium. LED module illumination keeps the brand visible day and night."
+    },
+    {
+      "icon": "📐",
+      "title": "Precision CNC Cutting",
+      "desc": "Letters and shapes cut to millimetre tolerances on our computer-controlled CNC machines. Even complex logos come out clean."
+    },
+    {
+      "icon": "💡",
+      "title": "LED Lighting Systems",
+      "desc": "Complete lighting solutions including energy-efficient LED modules, drivers and power supplies. Rated for more than 50,000 hours."
+    },
+    {
+      "icon": "🏗️",
+      "title": "Professional Installation",
+      "desc": "Our experienced installation team works safely at any height, using cranes and access platforms where needed."
+    },
+    {
+      "icon": "📋",
+      "title": "Permits and Regulations",
+      "desc": "Production that complies with municipal signage regulations, plus support and guidance through the permit application process."
+    },
+    {
+      "icon": "🎨",
+      "title": "3D Design and Preview",
+      "desc": "3D modelling and rendering of your own building before production, so you see how the sign will look on the façade."
+    }
+  ],
+  "products": [
+    {
+      "title": "Channel Letter Signs",
+      "desc": "LED-illuminated 3D channel letters in stainless steel, galvanised steel or aluminium.",
+      "image": "/images/urunler/kutu-harf-1.webp"
+    },
+    {
+      "title": "Pylon / Totem Signs",
+      "desc": "Free-standing pylon signs for shopping centres, factory entrances and roadside locations.",
+      "image": "/images/urunler/totem-1.webp"
+    },
+    {
+      "title": "Roof Signs",
+      "desc": "Large-scale signs mounted on the roof of a building, for brand visibility from a distance.",
+      "image": "/images/urunler/cati-tabela-1.webp"
+    },
+    {
+      "title": "Neon-Effect LED Signs",
+      "desc": "The look of neon with LED technology — retro aesthetics at low energy consumption.",
+      "image": "/images/urunler/neon-led-1.webp"
+    },
+    {
+      "title": "Lightbox Signs",
+      "desc": "Internally illuminated box signs with a translucent vinyl or acrylic face.",
+      "image": "/images/urunler/isikli-blok-1.webp"
+    },
+    {
+      "title": "Office Signage",
+      "desc": "Interior door and reception signage with a clean corporate finish.",
+      "image": "/images/urunler/ofis-tabela-1.webp"
+    },
+    {
+      "title": "Projecting Signs",
+      "desc": "Double-sided signs mounted perpendicular to the wall, with LED or neon illumination.",
+      "image": "/images/urunler/fener-tabela-1.webp"
+    },
+    {
+      "title": "Law Office Signage",
+      "desc": "Brass plaques, acrylic door signs and channel letters, compliant with bar association rules.",
+      "image": "/images/urunler/hukuk-tabela-1.webp"
+    }
+  ],
+  "process": [
+    {
+      "step": "01",
+      "title": "Free Site Survey",
+      "desc": "Our team visits the site, takes measurements and photographs the location."
+    },
+    {
+      "step": "02",
+      "title": "3D Design",
+      "desc": "We prepare a 3D model of your building and agree the colours, dimensions and materials."
+    },
+    {
+      "step": "03",
+      "title": "CNC Production",
+      "desc": "The approved design is manufactured on our CNC machines, then LEDs are fitted and the sign is painted."
+    },
+    {
+      "step": "04",
+      "title": "Installation and Handover",
+      "desc": "Our installation team mounts the sign on site and hands over the warranty certificate."
+    }
+  ],
+  "sectors": [
+    "Retail and Shopping Centres",
+    "Industry and Manufacturing",
+    "Healthcare and Hospitals",
+    "Education and Public Sector",
+    "Hotels and Restaurants",
+    "Banking and Finance",
+    "Automotive",
+    "Construction and Real Estate",
+    "Law Firms",
+    "Pharmacies and Clinics"
+  ],
+  "faq": [
+    {
+      "q": "What determines the price of a channel letter sign?",
+      "a": "Letter size, material (stainless steel, galvanised steel, aluminium), the lighting system (LED colour and density) and the installation conditions. We quote a firm price after a free site survey."
+    },
+    {
+      "q": "How long does a sign take to produce?",
+      "a": "A standard channel letter project takes about 7–10 working days from survey to installation. Accelerated production is available for urgent projects."
+    },
+    {
+      "q": "Do you help with municipal permits?",
+      "a": "Yes. We design to the local signage regulations and support our clients through the permit application process."
+    },
+    {
+      "q": "What warranty comes with the LED lighting?",
+      "a": "Two years on our LED modules. Rated LED life is around 50,000 hours, which is roughly five to six years of continuous use."
+    },
+    {
+      "q": "Do you install outside Istanbul?",
+      "a": "Yes. We install for corporate clients across Turkey, including chain-store and multi-site rollouts in every city."
+    },
+    {
+      "q": "Do you work with international brands opening in Istanbul?",
+      "a": "Yes. We handle the survey, local regulations, production and installation ourselves, and we report in English throughout the project."
+    }
+  ]
+}

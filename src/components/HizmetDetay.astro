@@ -15,7 +15,7 @@ interface Props {
     images: string[];
   };
   features: { icon: string; title: string; desc: string }[];
-  products: { title: string; desc: string; image: string; href: string }[];
+  products: { title: string; desc: string; image: string; href?: string }[];
   process: { step: string; title: string; desc: string }[];
   sectors: string[];
   faq: { q: string; a: string }[];
@@ -29,13 +29,20 @@ interface Props {
   fiyatFaktorleri?: { baslik: string; aciklama: string }[];
   /** Hizmet bölgesi */
   bolge?: { baslik: string; metin: string; ilceler: string[]; link?: { href: string; label: string } };
+  lang?: Dil;
+  /** İçerik dosyasının TR slug'ı — hreflang ve dil değiştirici için */
+  slug?: string;
 }
 
 import BaseLayout from '../layouts/BaseLayout.astro';
 import { srcset, boyut, SIZES } from '../lib/gorsel';
-import { company, contact, getWhatsAppUrl, whatsappMessages } from '../lib/site-data';
+import { company, contact } from '../lib/site-data';
+import { sozluk, yol, whatsappUrl } from '../i18n';
+import type { Dil } from '../i18n';
 
-const { title, seoTitle, description, heroDesc, heroImage, ogImage, facility, features, products, process, sectors, faq, referanslar = [], heroTitle, gallery = [], fiyatFaktorleri = [], bolge } = Astro.props;
+const { title, seoTitle, description, heroDesc, heroImage, ogImage, facility, features, products, process, sectors, faq, referanslar = [], heroTitle, gallery = [], fiyatFaktorleri = [], bolge, lang = 'tr', slug } = Astro.props;
+const s = sozluk(lang);
+const urunWaUrl = whatsappUrl(lang, s.whatsapp.urun(title));
 
 // FAQ Schema
 const faqSchema = faq.length > 0 ? {
@@ -53,14 +60,14 @@ const breadcrumbSchema = {
   '@context': 'https://schema.org',
   '@type': 'BreadcrumbList',
   itemListElement: [
-    { '@type': 'ListItem', position: 1, name: 'Ana Sayfa', item: company.siteUrl },
-    { '@type': 'ListItem', position: 2, name: 'Hizmetlerimiz', item: `${company.siteUrl}/hizmetlerimiz/` },
+    { '@type': 'ListItem', position: 1, name: s.nav.anaSayfa, item: `${company.siteUrl}${yol(lang, 'ana')}` },
+    { '@type': 'ListItem', position: 2, name: s.nav.hizmetler, item: `${company.siteUrl}${yol(lang, 'hizmetler')}` },
     { '@type': 'ListItem', position: 3, name: title },
   ],
 };
 ---
 
-<BaseLayout title={seoTitle ?? title} description={description} image={ogImage ?? heroImage}>
+<BaseLayout title={seoTitle ?? title} description={description} image={ogImage ?? heroImage} lang={lang} sayfa="hizmetler" slug={slug} tur="hizmet">
 
   <!-- Schema.org: FAQ + Breadcrumb -->
   {faqSchema && <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />}
@@ -70,9 +77,9 @@ const breadcrumbSchema = {
   <nav class="bg-koyu-50 border-b border-koyu-100 py-3">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <ol class="flex items-center gap-2 text-sm text-koyu-500">
-        <li><a href="/" class="hover:text-eymen-600 transition-colors">Ana Sayfa</a></li>
+        <li><a href={yol(lang, 'ana')} class="hover:text-eymen-600 transition-colors">{s.nav.anaSayfa}</a></li>
         <li class="text-koyu-300">/</li>
-        <li><a href="/hizmetlerimiz/" class="hover:text-eymen-600 transition-colors">Hizmetlerimiz</a></li>
+        <li><a href={yol(lang, 'hizmetler')} class="hover:text-eymen-600 transition-colors">{s.nav.hizmetler}</a></li>
         <li class="text-koyu-300">/</li>
         <li class="text-koyu-800 font-medium">{title}</li>
       </ol>
@@ -89,17 +96,17 @@ const breadcrumbSchema = {
     )}
     <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="max-w-3xl">
-        <p class="text-eymen-400 text-sm font-semibold tracking-wider mb-3">EYMEN REKLAM HİZMETLERİ</p>
+        <p class="text-eymen-400 text-sm font-semibold tracking-wider mb-3">{s.hizmetSayfa.ustBaslik}</p>
         <h1 class="text-3xl md:text-5xl font-extrabold text-white mb-4">{heroTitle ?? title}</h1>
         <p class="text-koyu-200 text-base md:text-lg leading-relaxed mb-6 md:mb-8">{heroDesc}</p>
         <div class="flex flex-col sm:flex-row gap-3">
-          <a href="/iletisim/" class="inline-flex items-center justify-center gap-2 bg-eymen-500 hover:bg-eymen-600 text-white px-6 py-3.5 rounded-xl text-sm md:text-base font-bold transition-all hover:shadow-lg hover:shadow-eymen-500/25">
+          <a href={yol(lang, 'iletisim')} class="inline-flex items-center justify-center gap-2 bg-eymen-500 hover:bg-eymen-600 text-white px-6 py-3.5 rounded-xl text-sm md:text-base font-bold transition-all hover:shadow-lg hover:shadow-eymen-500/25">
             <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
-            Ücretsiz Teklif Alın
+            {s.ortak.ucretsizTeklif}
           </a>
-          <a href={getWhatsAppUrl(whatsappMessages.product(title))} target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center gap-2 bg-green-600 hover:bg-green-700 text-white px-6 py-3.5 rounded-xl text-sm md:text-base font-bold transition-all">
+          <a href={urunWaUrl} target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center gap-2 bg-green-600 hover:bg-green-700 text-white px-6 py-3.5 rounded-xl text-sm md:text-base font-bold transition-all">
             <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347zM12 0C5.373 0 0 5.373 0 12c0 2.625.846 5.059 2.284 7.034L.789 23.492a.75.75 0 00.913.913l4.458-1.495A11.952 11.952 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0z"/></svg>
-            WhatsApp ile Yaz
+            {s.ortak.whatsappYaz}
           </a>
         </div>
       </div>
@@ -111,7 +118,7 @@ const breadcrumbSchema = {
     <section class="py-12 md:py-20 bg-koyu-50">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center max-w-3xl mx-auto mb-10 md:mb-12">
-          <p class="text-eymen-500 text-sm font-semibold tracking-wider mb-3">ÜRETİM TESİSİ</p>
+          <p class="text-eymen-500 text-sm font-semibold tracking-wider mb-3">{s.hizmetSayfa.tesisUstBaslik}</p>
           <h2 class="text-3xl md:text-4xl font-extrabold text-koyu-900 mb-4">{facility.title}</h2>
           <p class="text-koyu-500 leading-relaxed">{facility.description}</p>
         </div>
@@ -119,7 +126,7 @@ const breadcrumbSchema = {
         <div class="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6 mb-8 md:mb-10">
           {facility.images.map((img, i) => (
             <div class="aspect-[4/3] rounded-2xl overflow-hidden bg-koyu-200 shadow-md">
-              <img src={img} srcset={srcset(img)} sizes="(min-width: 768px) 50vw, 100vw" {...boyut(img)} alt={`${facility.title} - Üretim ${i + 1}`} loading="lazy" decoding="async" class="w-full h-full object-cover" />
+              <img src={img} srcset={srcset(img)} sizes="(min-width: 768px) 50vw, 100vw" {...boyut(img)} alt={s.hizmetSayfa.uretimAlt(facility.title, i + 1)} loading="lazy" decoding="async" class="w-full h-full object-cover" />
             </div>
           ))}
         </div>
@@ -152,17 +159,20 @@ const breadcrumbSchema = {
   <section class="py-10 md:py-14 bg-white">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-3 gap-4 md:gap-6">
-        {products.map(p => (
-          <a href={p.href} class="group bg-white rounded-xl border border-koyu-100 overflow-hidden hover:shadow-xl hover:border-eymen-200 transition-all duration-300 hover:-translate-y-1">
-            <div class="aspect-[4/3] overflow-hidden bg-koyu-200">
-              <img src={p.image} srcset={srcset(p.image)} sizes="(min-width: 1280px) 400px, (min-width: 640px) 33vw, 50vw" alt={p.title} width="400" height="300" loading="lazy" decoding="async" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
-            </div>
-            <div class="p-3 md:p-5">
-              <h3 class="font-bold text-sm md:text-base text-koyu-900 mb-1 group-hover:text-eymen-600 transition-colors">{p.title}</h3>
-              <p class="text-xs md:text-sm text-koyu-500 leading-relaxed hidden sm:block">{p.desc}</p>
-            </div>
-          </a>
-        ))}
+        {products.map(p => {
+          const Kart = p.href ? 'a' : 'div';
+          return (
+            <Kart href={p.href} class="group bg-white rounded-xl border border-koyu-100 overflow-hidden hover:shadow-xl hover:border-eymen-200 transition-all duration-300 hover:-translate-y-1">
+              <div class="aspect-[4/3] overflow-hidden bg-koyu-200">
+                <img src={p.image} srcset={srcset(p.image)} sizes="(min-width: 1280px) 400px, (min-width: 640px) 33vw, 50vw" alt={p.title} width="400" height="300" loading="lazy" decoding="async" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+              </div>
+              <div class="p-3 md:p-5">
+                <h3 class="font-bold text-sm md:text-base text-koyu-900 mb-1 group-hover:text-eymen-600 transition-colors">{p.title}</h3>
+                <p class="text-xs md:text-sm text-koyu-500 leading-relaxed hidden sm:block">{p.desc}</p>
+              </div>
+            </Kart>
+          );
+        })}
       </div>
     </div>
   </section>
@@ -173,8 +183,8 @@ const breadcrumbSchema = {
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center max-w-2xl mx-auto mb-8 md:mb-10">
           <p class="text-eymen-400 text-sm font-semibold tracking-wider mb-3">SAHADAN</p>
-          <h2 id="galeri-baslik" class="text-3xl md:text-4xl font-extrabold text-white">{title} İşlerimizden</h2>
-          <p class="text-koyu-300 mt-4">Aşağıdaki fotoğrafların tamamı kendi tesisimizde ürettiğimiz ve sahada uyguladığımız işlerden. Bağlantılı olanlar proje sayfasına gider.</p>
+          <h2 id="galeri-baslik" class="text-3xl md:text-4xl font-extrabold text-white">{s.hizmetSayfa.islerimizden(title)}</h2>
+          <p class="text-koyu-300 mt-4">{s.hizmetSayfa.galeriAciklama}</p>
         </div>
         <ul class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 md:gap-4">
           {gallery.map(g => {
@@ -189,7 +199,7 @@ const breadcrumbSchema = {
           })}
         </ul>
         <div class="text-center mt-8">
-          <a href="/projelerimiz/" class="inline-flex items-center gap-2 text-eymen-400 font-semibold hover:text-eymen-300">Tüm projelerimiz →</a>
+          <a href={yol(lang, 'projeler')} class="inline-flex items-center gap-2 text-eymen-400 font-semibold hover:text-eymen-300">{s.hizmetSayfa.tumProjeler} →</a>
         </div>
       </div>
     </section>
@@ -199,8 +209,8 @@ const breadcrumbSchema = {
   <section class="py-12 md:py-20 bg-koyu-50">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="text-center max-w-2xl mx-auto mb-10">
-        <h2 class="text-3xl md:text-4xl font-extrabold text-koyu-900">Neden Eymen Reklam?</h2>
-        <p class="text-koyu-500 mt-4">{company.experience} yıllık deneyimle kurumsal müşterilerimize sunduğumuz avantajlar.</p>
+        <h2 class="text-3xl md:text-4xl font-extrabold text-koyu-900">{s.hizmetSayfa.nedenBiz}</h2>
+        <p class="text-koyu-500 mt-4">{s.hizmetSayfa.nedenBizAciklama(company.experience)}</p>
       </div>
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         {features.map(f => (
@@ -218,8 +228,8 @@ const breadcrumbSchema = {
   <section class="py-16 md:py-24 bg-white">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="text-center max-w-2xl mx-auto mb-14">
-        <p class="text-eymen-500 text-sm font-semibold tracking-wider mb-3">ÇALIŞMA SÜRECİMİZ</p>
-        <h2 class="text-3xl md:text-4xl font-extrabold text-koyu-900">Keşiften Montaja</h2>
+        <p class="text-eymen-500 text-sm font-semibold tracking-wider mb-3">{s.hizmetSayfa.surecUstBaslik}</p>
+        <h2 class="text-3xl md:text-4xl font-extrabold text-koyu-900">{s.hizmetSayfa.surecBaslik}</h2>
       </div>
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
         {process.map(p => (
@@ -237,7 +247,7 @@ const breadcrumbSchema = {
   <section class="py-16 md:py-24 bg-koyu-900">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="text-center max-w-2xl mx-auto mb-10">
-        <h2 class="text-3xl md:text-4xl font-extrabold text-white">Hizmet Verdiğimiz Sektörler</h2>
+        <h2 class="text-3xl md:text-4xl font-extrabold text-white">{s.ortak.sektorler}</h2>
         <div class="w-12 h-1 bg-eymen-500 mx-auto mt-4"></div>
       </div>
       <div class="flex flex-wrap justify-center gap-3">
@@ -255,9 +265,9 @@ const breadcrumbSchema = {
     <section class="py-16 md:py-24 bg-white">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center max-w-2xl mx-auto mb-10">
-          <h2 class="text-3xl md:text-4xl font-extrabold text-koyu-900">{title} Yaptığımız Markalar</h2>
+          <h2 class="text-3xl md:text-4xl font-extrabold text-koyu-900">{s.hizmetSayfa.markalarBaslik(title)}</h2>
           <div class="w-12 h-1 bg-eymen-500 mx-auto mt-4"></div>
-          <p class="text-koyu-500 mt-4">Aşağıdaki markalar için bu hizmeti ürettik ve yerinde uyguladık. Fotoğraflı olanlar proje sayfasına gider.</p>
+          <p class="text-koyu-500 mt-4">{s.hizmetSayfa.markalarAciklama}</p>
         </div>
         <ul class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
           {referanslar.map(r => (
@@ -269,7 +279,7 @@ const breadcrumbSchema = {
           ))}
         </ul>
         <div class="text-center mt-8">
-          <a href="/referanslarimiz/" class="inline-flex items-center gap-2 text-eymen-700 font-semibold hover:text-eymen-800">Tüm referanslarımız →</a>
+          <a href={yol(lang, 'referanslar')} class="inline-flex items-center gap-2 text-eymen-700 font-semibold hover:text-eymen-800">{s.hizmetSayfa.tumReferanslar} →</a>
         </div>
       </div>
     </section>
@@ -280,9 +290,9 @@ const breadcrumbSchema = {
     <section class="py-16 md:py-24 bg-white" aria-labelledby="fiyat-baslik">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center max-w-2xl mx-auto mb-10">
-          <p class="text-eymen-500 text-sm font-semibold tracking-wider mb-3">FİYATLANDIRMA</p>
-          <h2 id="fiyat-baslik" class="text-3xl md:text-4xl font-extrabold text-koyu-900">{title} Fiyatını Ne Belirler?</h2>
-          <p class="text-koyu-500 mt-4">Her iş ölçüsüne ve malzemesine göre hesaplanır; bu yüzden liste fiyatı yayınlamıyoruz. Aşağıdaki bilgileri iletirseniz aynı gün net fiyat veriyoruz.</p>
+          <p class="text-eymen-500 text-sm font-semibold tracking-wider mb-3">{s.hizmetSayfa.fiyatUstBaslik}</p>
+          <h2 id="fiyat-baslik" class="text-3xl md:text-4xl font-extrabold text-koyu-900">{s.hizmetSayfa.fiyatBaslik(title)}</h2>
+          <p class="text-koyu-500 mt-4">{s.hizmetSayfa.fiyatAciklama}</p>
         </div>
         <ol class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
           {fiyatFaktorleri.map((f, i) => (
@@ -296,8 +306,8 @@ const breadcrumbSchema = {
           ))}
         </ol>
         <div class="mt-10 flex flex-col sm:flex-row gap-3 justify-center">
-          <a href={getWhatsAppUrl(whatsappMessages.product(title))} target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center gap-2 bg-green-600 hover:bg-green-700 text-white px-6 py-3.5 rounded-xl font-bold transition-all">Ölçü ve malzemeyi WhatsApp'tan gönder</a>
-          <a href="/teklif-al/" class="inline-flex items-center justify-center gap-2 bg-eymen-500 hover:bg-eymen-600 text-white px-6 py-3.5 rounded-xl font-bold transition-all">Teklif formunu doldur</a>
+          <a href={urunWaUrl} target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center gap-2 bg-green-600 hover:bg-green-700 text-white px-6 py-3.5 rounded-xl font-bold transition-all">{s.hizmetSayfa.whatsappOlcu}</a>
+          <a href={yol(lang, 'teklif')} class="inline-flex items-center justify-center gap-2 bg-eymen-500 hover:bg-eymen-600 text-white px-6 py-3.5 rounded-xl font-bold transition-all">{s.hizmetSayfa.teklifFormu}</a>
         </div>
       </div>
     </section>
@@ -308,7 +318,7 @@ const breadcrumbSchema = {
     <section class="py-12 md:py-16 bg-koyu-50 border-y border-koyu-100" aria-labelledby="bolge-baslik">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 lg:grid-cols-5 gap-8 items-start">
         <div class="lg:col-span-2">
-          <p class="text-eymen-500 text-sm font-semibold tracking-wider mb-3">HİZMET BÖLGESİ</p>
+          <p class="text-eymen-500 text-sm font-semibold tracking-wider mb-3">{s.hizmetSayfa.bolgeUstBaslik}</p>
           <h2 id="bolge-baslik" class="text-2xl md:text-3xl font-extrabold text-koyu-900 mb-3">{bolge.baslik}</h2>
           <p class="text-koyu-600 leading-relaxed">{bolge.metin}</p>
           {bolge.link && <a href={bolge.link.href} class="inline-flex items-center gap-2 mt-4 text-eymen-700 font-semibold hover:text-eymen-800">{bolge.link.label} →</a>}
@@ -317,7 +327,7 @@ const breadcrumbSchema = {
           {bolge.ilceler.map(il => (
             <li class="px-4 py-2 bg-white text-koyu-800 text-sm font-medium rounded-full border border-koyu-200">{il}</li>
           ))}
-          <li class="px-4 py-2 bg-eymen-50 text-eymen-800 text-sm font-semibold rounded-full border border-eymen-200">Türkiye geneline kargo</li>
+          <li class="px-4 py-2 bg-eymen-50 text-eymen-800 text-sm font-semibold rounded-full border border-eymen-200">{s.hizmetSayfa.kargo}</li>
         </ul>
       </div>
     </section>
@@ -328,7 +338,7 @@ const breadcrumbSchema = {
     <section class="py-16 md:py-24 bg-koyu-50">
       <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center mb-14">
-          <h2 class="text-3xl md:text-4xl font-extrabold text-koyu-900">Sık Sorulan Sorular</h2>
+          <h2 class="text-3xl md:text-4xl font-extrabold text-koyu-900">{s.ortak.sss}</h2>
         </div>
         <div class="space-y-4">
           {faq.map(f => (
@@ -348,13 +358,13 @@ const breadcrumbSchema = {
   <!-- CTA -->
   <section class="bg-gradient-to-br from-eymen-500 to-eymen-700 py-16 md:py-20">
     <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-      <h2 class="text-3xl md:text-4xl font-extrabold text-white mb-4">Projeniz İçin Kurumsal Teklif Alın</h2>
+      <h2 class="text-3xl md:text-4xl font-extrabold text-white mb-4">{s.hizmetSayfa.ctaBaslik}</h2>
       <p class="text-eymen-100 text-lg mb-8 max-w-2xl mx-auto">
-        Uzman ekibimiz projenizi yerinde inceler, 3D ön izleme hazırlar ve detaylı fiyat teklifi sunar. 24 saat içinde dönüş garantisi.
+        {s.hizmetSayfa.ctaMetin}
       </p>
       <div class="flex flex-col sm:flex-row gap-4 justify-center">
-        <a href="/teklif-al/" class="inline-flex items-center justify-center gap-2 bg-white text-eymen-600 hover:bg-koyu-50 px-8 py-4 rounded-xl text-base font-bold transition-all hover:shadow-lg">
-          Kurumsal Teklif Formu
+        <a href={yol(lang, 'teklif')} class="inline-flex items-center justify-center gap-2 bg-white text-eymen-600 hover:bg-koyu-50 px-8 py-4 rounded-xl text-base font-bold transition-all hover:shadow-lg">
+          {s.hizmetSayfa.ctaForm}
         </a>
         <a href={contact.phoneHref} class="inline-flex items-center justify-center gap-2 border-2 border-white/30 hover:border-white/60 text-white px-8 py-4 rounded-xl text-base font-semibold transition-all">
           {contact.phone}

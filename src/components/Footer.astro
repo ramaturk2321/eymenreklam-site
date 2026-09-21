@@ -1,6 +1,33 @@
 ---
 import { socialLinks, contact, company } from '../lib/site-data';
+import { getCollection } from 'astro:content';
+import { sozluk, yol, hizmetYolu, SADECE_TR } from '../i18n';
+import type { Dil } from '../i18n';
+
+interface Props {
+  lang?: Dil;
+}
+
+const { lang = 'tr' } = Astro.props;
+const s = sozluk(lang);
+const trMi = lang === 'tr';
 const year = new Date().getFullYear();
+
+const HIZMET_KOLEKSIYONU = { tr: 'hizmetler', en: 'hizmetlerEn', ar: 'hizmetlerAr' } as const;
+const hizmetLinkleri = (await getCollection(HIZMET_KOLEKSIYONU[lang]))
+  .sort((a, b) => a.data.order - b.data.order)
+  .slice(0, 6)
+  .map(h => ({ href: hizmetYolu(lang, h.id), label: h.data.title }));
+
+const firmaLinkleri = [
+  { href: yol(lang, 'hakkimizda'), label: s.nav.hakkimizda },
+  ...(trMi ? [{ href: yol(lang, 'kurumsal'), label: s.nav.kurumsal }] : []),
+  { href: '/eymen-reklam-sunumu.pdf', label: s.footer.kurumsalSunum, disKaynak: true },
+  { href: yol(lang, 'iletisim'), label: s.nav.iletisim },
+  { href: yol(lang, 'projeler'), label: s.nav.projeler },
+  { href: yol(lang, 'referanslar'), label: s.nav.referanslar },
+  ...(trMi ? [{ href: SADECE_TR.blog, label: s.nav.blog }] : []),
+];
 ---
 
 <footer class="bg-koyu-900 text-koyu-300">
@@ -10,13 +37,13 @@ const year = new Date().getFullYear();
       <!-- Firma -->
       <div>
         <a
-          href="/"
+          href={yol(lang, 'ana')}
           class="mb-5 block h-[72px] w-[180px] rounded-xl bg-white bg-center bg-no-repeat shadow-sm ring-1 ring-white/10"
           style={`background-image: url('${company.logoPath}'); background-size: 180px 180px;`}
           aria-label={`${company.name} ana sayfa`}
         ></a>
         <p class="text-sm leading-relaxed text-koyu-300">
-          2000'den beri İstanbul Pendik'te müşterilerimizle birlikte üretiyoruz: tabela imalatı, UV baskı ve dijital baskı.
+          {s.footer.firmaOzet}
         </p>
         <!-- Sosyal Medya — site-data.ts'den -->
         <div class="flex gap-3 mt-5">
@@ -30,19 +57,23 @@ const year = new Date().getFullYear();
 
       <!-- Hizmetler -->
       <div>
-        <h3 class="text-white font-semibold text-sm tracking-wider mb-4">HİZMETLERİMİZ</h3>
+        <h3 class="text-white font-semibold text-sm tracking-wider mb-4">{s.footer.hizmetlerBaslik}</h3>
         <ul class="space-y-2.5">
-          <li><a href="/hizmetlerimiz/tabela/" class="text-sm hover:text-eymen-400 transition-colors">Tabela İmalatı</a></li>
-          <li><a href="/urunlerimiz/kutu-harf-tabela/" class="text-sm hover:text-eymen-400 transition-colors">Kutu Harf Tabela</a></li>
-          <li><a href="/hizmetlerimiz/uv-baski/" class="text-sm hover:text-eymen-400 transition-colors">UV Baskı</a></li>
-          <li><a href="/hizmetlerimiz/folyo-giydirme/" class="text-sm hover:text-eymen-400 transition-colors">Araç Giydirme</a></li>
-          <li><a href="/hizmetlerimiz/dijital-baski/" class="text-sm hover:text-eymen-400 transition-colors">Dijital Baskı</a></li>
-          <li><a href="/hizmetlerimiz/bez-baski/" class="text-sm hover:text-eymen-400 transition-colors">Branda & Bez Baskı</a></li>
-          <li><a href="/istanbul-branda-baski/" class="text-sm hover:text-eymen-400 transition-colors">İstanbul Branda Baskı</a></li>
-          <li><a href="/anadolu-yakasi-uv-baski/" class="text-sm hover:text-eymen-400 transition-colors">Anadolu Yakası UV Baskı</a></li>
-          <li><a href="/urunlerimiz/" class="text-sm font-semibold text-eymen-400 hover:text-eymen-300 transition-colors">Tüm Ürünler →</a></li>
+          {hizmetLinkleri.map(h => (
+            <li><a href={h.href} class="text-sm hover:text-eymen-400 transition-colors">{h.label}</a></li>
+          ))}
+          {trMi && (
+            <>
+              <li><a href={SADECE_TR.istanbulBranda} class="text-sm hover:text-eymen-400 transition-colors">İstanbul Branda Baskı</a></li>
+              <li><a href={SADECE_TR.anadoluUv} class="text-sm hover:text-eymen-400 transition-colors">Anadolu Yakası UV Baskı</a></li>
+              <li><a href={SADECE_TR.urunler} class="text-sm font-semibold text-eymen-400 hover:text-eymen-300 transition-colors">{s.nav.tumUrunler} →</a></li>
+            </>
+          )}
+          {!trMi && (
+            <li><a href={yol(lang, 'hizmetler')} class="text-sm font-semibold text-eymen-400 hover:text-eymen-300 transition-colors">{s.nav.tumHizmetler} →</a></li>
+          )}
         </ul>
-        <h3 class="text-white font-semibold text-sm tracking-wider mt-8 mb-3">UZMANLIK SİTELERİMİZ</h3>
+        <h3 class="text-white font-semibold text-sm tracking-wider mt-8 mb-3">{s.footer.uzmanlikBaslik}</h3>
         <ul class="space-y-2.5">
           <li><a href="https://www.pendikuvbaski.com/" target="_blank" rel="noopener" class="text-sm hover:text-eymen-400 transition-colors">Pendik UV Baskı Merkezi ↗</a></li>
           <li><a href="https://www.pendikbezbaski.com/" target="_blank" rel="noopener" class="text-sm hover:text-eymen-400 transition-colors">Pendik Bez Baskı Merkezi ↗</a></li>
@@ -51,21 +82,24 @@ const year = new Date().getFullYear();
 
       <!-- Firma -->
       <div>
-        <h3 class="text-white font-semibold text-sm tracking-wider mb-4">FİRMA</h3>
+        <h3 class="text-white font-semibold text-sm tracking-wider mb-4">{s.footer.firmaBaslik}</h3>
         <ul class="space-y-2.5">
-          <li><a href="/hakkimizda/" class="text-sm hover:text-eymen-400 transition-colors">Hakkımızda</a></li>
-          <li><a href="/kurumsal-cozumler/" class="text-sm hover:text-eymen-400 transition-colors">Kurumsal Çözümler</a></li>
-          <li><a href="/eymen-reklam-sunumu.pdf" target="_blank" rel="noopener" class="text-sm hover:text-eymen-400 transition-colors">Kurumsal Sunum (PDF)</a></li>
-          <li><a href="/iletisim/" class="text-sm hover:text-eymen-400 transition-colors">İletişim</a></li>
-          <li><a href="/projelerimiz/" class="text-sm hover:text-eymen-400 transition-colors">Projelerimiz</a></li>
-          <li><a href="/referanslarimiz/" class="text-sm hover:text-eymen-400 transition-colors">Referanslarımız</a></li>
-          <li><a href="/blog/" class="text-sm hover:text-eymen-400 transition-colors">Blog</a></li>
+          {firmaLinkleri.map(l => (
+            <li>
+              <a
+                href={l.href}
+                target={l.disKaynak ? '_blank' : undefined}
+                rel={l.disKaynak ? 'noopener' : undefined}
+                class="text-sm hover:text-eymen-400 transition-colors"
+              >{l.label}</a>
+            </li>
+          ))}
         </ul>
       </div>
 
       <!-- İletişim -->
       <div>
-        <h3 class="text-white font-semibold text-sm tracking-wider mb-4">İLETİŞİM</h3>
+        <h3 class="text-white font-semibold text-sm tracking-wider mb-4">{s.footer.iletisimBaslik}</h3>
         <ul class="space-y-3">
           <li class="flex items-start gap-3">
             <svg class="w-4 h-4 mt-0.5 text-eymen-400 flex-shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
@@ -89,12 +123,12 @@ const year = new Date().getFullYear();
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-5">
       <div class="flex flex-col sm:flex-row items-center justify-center gap-2 sm:gap-4 text-xs text-koyu-400">
         <p class="text-center">
-          &copy; {year} {company.fullName} ({company.alternateName}) — {company.experience} Yıllık Üretim Tecrübesi
+          &copy; {year} {company.fullName} ({company.alternateName}) — {company.experience} {s.footer.tecrube}
         </p>
         <span class="hidden sm:inline text-koyu-700">|</span>
         <div class="flex items-center gap-4">
-          <a href="/gizlilik/" class="hover:text-eymen-400 transition-colors">Gizlilik &amp; KVKK</a>
-          <a href="/cerez-politikasi/" class="hover:text-eymen-400 transition-colors">Çerez Politikası</a>
+          <a href={yol(lang, 'gizlilik')} class="hover:text-eymen-400 transition-colors">{s.footer.gizlilik}</a>
+          <a href={yol(lang, 'cerez')} class="hover:text-eymen-400 transition-colors">{s.footer.cerez}</a>
         </div>
       </div>
     </div>

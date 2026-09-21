@@ -19,13 +19,25 @@ const images = proje.data.images?.length ? proje.data.images : [proje.data.image
 const srcsets = images.map((i) => srcset(i) ?? '');
 const hasGallery = images.length > 1;
 
+// İngilizce çevirisi olan projelerde hreflang basılır; olmayanlarda basılmaz
+// (aksi hâlde var olmayan bir /en/projects/... sayfasına link verilir).
+const enVar = (await getCollection('projelerEn')).some(p => p.id === proje.id);
+
 const allProjeler = (await getCollection('projeler'))
   .filter(p => p.id !== proje.id)
   .sort((a, b) => (a.data.order ?? 99) - (b.data.order ?? 99))
   .slice(0, 3);
 ---
 
-<BaseLayout title={proje.data.seoTitle ?? proje.data.title} description={proje.data.description} image={proje.data.image}>
+<BaseLayout
+  title={proje.data.seoTitle ?? proje.data.title}
+  description={proje.data.description}
+  image={proje.data.image}
+  lang="tr"
+  sayfa={enVar ? 'projeler' : undefined}
+  slug={enVar ? proje.id : undefined}
+  tur={enVar ? 'proje' : undefined}
+>
 
   <!-- Breadcrumb -->
   <nav class="bg-koyu-50 border-b border-koyu-100 py-3">

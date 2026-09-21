@@ -1,0 +1,136 @@
+{
+  "title": "Safety Signage",
+  "seoTitle": "Occupational Safety Signage Manufacturing in Istanbul",
+  "description": "Warning signs, instruction boards and hazard symbols manufactured to ISO 3864 and TSE standards in Istanbul.",
+  "heroDesc": "We manufacture warning signs, instruction boards and hazard symbols that meet workplace safety requirements, designed to ISO 3864, TSE and OSHA standards. Produced on PVC, plastic, steel and aluminium with UV-resistant printing rated for five years or more outdoors.",
+  "order": 8,
+  "listIcon": "⚠️",
+  "listDesc": "Warning, prohibition, information and fire safety signs compliant with occupational safety regulations. Photoluminescent and standard options.",
+  "listFeatures": [
+    "Warning Signs",
+    "Fire Safety",
+    "Prohibition Signs",
+    "Information Signs"
+  ],
+  "listImage": "/images/urunler/is-guvenligi-1.webp",
+  "features": [
+    {
+      "icon": "⚠️",
+      "title": "ISO 3864 Standards",
+      "desc": "Signs designed and manufactured to the international standard for safety signs and colours."
+    },
+    {
+      "icon": "🚫",
+      "title": "Warning and Hazard Symbols",
+      "desc": "Electrical, chemical, mechanical and biological hazard symbols in the standard yellow, red, blue and black."
+    },
+    {
+      "icon": "📋",
+      "title": "Instruction and Wayfinding Boards",
+      "desc": "Work instruction signs, emergency exit routes and fire extinguisher location markers."
+    },
+    {
+      "icon": "🏭",
+      "title": "Industrial Materials",
+      "desc": "PVC, plastic, aluminium and galvanised steel, suitable for outdoor use and harsh conditions."
+    },
+    {
+      "icon": "✨",
+      "title": "UV-Resistant Printing",
+      "desc": "UV-resistant inks that hold their colour for five years or more in outdoor applications."
+    },
+    {
+      "icon": "🔧",
+      "title": "Custom Designs and Sizes",
+      "desc": "Signs designed in your corporate colours, in standard or custom sizes."
+    }
+  ],
+  "products": [
+    {
+      "title": "Occupational Safety Signs",
+      "desc": "Workplace warning, hazard, prohibition and mandatory action signs to ISO and TSE standards.",
+      "image": "/images/urunler/is-guvenligi-1.webp"
+    },
+    {
+      "title": "Warning Signs",
+      "desc": "Electrical, fall, slippery floor and pressurised system warning signs.",
+      "image": "/images/urunler/is-guvenligi-2.webp"
+    },
+    {
+      "title": "Hazard Symbols",
+      "desc": "Chemical, mechanical, fire, toxic and biological hazard symbols.",
+      "image": "/images/urunler/is-guvenligi-3.webp"
+    },
+    {
+      "title": "Emergency Exit Signs",
+      "desc": "Emergency exit routes, fire extinguisher locations and first aid point signs.",
+      "image": "/images/urunler/is-guvenligi-4.webp"
+    },
+    {
+      "title": "Office Signage",
+      "desc": "Door and reception signs for corporate information and wayfinding.",
+      "image": "/images/urunler/ofis-tabela-1.webp"
+    },
+    {
+      "title": "Projecting Wayfinding Signs",
+      "desc": "Double-sided signs mounted perpendicular to the wall for corridor wayfinding.",
+      "image": "/images/urunler/fener-tabela-1.webp"
+    }
+  ],
+  "process": [
+    {
+      "step": "01",
+      "title": "Standards and Requirements",
+      "desc": "We determine which signs are needed from the type of workplace and its safety requirements."
+    },
+    {
+      "step": "02",
+      "title": "Design and Compliance",
+      "desc": "Designs are prepared to ISO 3864 and TSE standards and submitted for your approval."
+    },
+    {
+      "step": "03",
+      "title": "Production and Printing",
+      "desc": "UV-resistant printing onto the chosen material, in standard or custom sizes."
+    },
+    {
+      "step": "04",
+      "title": "Delivery and Placement Advice",
+      "desc": "Signs are delivered, with guidance on where each one should be positioned if required."
+    }
+  ],
+  "sectors": [
+    "Industry and Manufacturing",
+    "Construction and Real Estate",
+    "Automotive and Logistics",
+    "Healthcare and Hospitals",
+    "Chemicals and Petrochemicals",
+    "Electricity and Energy",
+    "Mining and Extraction",
+    "Food and Beverage",
+    "Textiles",
+    "Retail and Warehousing"
+  ],
+  "faq": [
+    {
+      "q": "Which standards do the signs follow?",
+      "a": "Signs are designed to ISO 3864, TSE and OSHA standards. In Turkey, compliance with the occupational health and safety regulations is mandatory."
+    },
+    {
+      "q": "Which material suits outdoor use?",
+      "a": "Aluminium, galvanised steel and specialist PVC last five years or more outdoors. Plain PVC is suitable for short-term use."
+    },
+    {
+      "q": "Can we have custom colours and our logo?",
+      "a": "Yes. Alongside the standard ISO colours we can produce signs in your corporate colours and carry your logo."
+    },
+    {
+      "q": "How is sign size determined?",
+      "a": "The ISO standard sets minimum sizes based on viewing distance. As an example, a sign that must be legible from 5 m should be 50 × 50 cm."
+    },
+    {
+      "q": "Do you advise on placement?",
+      "a": "Yes. We advise on sign positioning based on the layout of the workplace and the requirements of the OSHA and TSE regulations."
+    }
+  ]
+}

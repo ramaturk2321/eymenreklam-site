@@ -1,0 +1,38 @@
+---
+import HizmetDetay from '../../../components/HizmetDetay.astro';
+import { getCollection } from 'astro:content';
+import { HIZMET_SLUG } from '../../../i18n';
+
+export async function getStaticPaths() {
+  const hizmetler = await getCollection('hizmetlerEn');
+  return hizmetler.map(hizmet => ({
+    // Dosya adı TR slug'ıdır; URL'de İngilizce slug kullanılır.
+    params: { id: HIZMET_SLUG[hizmet.id]?.en ?? hizmet.id },
+    props: { hizmet },
+  }));
+}
+
+const { hizmet } = Astro.props;
+const d = hizmet.data;
+---
+
+<HizmetDetay
+  lang="en"
+  slug={hizmet.id}
+  title={d.title}
+  seoTitle={d.seoTitle}
+  description={d.description}
+  heroDesc={d.heroDesc}
+  heroImage={d.heroImage}
+  heroTitle={d.heroTitle}
+  gallery={d.gallery}
+  fiyatFaktorleri={d.fiyatFaktorleri}
+  bolge={d.bolge}
+  ogImage={d.heroImage ?? d.listImage}
+  facility={d.facility}
+  features={d.features}
+  products={d.products}
+  process={d.process}
+  sectors={d.sectors}
+  faq={d.faq}
+/>

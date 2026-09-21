@@ -1,15 +1,31 @@
 ---
 import { socialLinks, contact } from '../lib/site-data';
 import { getCollection } from 'astro:content';
+import { sozluk, yol, hizmetYolu, dilAlternatifleri, SADECE_TR } from '../i18n';
+import type { Dil, SayfaKimligi } from '../i18n';
 
-const hizmetler = (await getCollection('hizmetler'))
+interface Props {
+  lang?: Dil;
+  kimlik?: SayfaKimligi;
+}
+
+const { lang = 'tr', kimlik } = Astro.props;
+const s = sozluk(lang);
+const trMi = lang === 'tr';
+
+// Hizmet içeriği dile göre ayrı koleksiyondan gelir; dosya adları (id) her dilde
+// aynı TR slug'ıdır, URL slug'ına çeviriyi hizmetYolu() yapar.
+const HIZMET_KOLEKSIYONU = { tr: 'hizmetler', en: 'hizmetlerEn', ar: 'hizmetlerAr' } as const;
+const hizmetler = (await getCollection(HIZMET_KOLEKSIYONU[lang]))
   .sort((a, b) => a.data.order - b.data.order)
   .map(h => ({
-    href: `/hizmetlerimiz/${h.id}/`,
+    href: hizmetYolu(lang, h.id),
     label: h.data.title,
     icon: h.data.listIcon,
   }));
 
+// Ürün mega menüsü yalnızca Türkçe — 56 ürün sayfası yerel arama için var,
+// EN/AR'da karşılıkları yok, oradan link verilmez.
 const urunler = [
   {
     category: 'Tabela',
@@ -46,12 +62,27 @@ const urunler = [
   },
 ];
 
-const navLinks = [
-  { href: '/kurumsal-cozumler/', label: 'Kurumsal Çözümler' },
-  { href: '/projelerimiz/', label: 'Projelerimiz' },
-  { href: '/hakkimizda/', label: 'Hakkımızda' },
-  { href: '/iletisim/', label: 'İletişim' },
-];
+const navLinks = trMi
+  ? [
+      { href: yol(lang, 'kurumsal'), label: s.nav.kurumsal },
+      { href: yol(lang, 'projeler'), label: s.nav.projeler },
+      { href: yol(lang, 'hakkimizda'), label: s.nav.hakkimizda },
+      { href: yol(lang, 'iletisim'), label: s.nav.iletisim },
+    ]
+  : [
+      { href: yol(lang, 'projeler'), label: s.nav.projeler },
+      { href: yol(lang, 'referanslar'), label: s.nav.referanslar },
+      { href: yol(lang, 'hakkimizda'), label: s.nav.hakkimizda },
+      { href: yol(lang, 'iletisim'), label: s.nav.iletisim },
+    ];
+
+// Dil değiştirici: sayfanın kimliği biliniyorsa aynı sayfanın karşılığına,
+// bilinmiyorsa (ürün/blog gibi yalnız TR sayfalar) o dilin ana sayfasına gider.
+const dilSecenekleri = kimlik
+  ? dilAlternatifleri(kimlik)
+  : dilAlternatifleri({ anahtar: 'ana' });
+// Tek dil yayındayken değiştirici gösterilmez.
+const dilDegistiriciGoster = dilSecenekleri.length > 1;
 
 const currentPath = Astro.url.pathname;
 ---
@@ -77,8 +108,26 @@ const currentPath = Astro.url.pathname;
           </a>
         </div>
 
-        <!-- Sağ: Sosyal Medya -->
+        <!-- Sağ: Dil + Sosyal Medya -->
         <div class="flex items-center gap-4">
+          <!-- Dil değiştirici -->
+          {dilDegistiriciGoster && (
+          <div class="flex items-center gap-1" aria-label={s.nav.dilSec}>
+            {dilSecenekleri.map(d => (
+              <a
+                href={d.href}
+                hreflang={d.hreflang}
+                lang={d.hreflang}
+                aria-current={d.dil === lang ? 'true' : undefined}
+                class:list={[
+                  'px-2 py-0.5 rounded text-xs font-bold tracking-wide transition-colors',
+                  d.dil === lang ? 'bg-eymen-500 text-white' : 'text-koyu-400 hover:text-white'
+                ]}
+              >{d.kisa}</a>
+            ))}
+          </div>
+          )}
+          {dilDegistiriciGoster && <span class="w-px h-4 bg-koyu-700"></span>}
           <!-- Sosyal Medya -->
           <div class="flex items-center gap-3">
             {socialLinks.map(s => (
@@ -98,7 +147,7 @@ const currentPath = Astro.url.pathname;
       <div class="flex items-center justify-between h-20 lg:h-24">
         <!-- Logo -->
         <a
-          href="/"
+          href={yol(lang, 'ana')}
           class="header-logo block h-[60px] w-44 flex-shrink-0 bg-center bg-no-repeat lg:h-[76px] lg:w-[220px]"
           style="background-image: url('/images/eymen-logo-yeni-480.webp');"
           aria-label="Eymen Reklam ana sayfa"
@@ -109,7 +158,7 @@ const currentPath = Astro.url.pathname;
           <!-- Hizmetlerimiz Dropdown -->
           <div class="relative group" id="hizmet-dropdown">
             <button id="hizmet-menu-btn" aria-expanded="false" aria-haspopup="true" aria-controls="hizmet-menu" class="flex items-center gap-1.5 px-5 py-2.5 text-[15px] font-semibold text-koyu-700 hover:text-eymen-600 transition-colors">
-              Hizmetlerimiz
+              {s.nav.hizmetler}
               <svg class="w-4 h-4 transition-transform group-hover:rotate-180" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
             </button>
             <!-- Mega Menu -->
@@ -124,12 +173,14 @@ const currentPath = Astro.url.pathname;
                   ))}
                 </div>
                 <div class="mt-4 pt-4 border-t border-koyu-100 flex items-center gap-6">
-                  <a href="/hizmetlerimiz/" class="text-sm text-eymen-600 font-semibold hover:text-eymen-700 transition-colors">
-                    Tüm Hizmetleri Görüntüle →
+                  <a href={yol(lang, 'hizmetler')} class="text-sm text-eymen-600 font-semibold hover:text-eymen-700 transition-colors">
+                    {s.nav.tumHizmetler} →
                   </a>
-                  <a href="/urunlerimiz/" class="text-sm text-eymen-600 font-semibold hover:text-eymen-700 transition-colors">
-                    Tüm Ürünleri Görüntüle →
-                  </a>
+                  {trMi && (
+                    <a href={SADECE_TR.urunler} class="text-sm text-eymen-600 font-semibold hover:text-eymen-700 transition-colors">
+                      {s.nav.tumUrunler} →
+                    </a>
+                  )}
                 </div>
               </div>
             </div>
@@ -154,33 +205,35 @@ const currentPath = Astro.url.pathname;
         <!-- Sağ: Arama + CTA + Mobil -->
         <div class="flex items-center gap-3">
           <!-- Arama Kutusu Desktop -->
+          {trMi && (
           <div class="hidden lg:flex items-center">
-            <form action="/urunlerimiz/" method="get" role="search" class="relative">
-              <label for="search-input" class="sr-only">Ürün veya hizmet ara</label>
+            <form action={SADECE_TR.urunler} method="get" role="search" class="relative">
+              <label for="search-input" class="sr-only">{s.nav.aramaEtiket}</label>
               <input
                 type="text"
                 id="search-input"
                 name="q"
-                placeholder="Arama"
+                placeholder={s.nav.aramaYerTutucu}
                 class="w-40 xl:w-48 pl-4 pr-10 py-2 text-sm border-2 border-koyu-200 rounded-full focus:border-eymen-500 focus:outline-none transition-colors text-koyu-700 placeholder:text-koyu-500"
               />
-              <button type="submit" class="absolute right-3 top-1/2 -translate-y-1/2 text-koyu-400 hover:text-eymen-500 transition-colors" aria-label="Ara">
+              <button type="submit" class="absolute right-3 top-1/2 -translate-y-1/2 text-koyu-400 hover:text-eymen-500 transition-colors" aria-label={s.nav.ara}>
                 <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg>
               </button>
             </form>
           </div>
+          )}
 
           <!-- Kurumsal Teklif CTA Desktop -->
           <a
-            href="/teklif-al/"
+            href={yol(lang, 'teklif')}
             class="hidden lg:inline-flex items-center gap-2 bg-eymen-500 hover:bg-eymen-600 text-white px-6 py-3 rounded-lg text-sm font-bold transition-all hover:shadow-lg hover:shadow-eymen-500/20"
           >
             <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
-            Kurumsal Teklif Al
+            {s.nav.teklifAl}
           </a>
 
           <!-- Mobile Menu Button -->
-          <button id="mobile-menu-btn" class="lg:hidden p-2 rounded-lg text-koyu-600 hover:bg-koyu-50" aria-label="Menü" aria-expanded="false" aria-controls="mobile-menu">
+          <button id="mobile-menu-btn" class="lg:hidden p-2 rounded-lg text-koyu-600 hover:bg-koyu-50" aria-label={s.nav.menu} aria-expanded="false" aria-controls="mobile-menu">
             <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
               <path id="menu-icon" stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/>
             </svg>
@@ -207,7 +260,7 @@ const currentPath = Astro.url.pathname;
         <!-- Hizmetler Accordion -->
         <div>
           <button aria-expanded="false" class="mobile-accordion-btn w-full flex items-center justify-between px-4 py-3 rounded-lg text-sm font-semibold text-koyu-700 hover:bg-koyu-50">
-            Hizmetlerimiz
+            {s.nav.hizmetler}
             <svg class="w-4 h-4 transition-transform" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
           </button>
           <div class="mobile-accordion-content hidden pl-4 space-y-1">
@@ -219,10 +272,11 @@ const currentPath = Astro.url.pathname;
           </div>
         </div>
 
-        <!-- Ürünler Accordion -->
+        <!-- Ürünler Accordion — yalnızca Türkçe -->
+        {trMi && (
         <div>
           <button aria-expanded="false" class="mobile-accordion-btn w-full flex items-center justify-between px-4 py-3 rounded-lg text-sm font-semibold text-koyu-700 hover:bg-koyu-50">
-            Ürünlerimiz
+            {s.nav.urunler}
             <svg class="w-4 h-4 transition-transform" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
           </button>
           <div class="mobile-accordion-content hidden pl-4 space-y-1">
@@ -236,11 +290,12 @@ const currentPath = Astro.url.pathname;
                 ))}
               </div>
             ))}
-            <a href="/urunlerimiz/" class="block px-4 py-2 text-sm font-semibold text-eymen-600 hover:bg-koyu-50 rounded-lg">
-              Tüm Ürünleri Görüntüle →
+            <a href={SADECE_TR.urunler} class="block px-4 py-2 text-sm font-semibold text-eymen-600 hover:bg-koyu-50 rounded-lg">
+              {s.nav.tumUrunler} →
             </a>
           </div>
         </div>
+        )}
 
         {navLinks.map(link => (
           <a href={link.href} class="block px-4 py-3 rounded-lg text-sm font-semibold text-koyu-700 hover:bg-koyu-50">
@@ -248,9 +303,26 @@ const currentPath = Astro.url.pathname;
           </a>
         ))}
 
-        <a href="/teklif-al/" class="block w-full text-center bg-eymen-500 hover:bg-eymen-600 text-white px-4 py-3 rounded-lg text-sm font-bold mt-3">
-          Kurumsal Teklif Al
+        <a href={yol(lang, 'teklif')} class="block w-full text-center bg-eymen-500 hover:bg-eymen-600 text-white px-4 py-3 rounded-lg text-sm font-bold mt-3">
+          {s.nav.teklifAl}
         </a>
+
+        <!-- Mobil dil değiştirici -->
+        {dilDegistiriciGoster && (
+        <div class="flex items-center justify-center gap-2 pt-4 mt-3 border-t border-koyu-100" aria-label={s.nav.dilSec}>
+          {dilSecenekleri.map(d => (
+            <a
+              href={d.href}
+              hreflang={d.hreflang}
+              lang={d.hreflang}
+              class:list={[
+                'px-3 py-1.5 rounded-lg text-sm font-semibold transition-colors',
+                d.dil === lang ? 'bg-eymen-500 text-white' : 'bg-koyu-100 text-koyu-600 hover:bg-koyu-200'
+              ]}
+            >{d.kisa}</a>
+          ))}
+        </div>
+        )}
 
         <!-- Mobil Sosyal Medya -->
         <div class="flex items-center justify-center gap-4 pt-3 border-t border-koyu-100 mt-3">

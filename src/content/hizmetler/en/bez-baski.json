@@ -1,0 +1,215 @@
+{
+  "title": "Banner & Mesh Printing",
+  "seoTitle": "Banner, Mesh and Fabric Printing in Istanbul",
+  "heroTitle": "Banner, Mesh and Fabric Printing — From Our Istanbul Facility",
+  "description": "Banner, mesh and fabric printing on 320 cm presses in our own facility, with eyelets and installation included. Produced in Istanbul in 1–3 working days.",
+  "heroDesc": "Façade banners, construction and scaffolding mesh, retail campaign banners, opening banners and fabric posters are printed at our facility in Pendik, Istanbul on two 320 cm banner presses and one fabric press. Cutting, welding, eyelets and installation are all done by our own team. For retail chains we produce and distribute the same artwork to dozens of branches at once.",
+  "heroImage": "/images/projeler/mevsim-dis-cephe-1.webp",
+  "order": 3,
+  "listIcon": "🏗️",
+  "listDesc": "Façade banners, mesh (perforated banner), hanging banners and fabric posters. Printed on 320 cm presses in our own facility, eyelets and installation included.",
+  "listFeatures": [
+    "Banner Printing",
+    "Mesh Banner",
+    "Hanging Banners",
+    "Fabric Posters"
+  ],
+  "listImage": "/images/projeler/zuber-padel-izmir-1.webp",
+  "facility": {
+    "title": "Banner and Fabric Printing Happens in Our Own Facility",
+    "description": "We do not outsource banner work. Our Pendik facility runs two 320 cm banner presses and one fabric press alongside a laminating and cutting line, with a daily capacity of 1,500 m². Edge welding, eyelets, pole pockets and rope channels are all finished in the same workshop, so urgent jobs can be produced the same day and installed the next.",
+    "stats": [
+      { "value": "320 cm", "label": "Single-Piece Print Width" },
+      { "value": "1,500 m²", "label": "Daily Production Capacity" },
+      { "value": "3", "label": "Wide-Format Presses" },
+      { "value": "Same day", "label": "Urgent Production Option" }
+    ],
+    "machines": [
+      "2 × 320 cm banner printing presses",
+      "1 × 320 cm fabric printing press",
+      "1 × 160 cm Mimaki roll-to-roll printer",
+      "1 × 180 cm laminating machine",
+      "Heat welding, eyelet and stitching finishing line"
+    ],
+    "images": [
+      "/images/uretim/dijital-baski-uretim-1.webp",
+      "/images/urunler/bez-kampanya-4.webp"
+    ]
+  },
+  "features": [
+    {
+      "icon": "🏗️",
+      "title": "Façade and Construction Banners",
+      "desc": "440 g and 510 g PVC banner for building façades, site hoardings, openings and campaigns."
+    },
+    {
+      "icon": "🕸️",
+      "title": "Mesh (Perforated) Banner",
+      "desc": "Perforated banner that lets wind through — the safe choice for scaffolding, tall façades, sports grounds and court perimeters."
+    },
+    {
+      "icon": "🧵",
+      "title": "Fabric and Textile Printing",
+      "desc": "In-store campaign posters, ceiling-hung graphics, and fabric for trade fairs and events."
+    },
+    {
+      "icon": "📢",
+      "title": "Hanging Banners and Campaign Strips",
+      "desc": "Opening, sale, school and event banners. Delivered with eyelets, ready to hang."
+    },
+    {
+      "icon": "🏭",
+      "title": "320 cm, In Our Own Facility",
+      "desc": "Three wide-format presses and 1,500 m² of daily capacity. We control the colour, the lead time and the price."
+    },
+    {
+      "icon": "🔩",
+      "title": "Eyelets, Welding and Installation",
+      "desc": "Edge welding, eyelets, pole pockets and rope channels in the workshop; façade installation by our own team."
+    }
+  ],
+  "products": [
+    {
+      "title": "Banner Printing",
+      "desc": "Façade, construction site and campaign banners in 440 g / 510 g PVC, delivered with eyelets.",
+      "image": "/images/urunler/emlak-branda-3.webp"
+    },
+    {
+      "title": "Mesh Printing",
+      "desc": "Perforated banner that lets wind through, for scaffolding, tall façades and sports grounds.",
+      "image": "/images/urunler/mesh-5.webp"
+    },
+    {
+      "title": "Retail Campaign Banners",
+      "desc": "Façade campaign banners for supermarkets and stores, produced in bulk for chains.",
+      "image": "/images/urunler/market-branda-1.webp"
+    },
+    {
+      "title": "Event Banners",
+      "desc": "Opening, sale and event banners with eyelets, ready to hang.",
+      "image": "/images/urunler/pankart-branda-1.webp"
+    },
+    {
+      "title": "Fabric Banners",
+      "desc": "Fabric banners for schools, sports clubs and organisations.",
+      "image": "/images/urunler/bez-pankart-1.webp"
+    },
+    {
+      "title": "In-Store Fabric Posters",
+      "desc": "Campaign and promotional fabric posters for stores, for hanging from the ceiling or mounting on a wall.",
+      "image": "/images/urunler/bez-kampanya-1.webp"
+    }
+  ],
+  "gallery": [
+    { "src": "/images/projeler/zuber-padel-izmir-1.webp", "alt": "Printed perimeter banners and brand strips at a padel club in İzmir" },
+    { "src": "/images/urunler/mesh-5.webp", "alt": "Sponsor-branded mesh banner around a tennis court" },
+    { "src": "/images/urunler/mesh-6.webp", "alt": "Perforated mesh banner tensioned onto court fencing" },
+    { "src": "/images/urunler/afis-branda-5.webp", "alt": "Printed banner installation around an indoor court" },
+    { "src": "/images/projeler/boldy-bulvar-216-1.webp", "alt": "Tensioned façade banner on a retail store in Ataşehir, Istanbul" },
+    { "src": "/images/projeler/boldy-bulvar-216-2.webp", "alt": "Close-up of an orange campaign banner on a shop façade" },
+    { "src": "/images/urunler/market-branda-1.webp", "alt": "Campaign banner on a supermarket façade" },
+    { "src": "/images/urunler/market-branda-2.webp", "alt": "Campaign banner on a wholesale market façade" },
+    { "src": "/images/urunler/market-branda-3.webp", "alt": "Banner installation on a supermarket façade, car park side" },
+    { "src": "/images/urunler/emlak-branda-3.webp", "alt": "Eyeletted campaign banner being installed on a store façade" },
+    { "src": "/images/projeler/mevsim-dis-cephe-1.webp", "alt": "Large-format banner advertising on a clinic building façade" },
+    { "src": "/images/projeler/etiler-2plan-2.webp", "alt": "Tensioned façade banner on a building in Etiler, Istanbul" }
+  ],
+  "process": [
+    {
+      "step": "01",
+      "title": "Dimensions and Material",
+      "desc": "We measure the façade or area and choose banner, mesh or fabric according to where it will be used."
+    },
+    {
+      "step": "02",
+      "title": "Artwork Approval",
+      "desc": "The print file is prepared to size, and you approve the colours and layout."
+    },
+    {
+      "step": "03",
+      "title": "320 cm Wide-Format Printing",
+      "desc": "Printed on our own banner or fabric press, with colour checked against the approved file."
+    },
+    {
+      "step": "04",
+      "title": "Welding, Eyelets and Installation",
+      "desc": "Edges are welded and eyelets fitted. For façade work our own team carries out the installation."
+    }
+  ],
+  "sectors": [
+    "Construction and Real Estate",
+    "Retail and Chain Stores",
+    "Sports Facilities",
+    "Events and Organisations",
+    "Automotive and Logistics",
+    "Industry and Manufacturing",
+    "Education and Schools",
+    "Tourism and Hospitality",
+    "Healthcare and Hospitals",
+    "Public Sector and Municipalities"
+  ],
+  "faq": [
+    {
+      "q": "How is banner printing priced?",
+      "a": "By square metre, the banner weight (440 g / 510 g / mesh / fabric), the finishing such as eyelets and welding, the quantity, and whether installation is needed. Send us the dimensions and where it will hang and we will quote the same day."
+    },
+    {
+      "q": "What is the largest banner you can print?",
+      "a": "Our presses print 320 cm wide in one piece, with no limit on length. For wider façades the panels are heat-welded together and the seam is not visible."
+    },
+    {
+      "q": "What is the difference between mesh and banner?",
+      "a": "Banner is opaque and blocks the view completely. Mesh is perforated and lets wind through, which makes it safer on scaffolding, tall façades and exposed sports grounds."
+    },
+    {
+      "q": "How quickly can a banner be ready?",
+      "a": "Standard work is delivered within 1–3 working days of artwork approval. Urgent jobs can be produced the same day."
+    },
+    {
+      "q": "How long does a banner last outdoors?",
+      "a": "Good PVC banner with solvent printing holds its colour outdoors for two to three years. Mesh, and any façade in constant direct sun, has a somewhat shorter life."
+    },
+    {
+      "q": "Do you install?",
+      "a": "Yes. Across Istanbul our own team installs façade banners, mesh and hanging banners, arranging scaffolding or a crane where needed. Elsewhere we ship the banner eyeletted and ready to hang."
+    },
+    {
+      "q": "Do you produce in bulk for retail chains?",
+      "a": "Yes. We print the same campaign artwork at the right size for dozens of branches and pack it branch by branch for delivery."
+    }
+  ],
+  "fiyatFaktorleri": [
+    {
+      "baslik": "Material",
+      "aciklama": "440 g standard banner, 510 g heavy banner, blackout banner, perforated mesh or fabric. Where and how long it will be used decides the material."
+    },
+    {
+      "baslik": "Size and square metres",
+      "aciklama": "Pricing is per square metre. We print up to 320 cm in a single piece; wider work is joined by heat welding."
+    },
+    {
+      "baslik": "Finishing",
+      "aciklama": "Edge welding and eyelets are standard. Pole pockets, rope channels, batten slots and special stitching are planned separately."
+    },
+    {
+      "baslik": "Quantity and repeats",
+      "aciklama": "The unit price falls when the same artwork is produced for many branches. For chain campaigns we handle distribution as well."
+    },
+    {
+      "baslik": "Installation",
+      "aciklama": "Façade height, the need for scaffolding or a crane, and the tensioning structure determine the installation cost. Across Istanbul our own team does the work."
+    },
+    {
+      "baslik": "Lead time",
+      "aciklama": "1–3 working days as standard. Same-day production with next-day installation is planned and quoted separately."
+    }
+  ],
+  "bolge": {
+    "baslik": "From Pendik Across Istanbul and Beyond",
+    "metin": "Our facility is in Pendik, on the Asian side of Istanbul. For façade and retail work across the city we handle the survey, the printing and the installation ourselves. To the European side and the rest of Turkey we ship rolled banners by courier or our own vehicle — our projects in İzmir and Bursa were delivered this way.",
+    "ilceler": [
+      "Pendik", "Tuzla", "Kartal", "Maltepe", "Kadıköy", "Ataşehir",
+      "Ümraniye", "Sancaktepe", "Çekmeköy", "Sultanbeyli", "Üsküdar", "Gebze"
+    ]
+  }
+}

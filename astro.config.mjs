@@ -23,7 +23,15 @@ export default defineConfig({
   ],
   i18n: {
     defaultLocale: 'tr',
-    locales: ['tr'],
+    locales: ['tr', 'en', 'ar'],
+    routing: {
+      // TR kökte kalır (/), EN /en/ ve AR /ar/ altında yayınlanır.
+      // Yol adları dile göre değiştiği için (/hizmetlerimiz/ ↔ /en/services/)
+      // sayfalar elle oluşturulur; Astro yalnızca Astro.currentLocale'i sağlar.
+      prefixDefaultLocale: false,
+      redirectToDefaultLocale: false,
+      fallbackType: 'rewrite',
+    },
   },
   vite: {
     plugins: [tailwindcss()],

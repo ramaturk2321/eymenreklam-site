@@ -2,7 +2,7 @@
 
 > Pendik, İstanbul merkezli tabela imalatı, UV baskı ve dijital baskı firması. 2000 yılından beri faaliyette; 2.500 m² kendi üretim tesisinde tasarımdan montaja kadar tüm süreci yürütür. Bu dosya yapay zeka modelleri için hazırlanmıştır.
 
-Son güncelleme: 2026-09-16
+Son güncelleme: 2026-09-21
 
 ## Firma
 
@@ -21,7 +21,29 @@ Son güncelleme: 2026-09-16
 - E-posta: info@eymenreklam.com.tr
 - Ofis / idari merkez: Esenler Mah. Çevre Sok. No: 7, 34899 Pendik / İstanbul
 - Üretim tesisi (2.500 m²): Esenler Mah. Suda Sk. No: 2, 34899 Pendik / İstanbul
-- Çalışma saatleri: Pazartesi-Cuma 09:00-18:30 · Cumartesi ve Pazar kapalı
+- Çalışma saatleri: Pazartesi-Cuma 08:30-18:30 · Cumartesi ve Pazar kapalı
+
+## English pages
+
+The site is published in Turkish (default) and English. English pages live under /en/ and carry hreflang
+annotations. Product pages (/urunlerimiz/) and the blog exist in Turkish only.
+
+- [Home (EN)](https://www.eymenreklam.com.tr/en/)
+- [About Us](https://www.eymenreklam.com.tr/en/about/)
+- [Services](https://www.eymenreklam.com.tr/en/services/): signage manufacturing, UV printing, banner & mesh
+  printing, large-format digital printing, poster printing, vinyl & vehicle wrapping, retail branding,
+  displays & stands, graphic design, safety signage
+- [Projects](https://www.eymenreklam.com.tr/en/projects/)
+- [Clients](https://www.eymenreklam.com.tr/en/references/)
+- [Contact](https://www.eymenreklam.com.tr/en/contact/)
+- [Request a Quote](https://www.eymenreklam.com.tr/en/get-a-quote/)
+
+Summary in English: Eymen Reklam is a signage and large-format printing manufacturer based in Pendik,
+Istanbul, operating since 2000. Production, cutting, finishing and installation are all carried out in its
+own 2,500 m² facility — nothing is subcontracted. Machine park: two 320 cm banner presses, one 320 cm fabric
+press, a SwissQprint 4x2 m UV flatbed, a 160 cm Mimaki roll-to-roll printer, CNC and laser cutting, 180 cm
+lamination. The company works in English with head offices and international brands, installs across Turkey
+with its own team, and arranges export shipment where required.
 
 ## Ana sayfalar
 

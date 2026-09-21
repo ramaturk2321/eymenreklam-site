@@ -1,0 +1,91 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { contact } from '../../lib/site-data';
+import { yol } from '../../i18n';
+
+const guncelleme = '21 September 2026';
+---
+
+<BaseLayout
+  title="Cookie Policy"
+  description="Which cookies eymenreklam.com.tr uses, what they do, and how you can control them in your browser."
+  lang="en"
+  sayfa="cerez"
+>
+
+  <section class="bg-koyu-900 pt-32 pb-12 md:pt-40 md:pb-16">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <h1 class="text-3xl md:text-4xl font-extrabold text-white mb-4">Cookie Policy</h1>
+      <p class="text-koyu-400">Last updated: {guncelleme}</p>
+    </div>
+  </section>
+
+  <section class="py-12 md:py-16">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="bg-eymen-50 border border-eymen-200 rounded-xl p-5 mb-10 text-sm text-koyu-700">
+        This is an English summary. The
+        <a href={yol('tr', 'cerez')} class="text-eymen-700 underline">Turkish version</a> is the binding text.
+      </div>
+
+      <div class="space-y-10">
+        <div>
+          <h2 class="text-xl md:text-2xl font-bold text-koyu-900 mb-4 pb-2 border-b border-koyu-100">What is a cookie?</h2>
+          <p class="text-koyu-600 leading-relaxed">
+            A cookie is a small text file that a website stores in your browser. Cookies are used to remember
+            your preferences and to understand how the site is used.
+          </p>
+        </div>
+
+        <div>
+          <h2 class="text-xl md:text-2xl font-bold text-koyu-900 mb-4 pb-2 border-b border-koyu-100">Which cookies does this site use?</h2>
+          <div class="space-y-5">
+            <div class="border border-koyu-100 rounded-xl p-5">
+              <h3 class="font-semibold text-koyu-900 mb-1">Strictly necessary</h3>
+              <p class="text-sm text-koyu-600">Required for the site to function — for example keeping a form submission working correctly. These cannot be switched off.</p>
+            </div>
+            <div class="border border-koyu-100 rounded-xl p-5">
+              <h3 class="font-semibold text-koyu-900 mb-1">Analytics — Google Analytics (GA4)</h3>
+              <p class="text-sm text-koyu-600">Tells us which pages are visited, for how long and from which device, so we can improve the site. The data is aggregated and is not used to identify you personally.</p>
+            </div>
+            <div class="border border-koyu-100 rounded-xl p-5">
+              <h3 class="font-semibold text-koyu-900 mb-1">Analytics — Vercel Analytics</h3>
+              <p class="text-sm text-koyu-600">Measures page load performance and traffic on the hosting platform.</p>
+            </div>
+            <div class="border border-koyu-100 rounded-xl p-5">
+              <h3 class="font-semibold text-koyu-900 mb-1">Third-party embeds</h3>
+              <p class="text-sm text-koyu-600">The Google Maps embed on the contact page may set its own cookies, governed by Google's own policies.</p>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <h2 class="text-xl md:text-2xl font-bold text-koyu-900 mb-4 pb-2 border-b border-koyu-100">How to control cookies</h2>
+          <p class="text-koyu-600 leading-relaxed mb-4">
+            Every browser lets you block or delete cookies from its settings. Blocking strictly necessary cookies
+            may stop parts of the site working.
+          </p>
+          <ul class="text-koyu-600 leading-relaxed list-disc list-inside space-y-1.5">
+            <li>Chrome: Settings → Privacy and security → Third-party cookies</li>
+            <li>Safari: Settings → Privacy</li>
+            <li>Firefox: Settings → Privacy &amp; Security</li>
+            <li>Edge: Settings → Cookies and site permissions</li>
+          </ul>
+          <p class="text-koyu-600 leading-relaxed mt-4">
+            You can also opt out of Google Analytics with the browser add-on Google provides for that purpose.
+          </p>
+        </div>
+
+        <div>
+          <h2 class="text-xl md:text-2xl font-bold text-koyu-900 mb-4 pb-2 border-b border-koyu-100">Your personal data</h2>
+          <p class="text-koyu-600 leading-relaxed">
+            How we process personal data, and your rights, are set out in our
+            <a href={yol('en', 'gizlilik')} class="text-eymen-600 hover:text-eymen-700">Privacy Policy</a>.
+            For questions write to
+            <a href={contact.emailHref} class="text-eymen-600 hover:text-eymen-700">{contact.email}</a>.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</BaseLayout>

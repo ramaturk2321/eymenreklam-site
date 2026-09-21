@@ -1,0 +1,137 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { company } from '../../lib/site-data';
+import { sektorler, tumReferanslar, zincirMarkalar } from '../../lib/referanslar';
+import { yol } from '../../i18n';
+
+// Sektör adları ve açıklamaları burada İngilizce; marka adları çevrilmez.
+const SEKTOR_EN: Record<string, { ad: string; aciklama: string }> = {
+  perakende: {
+    ad: 'Retail & Supermarket Chains',
+    aciklama:
+      'For multi-site brands we produce signage, in-store advertising and campaign graphics from one place, to one set of dimensions and material standards.',
+  },
+  gida: {
+    ad: 'Food & FMCG',
+    aciklama:
+      'From the factory entrance to the supermarket shelf: pylon signs, cooler wrapping, pallet skirts, packaging and exhibition stands.',
+  },
+  sanayi: {
+    ad: 'Industry, Automotive & Corporate',
+    aciklama:
+      'Factory and plant signage, fleet wrapping, safety signage and corporate identity applications.',
+  },
+  avm: {
+    ad: 'Shopping Centres, Real Estate & Construction',
+    aciklama:
+      'Shopping centre signage and lightbox walls, site hoardings, sales office branding and façade graphics.',
+  },
+  hizmet: {
+    ad: 'Healthcare, Sport, Restaurants & Services',
+    aciklama:
+      'Clinic, sports facility and restaurant signage, façade banners, window film and interior branding.',
+  },
+};
+
+const toplam = tumReferanslar.length;
+
+const title = 'Our Clients — Brands We Produce For';
+const description = `Eymen Reklam clients: Hakmar (800+ stores), Tarım Kredi KOOP Market, A101, Ülker, Anadolu Isuzu, Meydan AVM, PAWCO and ${toplam}+ corporate brands. Signage, channel letters, UV printing and retail branding produced in Istanbul.`;
+
+const itemListSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'ItemList',
+  name: 'Eymen Reklam client brands',
+  description: 'Corporate clients for whom Eymen Reklam has produced signage, UV printing, vinyl and retail branding.',
+  numberOfItems: toplam,
+  itemListElement: tumReferanslar.map((r, i) => ({
+    '@type': 'ListItem',
+    position: i + 1,
+    item: { '@type': 'Organization', name: r.ad },
+  })),
+};
+
+const breadcrumbSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: `${company.siteUrl}/en/` },
+    { '@type': 'ListItem', position: 2, name: 'Clients', item: `${company.siteUrl}/en/references/` },
+  ],
+};
+---
+
+<BaseLayout title={title} description={description} lang="en" sayfa="referanslar">
+  <script type="application/ld+json" set:html={JSON.stringify(itemListSchema)} />
+  <script type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)} />
+
+  <!-- Breadcrumb -->
+  <nav class="bg-koyu-50 border-b border-koyu-100" aria-label="Breadcrumb">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3">
+      <ol class="flex items-center gap-2 text-sm text-koyu-500">
+        <li><a href={yol('en', 'ana')} class="hover:text-eymen-600 transition-colors">Home</a></li>
+        <li class="text-koyu-300">/</li>
+        <li><span class="text-koyu-900 font-medium">Clients</span></li>
+      </ol>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="bg-koyu-900 py-16 md:py-24">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <p class="text-eymen-400 text-sm font-semibold tracking-wider mb-3">BRANDS WE WORK WITH</p>
+      <h1 class="text-4xl md:text-5xl font-extrabold text-white mb-4">Our Clients</h1>
+      <p class="text-koyu-400 text-lg max-w-3xl mx-auto">
+        Since 2000 we have produced signage, channel letters, UV printing, vinyl and retail branding in our
+        Pendik facility for {toplam} corporate brands — from supermarket chains with more than 800 stores to
+        single-site restaurants.
+      </p>
+      <div class="flex flex-wrap justify-center gap-3 mt-8 text-sm">
+        <span class="px-4 py-2 rounded-full bg-koyu-800 text-koyu-200 border border-koyu-700">{sektorler.length} sectors</span>
+        <span class="px-4 py-2 rounded-full bg-koyu-800 text-koyu-200 border border-koyu-700">{zincirMarkalar.length} multi-site chains</span>
+        <span class="px-4 py-2 rounded-full bg-koyu-800 text-koyu-200 border border-koyu-700">{toplam} brands</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sektör sektör -->
+  {sektorler.map(sektor => (
+    <section class="py-14 md:py-20 border-b border-koyu-100 last:border-0">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="max-w-3xl mb-8">
+          <h2 class="text-2xl md:text-3xl font-extrabold text-koyu-900 mb-3">
+            {SEKTOR_EN[sektor.id]?.ad ?? sektor.ad}
+          </h2>
+          <p class="text-koyu-500 leading-relaxed">{SEKTOR_EN[sektor.id]?.aciklama ?? ''}</p>
+        </div>
+        <ul class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3">
+          {sektor.referanslar.map(r => (
+            <li class="px-4 py-3 rounded-xl bg-koyu-50 border border-koyu-200 text-sm font-semibold text-koyu-800">
+              {r.ad}
+            </li>
+          ))}
+        </ul>
+      </div>
+    </section>
+  ))}
+
+  <!-- CTA -->
+  <section class="bg-gradient-to-br from-eymen-500 to-eymen-700 py-16">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <h2 class="text-3xl font-extrabold text-white mb-4">Want to see the work in person?</h2>
+      <p class="text-eymen-100 mb-8 max-w-2xl mx-auto">
+        Many of these installations are still in use across Istanbul. Tell us where you are and we will share
+        the addresses of the two or three closest to you.
+      </p>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <a href={yol('en', 'projeler')} class="inline-flex items-center justify-center gap-2 bg-white text-eymen-600 hover:bg-koyu-50 px-8 py-4 rounded-xl text-base font-bold transition-all">
+          View Our Projects
+        </a>
+        <a href={yol('en', 'iletisim')} class="inline-flex items-center justify-center gap-2 border-2 border-white/30 hover:border-white/60 text-white px-8 py-4 rounded-xl text-base font-semibold transition-all">
+          Contact Us
+        </a>
+      </div>
+    </div>
+  </section>
+
+</BaseLayout>

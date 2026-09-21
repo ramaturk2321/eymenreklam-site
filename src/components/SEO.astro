@@ -1,16 +1,29 @@
 ---
 import { contact, company, hours } from '../lib/site-data';
+import { sozluk, DIL_BILGISI, YAYINDAKI_DILLER, dilAlternatifleri } from '../i18n';
+import type { Dil, SayfaKimligi } from '../i18n';
 
 interface Props {
   title: string;
   description: string;
   image?: string;
   type?: string;
+  lang?: Dil;
+  /** Verilirse hreflang alternatifleri basılır. Yalnızca TR'de yayınlanan
+   *  sayfalarda (ürün, blog) verilmez. */
+  kimlik?: SayfaKimligi;
 }
 
 const DEFAULT_OG_IMAGE = '/images/fabrika-og.jpg';
-const { title, description, image = DEFAULT_OG_IMAGE, type = 'website' } = Astro.props;
+const { title, description, image = DEFAULT_OG_IMAGE, type = 'website', lang = 'tr', kimlik } = Astro.props;
+const s = sozluk(lang);
+const dilBilgi = DIL_BILGISI[lang];
 const canonicalURL = new URL(Astro.url.pathname, Astro.site);
+
+// hreflang — her dil kendini de listeler (Google bunu bekler), x-default TR.
+// Tek dil yayındayken hreflang basmanın anlamı yok.
+const alternatifler = kimlik && YAYINDAKI_DILLER.length > 1 ? dilAlternatifleri(kimlik) : [];
+const digerLocaleler = YAYINDAKI_DILLER.filter((d) => d !== lang).map((d) => DIL_BILGISI[d].ogLocale);
 const imageURL = new URL(image, Astro.site);
 // og:image boyutları yalnızca sabit 1200x630 varsayılan görsel için doğru
 const isDefaultOgImage = image === DEFAULT_OG_IMAGE;
@@ -21,7 +34,7 @@ const jsonLd = {
   name: company.name,
   legalName: company.fullName,
   alternateName: company.alternateName,
-  description: company.slogan,
+  description: s.seo.isletmeAciklamasi,
   url: company.siteUrl,
   logo: new URL(company.logoPath, Astro.site).toString(),
   // Ana telefon = müşteri hattı 0545 (Google İşletme Profili'nde de birincil numara bu)
@@ -47,7 +60,7 @@ const jsonLd = {
     // İkincil: ofis sabit hattı
     telephone: contact.phoneHref.replace('tel:', ''),
     contactType: 'customer service',
-    availableLanguage: 'Turkish',
+    availableLanguage: YAYINDAKI_DILLER.map((d) => DIL_BILGISI[d].schemaDil),
   },
   image: imageURL.toString(),
   priceRange: '$$',
@@ -64,21 +77,14 @@ const jsonLd = {
     'https://www.pendikuvbaski.com',
     'https://www.pendikbezbaski.com',
   ],
+  inLanguage: dilBilgi.htmlLang,
   hasOfferCatalog: {
     '@type': 'OfferCatalog',
-    name: 'Reklam ve Baskı Hizmetleri',
-    itemListElement: [
-      { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Tabela İmalatı' } },
-      { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'UV Baskı' } },
-      { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Afiş Baskı' } },
-      { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Bez / Branda Baskı' } },
-      { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Dijital Baskı' } },
-      { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Folyo & Araç Giydirme' } },
-      { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Grafik Tasarım' } },
-      { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'İş Güvenliği Levhaları' } },
-      { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Mağaza Reklam Uygulamaları' } },
-      { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Sunum & Stand' } },
-    ],
+    name: s.seo.katalogAdi,
+    itemListElement: s.seo.hizmetListesi.map((ad) => ({
+      '@type': 'Offer',
+      itemOffered: { '@type': 'Service', name: ad },
+    })),
   },
 };
 ---
@@ -86,10 +92,18 @@ const jsonLd = {
 <!-- Canonical -->
 <link rel="canonical" href={canonicalURL} />
 
+<!-- hreflang — yalnızca çok dilli yayınlanan sayfalarda -->
+{alternatifler.map((a) => (
+  <link rel="alternate" hreflang={a.hreflang} href={new URL(a.href, Astro.site)} />
+))}
+{alternatifler.length > 0 && (
+  <link rel="alternate" hreflang="x-default" href={new URL(alternatifler[0].href, Astro.site)} />
+)}
+
 <!-- Open Graph -->
 <meta property="og:type" content={type} />
 <meta property="og:url" content={canonicalURL} />
-<meta property="og:title" content={`${title} | Eymen Reklam`} />
+<meta property="og:title" content={`${title} | ${s.seo.siteAdi}`} />
 <meta property="og:description" content={description} />
 <meta property="og:image" content={imageURL} />
 {isDefaultOgImage && (
@@ -99,12 +113,15 @@ const jsonLd = {
     <meta property="og:image:type" content="image/jpeg" />
   </>
 )}
-<meta property="og:locale" content="tr_TR" />
-<meta property="og:site_name" content="Eymen Reklam" />
+<meta property="og:locale" content={dilBilgi.ogLocale} />
+{alternatifler.length > 0 && digerLocaleler.map((l) => (
+  <meta property="og:locale:alternate" content={l} />
+))}
+<meta property="og:site_name" content={s.seo.siteAdi} />
 
 <!-- Twitter -->
 <meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:title" content={`${title} | Eymen Reklam`} />
+<meta name="twitter:title" content={`${title} | ${s.seo.siteAdi}`} />
 <meta name="twitter:description" content={description} />
 <meta name="twitter:image" content={imageURL} />
 

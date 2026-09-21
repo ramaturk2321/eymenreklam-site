@@ -1,0 +1,201 @@
+{
+  "title": "UV Printing",
+  "seoTitle": "UV Flatbed Printing on Glass, Wood, Metal and Acrylic — Istanbul",
+  "heroTitle": "UV Printing: Direct Printing on Glass, Wood, Metal and Acrylic",
+  "description": "Direct UV printing on glass, metal, wood, acrylic and composite with a 4x2 m flatbed press. Produced in our own facility in Istanbul, cutting and installation included.",
+  "heroDesc": "At our facility in Pendik, Istanbul we print directly onto glass, metal, wood, acrylic, composite, PVC foam board and rigid PVC on a 4x2 m SwissQprint UV flatbed press. White underbase and varnish layers, laser and CNC cutting, and on-site installation where needed all happen under one roof. We handle everything from a single sample to production runs of a thousand pieces.",
+  "heroImage": "/images/urunler/uv-flatbed-1.webp",
+  "order": 2,
+  "listIcon": "🖨️",
+  "listDesc": "High-resolution direct printing on glass, metal, wood, acrylic and composite with a 4x2 m SwissQprint UV flatbed press. Cutting and installation included.",
+  "listFeatures": [
+    "Glass Printing",
+    "Metal Printing",
+    "Wood Printing",
+    "Acrylic Printing"
+  ],
+  "listImage": "/images/uv-baski.webp",
+  "facility": {
+    "title": "UV Printing Happens in Our Own Facility",
+    "description": "We do not outsource UV printing. Our 4x2 m UV flatbed press, laser and PVC cutting line and laminating machine are all in our production facility in Pendik, Istanbul, so every step from printing to cutting is done by our own team. That is how we keep control of colour, lead time and cost — and how urgent jobs can go into production the same day.",
+    "stats": [
+      { "value": "4x2 m", "label": "UV Flatbed Print Area" },
+      { "value": "10 cm", "label": "Maximum Material Thickness" },
+      { "value": "CMYK+W", "label": "White Underbase and Varnish" },
+      { "value": "1 piece", "label": "Minimum Order" }
+    ],
+    "machines": [
+      "1 × SwissQprint 4x2 m UV flatbed press",
+      "1 × laser cutting machine",
+      "2 × PVC / vinyl cutting plotters",
+      "1 × 180 cm laminating machine",
+      "1 × 160 cm Mimaki roll-to-roll printer"
+    ],
+    "images": [
+      "/images/projeler/uv-baski-04.webp",
+      "/images/projeler/uv-baski-11.webp"
+    ]
+  },
+  "features": [
+    {
+      "icon": "🎨",
+      "title": "SwissQprint UV Technology",
+      "desc": "Swiss-built high-precision UV flatbed press. Photographic quality at resolutions up to 1440 dpi."
+    },
+    {
+      "icon": "🪟",
+      "title": "Printing on Almost Any Rigid Surface",
+      "desc": "Direct printing on glass, mirror, aluminium, composite, MDF, solid wood, acrylic, PVC foam board, rigid PVC, laminate and leather."
+    },
+    {
+      "icon": "✨",
+      "title": "Colours That Do Not Fade",
+      "desc": "Ink cured instantly under UV light. Long outdoor life, with resistance to scratching and chemicals."
+    },
+    {
+      "icon": "⚪",
+      "title": "White Underbase and Varnish",
+      "desc": "White underbase for transparent and dark surfaces, with raised varnish and spot gloss effects on top."
+    },
+    {
+      "icon": "📐",
+      "title": "Cutting and Installation Included",
+      "desc": "Contour cutting by laser or CNC after printing, plus drilling, rounded corners and on-site installation when required."
+    },
+    {
+      "icon": "🎯",
+      "title": "From One Piece to Full Production Runs",
+      "desc": "The same quality whether it is a single prototype or a thousand promotional panels and safety signs."
+    }
+  ],
+  "products": [
+    {
+      "title": "UV Printing",
+      "desc": "Direct UV printing on rigid surfaces such as wood, metal, glass, acrylic and composite.",
+      "image": "/images/urunler/uv-baski-1.webp"
+    },
+    {
+      "title": "Safety Signage",
+      "desc": "Warning, hazard and wayfinding signs UV-printed on PVC foam board and composite.",
+      "image": "/images/projeler/uv-baski-05.webp"
+    },
+    {
+      "title": "Foam Board Printing",
+      "desc": "Photographic-quality digital printing. Available with a matte or gloss surface.",
+      "image": "/images/urunler/fotoblok-1.webp"
+    },
+    {
+      "title": "Office and Door Signs",
+      "desc": "Door and reception signage. UV printed on acrylic, aluminium or wood.",
+      "image": "/images/urunler/ofis-tabela-1.webp"
+    }
+  ],
+  "process": [
+    {
+      "step": "01",
+      "title": "Brief and Sample",
+      "desc": "You send the dimensions, material and artwork. Where the finish matters we print a sample first."
+    },
+    {
+      "step": "02",
+      "title": "Prepress",
+      "desc": "We check the file, set the colours and prepare the white underbase and varnish layers."
+    },
+    {
+      "step": "03",
+      "title": "Printing and Cutting",
+      "desc": "Printing on the flatbed press, then contour cutting by laser or CNC and finishing."
+    },
+    {
+      "step": "04",
+      "title": "Delivery or Installation",
+      "desc": "Packed delivery, or installation on site by our own team."
+    }
+  ],
+  "sectors": [
+    "Retail and Shopping Centres",
+    "Food and Beverage Brands",
+    "Construction and Contracting",
+    "Industry and Manufacturing",
+    "Hotels and Restaurants",
+    "Healthcare",
+    "Education",
+    "Automotive",
+    "Logistics",
+    "Corporate Offices"
+  ],
+  "faq": [
+    {
+      "q": "Which materials can you print on?",
+      "a": "Any rigid surface up to 10 cm thick: glass, mirror, acrylic, aluminium, composite, MDF, solid wood, PVC foam board, rigid PVC, laminate and leather. If you are unsure about a material, send us a sample and we will test it."
+    },
+    {
+      "q": "Can you print white on transparent or dark material?",
+      "a": "Yes. Our press prints CMYK plus white, so we lay a white underbase under the colours on glass, acrylic and dark surfaces."
+    },
+    {
+      "q": "Is there a minimum order?",
+      "a": "No. We print a single piece as readily as a production run, because a flatbed press needs no plates or screens."
+    },
+    {
+      "q": "Can I supply my own material?",
+      "a": "Yes. If you bring your own sheets you pay only for the printing. If we supply the material, the sheet cost is added to the quote."
+    },
+    {
+      "q": "How do you match a specific colour?",
+      "a": "We match to your Pantone reference or to a physical sample. For colour-critical work we recommend a test print before the run."
+    },
+    {
+      "q": "What is the lead time?",
+      "a": "Standard work is delivered within a few working days of artwork approval. Urgent jobs can be scheduled for same-day or next-day production."
+    }
+  ],
+  "gallery": [
+    { "src": "/images/projeler/uv-baski-13.webp", "alt": "Promotional panels being printed on the UV flatbed press at the Eymen Reklam facility in Istanbul" },
+    { "src": "/images/projeler/uv-baski-10.webp", "alt": "UV-printed campaign panels for a national food brand" },
+    { "src": "/images/projeler/uv-baski-12.webp", "alt": "Campaign artwork UV printed onto PVC foam board" },
+    { "src": "/images/projeler/uv-baski-05.webp", "alt": "Safety signage printed in series on the UV flatbed press" },
+    { "src": "/images/projeler/uv-baski-06.webp", "alt": "Construction site warning and safety signs, UV printed" },
+    { "src": "/images/projeler/uv-baski-07.webp", "alt": "Photographic printing with UV LED curing, flatbed print head" },
+    { "src": "/images/projeler/uv-baski-08.webp", "alt": "Ink curing instantly during UV flatbed printing" },
+    { "src": "/images/projeler/uv-baski-03.webp", "alt": "Sheet printing on the 4x2 m UV flatbed bed" },
+    { "src": "/images/projeler/etiler-2plan-4.webp", "alt": "Building façade graphics produced with UV printing and tensioned vinyl" },
+    { "src": "/images/projeler/etiler-2plan.webp", "alt": "Close-up of a façade wrapping application" },
+    { "src": "/images/urunler/uv-baski-1.webp", "alt": "Corporate logo UV printed onto a composite panel" },
+    { "src": "/images/urunler/uv-baski-2.webp", "alt": "Contour-cut acrylic with full-colour UV printing" }
+  ],
+  "fiyatFaktorleri": [
+    {
+      "baslik": "Material and surface",
+      "aciklama": "Glass, acrylic, MDF, composite, PVC foam board, metal. If we supply the material, the sheet cost is added; if you bring your own, you pay for the printing only."
+    },
+    {
+      "baslik": "Print area and quantity",
+      "aciklama": "Pricing is calculated per square metre. The unit price falls as quantity rises, because machine set-up is spread across more pieces."
+    },
+    {
+      "baslik": "White underbase and varnish",
+      "aciklama": "On clear glass and dark surfaces, a white underbase, raised varnish or spot gloss each adds a layer — and every layer adds press time."
+    },
+    {
+      "baslik": "Cutting and finishing",
+      "aciklama": "Straight cutting is standard. Contour cutting by laser or CNC, drilling, rounded corners and mounting hardware are quoted separately."
+    },
+    {
+      "baslik": "Artwork preparation",
+      "aciklama": "There is no design charge if you send print-ready vector artwork. Design or retouching is charged by the time it takes."
+    },
+    {
+      "baslik": "Lead time",
+      "aciklama": "Standard lead times get our best price. Same-day work and jobs needing a night shift are planned and quoted separately."
+    }
+  ],
+  "bolge": {
+    "baslik": "From Pendik Across Istanbul and Beyond",
+    "metin": "Our production facility is in Pendik, on the Asian side of Istanbul. For work anywhere in Istanbul we survey the site ourselves, print in our own facility and install with our own team. We ship packed goods to the European side and to the rest of Turkey, and we handle export shipments on request.",
+    "ilceler": [
+      "Pendik", "Tuzla", "Kartal", "Maltepe", "Kadıköy", "Ataşehir",
+      "Ümraniye", "Sancaktepe", "Çekmeköy", "Sultanbeyli", "Üsküdar", "Gebze"
+    ]
+  }
+}

@@ -1,0 +1,270 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { srcset, boyut, SIZES } from '../../lib/gorsel';
+import { getCollection } from 'astro:content';
+import { company, contact } from '../../lib/site-data';
+import { oneCikanMarkalar } from '../../lib/referanslar';
+import { yol, hizmetYolu, projeYolu, whatsappUrl, sozluk } from '../../i18n';
+import { kategoriAdi } from '../../lib/kategoriler';
+
+const s = sozluk('en');
+const waUrl = whatsappUrl('en');
+
+const hizmetler = (await getCollection('hizmetlerEn'))
+  .sort((a, b) => a.data.order - b.data.order)
+  .map(h => ({
+    title: h.data.title,
+    desc: h.data.listDesc,
+    image: h.data.listImage,
+    icon: h.data.listIcon,
+    href: hizmetYolu('en', h.id),
+  }));
+
+// Ana sayfada gösterilecek projeler — en yeni 6 tanesi.
+const trProjeler = new Map((await getCollection('projeler')).map(p => [p.id, p]));
+const projeler = (await getCollection('projelerEn'))
+  .map(c => {
+    const tr = trProjeler.get(c.id);
+    return tr ? { id: c.id, title: c.data.title, image: tr.data.image, kategoriler: tr.data.categories, date: tr.data.date } : null;
+  })
+  .filter((p): p is NonNullable<typeof p> => p !== null)
+  .sort((a, b) => b.date.localeCompare(a.date))
+  .slice(0, 6);
+
+const makineler = [
+  '2 × 320 cm banner printing presses',
+  '1 × 320 cm fabric printing press',
+  '1 × SwissQprint 4×2 m UV flatbed press',
+  '1 × 160 cm Mimaki roll-to-roll printer',
+  'CNC router and laser cutting',
+  '180 cm lamination, PVC cutting, welding and eyelet lines',
+];
+---
+
+<BaseLayout
+  title={s.seo.varsayilanBaslik}
+  description="Eymen Reklam — signage manufacturing, UV printing, banner printing and vehicle wrapping in Istanbul since 2000. A 2,500 m² facility, our own installation team, and correspondence in English."
+  lang="en"
+  sayfa="ana"
+>
+
+  <!-- Hero -->
+  <section class="relative bg-koyu-900 overflow-hidden">
+    <img
+      src="/images/tabela-imalat.webp"
+      srcset={srcset('/images/tabela-imalat.webp')}
+      sizes="100vw"
+      {...boyut('/images/tabela-imalat.webp')}
+      alt=""
+      class="absolute inset-0 w-full h-full object-cover opacity-40"
+      loading="eager"
+      fetchpriority="high"
+      decoding="async"
+    />
+    <div class="absolute inset-0 bg-gradient-to-r from-koyu-900 via-koyu-900/85 to-koyu-900/40"></div>
+    <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-28 pb-16 md:pt-36 md:pb-24">
+      <div class="max-w-3xl">
+        <p class="text-eymen-400 text-sm font-semibold tracking-wider mb-4">SIGNAGE &amp; LARGE-FORMAT PRINTING · ISTANBUL · SINCE 2000</p>
+        <h1 class="text-3xl md:text-5xl font-extrabold text-white mb-5 leading-tight">
+          Signage and printing, produced in our own facility in Istanbul
+        </h1>
+        <p class="text-koyu-200 text-base md:text-lg leading-relaxed mb-8">
+          Channel letters, pylon signs, UV flatbed printing, banners, vehicle wrapping and complete retail
+          fit-outs. We design, manufacture and install with our own team — and we work in English with head
+          offices, international brands and clients shipping abroad.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-3">
+          <a href={yol('en', 'teklif')} class="inline-flex items-center justify-center gap-2 bg-eymen-500 hover:bg-eymen-600 text-white px-7 py-4 rounded-xl text-base font-bold transition-all hover:shadow-lg hover:shadow-eymen-500/25">
+            Request a Quote
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+          </a>
+          <a href={waUrl} target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center gap-2 bg-green-600 hover:bg-green-700 text-white px-7 py-4 rounded-xl text-base font-bold transition-all">
+            Message Us on WhatsApp
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Rakamlar -->
+  <section class="bg-white border-b border-koyu-100">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+        <div>
+          <div class="text-3xl md:text-4xl font-extrabold text-eymen-600">{company.experience}+</div>
+          <div class="text-sm text-koyu-600 mt-1 font-medium">Years in production</div>
+        </div>
+        <div>
+          <div class="text-3xl md:text-4xl font-extrabold text-eymen-600">2,500 m²</div>
+          <div class="text-sm text-koyu-600 mt-1 font-medium">Own facility</div>
+        </div>
+        <div>
+          <div class="text-3xl md:text-4xl font-extrabold text-eymen-600">10,000+</div>
+          <div class="text-sm text-koyu-600 mt-1 font-medium">Completed projects</div>
+        </div>
+        <div>
+          <div class="text-3xl md:text-4xl font-extrabold text-eymen-600">500+</div>
+          <div class="text-sm text-koyu-600 mt-1 font-medium">Corporate clients</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Hizmetler -->
+  <section class="py-16 md:py-24 bg-koyu-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-2xl mx-auto mb-12">
+        <p class="text-eymen-600 text-sm font-semibold tracking-wider mb-3">WHAT WE PRODUCE</p>
+        <h2 class="text-3xl md:text-4xl font-extrabold text-koyu-900">Our Services</h2>
+        <p class="text-koyu-500 mt-4">
+          Ten production lines under one roof — so one contract covers design, manufacturing and installation.
+        </p>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        {hizmetler.map(h => (
+          <a href={h.href} class="group bg-white rounded-2xl border border-koyu-100 overflow-hidden hover:shadow-xl hover:border-eymen-200 transition-all duration-300 hover:-translate-y-1">
+            <div class="aspect-[16/10] overflow-hidden relative bg-koyu-200">
+              <img src={h.image} srcset={srcset(h.image)} sizes={SIZES.kart3} alt={h.title} width="600" height="400" loading="lazy" decoding="async" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+              <span class="absolute top-3 left-3 text-2xl bg-white/90 w-10 h-10 rounded-xl flex items-center justify-center">{h.icon}</span>
+            </div>
+            <div class="p-6">
+              <h3 class="text-lg font-bold text-koyu-900 mb-2 group-hover:text-eymen-600 transition-colors">{h.title}</h3>
+              <p class="text-sm text-koyu-500 leading-relaxed">{h.desc}</p>
+            </div>
+          </a>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- Üretim kapasitesi -->
+  <section class="py-16 md:py-24 bg-koyu-900">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        <div>
+          <p class="text-eymen-400 text-sm font-semibold tracking-wider mb-3">OUR FACILITY</p>
+          <h2 class="text-3xl md:text-4xl font-extrabold text-white mb-5">Nothing is subcontracted</h2>
+          <p class="text-koyu-300 leading-relaxed mb-6">
+            Printing, cutting, welding, sign fabrication and installation all happen in our own 2,500 m² facility
+            in Pendik, on the Asian side of Istanbul. That is why we can hold colour across a chain rollout,
+            commit to a lead time and put urgent work into production the same day.
+          </p>
+          <ul class="space-y-2.5 mb-8">
+            {makineler.map(m => (
+              <li class="flex items-start gap-3 text-koyu-200 text-sm">
+                <span class="text-eymen-400 mt-0.5">✓</span>
+                <span>{m}</span>
+              </li>
+            ))}
+          </ul>
+          <a href={yol('en', 'hakkimizda')} class="inline-flex items-center gap-2 text-eymen-400 font-semibold hover:text-eymen-300">
+            More about the company →
+          </a>
+        </div>
+        <div>
+          <img
+            src="/images/yenifabrika-opt.webp"
+            srcset={srcset('/images/yenifabrika-opt.webp')}
+            sizes={SIZES.yariGenislik}
+            {...boyut('/images/yenifabrika-opt.webp')}
+            alt="Eymen Reklam production facility in Pendik, Istanbul"
+            class="rounded-2xl w-full h-auto shadow-2xl"
+            loading="lazy"
+            decoding="async"
+          />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projeler -->
+  <section class="py-16 md:py-24">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-2xl mx-auto mb-12">
+        <p class="text-eymen-600 text-sm font-semibold tracking-wider mb-3">SELECTED WORK</p>
+        <h2 class="text-3xl md:text-4xl font-extrabold text-koyu-900">Recent Projects</h2>
+      </div>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        {projeler.map(p => (
+          <a href={projeYolu('en', p.id)} class="group bg-white rounded-2xl border border-koyu-100 overflow-hidden hover:shadow-xl hover:border-eymen-200 transition-all duration-300 hover:-translate-y-1">
+            <div class="aspect-[4/3] overflow-hidden relative bg-koyu-200">
+              <img src={p.image} srcset={srcset(p.image)} sizes={SIZES.kart3} alt={p.title} width="600" height="450" loading="lazy" decoding="async" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+              <div class="absolute top-3 left-3 flex flex-wrap gap-1.5">
+                {p.kategoriler.slice(0, 2).map(k => (
+                  <span class="px-3 py-1 bg-eymen-500 text-white text-xs font-semibold rounded-full">{kategoriAdi(k, 'en')}</span>
+                ))}
+              </div>
+            </div>
+            <div class="p-5">
+              <h3 class="font-bold text-koyu-900 group-hover:text-eymen-600 transition-colors">{p.title}</h3>
+            </div>
+          </a>
+        ))}
+      </div>
+      <div class="text-center mt-10">
+        <a href={yol('en', 'projeler')} class="inline-flex items-center gap-2 text-eymen-700 font-semibold hover:text-eymen-800">See all projects →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Markalar -->
+  <section class="py-16 bg-koyu-50 border-y border-koyu-100">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-8">
+        <p class="text-eymen-700 text-sm font-semibold tracking-wider mb-3">OUR CLIENTS</p>
+        <h2 class="text-3xl font-extrabold text-koyu-900">Brands we produce for</h2>
+      </div>
+      <ul class="flex flex-wrap justify-center gap-2.5">
+        {oneCikanMarkalar.map(r => (
+          <li><span class="inline-block px-4 py-2 rounded-full bg-white border border-koyu-200 text-sm font-semibold text-koyu-800">{r.ad}</span></li>
+        ))}
+      </ul>
+      <div class="text-center mt-8">
+        <a href={yol('en', 'referanslar')} class="inline-flex items-center gap-2 text-eymen-700 font-semibold hover:text-eymen-800">See all our clients →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Süreç -->
+  <section class="py-16 md:py-24">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-2xl mx-auto mb-12">
+        <p class="text-eymen-600 text-sm font-semibold tracking-wider mb-3">HOW WE WORK</p>
+        <h2 class="text-3xl md:text-4xl font-extrabold text-koyu-900">From Survey to Installation</h2>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
+        {[
+          { step: '01', title: 'Survey and Brief', desc: 'We visit the site, measure and photograph it — or, for work outside Istanbul, work from your drawings and photographs.' },
+          { step: '02', title: 'Design and Quotation', desc: 'A 3D preview and a line-by-line quotation, sent within 24 hours.' },
+          { step: '03', title: 'Production', desc: 'Manufactured in our own facility, with colour and finish checked against the approved artwork.' },
+          { step: '04', title: 'Installation or Shipment', desc: 'Installed by our own team in Turkey, or packed and shipped, including export.' },
+        ].map(p => (
+          <div class="bg-white rounded-2xl p-6 border border-koyu-100">
+            <div class="text-3xl font-extrabold text-eymen-500 mb-3">{p.step}</div>
+            <h3 class="font-bold text-koyu-900 mb-2">{p.title}</h3>
+            <p class="text-sm text-koyu-500 leading-relaxed">{p.desc}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="bg-gradient-to-br from-eymen-500 to-eymen-700 py-16 md:py-20">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <h2 class="text-3xl md:text-4xl font-extrabold text-white mb-4">Tell us about your project</h2>
+      <p class="text-eymen-100 text-lg mb-8 max-w-2xl mx-auto">
+        Send the dimensions, materials and location and we will quote within 24 hours. We reply in English.
+      </p>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <a href={yol('en', 'teklif')} class="inline-flex items-center justify-center gap-2 bg-white text-eymen-600 hover:bg-koyu-50 px-8 py-4 rounded-xl text-base font-bold transition-all hover:shadow-lg">
+          Quote Request Form
+        </a>
+        <a href={contact.phoneHref} class="inline-flex items-center justify-center gap-2 border-2 border-white/30 hover:border-white/60 text-white px-8 py-4 rounded-xl text-base font-semibold transition-all">
+          +90 216 379 07 08
+        </a>
+      </div>
+    </div>
+  </section>
+
+</BaseLayout>

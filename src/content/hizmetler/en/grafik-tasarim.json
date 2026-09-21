@@ -1,0 +1,140 @@
+{
+  "title": "Graphic Design",
+  "seoTitle": "Graphic Design and Corporate Identity in Istanbul",
+  "description": "Logo, corporate identity, catalogue, brochure, poster and packaging design. Professional graphic design services in Istanbul.",
+  "heroDesc": "Our in-house design team produces logos, corporate identities, catalogues, brochures, posters, packaging and digital media. Twenty-five years in the industry means we design with production in mind — what we draw is what we can build and print.",
+  "order": 10,
+  "listIcon": "🎨",
+  "listDesc": "Logo, corporate identity, catalogue, brochure and poster design, drawn by a team that also manufactures the end result.",
+  "listFeatures": [
+    "Logo Design",
+    "Corporate Identity",
+    "Catalogues & Brochures",
+    "Posters"
+  ],
+  "listImage": "/images/proje-afis.webp",
+  "features": [
+    {
+      "icon": "🎯",
+      "title": "Logo and Brand Identity",
+      "desc": "Original logo design, colour palette, typography and brand guidelines — the visual DNA of the brand."
+    },
+    {
+      "icon": "📇",
+      "title": "Business Cards and Stationery",
+      "desc": "Business cards, letterheads, envelopes, invoice forms and corporate stationery."
+    },
+    {
+      "icon": "📑",
+      "title": "Catalogue and Brochure Design",
+      "desc": "Product catalogues, corporate brochures and sales material, delivered print-ready."
+    },
+    {
+      "icon": "📋",
+      "title": "Poster Design",
+      "desc": "Event, campaign and promotional posters, designed for both print and digital formats."
+    },
+    {
+      "icon": "🏪",
+      "title": "Retail and Exhibition Visuals",
+      "desc": "Store concepts, exhibition stand visuals, window schemes and environmental graphics."
+    },
+    {
+      "icon": "📱",
+      "title": "Digital Media Design",
+      "desc": "Social media graphics, web banners, email templates and digital advertising."
+    }
+  ],
+  "products": [
+    {
+      "title": "Logo Design",
+      "desc": "Original, memorable logo design delivered with vector files, colour codes and a usage guide.",
+      "image": "/images/urunler/insert-1.webp"
+    },
+    {
+      "title": "Business Card Design and Printing",
+      "desc": "Business cards designed and printed to match your identity, on matte, gloss or specialty stock.",
+      "image": "/images/urunler/kartvizit-1.webp"
+    },
+    {
+      "title": "Catalogues and Brochures",
+      "desc": "Product catalogue and sales brochure design and printing, with professional layout and typography.",
+      "image": "/images/urunler/katalog-1.webp"
+    },
+    {
+      "title": "Posters",
+      "desc": "Campaign, event and promotional posters designed and printed from A4 up to A0.",
+      "image": "/images/urunler/afis-baski-1.webp"
+    },
+    {
+      "title": "Signage Design",
+      "desc": "Sign, channel letter and façade design, with 3D visualisation before anything is built.",
+      "image": "/images/urunler/kutu-harf-1.webp"
+    },
+    {
+      "title": "Store Concept Design",
+      "desc": "Interior and façade design for retail: signage, windows, wayfinding and décor as one scheme.",
+      "image": "/images/urunler/bizim-toptan-1.webp"
+    }
+  ],
+  "process": [
+    {
+      "step": "01",
+      "title": "Brief and Analysis",
+      "desc": "We work out your brand, your audience and your expectations, and look at the sector and the competition."
+    },
+    {
+      "step": "02",
+      "title": "Concept Development",
+      "desc": "We prepare alternative concepts with different colour, typography and composition options."
+    },
+    {
+      "step": "03",
+      "title": "Design and Revisions",
+      "desc": "The chosen concept is developed in detail. Two rounds of revision are included."
+    },
+    {
+      "step": "04",
+      "title": "File Delivery",
+      "desc": "Files are delivered ready for print and digital use in AI, PDF, PNG and JPG formats."
+    }
+  ],
+  "sectors": [
+    "Retail and Shopping Centres",
+    "Healthcare and Hospitals",
+    "Education and Public Sector",
+    "Industry and Manufacturing",
+    "Tourism and Hospitality",
+    "Marketing and Advertising",
+    "Law Firms",
+    "Construction and Real Estate",
+    "Finance and Insurance",
+    "Events and Organisations"
+  ],
+  "faq": [
+    {
+      "q": "How long does logo design take?",
+      "a": "First concepts are presented within three to five working days of the brief. With the revision rounds, the whole process takes seven to ten working days."
+    },
+    {
+      "q": "Which file formats do you deliver?",
+      "a": "AI (vector), PDF, PNG and JPG as standard, with EPS and SVG on request."
+    },
+    {
+      "q": "How many revisions are included?",
+      "a": "Two rounds are included in the standard packages. Further revisions are charged separately."
+    },
+    {
+      "q": "Do you design only, or print as well?",
+      "a": "Either. You can commission design files alone, or design plus production as one package."
+    },
+    {
+      "q": "Can you update our existing logo?",
+      "a": "Yes. We do rebranding work, modernising an existing logo rather than starting from nothing."
+    },
+    {
+      "q": "Can you work from our existing brand guidelines?",
+      "a": "Yes. If your head office supplies a brand manual, we work inside it and produce local materials that comply with it."
+    }
+  ]
+}

@@ -1,0 +1,90 @@
+---
+/**
+ * Hizmetler liste sayfası — TR, EN ve AR sürümleri bu bileşeni kullanır.
+ * İçerik dile göre ayrı koleksiyondan gelir (hizmetler / hizmetlerEn / hizmetlerAr).
+ */
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { srcset, SIZES } from '../lib/gorsel';
+import { getCollection } from 'astro:content';
+import { company, contact } from '../lib/site-data';
+import { sozluk, yol, hizmetYolu } from '../i18n';
+import type { Dil } from '../i18n';
+
+interface Props {
+  lang?: Dil;
+}
+
+const { lang = 'tr' } = Astro.props;
+const s = sozluk(lang);
+
+const HIZMET_KOLEKSIYONU = { tr: 'hizmetler', en: 'hizmetlerEn', ar: 'hizmetlerAr' } as const;
+const services = (await getCollection(HIZMET_KOLEKSIYONU[lang]))
+  .sort((a, b) => a.data.order - b.data.order)
+  .map(h => ({
+    title: h.data.title,
+    desc: h.data.listDesc,
+    features: h.data.listFeatures,
+    image: h.data.listImage,
+    href: hizmetYolu(lang, h.id),
+    icon: h.data.listIcon,
+  }));
+---
+
+<BaseLayout
+  title={s.hizmetlerSayfa.seoBaslik}
+  description={`${s.hizmetlerSayfa.seoAciklama} ${company.experience} ${s.footer.tecrube}.`}
+  lang={lang}
+  sayfa="hizmetler"
+>
+
+  <!-- Hero -->
+  <section class="bg-koyu-900 pt-32 pb-16 md:pt-40 md:pb-24">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <p class="text-eymen-400 text-sm font-semibold tracking-wider mb-3">{s.hizmetlerSayfa.ustBaslik(company.experience)}</p>
+      <h1 class="text-4xl md:text-5xl font-extrabold text-white mb-4">{s.hizmetlerSayfa.h1}</h1>
+      <p class="text-koyu-400 text-lg max-w-2xl mx-auto">{s.hizmetlerSayfa.aciklama}</p>
+    </div>
+  </section>
+
+  <!-- Hizmet Grid -->
+  <section class="py-16 md:py-24">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        {services.map(service => (
+          <a href={service.href} class="group bg-white rounded-2xl border border-koyu-100 overflow-hidden hover:shadow-xl hover:border-eymen-200 transition-all duration-300 hover:-translate-y-1">
+            <div class="aspect-[16/10] overflow-hidden relative bg-koyu-200">
+              <img src={service.image} srcset={srcset(service.image)} sizes={SIZES.kart3} alt={service.title} width="600" height="400" loading="lazy" decoding="async" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+              <span class="absolute top-3 left-3 text-2xl bg-white/90 w-10 h-10 rounded-xl flex items-center justify-center">{service.icon}</span>
+            </div>
+            <div class="p-6">
+              <h2 class="text-xl font-bold text-koyu-900 mb-2 group-hover:text-eymen-600 transition-colors">{service.title}</h2>
+              <p class="text-sm text-koyu-500 leading-relaxed mb-4">{service.desc}</p>
+              <div class="flex flex-wrap gap-1.5">
+                {service.features.map(f => (
+                  <span class="px-2.5 py-1 bg-koyu-50 text-koyu-600 text-xs font-medium rounded-full">{f}</span>
+                ))}
+              </div>
+            </div>
+          </a>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="bg-gradient-to-br from-eymen-500 to-eymen-700 py-16">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <h2 class="text-3xl font-extrabold text-white mb-4">{s.hizmetSayfa.ctaBaslik}</h2>
+      <p class="text-eymen-100 mb-8">{s.hizmetlerSayfa.ctaMetin}</p>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <a href={yol(lang, 'teklif')} class="inline-flex items-center justify-center gap-2 bg-white text-eymen-600 hover:bg-koyu-50 px-8 py-4 rounded-xl text-base font-bold transition-all">
+          {s.hizmetSayfa.ctaForm}
+        </a>
+        <a href={contact.phoneHref} class="inline-flex items-center justify-center gap-2 border-2 border-white/30 hover:border-white/60 text-white px-8 py-4 rounded-xl text-base font-semibold transition-all">
+          {contact.phone}
+        </a>
+      </div>
+    </div>
+  </section>
+
+</BaseLayout>

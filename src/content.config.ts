@@ -7,7 +7,7 @@ const icLink = z.string().regex(/^\/[^\s]*\/$/, 'İç link "/" ile başlayıp "/
 
 
 const projeler = defineCollection({
-  loader: glob({ pattern: '**/*.md', base: './src/content/projeler' }),
+  loader: glob({ pattern: '*.md', base: './src/content/projeler' }),
   schema: z.object({
     title: z.string(),
     seoTitle: z.string().optional(),
@@ -36,7 +36,7 @@ const blog = defineCollection({
 });
 
 const urunler = defineCollection({
-  loader: glob({ pattern: '**/*.json', base: './src/content/urunler' }),
+  loader: glob({ pattern: '*.json', base: './src/content/urunler' }),
   schema: z.object({
     title: z.string(),
     seoTitle: z.string().optional(),
@@ -77,9 +77,7 @@ const urunler = defineCollection({
   }),
 });
 
-const hizmetler = defineCollection({
-  loader: glob({ pattern: '**/*.json', base: './src/content/hizmetler' }),
-  schema: z.object({
+const hizmetSemasi = z.object({
     title: z.string(),
     seoTitle: z.string().optional(),
     description: z.string(),
@@ -111,7 +109,8 @@ const hizmetler = defineCollection({
       title: z.string(),
       desc: z.string(),
       image: z.string(),
-      href: icLink,
+      // EN/AR'da ürün sayfası yok — link verilmezse kart tıklanmaz olur.
+      href: icLink.optional(),
     })),
     process: z.array(z.object({
       step: z.string(),
@@ -141,7 +140,40 @@ const hizmetler = defineCollection({
       ilceler: z.array(z.string()),
       link: z.object({ href: icLink, label: z.string() }).optional(),
     }).optional(),
-  }),
 });
 
-export const collections = { projeler, blog, urunler, hizmetler };
+/** Hizmet koleksiyonu — TR kökte, diğer diller alt klasörde. */
+const hizmetKoleksiyonu = (klasor: string) =>
+  defineCollection({
+    loader: glob({ pattern: '*.json', base: `./src/content/hizmetler${klasor}` }),
+    schema: hizmetSemasi,
+  });
+
+const hizmetler = hizmetKoleksiyonu('');
+const hizmetlerEn = hizmetKoleksiyonu('/en');
+const hizmetlerAr = hizmetKoleksiyonu('/ar');
+
+/** Proje çevirileri — görseller ve slug TR sürümden gelir, yalnızca metin çevrilir. */
+const projeCevirisi = (klasor: string) =>
+  defineCollection({
+    loader: glob({ pattern: '*.md', base: `./src/content/projeler/${klasor}` }),
+    schema: z.object({
+      title: z.string(),
+      seoTitle: z.string().optional(),
+      description: z.string(),
+    }),
+  });
+
+const projelerEn = projeCevirisi('en');
+const projelerAr = projeCevirisi('ar');
+
+export const collections = {
+  projeler,
+  projelerEn,
+  projelerAr,
+  blog,
+  urunler,
+  hizmetler,
+  hizmetlerEn,
+  hizmetlerAr,
+};

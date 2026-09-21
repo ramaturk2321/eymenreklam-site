@@ -1,0 +1,146 @@
+{
+  "title": "Vinyl & Vehicle Wrapping",
+  "seoTitle": "Vehicle Wrapping and Vinyl Graphics in Istanbul",
+  "description": "Vehicle wrapping, window film, façade and cooler wrapping with Avery Dennison vinyl. Applied in 1–4 working days, 2-year warranty, free site survey in Istanbul.",
+  "heroDesc": "We apply Avery Dennison and 3M vinyl to vehicles, building façades, glass and interior surfaces. Our team is experienced in large-scale work such as full fleet wraps and complete façade coverage, and we offer one-way vision, decorative and functional films.",
+  "order": 5,
+  "listIcon": "🚗",
+  "listDesc": "Vehicle wrapping, façade vinyl, window film, one-way vision and cut vinyl lettering. Full and partial wrap solutions.",
+  "listFeatures": [
+    "Vehicle Wrapping",
+    "Façade Vinyl",
+    "Window Film",
+    "One-Way Vision",
+    "Truck Wrapping"
+  ],
+  "listImage": "/images/arac-giydirme.webp",
+  "features": [
+    {
+      "icon": "🚗",
+      "title": "Full Vehicle Wraps",
+      "desc": "Vinyl applied across the whole vehicle body, for branding, advertising and paint protection."
+    },
+    {
+      "icon": "🏢",
+      "title": "Building Façades and Interiors",
+      "desc": "Large-scale façade wrapping, window decoration and interior wall vinyl."
+    },
+    {
+      "icon": "🪟",
+      "title": "Window Films",
+      "desc": "One-way vision, decorative patterns, frosted glass effects and heat-control films."
+    },
+    {
+      "icon": "✨",
+      "title": "Premium Vinyl Materials",
+      "desc": "Avery Dennison and 3M quality. UV-resistant, with a 5–7 year outdoor rating."
+    },
+    {
+      "icon": "👨‍🔧",
+      "title": "Professional Installation",
+      "desc": "A trained, experienced installation team. No bubbles, no creases, full conformity to the surface."
+    },
+    {
+      "icon": "🔧",
+      "title": "Repair and Maintenance",
+      "desc": "Partial replacement and maintenance where vinyl has been damaged."
+    }
+  ],
+  "products": [
+    {
+      "title": "Full Vehicle Wrap",
+      "desc": "Corporate branding or advertising vinyl applied across the entire vehicle exterior.",
+      "image": "/images/urunler/komple-arac-1.webp"
+    },
+    {
+      "title": "Partial Vehicle Wrap",
+      "desc": "Selective vinyl on the side doors, roof, front or rear of the vehicle.",
+      "image": "/images/urunler/kismi-arac-1.webp"
+    },
+    {
+      "title": "Cooler and Freezer Wrapping",
+      "desc": "Printed vinyl wrapping for freezers, ice cream cabinets and beverage coolers.",
+      "image": "/images/urunler/soguk-dolap-kaplama-1.webp"
+    },
+    {
+      "title": "Façade Wrapping",
+      "desc": "Large-scale building façade wrapping for warehouses, construction sites and factories.",
+      "image": "/images/hayvan_hastanasi/hayvan2.webp"
+    },
+    {
+      "title": "One-Way Vision Film",
+      "desc": "See out from inside, but not in from outside — ideal for privacy combined with branding.",
+      "image": "/images/urunler/one-way-1.webp"
+    },
+    {
+      "title": "Frosted Glass Film",
+      "desc": "Frosted film on windows, doors and office partitions for privacy with a clean finish.",
+      "image": "/images/urunler/cam-kumlama-1.webp"
+    },
+    {
+      "title": "Truck and Trailer Wrapping",
+      "desc": "Corporate vinyl wrapping applied to truck and trailer bodies.",
+      "image": "/images/urunler/kamyon-tir-2.webp"
+    }
+  ],
+  "process": [
+    {
+      "step": "01",
+      "title": "Measurement and Design",
+      "desc": "We take measurements and photographs and prepare the design around your corporate identity, logo and colours."
+    },
+    {
+      "step": "02",
+      "title": "Printing and Cutting",
+      "desc": "Once the artwork is approved, the vinyl is printed and precision cut."
+    },
+    {
+      "step": "03",
+      "title": "Surface Preparation and Application",
+      "desc": "The surface is cleaned of grease and dirt, then the vinyl is applied section by section."
+    },
+    {
+      "step": "04",
+      "title": "Finishing and Inspection",
+      "desc": "Edges are sealed, air bubbles worked out, and the work is inspected and cleaned before handover."
+    }
+  ],
+  "sectors": [
+    "Retail and Shopping Centres",
+    "Industry and Manufacturing",
+    "Automotive and Logistics",
+    "Construction and Real Estate",
+    "Tourism and Hospitality",
+    "Healthcare and Hospitals",
+    "Marketing and Advertising",
+    "Logistics and Warehousing",
+    "Sports and Recreation",
+    "Food and Restaurants"
+  ],
+  "faq": [
+    {
+      "q": "How long does a vehicle wrap take?",
+      "a": "Two to five days depending on the size of the vehicle: two to three days to print the vinyl after artwork approval, then two to three days to apply it."
+    },
+    {
+      "q": "What determines the cost of a vehicle wrap?",
+      "a": "The vehicle model, the complexity of the design, how much of the body is covered and the grade of vinyl. Send us the vehicle model and what you want covered and we will quote free of charge."
+    },
+    {
+      "q": "How long does vinyl last?",
+      "a": "Premium Avery Dennison and 3M vinyl is rated for five to seven years outdoors, and lasts longer with careful cleaning and maintenance."
+    },
+    {
+      "q": "Will removing the vinyl damage the vehicle?",
+      "a": "Removed professionally, no. Damage is only a risk where vinyl has been left on far beyond its rated life and the paint underneath has already deteriorated."
+    },
+    {
+      "q": "Does window film help with heat?",
+      "a": "Yes. Some films block up to 99% of UV and reduce heat gain, which can lower the interior temperature of a vehicle by three to five degrees in summer."
+    },
+    {
+      "q": "Can you wrap a whole fleet?",
+      "a": "Yes. We handle fleet rollouts to a single specification, scheduling vehicles in batches so your operation is not interrupted."
+    }
+  ]
+}
