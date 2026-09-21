@@ -1,0 +1,192 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { srcset, boyut, SIZES } from '../../lib/gorsel';
+import { company, contact } from '../../lib/site-data';
+import { oneCikanMarkalar, tumReferanslar } from '../../lib/referanslar';
+import { yol } from '../../i18n';
+---
+
+<BaseLayout
+  title="من نحن — مصنّع لافتات في إسطنبول"
+  description={`إيمن ريكلام — تصنيع اللافتات والطباعة بالقياسات الكبيرة في بنديك بإسطنبول منذ عام 2000. منشأة 2.500 م² وخبرة تتجاوز ${company.experience} عاماً.`}
+  lang="ar"
+  sayfa="hakkimizda"
+>
+
+  <section class="bg-koyu-900 py-16 md:py-24">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <p class="text-eymen-400 text-sm font-semibold tracking-wider mb-3">إيمن ريكلام</p>
+      <h1 class="text-4xl md:text-5xl font-extrabold text-white mb-4">من نحن</h1>
+      <p class="text-koyu-400 text-lg max-w-2xl mx-auto">
+        ننتج في بنديك بإسطنبول منذ عام 2000: اللافتات والطباعة UV والطباعة الرقمية بالقياسات الكبيرة، داخل منشأتنا.
+      </p>
+    </div>
+  </section>
+
+  <section class="py-16 md:py-24">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+        <div class="relative">
+          <img
+            src="/images/yenifabrika-opt.webp"
+            srcset={srcset('/images/yenifabrika-opt.webp')}
+            sizes={SIZES.yariGenislik}
+            {...boyut('/images/yenifabrika-opt.webp')}
+            alt="منشأة إيمن ريكلام للإنتاج في بنديك بإسطنبول"
+            class="rounded-2xl w-full h-auto shadow-xl"
+            loading="lazy"
+            decoding="async"
+          />
+        </div>
+
+        <div>
+          <div class="space-y-5 text-koyu-600 leading-relaxed">
+            <p>
+              <strong class="text-koyu-900">إيمن ريكلام</strong> (وتُعرف في السوق أيضاً باسم
+              <strong class="text-koyu-900">Eymen Ajans</strong>) واحدة من الشركات التركية الراسخة في تصنيع
+              اللافتات والإعلان والطباعة. لكن الأهم عندنا أبسط من ذلك: في كل مشروع نجلس مع العميل إلى الطاولة
+              نفسها، ونحدّد الاحتياج معاً، ونصوغ الحل معاً.
+            </p>
+            <p>
+              في منشأتنا نصنع اللافتات المفرّغة بالفاكيوم ولافتات الكروم والحروف المجسمة ولوحات التوتيم
+              وتغليف الواجهات وتغليف المركبات والملصقات والطباعة على القماش والبانر. ونكون حاضرين في كل
+              خطوة، من المعاينة الأولى حتى التركيب النهائي.
+            </p>
+            <p class="border-s-4 border-eymen-500 ps-5 italic text-koyu-700">
+              «خامات جيدة وطاقة إنتاجية جادّة وفريق خبير — هكذا نجعل العلامة التجارية مرئية.»
+            </p>
+            <p>
+              وللعملاء خارج تركيا، أو المقرّات الرئيسية التي تعمل مع فرع محلي، نراسل ونرفع التقارير بالعربية
+              أو الإنجليزية طوال المشروع، ويمكننا ترتيب شحن التصدير للأعمال المنجزة.
+            </p>
+          </div>
+
+          <a href="/eymen-reklam-sunumu.pdf" target="_blank" rel="noopener" class="inline-flex items-center gap-2 mt-8 text-eymen-600 font-semibold hover:text-eymen-700 transition-colors">
+            اطّلع على الملف التعريفي (PDF) ←
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="bg-koyu-50 py-16 md:py-20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="text-center">
+          <div class="text-4xl md:text-5xl font-extrabold text-eymen-600">+{company.experience}</div>
+          <div class="text-sm text-koyu-600 mt-2 font-medium">عاماً من الخبرة</div>
+        </div>
+        <div class="text-center">
+          <div class="text-4xl md:text-5xl font-extrabold text-eymen-600">2.500 م²</div>
+          <div class="text-sm text-koyu-600 mt-2 font-medium">منشأة الإنتاج</div>
+        </div>
+        <div class="text-center">
+          <div class="text-4xl md:text-5xl font-extrabold text-eymen-600">+10.000</div>
+          <div class="text-sm text-koyu-600 mt-2 font-medium">مشروع منجز</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-16 md:py-24">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-3xl font-extrabold text-koyu-900 text-center mb-12">لماذا تعمل معنا</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="text-center p-8 bg-white rounded-2xl border border-koyu-100">
+          <span class="text-4xl block mb-4">🏭</span>
+          <h3 class="text-lg font-bold text-koyu-900 mb-3">طاقة إنتاجية</h3>
+          <p class="text-sm text-koyu-500 leading-relaxed">منشأة واسعة وأسطول ماكينات حديث يعنيان تسليم الطلبات الكبيرة في موعدها وبالمواصفة المطلوبة.</p>
+        </div>
+        <div class="text-center p-8 bg-white rounded-2xl border border-koyu-100">
+          <span class="text-4xl block mb-4">📏</span>
+          <h3 class="text-lg font-bold text-koyu-900 mb-3">خبرة في القطاع</h3>
+          <p class="text-sm text-koyu-500 leading-relaxed">خمسة وعشرون عاماً في اللافتات والإعلان والطباعة — معرفة تدخل في كل مشروع نتولّاه.</p>
+        </div>
+        <div class="text-center p-8 bg-white rounded-2xl border border-koyu-100">
+          <span class="text-4xl block mb-4">🤝</span>
+          <h3 class="text-lg font-bold text-koyu-900 mb-3">مورّد واحد لكل النطاق</h3>
+          <p class="text-sm text-koyu-500 leading-relaxed">من تصنيع اللافتات إلى الطباعة الرقمية وتغليف المركبات وتجهيز المتاجر — عقد واحد يغطي كل شيء.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-16 md:py-24 bg-white border-y border-koyu-100">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-10">
+        <p class="text-eymen-700 text-sm font-semibold tracking-wider mb-3">عملاؤنا</p>
+        <h2 class="text-3xl font-extrabold text-koyu-900">علامات نعمل معها</h2>
+        <p class="text-koyu-500 text-lg max-w-2xl mx-auto mt-4">
+          من Hakmar، وهي سلسلة تضم أكثر من 800 متجر، إلى مطاعم بفرع واحد — أنتجنا اللافتات والطباعة UV
+          والفينيل وتجهيز المتاجر لـ {tumReferanslar.length} علامة تجارية.
+        </p>
+      </div>
+      <ul class="flex flex-wrap justify-center gap-2.5">
+        {oneCikanMarkalar.map(r => (
+          <li>
+            <span class="inline-block px-4 py-2 rounded-full bg-koyu-50 border border-koyu-200 text-sm font-semibold text-koyu-800" dir="ltr">{r.ad}</span>
+          </li>
+        ))}
+      </ul>
+      <div class="text-center mt-8">
+        <a href={yol('ar', 'referanslar')} class="inline-flex items-center gap-2 text-eymen-700 font-semibold hover:text-eymen-800">كل عملائنا ←</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-16 md:py-24 bg-koyu-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-10">
+        <p class="text-eymen-700 text-sm font-semibold tracking-wider mb-3">الجودة والسلامة</p>
+        <h2 class="text-3xl font-extrabold text-koyu-900">الشهادات</h2>
+        <p class="text-koyu-500 max-w-2xl mx-auto mt-4">
+          تمتلك شركتنا الوثائق والشهادات القانونية اللازمة لأعمالها، بما فيها الصحة والسلامة المهنية.
+        </p>
+      </div>
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-4xl mx-auto">
+        <div>
+          <div class="rounded-xl overflow-hidden border border-koyu-200 bg-white group">
+            <img src="/images/belgeler/isg-yuksekte-calisma-1.webp" srcset={srcset('/images/belgeler/isg-yuksekte-calisma-1.webp')} sizes="(min-width: 1280px) 230px, (min-width: 768px) 20vw, (min-width: 640px) 33vw, 50vw" alt="شهادة تدريب العمل على المرتفعات" width="895" height="1274" class="w-full h-auto group-hover:scale-105 transition-transform duration-300" loading="lazy" decoding="async" />
+          </div>
+          <p class="text-xs text-koyu-500 text-center mt-2 font-medium">تدريب العمل على المرتفعات</p>
+        </div>
+        <div>
+          <div class="rounded-xl overflow-hidden border border-koyu-200 bg-white group">
+            <img src="/images/belgeler/isg-temel-egitim.webp" srcset={srcset('/images/belgeler/isg-temel-egitim.webp')} sizes="(min-width: 1280px) 230px, (min-width: 768px) 20vw, (min-width: 640px) 33vw, 50vw" alt="شهادة التدريب الأساسي في الصحة والسلامة المهنية" width="895" height="1275" class="w-full h-auto group-hover:scale-105 transition-transform duration-300" loading="lazy" decoding="async" />
+          </div>
+          <p class="text-xs text-koyu-500 text-center mt-2 font-medium">التدريب الأساسي للسلامة</p>
+        </div>
+        <div>
+          <div class="rounded-xl overflow-hidden border border-koyu-200 bg-white group">
+            <img src="/images/belgeler/isg-katilim-tutanagi.webp" srcset={srcset('/images/belgeler/isg-katilim-tutanagi.webp')} sizes="(min-width: 1280px) 230px, (min-width: 768px) 20vw, (min-width: 640px) 33vw, 50vw" alt="محضر حضور التدريب" width="874" height="1230" class="w-full h-auto group-hover:scale-105 transition-transform duration-300" loading="lazy" decoding="async" />
+          </div>
+          <p class="text-xs text-koyu-500 text-center mt-2 font-medium">محضر الحضور</p>
+        </div>
+        <div>
+          <div class="rounded-xl overflow-hidden border border-koyu-200 bg-white group">
+            <img src="/images/belgeler/isg-yuksekte-calisma-2.webp" srcset={srcset('/images/belgeler/isg-yuksekte-calisma-2.webp')} sizes="(min-width: 1280px) 230px, (min-width: 768px) 20vw, (min-width: 640px) 33vw, 50vw" alt="شهادة تدريب العمل على المرتفعات" width="834" height="1207" class="w-full h-auto group-hover:scale-105 transition-transform duration-300" loading="lazy" decoding="async" />
+          </div>
+          <p class="text-xs text-koyu-500 text-center mt-2 font-medium">تدريب العمل على المرتفعات</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="bg-gradient-to-br from-eymen-500 to-eymen-700 py-16 md:py-20">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <h2 class="text-3xl md:text-4xl font-extrabold text-white mb-4">لنتحدّث عن مشروعك</h2>
+      <p class="text-eymen-100 text-lg mb-8 max-w-2xl mx-auto">
+        تواصل معنا للحصول على معاينة وعرض سعر مجاناً — نبقى مع المشروع من أول حديث حتى التركيب.
+      </p>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <a href={yol('ar', 'iletisim')} class="inline-flex items-center justify-center gap-2 bg-white text-eymen-600 hover:bg-koyu-50 px-8 py-4 rounded-xl text-base font-bold transition-all">
+          تواصل معنا
+        </a>
+        <a href={contact.phoneHref} class="inline-flex items-center justify-center gap-2 border-2 border-white/30 hover:border-white/60 text-white px-8 py-4 rounded-xl text-base font-semibold transition-all" dir="ltr">
+          +90 216 379 07 08
+        </a>
+      </div>
+    </div>
+  </section>
+
+</BaseLayout>

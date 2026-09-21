@@ -1,0 +1,88 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { contact } from '../../lib/site-data';
+import { yol } from '../../i18n';
+
+const guncelleme = '21 سبتمبر 2026';
+---
+
+<BaseLayout
+  title="سياسة ملفات تعريف الارتباط"
+  description="ما ملفات تعريف الارتباط التي يستخدمها موقع eymenreklam.com.tr، وما وظيفتها، وكيف تتحكّم بها من متصفحك."
+  lang="ar"
+  sayfa="cerez"
+>
+
+  <section class="bg-koyu-900 pt-32 pb-12 md:pt-40 md:pb-16">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <h1 class="text-3xl md:text-4xl font-extrabold text-white mb-4">سياسة ملفات تعريف الارتباط</h1>
+      <p class="text-koyu-400">آخر تحديث: {guncelleme}</p>
+    </div>
+  </section>
+
+  <section class="py-12 md:py-16">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="bg-eymen-50 border border-eymen-200 rounded-xl p-5 mb-10 text-sm text-koyu-700">
+        هذا ملخّص بالعربية. <a href={yol('tr', 'cerez')} class="text-eymen-700 underline">النسخة التركية</a> هي النص المُلزِم.
+      </div>
+
+      <div class="space-y-10">
+        <div>
+          <h2 class="text-xl md:text-2xl font-bold text-koyu-900 mb-4 pb-2 border-b border-koyu-100">ما ملف تعريف الارتباط؟</h2>
+          <p class="text-koyu-600 leading-relaxed">
+            ملف تعريف الارتباط ملف نصي صغير يخزّنه الموقع في متصفحك. ويُستخدم لتذكّر تفضيلاتك ولفهم كيفية استخدام الموقع.
+          </p>
+        </div>
+
+        <div>
+          <h2 class="text-xl md:text-2xl font-bold text-koyu-900 mb-4 pb-2 border-b border-koyu-100">ما الملفات التي يستخدمها هذا الموقع؟</h2>
+          <div class="space-y-5">
+            <div class="border border-koyu-100 rounded-xl p-5">
+              <h3 class="font-semibold text-koyu-900 mb-1">ضرورية</h3>
+              <p class="text-sm text-koyu-600">لازمة لعمل الموقع — مثل إبقاء إرسال النموذج يعمل بشكل صحيح. ولا يمكن تعطيلها.</p>
+            </div>
+            <div class="border border-koyu-100 rounded-xl p-5">
+              <h3 class="font-semibold text-koyu-900 mb-1">تحليلات — Google Analytics (GA4)</h3>
+              <p class="text-sm text-koyu-600">تخبرنا بالصفحات التي تُزار ومدة الزيارة ونوع الجهاز، لنحسّن الموقع. والبيانات مجمّعة ولا تُستخدم للتعرّف عليك شخصياً.</p>
+            </div>
+            <div class="border border-koyu-100 rounded-xl p-5">
+              <h3 class="font-semibold text-koyu-900 mb-1">تحليلات — Vercel Analytics</h3>
+              <p class="text-sm text-koyu-600">تقيس سرعة تحميل الصفحات وحركة الزيارات على منصّة الاستضافة.</p>
+            </div>
+            <div class="border border-koyu-100 rounded-xl p-5">
+              <h3 class="font-semibold text-koyu-900 mb-1">محتوى مُضمَّن من أطراف ثالثة</h3>
+              <p class="text-sm text-koyu-600">قد تضع خريطة Google المضمّنة في صفحة الاتصال ملفات تعريف ارتباط خاصة بها، وتخضع لسياسات Google.</p>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <h2 class="text-xl md:text-2xl font-bold text-koyu-900 mb-4 pb-2 border-b border-koyu-100">كيف تتحكّم بها؟</h2>
+          <p class="text-koyu-600 leading-relaxed mb-4">
+            يتيح لك كل متصفح حظر ملفات تعريف الارتباط أو حذفها من إعداداته. وحظر الملفات الضرورية قد يوقف عمل أجزاء من الموقع.
+          </p>
+          <ul class="text-koyu-600 leading-relaxed list-disc list-inside space-y-1.5">
+            <li>Chrome: الإعدادات ← الخصوصية والأمان ← ملفات تعريف الارتباط</li>
+            <li>Safari: الإعدادات ← الخصوصية</li>
+            <li>Firefox: الإعدادات ← الخصوصية والأمان</li>
+            <li>Edge: الإعدادات ← ملفات تعريف الارتباط وأذونات المواقع</li>
+          </ul>
+          <p class="text-koyu-600 leading-relaxed mt-4">
+            كما يمكنك إلغاء تتبّع Google Analytics عبر الإضافة التي توفّرها Google للمتصفح لهذا الغرض.
+          </p>
+        </div>
+
+        <div>
+          <h2 class="text-xl md:text-2xl font-bold text-koyu-900 mb-4 pb-2 border-b border-koyu-100">بياناتك الشخصية</h2>
+          <p class="text-koyu-600 leading-relaxed">
+            كيفية معالجتنا للبيانات الشخصية وحقوقك موضّحة في
+            <a href={yol('ar', 'gizlilik')} class="text-eymen-600 hover:text-eymen-700">سياسة الخصوصية</a>.
+            وللاستفسار راسلنا على
+            <a href={contact.emailHref} class="text-eymen-600 hover:text-eymen-700" dir="ltr">{contact.email}</a>.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</BaseLayout>

@@ -1,0 +1,135 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { company } from '../../lib/site-data';
+import { sektorler, tumReferanslar, zincirMarkalar } from '../../lib/referanslar';
+import { yol } from '../../i18n';
+
+// Sektör adları ve açıklamaları burada İngilizce; marka adları çevrilmez.
+const SEKTOR_AR: Record<string, { ad: string; aciklama: string }> = {
+  perakende: {
+    ad: 'التجزئة وسلاسل الأسواق',
+    aciklama:
+      'للعلامات متعددة الفروع ننتج اللافتات والإعلان داخل المتجر وجرافيك الحملات من مكان واحد، بمقاسات ومعايير خامات موحّدة.',
+  },
+  gida: {
+    ad: 'الأغذية والسلع الاستهلاكية',
+    aciklama:
+      'من مدخل المصنع إلى رفّ السوق: لوحات التوتيم وتغليف الثلاجات وأغطية المنصّات والتغليف وستاندات المعارض.',
+  },
+  sanayi: {
+    ad: 'الصناعة والسيارات والشركات',
+    aciklama:
+      'لافتات المصانع والمنشآت وتغليف الأساطيل ولافتات السلامة وتطبيقات الهوية المؤسسية.',
+  },
+  avm: {
+    ad: 'المراكز التجارية والعقارات والإنشاءات',
+    aciklama:
+      'لافتات المراكز التجارية وجدران اللوحات المضيئة وأسوار المواقع وتجهيز مكاتب البيع وجرافيك الواجهات.',
+  },
+  hizmet: {
+    ad: 'الصحة والرياضة والمطاعم والخدمات',
+    aciklama:
+      'لافتات العيادات والمنشآت الرياضية والمطاعم وبانرات الواجهات وأفلام الزجاج والهوية الداخلية.',
+  },
+};
+
+const toplam = tumReferanslar.length;
+
+const title = 'عملاؤنا — علامات ننتج لها';
+const description = `عملاء إيمن ريكلام: Hakmar (أكثر من 800 متجر) وTarım Kredi KOOP Market وA101 وÜlker وAnadolu Isuzu وMeydan AVM وPAWCO وأكثر من ${toplam} علامة تجارية. لافتات وحروف مجسمة وطباعة UV وتجهيز متاجر تُنتَج في إسطنبول.`;
+
+const itemListSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'ItemList',
+  name: 'علامات عملاء إيمن ريكلام',
+  description: 'عملاء من الشركات أنتجت لهم إيمن ريكلام اللافتات والطباعة UV والفينيل وتجهيز المتاجر.',
+  numberOfItems: toplam,
+  itemListElement: tumReferanslar.map((r, i) => ({
+    '@type': 'ListItem',
+    position: i + 1,
+    item: { '@type': 'Organization', name: r.ad },
+  })),
+};
+
+const breadcrumbSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'الرئيسية', item: `${company.siteUrl}/ar/` },
+    { '@type': 'ListItem', position: 2, name: 'عملاؤنا', item: `${company.siteUrl}/ar/references/` },
+  ],
+};
+---
+
+<BaseLayout title={title} description={description} lang="ar" sayfa="referanslar">
+  <script type="application/ld+json" set:html={JSON.stringify(itemListSchema)} />
+  <script type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)} />
+
+  <!-- Breadcrumb -->
+  <nav class="bg-koyu-50 border-b border-koyu-100" aria-label="Breadcrumb">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3">
+      <ol class="flex items-center gap-2 text-sm text-koyu-500">
+        <li><a href={yol('ar', 'ana')} class="hover:text-eymen-600 transition-colors">الرئيسية</a></li>
+        <li class="text-koyu-300">/</li>
+        <li><span class="text-koyu-900 font-medium">عملاؤنا</span></li>
+      </ol>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="bg-koyu-900 py-16 md:py-24">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <p class="text-eymen-400 text-sm font-semibold tracking-wider mb-3">علامات نعمل معها</p>
+      <h1 class="text-4xl md:text-5xl font-extrabold text-white mb-4">عملاؤنا</h1>
+      <p class="text-koyu-400 text-lg max-w-3xl mx-auto">
+        منذ عام 2000 أنتجنا في منشأتنا ببنديك اللافتات والحروف المجسمة والطباعة UV والفينيل وتجهيز المتاجر
+        لـ {toplam} علامة تجارية — من سلاسل أسواق تضم أكثر من 800 متجر إلى مطاعم بفرع واحد.
+      </p>
+      <div class="flex flex-wrap justify-center gap-3 mt-8 text-sm">
+        <span class="px-4 py-2 rounded-full bg-koyu-800 text-koyu-200 border border-koyu-700">{sektorler.length} قطاعات</span>
+        <span class="px-4 py-2 rounded-full bg-koyu-800 text-koyu-200 border border-koyu-700">{zincirMarkalar.length} سلسلة متعددة الفروع</span>
+        <span class="px-4 py-2 rounded-full bg-koyu-800 text-koyu-200 border border-koyu-700">{toplam} علامة تجارية</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sektör sektör -->
+  {sektorler.map(sektor => (
+    <section class="py-14 md:py-20 border-b border-koyu-100 last:border-0">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="max-w-3xl mb-8">
+          <h2 class="text-2xl md:text-3xl font-extrabold text-koyu-900 mb-3">
+            {SEKTOR_AR[sektor.id]?.ad ?? sektor.ad}
+          </h2>
+          <p class="text-koyu-500 leading-relaxed">{SEKTOR_AR[sektor.id]?.aciklama ?? ''}</p>
+        </div>
+        <ul class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3">
+          {sektor.referanslar.map(r => (
+            <li class="px-4 py-3 rounded-xl bg-koyu-50 border border-koyu-200 text-sm font-semibold text-koyu-800" dir="ltr">
+              {r.ad}
+            </li>
+          ))}
+        </ul>
+      </div>
+    </section>
+  ))}
+
+  <!-- CTA -->
+  <section class="bg-gradient-to-br from-eymen-500 to-eymen-700 py-16">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <h2 class="text-3xl font-extrabold text-white mb-4">هل تريد رؤية الأعمال على الطبيعة؟</h2>
+      <p class="text-eymen-100 mb-8 max-w-2xl mx-auto">
+        كثير من هذه التركيبات ما زال قائماً في أنحاء إسطنبول. أخبرنا بموقعك ونرسل لك عناوين أقرب اثنين أو ثلاثة منها.
+      </p>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <a href={yol('ar', 'projeler')} class="inline-flex items-center justify-center gap-2 bg-white text-eymen-600 hover:bg-koyu-50 px-8 py-4 rounded-xl text-base font-bold transition-all">
+          شاهد مشاريعنا
+        </a>
+        <a href={yol('ar', 'iletisim')} class="inline-flex items-center justify-center gap-2 border-2 border-white/30 hover:border-white/60 text-white px-8 py-4 rounded-xl text-base font-semibold transition-all">
+          تواصل معنا
+        </a>
+      </div>
+    </div>
+  </section>
+
+</BaseLayout>

@@ -147,6 +147,21 @@ export const en: Sozluk = {
     ctaMetin: 'Send us your project and we will come back with a 3D preview and a detailed quotation.',
   },
 
+  projeSayfa: {
+    ustBaslik: 'SELECTED WORK',
+    h1: 'Our Projects',
+    aciklama: 'Signage, retail fit-outs, exhibition stands, façade and fleet wrapping — produced in our own facility and installed by our own team.',
+    seoBaslik: 'Our Projects — Signage and Printing in Istanbul',
+    seoAciklama: 'Selected projects: shopping centre signage, retail fit-outs, exhibition stands, façade wrapping, fleet wrapping and UV printing.',
+    hepsi: 'All',
+    digerProjeler: 'Other Projects',
+    oncekiGorsel: 'Previous',
+    sonrakiGorsel: 'Next',
+    secki: 'These are a selection. We have completed more than 10,000 projects since 2000 — tell us what you need and we will send references from your own sector.',
+    ctaBaslik: 'Request a Quote for Your Project',
+    ctaMetin: 'We survey the site, prepare a 3D preview and send a detailed quotation within 24 hours.',
+  },
+
   whatsapp: {
     varsayilan: 'Hello, I would like to request a quote.',
     proje: 'Hello, I would like to request a quote for a project.',

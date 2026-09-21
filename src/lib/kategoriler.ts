@@ -38,8 +38,31 @@ export const PROJE_KATEGORI_EN: Record<string, string> = {
   'İş Güvenliği': 'Safety Signage',
 };
 
+
+/** Proje kategorilerinin Arapça karşılıkları. */
+export const PROJE_KATEGORI_AR: Record<string, string> = {
+  'Tabela': 'اللافتات',
+  'Mağaza Reklam': 'تجهيز المتاجر',
+  'UV Baskı': 'طباعة UV',
+  'Dijital Baskı': 'الطباعة الرقمية',
+  'Afiş Baskı': 'طباعة الملصقات',
+  'Bez Baskı': 'طباعة البانر',
+  'Branda & Bez Baskı': 'البانر والمش',
+  'Folyo & Giydirme': 'الفينيل والتغليف',
+  'Araç Giydirme': 'تغليف المركبات',
+  'Cephe Giydirme': 'تغليف الواجهات',
+  'Dolap Kaplama': 'تغليف الثلاجات',
+  'Grafik Tasarım': 'التصميم الجرافيكي',
+  'Lightbox Pano': 'اللوحات المضيئة',
+  'Sunum & Stand': 'العرض والستاندات',
+  'Display & Stand': 'العرض والستاندات',
+  'Yönlendirme Tabelası': 'اللافتات الإرشادية',
+  'İş Güvenliği': 'لافتات السلامة',
+};
+
 /** Kategori adını dile göre döndürür. */
 export function kategoriAdi(kategori: string, lang: 'tr' | 'en' | 'ar'): string {
   if (lang === 'en') return PROJE_KATEGORI_EN[kategori] ?? kategori;
+  if (lang === 'ar') return PROJE_KATEGORI_AR[kategori] ?? kategori;
   return kategori;
 }

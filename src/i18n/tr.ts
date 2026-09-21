@@ -154,6 +154,22 @@ export const tr = {
     ctaMetin: 'Projenizi birlikte inceleyelim: 3D ön izleme ve detaylı fiyat teklifiyle size dönelim.',
   },
 
+  // ─── Proje sayfaları ───
+  projeSayfa: {
+    ustBaslik: 'SEÇİLMİŞ İŞLER',
+    h1: 'Projelerimiz',
+    aciklama: 'Tabela, mağaza uygulaması, fuar standı, cephe ve araç giydirme — kendi tesisimizde üretip kendi ekibimizle monte ettik.',
+    seoBaslik: 'Projelerimiz — Tabela ve Reklam Uygulamaları',
+    seoAciklama: 'Seçilmiş projeler: AVM tabelaları, mağaza uygulamaları, fuar standları, cephe giydirme, araç giydirme ve UV baskı.',
+    hepsi: 'Tümü',
+    digerProjeler: 'Diğer Projelerimiz',
+    oncekiGorsel: 'Önceki',
+    sonrakiGorsel: 'Sonraki',
+    secki: '2000’den bu yana 10.000’den fazla iş tamamladık; bunlar bir seçki. İhtiyacınızı yazın, kendi sektörünüzden referans gönderelim.',
+    ctaBaslik: 'Projeniz İçin Teklif Alın',
+    ctaMetin: 'Keşfe geliyor, 3D ön izleme hazırlıyor ve 24 saat içinde detaylı teklif gönderiyoruz.',
+  },
+
   whatsapp: {
     varsayilan: 'Merhaba, teklif almak istiyorum.',
     proje: 'Merhaba, proje teklifi almak istiyorum.',

@@ -1,0 +1,152 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { company, contact } from '../../lib/site-data';
+import { yol } from '../../i18n';
+
+const guncelleme = '21 سبتمبر 2026';
+---
+
+<BaseLayout
+  title="سياسة الخصوصية"
+  description="كيف تجمع إيمن ريكلام البيانات الشخصية وتستخدمها وتحميها، وحقوقك بموجب قانون حماية البيانات التركي (KVKK)."
+  lang="ar"
+  sayfa="gizlilik"
+>
+
+  <section class="bg-koyu-900 pt-32 pb-12 md:pt-40 md:pb-16">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <h1 class="text-3xl md:text-4xl font-extrabold text-white mb-4">سياسة الخصوصية</h1>
+      <p class="text-koyu-400">آخر تحديث: {guncelleme}</p>
+    </div>
+  </section>
+
+  <section class="py-12 md:py-16">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="bg-eymen-50 border border-eymen-200 rounded-xl p-5 mb-10 text-sm text-koyu-700">
+        هذا ملخّص بالعربية أُعدّ للقرّاء خارج تركيا. تُعالَج البيانات الشخصية بموجب القانون التركي رقم 6698
+        لحماية البيانات الشخصية (KVKK)، و<a href={yol('tr', 'gizlilik')} class="text-eymen-700 underline">النسخة التركية من هذه السياسة</a>
+        هي النص المُلزِم قانوناً.
+      </div>
+
+      <div class="space-y-10">
+        <div>
+          <h2 class="text-xl md:text-2xl font-bold text-koyu-900 mb-4 pb-2 border-b border-koyu-100">1. المسؤول عن البيانات</h2>
+          <div class="text-koyu-600 leading-relaxed space-y-2">
+            <p dir="ltr">{company.fullName}</p>
+            <p>المكتب المسجّل: <span dir="ltr">{contact.addressOffice}</span></p>
+            <p>منشأة الإنتاج: <span dir="ltr">{contact.address}</span></p>
+            <p>البريد الإلكتروني: <a href={contact.emailHref} class="text-eymen-600 hover:text-eymen-700" dir="ltr">{contact.email}</a> · الهاتف: <span dir="ltr">+90 216 379 07 08</span></p>
+          </div>
+        </div>
+
+        <div>
+          <h2 class="text-xl md:text-2xl font-bold text-koyu-900 mb-4 pb-2 border-b border-koyu-100">2. البيانات التي نعالجها</h2>
+          <div class="text-koyu-600 leading-relaxed space-y-4">
+            <div>
+              <h3 class="font-semibold text-koyu-900 mb-2">أ) عبر نماذج طلب السعر والتواصل</h3>
+              <p>الاسم واسم الشركة والمسمى الوظيفي ورقم الهاتف والبريد الإلكتروني والدولة وموقع المشروع وما تكتبه عن مشروعك.</p>
+            </div>
+            <div>
+              <h3 class="font-semibold text-koyu-900 mb-2">ب) تلقائياً أثناء استخدامك للموقع</h3>
+              <p>عنوان IP ومعلومات المتصفح والجهاز والصفحات التي زرتها ووقت الزيارة، تُجمَع عبر Google Analytics وVercel Analytics.</p>
+            </div>
+            <div>
+              <h3 class="font-semibold text-koyu-900 mb-2">ج) عبر الهاتف وواتساب</h3>
+              <p>رقم هاتفك ومحتوى الرسائل التي ترسلها إلينا.</p>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <h2 class="text-xl md:text-2xl font-bold text-koyu-900 mb-4 pb-2 border-b border-koyu-100">3. أغراض المعالجة</h2>
+          <ul class="text-koyu-600 leading-relaxed list-disc list-inside space-y-1.5">
+            <li>إعداد عرض السعر وإرساله إليك</li>
+            <li>تخطيط العمل الذي تطلبه وإنتاجه وتركيبه</li>
+            <li>الوفاء بالتزاماتنا القانونية والمحاسبية</li>
+            <li>فهم كيفية استخدام الموقع وتحسينه</li>
+          </ul>
+        </div>
+
+        <div>
+          <h2 class="text-xl md:text-2xl font-bold text-koyu-900 mb-4 pb-2 border-b border-koyu-100">4. الأساس القانوني</h2>
+          <p class="text-koyu-600 leading-relaxed">
+            تُعالَج البيانات بموجب المادة 5 من قانون KVKK: لأنها ضرورية لإبرام عقد أو تنفيذه، ولوجود التزام
+            قانوني علينا، واستناداً إلى مصالحنا المشروعة في إدارة أعمالنا وتحسينها.
+          </p>
+        </div>
+
+        <div>
+          <h2 class="text-xl md:text-2xl font-bold text-koyu-900 mb-4 pb-2 border-b border-koyu-100">5. النقل، بما في ذلك خارج تركيا</h2>
+          <p class="text-koyu-600 leading-relaxed mb-4">
+            لا نبيع بياناتك ولا نشاركها لأغراض تسويقية. وتُشارَك فقط مع مزوّدي الخدمة الذين يشغّلون الموقع ومراسلاتنا:
+          </p>
+          <ul class="text-koyu-600 leading-relaxed list-disc list-inside space-y-1.5">
+            <li><strong>Web3Forms</strong> — يوصل رسائل النماذج إلى بريدنا</li>
+            <li><strong>Vercel</strong> — استضافة الموقع وتحليلات الزيارات</li>
+            <li><strong>Google Analytics</strong> — إحصاءات زيارات مجمّعة</li>
+            <li><strong>واتساب (Meta)</strong> — إن اخترت التواصل بهذه الطريقة</li>
+          </ul>
+          <p class="text-koyu-600 leading-relaxed mt-4">
+            يحتفظ بعض هؤلاء المزوّدين بالبيانات على خوادم خارج تركيا. وعند اللزوم نشارك البيانات أيضاً مع
+            محاسبينا ومع الجهات الرسمية حين يُلزمنا القانون بذلك.
+          </p>
+        </div>
+
+        <div>
+          <h2 class="text-xl md:text-2xl font-bold text-koyu-900 mb-4 pb-2 border-b border-koyu-100">6. مدة الاحتفاظ</h2>
+          <p class="text-koyu-600 leading-relaxed">
+            تُحفَظ طلبات عروض الأسعار طوال ما تقتضيه العلاقة التجارية، وتُحفَظ السجلات ذات البعد المحاسبي أو
+            القانوني للمدد المنصوص عليها في القانون التركي (عشر سنوات عادةً). أما بيانات التحليلات فتُحفَظ وفق
+            مدة الاحتفاظ لدى المنصّة المعنية.
+          </p>
+        </div>
+
+        <div>
+          <h2 class="text-xl md:text-2xl font-bold text-koyu-900 mb-4 pb-2 border-b border-koyu-100">7. حقوقك</h2>
+          <p class="text-koyu-600 leading-relaxed mb-4">بموجب المادة 11 من قانون KVKK يحق لك:</p>
+          <ul class="text-koyu-600 leading-relaxed list-disc list-inside space-y-1.5">
+            <li>معرفة ما إذا كنا نعالج بياناتك الشخصية، وطلب معلومات إن كنّا نفعل</li>
+            <li>معرفة غرض المعالجة وما إذا كانت البيانات تُستخدم وفقه</li>
+            <li>معرفة الأطراف الثالثة، داخل تركيا أو خارجها، التي نُقلت إليها البيانات</li>
+            <li>طلب تصحيح البيانات الناقصة أو غير الدقيقة</li>
+            <li>طلب محو البيانات أو إتلافها</li>
+            <li>الاعتراض على نتيجة صادرة عن تحليل آلي بحت</li>
+            <li>المطالبة بالتعويض عن ضرر ناتج عن معالجة غير مشروعة</li>
+          </ul>
+        </div>
+
+        <div>
+          <h2 class="text-xl md:text-2xl font-bold text-koyu-900 mb-4 pb-2 border-b border-koyu-100">8. كيفية التقدّم بطلب</h2>
+          <p class="text-koyu-600 leading-relaxed">
+            راسلنا على <a href={contact.emailHref} class="text-eymen-600 hover:text-eymen-700" dir="ltr">{contact.email}</a>،
+            أو أرسل طلباً خطياً موقّعاً إلى مكتبنا المسجّل في <span dir="ltr">{contact.addressOffice}</span>. ونرد خلال 30 يوماً كحدٍّ أقصى.
+          </p>
+        </div>
+
+        <div>
+          <h2 class="text-xl md:text-2xl font-bold text-koyu-900 mb-4 pb-2 border-b border-koyu-100">9. أمن البيانات</h2>
+          <p class="text-koyu-600 leading-relaxed">
+            يُقدَّم الموقع عبر HTTPS، وتُنقَل بيانات النماذج مشفّرة، والوصول إلى أنظمتنا مقصور على الموظفين
+            المخوّلين، ونتخذ التدابير التقنية والإدارية التي يوجبها قانون KVKK.
+          </p>
+        </div>
+
+        <div>
+          <h2 class="text-xl md:text-2xl font-bold text-koyu-900 mb-4 pb-2 border-b border-koyu-100">10. التعديلات</h2>
+          <p class="text-koyu-600 leading-relaxed">
+            قد نُحدِّث هذه السياسة. والنسخة السارية هي دائماً المنشورة على هذه الصفحة، وتاريخ آخر تحديث مبيَّن في أعلاها.
+          </p>
+        </div>
+
+        <div class="bg-koyu-900 rounded-2xl p-8 text-center">
+          <h2 class="text-xl font-bold text-white mb-3">هل لديك سؤال؟</h2>
+          <p class="text-koyu-400 mb-5">راسلنا بشأن أي بند في هذه السياسة وسنجيبك.</p>
+          <a href={contact.emailHref} class="inline-flex items-center gap-2 bg-eymen-500 hover:bg-eymen-600 text-white px-6 py-3 rounded-xl font-semibold transition-colors" dir="ltr">
+            {contact.email}
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</BaseLayout>

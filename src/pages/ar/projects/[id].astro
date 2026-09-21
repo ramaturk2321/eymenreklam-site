@@ -3,7 +3,7 @@ import ProjeDetay from '../../../components/ProjeDetay.astro';
 import { getCollection } from 'astro:content';
 
 export async function getStaticPaths() {
-  const ceviriler = await getCollection('projelerEn');
+  const ceviriler = await getCollection('projelerAr');
   const trProjeler = await getCollection('projeler');
   return ceviriler.map(ceviri => ({
     params: { id: ceviri.id },
@@ -13,4 +13,4 @@ export async function getStaticPaths() {
 
 const { ceviri, tr } = Astro.props;
 ---
-<ProjeDetay lang="en" ceviri={ceviri} tr={tr} />
+<ProjeDetay lang="ar" ceviri={ceviri} tr={tr} />

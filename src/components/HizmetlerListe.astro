@@ -7,7 +7,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 import { srcset, SIZES } from '../lib/gorsel';
 import { getCollection } from 'astro:content';
 import { company, contact } from '../lib/site-data';
-import { sozluk, yol, hizmetYolu } from '../i18n';
+import { sozluk, yol, hizmetYolu, HIZMET_KOLEKSIYONU } from '../i18n';
 import type { Dil } from '../i18n';
 
 interface Props {
@@ -17,7 +17,6 @@ interface Props {
 const { lang = 'tr' } = Astro.props;
 const s = sozluk(lang);
 
-const HIZMET_KOLEKSIYONU = { tr: 'hizmetler', en: 'hizmetlerEn', ar: 'hizmetlerAr' } as const;
 const services = (await getCollection(HIZMET_KOLEKSIYONU[lang]))
   .sort((a, b) => a.data.order - b.data.order)
   .map(h => ({
@@ -54,7 +53,7 @@ const services = (await getCollection(HIZMET_KOLEKSIYONU[lang]))
           <a href={service.href} class="group bg-white rounded-2xl border border-koyu-100 overflow-hidden hover:shadow-xl hover:border-eymen-200 transition-all duration-300 hover:-translate-y-1">
             <div class="aspect-[16/10] overflow-hidden relative bg-koyu-200">
               <img src={service.image} srcset={srcset(service.image)} sizes={SIZES.kart3} alt={service.title} width="600" height="400" loading="lazy" decoding="async" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
-              <span class="absolute top-3 left-3 text-2xl bg-white/90 w-10 h-10 rounded-xl flex items-center justify-center">{service.icon}</span>
+              <span class="absolute top-3 start-3 text-2xl bg-white/90 w-10 h-10 rounded-xl flex items-center justify-center">{service.icon}</span>
             </div>
             <div class="p-6">
               <h2 class="text-xl font-bold text-koyu-900 mb-2 group-hover:text-eymen-600 transition-colors">{service.title}</h2>
@@ -80,7 +79,7 @@ const services = (await getCollection(HIZMET_KOLEKSIYONU[lang]))
         <a href={yol(lang, 'teklif')} class="inline-flex items-center justify-center gap-2 bg-white text-eymen-600 hover:bg-koyu-50 px-8 py-4 rounded-xl text-base font-bold transition-all">
           {s.hizmetSayfa.ctaForm}
         </a>
-        <a href={contact.phoneHref} class="inline-flex items-center justify-center gap-2 border-2 border-white/30 hover:border-white/60 text-white px-8 py-4 rounded-xl text-base font-semibold transition-all">
+        <a href={contact.phoneHref} dir="ltr" class="inline-flex items-center justify-center gap-2 border-2 border-white/30 hover:border-white/60 text-white px-8 py-4 rounded-xl text-base font-semibold transition-all">
           {contact.phone}
         </a>
       </div>

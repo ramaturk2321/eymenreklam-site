@@ -15,6 +15,10 @@ export type { Sozluk };
 
 const SOZLUKLER: Record<Dil, Sozluk> = { tr, en, ar };
 
+/** Dile göre içerik koleksiyonu adları — TR kökte, diğer diller alt klasörde. */
+export const HIZMET_KOLEKSIYONU = { tr: 'hizmetler', en: 'hizmetlerEn', ar: 'hizmetlerAr' } as const;
+export const PROJE_KOLEKSIYONU = { tr: 'projeler', en: 'projelerEn', ar: 'projelerAr' } as const;
+
 /** Dil koduna göre sözlük. */
 export function sozluk(dil: Dil): Sozluk {
   return SOZLUKLER[dil];

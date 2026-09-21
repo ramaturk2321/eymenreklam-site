@@ -45,6 +45,18 @@ press, a SwissQprint 4x2 m UV flatbed, a 160 cm Mimaki roll-to-roll printer, CNC
 lamination. The company works in English with head offices and international brands, installs across Turkey
 with its own team, and arranges export shipment where required.
 
+## Arabic pages
+
+Arabic pages live under /ar/ with RTL layout and the Cairo typeface. Product pages and the blog are Turkish only.
+
+- [Home (AR)](https://www.eymenreklam.com.tr/ar/)
+- [About](https://www.eymenreklam.com.tr/ar/about/) · [Services](https://www.eymenreklam.com.tr/ar/services/) ·
+  [Projects](https://www.eymenreklam.com.tr/ar/projects/) · [Clients](https://www.eymenreklam.com.tr/ar/references/) ·
+  [Contact](https://www.eymenreklam.com.tr/ar/contact/) · [Request a Quote](https://www.eymenreklam.com.tr/ar/get-a-quote/)
+
+The company corresponds in Arabic as well as Turkish and English, which matters for brands opening stores in
+Istanbul and for export customers in the Gulf and the wider Middle East.
+
 ## Ana sayfalar
 
 - [Ana sayfa](https://www.eymenreklam.com.tr/)

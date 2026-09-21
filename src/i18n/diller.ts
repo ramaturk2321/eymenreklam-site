@@ -16,7 +16,7 @@ export const VARSAYILAN_DIL: Dil = 'tr';
  * aksi hâlde henüz var olmayan sayfalara link verilir.
  *   Faz 1 bitince → ['tr', 'en'] ; Faz 2 bitince → ['tr', 'en', 'ar']
  */
-export const YAYINDAKI_DILLER: readonly Dil[] = ['tr', 'en'];
+export const YAYINDAKI_DILLER: readonly Dil[] = ['tr', 'en', 'ar'];
 
 export interface DilBilgisi {
   kod: Dil;

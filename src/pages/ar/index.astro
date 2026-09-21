@@ -1,0 +1,267 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { srcset, boyut, SIZES } from '../../lib/gorsel';
+import { getCollection } from 'astro:content';
+import { company, contact } from '../../lib/site-data';
+import { oneCikanMarkalar } from '../../lib/referanslar';
+import { yol, hizmetYolu, projeYolu, whatsappUrl, sozluk } from '../../i18n';
+import { kategoriAdi } from '../../lib/kategoriler';
+
+const s = sozluk('ar');
+const waUrl = whatsappUrl('ar');
+
+const hizmetler = (await getCollection('hizmetlerAr'))
+  .sort((a, b) => a.data.order - b.data.order)
+  .map(h => ({
+    title: h.data.title,
+    desc: h.data.listDesc,
+    image: h.data.listImage,
+    icon: h.data.listIcon,
+    href: hizmetYolu('ar', h.id),
+  }));
+
+const trProjeler = new Map((await getCollection('projeler')).map(p => [p.id, p]));
+const projeler = (await getCollection('projelerAr'))
+  .map(c => {
+    const tr = trProjeler.get(c.id);
+    return tr ? { id: c.id, title: c.data.title, image: tr.data.image, kategoriler: tr.data.categories, date: tr.data.date } : null;
+  })
+  .filter((p): p is NonNullable<typeof p> => p !== null)
+  .sort((a, b) => b.date.localeCompare(a.date))
+  .slice(0, 6);
+
+const makineler = [
+  'ماكينتان لطباعة البانر بعرض 320 سم',
+  'ماكينة طباعة على القماش بعرض 320 سم',
+  'ماكينة SwissQprint مسطحة 4×2 م للطباعة UV',
+  'ماكينة Mimaki 160 سم للطباعة على اللفات',
+  'راوتر CNC وقص بالليزر',
+  'خطوط تغليف حراري 180 سم وقص PVC ولحام وجلبات',
+];
+
+const surec = [
+  { step: '01', title: 'المعاينة وتحديد الاحتياج', desc: 'نزور الموقع ونقيسه ونصوّره — أو نعمل من مخططاتك وصورك في الأعمال خارج إسطنبول.' },
+  { step: '02', title: 'التصميم وعرض السعر', desc: 'معاينة ثلاثية الأبعاد وعرض سعر مفصّل ببنود واضحة، يُرسَل خلال 24 ساعة.' },
+  { step: '03', title: 'الإنتاج', desc: 'التصنيع في منشأتنا، مع مطابقة اللون والتشطيب للتصميم المعتمد.' },
+  { step: '04', title: 'التركيب أو الشحن', desc: 'تركيب بفريقنا داخل تركيا، أو تعبئة وشحن بما في ذلك التصدير.' },
+];
+---
+
+<BaseLayout
+  title={s.seo.varsayilanBaslik}
+  description="إيمن ريكلام — تصنيع اللافتات والطباعة UV وطباعة البانر وتغليف المركبات في إسطنبول منذ عام 2000. منشأة 2.500 م² وفريق تركيب خاص ومراسلة بالعربية."
+  lang="ar"
+  sayfa="ana"
+>
+
+  <!-- Hero -->
+  <section class="relative bg-koyu-900 overflow-hidden">
+    <img
+      src="/images/tabela-imalat.webp"
+      srcset={srcset('/images/tabela-imalat.webp')}
+      sizes="100vw"
+      {...boyut('/images/tabela-imalat.webp')}
+      alt=""
+      class="absolute inset-0 w-full h-full object-cover opacity-40"
+      loading="eager"
+      fetchpriority="high"
+      decoding="async"
+    />
+    <div class="absolute inset-0 bg-gradient-to-l from-koyu-900 via-koyu-900/85 to-koyu-900/40"></div>
+    <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-28 pb-16 md:pt-36 md:pb-24">
+      <div class="max-w-3xl">
+        <p class="text-eymen-400 text-sm font-semibold tracking-wider mb-4">اللافتات والطباعة بالقياسات الكبيرة · إسطنبول · منذ 2000</p>
+        <h1 class="text-3xl md:text-5xl font-extrabold text-white mb-5 leading-tight">
+          اللافتات والطباعة، من إنتاج منشأتنا في إسطنبول
+        </h1>
+        <p class="text-koyu-200 text-base md:text-lg leading-relaxed mb-8">
+          حروف مجسمة ولوحات توتيم وطباعة UV مسطحة وبانرات وتغليف مركبات وتجهيز متاجر متكامل. نصمّم ونصنع
+          ونركّب بفريقنا، ونراسل بالعربية العلامات الأجنبية والمقرّات الرئيسية والعملاء الذين يشحنون إلى الخارج.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-3">
+          <a href={yol('ar', 'teklif')} class="inline-flex items-center justify-center gap-2 bg-eymen-500 hover:bg-eymen-600 text-white px-7 py-4 rounded-xl text-base font-bold transition-all hover:shadow-lg hover:shadow-eymen-500/25">
+            اطلب عرض سعر
+          </a>
+          <a href={waUrl} target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center gap-2 bg-green-600 hover:bg-green-700 text-white px-7 py-4 rounded-xl text-base font-bold transition-all">
+            راسلنا عبر واتساب
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Rakamlar -->
+  <section class="bg-white border-b border-koyu-100">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+        <div>
+          <div class="text-3xl md:text-4xl font-extrabold text-eymen-600">+{company.experience}</div>
+          <div class="text-sm text-koyu-600 mt-1 font-medium">عاماً في الإنتاج</div>
+        </div>
+        <div>
+          <div class="text-3xl md:text-4xl font-extrabold text-eymen-600">2.500 م²</div>
+          <div class="text-sm text-koyu-600 mt-1 font-medium">منشأتنا الخاصة</div>
+        </div>
+        <div>
+          <div class="text-3xl md:text-4xl font-extrabold text-eymen-600">+10.000</div>
+          <div class="text-sm text-koyu-600 mt-1 font-medium">مشروع منجز</div>
+        </div>
+        <div>
+          <div class="text-3xl md:text-4xl font-extrabold text-eymen-600">+500</div>
+          <div class="text-sm text-koyu-600 mt-1 font-medium">عميل من الشركات</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Hizmetler -->
+  <section class="py-16 md:py-24 bg-koyu-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-2xl mx-auto mb-12">
+        <p class="text-eymen-600 text-sm font-semibold tracking-wider mb-3">ماذا ننتج</p>
+        <h2 class="text-3xl md:text-4xl font-extrabold text-koyu-900">خدماتنا</h2>
+        <p class="text-koyu-500 mt-4">عشرة خطوط إنتاج تحت سقف واحد — فعقد واحد يغطي التصميم والتصنيع والتركيب.</p>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        {hizmetler.map(h => (
+          <a href={h.href} class="group bg-white rounded-2xl border border-koyu-100 overflow-hidden hover:shadow-xl hover:border-eymen-200 transition-all duration-300 hover:-translate-y-1">
+            <div class="aspect-[16/10] overflow-hidden relative bg-koyu-200">
+              <img src={h.image} srcset={srcset(h.image)} sizes={SIZES.kart3} alt={h.title} width="600" height="400" loading="lazy" decoding="async" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+              <span class="absolute top-3 start-3 text-2xl bg-white/90 w-10 h-10 rounded-xl flex items-center justify-center">{h.icon}</span>
+            </div>
+            <div class="p-6">
+              <h3 class="text-lg font-bold text-koyu-900 mb-2 group-hover:text-eymen-600 transition-colors">{h.title}</h3>
+              <p class="text-sm text-koyu-500 leading-relaxed">{h.desc}</p>
+            </div>
+          </a>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- Üretim kapasitesi -->
+  <section class="py-16 md:py-24 bg-koyu-900">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        <div>
+          <p class="text-eymen-400 text-sm font-semibold tracking-wider mb-3">منشأتنا</p>
+          <h2 class="text-3xl md:text-4xl font-extrabold text-white mb-5">لا شيء يُسنَد إلى الخارج</h2>
+          <p class="text-koyu-300 leading-relaxed mb-6">
+            الطباعة والقص واللحام وتصنيع اللافتات والتركيب كلها تجري في منشأتنا البالغة 2.500 م² في بنديك،
+            على الجانب الآسيوي من إسطنبول. لهذا نستطيع تثبيت اللون عبر فروع سلسلة كاملة، والالتزام بموعد
+            التسليم، وإدخال الأعمال العاجلة إلى الإنتاج في اليوم نفسه.
+          </p>
+          <ul class="space-y-2.5 mb-8">
+            {makineler.map(m => (
+              <li class="flex items-start gap-3 text-koyu-200 text-sm">
+                <span class="text-eymen-400 mt-0.5">✓</span>
+                <span>{m}</span>
+              </li>
+            ))}
+          </ul>
+          <a href={yol('ar', 'hakkimizda')} class="inline-flex items-center gap-2 text-eymen-400 font-semibold hover:text-eymen-300">
+            المزيد عن الشركة ←
+          </a>
+        </div>
+        <div>
+          <img
+            src="/images/yenifabrika-opt.webp"
+            srcset={srcset('/images/yenifabrika-opt.webp')}
+            sizes={SIZES.yariGenislik}
+            {...boyut('/images/yenifabrika-opt.webp')}
+            alt="منشأة إيمن ريكلام للإنتاج في بنديك بإسطنبول"
+            class="rounded-2xl w-full h-auto shadow-2xl"
+            loading="lazy"
+            decoding="async"
+          />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projeler -->
+  <section class="py-16 md:py-24">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-2xl mx-auto mb-12">
+        <p class="text-eymen-600 text-sm font-semibold tracking-wider mb-3">{s.projeSayfa.ustBaslik}</p>
+        <h2 class="text-3xl md:text-4xl font-extrabold text-koyu-900">أحدث المشاريع</h2>
+      </div>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        {projeler.map(p => (
+          <a href={projeYolu('ar', p.id)} class="group bg-white rounded-2xl border border-koyu-100 overflow-hidden hover:shadow-xl hover:border-eymen-200 transition-all duration-300 hover:-translate-y-1">
+            <div class="aspect-[4/3] overflow-hidden relative bg-koyu-200">
+              <img src={p.image} srcset={srcset(p.image)} sizes={SIZES.kart3} alt={p.title} width="600" height="450" loading="lazy" decoding="async" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+              <div class="absolute top-3 start-3 flex flex-wrap gap-1.5">
+                {p.kategoriler.slice(0, 2).map(k => (
+                  <span class="px-3 py-1 bg-eymen-500 text-white text-xs font-semibold rounded-full">{kategoriAdi(k, 'ar')}</span>
+                ))}
+              </div>
+            </div>
+            <div class="p-5">
+              <h3 class="font-bold text-koyu-900 group-hover:text-eymen-600 transition-colors">{p.title}</h3>
+            </div>
+          </a>
+        ))}
+      </div>
+      <div class="text-center mt-10">
+        <a href={yol('ar', 'projeler')} class="inline-flex items-center gap-2 text-eymen-700 font-semibold hover:text-eymen-800">كل المشاريع ←</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Markalar -->
+  <section class="py-16 bg-koyu-50 border-y border-koyu-100">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-8">
+        <p class="text-eymen-700 text-sm font-semibold tracking-wider mb-3">عملاؤنا</p>
+        <h2 class="text-3xl font-extrabold text-koyu-900">علامات ننتج لها</h2>
+      </div>
+      <ul class="flex flex-wrap justify-center gap-2.5">
+        {oneCikanMarkalar.map(r => (
+          <li><span class="inline-block px-4 py-2 rounded-full bg-white border border-koyu-200 text-sm font-semibold text-koyu-800" dir="ltr">{r.ad}</span></li>
+        ))}
+      </ul>
+      <div class="text-center mt-8">
+        <a href={yol('ar', 'referanslar')} class="inline-flex items-center gap-2 text-eymen-700 font-semibold hover:text-eymen-800">كل عملائنا ←</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Süreç -->
+  <section class="py-16 md:py-24">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-2xl mx-auto mb-12">
+        <p class="text-eymen-600 text-sm font-semibold tracking-wider mb-3">{s.hizmetSayfa.surecUstBaslik}</p>
+        <h2 class="text-3xl md:text-4xl font-extrabold text-koyu-900">من المعاينة إلى التركيب</h2>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
+        {surec.map(p => (
+          <div class="bg-white rounded-2xl p-6 border border-koyu-100">
+            <div class="text-3xl font-extrabold text-eymen-500 mb-3">{p.step}</div>
+            <h3 class="font-bold text-koyu-900 mb-2">{p.title}</h3>
+            <p class="text-sm text-koyu-500 leading-relaxed">{p.desc}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="bg-gradient-to-br from-eymen-500 to-eymen-700 py-16 md:py-20">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <h2 class="text-3xl md:text-4xl font-extrabold text-white mb-4">أخبرنا عن مشروعك</h2>
+      <p class="text-eymen-100 text-lg mb-8 max-w-2xl mx-auto">
+        أرسل المقاسات والخامات والموقع ونرسل لك عرض سعر خلال 24 ساعة. ونرد عليك بالعربية.
+      </p>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <a href={yol('ar', 'teklif')} class="inline-flex items-center justify-center gap-2 bg-white text-eymen-600 hover:bg-koyu-50 px-8 py-4 rounded-xl text-base font-bold transition-all hover:shadow-lg">
+          {s.hizmetSayfa.ctaForm}
+        </a>
+        <a href={contact.phoneHref} class="inline-flex items-center justify-center gap-2 border-2 border-white/30 hover:border-white/60 text-white px-8 py-4 rounded-xl text-base font-semibold transition-all" dir="ltr">
+          +90 216 379 07 08
+        </a>
+      </div>
+    </div>
+  </section>
+
+</BaseLayout>
