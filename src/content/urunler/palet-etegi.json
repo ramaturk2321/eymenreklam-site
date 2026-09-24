@@ -47,7 +47,6 @@
     { "label": "Baskı Tekniği", "value": "Dijital Baskı / UV Baskı" },
     { "label": "Standart Boyutlar", "value": "120x20, 100x15 cm (Özel boyut mümkün)" },
     { "label": "Kalınlık", "value": "1-3 mm" },
-    { "label": "Min. Sipariş", "value": "1 Adet" },
     { "label": "Garanti", "value": "2 Yıl (Baskı Kalitesi)" }
   ],
   "faq": [

@@ -53,7 +53,6 @@
     { "label": "Baskı Yüzü", "value": "Tek / Çift Taraflı" },
     { "label": "Özel Kesim", "value": "CNC / Plotter Kesim" },
     { "label": "Asma Aparatı", "value": "İp / Kanca / Plastik Klips" },
-    { "label": "Min. Sipariş", "value": "1 Adet" },
     { "label": "Garanti", "value": "2 Yıl (Baskı Kalitesi)" }
   ],
   "faq": [

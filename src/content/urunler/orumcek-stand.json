@@ -53,7 +53,6 @@
     { "label": "Standart Boyutlar", "value": "60x160, 80x180, 80x200 cm" },
     { "label": "Baskı Yüzü", "value": "Tek / Çift Taraflı" },
     { "label": "Taşıma Çantası", "value": "Dahil" },
-    { "label": "Min. Sipariş", "value": "1 Adet" },
     { "label": "Garanti", "value": "2 Yıl (İskelet + Baskı)" }
   ],
   "faq": [

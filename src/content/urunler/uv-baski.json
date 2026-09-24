@@ -34,7 +34,7 @@
         { "bold": "Cam & Akrilik", "text": "Düz cam, temperli cam ve pleksiglas (akrilik) yüzeylere şeffaf veya opak baskı. Mağaza vitrinleri ve dekoratif panellerde kullanılır." },
         { "bold": "Deri & Kumaş", "text": "Suni deri, doğal deri ve bazı kumaş türlerine promosyon veya dekoratif baskı. Kişiselleştirilmiş ürünler için tercih edilir." },
         { "bold": "PVC & Plastik", "text": "Forex, dekota, polikarbon ve diğer plastik yüzeylere yüksek çözünürlüklü reklam baskısı." },
-        { "bold": "Seramik & Fayans", "text": "Seramik, porselen ve fayans yüzeylere özel tasarım baskı. İç mekan dekorasyonu ve hediyelik eşyalar için kullanılır." }
+        { "bold": "Seramik & Fayans", "text": "Seramik, porselen ve fayans yüzeylere özel tasarım baskı. İç mekân dekorasyonu ve kurumsal promosyon ürünleri için kullanılır." }
       ]
     },
     {
@@ -57,13 +57,12 @@
     { "label": "Uyumlu Yüzeyler", "value": "Ahşap, Metal, Cam, Akrilik, PVC, Deri, Seramik" },
     { "label": "Özel Efektler", "value": "Kabartma (Vernik), Beyaz Altbaskı, Spot Lak" },
     { "label": "Dayanıklılık", "value": "UV & Suya Dayanıklı, Çizilmeye Dirençli" },
-    { "label": "Minimum Sipariş", "value": "1 Adet (Prototip dahil)" },
     { "label": "Garanti", "value": "2 Yıl (Dış mekan 1 Yıl)" }
   ],
   "faq": [
     { "q": "UV baskı fiyatı neye göre değişir?", "a": "Fiyat; malzeme türü, baskı alanı (m² cinsinden), baskı çözünürlüğü, beyaz mürekkep kullanımı ve kabartma efekti gibi faktörlere göre belirlenir. Ücretsiz keşif ve numune baskı sonrası net fiyat teklifi sunuyoruz." },
     { "q": "UV baskı dış mekanda dayanıklı mıdır?", "a": "Evet, UV mürekkepler doğası gereği UV ışınlarına ve suya dayanıklıdır. Dış mekan uygulamalarında 2-5 yıl arası dayanıklılık sağlar. Ek UV koruyucu lak ile bu süre uzatılabilir." },
-    { "q": "Minimum sipariş adedi var mı?", "a": "Hayır, UV baskının en büyük avantajlarından biri 1 adetten bile üretim yapılabilmesidir. Prototip, numune veya kişiselleştirilmiş tek parça siparişler kabul ediyoruz." },
+    { "q": "Seri üretimden önce numune alabilir miyiz?", "a": "Evet. UV baskıda kalıp gerekmediği için seri üretimden önce prototip ve numune basıyoruz; renk ve malzeme onaylandıktan sonra kampanya ve şube adetlerinde seri üretime geçiyoruz." },
     { "q": "Beyaz mürekkep nedir, ne işe yarar?", "a": "Beyaz mürekkep, koyu renkli veya şeffaf yüzeylere baskıda alt katman olarak kullanılır. Bu sayede renkler canlılığını korur. Ayrıca şeffaf cam veya akrilik üzerine opak beyaz baskı yapmak için de kullanılır." }
   ],
   "relatedProducts": [

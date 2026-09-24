@@ -59,7 +59,7 @@
   "faq": [
     { "q": "Katalog baskı fiyatı ne kadar?", "a": "Fiyat; sayfa sayısı, kağıt türü, boyut, ciltleme ve adet sayısına göre değişir. Detaylı teklif için bizimle iletişime geçin." },
     { "q": "Tasarım desteği var mı?", "a": "Evet, içerik planlamasından sayfa tasarımına kadar ücretsiz grafik tasarım desteği sunuyoruz." },
-    { "q": "Minimum sipariş adedi var mı?", "a": "Dijital baskı ile 1 adetten başlayan üretim yapabiliyoruz. Ofset baskı için minimum 250 adet öneriyoruz." },
+    { "q": "Minimum sipariş adedi var mı?", "a": "Dijital baskıda kısa tirajlı ve numune üretim yapabiliyoruz. Ofset baskı için 250 adet ve üzerini öneriyoruz." },
     { "q": "Dijital katalog da hazırlanır mı?", "a": "Evet, basılı katalogun dijital versiyonunu da hazırlayabiliyoruz." }
   ],
   "relatedProducts": [

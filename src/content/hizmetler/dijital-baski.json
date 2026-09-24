@@ -39,7 +39,7 @@
     { "icon": "📸", "title": "Yüksek Çözünürlüklü Fotoblok", "desc": "Fotoğraf kalitesi dijital baskı. 300 DPI ye kadar çözünürlük. Mat veya parlak yüzey seçeneği." },
     { "icon": "🎴", "title": "Kurumsal Basılı Malzeme", "desc": "Kartvizit, kağıt, zarf, fatura formu, beyanname vs. kurumsal materyallerin çalışmaya hazır baskısı." },
     { "icon": "⚡", "title": "Aynı Gün Üretim", "desc": "Günlük 1500 m² üretim kapasitesi. Acil projelerde 4-6 saatte teslim seçeneği." },
-    { "icon": "💰", "title": "Küçük Partiye Uygun Fiyatlar", "desc": "Kurşun baskıdan farklı olarak kalıp hazırlık maliyeti yoktur. Tek parçadan bin parçaya kadar ekonomik." }
+    { "icon": "💰", "title": "Kalıpsız Hızlı Üretim", "desc": "Kurşun baskıdan farklı olarak kalıp hazırlığı yoktur; kampanya ve şube adetleri onaydan hemen sonra üretime girer." }
   ],
   "products": [
     { "title": "Afiş Branda", "desc": "320 cm büyük format vinil branda baskı. Bina cephesi, inşaat ve etkinlik için UV korumalı.", "image": "/images/urunler/afis-branda-2.webp", "href": "/urunlerimiz/afis-branda/" },

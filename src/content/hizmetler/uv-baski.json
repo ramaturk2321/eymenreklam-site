@@ -3,7 +3,7 @@
   "seoTitle": "UV Baskı Hizmeti Pendik İstanbul",
   "heroTitle": "UV Baskı: Cam, Ahşap, Metal ve Pleksi Yüzeylere Doğrudan Baskı",
   "description": "Cam, metal, ahşap, pleksi ve kompozite 4x2 m flatbed ile UV baskı. Pendik'teki tesisimizden Anadolu Yakası ve tüm İstanbul'a; kesim ve montaj dâhil.",
-  "heroDesc": "Pendik'teki tesisimizde 4x2 m SwissQprint UV flatbed makinemizle cam, metal, ahşap, pleksi, kompozit, foreks ve PVC yüzeylere doğrudan baskı yapıyoruz. Beyaz altbaskı ve vernik katmanı, lazer ve CNC kesim, gerekirse yerinde montaj aynı çatı altında. Tek parça numuneden bin adetlik seri işe kadar İstanbul Anadolu Yakası'nın tamamına hizmet veriyoruz.",
+  "heroDesc": "Pendik'teki tesisimizde 4x2 m SwissQprint UV flatbed makinemizle cam, metal, ahşap, pleksi, kompozit, foreks ve PVC yüzeylere doğrudan baskı yapıyoruz. Beyaz altbaskı ve vernik katmanı, lazer ve CNC kesim, gerekirse yerinde montaj aynı çatı altında. Zincir mağaza, fabrika ve kurumsal projelerde numune onayından binlerce adetlik seri üretime kadar İstanbul Anadolu Yakası'nın tamamına hizmet veriyoruz.",
   "heroImage": "/images/urunler/uv-flatbed-1.webp",
   "order": 2,
   "listIcon": "🖨️",
@@ -32,8 +32,8 @@
         "label": "Beyaz Altbaskı ve Vernik"
       },
       {
-        "value": "1 Adet",
-        "label": "Minimum Sipariş"
+        "value": "2.500 m²",
+        "label": "Kendi Üretim Tesisimiz"
       }
     ],
     "machines": [
@@ -76,8 +76,8 @@
     },
     {
       "icon": "🎯",
-      "title": "Tek Adetten Seri Üretime",
-      "desc": "Numune ve prototipten bin adetlik promosyon ve iş güvenliği levhası serilerine kadar aynı kalite."
+      "title": "Numuneden Seri Üretime",
+      "desc": "Önce numune onayı, sonra şube ve kampanya adetlerinde seri üretim. Binlerce adetlik promosyon ve iş güvenliği levhası serilerinde aynı kalite."
     }
   ],
   "products": [
@@ -203,7 +203,7 @@
     },
     {
       "baslik": "Teslim süresi",
-      "aciklama": "Standart terminde en uygun fiyatı veririz. Aynı gün ve gece vardiyası gerektiren acil işler ayrıca planlanır."
+      "aciklama": "Standart terminle planlanan seri işlerde birim maliyet düşer. Aynı gün ve gece vardiyası gerektiren acil işler ayrıca planlanır."
     }
   ],
   "bolge": {
@@ -265,7 +265,7 @@
   "faq": [
     {
       "q": "UV baskı fiyatı neye göre belirlenir?",
-      "a": "Malzeme türü, baskı alanı (m²), adet, beyaz altbaskı veya vernik katmanı, şekilli kesim ihtiyacı ve teslim süresi fiyatı belirler. Ölçü, malzeme ve adedi WhatsApp'tan gönderirseniz aynı gün net fiyat veriyoruz."
+      "a": "Malzeme türü, baskı alanı (m²), adet, beyaz altbaskı veya vernik katmanı, şekilli kesim ihtiyacı ve teslim süresi fiyatı belirler. Ölçü, malzeme, adet ve teslim yerini iletirseniz aynı gün yazılı teklif gönderiyoruz."
     },
     {
       "q": "UV baskı dayanıklılığı ne kadar sürer?",
@@ -276,8 +276,8 @@
       "a": "Cam, ayna, alüminyum, kompozit, çelik, MDF, masif ahşap, pleksi, polikarbonat, foreks, PVC, laminat ve deri gibi 10 cm kalınlığa kadar her düz yüzeye baskı yapıyoruz."
     },
     {
-      "q": "Küçük partide veya tek adet üretim yapıyor musunuz?",
-      "a": "Evet. Tek parça numuneden başlıyoruz. Kurumsal hediye ve promosyon işlerinde onlarca ile binlerce adet arası seri üretim de yapıyoruz."
+      "q": "Seri üretimden önce numune alabilir miyiz?",
+      "a": "Evet. Seri üretime geçmeden önce renk ve malzeme onayı için numune baskı yapıyoruz. Kurumsal promosyon, iş güvenliği levhası ve mağaza içi görsellerde onlarca ile binlerce adet arası seri üretim yapıyoruz."
     },
     {
       "q": "Anadolu Yakası'nda montaj yapıyor musunuz?",

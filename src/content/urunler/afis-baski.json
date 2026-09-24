@@ -46,7 +46,7 @@
     {
       "icon": "M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.066 2.573c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.573 1.066c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.066-2.573c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z M15 12a3 3 0 11-6 0 3 3 0 016 0z",
       "title": "Hızlı Üretim ve Teslimat",
-      "content": "Tek adetten toplu siparişe kadar hızlı üretim imkânı sunuyoruz. Acil siparişlerde aynı gün üretim mevcuttur. Ücretsiz grafik tasarım desteği ile kampanya afişlerinizi hızla hayata geçiriyoruz."
+      "content": "Mağaza ve şube kampanyaları için seri ve hızlı üretim yapıyoruz. Acil siparişlerde aynı gün üretim mevcuttur. Ücretsiz grafik tasarım desteği ile kampanya afişlerinizi hızla hayata geçiriyoruz."
     }
   ],
   "technicalSpecs": [
@@ -55,11 +55,10 @@
     { "label": "Standart Boyutlar", "value": "A3, A2, A1, A0, 50x70, 70x100 cm" },
     { "label": "Çözünürlük", "value": "720 — 1440 dpi" },
     { "label": "Laminasyon", "value": "Mat / Parlak (Opsiyonel)" },
-    { "label": "Min. Sipariş", "value": "1 Adet" },
     { "label": "Garanti", "value": "2 Yıl (Baskı Kalitesi)" }
   ],
   "faq": [
-    { "q": "Afiş baskı fiyatı ne kadar?", "a": "Fiyat; boyut, malzeme türü, adet ve laminasyon seçeneğine göre değişir. 1 adetten sipariş alıyoruz." },
+    { "q": "Afiş baskı fiyatı ne kadar?", "a": "Fiyat; boyut, malzeme türü, adet ve laminasyon seçeneğine göre değişir. Şube bazlı toplu siparişlerde birim fiyat düşer." },
     { "q": "Dış mekânda kullanılabilir mi?", "a": "Evet, branda ve vinil malzeme seçenekleriyle dış mekânda dayanıklı kullanım mümkündür." },
     { "q": "Aynı gün teslimat var mı?", "a": "Evet, acil siparişlerde aynı gün üretim ve teslimat imkânı sunuyoruz." },
     { "q": "Tasarım desteği var mı?", "a": "Evet, ücretsiz grafik tasarım desteği sunuyoruz." }

@@ -52,7 +52,6 @@
     { "label": "Maks. Genişlik", "value": "320 cm" },
     { "label": "Kenar İşlemi", "value": "Dikiş + Kuşgözü" },
     { "label": "Yıkanabilir", "value": "Evet" },
-    { "label": "Min. Sipariş", "value": "1 Adet" },
     { "label": "Garanti", "value": "2 Yıl (Baskı + Malzeme)" }
   ],
   "faq": [

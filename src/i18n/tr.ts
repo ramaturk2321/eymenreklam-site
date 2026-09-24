@@ -44,7 +44,7 @@ export const tr = {
   // ─── Sık kullanılan ortak metinler ───
   ortak: {
     teklifAl: 'Teklif Al',
-    ucretsizTeklif: 'Ücretsiz Teklif Alın',
+    ucretsizTeklif: 'Kurumsal Teklif Alın',
     whatsappYaz: "WhatsApp'tan Yazın",
     bizeUlasin: 'Bize Ulaşın',
     hemenArayin: 'Hemen Arayın',
@@ -132,8 +132,8 @@ export const tr = {
     fiyatUstBaslik: 'FİYATLANDIRMA',
     fiyatBaslik: (baslik: string) => `${baslik} Fiyatını Ne Belirler?`,
     fiyatAciklama:
-      'Her iş ölçüsüne ve malzemesine göre hesaplanır; bu yüzden liste fiyatı yayınlamıyoruz. Aşağıdaki bilgileri iletirseniz aynı gün net fiyat veriyoruz.',
-    whatsappOlcu: "Ölçü ve malzemeyi WhatsApp'tan gönder",
+      'Her iş ölçüsüne ve malzemesine göre hesaplanır; bu yüzden liste fiyatı yayınlamıyoruz. Aşağıdaki bilgileri iletirseniz aynı gün yazılı teklif gönderiyoruz.',
+    whatsappOlcu: "WhatsApp'tan Yazın",
     bolgeUstBaslik: 'HİZMET BÖLGESİ',
     kargo: 'Türkiye geneline kargo',
     ctaBaslik: 'Projeniz İçin Kurumsal Teklif Alın',
@@ -171,9 +171,9 @@ export const tr = {
   },
 
   whatsapp: {
-    varsayilan: 'Merhaba, teklif almak istiyorum.',
-    proje: 'Merhaba, proje teklifi almak istiyorum.',
-    urun: (ad: string) => `Merhaba, ${ad} hakkında teklif almak istiyorum.`,
+    varsayilan: 'Merhaba, firmamız adına teklif almak istiyorum. Firma adı: ',
+    proje: 'Merhaba, firmamız adına proje teklifi almak istiyorum. Firma adı: ',
+    urun: (ad: string) => `Merhaba, firmamız adına ${ad} için teklif almak istiyorum. Firma adı: `,
   },
 };
 

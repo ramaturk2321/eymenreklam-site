@@ -1,7 +1,7 @@
 {
   "title": "Parlak Kağıt Afiş Baskı",
   "seoTitle": "Parlak Kağıt Baskı ve Afiş Fiyatları",
-  "description": "Parlak kuşe kağıt afiş ve poster baskı: A3-A0, 50x70 ve 70x100 cm; 135-200 gr; 1 adetten sipariş, aynı gün teslim seçeneği. Pendik İstanbul, ücretsiz teklif.",
+  "description": "Parlak kuşe kağıt afiş ve poster baskı: A3-A0, 50x70 ve 70x100 cm; 135-200 gr; şube bazlı seri üretim, aynı gün teslim seçeneği. Pendik İstanbul, ücretsiz teklif.",
   "category": "Afiş Baskı",
   "categoryHref": "/hizmetlerimiz/afis-baski/",
   "shortDesc": "Parlak kuşe kağıt üzerine afiş ve poster baskı. Canlı renkler ve parlak yüzey ile dikkat çekici, profesyonel tanıtım materyali.",
@@ -53,7 +53,6 @@
     { "label": "Standart Boyutlar", "value": "A3, A2, A1, A0, 50x70, 70x100 cm" },
     { "label": "Çözünürlük", "value": "720 — 1440 dpi" },
     { "label": "Laminasyon", "value": "Parlak / Mat (Opsiyonel)" },
-    { "label": "Min. Sipariş", "value": "1 Adet" },
     { "label": "Garanti", "value": "2 Yıl (Baskı Kalitesi)" }
   ],
   "faq": [

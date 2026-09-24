@@ -46,9 +46,9 @@ export const hours = {
 
 // ─── WhatsApp Mesaj Şablonları ───
 export const whatsappMessages = {
-  default: 'Merhaba, teklif almak istiyorum.',
-  proje: 'Merhaba, proje teklifi almak istiyorum.',
-  product: (name: string) => `Merhaba, ${name} hakkında teklif almak istiyorum.`,
+  default: 'Merhaba, firmamız adına teklif almak istiyorum. Firma adı: ',
+  proje: 'Merhaba, firmamız adına proje teklifi almak istiyorum. Firma adı: ',
+  product: (name: string) => `Merhaba, firmamız adına ${name} için teklif almak istiyorum. Firma adı: `,
 };
 
 export function getWhatsAppUrl(message?: string) {
