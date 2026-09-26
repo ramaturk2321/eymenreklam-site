@@ -40,9 +40,14 @@ const kimlik = sayfa ? { anahtar: sayfa, slug, tur } : undefined;
     <link rel="apple-touch-icon" href="/favicon.png" />
     <link rel="help" href="/llms.txt" type="text/plain" title="LLM Information" />
     <!-- Self-hosted Poppins — render-blocking Google Fonts kaldırıldı -->
-    <link rel="preload" href="/fonts/poppins-400.woff2" as="font" type="font/woff2" crossorigin />
-    <link rel="preload" href="/fonts/poppins-600.woff2" as="font" type="font/woff2" crossorigin />
-    <link rel="preload" href="/fonts/poppins-700.woff2" as="font" type="font/woff2" crossorigin />
+    {/* Arapça sayfalar Cairo ile dizilir; orada Poppins önyüklemesi Cairo'yla bant genişliği yarıştırıyordu */}
+    {lang !== 'ar' && (
+      <>
+        <link rel="preload" href="/fonts/poppins-400.woff2" as="font" type="font/woff2" crossorigin />
+        <link rel="preload" href="/fonts/poppins-600.woff2" as="font" type="font/woff2" crossorigin />
+        <link rel="preload" href="/fonts/poppins-700.woff2" as="font" type="font/woff2" crossorigin />
+      </>
+    )}
     <style is:inline>
       @font-face { font-family: 'Poppins'; font-style: normal; font-weight: 400; font-display: swap; src: url('/fonts/poppins-400.woff2') format('woff2'); }
       @font-face { font-family: 'Poppins'; font-style: normal; font-weight: 500; font-display: swap; src: url('/fonts/poppins-500.woff2') format('woff2'); }
@@ -78,6 +83,8 @@ const kimlik = sayfa ? { anahtar: sayfa, slug, tur } : undefined;
         {/* Arapça sayfalar Cairo ile dizilir — Poppins'te Arapça glif yok. */}
         <link rel="preload" href="/fonts/cairo-arabic-400.woff2" as="font" type="font/woff2" crossorigin />
         <link rel="preload" href="/fonts/cairo-arabic-700.woff2" as="font" type="font/woff2" crossorigin />
+        {/* 800 = başlıklar (font-extrabold, ana sayfa H1 = LCP) */}
+        <link rel="preload" href="/fonts/cairo-arabic-800.woff2" as="font" type="font/woff2" crossorigin />
         <style is:inline set:html={`
         @font-face { font-family: 'Cairo'; font-style: normal; font-weight: 400; font-display: swap; src: url('/fonts/cairo-arabic-400.woff2') format('woff2'); unicode-range: U+0600-06FF, U+0750-077F, U+0870-088E, U+0890-0891, U+0897-08E1, U+08E3-08FF, U+200C-200E, U+2010-2011, U+204F, U+2E41, U+FB50-FDFF, U+FE70-FE74, U+FE76-FEFC; }
         @font-face { font-family: 'Cairo'; font-style: normal; font-weight: 400; font-display: swap; src: url('/fonts/cairo-latin-400.woff2') format('woff2'); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
