@@ -1,5 +1,6 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+import UretimHatti from '../components/UretimHatti.astro';
 import { srcset, boyut, SIZES } from '../lib/gorsel';
 import { company, contact } from '../lib/site-data';
 import { oneCikanMarkalar, tumReferanslar } from '../lib/referanslar';
@@ -163,47 +164,47 @@ for (const cat of categories) {
 
 <BaseLayout title="Tabela, UV ve Branda Baskı Pendik İstanbul" description={`Eymen Reklam — Pendik'in ${company.experience} yıllık reklam firması: tabela imalatı, UV baskı, branda ve bez baskı, araç giydirme. Kendi tesisimizde üretim. ☎ (0216) 379 07 08 — Ücretsiz keşif ve teklif.`} lang="tr" sayfa="ana">
 
-  <!-- ========== HERO SLIDER ========== -->
-  <section class="relative bg-koyu-900 overflow-hidden" id="hero">
-    <div class="relative h-[500px] md:h-[600px] lg:h-[700px]">
-      <img src="/images/yenifabrika-opt.webp" srcset={srcset('/images/yenifabrika-opt.webp')} sizes="100vw" alt="Eymen Reklam Üretim Tesisi" class="w-full h-full object-cover" width="1920" height="742" fetchpriority="high" />
-      <div class="absolute inset-0 bg-gradient-to-r from-koyu-900/90 via-koyu-900/60 to-koyu-900/30"></div>
-      <div class="absolute inset-0 flex items-center">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
-          <div class="max-w-2xl">
-            <p class="slide-up text-eymen-400 text-sm md:text-base font-semibold tracking-widest mb-4">2000'DEN BERİ</p>
-            <h1 class="slide-up slide-delay-1 text-4xl md:text-6xl lg:text-7xl font-extrabold text-white leading-tight mb-6">
-              İstanbul'da Tabela İmalatı,<br/>
-              <span class="text-eymen-500">UV Baskı & Branda Baskı</span>
-            </h1>
-            <p class="slide-up slide-delay-2 text-lg md:text-xl text-koyu-300 mb-8 max-w-xl">
-              Tabela, UV baskı ve branda/bez baskıyı Pendik'teki kendi tesisimizde üretiyor, İstanbul'un her yerine montajla teslim ediyoruz. 4x2 m UV flatbed, 320 cm branda makineleri, kendi montaj ekibimiz.
-            </p>
-            <div class="slide-up slide-delay-3 flex flex-col sm:flex-row gap-4">
-              <a href="/teklif-al/"
-                class="inline-flex items-center justify-center gap-2 bg-eymen-500 hover:bg-eymen-600 text-white px-8 py-4 rounded-lg text-base font-bold transition-all hover:shadow-xl hover:shadow-eymen-500/30">
-                Kurumsal Teklif Alın
-                <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
-              </a>
-              <a href="/hizmetlerimiz/" class="inline-flex items-center justify-center gap-2 border-2 border-white/30 hover:border-white text-white px-8 py-4 rounded-lg text-base font-semibold transition-all hover:bg-white/10">
-                Hizmetlerimiz
-              </a>
-            </div>
-            <a href={contact.mapsUrl} target="_blank" rel="noopener noreferrer" class="slide-up slide-delay-3 mt-6 inline-flex items-center gap-2 text-white/90 hover:text-white text-sm font-medium group">
-              <span class="flex items-center gap-0.5 text-yellow-400" role="img" aria-label="5 yıldız">
-                <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.828 1.48 8.279L12 18.896l-7.416 4.517 1.48-8.279L.001 9.306l8.332-1.151z"/></svg>
-                <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.828 1.48 8.279L12 18.896l-7.416 4.517 1.48-8.279L.001 9.306l8.332-1.151z"/></svg>
-                <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.828 1.48 8.279L12 18.896l-7.416 4.517 1.48-8.279L.001 9.306l8.332-1.151z"/></svg>
-                <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.828 1.48 8.279L12 18.896l-7.416 4.517 1.48-8.279L.001 9.306l8.332-1.151z"/></svg>
-                <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.828 1.48 8.279L12 18.896l-7.416 4.517 1.48-8.279L.001 9.306l8.332-1.151z"/></svg>
-              </span>
-              <span class="font-bold">5.0</span>
-              <span class="text-koyu-300">Google'da değerlendirildi</span>
-              <svg class="w-4 h-4 group-hover:translate-x-0.5 transition-transform" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg>
-            </a>
-          </div>
-        </div>
+  <!-- ========== HERO · CANLI ATÖLYE ========== -->
+  <!-- Fotoğraf yerine kodla çizilen, sonsuz akan atölye sahnesi (components/UretimHatti.astro). H1 ve teklif düğmeleri aynen korunur. -->
+  <section class="relative bg-[#0a0f1a] overflow-hidden" id="hero">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-12 md:pt-16 pb-7 md:pb-9 grid gap-6 lg:grid-cols-12 lg:gap-12 lg:items-end">
+      <div class="lg:col-span-7">
+        <p class="slide-up text-eymen-400 text-sm md:text-base font-semibold tracking-widest mb-4">PENDİK · 2.500 m² ÜRETİM TESİSİ · 2000'DEN BERİ</p>
+        <h1 class="slide-up slide-delay-1 text-4xl md:text-5xl lg:text-6xl font-extrabold text-white leading-tight">
+          İstanbul'da Tabela İmalatı,<br/>
+          <span class="text-eymen-500">UV Baskı & Branda Baskı</span>
+        </h1>
       </div>
+      <div class="lg:col-span-5">
+        <p class="slide-up slide-delay-2 text-base md:text-lg text-koyu-300 mb-6">
+          Tabela, UV baskı ve branda/bez baskıyı Pendik'teki kendi tesisimizde üretiyor, İstanbul'un her yerine montajla teslim ediyoruz. Atölye şu an çalışıyor: sürükleyerek gezin ya da bir istasyona dokunun.
+        </p>
+        <div class="slide-up slide-delay-3 flex flex-col sm:flex-row gap-4">
+          <a href="/teklif-al/"
+            class="inline-flex items-center justify-center gap-2 bg-eymen-500 hover:bg-eymen-600 text-white px-8 py-4 rounded-lg text-base font-bold transition-all hover:shadow-xl hover:shadow-eymen-500/30">
+            Kurumsal Teklif Alın
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+          </a>
+          <a href="/hizmetlerimiz/" class="inline-flex items-center justify-center gap-2 border-2 border-white/30 hover:border-white text-white px-8 py-4 rounded-lg text-base font-semibold transition-all hover:bg-white/10">
+            Hizmetlerimiz
+          </a>
+        </div>
+        <a href={contact.mapsUrl} target="_blank" rel="noopener noreferrer" class="slide-up slide-delay-3 mt-6 inline-flex items-center gap-2 text-white/90 hover:text-white text-sm font-medium group">
+          <span class="flex items-center gap-0.5 text-yellow-400" role="img" aria-label="5 yıldız">
+            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.828 1.48 8.279L12 18.896l-7.416 4.517 1.48-8.279L.001 9.306l8.332-1.151z"/></svg>
+            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.828 1.48 8.279L12 18.896l-7.416 4.517 1.48-8.279L.001 9.306l8.332-1.151z"/></svg>
+            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.828 1.48 8.279L12 18.896l-7.416 4.517 1.48-8.279L.001 9.306l8.332-1.151z"/></svg>
+            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.828 1.48 8.279L12 18.896l-7.416 4.517 1.48-8.279L.001 9.306l8.332-1.151z"/></svg>
+            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.828 1.48 8.279L12 18.896l-7.416 4.517 1.48-8.279L.001 9.306l8.332-1.151z"/></svg>
+          </span>
+          <span class="font-bold">5.0</span>
+          <span class="text-koyu-300">Google'da değerlendirildi</span>
+          <svg class="w-4 h-4 group-hover:translate-x-0.5 transition-transform" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg>
+        </a>
+      </div>
+    </div>
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-10 md:pb-14">
+      <UretimHatti />
     </div>
   </section>
 

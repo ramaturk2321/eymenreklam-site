@@ -1,0 +1,125 @@
+---
+// Ana sayfa hero'su: kodla çizilen, sonsuz akan canlı atölye sahnesi.
+// Çizim ve animasyon public/js/uretim-hatti.js içinde; resim dosyası kullanılmaz.
+// JS'in oluşturduğu elemanlara Astro'nun scoped class'ı ulaşmadığı için stiller
+// #uretim-hatti altında global yazıldı (site stilleriyle çakışmasın diye hepsi bu kapsamda).
+---
+<div id="uretim-hatti">
+  <div class="stage-view" id="uh-view">
+    <span class="live-tag"><i></i>ATÖLYE · CANLI</span>
+    <span class="hint">Sürükleyin · makineye tıklayın</span>
+    <svg id="uh-scene" viewBox="0 50 1600 640" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Eymen Reklam atölyesi: tasarım ofisi, branda ve bez baskı, folyo kesim, araç giydirme, lightbox, ekip, sevkiyat, vinçle totem montajı, CNC, lazer, harf bükme, vakum, UV baskı, kaynak, kutu harf LED testi ve showroom montajı. Ekip çalışıyor, bir kedi dolaşıyor.">
+      <defs>
+        <linearGradient id="gWall" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#0c1322"/><stop offset="1" stop-color="#121b2e"/></linearGradient>
+        <linearGradient id="gFloor" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#172033"/><stop offset="1" stop-color="#0a0f19"/></linearGradient>
+        <linearGradient id="gCone" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fff4dc" stop-opacity=".15"/><stop offset="1" stop-color="#fff4dc" stop-opacity="0"/></linearGradient>
+        <linearGradient id="gOrange" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fb923c"/><stop offset="1" stop-color="#ea580c"/></linearGradient>
+        <linearGradient id="gSteel" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#e2e8f0"/><stop offset="1" stop-color="#a3b1c4"/></linearGradient>
+        <linearGradient id="gDark" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#273349"/><stop offset="1" stop-color="#161f31"/></linearGradient>
+        <linearGradient id="gArt" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#db2777"/><stop offset=".55" stop-color="#f97316"/><stop offset="1" stop-color="#facc15"/></linearGradient>
+        <linearGradient id="gHeat" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ef4444" stop-opacity=".55"/><stop offset="1" stop-color="#ef4444" stop-opacity="0"/></linearGradient>
+        <radialGradient id="gHalo"><stop offset="0" stop-color="#ffedd5" stop-opacity=".3"/><stop offset="1" stop-color="#ffedd5" stop-opacity="0"/></radialGradient>
+        <radialGradient id="gUv"><stop offset="0" stop-color="#c4b5fd" stop-opacity=".9"/><stop offset="1" stop-color="#7c3aed" stop-opacity="0"/></radialGradient>
+        <radialGradient id="gHot"><stop offset="0" stop-color="#fff7d6"/><stop offset=".4" stop-color="#ff8a3d" stop-opacity=".8"/><stop offset="1" stop-color="#ff4d1a" stop-opacity="0"/></radialGradient>
+        <radialGradient id="gArc"><stop offset="0" stop-color="#e0f2fe" stop-opacity=".75"/><stop offset=".35" stop-color="#7dd3fc" stop-opacity=".25"/><stop offset="1" stop-color="#38bdf8" stop-opacity="0"/></radialGradient>
+        <linearGradient id="gSky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#060b18"/><stop offset="1" stop-color="#1b2745"/></linearGradient>
+        <radialGradient id="gHeatR"><stop offset="0" stop-color="#f97316" stop-opacity=".4"/><stop offset="1" stop-color="#f97316" stop-opacity="0"/></radialGradient>
+        <pattern id="pHoney" width="8" height="7" patternUnits="userSpaceOnUse"><circle cx="4" cy="3.5" r="2.2" fill="none" stroke="#3a4558" stroke-width=".8"/></pattern>
+        <pattern id="pVac" width="10" height="10" patternUnits="userSpaceOnUse"><circle cx="5" cy="5" r="1" fill="#3a4558"/></pattern>
+        <filter id="fGlow" x="-60%" y="-60%" width="220%" height="220%"><feGaussianBlur stdDeviation="5" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+        <filter id="fGlowSm" x="-60%" y="-60%" width="220%" height="220%"><feGaussianBlur stdDeviation="3" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+        <filter id="fSoft" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="2.2"/></filter>
+      </defs>
+      <rect x="-200" y="0" width="2000" height="560" fill="url(#gWall)"/>
+      <g id="uh-bgWall"></g>
+      <rect x="-200" y="500" width="2000" height="60" fill="#0d1422"/>
+      <rect x="-200" y="0" width="2000" height="30" fill="#070b14"/>
+      <rect x="-200" y="560" width="2000" height="160" fill="url(#gFloor)"/>
+      <rect x="-200" y="558" width="2000" height="3" fill="#f97316" opacity=".3"/>
+      <g id="uh-bgFloor"></g>
+      <g id="uh-stations"></g>
+      <g id="uh-actors" pointer-events="none"></g>
+    </svg>
+  </div>
+
+  <div class="console">
+    <div class="tabs" id="uh-tabs" aria-label="İstasyon seç"></div>
+    <div class="readout">
+      <div class="ro-head"><strong id="uh-roTitle">Atölye</strong><span class="ro-status" id="uh-roStatus">Çalışıyor</span></div>
+      <p class="ro-desc" id="uh-roDesc"></p>
+      <dl class="stats" id="uh-roStats">
+        <div><dt>—</dt><dd>—</dd></div><div><dt>—</dt><dd>—</dd></div><div><dt>—</dt><dd>—</dd></div><div><dt>—</dt><dd>—</dd></div>
+      </dl>
+      <div class="ro-foot">
+        <div class="bar" aria-hidden="true"><i id="uh-roBar"></i></div>
+        <a class="ro-link" id="uh-roLink" href="/hizmetlerimiz/">Tüm hizmetler →</a>
+      </div>
+    </div>
+  </div>
+  <noscript>
+    <img src="/images/yenifabrika-opt.webp" alt="Eymen Reklam Pendik üretim tesisi" width="1920" height="742" loading="lazy" style="display:block;width:100%;height:auto" />
+  </noscript>
+</div>
+
+<style is:global>
+  #uretim-hatti {
+    --uh-line: #1f2a3f;
+    --uh-soft: #94a3b8;
+    --uh-ok: #4ade80;
+    --uh-orange: #f97316;
+    --uh-orange-300: #fdba74;
+    --uh-mono: ui-monospace, "SF Mono", "JetBrains Mono", Menlo, Consolas, monospace;
+    border: 1px solid var(--uh-line); border-radius: 18px; overflow: hidden; background: #070b14; color: #f1f5f9;
+  }
+  #uretim-hatti .stage-view { position: relative; aspect-ratio: 5 / 2; max-width: 100%; }
+  @media (max-width: 719px) { #uretim-hatti .stage-view { aspect-ratio: 1 / 1; } }
+  #uretim-hatti .stage-view svg { position: absolute; inset: 0; width: 100%; height: 100%; display: block; touch-action: pan-y; cursor: grab; user-select: none; -webkit-user-select: none; }
+  #uretim-hatti .stage-view svg.dragging { cursor: grabbing; }
+  #uretim-hatti .live-tag { position: absolute; left: 14px; top: 12px; z-index: 2; display: inline-flex; align-items: center; gap: 8px; font: 600 11px/1 var(--uh-mono); letter-spacing: .12em; color: #e2e8f0; background: rgba(7,11,20,.72); border: 1px solid var(--uh-line); border-radius: 999px; padding: 7px 11px; pointer-events: none; }
+  #uretim-hatti .live-tag i { width: 7px; height: 7px; border-radius: 50%; background: #ef4444; animation: uh-pulse 1.6s infinite; }
+  #uretim-hatti .hint { position: absolute; right: 14px; top: 12px; z-index: 2; font-size: 12px; color: var(--uh-soft); background: rgba(7,11,20,.72); border-radius: 999px; padding: 6px 11px; border: 1px solid var(--uh-line); pointer-events: none; }
+  @media (max-width: 719px) { #uretim-hatti .hint { display: none; } }
+  @keyframes uh-pulse { 0% { box-shadow: 0 0 0 0 rgba(239,68,68,.6); } 70% { box-shadow: 0 0 0 7px rgba(239,68,68,0); } 100% { box-shadow: 0 0 0 0 rgba(239,68,68,0); } }
+
+  #uretim-hatti .console { border-top: 1px solid var(--uh-line); background: #0f1726; }
+  #uretim-hatti .tabs { display: flex; gap: 6px; padding: 10px 12px; overflow-x: auto; scrollbar-width: thin; scrollbar-color: #26324a transparent; border-bottom: 1px solid var(--uh-line); }
+  #uretim-hatti .station-tab { appearance: none; border: 1px solid transparent; background: transparent; color: #cbd5e1; font: 500 13px/1.2 "Poppins", system-ui, sans-serif; cursor: pointer; padding: 8px 11px 9px; border-radius: 9px; display: grid; grid-template-columns: auto auto; column-gap: 8px; row-gap: 6px; align-items: center; white-space: nowrap; flex-shrink: 0; position: relative; }
+  #uretim-hatti .station-tab .no { font: 600 11px/1 var(--uh-mono); color: var(--uh-soft); }
+  #uretim-hatti .station-tab .mini { grid-column: 1 / -1; height: 3px; border-radius: 2px; background: #1e293b; overflow: hidden; }
+  #uretim-hatti .station-tab .mini i { display: block; height: 100%; width: 0; background: var(--uh-orange); }
+  #uretim-hatti .station-tab:hover { background: #131d31; color: #fff; }
+  #uretim-hatti .station-tab:focus-visible { outline: 3px solid var(--uh-orange-300); outline-offset: 2px; }
+  #uretim-hatti .station-tab.now { color: #fff; }
+  #uretim-hatti .station-tab.now::after { content: ""; position: absolute; top: 6px; right: 6px; width: 6px; height: 6px; border-radius: 50%; background: var(--uh-orange); }
+  #uretim-hatti .station-tab[aria-pressed="true"] { background: rgba(249,115,22,.12); border-color: rgba(249,115,22,.45); color: #fff; }
+  #uretim-hatti .station-tab[aria-pressed="true"] .no { color: var(--uh-orange-300); }
+
+  #uretim-hatti .readout { padding: 16px 20px 20px; display: grid; gap: 14px; min-width: 0; }
+  #uretim-hatti .ro-head { display: flex; flex-wrap: wrap; align-items: baseline; gap: 6px 14px; }
+  #uretim-hatti .ro-head strong { font-size: 18px; font-weight: 700; color: #fff; }
+  #uretim-hatti .ro-status { display: inline-flex; align-items: center; gap: 7px; font: 500 12px/1 var(--uh-mono); color: var(--uh-ok); letter-spacing: .04em; }
+  #uretim-hatti .ro-status::before { content: ""; width: 7px; height: 7px; border-radius: 50%; background: currentColor; }
+  #uretim-hatti .ro-status.idle { color: var(--uh-orange-300); }
+  #uretim-hatti .ro-desc { margin: 0; color: #cbd5e1; font-size: 14px; line-height: 1.65; max-width: 72ch; min-height: 3.3em; }
+  #uretim-hatti .stats { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1px; margin: 0; background: var(--uh-line); border: 1px solid var(--uh-line); border-radius: 10px; overflow: hidden; }
+  @media (min-width: 600px) { #uretim-hatti .stats { grid-template-columns: repeat(4, minmax(0, 1fr)); } }
+  #uretim-hatti .stats div { background: #0b1220; padding: 10px 12px; min-width: 0; }
+  #uretim-hatti .stats dt { font-size: 10.5px; letter-spacing: .12em; text-transform: uppercase; color: var(--uh-soft); margin-bottom: 4px; }
+  #uretim-hatti .stats dd { margin: 0; font: 600 15px/1.2 var(--uh-mono); color: #f8fafc; font-variant-numeric: tabular-nums; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  #uretim-hatti .ro-foot { display: flex; flex-wrap: wrap; align-items: center; gap: 12px 18px; }
+  #uretim-hatti .bar { flex: 1 1 200px; height: 6px; border-radius: 4px; background: #1a2438; overflow: hidden; }
+  #uretim-hatti .bar i { display: block; height: 100%; width: 0; background: linear-gradient(90deg, #ea580c, var(--uh-orange-300)); }
+  #uretim-hatti .ro-link { color: var(--uh-orange-300); font-weight: 600; font-size: 14px; text-decoration: none; }
+  #uretim-hatti .ro-link:hover { text-decoration: underline; }
+
+  #uretim-hatti .blink { animation: uh-blink 1.2s steps(2, jump-none) infinite; }
+  @keyframes uh-blink { 50% { opacity: .25; } }
+  #uretim-hatti .steam { animation: uh-steam 2.4s ease-in-out infinite; }
+  #uretim-hatti .steam.d2 { animation-delay: 1.2s; }
+  @keyframes uh-steam { 0% { transform: translateY(4px); opacity: 0; } 40% { opacity: .5; } 100% { transform: translateY(-10px); opacity: 0; } }
+  #uretim-hatti .hit { fill: transparent; }
+  #uretim-hatti .sel .sign-plate { stroke: var(--uh-orange); }
+  @media (prefers-reduced-motion: reduce) { #uretim-hatti .blink, #uretim-hatti .steam, #uretim-hatti .live-tag i { animation: none; } }
+</style>
+
+<script is:inline src="/js/uretim-hatti.js" defer></script>
