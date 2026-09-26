@@ -1,16 +1,20 @@
 /*
- * Eymen Reklam · Canlı atölye sahnesi (ana sayfa hero'su)
- * src/components/UretimHatti.astro içindeki SVG'yi çizer ve oynatır.
+ * Eymen Reklam · Temsili atölye sahnesi (ana sayfa hero'su)
+ * src/components/UretimHatti.astro içindeki SVG'yi çizer ve oynatır; Astro paketine girer (küçültülür, dosya adı sürümlü).
  * - 17 istasyon sonsuz bir hat gibi akar; her döngüde iş (harf, baskı, tabela) rastgele seçilir.
- * - Ekran dışındayken durur, "hareketi azalt" tercihinde sabit kareye geçer.
- * - Konsoldaki makine değerleri temsilidir.
+ * - Ekran dışındayken ya da "Durdur" ile hem JS döngüsü hem CSS animasyonları durur; "hareketi azalt" tercihinde sabit kare.
+ * - Konsoldaki makine değerleri temsilidir; sahte canlı sayaç/istatistik gösterilmez. Mesai bilgisi site-data'dan (data-* ile) gelir.
  */
 (() => {
   const NS = "http://www.w3.org/2000/svg";
   const SITE = "";
   const $ = (id) => document.getElementById(id);
-  const svg = $("uh-scene"), view = $("uh-view");
-  const reduce = matchMedia("(prefers-reduced-motion: reduce)").matches;
+  const svg = $("uh-scene"), view = $("uh-view"), root = $("uretim-hatti");
+  if (!svg || !view || !root) return;
+  const reduceMq = matchMedia("(prefers-reduced-motion: reduce)");
+  let reduce = reduceMq.matches;
+  const YIL = new Date().getFullYear();
+  const DENEYIM = root.dataset.deneyim || "25";
   const K = 0.35, S = 0.45, SW = 400;
   const P = (b, u, w) => ({ x: b.e + u - K * w, y: b.f + S * w });
   const clamp = (v, a, b) => Math.max(a, Math.min(b, v));
@@ -305,7 +309,7 @@
   }
 
   /* 02 · BRANDA BASKI */
-  const BANNERS = [["KAMPANYA", "tüm ürünlerde"], ["%50 İNDİRİM", "sezon sonu"], ["YENİ SEZON", "mağazamızda"], ["SATILIK", "sahibinden daire"], ["AÇILDI!", "yeni şubemiz"], ["HOŞ GELDİNİZ", "bayram kampanyası"], ["FUAR 2026", "stant B-12"], ["KİRALIK", "ofis katı"]];
+  const BANNERS = [["KAMPANYA", "tüm ürünlerde"], ["%50 İNDİRİM", "sezon sonu"], ["YENİ SEZON", "mağazamızda"], ["SATILIK", "sahibinden daire"], ["AÇILDI!", "yeni şubemiz"], ["HOŞ GELDİNİZ", "bayram kampanyası"], [`FUAR ${YIL}`, "stant B-12"], ["KİRALIK", "ofis katı"]];
   const BCOL = [["#dc2626", "#fff"], ["#f97316", "#fff"], ["#1d4ed8", "#fde68a"], ["#16a34a", "#fff"], ["#111827", "#f97316"], ["#fde047", "#111827"], ["#7c3aed", "#fff"]];
   def({
     name: "Branda Baskı · 320 cm", short: "Branda", link: SITE + "/hizmetlerimiz/bez-baski/", linkText: "Branda & bez baskı →",
@@ -640,7 +644,7 @@
     readout() {
       const c = this.st;
       const st = c.cutting ? ["Kesiyor", true] : c.k === "hold" || c.k === "fade" ? ["Parça hazır", false] : ["Konumlanıyor", true];
-      return { status: st, stats: [["Parça", `“${this.letter}” harfi`], ["X", fmt((c.u / 260) * 2050) + " mm"], ["Y", fmt((c.w / 200) * 3050) + " mm"], ["Mil", c.z < 0.5 ? "18.000 dev/dk" : "Bekliyor"]] };
+      return { status: st, stats: [["Parça", `“${this.letter}” harfi`], ["X", fmt((c.u / 260) * 2050) + " mm"], ["Y", fmt((c.w / 200) * 3050) + " mm"], ["Mil", c.z < 0.5 ? "Dönüyor" : "Bekliyor"]] };
     },
   });
 
@@ -720,7 +724,7 @@
     readout() {
       const l = this.st;
       const st = l.cutting ? ["Işın açık", true] : l.k === "hold" || l.k === "fade" ? ["Kesim bitti", false] : ["Konumlanıyor", true];
-      return { status: st, stats: [["Parça", this.v.n], ["X", fmt((l.u / 240) * 1300) + " mm"], ["Y", fmt((l.w / 170) * 900) + " mm"], ["Işın", l.cutting ? "Açık · %80" : "Kapalı"]] };
+      return { status: st, stats: [["Parça", this.v.n], ["X", fmt((l.u / 240) * 1300) + " mm"], ["Y", fmt((l.w / 170) * 900) + " mm"], ["Işın", l.cutting ? "Açık" : "Kapalı"]] };
     },
   });
 
@@ -776,7 +780,7 @@
     readout() {
       const t = this.t;
       const st = t < 0.5 ? ["Şerit sürülüyor", true] : t < 7.5 ? ["Büküyor", true] : ["Harf hazır", false];
-      return { status: st, stats: [["Harf", this.letter], ["Profil", "Alüminyum 10 cm"], ["Büküm", `${this.step}/${this.nb}`], ["Uzunluk", fmt(this.L * this.prog * 6.2, 0) + " mm"]] };
+      return { status: st, stats: [["Harf", this.letter], ["Profil", "Alüminyum"], ["Büküm", `${this.step}/${this.nb}`], ["Uzunluk", fmt(this.L * this.prog * 6.2, 0) + " mm"]] };
     },
   });
 
@@ -1260,7 +1264,7 @@
       set(this.bub, "opacity", show ? 1 : 0);
       if (show) set(this.bub, "transform", `translate(${b.x} ${(b.y - 100 * b.sc - 6).toFixed(1)})`);
     },
-    readout() { const s = this.waving ? "El sallıyor" : "Poz veriyor"; return { status: [s, true], stats: [["Ekip", "20 kişi"], ["Tecrübe", "25 yıl"], ["Montaj", "Kendi ekibimiz"], ["Durum", s]] }; },
+    readout() { const s = this.waving ? "El sallıyor" : "Poz veriyor"; return { status: [s, true], stats: [["Kuruluş", "2000"], ["Tecrübe", `${DENEYIM} yıl`], ["Montaj", "Kendi ekibimiz"], ["Durum", s]] }; },
   });
   /* SEVKİYAT · RAMPA */
   const TRUCKS = [
@@ -1268,10 +1272,10 @@
     { n: "Kamyonet", cab: "#1d4ed8", t2: "SEVKİYAT", sc: 0.84 },
     { n: "Montaj kamyonu", cab: "#e2e8f0", t2: "MONTAJ", sc: 0.93 },
   ];
-  const DEST = ["Kadıköy", "Ataşehir", "Beylikdüzü", "Gebze", "Tuzla", "Ümraniye", "Kartal", "Şişli"];
+  const DEST = ["Ankara", "İzmir", "Bursa", "Antalya", "Kocaeli", "Konya", "Adana", "Samsun", "Trabzon", "Kayseri", "Gaziantep", "Eskişehir"];
   def({
     key: "truck", name: "Sevkiyat · Rampa", short: "Sevkiyat", link: SITE + "/kurumsal-cozumler/", linkText: "Kurumsal çözümler →",
-    desc: "Biten işler kolilenip rampadan kamyona yüklenir, montaj ekibiyle birlikte İstanbul'un dört bir yanına yola çıkar.",
+    desc: "Biten işler kolilenip rampadan kamyona yüklenir, montaj ekibiyle birlikte Türkiye'nin dört bir yanına yola çıkar.",
     total: 22, stillT: 9,
     build(g) {
       const wheel = (x) => `<g transform="translate(${x} -8)"><circle r="14" fill="#0b1220"/><circle r="6" fill="#94a3b8"/><path class="sp" d="M0 -6 V6 M-6 0 H6" stroke="#334155" stroke-width="2"/></g>`;
@@ -1370,7 +1374,7 @@
         <rect x="18" y="520" width="182" height="14" fill="#111827"/>
         <path d="M18 520 V480 Q18 470 28 470 H58 Q64 470 64 478 V520 Z" fill="#f97316"/><path d="M24 478 H56 V498 H24 Z" fill="#1e3a5f"/>
         <rect x="64" y="500" width="136" height="20" fill="#ea580c"/>
-        <text x="146" y="514" text-anchor="middle" ${PF} font-weight="700" font-size="9" fill="#fff" letter-spacing="1.5">EYMEN VİNÇ</text>
+        <text x="146" y="514" text-anchor="middle" ${PF} font-weight="700" font-size="9" fill="#fff" letter-spacing="1.5">VİNÇ</text>
         ${wheel(46)}${wheel(150)}${wheel(178)}
         <rect x="96" y="482" width="34" height="20" rx="3" fill="#fb923c"/>
         <path class="cyl" stroke="#94a3b8" stroke-width="5" stroke-linecap="round"/>
@@ -1549,11 +1553,10 @@
   }
 
   /* ---------- Simülasyon ---------- */
-  let jobs = 0;
   function simulate(dt) {
     for (const s of stations) {
       s.t += dt;
-      if (s.t >= s.total) { s.t -= s.total; s.newCycle(); jobs++; }
+      if (s.t >= s.total) { s.t -= s.total; s.newCycle(); }
       const x = sx(s.x), vis = x > -410 && x < vw + 10;
       if (vis !== s.vis) { s.vis = vis; s.g.setAttribute("visibility", vis ? "visible" : "hidden"); }
       if (vis) set(s.g, "transform", `translate(${x.toFixed(1)} 0)`);
@@ -1623,9 +1626,34 @@
   const roTitle = $("uh-roTitle"), roStatus = $("uh-roStatus"), roDesc = $("uh-roDesc"), roBar = $("uh-roBar"), roLink = $("uh-roLink");
   const cells = [...$("uh-roStats").children].map((d) => ({ dt: d.querySelector("dt"), dd: d.querySelector("dd") }));
   const txt = (n, v) => { if (n.textContent !== v) n.textContent = v; };
+  // Klavye odağı bağlantıdayken hedefi değiştirme (Enter'a basan başka sayfaya gitmesin)
+  let bekleyenLink = null;
+  const setLink = (s) => { if (document.activeElement === roLink) { bekleyenLink = s; return; } roLink.href = s.link; txt(roLink, s.linkText); };
+  roLink.addEventListener("blur", () => { if (bekleyenLink) { const s = bekleyenLink; bekleyenLink = null; setLink(s); } });
   const TF = new Intl.DateTimeFormat("tr-TR", { timeZone: "Europe/Istanbul", hour: "2-digit", minute: "2-digit", second: "2-digit", hour12: false });
   const istTime = () => { const p = TF.formatToParts(new Date()); const g = (t) => +p.find((x) => x.type === t).value; return [g("hour"), g("minute"), g("second")]; };
+  // Mesai (site-data.ts → data-*): Pzt–Cum açılış–kapanış, İstanbul saati
+  const hm = (v, d) => { const m = /^(\d{1,2}):(\d{2})$/.exec(v || d); return +m[1] * 60 + +m[2]; };
+  const ACILIS = hm(root.dataset.acilis, "08:30"), KAPANIS = hm(root.dataset.kapanis, "18:30");
+  const saatYaz = (dk) => `${String(Math.floor(dk / 60)).padStart(2, "0")}:${String(dk % 60).padStart(2, "0")}`;
+  const GF = new Intl.DateTimeFormat("en-US", { timeZone: "Europe/Istanbul", weekday: "short" });
+  const GUN = { Mon: 1, Tue: 2, Wed: 3, Thu: 4, Fri: 5, Sat: 6, Sun: 0 };
+  function mesai(h, m) {
+    const g = GUN[GF.format(new Date())], dk = h * 60 + m, isGunu = g >= 1 && g <= 5;
+    if (isGunu && dk >= ACILIS && dk < KAPANIS) return [`Açığız · ${saatYaz(KAPANIS)}'a kadar`, true];
+    const bugunAcilacak = isGunu && dk < ACILIS;
+    const ne = bugunAcilacak ? "bugün" : g >= 1 && g <= 4 ? "yarın" : "pazartesi";
+    return [`Şu an kapalıyız · ${ne} ${saatYaz(ACILIS)}`, false];
+  }
   let lastNear = -2, shownKey = null;
+  // Sekme şeridini kendiliğinden kaydırma: ilk kullanıcı etkileşimine ya da 6 sn'ye kadar bekler
+  // (erken programatik kaydırma tarayıcının LCP ölçümünü keser → mobil Lighthouse "NO_LCP"),
+  // kullanıcı şeridi elle kaydırdıysa 6 sn dokunmaz.
+  let tabsAutoOK = false, tabsManualUntil = 0;
+  const tabsAc = () => { tabsAutoOK = true; };
+  ["pointerdown", "keydown", "wheel", "touchstart"].forEach((t) => addEventListener(t, tabsAc, { once: true, passive: true }));
+  setTimeout(tabsAc, 6000);
+  ["pointerdown", "wheel", "touchstart"].forEach((t) => tabsEl.addEventListener(t, () => { tabsManualUntil = performance.now() + 6000; }, { passive: true }));
   const nearest = () => Math.floor(mod(camX + vw / 2, W) / SW);
   function updateConsole() {
     stations.forEach((s, i) => (minis[i].style.width = (clamp(s.prog, 0, 1) * 100).toFixed(0) + "%"));
@@ -1634,22 +1662,23 @@
       lastNear = near;
       tabs.forEach((b, i) => b.classList.toggle("now", sel < 0 && i - 1 === near));
       const b = tabs[near + 1];
-      if (sel < 0 && b) tabsEl.scrollTo({ left: b.offsetLeft - tabsEl.clientWidth / 2 + b.clientWidth / 2, behavior: reduce ? "auto" : "smooth" });
+      if (sel < 0 && b && tabsAutoOK && performance.now() > tabsManualUntil) tabsEl.scrollTo({ left: b.offsetLeft - tabsEl.clientWidth / 2 + b.clientWidth / 2, behavior: reduce ? "auto" : "smooth" });
     }
     const [h, m, s] = istTime();
     stations[0].tickClock(h, m, s);
     if (sel < 0) {
       const ns = stations[near];
       const key = "all" + near;
-      if (shownKey !== key) { shownKey = key; txt(roTitle, "Atölye turu"); txt(roDesc, `Kamera atölyeyi baştan sona geziyor, şu an ${ns.name.split(" ·")[0]} önünde. Sürükleyerek gezinebilir, bir istasyona dokunup yakından izleyebilirsiniz.`); roLink.href = ns.link; txt(roLink, ns.linkText); }
-      txt(roStatus, `${N}/${N} istasyon çalışıyor`); roStatus.classList.remove("idle");
+      if (shownKey !== key) { shownKey = key; txt(roTitle, "Atölye turu"); txt(roDesc, `Atölyemizin temsili turu; şu an ${ns.name.split(" ·")[0]} önündeyiz. Sürükleyerek gezinebilir, bir istasyona dokunup yakından izleyebilirsiniz.`); setLink(ns); }
+      const [ms, acik] = mesai(h, m);
+      txt(roStatus, ms); roStatus.classList.toggle("idle", !acik);
       const r = ns.readout();
-      [["Şu an", r.status[0]], ["Kedi", cat.status], ["Siz izlerken biten", `${jobs} iş`], ["Saat", `${String(h).padStart(2, "0")}:${String(m).padStart(2, "0")}`]].forEach((c, i) => { txt(cells[i].dt, c[0]); txt(cells[i].dd, c[1]); });
+      [["Şu an", r.status[0]], ["Kedi", cat.status], ["İstasyon", `${near + 1} / ${N}`], ["Mesai (Pzt–Cum)", `${saatYaz(ACILIS)}–${saatYaz(KAPANIS)}`]].forEach((c, i) => { txt(cells[i].dt, c[0]); txt(cells[i].dd, c[1]); });
       roBar.style.width = (clamp(ns.prog, 0, 1) * 100).toFixed(1) + "%";
       return;
     }
     const st = stations[sel], r = st.readout();
-    if (shownKey !== sel) { shownKey = sel; txt(roTitle, st.name); txt(roDesc, st.desc); roLink.href = st.link; txt(roLink, st.linkText); }
+    if (shownKey !== sel) { shownKey = sel; txt(roTitle, st.name); txt(roDesc, st.desc); setLink(st); }
     txt(roStatus, r.status[0]); roStatus.classList.toggle("idle", !r.status[1]);
     r.stats.forEach((c, i) => { txt(cells[i].dt, c[0]); txt(cells[i].dd, c[1]); });
     roBar.style.width = (clamp(st.prog, 0, 1) * 100).toFixed(1) + "%";
@@ -1665,9 +1694,10 @@
   tabs.forEach((b) => b.addEventListener("click", () => select(Number(b.dataset.st))));
 
   let drag = null;
-  svg.addEventListener("pointerdown", (e) => { drag = { x: e.clientX, cam: camX, moved: false, id: e.pointerId, target: e.target }; });
+  svg.addEventListener("pointerdown", (e) => { if (e.pointerType === "mouse" && e.button !== 0) return; drag = { x: e.clientX, cam: camX, moved: false, id: e.pointerId, target: e.target }; });
   svg.addEventListener("pointermove", (e) => {
     if (!drag || e.pointerId !== drag.id) return;
+    if (e.pointerType === "mouse" && !(e.buttons & 1)) { svg.classList.remove("dragging"); drag = null; return; }
     const dx = e.clientX - drag.x;
     if (!drag.moved && Math.abs(dx) > 6) { drag.moved = true; svg.classList.add("dragging"); try { svg.setPointerCapture(e.pointerId); } catch (_) {} if (sel >= 0) select(-1); }
     if (drag.moved) { camX = mod(drag.cam - dx * (vw / svg.getBoundingClientRect().width), W); manualUntil = now + 2.5; if (reduce || !raf) redrawStill(); }
@@ -1677,7 +1707,10 @@
     if (!drag.moved) { const h = drag.target.closest && drag.target.closest(".hit"); if (h) { const i = Number(h.dataset.st); select(sel === i ? -1 : i); } }
     svg.classList.remove("dragging"); drag = null;
   });
-  svg.addEventListener("pointercancel", () => { svg.classList.remove("dragging"); drag = null; });
+  const dragBitir = () => { svg.classList.remove("dragging"); drag = null; };
+  svg.addEventListener("pointercancel", dragBitir);
+  svg.addEventListener("lostpointercapture", () => { if (drag && drag.moved) dragBitir(); });
+  svg.addEventListener("contextmenu", dragBitir);
 
   /* ---------- Başlat ---------- */
   stations.forEach((s) => { s.newCycle(); s.t = reduce ? s.stillT : rnd(0, s.total * 0.8); });
@@ -1694,11 +1727,31 @@
     if (uiT > 0.15) { uiT = 0; updateConsole(); }
     raf = requestAnimationFrame(frame);
   }
-  function start() { if (!raf && visible && !document.hidden && !reduce) { last = 0; raf = requestAnimationFrame(frame); } }
-  function stop() { cancelAnimationFrame(raf); raf = 0; }
+  let paused = false;
+  try { paused = localStorage.getItem("uh-durdur") === "1"; } catch (_) {}
+  // Döngü dururken CSS animasyonları (duman, yanıp sönme, nabız) da durur; yoksa ekran dışında bile işlemci harcar.
+  const cssDur = (d) => root.classList.toggle("uh-paused", d);
+  function start() { if (!raf && visible && !document.hidden && !reduce && !paused) { last = 0; raf = requestAnimationFrame(frame); cssDur(false); } }
+  function stop() { cancelAnimationFrame(raf); raf = 0; cssDur(true); }
+  const pauseBtn = $("uh-pause");
+  const pauseYaz = () => {
+    if (!pauseBtn) return;
+    pauseBtn.hidden = reduce;
+    pauseBtn.setAttribute("aria-pressed", String(paused));
+    pauseBtn.setAttribute("aria-label", paused ? "Animasyonu oynat" : "Animasyonu durdur");
+    const t = pauseBtn.querySelector(".t"); if (t) t.textContent = paused ? "Oynat" : "Durdur";
+  };
+  if (pauseBtn) pauseBtn.addEventListener("click", () => {
+    paused = !paused;
+    try { paused ? localStorage.setItem("uh-durdur", "1") : localStorage.removeItem("uh-durdur"); } catch (_) {}
+    paused ? stop() : start(); pauseYaz();
+  });
+  reduceMq.addEventListener("change", (e) => { reduce = e.matches; reduce ? (stop(), redrawStill()) : start(); pauseYaz(); });
   measure();
   redrawStill();
   (document.fonts && document.fonts.ready ? document.fonts.ready : Promise.resolve()).then(() => { stations.forEach((s) => { if (s.needLayout !== undefined) s.needLayout = true; }); if (reduce) simulate(0); });
+  pauseYaz();
+  if (paused || reduce) cssDur(true);
   start();
   new ResizeObserver(() => { measure(); if (reduce || !raf) redrawStill(); }).observe(view);
   new IntersectionObserver((es) => { visible = es[0].isIntersecting; visible ? start() : stop(); }).observe(view);

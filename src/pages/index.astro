@@ -164,20 +164,22 @@ for (const cat of categories) {
 
 <BaseLayout title="Tabela, UV ve Branda Baskı Pendik İstanbul" description={`Eymen Reklam — Pendik'in ${company.experience} yıllık reklam firması: tabela imalatı, UV baskı, branda ve bez baskı, araç giydirme. Kendi tesisimizde üretim. ☎ (0216) 379 07 08 — Ücretsiz keşif ve teklif.`} lang="tr" sayfa="ana">
 
-  <!-- ========== HERO · CANLI ATÖLYE ========== -->
-  <!-- Fotoğraf yerine kodla çizilen, sonsuz akan atölye sahnesi (components/UretimHatti.astro). H1 ve teklif düğmeleri aynen korunur. -->
+  <!-- ========== HERO · ATÖLYE SAHNESİ ========== -->
+  <!-- Fotoğraf yerine kodla çizilen, sonsuz akan temsili atölye sahnesi (components/UretimHatti.astro).
+       Sıra: mobilde başlık → sahne → metin/düğmeler (sahne ilk ekranda görünsün); lg'de başlık | metin, altında sahne.
+       H1'de slide-up YOK: opaklık animasyonu H1'i LCP adayı olmaktan çıkarıyordu (mobil Lighthouse NO_LCP). -->
   <section class="relative bg-[#0a0f1a] overflow-hidden" id="hero">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-12 md:pt-16 pb-7 md:pb-9 grid gap-6 lg:grid-cols-12 lg:gap-12 lg:items-end">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-8 md:pt-16 pb-10 md:pb-14 grid gap-6 lg:grid-cols-12 lg:gap-x-12 lg:gap-y-9 lg:items-end">
       <div class="lg:col-span-7">
-        <p class="slide-up text-eymen-400 text-sm md:text-base font-semibold tracking-widest mb-4">PENDİK · 2.500 m² ÜRETİM TESİSİ · 2000'DEN BERİ</p>
-        <h1 class="slide-up slide-delay-1 text-4xl md:text-5xl lg:text-6xl font-extrabold text-white leading-tight">
+        <p class="slide-up text-eymen-400 text-xs sm:text-sm md:text-base font-semibold tracking-widest mb-3 md:mb-4">PENDİK · 2.500 m² ÜRETİM TESİSİ · 2000'DEN BERİ</p>
+        <h1 class="text-[2rem] leading-[1.15] sm:text-4xl md:text-5xl md:leading-tight lg:text-6xl font-extrabold text-white">
           İstanbul'da Tabela İmalatı,<br/>
           <span class="text-eymen-500">UV Baskı & Branda Baskı</span>
         </h1>
       </div>
-      <div class="lg:col-span-5">
+      <div class="order-3 lg:order-2 lg:col-span-5">
         <p class="slide-up slide-delay-2 text-base md:text-lg text-koyu-300 mb-6">
-          Tabela, UV baskı ve branda/bez baskıyı Pendik'teki kendi tesisimizde üretiyor, İstanbul'un her yerine montajla teslim ediyoruz. Atölye şu an çalışıyor: sürükleyerek gezin ya da bir istasyona dokunun.
+          Tabela, UV baskı ve branda/bez baskıyı Pendik'teki kendi tesisimizde üretiyor, İstanbul'un her yerine montajla teslim ediyoruz. Atölyemizi gezin: sahneyi sürükleyin ya da bir istasyona dokunun.
         </p>
         <div class="slide-up slide-delay-3 flex flex-col sm:flex-row gap-4">
           <a href="/teklif-al/"
@@ -202,9 +204,9 @@ for (const cat of categories) {
           <svg class="w-4 h-4 group-hover:translate-x-0.5 transition-transform" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg>
         </a>
       </div>
-    </div>
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-10 md:pb-14">
-      <UretimHatti />
+      <div class="order-2 lg:order-3 lg:col-span-12 min-w-0">
+        <UretimHatti />
+      </div>
     </div>
   </section>
 
