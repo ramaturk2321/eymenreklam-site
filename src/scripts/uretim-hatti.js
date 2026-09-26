@@ -7,10 +7,20 @@
  */
 (() => {
   const NS = "http://www.w3.org/2000/svg";
-  const SITE = "";
   const $ = (id) => document.getElementById(id);
   const svg = $("uh-scene"), view = $("uh-view"), root = $("uretim-hatti");
   if (!svg || !view || !root) return;
+  // Dil paketi (en/ar): UretimHatti.astro #uh-dil içine {t: sözlük, l: bağlantı haritası} yazar; tr'de boş kalır, metinler aynen çıkar.
+  const DIL = root.dataset.dil || "tr";
+  let PAKET = {}; if (DIL !== "tr") { try { PAKET = JSON.parse(($("uh-dil") || {}).textContent || "{}"); } catch (_) {} }
+  const SOZ = PAKET.t || {}, LINKS = PAKET.l || {};
+  const T = (s, ...a) => (SOZ[s] ?? s).replace(/\{(\d+)\}/g, (_, i) => a[+i]);
+  const L = (p) => LINKS[p] ?? p;
+  const LOC = { tr: "tr-TR", en: "en-GB", ar: "ar-u-nu-latn" }[DIL] || "tr-TR";
+  // Aynı Türkçe metnin başka anlamı için bağlamlı anahtar (ör. fırın = oven / bakery)
+  const TK = (k, s) => SOZ[k] ?? T(s);
+  // RTL sayfada SVG metinleri "start" çapasını sağa almasın; sahne geometrisi LTR çizildi.
+  if (DIL === "ar") svg.style.direction = "ltr";
   const reduceMq = matchMedia("(prefers-reduced-motion: reduce)");
   let reduce = reduceMq.matches;
   const YIL = new Date().getFullYear();
@@ -24,7 +34,7 @@
   const rnd = (a, b) => a + Math.random() * (b - a);
   const pick = (arr, not) => { let v, n = 0; do { v = arr[Math.floor(Math.random() * arr.length)]; } while (arr.length > 1 && v === not && ++n < 20); return v; };
   const seg = (t, a, b) => clamp((t - a) / (b - a), 0, 1);
-  const fmt = (n, d = 1) => n.toLocaleString("tr-TR", { minimumFractionDigits: d, maximumFractionDigits: d });
+  const fmt = (n, d = 1) => n.toLocaleString(LOC, { minimumFractionDigits: d, maximumFractionDigits: d });
   const el = (tag, attrs, parent) => { const n = document.createElementNS(NS, tag); for (const k in attrs) n.setAttribute(k, attrs[k]); if (parent) parent.appendChild(n); return n; };
   const set = (n, k, v) => { if (n._c === undefined) n._c = {}; if (n._c[k] !== v) { n._c[k] = v; n.setAttribute(k, v); } };
   const hex = (h) => [1, 3, 5].map((i) => parseInt(h.slice(i, i + 2), 16));
@@ -167,6 +177,7 @@
   };
 
   /* ---------- İstasyonlar ---------- */
+  const TR = T; // "const T = this.t" kullanan update() gövdeleri için takma ad
   const LETTERS = {
     E: "M70 25 H190 V55 H105 V85 H170 V115 H105 V145 H190 V175 H70 Z",
     L: "M80 25 H115 V145 H190 V175 H80 Z",
@@ -184,11 +195,11 @@
 
   /* 01 · TASARIM OFİSİ */
   def({
-    name: "Tasarım Ofisi", short: "Tasarım", link: SITE + "/hizmetlerimiz/grafik-tasarim/", linkText: "Grafik tasarım →",
-    desc: "Her iş burada başlar: ölçü alınır, tabela çizilir, onaylanan dosya üretime gönderilir. Tasarımcımız şu an yeni bir tabela hazırlıyor.",
+    name: T("Tasarım Ofisi"), short: T("Tasarım"), link: L("/hizmetlerimiz/grafik-tasarim/"), linkText: T("Grafik tasarım →"),
+    desc: T("Her iş burada başlar: ölçü alınır, tabela çizilir, onaylanan dosya üretime gönderilir. Tasarımcımız şu an yeni bir tabela hazırlıyor."),
     total: 10, stillT: 8.2,
     build(g) {
-      g.innerHTML = signSvg(this.no, "TASARIM OFİSİ") + `
+      g.innerHTML = signSvg(this.no, T("TASARIM OFİSİ")) + `
         <rect x="24" y="294" width="352" height="266" fill="#0e192b"/>
         <rect x="44" y="318" width="100" height="64" rx="3" fill="#e5e9ef"/>
         <path d="M54 332h58M54 344h74M54 356h46M54 368h64" stroke="#94a3b8" stroke-width="3" stroke-linecap="round"/>
@@ -227,7 +238,7 @@
             <text class="st" x="74" y="44.5" text-anchor="middle" font-family="Poppins, sans-serif" font-weight="800" font-size="10.5"></text>
             <circle class="lg" cx="28.5" cy="29.5" r="0"/>
           </g>
-          <g class="btn" opacity="0"><rect class="bt" x="100" y="62" width="24" height="7" rx="2" fill="#16a34a"/><text x="112" y="67.2" text-anchor="middle" font-family="Poppins, sans-serif" font-size="4.4" font-weight="700" fill="#fff">GÖNDER</text></g>
+          <g class="btn" opacity="0"><rect class="bt" x="100" y="62" width="24" height="7" rx="2" fill="#16a34a"/><text x="112" y="67.2" text-anchor="middle" font-family="Poppins, sans-serif" font-size="4.4" font-weight="700" fill="#fff">${T("GÖNDER")}</text></g>
           <g class="toast" opacity="0"><rect x="22" y="31" width="92" height="16" rx="3" fill="#0f172a"/><text class="tt" x="68" y="41.5" text-anchor="middle" font-family="Poppins, sans-serif" font-size="6.2" font-weight="600" fill="#fff"></text></g>
           <path class="cur" d="M0 0 L0 9 L2.5 6.5 L4.5 10.5 L6 9.8 L4 5.8 L7.5 5.8 Z" fill="#fff" stroke="#000" stroke-width=".6"/>
         </g>
@@ -240,11 +251,11 @@
       Object.assign(this, { hh: q(g, ".hh"), mh: q(g, ".mh"), sh: q(g, ".sh"), sr: q(g, ".sr"), stx: q(g, ".st"), lg: q(g, ".lg"), btn: q(g, ".btn"), bt: q(g, ".bt"), toast: q(g, ".toast"), tt: q(g, ".tt"), cur: q(g, ".cur"), fore: q(g, ".fore"), hand: q(g, ".hand"), head: q(g, ".dhead"), art: q(g, ".art") });
     },
     newCycle() {
-      this.word = pick(["KAFE LİMON", "ECZANE", "BERBER", "MARKET 24", "OTO YIKAMA", "PASTANE", "ÇİÇEKÇİ", "OPTİK", "KUAFÖR"], this.word);
-      this.col = pick([["#f97316", "#ffffff", "Turuncu"], ["#0f766e", "#ffffff", "Petrol yeşili"], ["#1e3a8a", "#fde68a", "Lacivert"], ["#dc2626", "#ffffff", "Kırmızı"], ["#111827", "#f97316", "Siyah"], ["#fde68a", "#7c2d12", "Krem"]], this.col);
+      this.word = pick([T("KAFE LİMON"), T("ECZANE"), T("BERBER"), T("MARKET 24"), T("OTO YIKAMA"), T("PASTANE"), T("ÇİÇEKÇİ"), T("OPTİK"), T("KUAFÖR")], this.word);
+      this.col = pick([["#f97316", "#ffffff", T("Turuncu")], ["#0f766e", "#ffffff", T("Petrol yeşili")], ["#1e3a8a", "#fde68a", T("Lacivert")], ["#dc2626", "#ffffff", T("Kırmızı")], ["#111827", "#f97316", T("Siyah")], ["#fde68a", "#7c2d12", T("Krem")]], this.col);
       this.size = pick(["300 × 80 cm", "450 × 100 cm", "200 × 60 cm", "600 × 120 cm", "120 × 120 cm"]);
-      this.target = pick([["CNC'ye", "CNC"], ["UV baskıya", "UV baskı"], ["Branda baskıya", "Branda"], ["Folyo kesime", "Folyo"], ["Lazer kesime", "Lazer"]], this.target);
-      this.tt.textContent = "✓ " + this.target[0] + " gönderildi";
+      this.target = pick([[T("✓ CNC'ye gönderildi"), T("CNC")], [T("✓ UV baskıya gönderildi"), T("UV baskı")], [T("✓ Branda baskıya gönderildi"), T("Branda")], [T("✓ Folyo kesime gönderildi"), T("Folyo")], [T("✓ Lazer kesime gönderildi"), T("Lazer")]], this.target);
+      this.tt.textContent = this.target[0];
     },
     update(dt, vis) {
       const t = this.t;
@@ -282,8 +293,8 @@
     },
     readout() {
       const t = this.t;
-      const st = t < 2.8 ? ["Çiziyor", true] : t < 5.6 ? ["Yazı ekliyor", true] : t < 7.4 ? ["Son rötuş", true] : ["Onaylandı", false];
-      return { status: st, stats: [["Tabela", this.word], ["Ölçü", this.size], ["Renk", this.col[2]], ["Gönderim", this.target[1]]] };
+      const st = t < 2.8 ? [T("Çiziyor"), true] : t < 5.6 ? [T("Yazı ekliyor"), true] : t < 7.4 ? [T("Son rötuş"), true] : [T("Onaylandı"), false];
+      return { status: st, stats: [[T("Tabela"), this.word], [T("Ölçü"), this.size], [T("Renk"), this.col[2]], [T("Gönderim"), this.target[1]]] };
     },
   });
 
@@ -309,14 +320,14 @@
   }
 
   /* 02 · BRANDA BASKI */
-  const BANNERS = [["KAMPANYA", "tüm ürünlerde"], ["%50 İNDİRİM", "sezon sonu"], ["YENİ SEZON", "mağazamızda"], ["SATILIK", "sahibinden daire"], ["AÇILDI!", "yeni şubemiz"], ["HOŞ GELDİNİZ", "bayram kampanyası"], [`FUAR ${YIL}`, "stant B-12"], ["KİRALIK", "ofis katı"]];
+  const BANNERS = [[T("KAMPANYA"), T("tüm ürünlerde")], [T("%50 İNDİRİM"), T("sezon sonu")], [T("YENİ SEZON"), T("mağazamızda")], [T("SATILIK"), T("sahibinden daire")], [T("AÇILDI!"), T("yeni şubemiz")], [T("HOŞ GELDİNİZ"), T("bayram kampanyası")], [T("FUAR {0}", YIL), T("stant B-12")], [T("KİRALIK"), T("ofis katı")]];
   const BCOL = [["#dc2626", "#fff"], ["#f97316", "#fff"], ["#1d4ed8", "#fde68a"], ["#16a34a", "#fff"], ["#111827", "#f97316"], ["#fde047", "#111827"], ["#7c3aed", "#fff"]];
   def({
-    name: "Branda Baskı · 320 cm", short: "Branda", link: SITE + "/hizmetlerimiz/bez-baski/", linkText: "Branda & bez baskı →",
-    desc: "Cephe brandası, mesh, pankart ve bez afiş 320 cm ene kadar tek parça basılır. Kuşgözü ve kaynak da atölyede yapılır.",
+    name: T("Branda Baskı · 320 cm"), short: T("Branda"), link: L("/hizmetlerimiz/bez-baski/"), linkText: T("Branda & bez baskı →"),
+    desc: T("Cephe brandası, mesh, pankart ve bez afiş 320 cm ene kadar tek parça basılır. Kuşgözü ve kaynak da atölyede yapılır."),
     total: 18, stillT: 6,
     build(g) {
-      g.innerHTML = signSvg(this.no, "BRANDA BASKI · 320 cm") + `
+      g.innerHTML = signSvg(this.no, T("BRANDA BASKI · 320 cm")) + `
         <g transform="rotate(8 360 420)"><rect x="344" y="300" width="14" height="150" rx="7" fill="#e2e8f0"/><rect x="344" y="330" width="14" height="80" fill="#dc2626" opacity=".7"/></g>
         <g transform="rotate(4 380 420)"><rect x="366" y="310" width="12" height="140" rx="6" fill="#cbd5e1"/><rect x="366" y="340" width="12" height="60" fill="#1d4ed8" opacity=".7"/></g>
         <rect x="48" y="364" width="304" height="20" rx="10" fill="#e2e8f0"/><rect x="48" y="377" width="304" height="7" rx="3" fill="#b6c2d1"/>
@@ -362,25 +373,25 @@
     },
     readout() {
       const c = this.feed.carriage();
-      return { status: this.paused ? ["Kafa temizliği", false] : ["Basıyor", true], stats: [["Basılan", fmt(this.feed.meters) + " m"], ["İş", this.feed.current()], ["Kafa", this.paused ? "Park" : c.dir > 0 ? "Sağa →" : "← Sola"], ["En", "320 cm"]] };
+      return { status: this.paused ? [T("Kafa temizliği"), false] : [T("Basıyor"), true], stats: [[T("Basılan"), fmt(this.feed.meters) + " m"], [T("İş"), this.feed.current()], [T("Kafa"), this.paused ? T("Park") : c.dir > 0 ? T("Sağa →") : T("← Sola")], [T("En"), T("320 cm")]] };
     },
   });
 
   /* BEZ BASKI · KALENDER */
   const BEZ = [
-    { n: "Türk bayrağı", s: `<rect width="122" height="90" fill="#e30a17"/><circle cx="46" cy="45" r="22" fill="#fff"/><circle cx="52" cy="45" r="17.6" fill="#e30a17"/><polygon points="${starPts(74, 45, 9, 3.7)}" fill="#fff" transform="rotate(-18 74 45)"/>` },
-    { n: "Bayram afişi", s: `<rect width="122" height="90" fill="#15803d"/><text x="61" y="40" text-anchor="middle" ${PF} font-weight="800" font-size="12.5" fill="#fff">BAYRAMINIZ</text><text x="61" y="57" text-anchor="middle" ${PF} font-weight="800" font-size="12.5" fill="#fde68a">KUTLU OLSUN</text><path d="M8 72 H114" stroke="#fde68a" stroke-width="3"/>` },
-    { n: "Hoş geldiniz", s: `<rect width="122" height="90" fill="#1d4ed8"/><circle cx="104" cy="16" r="26" fill="#3b82f6"/><text x="61" y="52" text-anchor="middle" ${PF} font-weight="800" font-size="13" fill="#fff">HOŞ GELDİNİZ</text>` },
-    { n: "İndirim bezi", s: `<rect width="122" height="90" fill="#111827"/><text x="61" y="54" text-anchor="middle" ${PF} font-weight="800" font-size="30" fill="#facc15">%40</text><text x="61" y="72" text-anchor="middle" ${PF} font-weight="700" font-size="10" fill="#fff">İNDİRİM</text>` },
-    { n: "Okul afişi", s: `<rect width="122" height="90" fill="#f97316"/><text x="61" y="40" text-anchor="middle" ${PF} font-weight="800" font-size="11" fill="#fff">HOŞ GELDİN</text><text x="61" y="58" text-anchor="middle" ${PF} font-weight="800" font-size="15" fill="#fff">OKULUM</text>` },
+    { n: T("Türk bayrağı"), s: `<rect width="122" height="90" fill="#e30a17"/><circle cx="46" cy="45" r="22" fill="#fff"/><circle cx="52" cy="45" r="17.6" fill="#e30a17"/><polygon points="${starPts(74, 45, 9, 3.7)}" fill="#fff" transform="rotate(-18 74 45)"/>` },
+    { n: T("Bayram afişi"), s: `<rect width="122" height="90" fill="#15803d"/><text x="61" y="40" text-anchor="middle" ${PF} font-weight="800" font-size="12.5" fill="#fff">${T("BAYRAMINIZ")}</text><text x="61" y="57" text-anchor="middle" ${PF} font-weight="800" font-size="12.5" fill="#fde68a">${T("KUTLU OLSUN")}</text><path d="M8 72 H114" stroke="#fde68a" stroke-width="3"/>` },
+    { n: T("Hoş geldiniz"), s: `<rect width="122" height="90" fill="#1d4ed8"/><circle cx="104" cy="16" r="26" fill="#3b82f6"/><text x="61" y="52" text-anchor="middle" ${PF} font-weight="800" font-size="13" fill="#fff">${T("HOŞ GELDİNİZ")}</text>` },
+    { n: T("İndirim bezi"), s: `<rect width="122" height="90" fill="#111827"/><text x="61" y="54" text-anchor="middle" ${PF} font-weight="800" font-size="30" fill="#facc15">${T("%40")}</text><text x="61" y="72" text-anchor="middle" ${PF} font-weight="700" font-size="10" fill="#fff">${T("İNDİRİM")}</text>` },
+    { n: T("Okul afişi"), s: `<rect width="122" height="90" fill="#f97316"/><text x="61" y="40" text-anchor="middle" ${PF} font-weight="800" font-size="11" fill="#fff">${T("HOŞ GELDİN")}</text><text x="61" y="58" text-anchor="middle" ${PF} font-weight="800" font-size="15" fill="#fff">${T("OKULUM")}</text>` },
   ];
   def({
-    name: "Bez Baskı · Fırın", short: "Bez baskı", link: SITE + "/hizmetlerimiz/bez-baski/", linkText: "Branda & bez baskı →",
-    desc: "Görsel doğrudan kumaşa basılır, ardından 200 °C fırından geçirilerek mürekkep kumaşa sabitlenir. Bayrak, bez afiş, flama ve pankart böyle çıkar.",
+    name: T("Bez Baskı · Fırın"), short: T("Bez baskı"), link: L("/hizmetlerimiz/bez-baski/"), linkText: T("Branda & bez baskı →"),
+    desc: T("Görsel doğrudan kumaşa basılır, ardından 200 °C fırından geçirilerek mürekkep kumaşa sabitlenir. Bayrak, bez afiş, flama ve pankart böyle çıkar."),
     total: 16, stillT: 8,
     build(g) {
       const zz = (y) => { let d = `M232 ${y}`; for (let x = 232; x < 348; x += 8) d += " l4 5 l4 -5"; return d; };
-      g.innerHTML = signSvg(this.no, "BEZ BASKI · FIRIN") + `
+      g.innerHTML = signSvg(this.no, T("BEZ BASKI · FIRIN")) + `
         <path d="M36 432 L30 560 M186 432 L192 560 M33 532 H189" stroke="#475569" stroke-width="5" stroke-linecap="round"/>
         <rect x="20" y="396" width="180" height="38" rx="5" fill="url(#gSteel)"/><rect x="20" y="422" width="180" height="12" fill="#334155"/>
         <rect x="22" y="384" width="32" height="12" rx="2" fill="#cbd5e1"/><rect x="25" y="387" width="5" height="6" fill="#22d3ee"/><rect x="32" y="387" width="5" height="6" fill="#e879f9"/><rect x="39" y="387" width="5" height="6" fill="#facc15"/><rect x="46" y="387" width="5" height="6" fill="#0f172a"/>
@@ -398,7 +409,7 @@
         <path class="belt" d="M229 380 H353" stroke="#f97316" stroke-width="7" stroke-dasharray="16 5"/>
         <rect x="362" y="346" width="24" height="30" rx="2" fill="#0b1220"/><text x="374" y="365" text-anchor="middle" font-family="ui-monospace, monospace" font-size="8" font-weight="700" fill="#fb923c">200°</text>
         <circle cx="374" cy="394" r="3" fill="#4ade80" class="blink"/>
-        <text x="291" y="436" text-anchor="middle" ${PF} font-weight="700" font-size="12" fill="#fdba74" letter-spacing="4">FIRIN</text>
+        <text x="291" y="436" text-anchor="middle" ${PF} font-weight="700" font-size="12" fill="#fdba74" letter-spacing="4">${T("FIRIN")}</text>
         <rect x="236" y="452" width="134" height="6" rx="3" fill="#111827"/>
         <clipPath id="clipBzF"><rect x="240" y="458" width="126" height="94"/></clipPath>
         <g class="sway"><g clip-path="url(#clipBzF)"><g class="fpan"></g></g></g>`;
@@ -418,7 +429,7 @@
         return { g: pg, y, label: d.n, bg: (d.s.match(/fill="(#[0-9a-f]{6})"/) || [])[1] };
       } });
     },
-    newCycle() { this.fabric = pick(["Raşel", "Saten", "Bayrak kumaşı", "Bez"], this.fabric); },
+    newCycle() { this.fabric = pick([T("Raşel"), T("Saten"), T("Bayrak kumaşı"), T("Bez")], this.fabric); },
     update(dt, vis) {
       this.paper.step(dt, true, vis); this.fab.step(dt, true, vis);
       this.prog = this.t / this.total;
@@ -432,16 +443,16 @@
       if (cur && cur.bg) { set(this.belt, "stroke", cur.bg); set(this.inlet, "stroke", cur.bg); }
       set(this.sway, "transform", `translate(303 458) skewX(${(Math.sin(this.t * 1.7) * 3).toFixed(2)}) translate(-303 -458)`);
     },
-    readout() { return { status: ["Baskı + fırın", true], stats: [["Basılan", fmt(this.fab.meters) + " m"], ["İş", this.fab.current()], ["Fırın", "200 °C"], ["Kumaş", this.fabric]] }; },
+    readout() { return { status: [T("Baskı + fırın"), true], stats: [[T("Basılan"), fmt(this.fab.meters) + " m"], [T("İş"), this.fab.current()], [T("Fırın"), "200 °C"], [T("Kumaş"), this.fabric]] }; },
   });
   /* 03 · FOLYO BASKI & KESİM */
-  const VINYL = [["#facc15", "#111827", "Sarı"], ["#f8fafc", "#dc2626", "Beyaz"], ["#1f2937", "#f8fafc", "Siyah"], ["#f97316", "#ffffff", "Turuncu"], ["#1d4ed8", "#ffffff", "Mavi"]];
+  const VINYL = [["#facc15", "#111827", T("Sarı")], ["#f8fafc", "#dc2626", T("Beyaz")], ["#1f2937", "#f8fafc", T("Siyah")], ["#f97316", "#ffffff", T("Turuncu")], ["#1d4ed8", "#ffffff", T("Mavi")]];
   def({
-    name: "Folyo Baskı & Kesim", short: "Folyo", link: SITE + "/hizmetlerimiz/folyo-giydirme/", linkText: "Folyo & giydirme →",
-    desc: "Dijital folyo baskı ve plotter kesim: vitrin yazıları, kapı etiketleri, araç ve cam giydirme için harf harf kesilir.",
+    name: T("Folyo Baskı & Kesim"), short: T("Folyo"), link: L("/hizmetlerimiz/folyo-giydirme/"), linkText: T("Folyo & giydirme →"),
+    desc: T("Dijital folyo baskı ve plotter kesim: vitrin yazıları, kapı etiketleri, araç ve cam giydirme için harf harf kesilir."),
     total: 10, stillT: 8.8,
     build(g) {
-      g.innerHTML = signSvg(this.no, "FOLYO BASKI & KESİM") + `
+      g.innerHTML = signSvg(this.no, T("FOLYO BASKI & KESİM")) + `
         <rect x="40" y="306" width="160" height="4" fill="#334155"/><rect x="40" y="340" width="160" height="4" fill="#334155"/>
         <rect x="44" y="294" width="46" height="12" rx="6" fill="#facc15"/><rect x="94" y="294" width="46" height="12" rx="6" fill="#ef4444"/><rect x="144" y="294" width="46" height="12" rx="6" fill="#f8fafc"/>
         <rect x="44" y="328" width="46" height="12" rx="6" fill="#1d4ed8"/><rect x="94" y="328" width="46" height="12" rx="6" fill="#16a34a"/><rect x="144" y="328" width="46" height="12" rx="6" fill="#111827" stroke="#334155"/>
@@ -469,20 +480,20 @@
         x: 36, y0: 432, y1: 498, h: 70, speed: 10, pass: 0.6, mPerPx: 0.012,
         make: (y) => {
           const [bg, fg] = pick([["#f8fafc", "#dc2626"], ["#111827", "#facc15"], ["#f97316", "#fff"], ["#0ea5e9", "#fff"], ["#fde68a", "#7c2d12"]]);
-          const lbl = pick(["%30", "YENİ", "SALE", "HOT", "%20", "FIRSAT"]);
+          const lbl = pick([T("%30"), T("YENİ"), "SALE", "HOT", T("%20"), T("FIRSAT")]);
           const pg = el("g", {}, pan);
           el("rect", { width: 152, height: 70, fill: "#fff" }, pg);
           el("circle", { cx: 36, cy: 35, r: 24, fill: bg, stroke: fg, "stroke-width": 2 }, pg);
           el("text", { x: 36, y: 40, "text-anchor": "middle", "font-family": "Poppins, sans-serif", "font-weight": 800, "font-size": 12, fill: fg }, pg).textContent = lbl;
           el("rect", { x: 70, y: 18, width: 74, height: 34, rx: 6, fill: fg }, pg);
-          el("text", { x: 107, y: 40, "text-anchor": "middle", "font-family": "Poppins, sans-serif", "font-weight": 800, "font-size": 12, fill: bg }, pg).textContent = pick(["İNDİRİM", "KAMPANYA", "AÇILIŞ", "OUTLET"]);
+          el("text", { x: 107, y: 40, "text-anchor": "middle", "font-family": "Poppins, sans-serif", "font-weight": 800, "font-size": 12, fill: bg }, pg).textContent = pick([T("İNDİRİM"), T("KAMPANYA"), T("AÇILIŞ"), "OUTLET"]);
           el("path", { d: "M0 69 H152", stroke: "#94a3b8", "stroke-dasharray": "3 3" }, pg);
           return { g: pg, y, label: lbl };
         },
       });
     },
     newCycle() {
-      this.word = pick(["AÇIK", "KAPALI", "İNDİRİM", "HOŞ GELDİNİZ", "ÇEKİNİZ", "İTİNİZ", "GİRİŞ", "ÇIKIŞ", "WC"], this.word);
+      this.word = pick([T("AÇIK"), T("KAPALI"), T("İNDİRİM"), T("HOŞ GELDİNİZ"), T("ÇEKİNİZ"), T("İTİNİZ"), T("GİRİŞ"), T("ÇIKIŞ"), "WC"], this.word);
       this.vc = pick(VINYL, this.vc);
       const size = Math.min(34, 142 / (this.word.length * 0.66));
       for (const n of [this.cut, this.fill]) { n.textContent = this.word; n.setAttribute("font-size", size.toFixed(1)); n.setAttribute("y", (486 + size * 0.36).toFixed(1)); }
@@ -508,25 +519,25 @@
     },
     readout() {
       const t = this.t;
-      const st = t < 0.6 ? ["Hazırlanıyor", true] : t < 6.6 ? ["Kesiyor", true] : t < 8 ? ["Ayıklama", true] : ["Hazır", false];
-      return { status: st, stats: [["Yazı", this.word], ["Folyo", this.vc[2]], ["Kesim", "%" + Math.round(this.rv * 100)], ["Baskı", fmt(this.feed.meters) + " m"]] };
+      const st = t < 0.6 ? [T("Hazırlanıyor"), true] : t < 6.6 ? [T("Kesiyor"), true] : t < 8 ? [T("Ayıklama"), true] : [T("Hazır"), false];
+      return { status: st, stats: [[T("Yazı"), this.word], [T("Folyo"), this.vc[2]], [T("Kesim"), T("%{0}", Math.round(this.rv * 100))], [T("Baskı"), fmt(this.feed.meters) + " m"]] };
     },
   });
 
   /* ARAÇ GİYDİRME */
   const VAN = "M42 520 V462 Q42 440 62 438 L236 434 Q252 434 262 442 L300 470 Q344 476 352 496 V520 Z";
   const LIVERY = [
-    { n: "Eymen servis aracı", s: `<rect x="30" y="420" width="340" height="110" fill="#e2e8f0"/><path d="M30 494 L370 472 V530 H30 Z" fill="#f97316"/><path d="M30 508 L370 487 V495 L30 516 Z" fill="#fdba74"/><text x="70" y="476" ${PF} font-weight="700" font-size="28" fill="#475569">eymen</text><text x="72" y="500" ${PF} font-weight="800" font-size="14" fill="#fff" letter-spacing="3">REKLAM</text><text x="196" y="478" ${PF} font-weight="800" font-size="30" fill="#f97316">25</text>` },
-    { n: "Kargo aracı", s: `<rect x="30" y="420" width="340" height="110" fill="#1d4ed8"/><path d="M30 500 C120 470, 220 520, 370 470 V530 H30 Z" fill="#facc15"/><text x="64" y="476" ${PF} font-weight="800" font-size="24" fill="#fff">HIZLI KARGO</text><text x="66" y="494" ${PF} font-size="11" fill="#bfdbfe">aynı gün teslimat</text>` },
-    { n: "Çiçekçi aracı", s: `<rect x="30" y="420" width="340" height="110" fill="#16a34a"/><circle cx="210" cy="470" r="18" fill="#f9a8d4"/><circle cx="238" cy="492" r="13" fill="#fde68a"/><circle cx="184" cy="496" r="11" fill="#fff" opacity=".8"/><text x="62" y="480" ${PF} font-weight="800" font-size="22" fill="#fff">ÇİÇEK EVİ</text><text x="64" y="498" ${PF} font-size="11" fill="#dcfce7">aynı gün çiçek</text>` },
-    { n: "Pizza aracı", s: `<rect x="30" y="420" width="340" height="110" fill="#dc2626"/><circle cx="220" cy="478" r="30" fill="#facc15"/><circle cx="210" cy="470" r="5" fill="#b91c1c"/><circle cx="230" cy="486" r="5" fill="#b91c1c"/><circle cx="222" cy="462" r="4" fill="#b91c1c"/><text x="62" y="480" ${PF} font-weight="800" font-size="24" fill="#fff">PİZZA</text><text x="64" y="500" ${PF} font-weight="700" font-size="13" fill="#fde68a">7/24 SERVİS</text>` },
+    { n: T("Eymen servis aracı"), s: `<rect x="30" y="420" width="340" height="110" fill="#e2e8f0"/><path d="M30 494 L370 472 V530 H30 Z" fill="#f97316"/><path d="M30 508 L370 487 V495 L30 516 Z" fill="#fdba74"/><text x="70" y="476" ${PF} font-weight="700" font-size="28" fill="#475569">eymen</text><text x="72" y="500" ${PF} font-weight="800" font-size="14" fill="#fff" letter-spacing="3">REKLAM</text><text x="196" y="478" ${PF} font-weight="800" font-size="30" fill="#f97316">25</text>` },
+    { n: T("Kargo aracı"), s: `<rect x="30" y="420" width="340" height="110" fill="#1d4ed8"/><path d="M30 500 C120 470, 220 520, 370 470 V530 H30 Z" fill="#facc15"/><text x="64" y="476" ${PF} font-weight="800" font-size="24" fill="#fff">${T("HIZLI KARGO")}</text><text x="66" y="494" ${PF} font-size="11" fill="#bfdbfe">${T("aynı gün teslimat")}</text>` },
+    { n: T("Çiçekçi aracı"), s: `<rect x="30" y="420" width="340" height="110" fill="#16a34a"/><circle cx="210" cy="470" r="18" fill="#f9a8d4"/><circle cx="238" cy="492" r="13" fill="#fde68a"/><circle cx="184" cy="496" r="11" fill="#fff" opacity=".8"/><text x="62" y="480" ${PF} font-weight="800" font-size="22" fill="#fff">${T("ÇİÇEK EVİ")}</text><text x="64" y="498" ${PF} font-size="11" fill="#dcfce7">${T("aynı gün çiçek")}</text>` },
+    { n: T("Pizza aracı"), s: `<rect x="30" y="420" width="340" height="110" fill="#dc2626"/><circle cx="220" cy="478" r="30" fill="#facc15"/><circle cx="210" cy="470" r="5" fill="#b91c1c"/><circle cx="230" cy="486" r="5" fill="#b91c1c"/><circle cx="222" cy="462" r="4" fill="#b91c1c"/><text x="62" y="480" ${PF} font-weight="800" font-size="24" fill="#fff">${T("PİZZA")}</text><text x="64" y="500" ${PF} font-weight="700" font-size="13" fill="#fde68a">${T("7/24 SERVİS")}</text>` },
   ];
   def({
-    name: "Araç Giydirme", short: "Araç", link: SITE + "/urunlerimiz/komple-arac-kaplama/", linkText: "Araç kaplama →",
-    desc: "Firma araçları döküm folyo ile baştan sona giydirilir. Folyo raketle yüzeye oturtulur, kenarlar ısıyla sabitlenir.",
+    name: T("Araç Giydirme"), short: T("Araç"), link: L("/urunlerimiz/komple-arac-kaplama/"), linkText: T("Araç kaplama →"),
+    desc: T("Firma araçları döküm folyo ile baştan sona giydirilir. Folyo raketle yüzeye oturtulur, kenarlar ısıyla sabitlenir."),
     total: 15, stillT: 13.6,
     build(g) {
-      g.innerHTML = signSvg(this.no, "ARAÇ GİYDİRME") + `
+      g.innerHTML = signSvg(this.no, T("ARAÇ GİYDİRME")) + `
         <rect x="284" y="300" width="98" height="6" fill="#334155"/>
         <rect x="290" y="306" width="12" height="104" rx="6" fill="#f97316"/><rect x="306" y="306" width="12" height="96" rx="6" fill="#1d4ed8"/><rect x="322" y="306" width="12" height="108" rx="6" fill="#f8fafc"/><rect x="338" y="306" width="12" height="92" rx="6" fill="#111827" stroke="#334155"/><rect x="354" y="306" width="12" height="100" rx="6" fill="#dc2626"/>
         <ellipse cx="198" cy="560" rx="180" ry="9" fill="#000" opacity=".35"/>
@@ -556,7 +567,7 @@
     update(dt, vis) {
       const t = this.t, r = seg(t, 1, 10), rx = 44 + 312 * r;
       this.prog = r;
-      this.phase = t < 1 ? "Hazırlık" : t < 10 ? "Folyo uygulanıyor" : t < 12 ? "Isıyla sabitleme" : "Teslime hazır";
+      this.phase = t < 1 ? T("Hazırlık") : t < 10 ? T("Folyo uygulanıyor") : t < 12 ? T("Isıyla sabitleme") : T("Teslime hazır");
       if (!vis) return;
       set(this.rev, "width", (rx - 30).toFixed(1));
       set(this.sheet, "x", rx.toFixed(1)); set(this.sheet, "opacity", t > 1 && t < 10 ? 0.35 : 0);
@@ -574,15 +585,15 @@
       set(this.liv, "opacity", t > 14.3 ? (1 - seg(t, 14.3, 15)).toFixed(2) : 1);
       this.h.pose(0, 0, { arms: -62 + Math.sin(t) * 3, armsB: -58 });
     },
-    readout() { return { status: [this.phase, this.phase !== "Teslime hazır"], stats: [["Araç", "Panelvan"], ["Tasarım", this.lv.n], ["Kaplama", "%" + Math.round(this.prog * 100)], ["Folyo", "Döküm folyo"]] }; },
+    readout() { return { status: [this.phase, this.phase !== T("Teslime hazır")], stats: [[T("Araç"), T("Panelvan")], [T("Tasarım"), this.lv.n], [T("Kaplama"), T("%{0}", Math.round(this.prog * 100))], [T("Folyo"), T("Döküm folyo")]] }; },
   });
   /* 04 · CNC ROUTER */
   def({
-    name: "CNC Router", short: "CNC", link: SITE + "/hizmetlerimiz/tabela/", linkText: "Tabela imalatı →",
-    desc: "Kutu harf gövdesi, pleksi yüz ve kompozit panel dosyadan milimetrik kesilir. Her döngüde tezgâhtan başka bir harf çıkıyor.",
+    name: T("CNC Router"), short: T("CNC"), link: L("/hizmetlerimiz/tabela/"), linkText: T("Tabela imalatı →"),
+    desc: T("Kutu harf gövdesi, pleksi yüz ve kompozit panel dosyadan milimetrik kesilir. Her döngüde tezgâhtan başka bir harf çıkıyor."),
     total: 14, stillT: 12.2,
     build(g) {
-      g.innerHTML = signSvg(this.no, "CNC ROUTER") + `
+      g.innerHTML = signSvg(this.no, T("CNC ROUTER")) + `
         <g transform="rotate(-6 372 430)"><rect x="354" y="300" width="10" height="200" fill="#e6ecf3"/><rect x="366" y="310" width="10" height="190" fill="#cbd5e1"/></g>
         <rect x="58" y="505" width="244" height="44" fill="url(#gDark)"/><rect x="58" y="505" width="244" height="5" fill="#f97316"/>
         <rect x="72" y="518" width="60" height="20" rx="2" fill="#0b1220" stroke="#334155"/><circle cx="146" cy="528" r="3" fill="#4ade80" class="blink"/>
@@ -643,25 +654,25 @@
     },
     readout() {
       const c = this.st;
-      const st = c.cutting ? ["Kesiyor", true] : c.k === "hold" || c.k === "fade" ? ["Parça hazır", false] : ["Konumlanıyor", true];
-      return { status: st, stats: [["Parça", `“${this.letter}” harfi`], ["X", fmt((c.u / 260) * 2050) + " mm"], ["Y", fmt((c.w / 200) * 3050) + " mm"], ["Mil", c.z < 0.5 ? "Dönüyor" : "Bekliyor"]] };
+      const st = c.cutting ? [T("Kesiyor"), true] : c.k === "hold" || c.k === "fade" ? [T("Parça hazır"), false] : [T("Konumlanıyor"), true];
+      return { status: st, stats: [[T("Parça"), T("“{0}” harfi", this.letter)], ["X", fmt((c.u / 260) * 2050) + " mm"], ["Y", fmt((c.w / 200) * 3050) + " mm"], [T("Mil"), c.z < 0.5 ? T("Dönüyor") : T("Bekliyor")]] };
     },
   });
 
   /* 05 · LAZER KESİM */
   const LASER = [
-    { n: "“25” yazısı", p: ["M42 62 C42 32, 102 30, 102 62 C102 88, 44 108, 42 140 H106", "M195 30 H142 L137 78 C160 64, 202 72, 202 104 C202 138, 158 150, 134 130"] },
-    { n: "“34” yazısı", p: ["M40 42 C60 22, 104 28, 100 58 C98 80, 70 84, 62 86 C92 86, 108 104, 102 126 C94 152, 50 150, 38 132", "M184 150 V30 L128 112 H206"] },
-    { n: "Yıldız", p: ["M120 22 L140 68 L190 72 L152 104 L164 150 L120 126 L76 150 L88 104 L50 72 L100 68 Z"] },
-    { n: "Kalp", p: ["M120 148 C60 110, 40 70, 70 45 C95 25, 120 45, 120 62 C120 45, 145 25, 170 45 C200 70, 180 110, 120 148 Z"] },
-    { n: "Ok levha", p: ["M36 70 H150 V40 L204 88 L150 136 V106 H36 Z"] },
+    { n: T("“25” yazısı"), p: ["M42 62 C42 32, 102 30, 102 62 C102 88, 44 108, 42 140 H106", "M195 30 H142 L137 78 C160 64, 202 72, 202 104 C202 138, 158 150, 134 130"] },
+    { n: T("“34” yazısı"), p: ["M40 42 C60 22, 104 28, 100 58 C98 80, 70 84, 62 86 C92 86, 108 104, 102 126 C94 152, 50 150, 38 132", "M184 150 V30 L128 112 H206"] },
+    { n: T("Yıldız"), p: ["M120 22 L140 68 L190 72 L152 104 L164 150 L120 126 L76 150 L88 104 L50 72 L100 68 Z"] },
+    { n: T("Kalp"), p: ["M120 148 C60 110, 40 70, 70 45 C95 25, 120 45, 120 62 C120 45, 145 25, 170 45 C200 70, 180 110, 120 148 Z"] },
+    { n: T("Ok levha"), p: ["M36 70 H150 V40 L204 88 L150 136 V106 H36 Z"] },
   ];
   def({
-    name: "Lazer Kesim", short: "Lazer", link: SITE + "/urunlerimiz/kutu-harf-tabela/", linkText: "Kutu harf tabela →",
-    desc: "İnce detaylı harf, logo ve pleksi parçalar lazerle temiz kenarlı kesilir. Kapağın amber camı ışını süzer.",
+    name: T("Lazer Kesim"), short: T("Lazer"), link: L("/urunlerimiz/kutu-harf-tabela/"), linkText: T("Kutu harf tabela →"),
+    desc: T("İnce detaylı harf, logo ve pleksi parçalar lazerle temiz kenarlı kesilir. Kapağın amber camı ışını süzer."),
     total: 12, stillT: 10.6,
     build(g) {
-      g.innerHTML = signSvg(this.no, "LAZER KESİM") + `
+      g.innerHTML = signSvg(this.no, T("LAZER KESİM")) + `
         <rect x="52" y="486" width="258" height="64" fill="url(#gDark)"/><polygon points="310,486 372,405 372,470 310,550" fill="#111827"/>
         <rect x="236" y="498" width="60" height="30" rx="3" fill="#0b1220" stroke="#334155"/>
         <text x="266" y="518" text-anchor="middle" font-family="ui-monospace, monospace" font-size="10" fill="#fb923c">LASER</text>
@@ -723,21 +734,21 @@
     },
     readout() {
       const l = this.st;
-      const st = l.cutting ? ["Işın açık", true] : l.k === "hold" || l.k === "fade" ? ["Kesim bitti", false] : ["Konumlanıyor", true];
-      return { status: st, stats: [["Parça", this.v.n], ["X", fmt((l.u / 240) * 1300) + " mm"], ["Y", fmt((l.w / 170) * 900) + " mm"], ["Işın", l.cutting ? "Açık" : "Kapalı"]] };
+      const st = l.cutting ? [T("Işın açık"), true] : l.k === "hold" || l.k === "fade" ? [T("Kesim bitti"), false] : [T("Konumlanıyor"), true];
+      return { status: st, stats: [[T("Parça"), this.v.n], ["X", fmt((l.u / 240) * 1300) + " mm"], ["Y", fmt((l.w / 170) * 900) + " mm"], [T("Işın"), l.cutting ? T("Açık") : T("Kapalı")]] };
     },
   });
 
   /* 06 · HARF BÜKME */
   def({
-    name: "Harf Bükme", short: "Bükme", link: SITE + "/urunlerimiz/kutu-harf-tabela/", linkText: "Kutu harf tabela →",
-    desc: "Kutu harfin yan yüzü alüminyum şeritten makinede bükülür. Şerit bobinden sürülür, harfin çevresi köşe köşe kıvrılır.",
+    name: T("Harf Bükme"), short: T("Bükme"), link: L("/urunlerimiz/kutu-harf-tabela/"), linkText: T("Kutu harf tabela →"),
+    desc: T("Kutu harfin yan yüzü alüminyum şeritten makinede bükülür. Şerit bobinden sürülür, harfin çevresi köşe köşe kıvrılır."),
     total: 10, stillT: 8.2,
     build(g) {
       const cols = ["#475569", "#64748b", "#7c8ba1", "#94a3b8", "#b6c2d1", "#e2e8f0"];
       let rib = "";
       cols.forEach((c, k) => { rib += `<g transform="translate(0 ${-2 * k})"><g transform="matrix(1 0 -0.35 0.45 110 424)"><path class="rb" transform="translate(40 10) scale(.75)" fill="none" stroke="${c}" stroke-width="5" stroke-linejoin="round"/></g></g>`; });
-      g.innerHTML = signSvg(this.no, "HARF BÜKME") + `
+      g.innerHTML = signSvg(this.no, T("HARF BÜKME")) + `
         <rect x="300" y="300" width="80" height="6" fill="#334155"/><path d="M308 306 V340 M316 306 V336 M324 306 V344" stroke="#94a3b8" stroke-width="3"/>
         <rect x="44" y="396" width="7" height="164" fill="#475569"/><rect x="26" y="552" width="44" height="8" fill="#334155"/>
         <circle cx="47" cy="392" r="30" fill="#cbd5e1"/><circle cx="47" cy="392" r="24" fill="none" stroke="#94a3b8" stroke-width="2"/><circle cx="47" cy="392" r="17" fill="none" stroke="#94a3b8" stroke-width="2"/><circle cx="47" cy="392" r="9" fill="#475569"/>
@@ -779,26 +790,26 @@
     },
     readout() {
       const t = this.t;
-      const st = t < 0.5 ? ["Şerit sürülüyor", true] : t < 7.5 ? ["Büküyor", true] : ["Harf hazır", false];
-      return { status: st, stats: [["Harf", this.letter], ["Profil", "Alüminyum"], ["Büküm", `${this.step}/${this.nb}`], ["Uzunluk", fmt(this.L * this.prog * 6.2, 0) + " mm"]] };
+      const st = t < 0.5 ? [T("Şerit sürülüyor"), true] : t < 7.5 ? [T("Büküyor"), true] : [T("Harf hazır"), false];
+      return { status: st, stats: [[T("Harf"), this.letter], [T("Profil"), T("Alüminyum")], [T("Büküm"), `${this.step}/${this.nb}`], [T("Uzunluk"), fmt(this.L * this.prog * 6.2, 0) + " mm"]] };
     },
   });
 
   /* 07 · VAKUM ŞEKİLLENDİRME */
   const MOLDS = [
-    { n: "Kubbe", h: (x) => (Math.abs(x - 200) < 70 ? 40 * Math.sqrt(1 - ((x - 200) / 70) ** 2) : 0) },
-    { n: "Işıklı kutu", h: (x) => (x < 128 || x > 272 ? 0 : x < 142 ? ((x - 128) / 14) * 38 : x > 258 ? ((272 - x) / 14) * 38 : 38) },
-    { n: "Çift kabartma", h: (x) => Math.max(Math.abs(x - 160) < 36 ? 32 * Math.sqrt(1 - ((x - 160) / 36) ** 2) : 0, Math.abs(x - 240) < 36 ? 32 * Math.sqrt(1 - ((x - 240) / 36) ** 2) : 0) },
-    { n: "Yay pano", h: (x) => (Math.abs(x - 200) < 86 ? 24 * Math.sqrt(1 - ((x - 200) / 86) ** 2) : 0) },
+    { n: T("Kubbe"), h: (x) => (Math.abs(x - 200) < 70 ? 40 * Math.sqrt(1 - ((x - 200) / 70) ** 2) : 0) },
+    { n: T("Işıklı kutu"), h: (x) => (x < 128 || x > 272 ? 0 : x < 142 ? ((x - 128) / 14) * 38 : x > 258 ? ((272 - x) / 14) * 38 : 38) },
+    { n: T("Çift kabartma"), h: (x) => Math.max(Math.abs(x - 160) < 36 ? 32 * Math.sqrt(1 - ((x - 160) / 36) ** 2) : 0, Math.abs(x - 240) < 36 ? 32 * Math.sqrt(1 - ((x - 240) / 36) ** 2) : 0) },
+    { n: T("Yay pano"), h: (x) => (Math.abs(x - 200) < 86 ? 24 * Math.sqrt(1 - ((x - 200) / 86) ** 2) : 0) },
   ];
-  const SHEETS = [["#f1f5f9", "Beyaz ABS"], ["#bfdbfe", "Şeffaf PETG"], ["#fca5a5", "Kırmızı ABS"], ["#fde68a", "Sarı pleksi"]];
+  const SHEETS = [["#f1f5f9", T("Beyaz ABS")], ["#bfdbfe", T("Şeffaf PETG")], ["#fca5a5", T("Kırmızı ABS")], ["#fde68a", T("Sarı pleksi")]];
   def({
-    name: "Vakum Şekillendirme", short: "Vakum", link: SITE + "/urunlerimiz/isikli-blok-tabela/", linkText: "Işıklı tabela →",
-    desc: "Levha ısıtılır, kalıp yükselir ve vakum levhayı kalıbın üzerine çeker. Işıklı harf yüzleri ve kabartma logolar böyle çıkar.",
+    name: T("Vakum Şekillendirme"), short: T("Vakum"), link: L("/urunlerimiz/isikli-blok-tabela/"), linkText: T("Işıklı tabela →"),
+    desc: T("Levha ısıtılır, kalıp yükselir ve vakum levhayı kalıbın üzerine çeker. Işıklı harf yüzleri ve kabartma logolar böyle çıkar."),
     total: 12, stillT: 7.5,
     build(g) {
       let coil = "M8 390"; for (let x = 8; x < 228; x += 10) coil += " l5 6 l5 -6";
-      g.innerHTML = signSvg(this.no, "VAKUM ŞEKİLLENDİRME") + `
+      g.innerHTML = signSvg(this.no, T("VAKUM ŞEKİLLENDİRME")) + `
         <rect x="66" y="300" width="14" height="172" fill="#94a3b8"/><rect x="320" y="300" width="14" height="172" fill="#94a3b8"/>
         <rect x="60" y="294" width="280" height="14" rx="3" fill="#cbd5e1"/><rect x="60" y="294" width="280" height="3" fill="#f97316"/>
         <g class="tbl"><polygon class="mold" fill="#334155" stroke="#475569"/><rect x="112" y="0" width="176" height="10" fill="#94a3b8"/><rect x="150" y="10" width="8" height="30" fill="#64748b"/><rect x="242" y="10" width="8" height="30" fill="#64748b"/></g>
@@ -856,17 +867,17 @@
     },
     readout() {
       const t = this.t;
-      const st = t < 0.8 ? ["Levha yükleniyor", true] : t < 5.2 ? ["Isıtılıyor", true] : t < 6.6 ? ["Şekillendiriyor", true] : t < 8.6 ? ["Soğutuluyor", true] : t < 10.6 ? ["Parça çıkıyor", true] : ["Hazır", false];
-      return { status: st, stats: [["Isıtıcı", Math.round(this.temp) + " °C"], ["Vakum", this.vac ? "−0,8 bar" : "0 bar"], ["Kalıp", this.m.n], ["Malzeme", this.sh[1]]] };
+      const st = t < 0.8 ? [T("Levha yükleniyor"), true] : t < 5.2 ? [T("Isıtılıyor"), true] : t < 6.6 ? [T("Şekillendiriyor"), true] : t < 8.6 ? [T("Soğutuluyor"), true] : t < 10.6 ? [T("Parça çıkıyor"), true] : [T("Hazır"), false];
+      return { status: st, stats: [[T("Isıtıcı"), Math.round(this.temp) + " °C"], [T("Vakum"), this.vac ? T("−0,8 bar") : "0 bar"], [T("Kalıp"), this.m.n], [T("Malzeme"), this.sh[1]]] };
     },
   });
 
   /* 08 · UV BASKI */
   const UVART = [
-    { n: "Pleksi afiş", s: `<rect x="10" y="8" width="260" height="124" fill="url(#gArt)"/><circle cx="210" cy="56" r="34" fill="#fde68a" opacity=".85"/><path d="M10 98 C60 80, 110 118, 160 98 S 240 84, 270 102 V132 H10 Z" fill="#0891b2"/><path d="M10 114 C70 100, 120 130, 180 114 S 250 108, 270 118 V132 H10 Z" fill="#1e3a8a" opacity=".85"/><text x="26" y="52" font-family="Poppins, sans-serif" font-weight="800" font-size="30" fill="#fff">UV BASKI</text><text x="28" y="70" font-family="Poppins, sans-serif" font-weight="500" font-size="10" fill="#fff">cam · ahşap · metal · pleksi</text>` },
-    { n: "Cam panel", s: `<rect x="10" y="8" width="260" height="124" fill="#0c4a6e"/><circle cx="60" cy="40" r="26" fill="#38bdf8" opacity=".5"/><circle cx="96" cy="86" r="18" fill="#7dd3fc" opacity=".45"/><circle cx="220" cy="100" r="30" fill="#0ea5e9" opacity=".5"/><text x="140" y="70" text-anchor="middle" font-family="Poppins, sans-serif" font-weight="800" font-size="28" fill="#fff">CAM BASKI</text><text x="140" y="88" text-anchor="middle" font-family="Poppins, sans-serif" font-size="10" fill="#e0f2fe">mutfak paneli · 4 mm</text>` },
-    { n: "25. yıl panosu", s: `<rect x="10" y="8" width="260" height="124" fill="#111827"/><path d="M180 8 H270 V132 H120 Z" fill="#f97316" opacity=".9"/><path d="M200 8 H214 L150 132 H136 Z" fill="#fdba74" opacity=".6"/><text x="30" y="96" font-family="Poppins, sans-serif" font-weight="800" font-size="72" fill="#f97316">25</text><text x="118" y="96" font-family="Poppins, sans-serif" font-weight="700" font-size="16" fill="#fff">YIL</text><text x="32" y="36" font-family="Poppins, sans-serif" font-weight="600" font-size="16" fill="#cbd5e1">eymen</text>` },
-    { n: "Ahşap menü", s: `<rect x="10" y="8" width="260" height="124" fill="#92400e"/><path d="M10 30 H270 M10 58 H270 M10 90 H270 M10 118 H270" stroke="#78350f" stroke-width="3" opacity=".6"/><text x="140" y="44" text-anchor="middle" font-family="Poppins, sans-serif" font-weight="800" font-size="24" fill="#fef3c7">MENÜ</text><path d="M60 66 H170 M60 82 H150 M60 98 H180 M60 114 H140" stroke="#fef3c7" stroke-width="4" stroke-linecap="round"/><path d="M200 66 H222 M200 82 H222 M200 98 H222 M200 114 H222" stroke="#fdba74" stroke-width="4" stroke-linecap="round"/>` },
+    { n: T("Pleksi afiş"), s: `<rect x="10" y="8" width="260" height="124" fill="url(#gArt)"/><circle cx="210" cy="56" r="34" fill="#fde68a" opacity=".85"/><path d="M10 98 C60 80, 110 118, 160 98 S 240 84, 270 102 V132 H10 Z" fill="#0891b2"/><path d="M10 114 C70 100, 120 130, 180 114 S 250 108, 270 118 V132 H10 Z" fill="#1e3a8a" opacity=".85"/><text x="26" y="52" font-family="Poppins, sans-serif" font-weight="800" font-size="30" fill="#fff">${T("UV BASKI")}</text><text x="28" y="70" font-family="Poppins, sans-serif" font-weight="500" font-size="10" fill="#fff">${T("cam · ahşap · metal · pleksi")}</text>` },
+    { n: T("Cam panel"), s: `<rect x="10" y="8" width="260" height="124" fill="#0c4a6e"/><circle cx="60" cy="40" r="26" fill="#38bdf8" opacity=".5"/><circle cx="96" cy="86" r="18" fill="#7dd3fc" opacity=".45"/><circle cx="220" cy="100" r="30" fill="#0ea5e9" opacity=".5"/><text x="140" y="70" text-anchor="middle" font-family="Poppins, sans-serif" font-weight="800" font-size="28" fill="#fff">${T("CAM BASKI")}</text><text x="140" y="88" text-anchor="middle" font-family="Poppins, sans-serif" font-size="10" fill="#e0f2fe">${T("mutfak paneli · 4 mm")}</text>` },
+    { n: T("25. yıl panosu"), s: `<rect x="10" y="8" width="260" height="124" fill="#111827"/><path d="M180 8 H270 V132 H120 Z" fill="#f97316" opacity=".9"/><path d="M200 8 H214 L150 132 H136 Z" fill="#fdba74" opacity=".6"/><text x="30" y="96" font-family="Poppins, sans-serif" font-weight="800" font-size="72" fill="#f97316">25</text><text x="118" y="96" font-family="Poppins, sans-serif" font-weight="700" font-size="16" fill="#fff">${T("YIL")}</text><text x="32" y="36" font-family="Poppins, sans-serif" font-weight="600" font-size="16" fill="#cbd5e1">eymen</text>` },
+    { n: T("Ahşap menü"), s: `<rect x="10" y="8" width="260" height="124" fill="#92400e"/><path d="M10 30 H270 M10 58 H270 M10 90 H270 M10 118 H270" stroke="#78350f" stroke-width="3" opacity=".6"/><text x="140" y="44" text-anchor="middle" font-family="Poppins, sans-serif" font-weight="800" font-size="24" fill="#fef3c7">${T("MENÜ")}</text><path d="M60 66 H170 M60 82 H150 M60 98 H180 M60 114 H140" stroke="#fef3c7" stroke-width="4" stroke-linecap="round"/><path d="M200 66 H222 M200 82 H222 M200 98 H222 M200 114 H222" stroke="#fdba74" stroke-width="4" stroke-linecap="round"/>` },
   ];
   const UV = { N: 6, y0: 8, h: 124, pass: 1.8, step: 0.22, pre: 0.6, park: 0.8, hold: 1.6, fade: 0.6 };
   UV.bh = UV.h / UV.N; UV.total = UV.pre + UV.N * (UV.pass + UV.step) + UV.park + UV.hold + UV.fade;
@@ -894,11 +905,11 @@
     s.fade = 1 - clamp(t / UV.fade, 0, 1); return s;
   }
   def({
-    name: "UV Baskı · 4×2 m flatbed", short: "UV", link: SITE + "/hizmetlerimiz/uv-baski/", linkText: "UV baskı →",
-    desc: "Cam, ahşap, metal, pleksi ve kompozite doğrudan baskı. Mürekkep UV ışıkla anında kürlenir; gerekirse beyaz altbaskı ve vernik eklenir.",
+    name: T("UV Baskı · 4×2 m flatbed"), short: T("UV"), link: L("/hizmetlerimiz/uv-baski/"), linkText: T("UV baskı →"),
+    desc: T("Cam, ahşap, metal, pleksi ve kompozite doğrudan baskı. Mürekkep UV ışıkla anında kürlenir; gerekirse beyaz altbaskı ve vernik eklenir."),
     total: UV.total, stillT: UV.pre + UV.N * (UV.pass + UV.step) + UV.park + 0.8,
     build(g) {
-      g.innerHTML = signSvg(this.no, "UV BASKI · 4×2 m") + `
+      g.innerHTML = signSvg(this.no, T("UV BASKI · 4×2 m")) + `
         <rect x="40" y="488" width="262" height="60" fill="url(#gSteel)"/><rect x="40" y="520" width="262" height="6" fill="#334155"/>
         <rect x="56" y="496" width="70" height="18" rx="2" fill="#0b1220"/><rect x="61" y="501" width="10" height="8" fill="#22d3ee"/><rect x="73" y="501" width="10" height="8" fill="#e879f9"/><rect x="85" y="501" width="10" height="8" fill="#facc15"/><rect x="97" y="501" width="10" height="8" fill="#0f172a" stroke="#475569"/><rect x="109" y="501" width="10" height="8" fill="#f8fafc"/>
         <circle cx="290" cy="505" r="3" fill="#4ade80" class="blink"/><rect x="48" y="548" width="12" height="13" fill="#64748b"/><rect x="282" y="548" width="12" height="13" fill="#64748b"/>
@@ -931,22 +942,22 @@
     },
     readout() {
       const u = this.st;
-      const st = u.printing ? [`Baskı · geçiş ${u.pass}/${UV.N}`, true] : u.prog >= 1 ? ["Baskı bitti", false] : ["Geçiş hazırlığı", true];
-      return { status: st, stats: [["İş", this.v.n], ["Geçiş", `${Math.max(1, u.pass)}/${UV.N}`], ["UV lamba", u.printing ? "Açık" : "Kapalı"], ["Tabla", "4000 × 2000 mm"]] };
+      const st = u.printing ? [T("Baskı · geçiş {0}/{1}", u.pass, UV.N), true] : u.prog >= 1 ? [T("Baskı bitti"), false] : [T("Geçiş hazırlığı"), true];
+      return { status: st, stats: [[T("İş"), this.v.n], [T("Geçiş"), `${Math.max(1, u.pass)}/${UV.N}`], [T("UV lamba"), u.printing ? T("Açık") : T("Kapalı")], [T("Tabla"), "4000 × 2000 mm"]] };
     },
   });
 
   /* LIGHTBOX ÖRNEKLERİ */
   const LB1 = [
-    { n: "Yaz kampanyası", s: `<rect width="190" height="110" fill="#fb7185"/><rect y="66" width="190" height="44" fill="#0ea5e9"/><circle cx="142" cy="44" r="24" fill="#fde68a"/><path d="M0 72 C40 64, 80 80, 120 70 S 170 64, 190 72" stroke="#e0f2fe" stroke-width="3" fill="none"/><text x="16" y="40" ${PF} font-weight="800" font-size="22" fill="#fff">YAZ</text><text x="16" y="56" ${PF} font-weight="700" font-size="11" fill="#fff">İNDİRİMİ</text>` },
-    { n: "Burger menü", s: `<rect width="190" height="110" fill="#111827"/><path d="M110 58 Q140 22 170 58 Z" fill="#f59e0b"/><rect x="108" y="60" width="64" height="7" rx="3" fill="#22c55e"/><rect x="110" y="68" width="60" height="10" rx="4" fill="#7c2d12"/><rect x="108" y="79" width="64" height="4" fill="#facc15"/><path d="M110 84 H170 Q168 94 140 94 Q112 94 110 84 Z" fill="#f59e0b"/><text x="16" y="50" ${PF} font-weight="800" font-size="18" fill="#f97316">EFSANE</text><text x="16" y="70" ${PF} font-weight="800" font-size="18" fill="#fff">BURGER</text>` },
-    { n: "Diş kliniği", s: `<rect width="190" height="110" fill="#e0f2fe"/><path d="M130 30 C115 22 100 32 104 50 C107 66 112 86 118 88 C124 90 124 70 132 70 C140 70 140 90 146 88 C152 86 157 66 160 50 C164 32 149 22 134 30 Z" fill="#fff" stroke="#0e7490" stroke-width="2"/><text x="14" y="50" ${PF} font-weight="800" font-size="14" fill="#0e7490">GÜLÜŞ</text><text x="14" y="68" ${PF} font-weight="800" font-size="14" fill="#0e7490">TASARIMI</text>` },
-    { n: "Otomotiv", s: `<rect width="190" height="110" fill="#0f172a"/><rect y="80" width="190" height="30" fill="#1e293b"/><path d="M40 84 L56 66 Q64 58 80 58 H116 Q128 58 138 66 L152 74 Q166 76 168 84 Z" fill="#dc2626"/><circle cx="66" cy="86" r="8" fill="#111827" stroke="#94a3b8" stroke-width="2"/><circle cx="144" cy="86" r="8" fill="#111827" stroke="#94a3b8" stroke-width="2"/><text x="95" y="36" text-anchor="middle" ${PF} font-weight="800" font-size="16" fill="#fff">YENİ MODEL</text>` },
+    { n: T("Yaz kampanyası"), s: `<rect width="190" height="110" fill="#fb7185"/><rect y="66" width="190" height="44" fill="#0ea5e9"/><circle cx="142" cy="44" r="24" fill="#fde68a"/><path d="M0 72 C40 64, 80 80, 120 70 S 170 64, 190 72" stroke="#e0f2fe" stroke-width="3" fill="none"/><text x="16" y="40" ${PF} font-weight="800" font-size="22" fill="#fff">${T("YAZ")}</text><text x="16" y="56" ${PF} font-weight="700" font-size="11" fill="#fff">${T("İNDİRİMİ")}</text>` },
+    { n: T("Burger menü"), s: `<rect width="190" height="110" fill="#111827"/><path d="M110 58 Q140 22 170 58 Z" fill="#f59e0b"/><rect x="108" y="60" width="64" height="7" rx="3" fill="#22c55e"/><rect x="110" y="68" width="60" height="10" rx="4" fill="#7c2d12"/><rect x="108" y="79" width="64" height="4" fill="#facc15"/><path d="M110 84 H170 Q168 94 140 94 Q112 94 110 84 Z" fill="#f59e0b"/><text x="16" y="50" ${PF} font-weight="800" font-size="18" fill="#f97316">${T("EFSANE")}</text><text x="16" y="70" ${PF} font-weight="800" font-size="18" fill="#fff">${T("BURGER")}</text>` },
+    { n: T("Diş kliniği"), s: `<rect width="190" height="110" fill="#e0f2fe"/><path d="M130 30 C115 22 100 32 104 50 C107 66 112 86 118 88 C124 90 124 70 132 70 C140 70 140 90 146 88 C152 86 157 66 160 50 C164 32 149 22 134 30 Z" fill="#fff" stroke="#0e7490" stroke-width="2"/><text x="14" y="50" ${PF} font-weight="800" font-size="14" fill="#0e7490">${T("GÜLÜŞ")}</text><text x="14" y="68" ${PF} font-weight="800" font-size="14" fill="#0e7490">${T("TASARIMI")}</text>` },
+    { n: T("Otomotiv"), s: `<rect width="190" height="110" fill="#0f172a"/><rect y="80" width="190" height="30" fill="#1e293b"/><path d="M40 84 L56 66 Q64 58 80 58 H116 Q128 58 138 66 L152 74 Q166 76 168 84 Z" fill="#dc2626"/><circle cx="66" cy="86" r="8" fill="#111827" stroke="#94a3b8" stroke-width="2"/><circle cx="144" cy="86" r="8" fill="#111827" stroke="#94a3b8" stroke-width="2"/><text x="95" y="36" text-anchor="middle" ${PF} font-weight="800" font-size="16" fill="#fff">${T("YENİ MODEL")}</text>` },
   ];
   const LB2 = [
-    { n: "Parfüm", s: `<rect width="66" height="106" fill="#312e81"/><rect x="22" y="40" width="22" height="34" rx="4" fill="#c4b5fd"/><rect x="28" y="32" width="10" height="8" fill="#fde68a"/><text x="33" y="92" text-anchor="middle" ${PF} font-weight="700" font-size="9" fill="#fff">PARFÜM</text>` },
-    { n: "Kahve", s: `<rect width="66" height="106" fill="#78350f"/><path d="M18 42 H46 L43 72 Q42 76 38 76 H26 Q22 76 21 72 Z" fill="#fef3c7"/><path d="M46 48 q8 0 8 7 q0 7 -8 7" stroke="#fef3c7" stroke-width="3" fill="none"/><path d="M26 34 q-3 -5 0 -9 M34 34 q-3 -5 0 -9" stroke="#fde68a" stroke-width="2" fill="none"/><text x="33" y="94" text-anchor="middle" ${PF} font-weight="700" font-size="9" fill="#fff">KAHVE</text>` },
-    { n: "Telefon", s: `<rect width="66" height="106" fill="#0f172a"/><rect x="20" y="24" width="26" height="50" rx="5" fill="#334155"/><rect x="23" y="29" width="20" height="40" rx="2" fill="#38bdf8"/><text x="33" y="92" text-anchor="middle" ${PF} font-weight="700" font-size="9" fill="#fff">YENİ SERİ</text>` },
+    { n: T("Parfüm"), s: `<rect width="66" height="106" fill="#312e81"/><rect x="22" y="40" width="22" height="34" rx="4" fill="#c4b5fd"/><rect x="28" y="32" width="10" height="8" fill="#fde68a"/><text x="33" y="92" text-anchor="middle" ${PF} font-weight="700" font-size="9" fill="#fff">${T("PARFÜM")}</text>` },
+    { n: T("Kahve"), s: `<rect width="66" height="106" fill="#78350f"/><path d="M18 42 H46 L43 72 Q42 76 38 76 H26 Q22 76 21 72 Z" fill="#fef3c7"/><path d="M46 48 q8 0 8 7 q0 7 -8 7" stroke="#fef3c7" stroke-width="3" fill="none"/><path d="M26 34 q-3 -5 0 -9 M34 34 q-3 -5 0 -9" stroke="#fde68a" stroke-width="2" fill="none"/><text x="33" y="94" text-anchor="middle" ${PF} font-weight="700" font-size="9" fill="#fff">${T("KAHVE")}</text>` },
+    { n: T("Telefon"), s: `<rect width="66" height="106" fill="#0f172a"/><rect x="20" y="24" width="26" height="50" rx="5" fill="#334155"/><rect x="23" y="29" width="20" height="40" rx="2" fill="#38bdf8"/><text x="33" y="92" text-anchor="middle" ${PF} font-weight="700" font-size="9" fill="#fff">${T("YENİ SERİ")}</text>` },
   ];
   const LB3 = [
     { n: "e", s: `<circle r="30" fill="#f97316"/><text y="11" text-anchor="middle" ${PF} font-weight="700" font-size="32" fill="#fff">e</text>` },
@@ -954,11 +965,11 @@
     { n: "24", s: `<circle r="30" fill="#dc2626"/><text y="9" text-anchor="middle" ${PF} font-weight="800" font-size="24" fill="#fff">24</text>` },
   ];
   def({
-    name: "Lightbox Örnekleri", short: "Lightbox", link: SITE + "/urunlerimiz/lightbox-pano/", linkText: "Lightbox pano →",
-    desc: "Kumaş germe lightbox, ince LED poster çerçevesi ve yuvarlak logo kutusu. Showroom duvarında sırayla yanıyor, her turda içerik değişiyor.",
+    name: T("Lightbox Örnekleri"), short: T("Lightbox"), link: L("/urunlerimiz/lightbox-pano/"), linkText: T("Lightbox pano →"),
+    desc: T("Kumaş germe lightbox, ince LED poster çerçevesi ve yuvarlak logo kutusu. Showroom duvarında sırayla yanıyor, her turda içerik değişiyor."),
     total: 12, stillT: 6,
     build(g) {
-      g.innerHTML = signSvg(this.no, "LIGHTBOX ÖRNEKLERİ") + `
+      g.innerHTML = signSvg(this.no, T("LIGHTBOX ÖRNEKLERİ")) + `
         <rect x="14" y="282" width="372" height="278" fill="#121a2b"/>
         <ellipse class="h0" cx="130" cy="360" rx="150" ry="100" fill="url(#gHalo)" opacity="0"/>
         <ellipse class="h1" cx="280" cy="346" rx="70" ry="90" fill="url(#gHalo)" opacity="0"/>
@@ -969,9 +980,9 @@
         <g class="i1" transform="translate(247 293)"></g><rect class="o1" x="247" y="293" width="66" height="106" fill="#0b1220" opacity=".82"/>
         <circle cx="352" cy="352" r="34" fill="#94a3b8"/>
         <g class="i2" transform="translate(352 352)"></g><circle class="o2" cx="352" cy="352" r="30" fill="#0b1220" opacity=".82"/>
-        <text x="130" y="438" text-anchor="middle" ${PF} font-size="10" fill="#94a3b8">Kumaş germe lightbox</text>
-        <text x="280" y="418" text-anchor="middle" ${PF} font-size="10" fill="#94a3b8">LED poster</text>
-        <text x="352" y="402" text-anchor="middle" ${PF} font-size="10" fill="#94a3b8">Logo kutusu</text>
+        <text x="130" y="438" text-anchor="middle" ${PF} font-size="10" fill="#94a3b8">${T("Kumaş germe lightbox")}</text>
+        <text x="280" y="418" text-anchor="middle" ${PF} font-size="10" fill="#94a3b8">${T("LED poster")}</text>
+        <text x="352" y="402" text-anchor="middle" ${PF} font-size="10" fill="#94a3b8">${T("Logo kutusu")}</text>
         <path d="M60 470 H190 V476 H60 Z" fill="#8b5a2b"/><path d="M70 476 V560 M180 476 V560" stroke="#3f2a17" stroke-width="6"/>
         <rect x="80" y="444" width="40" height="26" rx="2" fill="#cbd5e1"/><rect x="83" y="447" width="34" height="20" fill="#fde68a" class="blink"/>
         <rect x="130" y="456" width="44" height="14" rx="1" fill="#e2e8f0"/><rect x="134" y="459" width="36" height="2" fill="#94a3b8"/>
@@ -995,23 +1006,23 @@
       this.halo.forEach((h, i) => set(h, "opacity", on[i] ? 1 : 0));
       this.cust.pose(0, 0, { arms: Math.sin(t * 0.8) * 8 - 12, armsB: 6 });
     },
-    readout() { return { status: this.cnt ? ["Yanıyor", true] : ["İçerik değişiyor", false], stats: [["Kumaş lightbox", this.c[0].n], ["LED poster", this.c[1].n], ["Logo kutusu", "“" + this.c[2].n + "”"], ["Yanan", `${this.cnt}/3`]] }; },
+    readout() { return { status: this.cnt ? [T("Yanıyor"), true] : [T("İçerik değişiyor"), false], stats: [[T("Kumaş lightbox"), this.c[0].n], [T("LED poster"), this.c[1].n], [T("Logo kutusu"), "“" + this.c[2].n + "”"], [T("Yanan"), `${this.cnt}/3`]] }; },
   });
   /* 09 · KAYNAK ATÖLYESİ */
   const FRAMES = [
-    { n: "Totem iskeleti", seg: [[20, 20, 200, 20], [20, 100, 200, 100], [20, 20, 20, 100], [200, 20, 200, 100], [65, 20, 65, 100], [110, 20, 110, 100], [155, 20, 155, 100]], j: [[20, 20], [200, 20], [20, 100], [200, 100], [65, 20], [65, 100], [110, 20], [110, 100], [155, 20], [155, 100]] },
-    { n: "Pano çerçevesi", seg: [[14, 14, 206, 14], [14, 106, 206, 106], [14, 14, 14, 106], [206, 14, 206, 106], [14, 60, 206, 60], [14, 14, 110, 60], [110, 60, 206, 106]], j: [[14, 14], [206, 14], [14, 106], [206, 106], [14, 60], [206, 60], [110, 60]] },
+    { n: T("Totem iskeleti"), seg: [[20, 20, 200, 20], [20, 100, 200, 100], [20, 20, 20, 100], [200, 20, 200, 100], [65, 20, 65, 100], [110, 20, 110, 100], [155, 20, 155, 100]], j: [[20, 20], [200, 20], [20, 100], [200, 100], [65, 20], [65, 100], [110, 20], [110, 100], [155, 20], [155, 100]] },
+    { n: T("Pano çerçevesi"), seg: [[14, 14, 206, 14], [14, 106, 206, 106], [14, 14, 14, 106], [206, 14, 206, 106], [14, 60, 206, 60], [14, 14, 110, 60], [110, 60, 206, 106]], j: [[14, 14], [206, 14], [14, 106], [206, 106], [14, 60], [206, 60], [110, 60]] },
   ];
   def({
-    name: "Kaynak Atölyesi", short: "Kaynak", link: SITE + "/urunlerimiz/totem-tabela/", linkText: "Totem tabela →",
-    desc: "Totem ve pano iskeletleri çelik profilden kaynakla çatılır. Ustamız maskesini indirip dikiş dikiş ilerliyor.",
+    name: T("Kaynak Atölyesi"), short: T("Kaynak"), link: L("/urunlerimiz/totem-tabela/"), linkText: T("Totem tabela →"),
+    desc: T("Totem ve pano iskeletleri çelik profilden kaynakla çatılır. Ustamız maskesini indirip dikiş dikiş ilerliyor."),
     total: 12, stillT: 3,
     build(g) {
-      g.innerHTML = signSvg(this.no, "KAYNAK ATÖLYESİ") + `
+      g.innerHTML = signSvg(this.no, T("KAYNAK ATÖLYESİ")) + `
         <rect x="312" y="294" width="76" height="266" fill="#b91c1c" opacity=".2"/><path d="M324 294V560M338 294V560M352 294V560M366 294V560M380 294V560" stroke="#7f1d1d" stroke-width="1" opacity=".5"/>
         <g transform="translate(34 304)"><path d="M22 0 L44 38 H0 Z" fill="#facc15"/><text x="22" y="33" text-anchor="middle" font-family="Poppins, sans-serif" font-weight="800" font-size="20" fill="#111827">!</text></g>
-        <text x="86" y="326" font-family="Poppins, sans-serif" font-weight="700" font-size="11" fill="#facc15" letter-spacing="1.5">KAYNAK ALANI</text>
-        <text x="86" y="341" font-family="Poppins, sans-serif" font-size="9" fill="#94a3b8">maskesiz girmeyin</text>
+        <text x="86" y="326" font-family="Poppins, sans-serif" font-weight="700" font-size="11" fill="#facc15" letter-spacing="1.5">${T("KAYNAK ALANI")}</text>
+        <text x="86" y="341" font-family="Poppins, sans-serif" font-size="9" fill="#94a3b8">${T("maskesiz girmeyin")}</text>
         <ellipse class="amb" rx="130" ry="100" fill="url(#gArc)" opacity="0"/>
         <rect x="20" y="468" width="20" height="92" rx="9" fill="#15803d"/><rect x="25" y="460" width="10" height="10" fill="#475569"/>
         <rect x="46" y="514" width="46" height="46" rx="3" fill="#1d4ed8"/><circle cx="62" cy="530" r="6" fill="#0b1220"/><rect x="74" y="524" width="12" height="6" fill="#facc15"/>
@@ -1083,25 +1094,25 @@
       set(this.frm, "opacity", fo); set(this.beads, "opacity", fo);
     },
     readout() {
-      return { status: this.arcOn ? ["Kaynak yapıyor", true] : this.prog >= 1 ? ["İskelet hazır", false] : ["Sonraki dikişe geçiyor", true], stats: [["Parça", this.fr.n], ["Dikiş", `${this.nDone}/${this.plan.length}`], ["Yöntem", "Gazaltı"], ["Ark", this.arcOn ? "Açık" : "Kapalı"]] };
+      return { status: this.arcOn ? [T("Kaynak yapıyor"), true] : this.prog >= 1 ? [T("İskelet hazır"), false] : [T("Sonraki dikişe geçiyor"), true], stats: [[T("Parça"), this.fr.n], [T("Dikiş"), `${this.nDone}/${this.plan.length}`], [T("Yöntem"), T("Gazaltı")], [T("Ark"), this.arcOn ? T("Açık") : T("Kapalı")]] };
     },
   });
 
   /* 10 · KUTU HARF · LED TEST */
   const WORDS = [
     { w: "eymen", sub: "REKLAM", c: "#fffaf0", sc: "#fb923c", fs: 74, fw: 700 },
-    { w: "KAFE", sub: "& PASTANE", c: "#fde68a", sc: "#fffaf0", fs: 62, fw: 800 },
-    { w: "ECZANE", sub: "", c: "#ef4444", sc: "#ef4444", fs: 54, fw: 800 },
-    { w: "BERBER", sub: "SALON", c: "#e0f2fe", sc: "#38bdf8", fs: 54, fw: 800 },
-    { w: "MARKET", sub: "7/24 AÇIK", c: "#fffaf0", sc: "#4ade80", fs: 54, fw: 800 },
-    { w: "OPTİK", sub: "GÖZLÜK", c: "#c4b5fd", sc: "#fffaf0", fs: 60, fw: 800 },
+    { w: T("KAFE"), sub: T("& PASTANE"), c: "#fde68a", sc: "#fffaf0", fs: 62, fw: 800 },
+    { w: T("ECZANE"), sub: "", c: "#ef4444", sc: "#ef4444", fs: 54, fw: 800 },
+    { w: T("BERBER"), sub: T("SALON"), c: "#e0f2fe", sc: "#38bdf8", fs: 54, fw: 800 },
+    { w: T("MARKET"), sub: T("7/24 AÇIK"), c: "#fffaf0", sc: "#4ade80", fs: 54, fw: 800 },
+    { w: T("OPTİK"), sub: T("GÖZLÜK"), c: "#c4b5fd", sc: "#fffaf0", fs: 60, fw: 800 },
   ];
   def({
-    name: "Kutu Harf · LED test", short: "Kutu harf", link: SITE + "/urunlerimiz/kutu-harf-tabela/", linkText: "Kutu harf tabela →",
-    desc: "Montaja çıkmadan önce her harf atölyede yakılır, LED ve trafo kontrol edilir. Sonra İstanbul geneline kendi ekibimizle montaj.",
+    name: T("Kutu Harf · LED test"), short: T("Kutu harf"), link: L("/urunlerimiz/kutu-harf-tabela/"), linkText: T("Kutu harf tabela →"),
+    desc: T("Montaja çıkmadan önce her harf atölyede yakılır, LED ve trafo kontrol edilir. Sonra İstanbul geneline kendi ekibimizle montaj."),
     total: 10, stillT: 6,
     build(g) {
-      g.innerHTML = signSvg(this.no, "KUTU HARF · LED TEST") + `
+      g.innerHTML = signSvg(this.no, T("KUTU HARF · LED TEST")) + `
         <path d="M84 440 L62 560 M84 440 L106 560 M316 440 L294 560 M316 440 L338 560 M70 520 H98 M302 520 H330" stroke="#475569" stroke-width="6" stroke-linecap="round"/>
         <ellipse class="halo" cx="200" cy="372" rx="200" ry="90" fill="url(#gHalo)" opacity="0"/>
         <rect x="26" y="302" width="348" height="140" rx="4" fill="#161f30" stroke="#2a364c" stroke-width="2"/>
@@ -1118,7 +1129,7 @@
       this.ltr.innerHTML = "";
       this.faces = [];
       const y = this.v.sub ? 384 : 398;
-      for (const ch of this.v.w) {
+      for (const ch of DIL === "ar" ? [this.v.w] : this.v.w) {
         const cg = el("g", {}, this.ltr);
         const mk = (fill, dx) => { const t = el("text", { x: 200, y, fill, "font-size": this.v.fs, "font-weight": this.v.fw, transform: `translate(${dx} ${dx})` }, cg); t.textContent = ch; return t; };
         mk("#0b111c", 4); mk("#1f2937", 2);
@@ -1156,17 +1167,17 @@
       set(this.halo, "opacity", (cnt / this.tot).toFixed(2));
       set(this.psu, "opacity", this.testing ? 1 : 0.3);
     },
-    readout() { return { status: this.testing ? ["Test sürüyor", true] : ["Test tamam", false], stats: [["Tabela", this.v.w.toLocaleUpperCase("tr-TR")], ["Yanan", `${this.cnt}/${this.tot}`], ["Besleme", "12 V DC"], ["Garanti", "2 yıl"]] }; },
+    readout() { return { status: this.testing ? [T("Test sürüyor"), true] : [T("Test tamam"), false], stats: [[T("Tabela"), this.v.w.toLocaleUpperCase(LOC)], [T("Yanan"), `${this.cnt}/${this.tot}`], [T("Besleme"), "12 V DC"], [T("Garanti"), T("2 yıl")]] }; },
   });
 
   /* 11 · SHOWROOM · MONTAJ */
-  const SHOPS = [["LİMON KAFE", "#fde68a"], ["ECZANE", "#ef4444"], ["OPTİK", "#c4b5fd"], ["ÇİÇEK EVİ", "#f9a8d4"], ["PİDE SALONU", "#fdba74"], ["KUAFÖR", "#7dd3fc"], ["FIRIN", "#fef3c7"]];
+  const SHOPS = [[T("LİMON KAFE"), "#fde68a"], [T("ECZANE"), "#ef4444"], [T("OPTİK"), "#c4b5fd"], [T("ÇİÇEK EVİ"), "#f9a8d4"], [T("PİDE SALONU"), "#fdba74"], [T("KUAFÖR"), "#7dd3fc"], [TK("FIRIN (dükkân)", "FIRIN"), "#fef3c7"]];
   def({
-    name: "Showroom · Montaj", short: "Montaj", link: SITE + "/iletisim/", linkText: "Showroom'u ziyaret edin →",
-    desc: "Showroom'daki örnek cephede montaj ekibi tabelayı makaslı platformla yükseltip yerine sabitliyor, sonra yakıyor.",
+    name: T("Showroom · Montaj"), short: T("Montaj"), link: L("/iletisim/"), linkText: T("Showroom'u ziyaret edin →"),
+    desc: T("Showroom'daki örnek cephede montaj ekibi tabelayı makaslı platformla yükseltip yerine sabitliyor, sonra yakıyor."),
     total: 16, stillT: 12,
     build(g) {
-      g.innerHTML = signSvg(this.no, "SHOWROOM · MONTAJ") + `
+      g.innerHTML = signSvg(this.no, T("SHOWROOM · MONTAJ")) + `
         <rect x="170" y="290" width="222" height="8" fill="#273349"/><rect x="170" y="298" width="222" height="262" fill="#1c2638"/>
         <rect x="182" y="312" width="200" height="60" fill="#111a2b" stroke="#2c3a52" stroke-width="2"/>
         <rect x="190" y="392" width="184" height="164" fill="#0b1628"/>
@@ -1188,7 +1199,7 @@
       const t = this.t;
       const H = t < 1 ? 24 : t < 4.5 ? lerp(24, 162, ease(seg(t, 1, 4.5))) : t < 7.8 ? 162 : t < 11.3 ? lerp(162, 24, ease(seg(t, 7.8, 11.3))) : 24;
       this.H = H; this.prog = seg(t, 0, 7.8);
-      this.phase = t < 1 ? "Hazırlık" : t < 4.5 ? "Yükseliyor" : t < 5.7 ? "Yerleştiriyor" : t < 7.2 ? "Vidalıyor" : t < 7.8 ? "Elektrik" : t < 11.3 ? "İniyor" : "Tamam";
+      this.phase = t < 1 ? T("Hazırlık") : t < 4.5 ? T("Yükseliyor") : t < 5.7 ? T("Yerleştiriyor") : t < 7.2 ? T("Vidalıyor") : t < 7.8 ? T("Elektrik") : t < 11.3 ? T("İniyor") : T("Tamam");
       if (!vis) return;
       const py = 538 - H;
       set(this.plat, "transform", `translate(0 ${py.toFixed(1)})`);
@@ -1210,19 +1221,19 @@
       const reach = t > 4.5 && t < 7.4;
       this.man.pose(0, 0, { arms: reach ? -130 : t < 4.5 ? -60 : 0, armsB: reach ? -110 : t < 4.5 ? -60 : 0 });
     },
-    readout() { return { status: [this.phase, this.phase !== "Tamam"], stats: [["Tabela", this.shop[0]], ["Yükseklik", fmt(this.H * 0.025) + " m"], ["Adım", this.phase], ["Ekip", "2 kişi"]] }; },
+    readout() { return { status: [this.phase, this.phase !== T("Tamam")], stats: [[T("Tabela"), this.shop[0]], [T("Yükseklik"), fmt(this.H * 0.025) + " m"], [T("Adım"), this.phase], [T("Ekip"), T("2 kişi")]] }; },
   });
 
   /* EKİBİMİZ · 20 KİŞİ */
   def({
-    name: "Ekibimiz", short: "Ekip", link: SITE + "/hakkimizda/", linkText: "Hakkımızda →",
-    desc: "Tasarımdan montaja her adımda kendi ekibimiz çalışıyor. Arada bir hep birlikte size el sallıyorlar.",
+    name: T("Ekibimiz"), short: T("Ekip"), link: L("/hakkimizda/"), linkText: T("Hakkımızda →"),
+    desc: T("Tasarımdan montaja her adımda kendi ekibimiz çalışıyor. Arada bir hep birlikte size el sallıyorlar."),
     total: 10, stillT: 1.9,
     build(g) {
-      g.innerHTML = signSvg(this.no, "EKİBİMİZ") + `
+      g.innerHTML = signSvg(this.no, T("EKİBİMİZ")) + `
         <rect x="50" y="294" width="300" height="48" rx="4" fill="#f97316"/>
-        <text x="200" y="319" text-anchor="middle" ${PF} font-weight="800" font-size="17" fill="#fff" letter-spacing="1">EYMEN REKLAM EKİBİ</text>
-        <text x="200" y="334" text-anchor="middle" ${PF} font-weight="500" font-size="10" fill="#ffedd5">2000'den beri · Pendik</text>
+        <text x="200" y="319" text-anchor="middle" ${PF} font-weight="800" font-size="17" fill="#fff" letter-spacing="1">${T("EYMEN REKLAM EKİBİ")}</text>
+        <text x="200" y="334" text-anchor="middle" ${PF} font-weight="500" font-size="10" fill="#ffedd5">${T("2000'den beri · Pendik")}</text>
         <rect x="18" y="500" width="364" height="14" rx="2" fill="#334155"/><rect x="18" y="514" width="364" height="46" fill="#1e293b"/>
         <g class="back"></g><g class="front"></g>
         <g class="bub" opacity="0"><rect class="bb" y="-26" height="22" rx="11" fill="#fff"/><path d="M-5 -5 L0 4 L5 -5 Z" fill="#fff"/><text class="bt" y="-11" text-anchor="middle" ${PF} font-weight="700" font-size="11" fill="#0f172a"></text></g>`;
@@ -1238,7 +1249,7 @@
     },
     newCycle() {
       this.bubM = pick(this.team, this.bubM);
-      const msg = pick(["Hoş geldiniz!", "Merhaba!", "Teklif alın!", "Kolay gelsin!", "Selam!"]);
+      const msg = pick([T("Hoş geldiniz!"), T("Merhaba!"), T("Teklif alın!"), T("Kolay gelsin!"), T("Selam!")]);
       this.bt.textContent = msg;
       const w = msg.length * 6.6 + 18;
       this.bb.setAttribute("x", (-w / 2).toFixed(1)); this.bb.setAttribute("width", w.toFixed(1));
@@ -1264,18 +1275,18 @@
       set(this.bub, "opacity", show ? 1 : 0);
       if (show) set(this.bub, "transform", `translate(${b.x} ${(b.y - 100 * b.sc - 6).toFixed(1)})`);
     },
-    readout() { const s = this.waving ? "El sallıyor" : "Poz veriyor"; return { status: [s, true], stats: [["Kuruluş", "2000"], ["Tecrübe", `${DENEYIM} yıl`], ["Montaj", "Kendi ekibimiz"], ["Durum", s]] }; },
+    readout() { const s = this.waving ? T("El sallıyor") : T("Poz veriyor"); return { status: [s, true], stats: [[T("Kuruluş"), "2000"], [T("Tecrübe"), T("{0} yıl", DENEYIM)], [T("Montaj"), T("Kendi ekibimiz")], [T("Durum"), s]] }; },
   });
   /* SEVKİYAT · RAMPA */
   const TRUCKS = [
-    { n: "Kamyon", cab: "#f97316", t2: "REKLAM", sc: 1 },
-    { n: "Kamyonet", cab: "#1d4ed8", t2: "SEVKİYAT", sc: 0.84 },
-    { n: "Montaj kamyonu", cab: "#e2e8f0", t2: "MONTAJ", sc: 0.93 },
+    { n: T("Kamyon"), cab: "#f97316", t2: "REKLAM", sc: 1 },
+    { n: T("Kamyonet"), cab: "#1d4ed8", t2: T("SEVKİYAT"), sc: 0.84 },
+    { n: T("Montaj kamyonu"), cab: "#e2e8f0", t2: T("MONTAJ"), sc: 0.93 },
   ];
-  const DEST = ["Ankara", "İzmir", "Bursa", "Antalya", "Kocaeli", "Konya", "Adana", "Samsun", "Trabzon", "Kayseri", "Gaziantep", "Eskişehir"];
+  const DEST = [T("Ankara"), T("İzmir"), T("Bursa"), T("Antalya"), T("Kocaeli"), T("Konya"), T("Adana"), T("Samsun"), T("Trabzon"), T("Kayseri"), T("Gaziantep"), T("Eskişehir")];
   def({
-    key: "truck", name: "Sevkiyat · Rampa", short: "Sevkiyat", link: SITE + "/kurumsal-cozumler/", linkText: "Kurumsal çözümler →",
-    desc: "Biten işler kolilenip rampadan kamyona yüklenir, montaj ekibiyle birlikte Türkiye'nin dört bir yanına yola çıkar.",
+    key: "truck", name: T("Sevkiyat · Rampa"), short: T("Sevkiyat"), link: L("/kurumsal-cozumler/"), linkText: T("Kurumsal çözümler →"),
+    desc: T("Biten işler kolilenip rampadan kamyona yüklenir, montaj ekibiyle birlikte Türkiye'nin dört bir yanına yola çıkar."),
     total: 22, stillT: 9,
     build(g) {
       const wheel = (x) => `<g transform="translate(${x} -8)"><circle r="14" fill="#0b1220"/><circle r="6" fill="#94a3b8"/><path class="sp" d="M0 -6 V6 M-6 0 H6" stroke="#334155" stroke-width="2"/></g>`;
@@ -1284,7 +1295,7 @@
         <rect x="-2" y="132" width="100" height="10" fill="#273349"/>
         <rect x="12" y="396" width="72" height="104" fill="#3b3222"/><rect x="12" y="396" width="72" height="104" fill="#fde68a" opacity=".12"/>
         <path d="M12 396 H84" stroke="#475569" stroke-width="6"/>
-        <text x="48" y="386" text-anchor="middle" ${PF} font-weight="700" font-size="10" fill="#fdba74">RAMPA 2</text>
+        <text x="48" y="386" text-anchor="middle" ${PF} font-weight="700" font-size="10" fill="#fdba74">${T("RAMPA 2")}</text>
         <rect x="-2" y="500" width="100" height="60" fill="#334155"/>
         <path d="M-2 500 H98" stroke="#facc15" stroke-width="4" stroke-dasharray="10 10"/>
         <rect x="90" y="508" width="8" height="30" fill="#111827"/>
@@ -1304,8 +1315,8 @@
           <rect x="256" y="-44" width="6" height="8" rx="1" fill="#fef3c7"/>
           <rect class="rl" x="-4" y="-46" width="4" height="10" fill="#f8fafc" opacity="0"/><rect x="-4" y="-34" width="4" height="7" fill="#dc2626"/>
           ${wheel(34)}${wheel(62)}${wheel(226)}
-          <text class="bip" x="-6" y="-132" ${PF} font-weight="800" font-size="11" fill="#facc15" opacity="0">BİP BİP</text>
-        </g></g>` + signSvg(this.no, "SEVKİYAT · RAMPA", true);
+          <text class="bip" x="-6" y="-132" ${PF} font-weight="800" font-size="11" fill="#facc15" opacity="0">${T("BİP BİP")}</text>
+        </g></g>` + signSvg(this.no, T("SEVKİYAT · RAMPA"), true);
       Object.assign(this, { truck: q(g, ".truck"), tsc: q(g, ".tsc"), t2: q(g, ".t2"), inside: q(g, ".inside"), door: q(g, ".door"), cab: q(g, ".cab"), rl: q(g, ".rl"), bip: q(g, ".bip"), sps: [...g.querySelectorAll(".sp")] });
       this.puff = particles(q(g, ".puffs"), 24, { r: 5, color: ["#64748b", "#94a3b8"], spread: 1.2, speed: 30, g: -12, life: 1.1 });
       const bx = q(g, ".boxes");
@@ -1327,7 +1338,7 @@
       else if (T < 17) { const f = seg(T, 12.8, 17); tx = lerp(96, 760, f * f); drive = true; op = tx > 560 ? 1 - seg(tx, 560, 760) : 1; }
       else { tx = 760; op = 0; }
       this.loaded = this.boxes.filter((_, k) => T > 5.2 + k * 1.75 + 1.2 && T < 17.5).length;
-      this.phase = T < 4.5 ? "Rampaya yanaşıyor" : T < 12.2 ? "Yükleniyor" : T < 12.8 ? "Kapak kapanıyor" : T < 17 ? "Yola çıktı" : "Sıradaki araç";
+      this.phase = T < 4.5 ? TR("Rampaya yanaşıyor") : T < 12.2 ? TR("Yükleniyor") : T < 12.8 ? TR("Kapak kapanıyor") : T < 17 ? TR("Yola çıktı") : TR("Sıradaki araç");
       this.prog = seg(T, 0, 17);
       if (!vis) { this.ptx = tx; this.puff.step(0); return; }
       set(this.truck, "transform", `translate(${tx.toFixed(1)} 560)`); set(this.truck, "opacity", op.toFixed(2));
@@ -1355,13 +1366,14 @@
       set(this.man.g, "transform", `translate(${manX.toFixed(1)} 500) scale(${0.8 * this.mdir} .8)`);
       this.man.pose(this.mph, moving ? 22 : 0, carry ? { arms: -62, armsB: -58 } : {});
     },
-    readout() { return { status: [this.phase, this.phase !== "Sıradaki araç"], stats: [["Araç", this.v.n], ["Rota", "Pendik → " + this.dest], ["Yük", `${this.loaded}/4 koli`], ["Durum", this.phase]] }; },
+    readout() { return { status: [this.phase, this.phase !== T("Sıradaki araç")], stats: [[T("Araç"), this.v.n], [T("Rota"), T("Pendik → {0}", this.dest)], [T("Yük"), T("{0}/4 koli", this.loaded)], [T("Durum"), this.phase]] }; },
   });
   /* TOTEM MONTAJI · VİNÇ */
-  const TOTEMS = [{ w: "OTEL", c: "#fde68a" }, { w: "AVM", c: "#fb923c" }, { w: "PLAZA", c: "#7dd3fc" }, { w: "KAFE", c: "#fca5a5" }, { w: "SPA", c: "#c4b5fd" }];
+  // Totem harfleri dikey tek tek dizilir; Arapçada harf bitişmediği için sözlükte Latin yazım kullanılır (bağlamlı anahtar)
+  const TOTEMS = [{ w: TK("OTEL (totem)", "OTEL"), c: "#fde68a" }, { w: TK("AVM (totem)", "AVM"), c: "#fb923c" }, { w: TK("PLAZA (totem)", "PLAZA"), c: "#7dd3fc" }, { w: TK("KAFE (totem)", "KAFE"), c: "#fca5a5" }, { w: TK("SPA (totem)", "SPA"), c: "#c4b5fd" }];
   def({
-    name: "Totem Montajı · Vinç", short: "Totem", link: SITE + "/urunlerimiz/totem-tabela/", linkText: "Totem tabela →",
-    desc: "Büyük totemler vinçle kaldırılır ve beton temele ankrajla oturtulur. İşaretçi usta vinci el işaretiyle yönlendiriyor.",
+    name: T("Totem Montajı · Vinç"), short: T("Totem"), link: L("/urunlerimiz/totem-tabela/"), linkText: T("Totem tabela →"),
+    desc: T("Büyük totemler vinçle kaldırılır ve beton temele ankrajla oturtulur. İşaretçi usta vinci el işaretiyle yönlendiriyor."),
     total: 22, stillT: 18,
     build(g) {
       const wheel = (x) => `<circle cx="${x}" cy="540" r="13" fill="#0b1220"/><circle cx="${x}" cy="540" r="5" fill="#94a3b8"/>`;
@@ -1374,7 +1386,7 @@
         <rect x="18" y="520" width="182" height="14" fill="#111827"/>
         <path d="M18 520 V480 Q18 470 28 470 H58 Q64 470 64 478 V520 Z" fill="#f97316"/><path d="M24 478 H56 V498 H24 Z" fill="#1e3a5f"/>
         <rect x="64" y="500" width="136" height="20" fill="#ea580c"/>
-        <text x="146" y="514" text-anchor="middle" ${PF} font-weight="700" font-size="9" fill="#fff" letter-spacing="1.5">VİNÇ</text>
+        <text x="146" y="514" text-anchor="middle" ${PF} font-weight="700" font-size="9" fill="#fff" letter-spacing="1.5">${T("VİNÇ")}</text>
         ${wheel(46)}${wheel(150)}${wheel(178)}
         <rect x="96" y="482" width="34" height="20" rx="3" fill="#fb923c"/>
         <path class="cyl" stroke="#94a3b8" stroke-width="5" stroke-linecap="round"/>
@@ -1388,7 +1400,7 @@
           <rect x="-22" y="200" width="44" height="6" fill="#64748b"/></g>
         <g class="hook"><circle r="5" fill="#facc15"/><path d="M0 5 V12 Q0 18 -5 16" stroke="#facc15" stroke-width="2.5" fill="none"/></g>
         <circle class="bolt" r="5" fill="#fff" filter="url(#fGlowSm)" opacity="0"/>
-        <g class="crew"></g>` + signSvg(this.no, "TOTEM MONTAJI · VİNÇ", true);
+        <g class="crew"></g>` + signSvg(this.no, T("TOTEM MONTAJI · VİNÇ"), true);
       Object.assign(this, { spot: q(g, ".spot"), cyl: q(g, ".cyl"), b1: q(g, ".b1"), b2: q(g, ".b2"), cbl: q(g, ".cbl"), tot: q(g, ".tot"), sl: q(g, ".sl"), lc: q(g, ".lc"), tl: q(g, ".tl"), hook: q(g, ".hook"), bolt: q(g, ".bolt") });
       const crew = q(g, ".crew");
       this.sig = person(crew, { shirt: "#1e3a8a", vest: "#facc15", helmet: "#f8fafc", skin: SKIN[1] });
@@ -1415,7 +1427,7 @@
       else { att = false; tip = K2(SET, REST, ease(seg(T, 14.5, 17.5))); hook = { x: tip.x, y: tip.y + lerp(196, 20, seg(T, 14.5, 15.8)) }; }
       this.hy = hook.y;
       const lit = T > 15.5 && T < 20.8 && !(T < 15.9 && Math.sin(T * 60) < 0);
-      this.phase = T < 2 ? "Bom kalkıyor" : T < 4 ? "Kanca bağlanıyor" : T < 8 ? "Kaldırıyor" : T < 11 ? "Taşıyor" : T < 13 ? "İndiriyor" : T < 14.5 ? "Ankraj vidalanıyor" : T < 15.5 ? "Kanca çözüldü" : T < 20.8 ? "Totem yanıyor" : "Sıradaki totem";
+      this.phase = T < 2 ? TR("Bom kalkıyor") : T < 4 ? TR("Kanca bağlanıyor") : T < 8 ? TR("Kaldırıyor") : T < 11 ? TR("Taşıyor") : T < 13 ? TR("İndiriyor") : T < 14.5 ? TR("Ankraj vidalanıyor") : T < 15.5 ? TR("Kanca çözüldü") : T < 20.8 ? TR("Totem yanıyor") : TR("Sıradaki totem");
       this.prog = seg(T, 0, 15.5);
       if (!vis) return;
       const pv = { x: 112, y: 484 }, mid = K2(pv, tip, 0.55), m2 = K2(pv, tip, 0.5), c3 = K2(pv, tip, 0.3);
@@ -1439,7 +1451,7 @@
       this.sig.pose(0, 0, crane ? { arms: -150 + wv, armsB: T > 8 && T < 13 ? -90 : 10 } : { arms: 4, armsB: -4 });
       this.rig.pose(0, 0, T > 12 && T < 14.6 ? { arms: -40 + Math.sin(T * 20) * 6, armsB: -30 } : T > 15.5 && T < 17 ? { arms: -155 + wv, armsB: 6 } : { arms: 2, armsB: -2 });
     },
-    readout() { return { status: [this.phase, this.phase !== "Sıradaki totem"], stats: [["Totem", this.v.w], ["Kanca", fmt(Math.max(0, (560 - this.hy) * 0.03)) + " m"], ["Adım", this.phase], ["Temel", "Beton · ankraj"]] }; },
+    readout() { return { status: [this.phase, this.phase !== T("Sıradaki totem")], stats: [[T("Totem"), this.v.w], [T("Kanca"), fmt(Math.max(0, (560 - this.hy) * 0.03)) + " m"], [T("Adım"), this.phase], [T("Temel"), T("Beton · ankraj")]] }; },
   });
   /* ---------- Sahne kurulumu ---------- */
   const N = stations.length, W = N * SW;
@@ -1528,7 +1540,7 @@
     const z = el("text", { x: 14, y: -20, "font-family": "Poppins, sans-serif", "font-weight": 700, "font-size": 10, fill: "#e2e8f0" }, sleep); z.textContent = "z";
     Object.assign(cat, { g, walk, sit, sleep, legs, tail, z, sitHead });
   }
-  const CAT_TXT = { walk: "Geziniyor", run: "Kaçıyor!", sit: "Oturuyor", sleep: "Uyuyor", follow: "Peşinde", catch: "Koşarak geliyor" };
+  const CAT_TXT = { walk: T("Geziniyor"), run: T("Kaçıyor!"), sit: T("Oturuyor"), sleep: T("Uyuyor"), follow: T("Peşinde"), catch: T("Koşarak geliyor") };
 
   /* ---------- Kamera ---------- */
   let camX = 0, vw = 1600, aspect = 2.5, sel = -1, manualUntil = 0, now = 0, vb = 690;
@@ -1621,7 +1633,7 @@
   /* ---------- Konsol ---------- */
   const tabsEl = $("uh-tabs");
   const mkTab = (i, no, label) => { const b = document.createElement("button"); b.type = "button"; b.className = "station-tab"; b.dataset.st = i; b.setAttribute("aria-pressed", i === -1 ? "true" : "false"); b.innerHTML = `<span class="no">${no}</span>${label}` + (i >= 0 ? `<span class="mini"><i></i></span>` : ""); tabsEl.appendChild(b); return b; };
-  const tabs = [mkTab(-1, "00", "Tüm atölye"), ...stations.map((s, i) => mkTab(i, String(i + 1).padStart(2, "0"), s.short))];
+  const tabs = [mkTab(-1, "00", T("Tüm atölye")), ...stations.map((s, i) => mkTab(i, String(i + 1).padStart(2, "0"), s.short))];
   const minis = stations.map((_, i) => q(tabs[i + 1], ".mini i"));
   const roTitle = $("uh-roTitle"), roStatus = $("uh-roStatus"), roDesc = $("uh-roDesc"), roBar = $("uh-roBar"), roLink = $("uh-roLink");
   const cells = [...$("uh-roStats").children].map((d) => ({ dt: d.querySelector("dt"), dd: d.querySelector("dd") }));
@@ -1640,10 +1652,10 @@
   const GUN = { Mon: 1, Tue: 2, Wed: 3, Thu: 4, Fri: 5, Sat: 6, Sun: 0 };
   function mesai(h, m) {
     const g = GUN[GF.format(new Date())], dk = h * 60 + m, isGunu = g >= 1 && g <= 5;
-    if (isGunu && dk >= ACILIS && dk < KAPANIS) return [`Açığız · ${saatYaz(KAPANIS)}'a kadar`, true];
+    if (isGunu && dk >= ACILIS && dk < KAPANIS) return [T("Açığız · {0}'a kadar", saatYaz(KAPANIS)), true];
     const bugunAcilacak = isGunu && dk < ACILIS;
-    const ne = bugunAcilacak ? "bugün" : g >= 1 && g <= 4 ? "yarın" : "pazartesi";
-    return [`Şu an kapalıyız · ${ne} ${saatYaz(ACILIS)}`, false];
+    const ne = bugunAcilacak ? T("bugün") : g >= 1 && g <= 4 ? T("yarın") : T("pazartesi");
+    return [T("Şu an kapalıyız · {0} {1}", ne, saatYaz(ACILIS)), false];
   }
   let lastNear = -2, shownKey = null;
   // Sekme şeridini kendiliğinden kaydırma: ilk kullanıcı etkileşimine ya da 6 sn'ye kadar bekler
@@ -1662,18 +1674,22 @@
       lastNear = near;
       tabs.forEach((b, i) => b.classList.toggle("now", sel < 0 && i - 1 === near));
       const b = tabs[near + 1];
-      if (sel < 0 && b && tabsAutoOK && performance.now() > tabsManualUntil) tabsEl.scrollTo({ left: b.offsetLeft - tabsEl.clientWidth / 2 + b.clientWidth / 2, behavior: reduce ? "auto" : "smooth" });
+      if (sel < 0 && b && tabsAutoOK && performance.now() > tabsManualUntil) {
+        // Yön bağımsız ortalama: RTL'de scrollLeft negatif olduğu için offsetLeft hesabı bozulur
+        const tr_ = tabsEl.getBoundingClientRect(), br = b.getBoundingClientRect();
+        tabsEl.scrollBy({ left: (br.left + br.width / 2) - (tr_.left + tr_.width / 2), behavior: reduce ? "auto" : "smooth" });
+      }
     }
     const [h, m, s] = istTime();
     stations[0].tickClock(h, m, s);
     if (sel < 0) {
       const ns = stations[near];
       const key = "all" + near;
-      if (shownKey !== key) { shownKey = key; txt(roTitle, "Atölye turu"); txt(roDesc, `Atölyemizin temsili turu; şu an ${ns.name.split(" ·")[0]} önündeyiz. Sürükleyerek gezinebilir, bir istasyona dokunup yakından izleyebilirsiniz.`); setLink(ns); }
+      if (shownKey !== key) { shownKey = key; txt(roTitle, T("Atölye turu")); txt(roDesc, T("Atölyemizin temsili turu; şu an {0} önündeyiz. Sürükleyerek gezinebilir, bir istasyona dokunup yakından izleyebilirsiniz.", ns.name.split(" ·")[0])); setLink(ns); }
       const [ms, acik] = mesai(h, m);
       txt(roStatus, ms); roStatus.classList.toggle("idle", !acik);
       const r = ns.readout();
-      [["Şu an", r.status[0]], ["Kedi", cat.status], ["İstasyon", `${near + 1} / ${N}`], ["Mesai (Pzt–Cum)", `${saatYaz(ACILIS)}–${saatYaz(KAPANIS)}`]].forEach((c, i) => { txt(cells[i].dt, c[0]); txt(cells[i].dd, c[1]); });
+      [[T("Şu an"), r.status[0]], [T("Kedi"), cat.status], [T("İstasyon"), `${near + 1} / ${N}`], [T("Mesai (Pzt–Cum)"), `${saatYaz(ACILIS)}–${saatYaz(KAPANIS)}`]].forEach((c, i) => { txt(cells[i].dt, c[0]); txt(cells[i].dd, c[1]); });
       roBar.style.width = (clamp(ns.prog, 0, 1) * 100).toFixed(1) + "%";
       return;
     }
@@ -1738,8 +1754,8 @@
     if (!pauseBtn) return;
     pauseBtn.hidden = reduce;
     pauseBtn.setAttribute("aria-pressed", String(paused));
-    pauseBtn.setAttribute("aria-label", paused ? "Animasyonu oynat" : "Animasyonu durdur");
-    const t = pauseBtn.querySelector(".t"); if (t) t.textContent = paused ? "Oynat" : "Durdur";
+    pauseBtn.setAttribute("aria-label", paused ? T("Animasyonu oynat") : T("Animasyonu durdur"));
+    const t = pauseBtn.querySelector(".t"); if (t) t.textContent = paused ? T("Oynat") : T("Durdur");
   };
   if (pauseBtn) pauseBtn.addEventListener("click", () => {
     paused = !paused;

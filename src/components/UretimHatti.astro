@@ -4,13 +4,49 @@
 // JS'in oluşturduğu elemanlara Astro'nun scoped class'ı ulaşmadığı için stiller
 // #uretim-hatti altında global yazıldı (site stilleriyle çakışmasın diye hepsi bu kapsamda).
 // Mesai saati ve tecrübe yılı site-data.ts'ten data-* ile betiğe geçer (tek kaynak).
+// Çok dilli: dil="en"|"ar" verilirse betiğin metin sözlüğü (i18n/atolye.ts) ve TR yol → o dilin yolu
+// haritası sayfaya JSON olarak basılır (#uh-dil). TR sayfasına hiçbir şey eklenmez.
 import { company, hours } from '../lib/site-data';
+import { yol, hizmetYolu } from '../i18n';
+import type { Dil } from '../i18n';
+import { ATOLYE_SOZLUK } from '../i18n/atolye';
+
+interface Props { dil?: Dil }
+const { dil = 'tr' } = Astro.props;
+
+const METIN = {
+  tr: { etiket: 'ÜRETİM ATÖLYEMİZ', ipucu: 'Sürükleyin · makineye tıklayın', sahne: 'Eymen Reklam atölyesi: tasarım ofisi, branda ve bez baskı, folyo kesim, araç giydirme, lightbox, ekip, sevkiyat, vinçle totem montajı, CNC, lazer, harf bükme, vakum, UV baskı, kaynak, kutu harf LED testi ve showroom montajı. Ekip çalışıyor, bir kedi dolaşıyor.', sekmeler: 'İstasyon seç', baslik: 'Atölye', tumu: 'Tüm hizmetler →', durdur: 'Durdur', durdurEtiket: 'Animasyonu durdur', foto: 'Eymen Reklam Pendik üretim tesisi' },
+  en: { etiket: 'OUR PRODUCTION WORKSHOP', ipucu: 'Drag · click a machine', sahne: 'Eymen Reklam workshop: design office, banner and fabric printing, vinyl cutting, vehicle wrapping, lightboxes, the team, dispatch, crane installation of a pylon sign, CNC, laser, letter bending, vacuum forming, UV printing, welding, channel letter LED testing and showroom assembly. The team is at work and a cat wanders around.', sekmeler: 'Choose a station', baslik: 'Workshop', tumu: 'All services →', durdur: 'Pause', durdurEtiket: 'Pause animation', foto: 'Eymen Reklam production facility in Pendik, Istanbul' },
+  ar: { etiket: 'ورشة الإنتاج لدينا', ipucu: 'اسحب · انقر على آلة', sahne: 'ورشة إيمن ريكلام: مكتب التصميم، طباعة البانر والقماش، قص الفينيل، تغليف المركبات، اللوحات المضيئة، الفريق، الشحن، تركيب لوحة توتيم بالرافعة، CNC، الليزر، ثني الحروف، التشكيل بالتفريغ، طباعة UV، اللحام، اختبار LED للحروف المجسمة وتركيب صالة العرض. الفريق يعمل وقطة تتجول.', sekmeler: 'اختر محطة', baslik: 'الورشة', tumu: 'جميع الخدمات ←', durdur: 'إيقاف', durdurEtiket: 'إيقاف الحركة', foto: 'منشأة إنتاج إيمن ريكلام في بنديك، إسطنبول' },
+}[dil];
+
+// Betikteki TR yolları → bu dilin sayfaları. Ürün sayfaları yalnız TR'de var (SADECE_TR) → üst hizmete gider.
+const paket = dil === 'tr' ? null : JSON.stringify({
+  t: ATOLYE_SOZLUK[dil],
+  l: {
+    '/hizmetlerimiz/': yol(dil, 'hizmetler'),
+    '/hizmetlerimiz/grafik-tasarim/': hizmetYolu(dil, 'grafik-tasarim'),
+    '/hizmetlerimiz/bez-baski/': hizmetYolu(dil, 'bez-baski'),
+    '/hizmetlerimiz/folyo-giydirme/': hizmetYolu(dil, 'folyo-giydirme'),
+    '/hizmetlerimiz/tabela/': hizmetYolu(dil, 'tabela'),
+    '/hizmetlerimiz/uv-baski/': hizmetYolu(dil, 'uv-baski'),
+    '/urunlerimiz/komple-arac-kaplama/': hizmetYolu(dil, 'folyo-giydirme'),
+    '/urunlerimiz/kutu-harf-tabela/': hizmetYolu(dil, 'tabela'),
+    '/urunlerimiz/isikli-blok-tabela/': hizmetYolu(dil, 'tabela'),
+    '/urunlerimiz/lightbox-pano/': hizmetYolu(dil, 'tabela'),
+    '/urunlerimiz/totem-tabela/': hizmetYolu(dil, 'tabela'),
+    '/iletisim/': yol(dil, 'iletisim'),
+    '/hakkimizda/': yol(dil, 'hakkimizda'),
+    '/kurumsal-cozumler/': yol(dil, 'referanslar'),   // EN/AR'da kurumsal çözümler sayfası yok
+  },
+}).replace(/</g, '\\u003c');
 ---
-<div id="uretim-hatti" data-acilis={hours.open} data-kapanis={hours.close} data-deneyim={String(company.experience)}>
+<div id="uretim-hatti" data-dil={dil} data-acilis={hours.open} data-kapanis={hours.close} data-deneyim={String(company.experience)}>
+  {paket && <script is:inline type="application/json" id="uh-dil" set:html={paket} />}
   <div class="stage-view" id="uh-view">
-    <span class="live-tag"><i></i>ÜRETİM ATÖLYEMİZ</span>
-    <span class="hint">Sürükleyin · makineye tıklayın</span>
-    <svg id="uh-scene" viewBox="0 50 1600 640" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Eymen Reklam atölyesi: tasarım ofisi, branda ve bez baskı, folyo kesim, araç giydirme, lightbox, ekip, sevkiyat, vinçle totem montajı, CNC, lazer, harf bükme, vakum, UV baskı, kaynak, kutu harf LED testi ve showroom montajı. Ekip çalışıyor, bir kedi dolaşıyor.">
+    <span class="live-tag"><i></i>{METIN.etiket}</span>
+    <span class="hint">{METIN.ipucu}</span>
+    <svg id="uh-scene" viewBox="0 50 1600 640" preserveAspectRatio="xMidYMid slice" role="img" aria-label={METIN.sahne}>
       <defs>
         <linearGradient id="gWall" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#0c1322"/><stop offset="1" stop-color="#121b2e"/></linearGradient>
         <linearGradient id="gFloor" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#172033"/><stop offset="1" stop-color="#0a0f19"/></linearGradient>
@@ -45,10 +81,10 @@ import { company, hours } from '../lib/site-data';
   </div>
 
   <div class="console">
-    <div class="tabs" id="uh-tabs" role="group" aria-label="İstasyon seç"></div>
+    <div class="tabs" id="uh-tabs" role="group" aria-label={METIN.sekmeler}></div>
     <div class="readout">
-      <div class="ro-head"><strong id="uh-roTitle">Atölye</strong><span class="ro-status" id="uh-roStatus"></span>
-        <button type="button" class="uh-pause" id="uh-pause" aria-pressed="false" aria-label="Animasyonu durdur"><svg viewBox="0 0 16 16" aria-hidden="true"><path class="i-dur" d="M4 3h3v10H4zM9 3h3v10H9z"/><path class="i-oyn" d="M5 3l8 5-8 5z"/></svg><span class="t">Durdur</span></button>
+      <div class="ro-head"><strong id="uh-roTitle">{METIN.baslik}</strong><span class="ro-status" id="uh-roStatus"></span>
+        <button type="button" class="uh-pause" id="uh-pause" aria-pressed="false" aria-label={METIN.durdurEtiket}><svg viewBox="0 0 16 16" aria-hidden="true"><path class="i-dur" d="M4 3h3v10H4zM9 3h3v10H9z"/><path class="i-oyn" d="M5 3l8 5-8 5z"/></svg><span class="t">{METIN.durdur}</span></button>
       </div>
       <p class="ro-desc" id="uh-roDesc"></p>
       <dl class="stats" id="uh-roStats">
@@ -56,12 +92,12 @@ import { company, hours } from '../lib/site-data';
       </dl>
       <div class="ro-foot">
         <div class="bar" aria-hidden="true"><i id="uh-roBar"></i></div>
-        <a class="ro-link" id="uh-roLink" href="/hizmetlerimiz/">Tüm hizmetler →</a>
+        <a class="ro-link" id="uh-roLink" href={dil === 'tr' ? '/hizmetlerimiz/' : yol(dil, 'hizmetler')}>{METIN.tumu}</a>
       </div>
     </div>
   </div>
   <noscript>
-    <img src="/images/yenifabrika-opt.webp" alt="Eymen Reklam Pendik üretim tesisi" width="1920" height="742" loading="lazy" style="display:block;width:100%;height:auto" />
+    <img src="/images/yenifabrika-opt.webp" alt={METIN.foto} width="1920" height="742" loading="lazy" style="display:block;width:100%;height:auto" />
   </noscript>
 </div>
 
@@ -76,6 +112,12 @@ import { company, hours } from '../lib/site-data';
     border: 1px solid var(--uh-line); border-radius: 18px; overflow: hidden; background: #070b14; color: #f1f5f9;
   }
   #uretim-hatti .stage-view { position: relative; aspect-ratio: 5 / 2; max-width: 100%; }
+  /* Arapça: konsol yazıları Cairo ile (Poppins/mono'da Arapça glif yok); sahne SVG'si yönden bağımsız */
+  #uretim-hatti[data-dil="ar"] .station-tab, #uretim-hatti[data-dil="ar"] .uh-pause, #uretim-hatti[data-dil="ar"] .live-tag, #uretim-hatti[data-dil="ar"] .hint { font-family: "Cairo", system-ui, sans-serif; letter-spacing: 0; }
+  #uretim-hatti[data-dil="ar"] .ro-status, #uretim-hatti[data-dil="ar"] .stats dd { font-family: "Cairo", var(--uh-mono); letter-spacing: 0; }
+  #uretim-hatti[data-dil="ar"] .stats dt { letter-spacing: 0; }
+  /* Yalnız rakamdan oluşan değerler ("08:30–18:30", "1 / 17") RTL akışında ters dizilmesin: her değer kendi yönünü alır */
+  #uretim-hatti[data-dil="ar"] .stats dd { unicode-bidi: plaintext; text-align: right; }
   @media (max-width: 719px) { #uretim-hatti .stage-view { aspect-ratio: 1 / 1; } }
   #uretim-hatti .stage-view svg { position: absolute; inset: 0; width: 100%; height: 100%; display: block; touch-action: pan-y pinch-zoom; cursor: grab; user-select: none; -webkit-user-select: none; }
   #uretim-hatti .stage-view svg.dragging { cursor: grabbing; }
@@ -95,7 +137,7 @@ import { company, hours } from '../lib/site-data';
   #uretim-hatti .station-tab:hover { background: #131d31; color: #fff; }
   #uretim-hatti .station-tab:focus-visible { outline: 3px solid var(--uh-orange-300); outline-offset: 2px; }
   #uretim-hatti .station-tab.now { color: #fff; }
-  #uretim-hatti .station-tab.now::after { content: ""; position: absolute; top: 6px; right: 6px; width: 6px; height: 6px; border-radius: 50%; background: var(--uh-orange); }
+  #uretim-hatti .station-tab.now::after { content: ""; position: absolute; top: 6px; inset-inline-end: 6px; width: 6px; height: 6px; border-radius: 50%; background: var(--uh-orange); }
   #uretim-hatti .station-tab[aria-pressed="true"] { background: rgba(249,115,22,.12); border-color: rgba(249,115,22,.45); color: #fff; }
   #uretim-hatti .station-tab[aria-pressed="true"] .no { color: var(--uh-orange-300); }
 
@@ -116,7 +158,7 @@ import { company, hours } from '../lib/site-data';
   #uretim-hatti .bar i { display: block; height: 100%; width: 0; background: linear-gradient(90deg, #ea580c, var(--uh-orange-300)); }
   #uretim-hatti .ro-link { color: var(--uh-orange-300); font-weight: 600; font-size: 14px; text-decoration: none; }
   #uretim-hatti .ro-link:hover { text-decoration: underline; }
-  #uretim-hatti .uh-pause { margin-left: auto; appearance: none; display: inline-flex; align-items: center; gap: 7px; background: transparent; color: #cbd5e1; border: 1px solid var(--uh-line); border-radius: 999px; padding: 6px 12px; font: 500 12px/1 "Poppins", system-ui, sans-serif; cursor: pointer; }
+  #uretim-hatti .uh-pause { margin-inline-start: auto; appearance: none; display: inline-flex; align-items: center; gap: 7px; background: transparent; color: #cbd5e1; border: 1px solid var(--uh-line); border-radius: 999px; padding: 6px 12px; font: 500 12px/1 "Poppins", system-ui, sans-serif; cursor: pointer; }
   #uretim-hatti .uh-pause:hover { color: #fff; border-color: #33415c; }
   #uretim-hatti .uh-pause:focus-visible { outline: 3px solid var(--uh-orange-300); outline-offset: 2px; }
   #uretim-hatti .uh-pause svg { width: 12px; height: 12px; fill: currentColor; }

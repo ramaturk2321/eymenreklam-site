@@ -1,5 +1,6 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
+import UretimHatti from '../../components/UretimHatti.astro';
 import { srcset, boyut, SIZES } from '../../lib/gorsel';
 import { getCollection } from 'astro:content';
 import { company, contact } from '../../lib/site-data';
@@ -48,40 +49,50 @@ const makineler = [
   sayfa="ana"
 >
 
-  <!-- Hero -->
-  <section class="relative bg-koyu-900 overflow-hidden">
-    <img
-      src="/images/tabela-imalat.webp"
-      srcset={srcset('/images/tabela-imalat.webp')}
-      sizes="100vw"
-      {...boyut('/images/tabela-imalat.webp')}
-      alt=""
-      class="absolute inset-0 w-full h-full object-cover opacity-40"
-      loading="eager"
-      fetchpriority="high"
-      decoding="async"
-    />
-    <div class="absolute inset-0 bg-gradient-to-r from-koyu-900 via-koyu-900/85 to-koyu-900/40"></div>
-    <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-28 pb-16 md:pt-36 md:pb-24">
-      <div class="max-w-3xl">
-        <p class="text-eymen-400 text-sm font-semibold tracking-wider mb-4">SIGNAGE &amp; LARGE-FORMAT PRINTING · ISTANBUL · SINCE 2000</p>
-        <h1 class="text-3xl md:text-5xl font-extrabold text-white mb-5 leading-tight">
-          Signage and printing, produced in our own facility in Istanbul
+  <!-- ========== HERO · ÜRETİM ATÖLYESİ ========== -->
+  <!-- TR ana sayfayla aynı düzen (src/pages/index.astro): başlık → sahne → metin/düğmeler → kanıt şeridi.
+       H1'de slide-up YOK (LCP). Kanıt şeridi rakamları TR ile aynı; birini değiştirirsen hepsini değiştir. -->
+  <section class="relative bg-[#0a0f1a] overflow-hidden" id="hero">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-8 md:pt-16 pb-10 md:pb-14 grid gap-6 lg:grid-cols-12 lg:gap-x-12 lg:gap-y-9 lg:items-end">
+      <div class="lg:col-span-7">
+        <p class="text-eymen-400 text-xs sm:text-sm md:text-base font-semibold tracking-widest mb-3 md:mb-4">OUR OWN 2,500 m² PRODUCTION FACILITY IN ISTANBUL · SINCE 2000</p>
+        <h1 class="text-[2rem] leading-[1.15] sm:text-4xl md:text-5xl md:leading-tight font-extrabold text-white">
+          Corporate Signage and<br/>
+          <span class="text-eymen-500">Advertising Production</span>
+          <span class="block mt-3 md:mt-4 text-lg sm:text-xl md:text-2xl font-semibold text-koyu-300 leading-snug">Signage manufacturing <span class="text-eymen-500" aria-hidden="true">·</span> UV, banner, vinyl and fabric printing</span>
         </h1>
-        <p class="text-koyu-200 text-base md:text-lg leading-relaxed mb-8">
-          Channel letters, pylon signs, UV flatbed printing, banners, vehicle wrapping and complete retail
-          fit-outs. We design, manufacture and install with our own team — and we work in English with head
-          offices, international brands and clients shipping abroad.
+      </div>
+      <div class="order-3 lg:order-2 lg:col-span-5">
+        <p class="text-lg md:text-xl font-bold text-white mb-3">Printing, cutting and installation in our own workshop.</p>
+        <p class="text-base md:text-lg text-koyu-300 mb-6">
+          We produce corporate projects in our Istanbul facility and install them with our own team — and we work in English with head offices, international brands and clients shipping abroad.
         </p>
-        <div class="flex flex-col sm:flex-row gap-3">
-          <a href={yol('en', 'teklif')} class="inline-flex items-center justify-center gap-2 bg-eymen-500 hover:bg-eymen-600 text-white px-7 py-4 rounded-xl text-base font-bold transition-all hover:shadow-lg hover:shadow-eymen-500/25">
+        <div class="flex flex-col sm:flex-row sm:flex-wrap gap-4">
+          <a href={yol('en', 'teklif')} class="inline-flex items-center justify-center gap-2 bg-eymen-500 hover:bg-eymen-600 text-white px-6 lg:px-5 py-4 rounded-lg text-base lg:text-[15px] font-bold whitespace-nowrap transition-all hover:shadow-xl hover:shadow-eymen-500/30">
             Request a Quote
             <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
           </a>
-          <a href={waUrl} target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center gap-2 bg-green-600 hover:bg-green-700 text-white px-7 py-4 rounded-xl text-base font-bold transition-all">
+          <a href={waUrl} target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center gap-2 border-2 border-white/30 hover:border-white text-white px-6 lg:px-5 py-4 rounded-lg text-base lg:text-[15px] font-semibold whitespace-nowrap transition-all hover:bg-white/10">
             Message Us on WhatsApp
           </a>
         </div>
+      </div>
+      <dl class="order-4 lg:order-3 lg:col-span-12 grid grid-cols-2 md:grid-cols-5 gap-px bg-white/10 border border-white/10 rounded-xl overflow-hidden" aria-label="Our production facility">
+        {[
+          ['4×2 m', 'UV flatbed print area'],
+          ['3 × 320 cm', 'Banner and fabric printers'],
+          ['1,500 m²', 'Daily print capacity'],
+          ['CNC · Laser', 'Cutting, welding, letter bending'],
+          ['Own team', 'Installation across Istanbul'],
+        ].map(([deger, etiket], i) => (
+          <div class={`bg-[#0d1422] px-4 py-3 md:py-4 flex flex-col-reverse ${i === 4 ? 'col-span-2 md:col-span-1' : ''}`}>
+            <dt class="text-koyu-300 text-xs md:text-sm mt-1">{etiket}</dt>
+            <dd class="text-white font-extrabold text-lg md:text-xl leading-tight">{deger}</dd>
+          </div>
+        ))}
+      </dl>
+      <div class="order-2 lg:order-4 lg:col-span-12 min-w-0">
+        <UretimHatti dil="en" />
       </div>
     </div>
   </section>
