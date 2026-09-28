@@ -126,11 +126,11 @@ const categories = [
   }
 ];
 
-// Hero altındaki 3 ana hizmet kartı (19 Eyl 2026: UV ve branda öne çıkarma kararı)
+// Hero altındaki 3 ana hizmet kartı (19 Eyl 2026: UV ve branda öne çıkarma kararı; 28 Eyl: görseller gerçek proje fotoğraflarıyla değişti)
 const anaHizmetler = [
-  { href: '/hizmetlerimiz/tabela/', img: '/images/projeler/meydan-avm-1.webp', alt: 'Meydan AVM cephe tabelası', etiket: 'İMALAT + MONTAJ', title: 'Tabela İmalatı', desc: 'Kutu harf, totem, ışıklı ve çatı tabelası. Keşiften montaja kendi ekibimizle.' },
-  { href: '/hizmetlerimiz/uv-baski/', img: '/images/urunler/uv-flatbed-1.webp', alt: '4x2 m UV flatbed baskı makinesi başında Eymen Reklam ekibi', etiket: '4x2 m FLATBED', title: 'UV Baskı', desc: 'Cam, ahşap, metal, pleksi ve kompozite doğrudan baskı. Kesim ve montaj dâhil.' },
-  { href: '/hizmetlerimiz/bez-baski/', img: '/images/projeler/zuber-padel-izmir-1.webp', alt: 'Züber Padel kort çevresi baskılı branda', etiket: '320 cm KENDİ TESİSİMİZDE', title: 'Branda & Bez Baskı', desc: 'Cephe brandası, mesh, pankart ve bez afiş. Kuşgözü, kaynak ve montaj bizden.' },
+  { href: '/hizmetlerimiz/tabela/', img: '/images/projeler/tevfik-usta-5.webp', pos: '50% 70%', alt: 'Tevfik Usta – Özlem Kebap cephesinde Eymen Reklam imalatı ışıklı kutu harf tabela', etiket: 'İMALAT + MONTAJ', title: 'Tabela İmalatı', desc: 'Kutu harf, totem, ışıklı ve çatı tabelası. Keşiften montaja kendi ekibimizle.' },
+  { href: '/hizmetlerimiz/uv-baski/', img: '/images/projeler/uv-baski-08.webp', pos: '50% 100%', alt: 'Eymen Reklam atölyesinde 4x2 m UV flatbed makinesinde UV lambasıyla baskı anı', etiket: '4x2 m FLATBED', title: 'UV Baskı', desc: 'Cam, ahşap, metal, pleksi ve kompozite doğrudan baskı. Kesim ve montaj dâhil.' },
+  { href: '/hizmetlerimiz/bez-baski/', img: '/images/projeler/kiler-gyo-referans-pendik-2.webp', pos: '35% 50%', alt: 'Kiler GYO Referans Pendik satış ofisi cephesinde Eymen Reklam baskılı branda', etiket: '320 cm KENDİ TESİSİMİZDE', title: 'Branda & Bez Baskı', desc: 'Cephe brandası, mesh, pankart ve bez afiş. Kuşgözü, kaynak ve montaj bizden.' },
 ];
 
 const stats = [
@@ -237,7 +237,7 @@ for (const cat of categories) {
       <div class="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6">
         {anaHizmetler.map(h => (
           <a href={h.href} class="group relative rounded-2xl overflow-hidden bg-koyu-900 aspect-[16/10] md:aspect-[4/3] lg:aspect-[16/10] shadow-md hover:shadow-xl transition-all hover:-translate-y-1">
-            <img src={h.img} srcset={srcset(h.img)} sizes="(min-width: 768px) 33vw, 100vw" {...boyut(h.img)} alt={h.alt} loading="lazy" decoding="async" class="absolute inset-0 w-full h-full object-cover opacity-80 group-hover:opacity-90 group-hover:scale-105 transition-all duration-500" />
+            <img src={h.img} srcset={srcset(h.img)} sizes="(min-width: 768px) 33vw, 100vw" {...boyut(h.img)} style={h.pos ? `object-position: ${h.pos}` : undefined} alt={h.alt} loading="lazy" decoding="async" class="absolute inset-0 w-full h-full object-cover opacity-80 group-hover:opacity-90 group-hover:scale-105 transition-all duration-500" />
             <div class="absolute inset-0 bg-gradient-to-t from-koyu-900 via-koyu-900/50 to-transparent"></div>
             <div class="absolute inset-x-0 bottom-0 p-5 md:p-6">
               <span class="inline-block text-[11px] font-bold tracking-wider text-eymen-300 bg-eymen-500/20 border border-eymen-400/40 rounded-full px-2.5 py-1 mb-2">{h.etiket}</span>
