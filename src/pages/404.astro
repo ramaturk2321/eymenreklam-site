@@ -10,22 +10,22 @@ const hizmetler = (await getCollection('hizmetler'))
 
 <BaseLayout title="Sayfa Bulunamadı" description="Aradığınız sayfa taşınmış veya kaldırılmış olabilir. Eymen Reklam hizmetlerine, projelerine ve iletişim bilgilerine buradan ulaşın.">
 
-  <section class="bg-koyu-900 pt-32 pb-16 md:pt-40 md:pb-24">
+  <section class="bg-krem-100 border-b border-krem-200 pt-32 pb-16 md:pt-40 md:pb-24">
     <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-      <p class="text-eymen-400 text-sm font-semibold tracking-wider mb-3">HATA 404</p>
-      <h1 class="text-4xl md:text-5xl font-extrabold text-white mb-4">Aradığınız sayfa burada değil</h1>
-      <p class="text-koyu-400 text-lg max-w-2xl mx-auto mb-4">
+      <p class="text-eymen-700 text-sm font-semibold tracking-wider mb-3">HATA 404</p>
+      <h1 class="text-4xl md:text-5xl font-extrabold text-koyu-900 mb-4">Aradığınız sayfa burada değil</h1>
+      <p class="text-koyu-600 text-lg max-w-2xl mx-auto mb-4">
         Bağlantı eski olabilir ya da sayfa taşınmış olabilir. Aşağıdan arama yapabilir veya doğrudan hizmetlerimize geçebilirsiniz.
       </p>
-      <p class="text-koyu-500 text-sm max-w-2xl mx-auto mb-2" lang="en">
+      <p class="text-koyu-600 text-sm max-w-2xl mx-auto mb-2" lang="en">
         This page could not be found.
-        <a href="/en/" class="text-eymen-400 underline hover:text-eymen-300">Go to the English home page</a> or
-        <a href="/en/contact/" class="text-eymen-400 underline hover:text-eymen-300">contact us</a>.
+        <a href="/en/" class="text-eymen-700 underline hover:text-eymen-800">Go to the English home page</a> or
+        <a href="/en/contact/" class="text-eymen-700 underline hover:text-eymen-800">contact us</a>.
       </p>
-      <p class="text-koyu-500 text-sm max-w-2xl mx-auto mb-8" lang="ar" dir="rtl">
+      <p class="text-koyu-600 text-sm max-w-2xl mx-auto mb-8" lang="ar" dir="rtl">
         الصفحة غير موجودة.
-        <a href="/ar/" class="text-eymen-400 underline hover:text-eymen-300">انتقل إلى الصفحة الرئيسية بالعربية</a> أو
-        <a href="/ar/contact/" class="text-eymen-400 underline hover:text-eymen-300">تواصل معنا</a>.
+        <a href="/ar/" class="text-eymen-700 underline hover:text-eymen-800">انتقل إلى الصفحة الرئيسية بالعربية</a> أو
+        <a href="/ar/contact/" class="text-eymen-700 underline hover:text-eymen-800">تواصل معنا</a>.
       </p>
 
       <form action="/urunlerimiz/" method="get" role="search" class="relative max-w-xl mx-auto">
@@ -35,7 +35,7 @@ const hizmetler = (await getCollection('hizmetler'))
           id="notfound-search"
           name="q"
           placeholder="Ne arıyordunuz? (örn. kutu harf tabela)"
-          class="w-full pl-5 pr-14 py-4 text-base rounded-full border-2 border-koyu-700 bg-koyu-800 text-white placeholder:text-koyu-500 focus:border-eymen-500 focus:outline-none transition-colors"
+          class="w-full pl-5 pr-14 py-4 text-base rounded-full border-2 border-koyu-200 bg-white text-koyu-900 placeholder:text-koyu-400 focus:border-eymen-500 focus:outline-none transition-colors"
         />
         <button type="submit" class="absolute right-2 top-1/2 -translate-y-1/2 bg-eymen-500 hover:bg-eymen-600 text-white rounded-full p-3 transition-colors" aria-label="Ara">
           <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg>

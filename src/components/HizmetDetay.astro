@@ -87,24 +87,24 @@ const breadcrumbSchema = {
   </nav>
 
   <!-- Hero -->
-  <section class="relative bg-koyu-900 overflow-hidden pt-12 pb-12 md:pt-20 md:pb-20">
+  <section class="relative bg-krem-100 border-b border-krem-200 overflow-hidden pt-12 pb-12 md:pt-20 md:pb-20">
     {heroImage && (
       <>
         <img src={heroImage} srcset={srcset(heroImage)} sizes="100vw" {...boyut(heroImage)} alt="" class="absolute inset-0 w-full h-full object-cover opacity-70" loading="eager" decoding="async" />
-        <div class="absolute inset-0 bg-gradient-to-r from-koyu-900/90 via-koyu-900/60 to-koyu-900/20"></div>
+        <div class="absolute inset-0 bg-gradient-to-r from-krem-100 via-krem-100/90 to-krem-100/40 md:to-krem-100/10"></div>
       </>
     )}
     <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="max-w-3xl">
-        <p class="text-eymen-400 text-sm font-semibold tracking-wider mb-3">{s.hizmetSayfa.ustBaslik}</p>
-        <h1 class="text-3xl md:text-5xl font-extrabold text-white mb-4">{heroTitle ?? title}</h1>
-        <p class="text-koyu-200 text-base md:text-lg leading-relaxed mb-6 md:mb-8">{heroDesc}</p>
+        <p class="text-eymen-700 text-sm font-semibold tracking-wider mb-3">{s.hizmetSayfa.ustBaslik}</p>
+        <h1 class="text-3xl md:text-5xl font-extrabold text-koyu-900 mb-4">{heroTitle ?? title}</h1>
+        <p class="text-koyu-700 text-base md:text-lg leading-relaxed mb-6 md:mb-8">{heroDesc}</p>
         <div class="flex flex-col sm:flex-row gap-3">
           <a href={yol(lang, 'teklif')} class="inline-flex items-center justify-center gap-2 bg-eymen-500 hover:bg-eymen-600 text-white px-6 py-3.5 rounded-xl text-sm md:text-base font-bold transition-all hover:shadow-lg hover:shadow-eymen-500/25">
             <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
             {s.ortak.ucretsizTeklif}
           </a>
-          <a href={urunWaUrl} target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center gap-2 border-2 border-white/30 hover:border-white text-white hover:bg-white/10 px-6 py-3.5 rounded-xl text-sm md:text-base font-semibold transition-all">
+          <a href={urunWaUrl} target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center gap-2 border-2 border-koyu-300 hover:border-koyu-900 text-koyu-800 hover:bg-koyu-900/5 px-6 py-3.5 rounded-xl text-sm md:text-base font-semibold transition-all">
             <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347zM12 0C5.373 0 0 5.373 0 12c0 2.625.846 5.059 2.284 7.034L.789 23.492a.75.75 0 00.913.913l4.458-1.495A11.952 11.952 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0z"/></svg>
             {s.ortak.whatsappYaz}
           </a>
@@ -179,19 +179,19 @@ const breadcrumbSchema = {
 
   <!-- Gerçek işler galerisi -->
   {gallery.length > 0 && (
-    <section class="py-12 md:py-20 bg-koyu-900" aria-labelledby="galeri-baslik">
+    <section class="py-12 md:py-20 bg-krem-50" aria-labelledby="galeri-baslik">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center max-w-2xl mx-auto mb-8 md:mb-10">
-          <p class="text-eymen-400 text-sm font-semibold tracking-wider mb-3">SAHADAN</p>
-          <h2 id="galeri-baslik" class="text-3xl md:text-4xl font-extrabold text-white">{s.hizmetSayfa.islerimizden(title)}</h2>
-          <p class="text-koyu-300 mt-4">{s.hizmetSayfa.galeriAciklama}</p>
+          <p class="text-eymen-700 text-sm font-semibold tracking-wider mb-3">SAHADAN</p>
+          <h2 id="galeri-baslik" class="text-3xl md:text-4xl font-extrabold text-koyu-900">{s.hizmetSayfa.islerimizden(title)}</h2>
+          <p class="text-koyu-600 mt-4">{s.hizmetSayfa.galeriAciklama}</p>
         </div>
         <ul class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 md:gap-4">
           {gallery.map(g => {
             const Kart = g.href ? 'a' : 'div';
             return (
               <li>
-                <Kart href={g.href} class="group block aspect-[4/3] rounded-xl overflow-hidden bg-koyu-800 ring-1 ring-white/10 hover:ring-eymen-400 transition-all">
+                <Kart href={g.href} class="group block aspect-[4/3] rounded-xl overflow-hidden bg-koyu-100 ring-1 ring-koyu-200 hover:ring-eymen-400 transition-all">
                   <img src={g.src} srcset={srcset(g.src)} sizes="(min-width: 1024px) 300px, (min-width: 768px) 33vw, 50vw" {...boyut(g.src)} alt={g.alt} loading="lazy" decoding="async" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
                 </Kart>
               </li>
@@ -199,7 +199,7 @@ const breadcrumbSchema = {
           })}
         </ul>
         <div class="text-center mt-8">
-          <a href={yol(lang, 'projeler')} class="inline-flex items-center gap-2 text-eymen-400 font-semibold hover:text-eymen-300">{s.hizmetSayfa.tumProjeler} →</a>
+          <a href={yol(lang, 'projeler')} class="inline-flex items-center gap-2 text-eymen-700 font-semibold hover:text-eymen-800">{s.hizmetSayfa.tumProjeler} →</a>
         </div>
       </div>
     </section>
@@ -244,15 +244,15 @@ const breadcrumbSchema = {
   </section>
 
   <!-- Sektörler -->
-  <section class="py-16 md:py-24 bg-koyu-900">
+  <section class="py-16 md:py-24 bg-koyu-50">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="text-center max-w-2xl mx-auto mb-10">
-        <h2 class="text-3xl md:text-4xl font-extrabold text-white">{s.ortak.sektorler}</h2>
+        <h2 class="text-3xl md:text-4xl font-extrabold text-koyu-900">{s.ortak.sektorler}</h2>
         <div class="w-12 h-1 bg-eymen-500 mx-auto mt-4"></div>
       </div>
       <div class="flex flex-wrap justify-center gap-3">
         {sectors.map(s => (
-          <span class="px-5 py-2.5 bg-koyu-800 text-koyu-200 text-sm font-medium rounded-full border border-koyu-700">
+          <span class="px-5 py-2.5 bg-white text-koyu-700 text-sm font-medium rounded-full border border-koyu-200">
             {s}
           </span>
         ))}

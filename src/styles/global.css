@@ -26,6 +26,11 @@
   --color-koyu-900: #0f172a;
   --color-koyu-950: #020617;
 
+  /* Gündüz zemini (28 Eyl 2026): koyu başlık bantları yerine sıcak kırık beyaz */
+  --color-krem-50: #fbf9f6;
+  --color-krem-100: #f5f1eb;
+  --color-krem-200: #e9e2d8;
+
   /* Font */
   --font-sans: 'Poppins', system-ui, -apple-system, sans-serif;
 }

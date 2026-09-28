@@ -53,19 +53,19 @@
     pants: i % 2 ? "#1e293b" : "#334155",
   });
   function yardSvg(moon) {
-    let st = "";
-    for (let i = 0; i < 28; i++) { const x = (i * 97.3 + (moon ? 40 : 0)) % 400, y = 16 + ((i * 53.7) % 300); st += `<circle cx="${x.toFixed(1)}" cy="${y.toFixed(1)}" r="${(0.6 + (i % 3) * 0.35).toFixed(2)}" fill="#e2e8f0" opacity="${(0.35 + (i % 4) * 0.15).toFixed(2)}"/>`; }
+    // Gündüz göğü: yıldız yok; iki avlu farklı görünsün diye birinde güneş, ötekinde bulut
+    const st = moon ? "" : '<g fill="#fff" opacity=".85"><ellipse cx="90" cy="120" rx="46" ry="14"/><ellipse cx="112" cy="108" rx="26" ry="14"/><ellipse cx="260" cy="200" rx="36" ry="10"/></g>';
     let d = "M-2 560", x = -2, i = moon ? 3 : 0, win = "";
     while (x < 402) {
       const w = 16 + ((i * 37) % 30), h = 400 + ((i * 71) % 110);
       d += ` V${h} H${Math.min(402, x + w)}`;
-      for (let k = 0; k < 3; k++) if ((i + k) % 3 === 0 && x + 6 + k * 5 < x + w) win += `<rect x="${(x + 4 + k * 5).toFixed(0)}" y="${h + 10 + k * 14}" width="2.5" height="3" fill="#fde68a" opacity=".45"/>`;
+      for (let k = 0; k < 3; k++) if ((i + k) % 3 === 0 && x + 6 + k * 5 < x + w) win += `<rect x="${(x + 4 + k * 5).toFixed(0)}" y="${h + 10 + k * 14}" width="2.5" height="3" fill="#f8fafc" opacity=".7"/>`;
       x += w; i++;
     }
     d += " V560 Z";
-    const moonSvg = moon ? '<circle cx="330" cy="90" r="16" fill="#f8fafc" opacity=".9"/><circle cx="324" cy="86" r="3" fill="#cbd5e1"/><circle cx="334" cy="96" r="2" fill="#cbd5e1"/>' : "";
+    const moonSvg = moon ? '<circle cx="330" cy="90" r="34" fill="#fef3c7" opacity=".55"/><circle cx="330" cy="90" r="18" fill="#fde047"/>' : "";
     const lamp = moon ? "" : '<polygon points="344,318 300,560 392,560" fill="#fef3c7" opacity=".05"/><path d="M360 560 V300 H340" stroke="#475569" stroke-width="4" fill="none"/><rect x="334" y="298" width="14" height="6" rx="2" fill="#fef3c7"/>';
-    return `<rect x="-2" y="0" width="404" height="560" fill="url(#gSky)"/>${st}${moonSvg}<path d="${d}" fill="#0f1a2e"/>${win}<rect x="-2" y="560" width="404" height="160" fill="#141a26"/><path d="M-2 562 H402" stroke="#334155" stroke-width="3"/><path d="M0 668 H400" stroke="#e2e8f0" stroke-width="3" stroke-dasharray="26 22" opacity=".22"/>${lamp}`;
+    return `<rect x="-2" y="0" width="404" height="560" fill="url(#gSky)"/>${st}${moonSvg}<path d="${d}" fill="#a7b4c4"/>${win}<rect x="-2" y="560" width="404" height="160" fill="#4b5563"/><path d="M-2 562 H402" stroke="#9ca3af" stroke-width="3"/><path d="M0 668 H400" stroke="#f8fafc" stroke-width="3" stroke-dasharray="26 22" opacity=".7"/>${lamp}`;
   }
   /* ---------- Yardımcılar: parçacık, iş motoru, insan ---------- */
   function particles(parent, n, o) {
@@ -200,7 +200,7 @@
     total: 10, stillT: 8.2,
     build(g) {
       g.innerHTML = signSvg(this.no, T("TASARIM OFİSİ")) + `
-        <rect x="24" y="294" width="352" height="266" fill="#0e192b"/>
+        <rect x="24" y="294" width="352" height="266" fill="#d3dce7"/>
         <rect x="44" y="318" width="100" height="64" rx="3" fill="#e5e9ef"/>
         <path d="M54 332h58M54 344h74M54 356h46M54 368h64" stroke="#94a3b8" stroke-width="3" stroke-linecap="round"/>
         <path d="M118 352l5 5 9-11" stroke="#f97316" stroke-width="3" fill="none" stroke-linecap="round"/>
@@ -970,7 +970,7 @@
     total: 12, stillT: 6,
     build(g) {
       g.innerHTML = signSvg(this.no, T("LIGHTBOX ÖRNEKLERİ")) + `
-        <rect x="14" y="282" width="372" height="278" fill="#121a2b"/>
+        <rect x="14" y="282" width="372" height="278" fill="#d6dde6"/>
         <ellipse class="h0" cx="130" cy="360" rx="150" ry="100" fill="url(#gHalo)" opacity="0"/>
         <ellipse class="h1" cx="280" cy="346" rx="70" ry="90" fill="url(#gHalo)" opacity="0"/>
         <ellipse class="h2" cx="352" cy="352" rx="60" ry="60" fill="url(#gHalo)" opacity="0"/>
@@ -1021,8 +1021,8 @@
       g.innerHTML = signSvg(this.no, T("KAYNAK ATÖLYESİ")) + `
         <rect x="312" y="294" width="76" height="266" fill="#b91c1c" opacity=".2"/><path d="M324 294V560M338 294V560M352 294V560M366 294V560M380 294V560" stroke="#7f1d1d" stroke-width="1" opacity=".5"/>
         <g transform="translate(34 304)"><path d="M22 0 L44 38 H0 Z" fill="#facc15"/><text x="22" y="33" text-anchor="middle" font-family="Poppins, sans-serif" font-weight="800" font-size="20" fill="#111827">!</text></g>
-        <text x="86" y="326" font-family="Poppins, sans-serif" font-weight="700" font-size="11" fill="#facc15" letter-spacing="1.5">${T("KAYNAK ALANI")}</text>
-        <text x="86" y="341" font-family="Poppins, sans-serif" font-size="9" fill="#94a3b8">${T("maskesiz girmeyin")}</text>
+        <text x="86" y="326" font-family="Poppins, sans-serif" font-weight="700" font-size="11" fill="#b45309" letter-spacing="1.5">${T("KAYNAK ALANI")}</text>
+        <text x="86" y="341" font-family="Poppins, sans-serif" font-size="9" fill="#64748b">${T("maskesiz girmeyin")}</text>
         <ellipse class="amb" rx="130" ry="100" fill="url(#gArc)" opacity="0"/>
         <rect x="20" y="468" width="20" height="92" rx="9" fill="#15803d"/><rect x="25" y="460" width="10" height="10" fill="#475569"/>
         <rect x="46" y="514" width="46" height="46" rx="3" fill="#1d4ed8"/><circle cx="62" cy="530" r="6" fill="#0b1220"/><rect x="74" y="524" width="12" height="6" fill="#facc15"/>
@@ -1291,11 +1291,11 @@
     build(g) {
       const wheel = (x) => `<g transform="translate(${x} -8)"><circle r="14" fill="#0b1220"/><circle r="6" fill="#94a3b8"/><path class="sp" d="M0 -6 V6 M-6 0 H6" stroke="#334155" stroke-width="2"/></g>`;
       g.innerHTML = yardSvg(false) + `
-        <rect x="-2" y="140" width="96" height="420" fill="#1c2638"/><path d="M0 170H92M0 200H92M0 230H92M0 260H92M0 290H92M0 320H92M0 350H92" stroke="#223049" stroke-width="2"/>
-        <rect x="-2" y="132" width="100" height="10" fill="#273349"/>
+        <rect x="-2" y="140" width="96" height="420" fill="#cfd8e2"/><path d="M0 170H92M0 200H92M0 230H92M0 260H92M0 290H92M0 320H92M0 350H92" stroke="#b4c0cd" stroke-width="2"/>
+        <rect x="-2" y="132" width="100" height="10" fill="#94a3b8"/>
         <rect x="12" y="396" width="72" height="104" fill="#3b3222"/><rect x="12" y="396" width="72" height="104" fill="#fde68a" opacity=".12"/>
         <path d="M12 396 H84" stroke="#475569" stroke-width="6"/>
-        <text x="48" y="386" text-anchor="middle" ${PF} font-weight="700" font-size="10" fill="#fdba74">${T("RAMPA 2")}</text>
+        <text x="48" y="386" text-anchor="middle" ${PF} font-weight="700" font-size="10" fill="#c2410c">${T("RAMPA 2")}</text>
         <rect x="-2" y="500" width="100" height="60" fill="#334155"/>
         <path d="M-2 500 H98" stroke="#facc15" stroke-width="4" stroke-dasharray="10 10"/>
         <rect x="90" y="508" width="8" height="30" fill="#111827"/>
@@ -1467,19 +1467,19 @@
   const bgW = $("uh-bgWall"), bgF = $("uh-bgFloor");
   for (let p = 0; p < 7; p++) {
     const b = p * SW;
-    el("path", { d: `M${b} 30V500M${b + 100} 30V500M${b + 200} 30V500M${b + 300} 30V500`, stroke: "#152036", "stroke-width": 2 }, bgW);
-    el("rect", { x: b + 150, y: 58, width: 100, height: 44, fill: "#0a1730", stroke: "#1d2940", "stroke-width": 3 }, bgW);
-    el("path", { d: `M${b + 200} 58V102M${b + 150} 80H${b + 250}`, stroke: "#1d2940", "stroke-width": 2 }, bgW);
+    el("path", { d: `M${b} 30V500M${b + 100} 30V500M${b + 200} 30V500M${b + 300} 30V500`, stroke: "#d9dfe6", "stroke-width": 2 }, bgW);
+    el("rect", { x: b + 150, y: 58, width: 100, height: 44, fill: "#bfe3fb", stroke: "#94a3b8", "stroke-width": 3 }, bgW);
+    el("path", { d: `M${b + 200} 58V102M${b + 150} 80H${b + 250}`, stroke: "#94a3b8", "stroke-width": 2 }, bgW);
     el("circle", { cx: b + 166, cy: 68, r: 1, fill: "#e2e8f0" }, bgW); el("circle", { cx: b + 228, cy: 90, r: 0.8, fill: "#e2e8f0" }, bgW); el("circle", { cx: b + 214, cy: 66, r: 1.1, fill: "#fef3c7" }, bgW);
     let z = `M${b} 26`; for (let x = 0; x < 400; x += 20) z += ` L${b + x + 10} 6 L${b + x + 20} 26`;
-    el("path", { d: z, fill: "none", stroke: "#1a2436", "stroke-width": 2 }, bgW);
+    el("path", { d: z, fill: "none", stroke: "#a9b4c2", "stroke-width": 2 }, bgW);
     for (const lx of [b + 100, b + 300]) {
       el("polygon", { points: `${lx - 14},146 ${lx + 14},146 ${lx + 120},560 ${lx - 120},560`, fill: "url(#gCone)" }, bgW);
-      el("path", { d: `M${lx} 30V124`, stroke: "#243047", "stroke-width": 1.5 }, bgW);
+      el("path", { d: `M${lx} 30V124`, stroke: "#94a3b8", "stroke-width": 1.5 }, bgW);
       el("path", { d: `M${lx - 8} 124 H${lx + 8} L${lx + 18} 146 H${lx - 18} Z`, fill: "#1f2937" }, bgW);
       el("ellipse", { cx: lx, cy: 146, rx: 16, ry: 3, fill: "#fff4dc", opacity: 0.9 }, bgW);
     }
-    for (let x = 0; x < 400; x += 50) { el("rect", { x: b + x, y: 574, width: 26, height: 3, fill: "#eab308", opacity: 0.28 }, bgF); el("rect", { x: b + x + 12, y: 692, width: 26, height: 3, fill: "#eab308", opacity: 0.2 }, bgF); }
+    for (let x = 0; x < 400; x += 50) { el("rect", { x: b + x, y: 574, width: 26, height: 3, fill: "#eab308", opacity: 0.6 }, bgF); el("rect", { x: b + x + 12, y: 692, width: 26, height: 3, fill: "#eab308", opacity: 0.45 }, bgF); }
   }
 
   /* ---------- Ekip ve kedi ---------- */
