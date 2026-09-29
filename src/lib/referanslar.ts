@@ -201,7 +201,7 @@ export const sektorler: Sektor[] = [
     referanslar: [
       {
         ad: 'Anadolu Isuzu',
-        isler: 'Fabrika iç mekân yönlendirme tabela sistemi.',
+        isler: 'Fabrika saha yönlendirme sistemi: kavşak totemi, yön levhaları, bina tabelaları.',
         href: '/projelerimiz/isuzu-yonlendirme/',
         hizmetler: ['tabela'],
         oneCikan: true,
