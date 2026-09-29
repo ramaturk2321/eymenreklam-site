@@ -98,6 +98,7 @@ export type YolAnahtari = keyof typeof YOLLAR;
 // karşılıkları yok. Bu yollara EN/AR sayfalarından link VERİLMEZ.
 export const SADECE_TR = {
   urunler: '/urunlerimiz/',
+  arama: '/ara/',
   blog: '/blog/',
   istanbulBranda: '/istanbul-branda-baski/',
   anadoluUv: '/anadolu-yakasi-uv-baski/',

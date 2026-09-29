@@ -12,7 +12,7 @@ export default defineConfig({
   server: { port: 4321 },
   integrations: [
     gorselVaryant(),   // public/images → -240/-480/-800/-1200 varyantları + src/lib/gorsel-manifest.json
-    sitemap(),
+    sitemap({ filter: (sayfa) => !sayfa.includes('/ara/') }),   // arama sonuç sayfası dizine girmez
     compress({
       Image: false,   // görseller zaten WebP; boyut varyantları scripts/gorsel-varyant.mjs üretiyor
       CSS: true,

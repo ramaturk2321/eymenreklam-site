@@ -21,7 +21,7 @@ export const tr = {
     anaSayfa: 'Ana Sayfa',
     menu: 'Menü',
     ara: 'Ara',
-    aramaEtiket: 'Ürün veya hizmet ara',
+    aramaEtiket: 'Ürün, proje veya hizmet ara',
     aramaYerTutucu: 'Arama',
     icerigeGec: 'İçeriğe geç',
     dilSec: 'Dil seçimi',

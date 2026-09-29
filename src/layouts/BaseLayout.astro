@@ -20,9 +20,11 @@ interface Props {
   /** Hizmet/proje detayında TR slug */
   slug?: string;
   tur?: 'hizmet' | 'proje';
+  /** Arama sonuç sayfası gibi dizine girmemesi gereken sayfalar */
+  noindex?: boolean;
 }
 
-const { title, description, image, lang = 'tr', sayfa, slug, tur } = Astro.props;
+const { title, description, image, lang = 'tr', sayfa, slug, tur, noindex = false } = Astro.props;
 const s = sozluk(lang);
 const dilBilgi = DIL_BILGISI[lang];
 const aciklama = description ?? `${s.seo.varsayilanAciklama} ☎ ${contact.phone}`;
@@ -35,6 +37,7 @@ const kimlik = sayfa ? { anahtar: sayfa, slug, tur } : undefined;
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="description" content={aciklama} />
+    {noindex && <meta name="robots" content="noindex, follow" />}
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <link rel="icon" type="image/x-icon" href="/favicon.ico" />
     <link rel="apple-touch-icon" href="/favicon.png" />

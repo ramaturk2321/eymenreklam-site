@@ -206,7 +206,7 @@ const currentPath = Astro.url.pathname;
           <!-- Arama Kutusu Desktop -->
           {trMi && (
           <div class="hidden lg:flex items-center">
-            <form action={SADECE_TR.urunler} method="get" role="search" class="relative">
+            <form action={SADECE_TR.arama} method="get" role="search" class="relative">
               <label for="search-input" class="sr-only">{s.nav.aramaEtiket}</label>
               <input
                 type="text"
@@ -255,6 +255,23 @@ const currentPath = Astro.url.pathname;
             {contact.mobile}
           </a>
         </div>
+
+        <!-- Mobil Arama -->
+        {trMi && (
+        <form action={SADECE_TR.arama} method="get" role="search" class="relative pb-3 mb-3 border-b border-koyu-100">
+          <label for="mobil-arama" class="sr-only">{s.nav.aramaEtiket}</label>
+          <input
+            type="search"
+            id="mobil-arama"
+            name="q"
+            placeholder={s.nav.aramaYerTutucu}
+            class="w-full ps-4 pe-11 py-2.5 text-sm border-2 border-koyu-200 rounded-full focus:border-eymen-500 focus:outline-none transition-colors text-koyu-700 placeholder:text-koyu-500"
+          />
+          <button type="submit" class="absolute end-3 top-[1.3rem] -translate-y-1/2 text-koyu-400 hover:text-eymen-500 transition-colors" aria-label={s.nav.ara}>
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg>
+          </button>
+        </form>
+        )}
 
         <!-- Hizmetler Accordion -->
         <div>
@@ -343,8 +360,10 @@ const currentPath = Astro.url.pathname;
   const searchInput = document.getElementById('search-input') as HTMLInputElement | null;
   const query = new URLSearchParams(window.location.search).get('q');
 
-  if (searchInput && query) {
-    searchInput.value = query;
+  if (query) {
+    if (searchInput) searchInput.value = query;
+    const mobilArama = document.getElementById('mobil-arama') as HTMLInputElement | null;
+    if (mobilArama) mobilArama.value = query;
   }
 
   btn?.addEventListener('click', () => {
