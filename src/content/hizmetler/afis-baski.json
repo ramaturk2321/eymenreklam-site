@@ -3,41 +3,283 @@
   "seoTitle": "Afiş ve Poster Baskı Pendik İstanbul",
   "heroTitle": "Afiş ve Poster Baskı: Kâğıt ve Vinil Afişte Adetli Üretim",
   "description": "Kuşe kâğıt, mat kâğıt ve vinil afiş baskı. A3'ten A0 ve üzeri poster, mağaza içi kampanya afişi, etkinlik afişi. Pendik'te kendi tesisimizde aynı gün üretim.",
-  "heroDesc": "Mağaza içi kampanya afişleri, vitrin posterleri, etkinlik ve konser afişleri, okul ve kurum duyuruları için parlak kuşe, mat kuşe ve vinil (yapışkanlı folyo) afiş basıyoruz. A3'ten A0'a ve üzerine kadar, şube sayınız kadar binlerce adede, Pendik tesisimizde aynı gün üretim. Branda, mesh ve bez işleri için Branda & Bez Baskı sayfamıza bakın.",
+  "heroDesc": "Mağaza içi kampanya afişleri, vitrin posterleri, etkinlik ve konser afişleri, okul ve kurum duyuruları için parlak kuşe, mat kuşe ve vinil (yapışkanlı folyo) afiş basıyoruz. A3'ten A0'a ve üzerine kadar, şube sayınız kadar binlerce adede, Pendik tesisimizde aynı gün üretim. Hakmar Express'in insert ve afiş serilerini yıllardır biz üretiyoruz. Branda, mesh ve bez işleri için Branda & Bez Baskı sayfamıza bakın.",
   "order": 6,
   "listIcon": "🖼️",
   "listDesc": "Kuşe ve mat kâğıt afiş, vinil (yapışkanlı) afiş, A0'a kadar poster. Mağaza içi kampanya ve etkinlik afişlerinde adetli, hızlı üretim.",
-  "listFeatures": ["Kuşe Kâğıt Afiş", "Mat Kâğıt Afiş", "Vinil Afiş", "Poster"],
+  "listFeatures": [
+    "Kuşe Kâğıt Afiş",
+    "Mat Kâğıt Afiş",
+    "Vinil Afiş",
+    "Poster"
+  ],
   "listImage": "/images/urunler/afis-baski-1.webp",
+  "facility": {
+    "title": "Afişi Kendi Tesisimizde Basıyoruz",
+    "description": "Afiş baskıyı fason vermiyoruz. Pendik tesisimizdeki baskı makinelerimizde kâğıt ve vinil afişi basıyor, laminasyon ve selefon makinelerimizde sonlandırıyoruz. Zincir mağaza serilerinde afişleri şube listesine göre ayırıp paketliyoruz. Renk, termin ve adet kontrolü baştan sona bizde.",
+    "stats": [
+      {
+        "value": "A3–A0+",
+        "label": "Standart ve Özel Ölçü"
+      },
+      {
+        "value": "320 cm",
+        "label": "Maksimum Baskı Genişliği"
+      },
+      {
+        "value": "Aynı Gün",
+        "label": "Standart İşlerde Teslim"
+      },
+      {
+        "value": "Şube Bazlı",
+        "label": "Ayırma ve Paketleme"
+      }
+    ],
+    "machines": [
+      "1 adet 160 cm Mimaki Baskı Makinası",
+      "2 adet 320 cm Branda Baskı Makinası",
+      "1 adet 180 cm Laminasyon Makinesi",
+      "1 adet Selefon Makinesi"
+    ],
+    "images": [
+      "/images/uretim/dijital-baski-uretim-1.webp",
+      "/images/uretim/dijital-baski-uretim-2.webp"
+    ]
+  },
   "features": [
-    { "icon": "📄", "title": "Kâğıt Afiş ve Poster", "desc": "Parlak veya mat kuşe kâğıda A3, A2, A1, A0 ve özel ölçü poster baskı. Vitrin ve pano için ideal." },
-    { "icon": "📋", "title": "Vinil (Yapışkanlı) Afiş", "desc": "Cam, duvar ve panoya yapıştırılan folyo afiş. Mat, parlak ve şeffaf seçenekler." },
-    { "icon": "🏪", "title": "Mağaza İçi Kampanya Afişi", "desc": "Zincir mağazalar için haftalık kampanya afişleri: şube bazlı adet, ölçü ve paketleme." },
-    { "icon": "🔢", "title": "Adetli Üretim", "desc": "Onlarca şubeye binlerce adet. Yüksek adetlerde birim fiyat düşer, teslim şube bazında yapılır." },
-    { "icon": "✨", "title": "Renk Tutarlılığı", "desc": "Seri işlerde her partide aynı renk. Pantone referansıyla çalışırız, kritik işte test baskı yaparız." },
-    { "icon": "⚡", "title": "Aynı Gün Üretim", "desc": "Kendi tesisimizde baskı ve kesim. Öğleden önce onaylanan standart işler aynı gün hazır." }
+    {
+      "icon": "📄",
+      "title": "Kâğıt Afiş ve Poster",
+      "desc": "Parlak veya mat kuşe kâğıda A3, A2, A1, A0 ve özel ölçü poster baskı. Vitrin ve pano için ideal."
+    },
+    {
+      "icon": "📋",
+      "title": "Vinil (Yapışkanlı) Afiş",
+      "desc": "Cam, duvar ve panoya yapıştırılan folyo afiş. Mat, parlak ve şeffaf seçenekler."
+    },
+    {
+      "icon": "🏪",
+      "title": "Mağaza İçi Kampanya Afişi",
+      "desc": "Zincir mağazalar için haftalık kampanya afişleri: şube bazlı adet, ölçü ve paketleme."
+    },
+    {
+      "icon": "🔢",
+      "title": "Adetli Üretim",
+      "desc": "Onlarca şubeye binlerce adet. Yüksek adetlerde birim fiyat düşer, teslim şube bazında yapılır."
+    },
+    {
+      "icon": "✨",
+      "title": "Renk Tutarlılığı",
+      "desc": "Seri işlerde her partide aynı renk. Pantone referansıyla çalışırız, kritik işte test baskı yaparız."
+    },
+    {
+      "icon": "⚡",
+      "title": "Aynı Gün Üretim",
+      "desc": "Kendi tesisimizde baskı ve kesim. Öğleden önce onaylanan standart işler aynı gün hazır."
+    }
   ],
   "products": [
-    { "title": "Dijital Afiş Baskı", "desc": "A3'ten A0 ve üzerine kâğıt ve vinil afiş. Kurumsal, reklam, etkinlik afişleri.", "image": "/images/urunler/afis-baski-1.webp", "href": "/urunlerimiz/afis-baski/" },
-    { "title": "Parlak Kâğıt Afiş", "desc": "Parlak kuşe kâğıda yüksek çözünürlüklü afiş baskı. Canlı renk, net detay.", "image": "/images/urunler/parlak-afis-1.webp", "href": "/urunlerimiz/parlak-kagit-afis/" },
-    { "title": "Mat Kâğıt Afiş", "desc": "Mat kuşe kâğıda afiş baskı. Yansımasız, ışık altında rahat okunur.", "image": "/images/urunler/mat-kagit-1.webp", "href": "/urunlerimiz/mat-kagit-afis/" },
-    { "title": "Fotoblok Baskı", "desc": "Afişi sert zemine almak isteyenler için köpük levha üzerine baskı.", "image": "/images/urunler/fotoblok-1.webp", "href": "/urunlerimiz/fotoblok/" },
-    { "title": "Insert / Kampanya Tasarımı", "desc": "Zincir mağaza kampanya afişi ve insert tasarımı, haftalık şablon üretimi.", "image": "/images/urunler/insert-1.webp", "href": "/urunlerimiz/insert-tasarim/" },
-    { "title": "Branda & Bez Baskı", "desc": "Dış mekân ve büyük ölçü için branda, mesh ve bez baskı ayrı sayfada.", "image": "/images/urunler/market-branda-1.webp", "href": "/hizmetlerimiz/bez-baski/" }
+    {
+      "title": "Dijital Afiş Baskı",
+      "desc": "A3'ten A0 ve üzerine kâğıt ve vinil afiş. Kurumsal, reklam, etkinlik afişleri.",
+      "image": "/images/urunler/afis-baski-1.webp",
+      "href": "/urunlerimiz/afis-baski/"
+    },
+    {
+      "title": "Parlak Kâğıt Afiş",
+      "desc": "Parlak kuşe kâğıda yüksek çözünürlüklü afiş baskı. Canlı renk, net detay.",
+      "image": "/images/urunler/parlak-afis-1.webp",
+      "href": "/urunlerimiz/parlak-kagit-afis/"
+    },
+    {
+      "title": "Mat Kâğıt Afiş",
+      "desc": "Mat kuşe kâğıda afiş baskı. Yansımasız, ışık altında rahat okunur.",
+      "image": "/images/urunler/mat-kagit-1.webp",
+      "href": "/urunlerimiz/mat-kagit-afis/"
+    },
+    {
+      "title": "Fotoblok Baskı",
+      "desc": "Afişi sert zemine almak isteyenler için köpük levha üzerine baskı.",
+      "image": "/images/urunler/fotoblok-1.webp",
+      "href": "/urunlerimiz/fotoblok/"
+    },
+    {
+      "title": "Insert / Kampanya Tasarımı",
+      "desc": "Zincir mağaza kampanya afişi ve insert tasarımı, haftalık şablon üretimi.",
+      "image": "/images/urunler/insert-1.webp",
+      "href": "/urunlerimiz/insert-tasarim/"
+    },
+    {
+      "title": "Branda & Bez Baskı",
+      "desc": "Dış mekân ve büyük ölçü için branda, mesh ve bez baskı ayrı sayfada.",
+      "image": "/images/urunler/market-branda-1.webp",
+      "href": "/hizmetlerimiz/bez-baski/"
+    }
   ],
+  "gallery": [
+    {
+      "src": "/images/urunler/afis-baski-1.webp",
+      "alt": "Hakmar Express mağaza içi kampanya afişi, Yurda salça",
+      "href": "/urunlerimiz/afis-baski/"
+    },
+    {
+      "src": "/images/urunler/parlak-afis-1.webp",
+      "alt": "Hakmar Express parlak kuşe kampanya afişi, Balım bal",
+      "href": "/urunlerimiz/parlak-kagit-afis/"
+    },
+    {
+      "src": "/images/urunler/parlak-afis-2.webp",
+      "alt": "Bizim Toptan ticari kart kampanyaları afişi",
+      "href": "/urunlerimiz/parlak-kagit-afis/"
+    },
+    {
+      "src": "/images/urunler/afis-baski-3.webp",
+      "alt": "Halis Kuruyemiş ürün tanıtım posteri",
+      "href": "/urunlerimiz/afis-baski/"
+    },
+    {
+      "src": "/images/projeler/doruk-dubai-afis-1.webp",
+      "alt": "Doruk Dubai Lezzeti çikolata ürün afişi",
+      "href": "/projelerimiz/doruk-tasarim/"
+    },
+    {
+      "src": "/images/urunler/afis-baski-4.webp",
+      "alt": "Market zinciri için içecek kampanya afişi",
+      "href": "/urunlerimiz/afis-baski/"
+    },
+    {
+      "src": "/images/projeler/hakmar-65yil-afis-1.webp",
+      "alt": "Hakmar 65. yıl kurumsal afişi"
+    },
+    {
+      "src": "/images/urunler/afis-baski-2.webp",
+      "alt": "Yurda salça raf lansmanı afişi",
+      "href": "/urunlerimiz/afis-baski/"
+    },
+    {
+      "src": "/images/urunler/insert-1.webp",
+      "alt": "Hakmar Express haftalık kampanya inserti",
+      "href": "/urunlerimiz/insert-tasarim/"
+    },
+    {
+      "src": "/images/urunler/insert-3.webp",
+      "alt": "Kampanya broşürü ve insert baskısı",
+      "href": "/urunlerimiz/insert-tasarim/"
+    },
+    {
+      "src": "/images/urunler/insert-4.webp",
+      "alt": "Ofis mobilyası kampanya broşürü",
+      "href": "/urunlerimiz/insert-tasarim/"
+    },
+    {
+      "src": "/images/urunler/hakmar-avm-4.webp",
+      "alt": "Hakmar mağazasında Haktat, hak-et ve Tatbak marka görselleri",
+      "href": "/urunlerimiz/hakmar-avm/"
+    }
+  ],
+  "galeriAciklama": "Zincir mağazalar ve markalar için tasarlayıp bastığımız kampanya afişi, poster ve insert örnekleri. Bağlantılı olanlar ürün ya da proje sayfasına gider.",
+  "fiyatFaktorleri": [
+    {
+      "baslik": "Ölçü",
+      "aciklama": "A3'ten A0'a standart ölçüler ve özel ölçü. Fiyat afişin alanına göre değişir; aynı alana birden fazla küçük afiş yerleştirilebiliyorsa birim maliyet düşer."
+    },
+    {
+      "baslik": "Kâğıt ve malzeme",
+      "aciklama": "Parlak kuşe, mat kuşe veya vinil (yapışkanlı folyo). Cama ya da duvara yapışacak afişte vinil, pano ve vitrin arkasında kâğıt daha ekonomiktir."
+    },
+    {
+      "baslik": "Adet",
+      "aciklama": "Aynı görselden adet arttıkça makine hazırlığı bölündüğü için birim fiyat düşer. Şube serilerini tek partide basmak en ekonomik yoldur."
+    },
+    {
+      "baslik": "Sonlandırma",
+      "aciklama": "Laminasyon, selefon, fotoblok üzerine kaşeleme ya da özel kesim ek işlem demektir ve fiyata yansır."
+    },
+    {
+      "baslik": "Şube bazlı paketleme",
+      "aciklama": "Afişlerin şube listesine göre ayrılması, etiketlenmesi ve paketlenmesi adede ve şube sayısına göre hesaplanır."
+    },
+    {
+      "baslik": "Termin ve teslim",
+      "aciklama": "Standart işler aynı gün ya da ertesi gün hazır olur. Acil ve yüksek adetli işlerde üretim planı, teslim yerine göre kargo ya da araç teslimi fiyatı etkiler."
+    }
+  ],
+  "bolge": {
+    "baslik": "Pendik'ten İstanbul'a ve Türkiye Geneline",
+    "metin": "Afişleri Pendik tesisimizde basıyoruz. Anadolu Yakası'nda araçla teslim ediyoruz; Avrupa Yakası'na ve Türkiye genelindeki şubelere şube bazlı paketlenmiş olarak kargoyla gönderiyoruz.",
+    "ilceler": [
+      "Pendik",
+      "Tuzla",
+      "Kartal",
+      "Maltepe",
+      "Kadıköy",
+      "Ataşehir",
+      "Ümraniye",
+      "Sancaktepe",
+      "Çekmeköy",
+      "Sultanbeyli",
+      "Üsküdar",
+      "Gebze"
+    ]
+  },
   "process": [
-    { "step": "01", "title": "Ölçü, Adet ve Kâğıt", "desc": "Afiş ölçüsü, adet ve kâğıt türü (parlak, mat, vinil) belirlenir." },
-    { "step": "02", "title": "Dosya Kontrol", "desc": "Çözünürlük, taşma payı ve renk profili kontrol edilir; gerekirse rötuş yapılır." },
-    { "step": "03", "title": "Baskı", "desc": "Kendi tesisimizde dijital baskı. Seri işlerde renk her partide aynı tutulur." },
-    { "step": "04", "title": "Kesim ve Paketleme", "desc": "Ölçüye kesilir, şube veya nokta bazında paketlenir, teslim edilir." }
+    {
+      "step": "01",
+      "title": "Ölçü, Adet ve Kâğıt",
+      "desc": "Afiş ölçüsü, adet ve kâğıt türü (parlak, mat, vinil) belirlenir."
+    },
+    {
+      "step": "02",
+      "title": "Dosya Kontrol",
+      "desc": "Çözünürlük, taşma payı ve renk profili kontrol edilir; gerekirse rötuş yapılır."
+    },
+    {
+      "step": "03",
+      "title": "Baskı",
+      "desc": "Kendi tesisimizde dijital baskı. Seri işlerde renk her partide aynı tutulur."
+    },
+    {
+      "step": "04",
+      "title": "Kesim ve Paketleme",
+      "desc": "Ölçüye kesilir, şube veya nokta bazında paketlenir, teslim edilir."
+    }
   ],
-  "sectors": ["Perakende & Zincir Mağaza", "Pazarlama & Reklam", "Organizasyon & Etkinlik", "Eğitim & Okul", "Sağlık & Hastane", "Kültür & Sanat", "Turizm & Otelcilik", "Spor & Rekreasyon", "Gıda & Restoran", "Kamu & Belediye"],
+  "sectors": [
+    "Perakende & Zincir Mağaza",
+    "Pazarlama & Reklam",
+    "Organizasyon & Etkinlik",
+    "Eğitim & Okul",
+    "Sağlık & Hastane",
+    "Kültür & Sanat",
+    "Turizm & Otelcilik",
+    "Spor & Rekreasyon",
+    "Gıda & Restoran",
+    "Kamu & Belediye"
+  ],
   "faq": [
-    { "q": "Hangi afiş boyutlarını basıyorsunuz?", "a": "A3, A2, A1, A0 standart ölçülerin yanında özel ölçü de basıyoruz. Kâğıt afişte rulo genişliğine kadar tek parça; daha büyük dış mekân işleri için branda öneriyoruz." },
-    { "q": "Kâğıt afiş mi vinil afiş mi seçmeliyim?", "a": "İç mekân pano, vitrin arkası ve kısa süreli duyurular için kâğıt afiş yeterli ve ekonomiktir. Cama veya duvara yapıştırılacaksa, ya da nemli ortamda duracaksa vinil (yapışkanlı folyo) afiş seçin." },
-    { "q": "Afiş fiyatı neye göre değişir?", "a": "Ölçü, adet, kâğıt türü ve teslim süresi belirler. Aynı görselden adet arttıkça birim fiyat düşer. Ölçü, adet ve teslim yerini iletirseniz aynı gün yazılı teklif gönderiyoruz." },
-    { "q": "Zincir mağazalar için haftalık kampanya afişi yapıyor musunuz?", "a": "Evet. Hakmar Express için yıllardır insert ve afiş serileri üretiyoruz; şube listesine göre adet ve ölçü ayırıp şube bazında paketliyoruz." },
-    { "q": "Ne kadar sürede teslim edersiniz?", "a": "Standart kâğıt ve vinil afişler dosya onayından sonra aynı gün veya ertesi gün hazır olur. Yüksek adetli seri işlerde termin adede göre planlanır." },
-    { "q": "Dış mekân için afiş basıyor musunuz?", "a": "Kısa süreli dış mekân duyuruları için vinil afiş kullanılabilir. Yağmur, güneş ve rüzgâra uzun süre dayanması gereken işlerde branda veya mesh basıyoruz; bunun için Branda & Bez Baskı sayfamıza bakın." }
+    {
+      "q": "Hangi afiş boyutlarını basıyorsunuz?",
+      "a": "A3, A2, A1, A0 standart ölçülerin yanında özel ölçü de basıyoruz. Kâğıt afişte rulo genişliğine kadar tek parça; daha büyük dış mekân işleri için branda öneriyoruz."
+    },
+    {
+      "q": "Kâğıt afiş mi vinil afiş mi seçmeliyim?",
+      "a": "İç mekân pano, vitrin arkası ve kısa süreli duyurular için kâğıt afiş yeterli ve ekonomiktir. Cama veya duvara yapıştırılacaksa, ya da nemli ortamda duracaksa vinil (yapışkanlı folyo) afiş seçin."
+    },
+    {
+      "q": "Afiş fiyatı neye göre değişir?",
+      "a": "Ölçü, adet, kâğıt türü ve teslim süresi belirler. Aynı görselden adet arttıkça birim fiyat düşer. Ölçü, adet ve teslim yerini iletirseniz aynı gün yazılı teklif gönderiyoruz."
+    },
+    {
+      "q": "Zincir mağazalar için haftalık kampanya afişi yapıyor musunuz?",
+      "a": "Evet. Hakmar Express için yıllardır insert ve afiş serileri üretiyoruz; şube listesine göre adet ve ölçü ayırıp şube bazında paketliyoruz."
+    },
+    {
+      "q": "Ne kadar sürede teslim edersiniz?",
+      "a": "Standart kâğıt ve vinil afişler dosya onayından sonra aynı gün veya ertesi gün hazır olur. Yüksek adetli seri işlerde termin adede göre planlanır."
+    },
+    {
+      "q": "Dış mekân için afiş basıyor musunuz?",
+      "a": "Kısa süreli dış mekân duyuruları için vinil afiş kullanılabilir. Yağmur, güneş ve rüzgâra uzun süre dayanması gereken işlerde branda veya mesh basıyoruz; bunun için Branda & Bez Baskı sayfamıza bakın."
+    }
   ]
 }

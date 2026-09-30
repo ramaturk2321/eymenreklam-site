@@ -128,6 +128,8 @@ const hizmetSemasi = z.object({
       alt: z.string(),
       href: icLink.optional(),
     })).optional(),
+    /** Galeri alt metni; yoksa sözlükteki "kendi tesisimizde ürettiğimiz işler" metni kullanılır */
+    galeriAciklama: z.string().optional(),
     /** "Fiyatı ne belirler" kartları — rakam/fiyat aralığı YAZILMAZ (Ramazan kararı, 19 Eyl 2026) */
     fiyatFaktorleri: z.array(z.object({
       baslik: z.string(),

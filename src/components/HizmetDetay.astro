@@ -25,6 +25,7 @@ interface Props {
   heroTitle?: string;
   /** Gerçek iş fotoğrafları */
   gallery?: { src: string; alt: string; href?: string }[];
+  galeriAciklama?: string;
   /** Hizmet sayfasında öne çıkan son kurumsal projeler (proje koleksiyonundan) */
   projeler?: { href: string; title: string; description: string; image: string }[];
   /** Fiyatı belirleyen etkenler — rakam/fiyat aralığı yazılmaz */
@@ -42,7 +43,7 @@ import { company, contact } from '../lib/site-data';
 import { sozluk, yol, whatsappUrl } from '../i18n';
 import type { Dil } from '../i18n';
 
-const { title, seoTitle, description, heroDesc, heroImage, ogImage, facility, features, products, process, sectors, faq, referanslar = [], heroTitle, gallery = [], projeler = [], fiyatFaktorleri = [], bolge, lang = 'tr', slug } = Astro.props;
+const { title, seoTitle, description, heroDesc, heroImage, ogImage, facility, features, products, process, sectors, faq, referanslar = [], heroTitle, gallery = [], galeriAciklama, projeler = [], fiyatFaktorleri = [], bolge, lang = 'tr', slug } = Astro.props;
 const s = sozluk(lang);
 const urunWaUrl = whatsappUrl(lang, s.whatsapp.urun(title));
 
@@ -217,7 +218,7 @@ const breadcrumbSchema = {
         <div class="text-center max-w-2xl mx-auto mb-8 md:mb-10">
           <p class="text-eymen-700 text-sm font-semibold tracking-wider mb-3">SAHADAN</p>
           <h2 id="galeri-baslik" class="text-3xl md:text-4xl font-extrabold text-koyu-900">{s.hizmetSayfa.islerimizden(title)}</h2>
-          <p class="text-koyu-600 mt-4">{s.hizmetSayfa.galeriAciklama}</p>
+          <p class="text-koyu-600 mt-4">{galeriAciklama ?? s.hizmetSayfa.galeriAciklama}</p>
         </div>
         <ul class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 md:gap-4">
           {gallery.map(g => {
