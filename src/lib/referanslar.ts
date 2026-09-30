@@ -291,9 +291,9 @@ export const sektorler: Sektor[] = [
       },
       {
         ad: 'Kiler GYO — Referans Pendik',
-        isler: 'Satış ofisi cephesi boyunca dijital baskılı reklam bandı, satış ofisi yazısı ve yol kenarı yönlendirme tabelası.',
+        isler: 'Satış ofisi cephesi boyunca UV baskılı branda reklam bandı, satış ofisi yazısı ve yol kenarı yönlendirme tabelası.',
         href: '/projelerimiz/kiler-gyo-referans-pendik/',
-        hizmetler: ['tabela', 'dijital-baski'],
+        hizmetler: ['tabela', 'uv-baski', 'dijital-baski'],
         oneCikan: true,
       },
       {
