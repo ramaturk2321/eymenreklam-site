@@ -14,42 +14,11 @@
     "Poster"
   ],
   "listImage": "/images/urunler/afis-baski-1.webp",
-  "facility": {
-    "title": "Afişi Kendi Tesisimizde Basıyoruz",
-    "description": "Afişi 320 cm dijital baskı makinelerimizde citylight kâğıda kendi tesisimizde basıyor, laminasyon ve selefon makinelerimizde sonlandırıyoruz. 500 adet ve üzeri çoklu işlerde ofset matbaa baskısına geçiyoruz; yüksek adette birim fiyat belirgin şekilde düşüyor. Zincir mağaza serilerinde afişleri şube listesine göre ayırıp paketliyoruz.",
-    "stats": [
-      {
-        "value": "320 cm",
-        "label": "Dijital Baskı Genişliği"
-      },
-      {
-        "value": "Citylight",
-        "label": "Dijital Afiş Kâğıdı"
-      },
-      {
-        "value": "500+ Adet",
-        "label": "Ofset Matbaa Baskısı"
-      },
-      {
-        "value": "Aynı Gün",
-        "label": "Dijitalde Standart Teslim"
-      }
-    ],
-    "machines": [
-      "2 adet 320 cm Dijital Baskı Makinesi (afiş, citylight, branda)",
-      "1 adet 180 cm Laminasyon Makinesi",
-      "1 adet Selefon Makinesi"
-    ],
-    "images": [
-      "/images/uretim/dijital-baski-uretim-1.webp",
-      "/images/uretim/dijital-baski-uretim-2.webp"
-    ]
-  },
   "features": [
     {
       "icon": "📄",
       "title": "Kâğıt Afiş ve Poster",
-      "desc": "Dijitalde citylight kâğıda, 500 adet ve üzerinde ofsette kuşe kâğıda A3, A2, A1, A0 ve özel ölçü poster baskı."
+      "desc": "Parlak veya mat kuşe kâğıda A3, A2, A1, A0 ve özel ölçü poster baskı. Vitrin ve pano için ideal."
     },
     {
       "icon": "📋",
@@ -64,7 +33,7 @@
     {
       "icon": "🔢",
       "title": "Adetli Üretim",
-      "desc": "500 adede kadar dijital, 500 adet ve üzeri çoklu işlerde ofset baskı. Yüksek adetlerde birim fiyat düşer, teslim şube bazında yapılır."
+      "desc": "Onlarca şubeye binlerce adet. Yüksek adetlerde birim fiyat düşer, teslim şube bazında yapılır."
     },
     {
       "icon": "✨",
@@ -74,7 +43,7 @@
     {
       "icon": "⚡",
       "title": "Aynı Gün Üretim",
-      "desc": "Dijital afişte kendi tesisimizde baskı ve kesim. Öğleden önce onaylanan standart işler aynı gün hazır."
+      "desc": "Kendi tesisimizde baskı ve kesim. Öğleden önce onaylanan standart işler aynı gün hazır."
     }
   ],
   "products": [
@@ -184,11 +153,11 @@
     },
     {
       "baslik": "Kâğıt ve malzeme",
-      "aciklama": "Dijitalde citylight kâğıt, ofsette parlak veya mat kuşe, yapıştırılacak işlerde vinil (yapışkanlı folyo). Cama ya da duvara yapışacak afişte vinil, pano ve vitrin arkasında kâğıt daha ekonomiktir."
+      "aciklama": "Kâğıdı ve malzemeyi afişin nerede ve ne kadar süre kullanılacağına göre sizinle birlikte seçiyoruz. Ölçü, adet ve kullanım yerini yazmanız yeterli."
     },
     {
       "baslik": "Adet",
-      "aciklama": "500 adede kadar afişler dijital baskıyla, 500 adet ve üzeri çoklu işler ofset matbaa baskısıyla üretilir. Ofsette adet arttıkça birim fiyat belirgin şekilde düşer; şube serilerini tek partide basmak en ekonomik yoldur."
+      "aciklama": "Aynı görselden adet arttıkça birim fiyat düşer. Şube serilerini tek partide basmak en ekonomik yoldur."
     },
     {
       "baslik": "Sonlandırma",
@@ -261,10 +230,6 @@
       "a": "A3, A2, A1, A0 standart ölçülerin yanında özel ölçü de basıyoruz. Kâğıt afişte rulo genişliğine kadar tek parça; daha büyük dış mekân işleri için branda öneriyoruz."
     },
     {
-      "q": "Afişi dijitalde mi ofsette mi basıyorsunuz?",
-      "a": "500 adede kadar afişleri 320 cm dijital baskı makinelerimizde citylight kâğıda basıyoruz. 500 adet ve üzeri çoklu işlerde ofset matbaa baskısına geçiyoruz; bu adetlerde birim fiyat belirgin şekilde düşer."
-    },
-    {
       "q": "Kâğıt afiş mi vinil afiş mi seçmeliyim?",
       "a": "İç mekân pano, vitrin arkası ve kısa süreli duyurular için kâğıt afiş yeterli ve ekonomiktir. Cama veya duvara yapıştırılacaksa, ya da nemli ortamda duracaksa vinil (yapışkanlı folyo) afiş seçin."
     },
@@ -278,7 +243,7 @@
     },
     {
       "q": "Ne kadar sürede teslim edersiniz?",
-      "a": "Dijital afişler dosya onayından sonra aynı gün veya ertesi gün hazır olur. 500 adet ve üzeri ofset işlerde termin adede ve matbaa planına göre verilir."
+      "a": "Standart kâğıt ve vinil afişler dosya onayından sonra aynı gün veya ertesi gün hazır olur. Yüksek adetli seri işlerde termin adede göre planlanır."
     },
     {
       "q": "Dış mekân için afiş basıyor musunuz?",
