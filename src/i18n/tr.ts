@@ -123,7 +123,7 @@ export const tr = {
     sonProjelerUst: 'SAHADAN',
     sonProjelerBaslik: 'Son Kurumsal Projelerimiz',
     sonProjelerAciklama:
-      'Zincir mağazalar, AVM şubeleri ve fabrikalar için son dönemde ürettiğimiz ve yerinde monte ettiğimiz işler.',
+      'Kurumsal müşterilerimiz için son dönemde ürettiğimiz ve yerinde uyguladığımız işler.',
     nedenBiz: 'Neden Eymen Reklam?',
     nedenBizAciklama: (yil: number) =>
       `${yil} yıllık deneyimle kurumsal müşterilerimize sunduğumuz avantajlar.`,

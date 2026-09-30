@@ -117,7 +117,7 @@ export const en: Sozluk = {
     sonProjelerUst: 'FROM THE FIELD',
     sonProjelerBaslik: 'Recent Corporate Projects',
     sonProjelerAciklama:
-      'Recent work produced and installed on site for retail chains, mall stores and factories.',
+      'Recent work we produced and installed on site for corporate clients.',
     nedenBiz: 'Why Eymen Reklam?',
     nedenBizAciklama: (yil: number) =>
       `What ${yil} years of in-house production means for our corporate clients.`,
