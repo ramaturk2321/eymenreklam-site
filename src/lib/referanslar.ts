@@ -80,18 +80,18 @@ export const sektorler: Sektor[] = [
       },
       {
         ad: 'Civil',
-        isler: 'Bursa Nilüfer, Kars ve Sakarya mağazalarında cephe tabelası, kutu harf ve iç mekân görsel uygulamaları.',
+        isler: 'Bursa Nilüfer, Kars ve Sakarya mağazalarında cephe tabelası, kutu harf ve dekota üzerine UV baskı iç mekân görselleri.',
         olcek: '3 şehirde mağaza açılışı',
         href: '/projelerimiz/civil-bursa/',
-        hizmetler: ['tabela', 'magaza-reklam'],
+        hizmetler: ['tabela', 'magaza-reklam', 'uv-baski'],
         oneCikan: true,
       },
       {
         ad: 'PAWCO Super Pet Store',
-        isler: 'Kozzy AVM ve Water Garden AVM şubelerinde pleksi ışıklı kutu harf, AVM koridoru lightbox duvarı, neon LED, cam folyo ve mağaza içi panolar.',
+        isler: 'Kozzy AVM ve Water Garden AVM şubelerinde pleksi ışıklı kutu harf, AVM koridoru lightbox duvarı, neon LED, cam folyo ve UV baskılı mağaza içi panolar.',
         olcek: '2 AVM şubesi, marka standardı dokümanı',
         href: '/projelerimiz/pawco-kozzy-avm/',
-        hizmetler: ['tabela', 'magaza-reklam', 'folyo-giydirme'],
+        hizmetler: ['tabela', 'magaza-reklam', 'folyo-giydirme', 'uv-baski'],
         oneCikan: true,
       },
       {
