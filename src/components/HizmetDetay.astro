@@ -25,6 +25,8 @@ interface Props {
   heroTitle?: string;
   /** Gerçek iş fotoğrafları */
   gallery?: { src: string; alt: string; href?: string }[];
+  /** Hizmet sayfasında öne çıkan son kurumsal projeler (proje koleksiyonundan) */
+  projeler?: { href: string; title: string; description: string; image: string }[];
   /** Fiyatı belirleyen etkenler — rakam/fiyat aralığı yazılmaz */
   fiyatFaktorleri?: { baslik: string; aciklama: string }[];
   /** Hizmet bölgesi */
@@ -40,7 +42,7 @@ import { company, contact } from '../lib/site-data';
 import { sozluk, yol, whatsappUrl } from '../i18n';
 import type { Dil } from '../i18n';
 
-const { title, seoTitle, description, heroDesc, heroImage, ogImage, facility, features, products, process, sectors, faq, referanslar = [], heroTitle, gallery = [], fiyatFaktorleri = [], bolge, lang = 'tr', slug } = Astro.props;
+const { title, seoTitle, description, heroDesc, heroImage, ogImage, facility, features, products, process, sectors, faq, referanslar = [], heroTitle, gallery = [], projeler = [], fiyatFaktorleri = [], bolge, lang = 'tr', slug } = Astro.props;
 const s = sozluk(lang);
 const urunWaUrl = whatsappUrl(lang, s.whatsapp.urun(title));
 
@@ -176,6 +178,37 @@ const breadcrumbSchema = {
       </div>
     </div>
   </section>
+
+  <!-- Son kurumsal projeler -->
+  {projeler.length > 0 && (
+    <section class="py-12 md:py-20 bg-krem-50" aria-labelledby="son-projeler-baslik">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center max-w-2xl mx-auto mb-8 md:mb-10">
+          <p class="text-eymen-700 text-sm font-semibold tracking-wider mb-3">{s.hizmetSayfa.sonProjelerUst}</p>
+          <h2 id="son-projeler-baslik" class="text-3xl md:text-4xl font-extrabold text-koyu-900">{s.hizmetSayfa.sonProjelerBaslik}</h2>
+          <p class="text-koyu-600 mt-4">{s.hizmetSayfa.sonProjelerAciklama}</p>
+        </div>
+        <ul class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6">
+          {projeler.map(p => (
+            <li>
+              <a href={p.href} class="group block h-full bg-white rounded-xl border border-koyu-100 overflow-hidden hover:shadow-xl hover:border-eymen-200 transition-all duration-300 hover:-translate-y-1">
+                <div class="aspect-[4/3] overflow-hidden bg-koyu-200">
+                  <img src={p.image} srcset={srcset(p.image)} sizes="(min-width: 1280px) 400px, (min-width: 640px) 50vw, 100vw" {...boyut(p.image)} alt={p.title} loading="lazy" decoding="async" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+                </div>
+                <div class="p-4 md:p-5">
+                  <h3 class="font-bold text-koyu-900 mb-1 group-hover:text-eymen-600 transition-colors">{p.title}</h3>
+                  <p class="text-sm text-koyu-600 leading-relaxed line-clamp-2">{p.description}</p>
+                </div>
+              </a>
+            </li>
+          ))}
+        </ul>
+        <div class="text-center mt-8">
+          <a href={yol(lang, 'projeler')} class="inline-flex items-center gap-2 text-eymen-700 font-semibold hover:text-eymen-800">{s.hizmetSayfa.tumProjeler} →</a>
+        </div>
+      </div>
+    </section>
+  )}
 
   <!-- Gerçek işler galerisi -->
   {gallery.length > 0 && (

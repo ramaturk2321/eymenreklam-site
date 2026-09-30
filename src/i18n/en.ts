@@ -114,6 +114,10 @@ export const en: Sozluk = {
     galeriAciklama:
       'Every photograph below is from work produced in our own facility and installed on site. Where a project page exists, the photo links to it.',
     tumProjeler: 'All our projects',
+    sonProjelerUst: 'FROM THE FIELD',
+    sonProjelerBaslik: 'Recent Corporate Projects',
+    sonProjelerAciklama:
+      'Recent work produced and installed on site for retail chains, mall stores and factories.',
     nedenBiz: 'Why Eymen Reklam?',
     nedenBizAciklama: (yil: number) =>
       `What ${yil} years of in-house production means for our corporate clients.`,

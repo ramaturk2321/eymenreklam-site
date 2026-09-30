@@ -120,6 +120,10 @@ export const tr = {
     galeriAciklama:
       'Aşağıdaki fotoğrafların tamamı kendi tesisimizde ürettiğimiz ve sahada uyguladığımız işlerden. Bağlantılı olanlar proje sayfasına gider.',
     tumProjeler: 'Tüm projelerimiz',
+    sonProjelerUst: 'SAHADAN',
+    sonProjelerBaslik: 'Son Kurumsal Projelerimiz',
+    sonProjelerAciklama:
+      'Zincir mağazalar, AVM şubeleri ve fabrikalar için son dönemde ürettiğimiz ve yerinde monte ettiğimiz işler.',
     nedenBiz: 'Neden Eymen Reklam?',
     nedenBizAciklama: (yil: number) =>
       `${yil} yıllık deneyimle kurumsal müşterilerimize sunduğumuz avantajlar.`,

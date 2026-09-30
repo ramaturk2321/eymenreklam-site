@@ -13,6 +13,24 @@ export async function getStaticPaths() {
 
 const { hizmet } = Astro.props;
 const d = hizmet.data;
+
+// Hizmet sayfasında öne çıkan son kurumsal projeler — slug yanlışsa build kırılır.
+const ONE_CIKAN_PROJELER: Partial<Record<HizmetId, string[]>> = {
+  tabela: [
+    'tatbak-gebze-magaza',
+    'koop-market-magaza-tabela',
+    'pawco-water-garden-avm',
+    'kiler-gyo-referans-pendik',
+    'civil-bursa',
+    'isuzu-yonlendirme',
+  ],
+};
+const tumProjeler = await getCollection('projeler');
+const projeler = (ONE_CIKAN_PROJELER[hizmet.id as HizmetId] ?? []).map(slug => {
+  const p = tumProjeler.find(x => x.id === slug);
+  if (!p) throw new Error(`hizmetlerimiz/${hizmet.id}: proje bulunamadı: ${slug}`);
+  return { href: `/projelerimiz/${slug}/`, title: p.data.title, description: p.data.description, image: p.data.image };
+});
 ---
 
 <HizmetDetay
@@ -24,6 +42,7 @@ const d = hizmet.data;
   heroImage={d.heroImage}
   heroTitle={d.heroTitle}
   gallery={d.gallery}
+  projeler={projeler}
   fiyatFaktorleri={d.fiyatFaktorleri}
   bolge={d.bolge}
   ogImage={d.heroImage ?? d.listImage}

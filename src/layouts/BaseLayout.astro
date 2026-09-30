@@ -22,9 +22,12 @@ interface Props {
   tur?: 'hizmet' | 'proje';
   /** Arama sonuç sayfası gibi dizine girmemesi gereken sayfalar */
   noindex?: boolean;
+  /** false → GA4 yüklenmez (404: eski/yabancı URL tarayan botlar raporu şişiriyordu).
+   *  gtag() kuyruğu yine tanımlanır, sayfadaki çağrılar hata vermez. */
+  analitik?: boolean;
 }
 
-const { title, description, image, lang = 'tr', sayfa, slug, tur, noindex = false } = Astro.props;
+const { title, description, image, lang = 'tr', sayfa, slug, tur, noindex = false, analitik = true } = Astro.props;
 const s = sozluk(lang);
 const dilBilgi = DIL_BILGISI[lang];
 const aciklama = description ?? `${s.seo.varsayilanAciklama} ☎ ${contact.phone}`;
@@ -60,27 +63,34 @@ const kimlik = sayfa ? { anahtar: sayfa, slug, tur } : undefined;
     </style>
     <!-- Google Analytics 4 — gtag.js (191 KB) ana iş parçacığını kilitlediği için ilk etkileşimde
          veya load + 4 sn sonra yüklenir; gtag() çağrıları dataLayer'da kuyruklanır, olay kaybı olmaz. -->
-    <script is:inline>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'G-BP7BT5C1X1');
-      (function () {
-        var yuklendi = false;
-        function yukle() {
-          if (yuklendi) return;
-          yuklendi = true;
-          var s = document.createElement('script');
-          s.async = true;
-          s.src = 'https://www.googletagmanager.com/gtag/js?id=G-BP7BT5C1X1';
-          document.head.appendChild(s);
-        }
-        ['pointerdown', 'keydown', 'touchstart', 'scroll'].forEach(function (e) {
-          window.addEventListener(e, yukle, { once: true, passive: true });
-        });
-        window.addEventListener('load', function () { setTimeout(yukle, 4000); });
-      })();
-    </script>
+    {analitik ? (
+      <script is:inline>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-BP7BT5C1X1');
+        (function () {
+          var yuklendi = false;
+          function yukle() {
+            if (yuklendi) return;
+            yuklendi = true;
+            var s = document.createElement('script');
+            s.async = true;
+            s.src = 'https://www.googletagmanager.com/gtag/js?id=G-BP7BT5C1X1';
+            document.head.appendChild(s);
+          }
+          ['pointerdown', 'keydown', 'touchstart', 'scroll'].forEach(function (e) {
+            window.addEventListener(e, yukle, { once: true, passive: true });
+          });
+          window.addEventListener('load', function () { setTimeout(yukle, 4000); });
+        })();
+      </script>
+    ) : (
+      <script is:inline>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+      </script>
+    )}
     {lang === 'ar' && (
       <>
         {/* Arapça sayfalar Cairo ile dizilir — Poppins'te Arapça glif yok. */}
