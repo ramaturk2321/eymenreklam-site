@@ -31,6 +31,10 @@
   --color-krem-100: #f5f1eb;
   --color-krem-200: #e9e2d8;
 
+  /* Turuncu zemin (1 Eki 2026): eymen-100 ile eymen-200 arası */
+  --color-zemin: #fee2c0;
+  --color-zemin-cizgi: #fcc995;
+
   /* Font */
   --font-sans: 'Poppins', system-ui, -apple-system, sans-serif;
 }
@@ -51,9 +55,19 @@
 body {
   font-family: var(--font-sans);
   color: var(--color-koyu-800);
-  background-color: white;
+  background-color: var(--color-zemin);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+/* Sayfa bölümlerinin açık zeminleri turuncu; kartlar (div.bg-white) beyaz kalır.
+   Katmansız kural Tailwind utility katmanını ezer, !important gerekmez. */
+section.bg-white,
+section.bg-koyu-50,
+section.bg-krem-50,
+section.bg-krem-100 {
+  background-color: var(--color-zemin);
+  border-color: var(--color-zemin-cizgi);
 }
 
 /* Scroll-triggered fade-in animation */
