@@ -50,7 +50,7 @@ export const sektorler: Sektor[] = [
     referanslar: [
       {
         ad: 'Hakmar / Hakmar Express',
-        isler: 'Mağaza cephe tabelaları, kutu harf, insert ve afiş serileri, araç giydirme, özel marka (Haktat) ambalaj tasarımı.',
+        isler: 'Mağaza cephe tabelaları, kutu harf, insert ve afiş serileri, araç ve kamyon giydirme (YumTat), özel marka (Haktat) ambalaj tasarımı.',
         olcek: '800+ mağazalı zincir, 2000’den beri süregelen iş birliği',
         href: '/urunlerimiz/hakmar-avm/',
         hizmetler: ['tabela', 'magaza-reklam', 'folyo-giydirme', 'afis-baski', 'dijital-baski', 'grafik-tasarim'],
@@ -163,9 +163,9 @@ export const sektorler: Sektor[] = [
       },
       {
         ad: 'Çamlıbel Süt',
-        isler: 'Dağıtım araçları için araç giydirme ve folyo kaplama.',
-        href: '/projelerimiz/camlibel-sut/',
-        hizmetler: ['folyo-giydirme'],
+        isler: 'Kartal Esentepe fabrika satış mağazasında ışıklı çerçeveli cephe tabelası; dağıtım araçları için araç giydirme.',
+        href: '/projelerimiz/camlibel-kartal-esentepe/',
+        hizmetler: ['tabela', 'folyo-giydirme'],
       },
       {
         ad: 'Doruk Çikolata',
