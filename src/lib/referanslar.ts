@@ -95,6 +95,12 @@ export const sektorler: Sektor[] = [
         oneCikan: true,
       },
       {
+        ad: 'Puppet Pet',
+        isler: 'Pendik mağazasında vitrin one way vision, iç mekân duvar görseli, kasa bankosu ve raf folyo giydirme.',
+        href: '/projelerimiz/puppet-pet-pendik/',
+        hizmetler: ['folyo-giydirme', 'magaza-reklam'],
+      },
+      {
         ad: 'Eve Mağazaları',
         isler: 'Kozmetik mağazalarında kutu harf tabela, vitrin folyo ve cephe giydirme.',
         href: '/projelerimiz/eve-magazalari/',
@@ -103,9 +109,9 @@ export const sektorler: Sektor[] = [
       },
       {
         ad: 'Boldy Yemek & Market',
-        isler: 'Bulvar 216 Ataşehir mağazasında cephe branda germe ve dijital baskı.',
-        href: '/projelerimiz/boldy-bulvar-216/',
-        hizmetler: ['bez-baski', 'magaza-reklam'],
+        isler: 'Bulvar 216 Ataşehir mağazasında cephe branda germe, 1453 AVM Maslak mağazasında dekota UV baskı "Neden Boldy?" duvar panosu.',
+        href: '/projelerimiz/boldy-1453-maslak/',
+        hizmetler: ['bez-baski', 'uv-baski', 'magaza-reklam'],
         oneCikan: true,
       },
       {
