@@ -50,7 +50,7 @@ export const sektorler: Sektor[] = [
     referanslar: [
       {
         ad: 'Hakmar / Hakmar Express',
-        isler: 'Mağaza cephe tabelaları, kutu harf, insert ve afiş serileri, araç ve kamyon giydirme (YumTat), özel marka (Haktat) ambalaj tasarımı.',
+        isler: 'Mağaza cephe tabelaları, kutu harf, yeni şube mağaza içi uygulamaları (Kışladüzü), insert ve afiş serileri, araç ve kamyon giydirme (YumTat), özel marka (Haktat) ambalaj tasarımı.',
         olcek: '800+ mağazalı zincir, 2000’den beri süregelen iş birliği',
         href: '/urunlerimiz/hakmar-avm/',
         hizmetler: ['tabela', 'magaza-reklam', 'folyo-giydirme', 'afis-baski', 'dijital-baski', 'grafik-tasarim'],
@@ -211,6 +211,12 @@ export const sektorler: Sektor[] = [
         href: '/projelerimiz/isuzu-yonlendirme/',
         hizmetler: ['tabela'],
         oneCikan: true,
+      },
+      {
+        ad: 'Fuzul',
+        isler: 'Derince şubesinde alüminyum alın tabela, vinil reklam bandı ve kompozit cephe kaplama.',
+        href: '/projelerimiz/fuzul-derince-sube/',
+        hizmetler: ['tabela', 'magaza-reklam'],
       },
       {
         ad: 'Beko (Bereket Mobilya bayisi)',
