@@ -236,6 +236,11 @@
       "source": "/projelerimiz/artema-stand-uv/",
       "destination": "/projelerimiz/",
       "permanent": true
+    },
+    {
+      "source": "/projelerimiz/camlibel-sut/",
+      "destination": "/projelerimiz/camlibel-kartal-esentepe/",
+      "permanent": true
     }
   ]
 }
