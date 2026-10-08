@@ -163,7 +163,7 @@ export const sektorler: Sektor[] = [
       },
       {
         ad: 'Çamlıbel Süt',
-        isler: 'Kartal Esentepe fabrika satış mağazasında ışıklı çerçeveli cephe tabelası; dağıtım araçları için araç giydirme.',
+        isler: 'Kartal Esentepe fabrika satış mağazasında ışıklı çerçeveli cephe tabelası ve vitrin folyo giydirme.',
         href: '/projelerimiz/camlibel-kartal-esentepe/',
         hizmetler: ['tabela', 'folyo-giydirme'],
       },
