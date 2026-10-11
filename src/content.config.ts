@@ -83,6 +83,7 @@ const hizmetSemasi = z.object({
     description: z.string(),
     heroDesc: z.string(),
     heroImage: z.string().optional(),
+    ogImage: z.string().optional(),   // paylaşım (WhatsApp/sosyal) önizlemesi; yoksa heroImage
     /** H1 için uzun başlık; menü/breadcrumb title'ı kullanmaya devam eder */
     heroTitle: z.string().optional(),
     order: z.number(),
