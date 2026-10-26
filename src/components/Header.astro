@@ -23,6 +23,9 @@ const hizmetler = (await getCollection(HIZMET_KOLEKSIYONU[lang]))
     icon: h.data.listIcon,
   }));
 
+// Etkinlik baskısı sayfası yalnızca İngilizce (koleksiyonda değil, ayrı sayfa).
+if (lang === 'en') hizmetler.push({ href: '/en/event-printing/', label: 'Event Printing', icon: '📘' });
+
 // Ürün mega menüsü yalnızca Türkçe — 56 ürün sayfası yerel arama için var,
 // EN/AR'da karşılıkları yok, oradan link verilmez.
 const urunler = [

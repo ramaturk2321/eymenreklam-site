@@ -27,6 +27,16 @@ const services = (await getCollection(HIZMET_KOLEKSIYONU[lang]))
     href: hizmetYolu(lang, h.id),
     icon: h.data.listIcon,
   }));
+
+// Etkinlik baskısı sayfası yalnızca İngilizce (koleksiyonda değil, ayrı sayfa).
+if (lang === 'en') services.push({
+  title: 'Event & Conference Printing',
+  desc: 'Workbooks, handouts, signage and posters for meetings in Istanbul — delivered boxed and labelled to your hotel or venue.',
+  features: ['Workbooks', 'Handouts', 'Room Signage', 'Hotel Delivery'],
+  image: '/images/urunler/katalog-1.webp',
+  href: '/en/event-printing/',
+  icon: '📘',
+});
 ---
 
 <BaseLayout

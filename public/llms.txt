@@ -33,6 +33,9 @@ annotations. Product pages (/urunlerimiz/) and the blog exist in Turkish only.
 - [Services](https://www.eymenreklam.com.tr/en/services/): signage manufacturing, UV printing, banner & mesh
   printing, large-format digital printing, poster printing, vinyl & vehicle wrapping, retail branding,
   displays & stands, graphic design, safety signage
+- [Event & Conference Printing](https://www.eymenreklam.com.tr/en/event-printing/): workbooks, handouts, room
+  signage and posters for international meetings in Istanbul, delivered boxed and labelled to the hotel or
+  venue; unbranded production for print management companies (English only)
 - [Projects](https://www.eymenreklam.com.tr/en/projects/)
 - [Clients](https://www.eymenreklam.com.tr/en/references/)
 - [Contact](https://www.eymenreklam.com.tr/en/contact/)

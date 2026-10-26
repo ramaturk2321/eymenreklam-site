@@ -1,0 +1,272 @@
+---
+// Yalnızca İngilizce yayınlanan sayfa: yurt dışındaki etkinlik ajansları ve baskı yönetimi
+// (print management) firmaları için — İstanbul'daki otele/mekâna teslim etkinlik baskısı.
+// TR/AR karşılığı yok; bu yüzden BaseLayout'a `sayfa` verilmez, hreflang basılmaz.
+// Süreç Printprovider / Hyatt Centric Levent işinden (Ekim 2026) alındı. Üretim detayı
+// (kâğıt, makine) yazılmaz; fiyat yazılmaz.
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { srcset, SIZES } from '../../lib/gorsel';
+import { company, contact } from '../../lib/site-data';
+import { yol, whatsappUrl } from '../../i18n';
+
+const baslik = 'Event & Conference Printing in Istanbul';
+const aciklama = 'Workbooks, handouts, signage and posters for conferences and meetings in Istanbul — files checked the same day, sample photos before the full run, delivered boxed and labelled to your hotel or venue.';
+const waUrl = whatsappUrl('en', 'Hello, we have an event in Istanbul and need printing delivered to the venue.');
+
+const urunler = [
+  { icon: '📘', title: 'Delegate workbooks', desc: 'Spiral-bound manuals and workbooks with clear front and card back covers, printed double-sided from your PDF.' },
+  { icon: '📄', title: 'Handouts and session packs', desc: 'Single- or double-sided sets, collated and stapled the way your sample shows.' },
+  { icon: '🪧', title: 'Directional and room signage', desc: 'Rigid boards for room names, registration and directions — with arrows, velcro or easel backs as needed.' },
+  { icon: '🖼️', title: 'Posters and large-format graphics', desc: 'Posters, backdrops and wall graphics for plenary rooms, foyers and breakout areas.' },
+  { icon: '📍', title: 'Roll-up banners and stands', desc: 'Roll-ups, X-banners and display stands, delivered ready to set up.' },
+  { icon: '🏷️', title: 'Badges, table cards and menus', desc: 'Name badges, table tents, place cards, menus and certificates.' },
+];
+
+const surec = [
+  { step: '01', title: 'Send the brief', desc: 'Items, quantities, finished sizes, venue and delivery date. We reply with a priced quotation the same working day.' },
+  { step: '02', title: 'Files checked the same day', desc: 'Send print-ready PDFs by WeTransfer or email. We check every file and confirm the same day that we can work from them — or tell you exactly what needs fixing.' },
+  { step: '03', title: 'Proforma and deposit', desc: 'A proforma invoice in your company\'s name. Payment by bank transfer in EUR or Turkish lira.' },
+  { step: '04', title: 'Sample photos before the full run', desc: 'We print one of each item first and send you photos and short videos. The full run starts only after you approve.' },
+  { step: '05', title: 'Boxed and labelled your way', desc: 'Boxes are labelled with your template — recipient, "hold for" name, event and box numbers. You get a photo of all boxes together before they leave.' },
+  { step: '06', title: 'Delivered to the venue', desc: 'We deliver to the hotel or venue and hand over to the events team, then confirm delivery to you.' },
+];
+
+const araci = [
+  { title: 'Unbranded delivery', desc: 'No Eymen logo on boxes, labels or delivery notes. Your client sees your name, not ours.' },
+  { title: 'We work through you', desc: 'All correspondence and invoicing go to you. We do not contact your client or the venue unless you ask us to.' },
+  { title: 'Your references, your labels', desc: 'Your job numbers on our paperwork and your label template on every box.' },
+  { title: 'One person, in English', desc: 'One contact handles quotation, file checks, samples and delivery — by email, phone or WhatsApp.' },
+];
+
+const faq = [
+  { q: 'How quickly can you turn an order around?', a: 'It depends on the items and quantities. Tell us the delivery date when you ask for a quote and we will confirm whether it can be met before you place the order. We schedule around Turkish public holidays and tell you about them in advance.' },
+  { q: 'Do you need print-ready files?', a: 'Print-ready PDFs with bleed are best. If a file needs a small change — a size, a missing bleed, a page order — we can make it and send you a proof first.' },
+  { q: 'Which currencies can we pay in?', a: 'We quote in GBP, EUR or Turkish lira, and accept bank transfers in EUR or Turkish lira. Work starts on a deposit against a proforma invoice; the balance is due before delivery.' },
+  { q: 'Can we see the work before it is all printed?', a: 'Yes. We print one sample of each item and send photos and videos. You approve or ask for changes, and only then do we run the full quantity.' },
+  { q: 'Do you deliver outside Istanbul?', a: 'Yes. We deliver to venues across Istanbul — both the European and Asian sides — and can ship to other cities in Turkey.' },
+  { q: 'How do you handle confidential material?', a: 'Your files are used only for your order. We do not show your work in our portfolio or on social media without written permission.' },
+];
+
+const faqSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: faq.map(f => ({
+    '@type': 'Question',
+    name: f.q,
+    acceptedAnswer: { '@type': 'Answer', text: f.a },
+  })),
+};
+
+const serviceSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'Service',
+  name: baslik,
+  description: aciklama,
+  serviceType: 'Event and conference printing',
+  areaServed: { '@type': 'City', name: 'Istanbul' },
+  availableLanguage: ['English', 'Turkish'],
+  provider: { '@type': 'LocalBusiness', name: company.name, url: `${company.siteUrl}/en/`, telephone: contact.phone, email: contact.email },
+};
+
+const breadcrumbSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: `${company.siteUrl}${yol('en', 'ana')}` },
+    { '@type': 'ListItem', position: 2, name: 'Services', item: `${company.siteUrl}${yol('en', 'hizmetler')}` },
+    { '@type': 'ListItem', position: 3, name: 'Event & Conference Printing' },
+  ],
+};
+---
+
+<BaseLayout title={baslik} description={aciklama} image="/images/urunler/katalog-1.webp" lang="en">
+
+  <script type="application/ld+json" set:html={JSON.stringify(serviceSchema)} />
+  <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+  <script type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)} />
+
+  <!-- Breadcrumb -->
+  <nav class="bg-koyu-50 border-b border-koyu-100 py-3" aria-label="Breadcrumb">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <ol class="flex items-center gap-2 text-sm text-koyu-500">
+        <li><a href={yol('en', 'ana')} class="hover:text-eymen-600 transition-colors">Home</a></li>
+        <li aria-hidden="true">/</li>
+        <li><a href={yol('en', 'hizmetler')} class="hover:text-eymen-600 transition-colors">Services</a></li>
+        <li aria-hidden="true">/</li>
+        <li class="text-koyu-800 font-medium">Event Printing</li>
+      </ol>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="bg-krem-100 border-b border-krem-200 py-16 md:py-24">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        <div>
+          <p class="text-eymen-700 text-sm font-semibold tracking-wider mb-3">FOR EVENT AGENCIES AND PRINT MANAGERS</p>
+          <h1 class="text-4xl md:text-5xl font-extrabold text-koyu-900 mb-6 leading-tight">{baslik}</h1>
+          <p class="text-koyu-600 text-lg leading-relaxed mb-8">
+            Running a conference or meeting in Istanbul from abroad? Send us your print-ready files.
+            We check them the same day, send sample photos before the full run, and deliver everything
+            boxed and labelled to your hotel or venue.
+          </p>
+          <div class="flex flex-col sm:flex-row gap-4">
+            <a href={yol('en', 'teklif')} class="inline-flex items-center justify-center gap-2 bg-eymen-500 hover:bg-eymen-600 text-white px-8 py-4 rounded-xl text-base font-bold transition-all hover:shadow-lg">
+              Request a quote
+            </a>
+            <a href={contact.emailHref} class="inline-flex items-center justify-center gap-2 border-2 border-koyu-200 hover:border-eymen-400 text-koyu-800 px-8 py-4 rounded-xl text-base font-semibold transition-all">
+              {contact.email}
+            </a>
+          </div>
+        </div>
+        <div class="bg-white rounded-2xl border border-koyu-100 shadow-xl p-8">
+          <p class="text-sm font-semibold text-koyu-500 tracking-wider mb-5">WHAT YOU CAN COUNT ON</p>
+          <ul class="space-y-4">
+            {[
+              'Quotation the same working day',
+              'Files checked and confirmed the same day',
+              'Sample photos before the full run',
+              'Boxes labelled with your template',
+              'Photo of all boxes before dispatch',
+              'Delivery to the hotel or venue',
+              'Correspondence in English',
+            ].map(madde => (
+              <li class="flex items-start gap-3 text-koyu-700">
+                <svg class="w-6 h-6 flex-shrink-0 text-eymen-500" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
+                <span>{madde}</span>
+              </li>
+            ))}
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Ne basıyoruz -->
+  <section class="py-16 md:py-24">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-2xl mx-auto mb-12">
+        <p class="text-eymen-600 text-sm font-semibold tracking-wider mb-3">WHAT WE PRODUCE</p>
+        <h2 class="text-3xl md:text-4xl font-extrabold text-koyu-900">Everything for the meeting room, in one order</h2>
+        <p class="text-koyu-500 mt-4">Paper, signage and display items from one supplier, delivered together.</p>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        {urunler.map(u => (
+          <div class="bg-white rounded-2xl border border-koyu-100 p-7">
+            <span class="text-3xl block mb-4" aria-hidden="true">{u.icon}</span>
+            <h3 class="text-lg font-bold text-koyu-900 mb-2">{u.title}</h3>
+            <p class="text-sm text-koyu-500 leading-relaxed">{u.desc}</p>
+          </div>
+        ))}
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-10">
+        {[
+          { src: '/images/urunler/katalog-1.webp', alt: 'Printed booklet' },
+          { src: '/images/urunler/rollup-1.webp', alt: 'Roll-up banner at an event' },
+          { src: '/images/projeler/tatbak-foodist-stant-1.webp', alt: 'Trade fair stand produced in Istanbul' },
+        ].map(g => (
+          <img src={g.src} srcset={srcset(g.src)} sizes={SIZES.kart3} alt={g.alt} width="600" height="450" loading="lazy" decoding="async" class="w-full aspect-[4/3] object-cover rounded-2xl" />
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- Süreç -->
+  <section class="py-16 md:py-24 bg-koyu-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-2xl mx-auto mb-12">
+        <p class="text-eymen-600 text-sm font-semibold tracking-wider mb-3">HOW IT WORKS</p>
+        <h2 class="text-3xl md:text-4xl font-extrabold text-koyu-900">From your files to the venue</h2>
+        <p class="text-koyu-500 mt-4">You stay informed at every step — without having to chase.</p>
+      </div>
+      <ol class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        {surec.map(p => (
+          <li class="bg-white rounded-2xl border border-koyu-100 p-7">
+            <span class="text-3xl font-extrabold text-eymen-500">{p.step}</span>
+            <h3 class="text-lg font-bold text-koyu-900 mt-3 mb-2">{p.title}</h3>
+            <p class="text-sm text-koyu-500 leading-relaxed">{p.desc}</p>
+          </li>
+        ))}
+      </ol>
+    </div>
+  </section>
+
+  <!-- Aracı firmalar -->
+  <section id="print-managers" class="py-16 md:py-24 bg-koyu-900">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-5 gap-12">
+        <div class="lg:col-span-2">
+          <p class="text-eymen-300 text-sm font-semibold tracking-wider mb-3">FOR PRINT MANAGEMENT COMPANIES</p>
+          <h2 class="text-3xl md:text-4xl font-extrabold text-white mb-5">Your production partner in Istanbul</h2>
+          <p class="text-koyu-300 leading-relaxed mb-6">
+            Your client has an event in Istanbul and you manage their print. Printing locally means no
+            international freight, no customs delays and room for last-minute file changes. We produce and
+            deliver under your name.
+          </p>
+          <a href={yol('en', 'teklif')} class="inline-flex items-center gap-2 text-eymen-300 font-semibold hover:text-white transition-colors">
+            Send us your next brief →
+          </a>
+        </div>
+        <div class="lg:col-span-3 grid grid-cols-1 sm:grid-cols-2 gap-5">
+          {araci.map(a => (
+            <div class="rounded-2xl border border-koyu-700 bg-koyu-800/60 p-6">
+              <h3 class="text-base font-bold text-white mb-2">{a.title}</h3>
+              <p class="text-sm text-koyu-300 leading-relaxed">{a.desc}</p>
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Bölge -->
+  <section class="py-16 md:py-20">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <h2 class="text-2xl md:text-3xl font-extrabold text-koyu-900 mb-4">Hotels and venues across Istanbul</h2>
+      <p class="text-koyu-500 leading-relaxed">
+        Levent, Maslak, Şişli, Taksim, the historic peninsula, the airport hotels and the Asian side —
+        we deliver to hotels, congress centres and meeting venues anywhere in the city. Our facility is in
+        Pendik, Istanbul, where we have been producing since {company.founded}.
+      </p>
+    </div>
+  </section>
+
+  <!-- SSS -->
+  <section class="py-16 md:py-24 bg-koyu-50">
+    <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-14">
+        <h2 class="text-3xl md:text-4xl font-extrabold text-koyu-900">Frequently Asked Questions</h2>
+      </div>
+      <div class="space-y-4">
+        {faq.map(f => (
+          <details class="group bg-white rounded-xl border border-koyu-100 overflow-hidden">
+            <summary class="flex items-center justify-between cursor-pointer p-5 font-semibold text-koyu-900 hover:text-eymen-600 transition-colors">
+              {f.q}
+              <svg class="w-5 h-5 flex-shrink-0 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+            </summary>
+            <div class="px-5 pb-5 text-sm text-koyu-500 leading-relaxed">{f.a}</div>
+          </details>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="bg-gradient-to-br from-eymen-500 to-eymen-700 py-16 md:py-20">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <h2 class="text-3xl md:text-4xl font-extrabold text-white mb-4">Have an event in Istanbul?</h2>
+      <p class="text-eymen-100 text-lg mb-8 max-w-2xl mx-auto">
+        Send the items, quantities, venue and date. You will have a priced quotation the same working day.
+      </p>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <a href={yol('en', 'teklif')} class="inline-flex items-center justify-center gap-2 bg-white text-eymen-600 hover:bg-koyu-50 px-8 py-4 rounded-xl text-base font-bold transition-all hover:shadow-lg">
+          Request a quote
+        </a>
+        <a href={waUrl} target="_blank" rel="noopener" class="inline-flex items-center justify-center gap-2 border-2 border-white/30 hover:border-white/60 text-white px-8 py-4 rounded-xl text-base font-semibold transition-all">
+          WhatsApp
+        </a>
+      </div>
+    </div>
+  </section>
+
+</BaseLayout>
