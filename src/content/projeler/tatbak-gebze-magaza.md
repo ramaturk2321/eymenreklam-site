@@ -1,6 +1,6 @@
 ---
 title: "Tatbak Gebze – Mağaza Tabela ve Görsel Uygulamaları"
-seoTitle: "Tatbak Gebze Mağazası – Kutu Harf Tabela, Cam Folyo ve İç Mekân Görselleri"
+seoTitle: "Tatbak Gebze Mağazası – Kutu Harf Tabela ve Cam Folyo"
 description: "Tatbak'ın yeni Gebze mağazası için ışıklı kutu harf cephe tabelası, vitrin lightbox, buzlu cam folyo ve iç mekân duvar/raf görsellerinin üretimi ve montajı."
 image: "/images/projeler/tatbak-gebze-magaza-1.webp"
 images:

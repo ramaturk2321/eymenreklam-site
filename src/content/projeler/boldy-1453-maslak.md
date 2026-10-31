@@ -1,6 +1,6 @@
 ---
 title: "Boldy 1453 AVM Maslak – \"Neden Boldy?\" Duvar Panosu"
-seoTitle: "Boldy 1453 AVM Maslak – Dekota UV Baskı \"Neden Boldy?\" Duvar Panosu"
+seoTitle: "Boldy 1453 AVM Maslak – Dekota UV Baskı Duvar Panosu"
 description: "Boldy Yemek ve Market'in 1453 AVM Maslak mağazasında dekota üzerine UV baskı, konturlu kesim konuşma balonları ve katmanlı başlıktan oluşan \"Neden Boldy?\" duvar panosu uygulaması."
 image: "/images/projeler/boldy-1453-maslak-1.webp"
 images:

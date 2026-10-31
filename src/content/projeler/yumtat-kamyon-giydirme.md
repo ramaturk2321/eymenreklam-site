@@ -1,6 +1,6 @@
 ---
 title: "YumTat Yumurtacılık – Kamyon Kasası Giydirme"
-seoTitle: "YumTat Yumurtacılık Kamyon Kasası Folyo Giydirme – Hakmar Express"
+seoTitle: "YumTat Kamyon Kasası Folyo Giydirme"
 description: "Hakmar Express'in YumTat Yumurtacılık markası için dağıtım kamyonu kasasının iki yan yüzeyine dijital baskı folyo giydirme uygulaması."
 image: "/images/projeler/yumtat-kamyon-giydirme-1.webp"
 images:

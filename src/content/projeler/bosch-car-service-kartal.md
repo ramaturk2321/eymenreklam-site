@@ -1,6 +1,6 @@
 ---
 title: "Bosch Car Service Otospeed Kartal – Servis Tabelası ve Yönlendirme"
-seoTitle: "Bosch Car Service Kartal – Vinil Kasa Tabela, Yönlendirme ve Giydirme"
+seoTitle: "Bosch Car Service Kartal – Tabela ve Yönlendirme"
 description: "Kartal'daki Otospeed Bosch Car Service için servis girişi vinil kasa tabelaları, sokak ve rampa yönlendirmeleri, kulübe ve totem folyo giydirme, servis içi duvar görselleri ve pleksi panolar."
 image: "/images/projeler/bosch-car-service-kartal-1.webp"
 images:

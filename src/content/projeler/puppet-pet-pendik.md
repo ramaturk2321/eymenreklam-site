@@ -1,6 +1,6 @@
 ---
 title: "Puppet Pet Pendik – Vitrin ve Mağaza İçi Giydirme"
-seoTitle: "Puppet Pet Pendik – One Way Vision Vitrin ve Mağaza İçi Folyo Giydirme"
+seoTitle: "Puppet Pet Pendik – One Way Vision ve Vitrin Folyo"
 description: "Puppet Pet'in Pendik mağazasında vitrin camlarına one way vision, iç mekân duvarına görsel uygulaması, kasa bankosu ve raf/dolap yüzeylerine folyo giydirme."
 image: "/images/projeler/puppet-pet-pendik-1.webp"
 images:

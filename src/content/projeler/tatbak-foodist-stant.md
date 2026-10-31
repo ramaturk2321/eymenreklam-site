@@ -1,6 +1,6 @@
 ---
 title: "Tatbak – FOODIST 2026 Fuar Standı"
-seoTitle: "Tatbak FOODIST 2026 Fuar Standı – 40 m² Anahtar Teslim Stant"
+seoTitle: "Tatbak FOODIST 2026 – 40 m² Anahtar Teslim Fuar Standı"
 description: "Tatbak Gıda için FOODIST 2026 fuarında 10×4 m (40 m²) ada stant: tasarım geliştirme, ahşap çıtalı ışıklı kutu harf tabela, alt marka teşhir nişleri, karşılama bankosu ve sahada montaj."
 image: "/images/projeler/tatbak-foodist-stant-1.webp"
 images:

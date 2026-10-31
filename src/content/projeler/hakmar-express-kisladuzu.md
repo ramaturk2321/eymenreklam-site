@@ -1,6 +1,6 @@
 ---
 title: "Hakmar Express Kışladüzü – Mağaza İçi ve Cephe Uygulamaları"
-seoTitle: "Hakmar Express Kışladüzü Körfez – Mağaza Reklam, Reyon Başlığı ve Cam Folyo"
+seoTitle: "Hakmar Express Kışladüzü – Mağaza Reklam ve Cam Folyo"
 description: "Hakmar Express'in Körfez Kışladüzü mağazasında kutu harf tabela bakımı, ışıklı reyon başlıkları, dondurucu giydirme, manav görselleri ve kapı-cam folyo uygulamaları."
 image: "/images/projeler/hakmar-kisladuzu-1.webp"
 images:

@@ -1,6 +1,6 @@
 ---
 title: "Çamlıbel Kartal Esentepe – Fabrika Satış Mağazası Tabela ve Vitrin Giydirme"
-seoTitle: "Çamlıbel Kartal Esentepe – Işıklı Tabela ve Vitrin Folyo Giydirme"
+seoTitle: "Çamlıbel Kartal Esentepe – Işıklı Tabela ve Folyo"
 description: "Çamlıbel Süt Ürünleri'nin Kartal Esentepe fabrika satış mağazasında ışıklı çerçeveli tabela, kutu harf logo ve vitrin folyo giydirme uygulaması."
 image: "/images/projeler/camlibel-esentepe-1.webp"
 images:

@@ -1,7 +1,7 @@
 ---
-title: "UV Baskı Teknolojisi: Yüzeylere Hayat Veren Sessiz Devrimin 7 Sırrı"
-seoTitle: "UV Baskı Teknolojisi Nasıl Çalışır?"
-description: "UV baskı teknolojisi rehberi: çalışma prensibi, uygulama alanları ve teknik detaylar. Pendik İstanbul'da UV baskı için ücretsiz teklif alın."
+title: "UV Baskı Nedir? Nasıl Çalışır, Hangi Yüzeylere Yapılır?"
+seoTitle: "UV Baskı Nedir? Nasıl Çalışır, Nerede Kullanılır"
+description: "UV baskı nedir? Mürekkebin UV ışıkla anında kürlendiği baskı yöntemidir. Cam, ahşap, metal ve pleksiye baskı, dayanım ve fiyat etkenleri. Pendik'te teklif alın."
 excerpt: "UV baskı teknolojisinin tüm sırları: çalışma prensibi, uygulama alanları, teknik detaylar ve doğru partner seçimi."
 image: "/images/blog-uv.webp"
 category: "UV Baskı"
@@ -10,11 +10,13 @@ author: "Eymen Reklam"
 published: true
 ---
 
-Bir tabelanın, bir araç giydirmenin ya da bir mağaza cephesinin nasıl yıllarca canlılığını koruduğunu hiç merak ettiniz mi? Cevap büyük ihtimalle üç harfin arkasında gizli: **UV**. Ultraviyole ışınlarla kürlenen bu baskı teknolojisi, reklam sektörünün sessiz devrimcisi olmaya devam ediyor.
+**UV baskı nedir?** UV baskı, mürekkebin yüzeye aktarıldıktan hemen sonra ultraviyole ışıkla saniyeler içinde sertleştirildiği (kürlendiği) dijital baskı yöntemidir. Bu sayede cam, ahşap, metal, pleksi ve kompozit gibi sert yüzeylere doğrudan baskı yapılabilir. Baskı kurumayı beklemeden işlenir ve dış mekânda doğru malzemeyle 5–7 yıl rengini korur.
 
-## UV Baskı Nedir ve Nasıl Çalışır?
+Pendik'teki tesisimizde 4×2 m flatbed makinemizle [UV baskı hizmeti](/hizmetlerimiz/uv-baski/) veriyoruz. Bu yazıda yöntemin nasıl çalıştığını, nerelerde kullanıldığını ve diğer baskı yöntemlerinden farkını anlatıyoruz.
 
-UV baskı, mürekkebin yüzeye aktarıldıktan hemen sonra ultraviyole ışık kaynağıyla anında sertleştirildiği (kürlendiği) bir baskı yöntemidir. Geleneksel solvent bazlı baskılarda mürekkebin kuruması için saatler, hatta günler gerekirken, UV baskıda bu süre saniyelerle ölçülür.
+## UV Baskı Nasıl Çalışır?
+
+Geleneksel solvent bazlı baskılarda mürekkebin kuruması için saatler, hatta günler gerekir. UV baskıda bu süre saniyelerle ölçülür.
 
 İşte burada şaşırtıcı bir detay var: UV mürekkep aslında sıvı hâlde yüzeye temas eder, ancak UV lamba altından geçtiği anda bir fotokimyasal reaksiyon başlar. Mürekkebin içindeki fotobaşlatıcılar ultraviyole ışığı absorbe eder ve polimerizasyon süreci tetiklenir. Bu süreç o kadar hızlıdır ki, mürekkep yüzeye nüfuz etmeden sertleşir — bu da renklerin çok daha canlı ve net kalmasının ana nedenidir.
 

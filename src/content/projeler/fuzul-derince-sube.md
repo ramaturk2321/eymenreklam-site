@@ -1,6 +1,6 @@
 ---
 title: "Fuzul Derince Şubesi – Cephe Tabelası, Kompozit Kaplama ve İç Mekân Lightbox"
-seoTitle: "Fuzul Derince Şubesi – Alüminyum Alın Tabela, Vinil Bant ve Kompozit Cephe"
+seoTitle: "Fuzul Derince Şubesi – Alın Tabela ve Kompozit Cephe"
 description: "Fuzul'un Kocaeli Derince şubesinde ışıklı alüminyum alın tabela, \"Ev de aldırır, oto da.\" vinil reklam bandı, kompozit cephe kaplama, iç mekân lightbox'ları ve cam kumlama uygulaması."
 image: "/images/projeler/fuzul-derince-4.webp"
 images:

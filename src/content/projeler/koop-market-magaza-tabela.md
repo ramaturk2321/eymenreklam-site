@@ -1,6 +1,6 @@
 ---
 title: "Tarım Kredi KOOP Market – Mağaza Cephe Tabelaları"
-seoTitle: "Tarım Kredi KOOP Market Mağaza Cephe Tabelası ve Kompozit Kaplama"
+seoTitle: "Tarım Kredi KOOP Market – Cephe Tabelası ve Kaplama"
 description: "Tarım Kredi Kooperatif Marketleri (KOOP) İstanbul şubelerinde yeşil kompozit cephe kaplama, ışıklı kutu harf tabela, yönlendirme tabelası ve cam folyo uygulamaları."
 image: "/images/projeler/koop-market-magaza-1.webp"
 images:

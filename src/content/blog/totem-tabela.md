@@ -1,7 +1,7 @@
 ---
-title: "Totem Tabela: Markanızın Sokaktaki En Güçlü Elçisinin 7 Sırrı"
+title: "Totem Tabela Nedir? Türleri, Malzemesi ve Belediye İzni"
 seoTitle: "Totem Tabela Nedir? Türleri ve İzinler"
-description: "Totem tabela türleri, malzeme, rüzgâr dayanımı ve belediye izinleri rehberi. Pendik İstanbul'da totem tabela imalatı için ücretsiz teklif alın."
+description: "Totem tabela nedir? İşletme önünde kendi ayağı üzerinde duran dikey reklam yapısıdır. Türleri, malzeme, rüzgâr dayanımı ve izinler. Pendik'te ücretsiz teklif."
 excerpt: "Totem tabela hakkında bilmeniz gereken her şey: türleri, malzeme seçimi, rüzgâr dayanımı hesaplamaları, belediye izinleri ve etkili tasarım ilkeleri."
 image: "/images/blog-totem.webp"
 category: "Tabela"
@@ -10,11 +10,13 @@ author: "Eymen Reklam"
 published: true
 ---
 
-Bir caddeye girdiğinizde sizi ilk karşılayan ne olur? Bir bina değil, bir vitrin değil — çoğu zaman yolun kenarında dimdik duran bir totem tabela. İşletmelerin kimliğini metrelerce öteden ilan eden bu yapılar, dış mekan reklamcılığının belki de en hafife alınan ama en etkili unsurlarından biridir.
+**Totem tabela nedir?** Totem tabela, bina cephesine değil, işletmenin önüne kendi ayağı ve temeli üzerine kurulan dikey reklam yapısıdır. Akaryakıt istasyonları, AVM'ler, oto servisler ve mağazalar yoldan uzaktaki ya da cephesi görünmeyen yerlerini totemle duyurur. Gövde genellikle çelik konstrüksiyon üzerine kompozit kaplamadır; logo ışıklı kutu harf veya lightbox olarak yapılır.
 
-## Totem Tabela Nedir ve Neden Bu Kadar Etkilidir?
+Aşağıda totem türlerini, malzeme ve rüzgâr dayanımını, belediye izin sürecini ve tasarım kurallarını anlatıyoruz.
 
-Totem tabela, genellikle yerden bağımsız olarak konumlandırılan, dikey formda tasarlanmış büyük boyutlu reklam yapılarıdır. Bir binanın cephesine monte edilen tabelaların aksine, totem tabelalar kendi ayakları üzerinde durur — bu da onlara benzersiz bir görünürlük avantajı kazandırır.
+## Totem Tabela Neden Bu Kadar Etkilidir?
+
+Cepheye monte edilen tabelaların aksine totem kendi ayakları üzerinde durur. Bu da ona bina cephesinin sağlayamadığı bir görünürlük kazandırır.
 
 İşte şaşırtıcı bir veri: Yapılan araştırmalara göre, serbest duran bir totem tabela, cephe tabelalarına kıyasla %47 daha fazla dikkat çeker. Bunun nedeni basit bir algı psikolojisiyle açıklanabilir — insan gözü, çevresinden bağımsız olarak dikine yükselen yapılara doğal bir refleksle yönelir.
 

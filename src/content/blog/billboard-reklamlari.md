@@ -1,7 +1,7 @@
 ---
-title: "Billboard Reklamları: Markanızı Gökyüzüne Taşımanın 7 Sırrı"
-seoTitle: "Billboard Reklamı: Boyut, Maliyet ve Tasarım"
-description: "Billboard reklamları rehberi: boyutlar, maliyet, konum ve tasarım. Pendik İstanbul'da billboard üretimi için Eymen Reklam'dan ücretsiz teklif alın."
+title: "Billboard Nedir? Ölçüleri, Türleri ve Etkili Tasarım"
+seoTitle: "Billboard Nedir? Ölçüleri, Türleri ve Maliyeti"
+description: "Billboard nedir? Yol kenarındaki büyük açık hava reklam panosudur. 3×6 ve 4×8 m ölçüler, türler, maliyet ve baskı. Pendik İstanbul'da ücretsiz teklif alın."
 excerpt: "Şehirlerin siluetini şekillendiren billboard reklamları hakkında bilmeniz gereken her şey: boyutlar, maliyetler ve tasarım ilkeleri."
 image: "/images/blog-billboard.webp"
 category: "Tabela"
@@ -10,9 +10,11 @@ author: "Eymen Reklam"
 published: true
 ---
 
-Şehirlerin siluetini şekillendiren, markaların gökyüzüne uzanan sesi olan billboard reklamları, dış mekan reklamcılığının tartışmasız en güçlü aracıdır. Peki bu devasa panolar hakkında gerçekten ne kadar bilgi sahibisiniz?
+**Billboard nedir?** Billboard, yoğun trafikli cadde, otoyol ve kavşaklara kurulan büyük boyutlu açık hava reklam panosudur. En yaygın ölçüler 3×6 m ve 4×8 m'dir; bina cephesine asılan mega board'lar 12×24 m'ye kadar çıkar. Görsel çoğunlukla vinil branda üzerine geniş format dijital baskıyla üretilir ve panoya gerdirilir.
 
-## Billboard Nedir ve Neden Bu Kadar Etkilidir?
+Aşağıda billboard türlerini, etkili tasarımın kurallarını, baskı malzemesini ve maliyeti belirleyen etkenleri anlatıyoruz.
+
+## Billboard Ölçüleri ve Neden Bu Kadar Etkilidir?
 
 Billboard, genellikle yoğun trafik akışına sahip cadde, otoyol ve kavşak noktalarında konumlanan büyük boyutlu açık hava reklam panolarıdır. Standart bir billboard 3×6 metre veya 4×8 metre boyutlarında üretilir; ancak mega board olarak adlandırılan özel yapılar 12×24 metreye kadar çıkabilir.
 
