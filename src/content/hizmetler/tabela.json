@@ -4,7 +4,7 @@
   "heroTitle": "Pendik Tabela İmalatı ve Montajı: Kutu Harf, Totem ve Cephe Tabelası",
   "description": "Pendik tabelacı: kutu harf, totem, çatı, fener ve ofis tabelası imalatı ve montajı. CNC kesim, LED aydınlatma, 2 yıl garanti. Ücretsiz keşif, Pendik İstanbul.",
   "heroDesc": "Pendik'in 25 yıllık tabelacısı olarak kutu harf tabeladan totem tabelaya, çatı tabelasından neon LED'e kadar tüm tabela türlerinde anahtar teslim imalat ve montaj yapıyoruz. 2.500 m² tesiste CNC kesim ve LED aydınlatma sistemleriyle kurumsal standartlarda tabela üretiyor, İstanbul geneline montaj ekibimizle gidiyoruz.",
-  "heroImage": "/images/projeler/cerez-koop-kartal-1.webp",
+  "heroImage": "/images/projeler/tatbak-gebze-magaza-1.webp",
   "order": 1,
   "listIcon": "🔤",
   "listDesc": "Kutu harf, totem, çatı, cephe ve yönlendirme tabelaları. CNC kesim ve LED aydınlatma ile anahtar teslim üretim ve montaj.",
@@ -42,6 +42,7 @@
     {"src": "/images/projeler/sawkoop-3.webp", "alt": "Sawkoop bina çatı tabelası", "href": "/projelerimiz/sawkoop/"},
     {"src": "/images/projeler/bosch-car-service-kartal-1.webp", "alt": "Bosch Car Service Kartal servis girişi vinil kasa tabela", "href": "/projelerimiz/bosch-car-service-kartal/"}
   ],
+  "galeriAciklama": "Pendik'ten İstanbul ve çevresine uyguladığımız tabela işlerinden bir seçki. Fotoğrafa tıklayınca projenin ayrıntısına gidersiniz.",
   "fiyatFaktorleri": [
     {"baslik": "Tabela türü ve ölçü", "aciklama": "Kutu harfte harf yüksekliği ve harf sayısı, panel ve vinil kasa tabelada m² fiyatı belirler. Ölçü büyüdükçe metre kare başına maliyet düşer."},
     {"baslik": "Malzeme", "aciklama": "Paslanmaz, alüminyum, pleksi ve kompozit arasında hem fiyat hem ömür farkı var. Dış mekânda, özellikle deniz kenarında paslanmayan malzeme öneriyoruz."},
