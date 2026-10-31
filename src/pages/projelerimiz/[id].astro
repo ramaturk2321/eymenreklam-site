@@ -28,6 +28,30 @@ const allProjeler = (await getCollection('projeler'))
   .sort((a, b) => (a.data.order ?? 99) - (b.data.order ?? 99))
   .slice(0, 3);
 
+// Proje kategorisinden ilgili hizmet sayfasına iç link
+const kategoriHizmet: Record<string, string> = {
+  'Tabela': 'tabela',
+  'Yönlendirme Tabelası': 'tabela',
+  'Lightbox Pano': 'tabela',
+  'Mağaza Reklam': 'magaza-reklam',
+  'Folyo & Giydirme': 'folyo-giydirme',
+  'Dolap Kaplama': 'folyo-giydirme',
+  'Araç Giydirme': 'folyo-giydirme',
+  'Cephe Giydirme': 'folyo-giydirme',
+  'UV Baskı': 'uv-baski',
+  'Sunum & Stand': 'sunum-stand',
+  'Display & Stand': 'sunum-stand',
+  'Grafik Tasarım': 'grafik-tasarim',
+  'Dijital Baskı': 'dijital-baski',
+  'Bez Baskı': 'bez-baski',
+  'Afiş Baskı': 'afis-baski',
+  'İş Güvenliği': 'is-guvenligi',
+};
+const hizmetler = await getCollection('hizmetler');
+const ilgiliHizmetler = [...new Set(proje.data.categories.map(c => kategoriHizmet[c]).filter(Boolean))]
+  .map(id => hizmetler.find(h => h.id === id))
+  .filter((h): h is NonNullable<typeof h> => Boolean(h));
+
 // Breadcrumb Schema
 const breadcrumbSchema = {
   '@context': 'https://schema.org',
@@ -123,6 +147,15 @@ const breadcrumbSchema = {
           <div class="prose prose-sm max-w-none prose-headings:text-koyu-900 prose-headings:font-bold prose-headings:text-lg prose-p:text-koyu-600 prose-li:text-koyu-600 prose-strong:text-koyu-800 prose-ul:my-2 prose-p:my-2">
             <Content />
           </div>
+
+          {ilgiliHizmetler.length > 0 && (
+            <p class="mt-6 text-sm text-koyu-600">
+              İlgili hizmetler:
+              {ilgiliHizmetler.map((h, i) => (
+                <>{i > 0 && ' · '}<a href={`/hizmetlerimiz/${h.id}/`} class="font-semibold text-eymen-700 hover:text-eymen-800 underline-offset-2 hover:underline">{h.data.title}</a></>
+              ))}
+            </p>
+          )}
 
           <!-- CTA + Sosyal -->
           <div class="flex items-center gap-2 mt-8">

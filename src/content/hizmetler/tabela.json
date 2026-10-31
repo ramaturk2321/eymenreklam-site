@@ -1,8 +1,10 @@
 {
   "title": "Tabela İmalatı",
-  "seoTitle": "Tabela İmalatı ve Montajı Pendik Tabelacı",
+  "seoTitle": "Pendik Tabela İmalatı ve Montajı – Tabelacı",
+  "heroTitle": "Pendik Tabela İmalatı ve Montajı: Kutu Harf, Totem ve Cephe Tabelası",
   "description": "Pendik tabelacı: kutu harf, totem, çatı, fener ve ofis tabelası imalatı ve montajı. CNC kesim, LED aydınlatma, 2 yıl garanti. Ücretsiz keşif, Pendik İstanbul.",
   "heroDesc": "Pendik'in 25 yıllık tabelacısı olarak kutu harf tabeladan totem tabelaya, çatı tabelasından neon LED'e kadar tüm tabela türlerinde anahtar teslim imalat ve montaj yapıyoruz. 2.500 m² tesiste CNC kesim ve LED aydınlatma sistemleriyle kurumsal standartlarda tabela üretiyor, İstanbul geneline montaj ekibimizle gidiyoruz.",
+  "heroImage": "/images/projeler/cerez-koop-kartal-1.webp",
   "order": 1,
   "listIcon": "🔤",
   "listDesc": "Kutu harf, totem, çatı, cephe ve yönlendirme tabelaları. CNC kesim ve LED aydınlatma ile anahtar teslim üretim ve montaj.",
@@ -26,6 +28,33 @@
     { "title": "Fener Tabela", "desc": "Duvara dik montajlı çift taraflı, LED veya neon aydınlatmalı tabela.", "image": "/images/urunler/fener-tabela-1.webp", "href": "/urunlerimiz/fener-tabela/" },
     { "title": "Avukat ve Hukuk Bürosu Tabelası", "desc": "Pirinç plaket, pleksi kapı tabelası ve kutu harf modelleri. TBB yönetmeliğine uygun.", "image": "/images/urunler/hukuk-tabela-1.webp", "href": "/urunlerimiz/hukuk-burosu-tabela/" }
   ],
+  "gallery": [
+    {"src": "/images/projeler/cerez-koop-kartal-1.webp", "alt": "Çerez Koop Kartal mağazası ışıklı kutu harf cephe tabelası", "href": "/projelerimiz/cerez-koop-kartal/"},
+    {"src": "/images/projeler/fuzul-derince-4.webp", "alt": "Fuzul Derince şubesi gece ışıklı cephe tabelası", "href": "/projelerimiz/fuzul-derince-sube/"},
+    {"src": "/images/projeler/eve-magazasi-prj-3.webp", "alt": "Eve mağazası ışıklı kutu harf tabela ve vitrin uygulaması", "href": "/projelerimiz/eve-magazalari/"},
+    {"src": "/images/projeler/tatbak-gebze-magaza-1.webp", "alt": "Tatbak Gebze mağazası kutu harf tabela ve cephe uygulaması", "href": "/projelerimiz/tatbak-gebze-magaza/"},
+    {"src": "/images/projeler/beko-bereket-totem-1.webp", "alt": "Beko Bereket Mobilya mağaza önü totem tabela", "href": "/projelerimiz/beko-bereket-mobilya-totem/"},
+    {"src": "/images/projeler/unkar-totem-1.webp", "alt": "Unkar ışıklı totem tabela", "href": "/projelerimiz/unkar-totem/"},
+    {"src": "/images/projeler/camlibel-esentepe-1.webp", "alt": "Çamlıbel Kartal Esentepe mağazası ışıklı tabela", "href": "/projelerimiz/camlibel-kartal-esentepe/"},
+    {"src": "/images/projeler/pawco-kozzy-avm-2.webp", "alt": "PAWCO Kozzy AVM mağazası kutu harf ve lightbox duvar", "href": "/projelerimiz/pawco-kozzy-avm/"},
+    {"src": "/images/projeler/isuzu-yonlendirme.webp", "alt": "Anadolu Isuzu fabrikası saha yönlendirme tabelaları", "href": "/projelerimiz/isuzu-yonlendirme/"},
+    {"src": "/images/projeler/koop-market-magaza-1.webp", "alt": "Tarım Kredi KOOP Market mağaza cephe tabelası", "href": "/projelerimiz/koop-market-magaza-tabela/"},
+    {"src": "/images/projeler/sawkoop-3.webp", "alt": "Sawkoop bina çatı tabelası", "href": "/projelerimiz/sawkoop/"},
+    {"src": "/images/projeler/bosch-car-service-kartal-1.webp", "alt": "Bosch Car Service Kartal servis girişi vinil kasa tabela", "href": "/projelerimiz/bosch-car-service-kartal/"}
+  ],
+  "fiyatFaktorleri": [
+    {"baslik": "Tabela türü ve ölçü", "aciklama": "Kutu harfte harf yüksekliği ve harf sayısı, panel ve vinil kasa tabelada m² fiyatı belirler. Ölçü büyüdükçe metre kare başına maliyet düşer."},
+    {"baslik": "Malzeme", "aciklama": "Paslanmaz, alüminyum, pleksi ve kompozit arasında hem fiyat hem ömür farkı var. Dış mekânda, özellikle deniz kenarında paslanmayan malzeme öneriyoruz."},
+    {"baslik": "Aydınlatma", "aciklama": "Işıksız, önden ışıklı, arkadan ışıklı (halo) veya lightbox. LED modül sayısı ve trafo gücü ışıklı tabelanın maliyetini belirler."},
+    {"baslik": "Montaj yüksekliği ve erişim", "aciklama": "Merdivenle takılan bir tabela ile vinç veya sepetli araç gereken bir iş aynı fiyatlanmaz. Çatı tabelasında taşıyıcı konstrüksiyon ayrıca hesaplanır."},
+    {"baslik": "Eski tabelanın sökümü", "aciklama": "Mevcut tabelanın sökülmesi, cephedeki izlerin kapatılması ve atığın taşınması gerekiyorsa teklife ayrı kalem olarak eklenir."},
+    {"baslik": "Adet ve şube sayısı", "aciklama": "Zincir mağazalarda aynı tasarım birden çok şubeye uygulandığında üretim tek seferde planlanır ve şube başına maliyet düşer."}
+  ],
+  "bolge": {
+    "baslik": "Pendik'ten Anadolu Yakası'nın Tamamına",
+    "metin": "Atölyemiz Pendik'te. Pendik, Kartal, Tuzla ve Anadolu Yakası'ndaki işlerde keşfe kendimiz geliyor, ölçüyü yerinde alıyor ve montajı kendi ekibimizle yapıyoruz. Zincir mağaza projelerinde Türkiye genelinde montaj veriyoruz.",
+    "ilceler": ["Pendik", "Tuzla", "Kartal", "Maltepe", "Kadıköy", "Ataşehir", "Ümraniye", "Sancaktepe", "Çekmeköy", "Sultanbeyli", "Üsküdar", "Gebze"]
+  },
   "process": [
     { "step": "01", "title": "Ücretsiz Keşif", "desc": "Uzman ekibimiz projenizi yerinde inceler, ölçüm ve fotoğraflama yapar." },
     { "step": "02", "title": "3D Tasarım", "desc": "Binanıza özel 3D modelleme hazırlanır. Renk, boyut ve malzeme seçimi yapılır." },
