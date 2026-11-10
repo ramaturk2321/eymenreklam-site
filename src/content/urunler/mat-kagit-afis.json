@@ -63,7 +63,7 @@
     { "q": "Tasarım desteği var mı?", "a": "Evet, ücretsiz grafik tasarım desteği sunuyoruz." }
   ],
   "relatedProducts": [
-    { "img": "/images/urunler/fotoblok-1.webp", "title": "Fotoblok Baskı", "href": "/urunlerimiz/fotoblok/", "category": "Dijital Baskı" },
+    { "img": "/images/urunler/parlak-afis-1.webp", "title": "Parlak Kağıt Afiş Baskı", "href": "/urunlerimiz/parlak-kagit-afis/", "category": "Afiş Baskı" },
     { "img": "/images/urunler/insert-1.webp", "title": "Insert Tasarım Baskı", "href": "/urunlerimiz/insert-tasarim/", "category": "Dijital Baskı" },
     { "img": "/images/urunler/kartvizit-1.webp", "title": "Kartvizit Tasarım ve Baskı", "href": "/urunlerimiz/kartvizit/", "category": "Dijital Baskı" },
     { "img": "/images/urunler/katalog-1.webp", "title": "Katalog Tasarım ve Baskı", "href": "/urunlerimiz/katalog/", "category": "Dijital Baskı" }
