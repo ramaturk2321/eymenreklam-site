@@ -1,6 +1,6 @@
 ---
 title: "GRL Marine Electronics — Exhibition Stand"
-seoTitle: "GRL Marine Electronics — Exhibition Stand Design and Build"
+seoTitle: "GRL Marine — Exhibition Stand Design and Build"
 description: "Exhibition stand design and build for GRL Marine Electronics."
 ---
 

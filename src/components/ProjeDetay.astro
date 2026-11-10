@@ -11,6 +11,7 @@ import { whatsappIcon, socialLinks } from '../lib/site-data';
 import { whatsappUrl, yol, projeYolu, sozluk, PROJE_KOLEKSIYONU } from '../i18n';
 import type { Dil } from '../i18n';
 import { kategoriAdi } from '../lib/kategoriler';
+import { ilgiliProjeler } from '../lib/ilgili-projeler';
 
 interface Props {
   lang: Dil;
@@ -26,10 +27,23 @@ const images = tr.data.images?.length ? tr.data.images : [tr.data.image];
 const srcsets = images.map((i) => srcset(i) ?? '');
 const hasGallery = images.length > 1;
 
-const digerleri = (await getCollection(PROJE_KOLEKSIYONU[lang]))
-  .filter(p => p.id !== ceviri.id)
-  .slice(0, 3);
+const ceviriler = await getCollection(PROJE_KOLEKSIYONU[lang]);
 const trHaritasi = new Map((await getCollection('projeler')).map(p => [p.id, p]));
+// Sıra TR sürümün kategorisinden gelir; yalnız çevirisi olan projeler halkaya girer
+const trKarsiliklar = ceviriler.map(c => trHaritasi.get(c.id)).filter((p): p is NonNullable<typeof p> => Boolean(p));
+const digerleri = ilgiliProjeler(ceviri.id, trKarsiliklar)
+  .map(p => ceviriler.find(c => c.id === p.id))
+  .filter((c): c is NonNullable<typeof c> => Boolean(c));
+
+const breadcrumbSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: s.nav.anaSayfa, item: new URL(yol(lang, 'ana'), Astro.site).toString() },
+    { '@type': 'ListItem', position: 2, name: s.nav.projeler, item: new URL(yol(lang, 'projeler'), Astro.site).toString() },
+    { '@type': 'ListItem', position: 3, name: ceviri.data.title },
+  ],
+};
 
 const waUrl = whatsappUrl(lang, s.whatsapp.proje);
 ---
@@ -43,6 +57,8 @@ const waUrl = whatsappUrl(lang, s.whatsapp.proje);
   slug={ceviri.id}
   tur="proje"
 >
+
+  <script type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)} />
 
   <!-- Breadcrumb -->
   <nav class="bg-koyu-50 border-b border-koyu-100 py-3" aria-label="Breadcrumb">

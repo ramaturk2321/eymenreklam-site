@@ -1,6 +1,6 @@
 ---
 title: "Eve Stores — Retail Branding"
-seoTitle: "Eve Cosmetics Stores — Channel Letters, Window Film and Façade Wrapping"
+seoTitle: "Eve Cosmetics Stores — Channel Letters & Film"
 description: "Channel letter signage, window film and façade wrapping for the Eve cosmetics stores."
 ---
 

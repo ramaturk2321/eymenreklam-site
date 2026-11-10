@@ -1,6 +1,6 @@
 ---
 title: "Tarım Kredi KOOP Market — Store Façade Signage"
-seoTitle: "Tarım Kredi KOOP Market — Façade Signage and Composite Cladding"
+seoTitle: "KOOP Market — Façade Signage and Cladding"
 description: "Green composite façade cladding, illuminated channel letter signage, wayfinding signs and window film for Tarım Kredi cooperative supermarkets across Istanbul."
 ---
 

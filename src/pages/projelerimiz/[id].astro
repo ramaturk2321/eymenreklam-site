@@ -2,6 +2,7 @@
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import { srcset, boyut, SIZES } from '../../lib/gorsel';
 import { getCollection, render } from 'astro:content';
+import { ilgiliProjeler } from '../../lib/ilgili-projeler';
 import { company, getWhatsAppUrl, whatsappMessages, whatsappIcon, socialLinks } from '../../lib/site-data';
 
 export async function getStaticPaths() {
@@ -23,10 +24,7 @@ const hasGallery = images.length > 1;
 // (aksi hâlde var olmayan bir /en/projects/... sayfasına link verilir).
 const enVar = (await getCollection('projelerEn')).some(p => p.id === proje.id);
 
-const allProjeler = (await getCollection('projeler'))
-  .filter(p => p.id !== proje.id)
-  .sort((a, b) => (a.data.order ?? 99) - (b.data.order ?? 99))
-  .slice(0, 3);
+const allProjeler = ilgiliProjeler(proje.id, await getCollection('projeler'));
 
 // Proje kategorisinden ilgili hizmet sayfasına iç link
 const kategoriHizmet: Record<string, string> = {

@@ -1,6 +1,6 @@
 ---
 title: "Tatbak — FOODIST 2026 Exhibition Stand"
-seoTitle: "Tatbak FOODIST 2026 Stand — 40 m² Turnkey Island Stand"
+seoTitle: "Tatbak FOODIST 2026 — 40 m² Turnkey Stand"
 description: "A 10×4 m (40 m²) island stand for Tatbak at FOODIST 2026: design development, timber-slatted illuminated channel letter signage, sub-brand display niches, welcome desk and on-site build."
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: "PAWCO, Water Garden Shopping Centre"
-seoTitle: "PAWCO Water Garden Store — Signage and In-Store Graphics"
+seoTitle: "PAWCO Water Garden — Signage & Store Graphics"
 description: "Channel letter signage, an illuminated pictogram set, neon LED lettering, a paw-shaped ceiling sign, acrylic shelf headers and in-store graphics for the PAWCO Super Pet Store at Water Garden shopping centre."
 ---
 

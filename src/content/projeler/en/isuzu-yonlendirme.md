@@ -1,6 +1,6 @@
 ---
 title: "Anadolu Isuzu Factory — Site Wayfinding Signage"
-seoTitle: "Factory Wayfinding Signage — Anadolu Isuzu, Kocaeli"
+seoTitle: "Factory Wayfinding Signage — Anadolu Isuzu"
 description: "Site wayfinding system for the Anadolu Isuzu Şekerpınar factory: junction totem, post-mounted direction signs and building ID signs. Designed, produced and installed by Eymen Reklam."
 ---
 

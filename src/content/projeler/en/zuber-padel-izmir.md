@@ -1,6 +1,6 @@
 ---
 title: "Züber Padel Club, İzmir"
-seoTitle: "Züber Padel Club İzmir — Court Banners and Court Equipment"
+seoTitle: "Züber Padel Club İzmir — Court Banners"
 description: "Eyeletted PVC banner printing around the courts, net post and door protection padding, and a scoreboard supplied and installed at Züber Padel Club in İzmir."
 ---
 

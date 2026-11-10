@@ -1,6 +1,6 @@
 ---
 title: "PAWCO — مركز Water Garden التجاري"
-seoTitle: "متجر PAWCO في Water Garden — اللافتات والجرافيك الداخلي"
+seoTitle: "PAWCO Water Garden — اللافتات والجرافيك الداخلي"
 description: "حروف مجسمة مضيئة ومجموعة رموز مضيئة وكتابات نيون LED ولافتة سقف على شكل كفّ وعناوين رفوف أكريليك وجرافيك داخلي لمتجر PAWCO في مركز Water Garden التجاري."
 ---
 

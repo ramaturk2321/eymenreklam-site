@@ -1,6 +1,6 @@
 ---
 title: "Som Kağıt — Wall Graphics and Signage"
-seoTitle: "Som Kağıt Office — Wall Wrapping and Channel Letter Signage"
+seoTitle: "Som Kağıt Office — Wall Wrap & Channel Letters"
 description: "Wall wrapping and channel letter signage for the Som Kağıt office building."
 ---
 

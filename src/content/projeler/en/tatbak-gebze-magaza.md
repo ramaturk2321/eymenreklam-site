@@ -1,6 +1,6 @@
 ---
 title: "Tatbak Gebze — Store Signage and Graphics"
-seoTitle: "Tatbak Gebze Store — Channel Letters, Window Film and Interior Graphics"
+seoTitle: "Tatbak Gebze Store — Channel Letters & Graphics"
 description: "Illuminated channel letter façade signage, a window lightbox, frosted window film and interior wall and shelf graphics produced and installed for Tatbak's new store in Gebze."
 ---
 

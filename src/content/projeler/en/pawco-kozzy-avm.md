@@ -1,6 +1,6 @@
 ---
 title: "PAWCO, Kozzy Shopping Centre"
-seoTitle: "PAWCO Kozzy Store — Illuminated Channel Letters and Lightbox Wall"
+seoTitle: "PAWCO Kozzy — Channel Letters and Lightbox Wall"
 description: "Illuminated acrylic channel letter signage, a shopping centre corridor lightbox wall, window film and in-store information panels for PAWCO Super Pet Store at Kozzy shopping centre."
 ---
 

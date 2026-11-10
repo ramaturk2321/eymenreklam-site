@@ -10,7 +10,7 @@
   --color-eymen-400: #fb923c;
   --color-eymen-500: #f97316;
   --color-eymen-600: #ea580c;
-  --color-eymen-700: #c2410c;
+  --color-eymen-700: #ad390b; /* 10 Kas 2026: turuncu zeminde 4,5:1 için c2410c'den koyultuldu */
   --color-eymen-800: #9a3412;
   --color-eymen-900: #7c2d12;
 
@@ -19,7 +19,7 @@
   --color-koyu-200: #e2e8f0;
   --color-koyu-300: #cbd5e1;
   --color-koyu-400: #94a3b8;
-  --color-koyu-500: #64748b;
+  --color-koyu-500: #566376; /* 10 Kas 2026: turuncu zeminde 4,5:1 için 64748b'den koyultuldu */
   --color-koyu-600: #475569;
   --color-koyu-700: #334155;
   --color-koyu-800: #1e293b;

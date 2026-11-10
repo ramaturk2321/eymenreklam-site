@@ -1,6 +1,6 @@
 ---
 title: "Meydan Shopping Centre — Façade Signage and Pylon"
-seoTitle: "Meydan 77 Shopping Centre — Façade Signage and Pylon Sign"
+seoTitle: "Meydan 77 Mall — Façade Signage and Pylon Sign"
 description: "Complete façade signage and pylon sign design and installation for Meydan 77 Shopping Centre."
 ---
 
