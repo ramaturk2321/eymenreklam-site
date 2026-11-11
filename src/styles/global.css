@@ -10,17 +10,17 @@
   --color-eymen-400: #fb923c;
   --color-eymen-500: #f97316;
   --color-eymen-600: #ea580c;
-  --color-eymen-700: #ad390b; /* 10 Kas 2026: turuncu zeminde 4,5:1 için c2410c'den koyultuldu */
-  --color-eymen-800: #9a3412;
-  --color-eymen-900: #7c2d12;
+  --color-eymen-700: #822b0f; /* turuncu zeminde 4,5:1 için: 10 Kas c2410c→ad390b, 11 Kas zemin koyulunca →822b0f */
+  --color-eymen-800: #752a10; /* 11 Kas: sıra bozulmasın diye 9a3412'den koyultuldu */
+  --color-eymen-900: #672510; /* 11 Kas: sıra bozulmasın diye 7c2d12'den koyultuldu */
 
   --color-koyu-50: #f8fafc;
   --color-koyu-100: #f1f5f9;
   --color-koyu-200: #e2e8f0;
   --color-koyu-300: #cbd5e1;
   --color-koyu-400: #94a3b8;
-  --color-koyu-500: #566376; /* 10 Kas 2026: turuncu zeminde 4,5:1 için 64748b'den koyultuldu */
-  --color-koyu-600: #475569;
+  --color-koyu-500: #3e4a5d; /* turuncu zeminde 4,5:1 için: 10 Kas 64748b→566376, 11 Kas zemin koyulunca →3e4a5d */
+  --color-koyu-600: #394558; /* 11 Kas: sıra bozulmasın diye 475569'dan koyultuldu */
   --color-koyu-700: #334155;
   --color-koyu-800: #1e293b;
   --color-koyu-900: #0f172a;
@@ -31,9 +31,13 @@
   --color-krem-100: #f5f1eb;
   --color-krem-200: #e9e2d8;
 
-  /* Turuncu zemin (1 Eki 2026): eymen-100 ile eymen-200 arası */
-  --color-zemin: #fee2c0;
-  --color-zemin-cizgi: #fcc995;
+  /* Turuncu zemin (1 Eki 2026: #fee2c0 / çizgi #fcc995). 11 Kas 2026: eymen-300 ile 400 arasına koyultuldu.
+     eymen-700/800/900 ve koyu-500/600 bu zeminde 4,5:1 tutsun diye koyultuldu;
+     zemini yine değiştirirsen onları ve zemin-vurgu'yu yeniden hesapla. */
+  --color-zemin: #fca55a;
+  --color-zemin-cizgi: #f98a35;
+  /* Başlık içindeki turuncu vurgu: eymen-600 bu zeminde 1,8:1 kalıyor, bu ton 3,05:1 (büyük yazı sınırı) */
+  --color-zemin-vurgu: #b23a0b;
 
   /* Font */
   --font-sans: 'Poppins', system-ui, -apple-system, sans-serif;
@@ -68,6 +72,19 @@ section.bg-krem-50,
 section.bg-krem-100 {
   background-color: var(--color-zemin);
   border-color: var(--color-zemin-cizgi);
+}
+
+/* Başlıklardaki turuncu vurgu kelimeleri koyu zeminde okunur kalsın */
+h1 span.text-eymen-600,
+h2 span.text-eymen-600 {
+  color: var(--color-zemin-vurgu);
+}
+
+/* Turuncu düğmeler (eymen-500) bu zeminde 1,4:1 kalıyor: renk aynı, beyaz çerçeveyle ayrılır.
+   Yalnız sayfa gövdesinde (main); üst şerit ve başlık çubuğu değişmez. */
+main a.bg-eymen-500,
+main button.bg-eymen-500 {
+  box-shadow: 0 0 0 2px #fff, 0 6px 16px -6px rgb(124 45 18 / 0.45);
 }
 
 /* Scroll-triggered fade-in animation */
