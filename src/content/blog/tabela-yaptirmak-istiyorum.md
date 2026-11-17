@@ -39,9 +39,9 @@ Zemine ankre edilen, yüksek ve bağımsız duran tabela sistemidir. Geniş aç�
 
 #### Totem Tabela Temel Hesaplama Aracı
 
-Totem tabelanızın beton temel boyutlarını, rüzgar yükünü ve güvenlik katsayısını hesaplayın:
+Totem tabelanızın beton temel boyutlarını, rüzgar yükünü ve güvenlik katsayısını hesaplayın: ([aracı tam sayfada açın](/statik-hesap/))
 
-<iframe src="https://totem-temel-hesaplama.vercel.app/" title="Totem Tabela Temel Hesaplama - Eymen Reklam" width="100%" height="900" style="border:none; border-radius:12px; margin: 1.5rem 0;" loading="lazy"></iframe>
+<iframe src="/statik-hesap/" title="Totem Tabela Temel Hesaplama - Eymen Reklam" width="100%" height="900" style="border:none; border-radius:12px; margin: 1.5rem 0;" loading="lazy"></iframe>
 
 ### 1.4 Kompozit (Alüminyum Kompozit Panel) Tabela
 

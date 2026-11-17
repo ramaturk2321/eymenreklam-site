@@ -1,0 +1,2 @@
+:HL["/statik-hesap/_next/static/chunks/17e179546e0a4c7e.css","style"]
+0:{"buildId":"Kp7jgJdTX6aGRtNqiOrs2","tree":{"name":"","paramType":null,"paramKey":"","hasRuntimePrefetch":false,"slots":{"children":{"name":"yonlendirme","paramType":null,"paramKey":"yonlendirme","hasRuntimePrefetch":false,"slots":{"children":{"name":"__PAGE__","paramType":null,"paramKey":"__PAGE__","hasRuntimePrefetch":false,"slots":null,"isRootLayout":false}},"isRootLayout":false}},"isRootLayout":true},"staleTime":300}
