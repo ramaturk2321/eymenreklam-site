@@ -85,7 +85,7 @@
   "relatedProducts": [
     { "img": "/images/urunler/eczane-1.webp", "title": "Eczane Tabela", "href": "/urunlerimiz/eczane-tabela/", "category": "Tabela" },
     { "img": "/images/urunler/isikli-blok-1.webp", "title": "Işıklı Blok Tabela", "href": "/urunlerimiz/isikli-blok-tabela/", "category": "Tabela" },
-    { "img": "/images/urunler/totem-1.webp", "title": "Totem Tabela", "href": "/urunlerimiz/totem-tabela/", "category": "Tabela" },
+    { "img": "/images/projeler/unkar-totem-1.webp", "title": "Totem Tabela", "href": "/urunlerimiz/totem-tabela/", "category": "Tabela" },
     { "img": "/images/urunler/vinil-tabela-1.webp", "title": "Vinil Tabela", "href": "/urunlerimiz/vinil-tabela/", "category": "Tabela" }
   ]
 }
