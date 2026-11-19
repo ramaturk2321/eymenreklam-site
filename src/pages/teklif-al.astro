@@ -286,4 +286,15 @@ const hizmetler = [
     </div>
   </section>
 
+  <script>
+    // /totem-modelleri/ sayfasından gelen ?model=T-0x → Totem Tabela işaretli, açıklamaya model kodu yazılı gelir
+    const model = new URLSearchParams(location.search).get('model');
+    if (model && /^T-0[1-9]$/.test(model)) {
+      const kutu = document.querySelector<HTMLInputElement>('input[name="hizmetler"][value="Totem Tabela"]');
+      if (kutu) kutu.checked = true;
+      const aciklama = document.getElementById('tk-aciklama') as HTMLTextAreaElement | null;
+      if (aciklama && !aciklama.value) aciklama.value = `Totem modeli: ${model} (eymenreklam.com.tr/totem-modelleri/)\nKullanım yeri ve istenen yükseklik: `;
+    }
+  </script>
+
 </BaseLayout>

@@ -21,6 +21,7 @@
   "products": [
     { "title": "Kutu Harf Tabela", "desc": "LED aydınlatmalı 3D kutu harf. Paslanmaz, galvaniz veya alüminyum gövde seçenekleri.", "image": "/images/urunler/kutu-harf-1.webp", "href": "/urunlerimiz/kutu-harf-tabela/" },
     { "title": "Totem Tabela", "desc": "Bağımsız ayaklı totem tabela. AVM, fabrika girişi ve yol kenarı uygulamaları için ideal.", "image": "/images/urunler/totem-1.webp", "href": "/urunlerimiz/totem-tabela/" },
+    { "title": "Totem Tabela Modelleri", "desc": "Halka, ahşap lamelli, corten, V planlı ve LED ekranlı 8 totem fikri; ölçülü çizim ve görselleriyle.", "image": "/images/totem-modelleri/T-05.webp", "href": "/totem-modelleri/" },
     { "title": "Çatı Tabelası", "desc": "Bina çatısına montajlı büyük ölçekli tabela. Uzak mesafeden marka görünürlüğü.", "image": "/images/urunler/cati-tabela-1.webp", "href": "/urunlerimiz/cati-tabelasi/" },
     { "title": "Neon-Led Tabela", "desc": "Neon görünümlü LED tabela. Düşük enerji tüketimi ile retro estetik.", "image": "/images/urunler/neon-led-1.webp", "href": "/urunlerimiz/neon-led-tabela/" },
     { "title": "Işıklı Blok Tabela", "desc": "İçten aydınlatmalı kutu tabela. Vinileks veya pleksiglas yüzey seçenekleri.", "image": "/images/urunler/isikli-blok-1.webp", "href": "/urunlerimiz/isikli-blok-tabela/" },

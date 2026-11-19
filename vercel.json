@@ -84,6 +84,19 @@
           "value": "inline; filename=\"Eymen-Reklam-Sunum.pdf\""
         }
       ]
+    },
+    {
+      "source": "/eymen-reklam-totem-modelleri.pdf",
+      "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex"
+        },
+        {
+          "key": "Content-Disposition",
+          "value": "inline; filename=\"Eymen-Reklam-Totem-Modelleri.pdf\""
+        }
+      ]
     }
   ],
   "redirects": [

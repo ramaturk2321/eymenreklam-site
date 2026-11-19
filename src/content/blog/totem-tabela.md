@@ -24,6 +24,8 @@ Totem tabelaların bir diğer kritik avantajı, 360 derece görünürlük sunabi
 
 > **Fiyat ve imalat için:** Pendik'teki atölyemizde ürettiğimiz modeller, ölçüler ve teklif süreci [totem tabela imalatı ve fiyatları](/urunlerimiz/totem-tabela/) sayfasında. Bu yazı ise malzeme, izin ve tasarım konularını anlatan rehberdir.
 
+> **Fikir arıyorsanız:** Halka monolit, ahşap lamelli, corten desenli, V planlı ve LED ekranlı sekiz modelin ölçülü çizimleri ve görselleri [totem tabela modelleri](/totem-modelleri/) sayfasında.
+
 ## Totem Tabela Türleri ve Kullanım Alanları
 
 Günümüzde totem tabela tasarımı ve üretimi oldukça çeşitlenmiştir. Her işletmenin ihtiyacına göre farklı çözümler sunan totem türleri şunlardır:
