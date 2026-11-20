@@ -6,6 +6,7 @@ interface Props {
   description: string;
   product: {
     title: string;
+    heroTitle?: string;
     category: string;
     categoryHref: string;
     shortDesc: string;
@@ -148,7 +149,7 @@ const serviceSchema = {
             {product.category.toLocaleUpperCase('tr-TR')}
           </a>
 
-          <h1 class="text-3xl md:text-4xl font-bold text-koyu-900 mb-4 leading-tight">{product.title}</h1>
+          <h1 class="text-3xl md:text-4xl font-bold text-koyu-900 mb-4 leading-tight">{product.heroTitle ?? product.title}</h1>
           <p class="text-koyu-600 leading-relaxed mb-4">{product.shortDesc}</p>
 
           <!-- Özellik İkon Kartları -->

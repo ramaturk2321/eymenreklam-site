@@ -3,11 +3,11 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 import { srcset, boyut } from '../lib/gorsel';
 import { company, contact, getWhatsAppUrl } from '../lib/site-data';
 
-// Totem modelleri galerisi (19 Kas 2026). Çizimler: Documents/totem-modelleri/totem_uret.py (QCAD/DXF üreteci).
+// Totem modelleri galerisi (19 Kas 2026; 20 Kas: T-09–T-13 market/akaryakıt/AVM grubu). Çizimler: Documents/totem-modelleri/totem_uret.py (QCAD/DXF üreteci).
 // Kural: fiyat, malzeme kalınlığı, profil, temel ölçüsü YAZILMAZ — yalnız dış ölçü ve fikir.
-// Mockup'lardaki marka adları uydurmadır (LUNARA, NOVA, ARVEN ...).
-const title = 'Totem Tabela Modelleri – 8 Fikir, Ölçülü Çizim';
-const description = 'Halka monolit, ahşap lamelli, katmanlı, corten desenli, V planlı, taş kaideli ve LED ekranlı totem tabela modelleri. Her model ölçülü teknik çizim ve gerçekçi görselle; markanıza göre üretiyoruz.';
+// Mockup'lardaki marka adları uydurmadır (LUNARA, NOVA, ARVEN, TAZEGÜN, ENERVA, ORVİA ...). Gerçek zincir markası (A101 vb.) KULLANILMAZ.
+const title = 'Totem Tabela Modelleri – 13 Örnek ve Çizim';
+const description = 'Market, akaryakıt, AVM ve kurumsal totem tabela modelleri: 13 örnek, ölçülü teknik çizim ve görsel. Pendik İstanbul’da üretim, keşif ücretsiz.';
 const kapak = '/images/totem-modelleri/T-01.webp';
 const pdf = '/eymen-reklam-totem-modelleri.pdf';
 
@@ -38,6 +38,31 @@ const modeller = [
     ozellik: ['Dış mekân LED ekran', 'İçerik uzaktan değişir', 'Taşan ışıklı logo şapkası'] },
 ];
 
+// 20 Kas 2026: zincir mağaza / market / akaryakıt / AVM tipleri (Ramazan Bey: "A101 tarzı"). Marka adları uydurma.
+const marketModeller = [
+  { kod: 'T-09', ad: 'Zincir Market Totemi', olcu: '6 m · 120 × 40 cm', yer: 'Market, zincir mağaza, eczane',
+    fikir: 'Mahalle marketleri ve zincir mağazaların en çok kullandığı dikey totem. Üstte geniş ışıklı logo kaseti, gövdede çalışma saatleri ve otopark yönü.',
+    ozellik: ['Üstte ışıklı logo kaseti', 'Çalışma saatleri paneli', 'Tüm şubelerde aynı ölçü ve renk'] },
+  { kod: 'T-10', ad: 'Tek Direkli Pano Totem', olcu: '6 m · pano 240 × 160 cm', yer: 'Yol kenarı market, akaryakıt, bayi',
+    fikir: 'Tek direğin tepesinde geniş ışıklı kutu pano. Yüksekte durduğu için ana yoldan, araçların üstünden okunur; zeminde az yer kaplar.',
+    ozellik: ['Çift yüzlü ışıklı pano', 'Uzak mesafeden okunur', 'Dar zemine uygun'] },
+  { kod: 'T-11', ad: 'Çift Ayaklı Pano Totem', olcu: '3,6 m · 260 × 30 cm', yer: 'Otopark girişi, iş merkezi, site, fabrika',
+    fikir: 'İki ayak arasında geniş ışıklı pano, altında göz hizasında giriş ya da yön paneli. Uzun firma adları ve yatay logolar için rahat yer açar.',
+    ozellik: ['Geniş yatay logo alanı', 'Altta giriş / yön paneli', 'Araç girişlerine uygun'] },
+  { kod: 'T-12', ad: 'Akaryakıt Fiyat Totemi', olcu: '7 m · 160 × 50 cm', yer: 'Akaryakıt istasyonu, LPG, oto yıkama',
+    fikir: 'Tepede ışıklı istasyon logosu, altında LED dijital fiyat göstergeleri ve market / kafe paneli. Fiyatlar totemin yanına gitmeden değiştirilir.',
+    ozellik: ['LED dijital fiyat göstergesi', 'Işıklı istasyon logosu', 'Market ve kafe bilgi paneli'] },
+  { kod: 'T-13', ad: 'AVM Çok Markalı Pylon', olcu: '9 m · 220 × 70 cm', yer: 'AVM, outlet, ticaret merkezi, plaza',
+    fikir: 'Tepede taşan ışıklı AVM logosu, gövdede sekiz mağazaya ayrılmış ışıklı paneller. Mağaza değişince yalnız o panel değişir.',
+    ozellik: ['Sekiz ayrı mağaza paneli', 'Paneller tek tek değiştirilir', 'Otopark girişi yönlendirmesi'] },
+];
+
+const gruplar = [
+  { id: 'tasarim', baslik: 'Özgün tasarım totemler', aciklama: 'Kutu totemden farklı bir şey arayan markalar, ofisler, oteller ve showroomlar için.', liste: modeller },
+  { id: 'market', baslik: 'Market, akaryakıt ve AVM totemleri', aciklama: 'Zincir mağaza, market, istasyon ve AVM önlerinde en çok kullanılan, yoldan uzaktan okunan totem tipleri.', liste: marketModeller },
+];
+const tumModeller = [...modeller, ...marketModeller];
+
 // Sahadan gerçek işler — fotoğraflar sitede zaten var (proje sayfaları / totem ürün galerisi). Mockup/3D (ASKO, Meydan) KONMAZ.
 const gercekIsler = [
   { ad: 'Unkar & Hak-et', is: 'Fabrika girişi, iki markalı totem', img: '/images/projeler/unkar-totem-1.webp', pos: '55% 50%', href: '/projelerimiz/unkar-totem/' },
@@ -63,9 +88,9 @@ const adimlar = [
 const faq = [
   { q: 'Bu modeller birebir aynı ölçüde mi yapılır?', a: 'Hayır. Çizimlerdeki ölçüler örnektir. Yükseklik, genişlik, renk ve aydınlatma yerinize ve görüş mesafesine göre değişir; modeli fikir olarak alıp markanıza göre yeniden ölçülendiriyoruz.' },
   { q: 'İki modeli birleştirebilir miyim?', a: 'Evet. Örneğin katmanlı totemin üstüne LED ekran, ahşap lamelli gövdeye taş sepet kaide eklenebilir. Keşifte birlikte karar veriyoruz.' },
-  { q: 'Görsellerdeki marka adları gerçek mi?', a: 'Hayır, LUNARA, NOVA, ARVEN gibi adlar örnek için uydurulmuştur. Çizim ve görsel sizin logonuz ve renklerinizle hazırlanır.' },
+  { q: 'Görsellerdeki marka adları gerçek mi?', a: 'Hayır, LUNARA, NOVA, TAZEGÜN, ENERVA, ORVİA gibi adlar örnek için uydurulmuştur. Çizim ve görsel sizin logonuz ve renklerinizle hazırlanır.' },
   { q: 'Totem için belediye izni gerekiyor mu?', a: 'Çoğu belediye totem tabela için ilan-reklam izni ister. İzin dosyası için gereken ölçülü çizimi biz hazırlıyoruz.' },
-  { q: 'Teknik çizimi indirebilir miyim?', a: 'Evet. Sekiz modelin A3 teknik çizimlerini tek PDF olarak indirebilirsiniz. Projenize özel çizim keşiften sonra hazırlanır.' },
+  { q: 'Teknik çizimi indirebilir miyim?', a: 'Evet. On üç modelin A3 teknik çizimlerini tek PDF olarak indirebilirsiniz. Projenize özel çizim keşiften sonra hazırlanır.' },
 ];
 
 const faqSchema = {
@@ -82,7 +107,7 @@ const breadcrumbSchema = {
 };
 const listSchema = {
   '@context': 'https://schema.org', '@type': 'ItemList', name: 'Totem tabela modelleri',
-  itemListElement: modeller.map((m, i) => ({
+  itemListElement: tumModeller.map((m, i) => ({
     '@type': 'ListItem', position: i + 1, name: `${m.kod} ${m.ad}`,
     image: `${company.siteUrl}/images/totem-modelleri/${m.kod}.webp`,
     url: `${company.siteUrl}/totem-modelleri/#${m.kod.toLowerCase()}`,
@@ -112,17 +137,17 @@ const kartSizes = '(min-width: 1280px) 290px, (min-width: 1024px) 22vw, (min-wid
   <section class="bg-krem-100 border-b border-krem-200 pt-10 pb-10 md:pt-16 md:pb-14">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-5 gap-8 items-center">
       <div class="lg:col-span-3">
-        <p class="text-eymen-700 text-sm font-semibold tracking-wider mb-3">FİKİR KATALOĞU · 8 MODEL</p>
-        <h1 class="text-3xl md:text-5xl font-extrabold text-koyu-900 mb-4">Totem Tabela Modelleri</h1>
+        <p class="text-eymen-700 text-sm font-semibold tracking-wider mb-3">FİKİR KATALOĞU · 13 MODEL</p>
+        <h1 class="text-3xl md:text-5xl font-extrabold text-koyu-900 mb-4">Totem Tabela Modelleri ve Örnekleri</h1>
         <p class="text-koyu-700 text-base md:text-lg leading-relaxed mb-6">
-          Kutu totemden farklı bir şey arayanlar için sekiz model hazırladık. Her birinin ölçülü teknik çizimi ve gerçekçi görseli var.
-          Hepsi atölyemizde üretilebilir; birini seçin ya da ikisini birleştirin, markanıza göre yeniden çizelim.
+          Kutu totemden farklı bir şey arayanlar için sekiz özgün model, market, akaryakıt ve AVM önleri için beş klasik totem tipi hazırladık.
+          Her birinin ölçülü teknik çizimi ve gerçekçi görseli var. Hepsi Pendik’teki atölyemizde üretilebilir; birini seçin ya da ikisini birleştirin, markanıza göre yeniden çizelim.
         </p>
         <div class="flex flex-col sm:flex-row gap-3">
           <a href={waGenel} target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center gap-2 bg-green-600 hover:bg-green-700 text-white px-6 py-3.5 rounded-xl font-bold transition-all">WhatsApp'tan model sorun</a>
           <a href={pdf} target="_blank" rel="noopener" class="inline-flex items-center justify-center gap-2 border-2 border-koyu-300 hover:border-koyu-900 text-koyu-800 hover:bg-koyu-900/5 px-6 py-3.5 rounded-xl font-semibold transition-all">
             <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v12m0 0l-4-4m4 4l4-4M4 20h16"/></svg>
-            Teknik çizimler (PDF, 8 sayfa)
+            Teknik çizimler (PDF, 13 sayfa)
           </a>
         </div>
       </div>
@@ -138,9 +163,13 @@ const kartSizes = '(min-width: 1280px) 290px, (min-width: 1024px) 22vw, (min-wid
   <!-- Modeller -->
   <section class="py-12 md:py-16 bg-white" aria-labelledby="modeller-baslik">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <h2 id="modeller-baslik" class="sr-only">Modeller</h2>
+      <h2 id="modeller-baslik" class="sr-only">Totem tabela modelleri</h2>
+      {gruplar.map((g, gi) => (
+      <div id={g.id} class={`scroll-mt-24 ${gi ? 'mt-14 md:mt-16' : ''}`}>
+      <h2 class="text-2xl md:text-3xl font-extrabold text-koyu-900">{g.baslik}</h2>
+      <p class="text-koyu-600 mt-2 mb-6 max-w-3xl">{g.aciklama}</p>
       <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-        {modeller.map((m) => {
+        {g.liste.map((m) => {
           const img = `/images/totem-modelleri/${m.kod}.webp`;
           return (
             <article id={m.kod.toLowerCase()} class="group flex flex-col rounded-2xl border border-koyu-100 bg-white overflow-hidden hover:shadow-lg transition-shadow scroll-mt-24">
@@ -174,6 +203,8 @@ const kartSizes = '(min-width: 1280px) 290px, (min-width: 1024px) 22vw, (min-wid
           );
         })}
       </div>
+      </div>
+      ))}
       <p class="text-xs text-koyu-500 mt-6">Görsellerdeki marka adları örnektir. Ölçüler fikir vermek içindir; her proje yerine göre yeniden ölçülendirilir.</p>
     </div>
   </section>

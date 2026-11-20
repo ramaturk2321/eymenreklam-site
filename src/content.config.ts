@@ -40,6 +40,7 @@ const urunler = defineCollection({
   schema: z.object({
     title: z.string(),
     seoTitle: z.string().optional(),
+    heroTitle: z.string().optional(), // yalnız H1; boşsa title
     description: z.string(),
     category: z.enum(URUN_KATEGORILERI),
     categoryHref: icLink,

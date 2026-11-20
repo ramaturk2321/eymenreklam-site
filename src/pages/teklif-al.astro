@@ -289,7 +289,7 @@ const hizmetler = [
   <script>
     // /totem-modelleri/ sayfasından gelen ?model=T-0x → Totem Tabela işaretli, açıklamaya model kodu yazılı gelir
     const model = new URLSearchParams(location.search).get('model');
-    if (model && /^T-0[1-9]$/.test(model)) {
+    if (model && /^T-(0[1-9]|1[0-3])$/.test(model)) {
       const kutu = document.querySelector<HTMLInputElement>('input[name="hizmetler"][value="Totem Tabela"]');
       if (kutu) kutu.checked = true;
       const aciklama = document.getElementById('tk-aciklama') as HTMLTextAreaElement | null;
