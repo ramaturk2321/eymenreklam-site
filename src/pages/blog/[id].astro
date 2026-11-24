@@ -57,6 +57,7 @@ const articleSchema = {
   description: post.data.description,
   image: imageURL.toString(),
   datePublished: post.data.date,
+  dateModified: post.data.updated ?? post.data.date,
   author: {
     '@type': 'Organization',
     name: post.data.author,

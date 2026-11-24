@@ -1,22 +1,35 @@
 ---
-title: "Billboard Nedir? Ölçüleri, Türleri ve Etkili Tasarım"
-seoTitle: "Billboard Nedir? Ölçüleri, Türleri ve Maliyeti"
-description: "Billboard nedir? Yol kenarındaki büyük açık hava reklam panosudur. 3×6 ve 4×8 m ölçüler, türler, maliyet ve baskı. Pendik İstanbul'da ücretsiz teklif alın."
+title: "Billboard Nedir, Ne Demek? Ölçüleri, Türleri ve Etkili Tasarım"
+seoTitle: "Billboard Nedir? Ölçüleri (cm), Türleri ve Maliyeti"
+description: "Billboard nedir? Yol kenarındaki reklam panosudur. Ölçüleri: billboard 350×250 cm, megalight 323×241 cm, raket 118,5×175 cm. Pendik İstanbul'da baskı ve montaj."
 excerpt: "Şehirlerin siluetini şekillendiren billboard reklamları hakkında bilmeniz gereken her şey: boyutlar, maliyetler ve tasarım ilkeleri."
 image: "/images/blog-billboard.webp"
 category: "Tabela"
 date: "2026-02-18"
+updated: "2026-11-24"
 author: "Eymen Reklam"
 published: true
 ---
 
-**Billboard nedir?** Billboard, yoğun trafikli cadde, otoyol ve kavşaklara kurulan büyük boyutlu açık hava reklam panosudur. En yaygın ölçüler 3×6 m ve 4×8 m'dir; bina cephesine asılan mega board'lar 12×24 m'ye kadar çıkar. Görsel çoğunlukla vinil branda üzerine geniş format dijital baskıyla üretilir ve panoya gerdirilir.
+**Billboard nedir?** Billboard (Türkçesi: reklam panosu), yoğun trafikli cadde, ana yol ve kavşaklara kurulan büyük boyutlu açık hava reklam panosudur. Türkiye'de klasik billboard afişi yaklaşık **350×250 cm**, megalight afişi **323×241 cm**, raket (CLP) afişi **118,5×175 cm**'dir; bina cephesine asılan megaboard'ların ölçüsü ise projeye göre belirlenir. Görsel çoğunlukla vinil branda üzerine geniş format dijital baskıyla üretilir ve panoya gerdirilir.
 
-Aşağıda billboard türlerini, etkili tasarımın kurallarını, baskı malzemesini ve maliyeti belirleyen etkenleri anlatıyoruz.
+Aşağıda billboard ölçülerini, türlerini, etkili tasarımın kurallarını, baskı malzemesini ve maliyeti belirleyen etkenleri anlatıyoruz.
 
-## Billboard Ölçüleri ve Neden Bu Kadar Etkilidir?
+## Billboard Ölçüleri
 
-Billboard, genellikle yoğun trafik akışına sahip cadde, otoyol ve kavşak noktalarında konumlanan büyük boyutlu açık hava reklam panolarıdır. Standart bir billboard 3×6 metre veya 4×8 metre boyutlarında üretilir; ancak mega board olarak adlandırılan özel yapılar 12×24 metreye kadar çıkabilir.
+Türkiye'de açık hava panolarının ölçüsü tek bir standarda bağlı değildir; panonun sahibi olan firmaya ve belediyeye göre birkaç santimetre değişebilir. En sık karşılaşılan afiş (baskı) ölçüleri şunlardır:
+
+| Pano tipi | Afiş ölçüsü (yaklaşık) | Nerede kullanılır |
+|---|---|---|
+| Billboard | 350 × 250 cm | Ana yol, bulvar, otoyol kenarı |
+| Megalight | 323 × 241 cm | Cadde, meydan, kavşak (arkadan ışıklı) |
+| Raket (CLP) | 118,5 × 175 cm | Kaldırım, durak, yaya bölgesi |
+| Megaboard | Projeye özel | Bina cephesi, iskele, çelik yapı |
+| Dijital (LED) billboard | Ekran çözünürlüğüne göre (piksel) | Kavşak, AVM çevresi |
+
+Görünür alan, afiş ölçüsünden birkaç santimetre küçüktür; kenarlar çerçevenin altında kalır. Bu yüzden logo, telefon ve yazıları kenara yaslamayın. Baskıya göndermeden önce panoyu kiraladığınız firmadan güncel teknik ölçüyü (afiş ölçüsü ve görünür alan) isteyin.
+
+## Billboard Neden Bu Kadar Etkilidir?
 
 İşte billboard reklamların bu denli etkili olmasının arkasındaki sır: İnsan beyni, görsel bilgiyi metinsel bilgiden **60.000 kat daha hızlı** işler. Bir sürücü veya yaya, billboard'un önünden geçerken ortalama 5-7 saniye içinde mesajı algılar. Bu süre kısa gibi görünse de, iyi tasarlanmış bir billboard bu sürede kalıcı bir iz bırakmak için fazlasıyla yeterlidir.
 
@@ -25,9 +38,10 @@ Billboard, genellikle yoğun trafik akışına sahip cadde, otoyol ve kavşak no
 Günümüzde billboard teknolojisi oldukça çeşitlenmiştir. Geleneksel vinil baskılı sabit panolardan dijital LED ekranlara, tek yüzlü yapılardan döner prismatik sistemlere kadar geniş bir yelpaze söz konusudur. Türkiye'de en yaygın kullanılan billboard türleri şunlardır:
 
 - **Mega Board:** Genellikle binaların cephelerine veya özel çelik konstrüksiyonlara monte edilen, 50 metrekareyi aşan devasa panolardır. Şehrin her noktasından görülebilmeleri en büyük avantajlarıdır.
-- **Billboard (Standart):** 3×6 metre veya 4×8 metre boyutlarında, yol kenarlarına yerleştirilen klasik reklam panolarıdır. Maliyet-etkinlik oranı en yüksek dış mekan reklam aracıdır.
+- **Billboard (Standart):** Afişi yaklaşık 350×250 cm olan, yol kenarlarına yerleştirilen klasik reklam panolarıdır. Maliyet-etkinlik oranı en yüksek dış mekan reklam aracıdır.
 - **Dijital Billboard:** LED ekran teknolojisi kullanan, içeriğin uzaktan ve anlık olarak değiştirilebildiği modern panolardır. Birden fazla reklamverenin aynı panoyu paylaşmasına olanak tanır.
-- **Raket Pano:** Yaya trafiğinin yoğun olduğu cadde ve kaldırımlarda kullanılan, daha küçük boyutlu ama son derece etkili panolardır.
+- **Megalight:** Arkadan aydınlatmalı, afişi yaklaşık 323×241 cm olan panolardır. Gece de okunduğu için cadde ve meydanlarda tercih edilir.
+- **Raket Pano (CLP):** Yaya trafiğinin yoğun olduğu cadde ve kaldırımlarda kullanılan, afişi yaklaşık 118,5×175 cm olan küçük ama son derece etkili panolardır.
 
 ## Çoğu Kişinin Bilmediği Billboard Gerçekleri
 
@@ -65,9 +79,17 @@ Billboard üretimi, basit bir baskı işi değildir. Çelik konstrüksiyon hesap
 
 ## Sıkça Sorulan Sorular
 
+### Billboard ne demek, Türkçe karşılığı nedir?
+
+Billboard, İngilizce "bill" (ilan) ve "board" (pano) kelimelerinden gelir; Türkçede "reklam panosu" ya da "ilan panosu" olarak karşılanır. Doğru yazımı "billboard"dur; "bilboard" ve "bilbord" sık görülen yanlış yazımlardır.
+
+### Billboard ölçüleri nelerdir?
+
+Türkiye'de klasik billboard afişi yaklaşık 350×250 cm, megalight afişi 323×241 cm, raket (CLP) afişi 118,5×175 cm'dir. Ölçü pano sahibine göre birkaç santimetre değişebildiği için baskıdan önce kiraladığınız firmadan teknik ölçüyü alın.
+
 ### Billboard reklamı maliyeti ne kadar?
 
-Billboard maliyeti iki kalemden oluşur: baskı + montaj (üretim) ve pano kirası (yayın). Standart 3×6 metre bir billboard baskısı, malzeme kalitesine göre değişen metrekare fiyatıyla hesaplanır. Kira bedeli ise konuma göre büyük farklılık gösterir — İstanbul'da ana arter üzerindeki bir pano, ara sokaktaki panonun birkaç katı fiyata kiralanır. Net rakam için [ücretsiz teklif](/teklif-al/) isteyebilirsiniz.
+Billboard maliyeti iki kalemden oluşur: baskı + montaj (üretim) ve pano kirası (yayın). Standart bir billboard afişinin (yaklaşık 350×250 cm) baskısı, malzeme kalitesine göre değişen metrekare fiyatıyla hesaplanır. Kira bedeli ise konuma göre büyük farklılık gösterir — İstanbul'da ana arter üzerindeki bir pano, ara sokaktaki panonun birkaç katı fiyata kiralanır. Net rakam için [ücretsiz teklif](/teklif-al/) isteyebilirsiniz.
 
 ### Billboard baskısı ne kadar sürede hazır olur?
 

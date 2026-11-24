@@ -30,6 +30,7 @@ const blog = defineCollection({
     image: z.string(),
     category: z.string(),
     date: z.string(),
+    updated: z.string().optional(),
     author: z.string().default('Eymen Reklam'),
     published: z.boolean().default(true),
   }),
