@@ -1,0 +1,31 @@
+---
+// İlgili blog rehberlerine bağlantı kutusu. Yalnız src/lib/rehber-yazilar.ts'de
+// eşlemesi olan TR sayfalarda görünür; diğer sayfalarda hiçbir şey basmaz.
+import { getCollection } from 'astro:content';
+import { REHBER_YAZILARI } from '../lib/rehber-yazilar';
+
+const idler = REHBER_YAZILARI[Astro.url.pathname] ?? [];
+const yazilar = idler.length
+  ? (await getCollection('blog', (y) => y.data.published && idler.includes(y.id)))
+      .sort((a, b) => idler.indexOf(a.id) - idler.indexOf(b.id))
+  : [];
+---
+
+{yazilar.length > 0 && (
+  <section class="py-10 md:py-14 bg-white" aria-labelledby="rehber-baslik">
+    <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 id="rehber-baslik" class="text-xl md:text-2xl font-extrabold text-koyu-900 mb-5">Karar Vermeden Önce Okuyun</h2>
+      <div class="space-y-3">
+        {yazilar.map((y) => (
+          <a href={`/blog/${y.id}/`} class="group flex items-start gap-4 bg-krem-50 border border-koyu-100 hover:border-eymen-300 rounded-xl p-4 md:p-5 transition-colors">
+            <svg class="w-6 h-6 flex-shrink-0 text-eymen-600 mt-0.5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/></svg>
+            <span>
+              <span class="block font-bold text-koyu-900 group-hover:text-eymen-700 transition-colors">{y.data.title}</span>
+              <span class="block text-sm text-koyu-600 mt-1 leading-relaxed">{y.data.excerpt}</span>
+            </span>
+          </a>
+        ))}
+      </div>
+    </div>
+  </section>
+)}

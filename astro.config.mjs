@@ -4,6 +4,7 @@ import tailwindcss from '@tailwindcss/vite';
 import sitemap from '@astrojs/sitemap';
 import compress from 'astro-compress';
 import gorselVaryant from './scripts/gorsel-varyant.mjs';
+import sitemapLastmod from './scripts/sitemap-lastmod.mjs';
 
 // https://astro.build/config
 export default defineConfig({
@@ -12,7 +13,14 @@ export default defineConfig({
   server: { port: 4321 },
   integrations: [
     gorselVaryant(),   // public/images → -240/-480/-800/-1200 varyantları + src/lib/gorsel-manifest.json
-    sitemap({ filter: (sayfa) => !sayfa.includes('/ara/') }),   // arama sonuç sayfası dizine girmez
+    sitemap({
+      filter: (sayfa) => !sayfa.includes('/ara/'),   // arama sonuç sayfası dizine girmez
+      // public/statik-hesap = Next.js ile derlenmiş hesap aracı; Astro sayfası olmadığı için elle eklenir
+      customPages: [
+        'https://www.eymenreklam.com.tr/statik-hesap/',
+        'https://www.eymenreklam.com.tr/statik-hesap/yonlendirme/',
+      ],
+    }),
     compress({
       Exclude: [(dosya) => dosya.includes('statik-hesap')],   // Next.js ile derlenmiş hesap aracı; olduğu gibi yayınlanır
       Image: false,   // görseller zaten WebP; boyut varyantları scripts/gorsel-varyant.mjs üretiyor
@@ -21,6 +29,7 @@ export default defineConfig({
       JavaScript: true,
       SVG: true,
     }),
+    sitemapLastmod(),   // sitemap-0.xml'e <lastmod> — sitemap ve compress'ten SONRA çalışmalı
   ],
   i18n: {
     defaultLocale: 'tr',

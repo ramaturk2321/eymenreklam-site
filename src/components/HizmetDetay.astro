@@ -38,6 +38,7 @@ interface Props {
 }
 
 import BaseLayout from '../layouts/BaseLayout.astro';
+import RehberLinkleri from './RehberLinkleri.astro';
 import { srcset, boyut, SIZES } from '../lib/gorsel';
 import { company, contact } from '../lib/site-data';
 import { sozluk, yol, whatsappUrl } from '../i18n';
@@ -158,9 +159,10 @@ const breadcrumbSchema = {
     </section>
   )}
 
-  <!-- Ürünler (hemen hero altında) -->
-  <section class="py-10 md:py-14 bg-white">
+  <!-- Ürünler (hemen hero altında) — görünmez H2: kart başlıkları H3, H1→H3 atlamasın -->
+  <section class="py-10 md:py-14 bg-white" aria-labelledby="urunler-baslik">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 id="urunler-baslik" class="sr-only">{s.hizmetSayfa.urunlerBaslik(title)}</h2>
       <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-3 gap-4 md:gap-6">
         {products.map(p => {
           const Kart = p.href ? 'a' : 'div';
@@ -366,6 +368,8 @@ const breadcrumbSchema = {
       </div>
     </section>
   )}
+
+  {lang === 'tr' && <RehberLinkleri />}
 
   <!-- SSS -->
   {faq.length > 0 && (

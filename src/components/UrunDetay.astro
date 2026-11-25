@@ -26,6 +26,7 @@ interface Props {
 }
 
 import BaseLayout from '../layouts/BaseLayout.astro';
+import RehberLinkleri from './RehberLinkleri.astro';
 import { srcset, boyut, SIZES } from '../lib/gorsel';
 
 const { title, description, product, descriptionSections, technicalSpecs, faq, relatedProducts } = Astro.props;
@@ -91,7 +92,7 @@ const serviceSchema = {
 };
 ---
 
-<BaseLayout title={title} description={description} image={product.mainImg}>
+<BaseLayout title={title} description={description} image={product.mainImg} aciklamaEki="Pendik İstanbul, ücretsiz teklif.">
 
   <!-- Schema.org: FAQ + Breadcrumb -->
   {faqSchema && <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />}
@@ -301,6 +302,8 @@ const serviceSchema = {
       </div>
     </div>
   </section>
+
+  <RehberLinkleri />
 
   <!-- İlgili Ürünler -->
   <section class="py-4 md:py-6 bg-white">

@@ -14,7 +14,7 @@ projeler.forEach(p => p.data.categories.forEach(cat => {
 const allCategories = Object.entries(categoryCount).sort((a, b) => b[1] - a[1]);
 ---
 
-<BaseLayout title="Tabela ve Reklam Projeleri Pendik İstanbul" description={`Eymen Reklam proje galerisi — Pendik İstanbul'da ${company.experience} yılda tamamlanan tabela imalatı, UV baskı, araç giydirme ve dijital baskı projelerimiz.`} lang="tr" sayfa="projeler">
+<BaseLayout kirinti="nav.projeler" title="Tabela ve Reklam Projeleri Pendik İstanbul" description={`Eymen Reklam proje galerisi — Pendik İstanbul'da ${company.experience} yılda tamamlanan tabela imalatı, UV baskı, araç giydirme ve dijital baskı projelerimiz.`} lang="tr" sayfa="projeler">
 
   <!-- Hero -->
   <section class="bg-krem-100 border-b border-krem-200 py-16 md:py-24">
@@ -38,7 +38,7 @@ const allCategories = Object.entries(categoryCount).sort((a, b) => b[1] - a[1]);
 
             <!-- Kategori Filtresi -->
             <div class="bg-koyu-50 rounded-xl p-5 border border-koyu-100">
-              <h3 class="text-sm font-bold text-koyu-900 tracking-wider mb-3">KATEGORİLER</h3>
+              <h2 class="text-sm font-bold text-koyu-900 tracking-wider mb-3">KATEGORİLER</h2>
               <div class="space-y-1">
                 <button
                   class="filter-btn active w-full flex items-center justify-between px-3 py-2.5 rounded-lg text-sm font-medium transition-all"
@@ -63,7 +63,7 @@ const allCategories = Object.entries(categoryCount).sort((a, b) => b[1] - a[1]);
 
             <!-- CTA -->
             <div class="bg-eymen-500 rounded-xl p-5 text-white">
-              <h3 class="font-bold mb-2">Projeniz mi Var?</h3>
+              <h2 class="font-bold mb-2">Projeniz mi Var?</h2>
               <p class="text-sm text-eymen-100 mb-4 leading-relaxed">
                 Ücretsiz keşif ve fiyat teklifi için hemen bize ulaşın.
               </p>

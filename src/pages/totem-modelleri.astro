@@ -1,5 +1,6 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+import RehberLinkleri from '../components/RehberLinkleri.astro';
 import { srcset, boyut } from '../lib/gorsel';
 import { company, contact, getWhatsAppUrl } from '../lib/site-data';
 
@@ -271,6 +272,8 @@ const kartSizes = '(min-width: 1280px) 290px, (min-width: 1024px) 22vw, (min-wid
       </div>
     </div>
   </section>
+
+  <RehberLinkleri />
 
   <!-- SSS -->
   <section class="py-12 md:py-16 bg-white" aria-labelledby="sss-baslik">

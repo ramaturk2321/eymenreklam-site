@@ -1,12 +1,13 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+import RehberLinkleri from '../components/RehberLinkleri.astro';
 import { srcset, boyut } from '../lib/gorsel';
 import { company, contact, getWhatsAppUrl } from '../lib/site-data';
 
 // Anadolu Yakası UV baskı iniş sayfası (19 Eyl 2026). Pendik odaklı hizmet sayfası: /hizmetlerimiz/uv-baski/
 // Fiyat aralığı / rakam YAZILMAZ (Ramazan kararı).
 const title = 'Anadolu Yakası UV Baskı – 4x2 m Flatbed';
-const description = "Kadıköy'den Gebze'ye Anadolu Yakası UV baskı: cam, pleksi, ahşap, metal ve kompozite 4x2 m SwissQprint flatbed ile doğrudan baskı. Pendik tesisinde üretim, kesim ve montaj dâhil.";
+const description = "Kadıköy'den Gebze'ye Anadolu Yakası UV baskı: cam, pleksi, ahşap, metal ve kompozite 4x2 m flatbed ile doğrudan baskı; Pendik'te üretim, kesim ve montaj.";
 const heroImage = '/images/urunler/uv-flatbed-1.webp';
 const wa = getWhatsAppUrl('Merhaba, firmamız adına Anadolu Yakası\'nda UV baskı için teklif almak istiyorum. Firma adı, malzeme, ölçü ve adet: ');
 
@@ -191,6 +192,8 @@ const serviceSchema = {
       </ul>
     </div>
   </section>
+
+  <RehberLinkleri />
 
   <!-- SSS -->
   <section class="py-16 md:py-24 bg-koyu-50">

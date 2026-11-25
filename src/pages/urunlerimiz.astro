@@ -43,7 +43,7 @@ const products = urunler.map(u => {
 });
 ---
 
-<BaseLayout title="Tabela ve Reklam Ürünleri Pendik İstanbul" description={`Eymen Reklam ürün kataloğu — Kutu harf tabela, totem tabela, UV baskı, araç giydirme ve folyo ürünleri. Pendik İstanbul'da ${company.experience} yıllık tecrübe.`}>
+<BaseLayout kirinti="nav.urunler" title="Tabela ve Reklam Ürünleri Pendik İstanbul" description={`Eymen Reklam ürün kataloğu — Kutu harf tabela, totem tabela, UV baskı, araç giydirme ve folyo ürünleri. Pendik İstanbul'da ${company.experience} yıllık tecrübe.`}>
 
   <!-- Hero -->
   <section class="bg-krem-100 border-b border-krem-200 pt-32 pb-16 md:pt-40 md:pb-24">
@@ -77,6 +77,7 @@ const products = urunler.map(u => {
         ))}
       </div>
 
+      <h2 class="sr-only">Ürün Listesi</h2>
       <!-- Ürün Sayacı -->
       <p class="text-sm text-koyu-500 mb-6" id="product-count">{products.length} ürün gösteriliyor</p>
 

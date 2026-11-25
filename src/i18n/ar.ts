@@ -110,6 +110,7 @@ export const ar: Sozluk = {
     ustBaslik: 'خدمات إيمن ريكلام',
     tesisUstBaslik: 'منشأتنا',
     uretimAlt: (baslik: string, i: number) => `${baslik} - الإنتاج ${i}`,
+    urunlerBaslik: (baslik: string) => `منتجاتنا في ${baslik}`,
     islerimizden: (baslik: string) => `أعمال نفّذناها في ${baslik}`,
     galeriAciklama:
       'جميع الصور أدناه من أعمال صنعناها داخل منشأتنا وركّبناها في الموقع. الصور المرتبطة تنقلك إلى صفحة المشروع.',

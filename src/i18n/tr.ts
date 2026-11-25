@@ -116,6 +116,7 @@ export const tr = {
     ustBaslik: 'EYMEN REKLAM HİZMETLERİ',
     tesisUstBaslik: 'ÜRETİM TESİSİ',
     uretimAlt: (baslik: string, i: number) => `${baslik} - Üretim ${i}`,
+    urunlerBaslik: (baslik: string) => `${baslik} Ürünlerimiz`,
     islerimizden: (baslik: string) => `${baslik} İşlerimizden`,
     galeriAciklama:
       'Aşağıdaki fotoğrafların tamamı kendi tesisimizde ürettiğimiz ve sahada uyguladığımız işlerden. Bağlantılı olanlar proje sayfasına gider.',

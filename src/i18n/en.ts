@@ -110,6 +110,7 @@ export const en: Sozluk = {
     ustBaslik: 'EYMEN REKLAM SERVICES',
     tesisUstBaslik: 'OUR FACILITY',
     uretimAlt: (baslik: string, i: number) => `${baslik} - production ${i}`,
+    urunlerBaslik: (baslik: string) => `${baslik}: Our Products`,
     islerimizden: (baslik: string) => `${baslik}: Work We Have Produced`,
     galeriAciklama:
       'Every photograph below is from work produced in our own facility and installed on site. Where a project page exists, the photo links to it.',
