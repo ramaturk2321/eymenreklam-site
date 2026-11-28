@@ -75,6 +75,9 @@ const gercekIsler = [
   { ad: 'Bymet', is: 'Tesis girişi, ışıklı pilon tabela', img: '/images/urunler/totem-prj-1.webp', pos: '50% 40%' },
 ];
 
+// Hero: gerçek işlerden üç fotoğraf (Banat, 2Plan, Beko). Render/mockup KONMAZ.
+const hero = ['Banat Ambalaj', '2Plan Otomotiv Eskişehir', 'Beko · Bereket Mobilya'].map((ad) => gercekIsler.find((g) => g.ad === ad)!);
+
 const waGenel = getWhatsAppUrl('Merhaba, totem modellerinize baktım. İşletmemiz için totem tabela düşünüyoruz. Firma adı ve kullanım yeri: ');
 const waModel = (m: { kod: string; ad: string }) =>
   getWhatsAppUrl(`Merhaba, ${m.kod} ${m.ad} modeli için fiyat almak istiyorum. Firma adı, kullanım yeri ve istenen yükseklik: `);
@@ -138,26 +141,43 @@ const kartSizes = '(min-width: 1280px) 290px, (min-width: 1024px) 22vw, (min-wid
   <section class="bg-krem-100 border-b border-krem-200 pt-10 pb-10 md:pt-16 md:pb-14">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-5 gap-8 items-center">
       <div class="lg:col-span-3">
-        <p class="text-eymen-700 text-sm font-semibold tracking-wider mb-3">FİKİR KATALOĞU · 13 MODEL</p>
         <h1 class="text-3xl md:text-5xl font-extrabold text-koyu-900 mb-4">Totem Tabela Modelleri ve Örnekleri</h1>
         <p class="text-koyu-700 text-base md:text-lg leading-relaxed mb-6">
           Kutu totemden farklı bir şey arayanlar için sekiz özgün model, market, akaryakıt ve AVM önleri için beş klasik totem tipi hazırladık.
           Her birinin ölçülü teknik çizimi ve gerçekçi görseli var. Hepsi Pendik’teki atölyemizde üretilebilir; birini seçin ya da ikisini birleştirin, markanıza göre yeniden çizelim.
         </p>
         <div class="flex flex-col sm:flex-row gap-3">
-          <a href={waGenel} target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center gap-2 bg-green-600 hover:bg-green-700 text-white px-6 py-3.5 rounded-xl font-bold transition-all">WhatsApp'tan model sorun</a>
+          <a href={waGenel} target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center gap-2 bg-green-700 hover:bg-green-800 text-white px-6 py-3.5 rounded-xl font-bold transition-all">WhatsApp'tan model sorun</a>
           <a href={pdf} target="_blank" rel="noopener" class="inline-flex items-center justify-center gap-2 border-2 border-koyu-300 hover:border-koyu-900 text-koyu-800 hover:bg-koyu-900/5 px-6 py-3.5 rounded-xl font-semibold transition-all">
             <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v12m0 0l-4-4m4 4l4-4M4 20h16"/></svg>
             Teknik çizimler (PDF, 13 sayfa)
           </a>
         </div>
+        <!-- 28 Kas (Impeccable P1): reklamdan gelen kendi tipine tek dokunuşla atlasın -->
+        <nav class="mt-6" aria-label="Model grupları">
+          <p class="text-sm font-semibold text-koyu-800 mb-2">Doğrudan gidin:</p>
+          <ul class="flex flex-wrap gap-2">
+            {[
+              ['#market', 'Market · akaryakıt · AVM'],
+              ['#tasarim', 'Özgün tasarım totemler'],
+              ['#sahadan', 'Ürettiğimiz totemler'],
+            ].map(([href, ad]) => (
+              <li><a href={href} class="inline-flex items-center min-h-11 px-4 rounded-full bg-white/80 border border-koyu-200 hover:border-koyu-800 text-sm font-semibold text-koyu-800 transition-colors">{ad}</a></li>
+            ))}
+          </ul>
+        </nav>
       </div>
-      <div class="lg:col-span-2 grid grid-cols-3 gap-2" aria-hidden="true">
-        {['T-05', 'T-01', 'T-08'].map((k, i) => (
-          <img src={`/images/totem-modelleri/${k}.webp`} srcset={srcset(`/images/totem-modelleri/${k}.webp`)} sizes="(min-width: 1024px) 160px, 33vw"
-               {...boyut(`/images/totem-modelleri/${k}.webp`)} alt="" class={`w-full aspect-[3/4] object-cover rounded-xl ${i === 1 ? 'mt-0' : 'mt-6'}`} loading="eager" decoding="async" />
-        ))}
-      </div>
+      <!-- 28 Kas (Impeccable P1): üstte yapay görsel yerine gerçek işler — "bunları gerçekten yapıyorlar mı" şüphesi -->
+      <figure class="lg:col-span-2">
+        <div class="grid grid-cols-3 gap-2">
+          {hero.map((g, i) => (
+            <img src={g.img} srcset={srcset(g.img)} sizes="(min-width: 1024px) 160px, 33vw" {...boyut(g.img)}
+                 alt={`${g.ad} – ${g.is}, Eymen Reklam üretimi totem`} style={`object-position: ${g.pos}`}
+                 class={`w-full aspect-[3/4] object-cover rounded-xl ${i === 1 ? 'mt-0' : 'mt-6'}`} loading="eager" decoding="async" fetchpriority={i === 1 ? 'high' : undefined} />
+          ))}
+        </div>
+        <figcaption class="mt-3 text-sm text-koyu-700"><a href="#sahadan" class="font-semibold underline underline-offset-2 hover:text-koyu-900">Ürettiğimiz totemlerden</a>: {hero.map((g) => g.ad).join(', ')}</figcaption>
+      </figure>
     </div>
   </section>
 
@@ -177,28 +197,36 @@ const kartSizes = '(min-width: 1280px) 290px, (min-width: 1024px) 22vw, (min-wid
               <div class="relative">
                 <img src={img} srcset={srcset(img)} sizes={kartSizes} {...boyut(img)} alt={`${m.ad} örnek görseli — ${m.yer}`}
                      class="w-full aspect-[3/4] object-cover" loading="lazy" decoding="async" />
-                <span class="absolute top-3 left-3 bg-eymen-600 text-white text-xs font-bold px-2.5 py-1 rounded-md">{m.kod}</span>
+                <span class="absolute top-3 left-3 bg-eymen-700 text-white text-xs font-bold px-2.5 py-1 rounded-md">{m.kod}</span>
               </div>
               <div class="flex flex-col flex-1 p-5">
                 <h3 class="text-lg font-bold text-koyu-900">{m.ad}</h3>
                 <p class="text-xs font-semibold text-eymen-700 mt-1">{m.olcu}</p>
                 <p class="text-sm text-koyu-500 mt-1">{m.yer}</p>
-                <p class="text-sm text-koyu-700 leading-relaxed mt-3">{m.fikir}</p>
-                <ul class="mt-3 space-y-1 text-sm text-koyu-700">
+                <!-- 28 Kas (Impeccable P1): mobilde kart 858 px idi → fikir 3 satır, özellikler yalnız geniş ekranda -->
+                <p class="text-sm text-koyu-700 leading-relaxed mt-3 line-clamp-3 sm:line-clamp-none">{m.fikir}</p>
+                <ul class="hidden sm:block mt-3 space-y-1 text-sm text-koyu-700">
                   {m.ozellik.map((o) => (
                     <li class="flex gap-2"><span class="text-eymen-600" aria-hidden="true">•</span>{o}</li>
                   ))}
                 </ul>
-                <div class="mt-auto pt-5 grid grid-cols-2 gap-2">
-                  <button type="button" data-cizim={m.kod} data-ad={m.ad}
-                          class="cizim-ac inline-flex items-center justify-center gap-1.5 border border-koyu-200 hover:border-koyu-800 text-koyu-800 text-sm font-semibold px-3 py-2.5 rounded-lg transition-colors">
-                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 5h16v14H4zM8 15l3-3 2 2 3-4"/></svg>
-                    Çizim
-                  </button>
+                <!-- 28 Kas (Impeccable P1): tek ana eylem (WhatsApp, yeşil + simge, AA karşıtlık) + iki ikincil, hepsi ≥44 px -->
+                <div class="mt-auto pt-5 flex flex-col gap-2">
                   <a href={waModel(m)} target="_blank" rel="noopener noreferrer"
-                     class="inline-flex items-center justify-center bg-eymen-600 hover:bg-eymen-700 text-white text-sm font-bold px-3 py-2.5 rounded-lg transition-colors">Fiyat iste</a>
+                     class="inline-flex items-center justify-center gap-2 min-h-11 bg-green-700 hover:bg-green-800 text-white text-sm font-bold px-3 rounded-lg transition-colors">
+                    <svg class="w-4 h-4 shrink-0" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                    WhatsApp'tan fiyat iste
+                  </a>
+                  <div class="grid grid-cols-2 gap-2">
+                    <button type="button" data-cizim={m.kod} data-ad={m.ad} data-wa={waModel(m)}
+                            class="cizim-ac inline-flex items-center justify-center gap-1.5 min-h-11 border border-koyu-200 hover:border-koyu-800 text-koyu-800 text-sm font-semibold px-2 rounded-lg transition-colors">
+                      <svg class="w-4 h-4 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 5h16v14H4zM8 15l3-3 2 2 3-4"/></svg>
+                      Çizim
+                    </button>
+                    <a href={`/teklif-al/?model=${m.kod}`}
+                       class="inline-flex items-center justify-center min-h-11 border border-koyu-200 hover:border-koyu-800 text-koyu-800 text-sm font-semibold px-2 rounded-lg transition-colors">Teklif formu</a>
+                  </div>
                 </div>
-                <a href={`/teklif-al/?model=${m.kod}`} class="mt-2 text-center text-xs text-koyu-600 hover:text-eymen-700 underline underline-offset-2">ya da teklif formuyla gönderin</a>
               </div>
             </article>
           );
@@ -211,7 +239,7 @@ const kartSizes = '(min-width: 1280px) 290px, (min-width: 1024px) 22vw, (min-wid
   </section>
 
   <!-- Gerçek işler -->
-  <section class="py-12 md:py-16 bg-koyu-900" aria-labelledby="gercek-baslik">
+  <section id="sahadan" class="py-12 md:py-16 bg-koyu-900 scroll-mt-24" aria-labelledby="gercek-baslik">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <p class="text-eymen-400 text-sm font-semibold tracking-wider mb-2">SAHADAN</p>
       <h2 id="gercek-baslik" class="text-2xl md:text-3xl font-extrabold text-white mb-2">Ürettiğimiz totemlerden</h2>
@@ -238,18 +266,27 @@ const kartSizes = '(min-width: 1280px) 290px, (min-width: 1024px) 22vw, (min-wid
   </section>
 
   <!-- Teknik çizim penceresi -->
-  <dialog id="cizim-pencere" class="w-[min(96vw,1200px)] max-h-[94vh] rounded-2xl p-0 backdrop:bg-koyu-900/70" aria-labelledby="cizim-baslik">
+  <!-- 28 Kas (Impeccable P1): m-auto = Tailwind preflight dialog'u sol üste yapıştırıyordu; mobilde ekrana sığar; altta fiyat/teklif düğmeleri -->
+  <dialog id="cizim-pencere" class="m-auto w-[min(96vw,1200px)] max-h-[94vh] rounded-2xl p-0 backdrop:bg-koyu-900/70 open:flex open:flex-col" aria-labelledby="cizim-baslik">
     <div class="flex items-center justify-between gap-4 px-4 py-3 border-b border-koyu-100">
       <h2 id="cizim-baslik" class="text-base font-bold text-koyu-900">Teknik çizim</h2>
-      <div class="flex items-center gap-2">
-        <a id="cizim-yeni" href="#" target="_blank" rel="noopener" class="text-sm text-koyu-600 hover:text-eymen-700 underline underline-offset-2">Büyük aç</a>
-        <button type="button" id="cizim-kapat" class="p-2 rounded-lg hover:bg-koyu-100" aria-label="Kapat">
+      <div class="flex items-center gap-2 shrink-0">
+        <a id="cizim-yeni" href="#" target="_blank" rel="noopener" class="whitespace-nowrap text-sm text-koyu-600 hover:text-eymen-700 underline underline-offset-2">Büyük aç</a>
+        <button type="button" id="cizim-kapat" class="p-2.5 rounded-lg hover:bg-koyu-100" aria-label="Kapat">
           <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
         </button>
       </div>
     </div>
-    <div class="overflow-auto bg-white">
-      <img id="cizim-resim" src="/images/totem-modelleri/cizim/T-01.svg" alt="T-01 Halka Monolit Totem teknik çizimi" loading="lazy" width="1000" height="707" class="w-full h-auto min-w-[720px]" />
+    <div class="flex-1 min-h-0 overflow-auto bg-white">
+      <img id="cizim-resim" src="/images/totem-modelleri/cizim/T-01.svg" alt="T-01 Halka Monolit Totem teknik çizimi" width="1000" height="707" class="block w-full h-auto aspect-[1000/707] lg:min-w-[720px]" />
+    </div>
+    <div class="flex flex-col sm:flex-row sm:items-center gap-2 px-4 py-3 border-t border-koyu-100 bg-white">
+      <p id="cizim-not" class="hidden sm:block flex-1 text-sm text-koyu-600">Ölçüler örnektir; yerinize ve logonuza göre yeniden çizilir.</p>
+      <a id="cizim-wa" href={waGenel} target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center gap-2 bg-green-700 hover:bg-green-800 text-white text-sm font-bold px-4 py-3 rounded-lg transition-colors">
+        <svg class="w-4 h-4" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+        WhatsApp'tan bu modelin fiyatını isteyin
+      </a>
+      <a id="cizim-form" href="/teklif-al/" class="inline-flex items-center justify-center border border-koyu-200 hover:border-koyu-800 text-koyu-800 text-sm font-semibold px-4 py-3 rounded-lg transition-colors">Teklif formuyla gönderin</a>
     </div>
   </dialog>
 
@@ -293,7 +330,7 @@ const kartSizes = '(min-width: 1280px) 290px, (min-width: 1024px) 22vw, (min-wid
       <div class="mt-10 rounded-2xl bg-krem-100 border border-krem-200 p-6 text-center">
         <p class="font-bold text-koyu-900 mb-1">Yerinizi ve logonuzu gönderin, modeli markanıza göre çizelim.</p>
         <p class="text-sm text-koyu-600 mb-4">Keşif ücretsiz. {contact.phone}</p>
-        <a href={waGenel} target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center bg-green-600 hover:bg-green-700 text-white px-6 py-3 rounded-xl font-bold transition-all">WhatsApp'tan yazın</a>
+        <a href={waGenel} target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center bg-green-700 hover:bg-green-800 text-white px-6 py-3 rounded-xl font-bold transition-all">WhatsApp'tan yazın</a>
       </div>
     </div>
   </section>
@@ -303,17 +340,34 @@ const kartSizes = '(min-width: 1280px) 290px, (min-width: 1024px) 22vw, (min-wid
     const resim = document.getElementById('cizim-resim') as HTMLImageElement | null;
     const baslik = document.getElementById('cizim-baslik');
     const yeni = document.getElementById('cizim-yeni') as HTMLAnchorElement | null;
+    const wa = document.getElementById('cizim-wa') as HTMLAnchorElement | null;
+    const form = document.getElementById('cizim-form') as HTMLAnchorElement | null;
+    let acikModel = '';
     document.querySelectorAll<HTMLButtonElement>('.cizim-ac').forEach((b) => {
       b.addEventListener('click', () => {
         if (!pencere || !resim) return;
         const src = `/images/totem-modelleri/cizim/${b.dataset.cizim}.svg`;
+        acikModel = b.dataset.cizim || '';
         resim.src = src;
         resim.alt = `${b.dataset.cizim} ${b.dataset.ad} teknik çizimi: ön, yan ve üstten görünüş, ölçüler`;
         if (baslik) baslik.textContent = `${b.dataset.cizim} ${b.dataset.ad} — teknik çizim`;
         if (yeni) yeni.href = src;
+        if (wa && b.dataset.wa) wa.href = b.dataset.wa;
+        if (form) form.href = `/teklif-al/?model=${acikModel}`;
         pencere.showModal();
-        if (typeof (window as any).gtag === 'function') (window as any).gtag('event', 'totem_cizim_ac', { model: b.dataset.cizim });
+        if (typeof (window as any).gtag === 'function') (window as any).gtag('event', 'totem_cizim_ac', { model: acikModel });
       });
+    });
+    wa?.addEventListener('click', () => {
+      if (typeof (window as any).gtag === 'function') (window as any).gtag('event', 'totem_cizim_wa', { model: acikModel });
+    });
+    // Çizim ~150 KB: yalnız düğmeye yaklaşılınca o modeli önceden yükle (13'ünü birden indirmek mobilde 2 MB)
+    const yuklendi = new Set<string>();
+    document.querySelectorAll<HTMLButtonElement>('.cizim-ac').forEach((b) => {
+      const yukle = () => { const k = b.dataset.cizim || ''; if (yuklendi.has(k)) return; yuklendi.add(k); new Image().src = `/images/totem-modelleri/cizim/${k}.svg`; };
+      b.addEventListener('pointerenter', yukle, { once: true });
+      b.addEventListener('touchstart', yukle, { once: true, passive: true });
+      b.addEventListener('focus', yukle, { once: true });
     });
     document.getElementById('cizim-kapat')?.addEventListener('click', () => pencere?.close());
     pencere?.addEventListener('click', (e) => { if (e.target === pencere) pencere.close(); });
